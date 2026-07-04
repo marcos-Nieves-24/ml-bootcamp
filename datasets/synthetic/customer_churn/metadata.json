@@ -1,0 +1,62 @@
+{
+  "name": "customer_churn",
+  "description": "Synthetic customer churn dataset for SaaS analytics. Contains customer demographics, account information, and churn labels.",
+  "source": "Generated synthetically for educational purposes.",
+  "license": "CC0-1.0",
+  "rows": 1000,
+  "columns": 13,
+  "variables": {
+    "customer_id": {
+      "dtype": "int64",
+      "non_null": 1000
+    },
+    "tenure_months": {
+      "dtype": "int64",
+      "non_null": 1000
+    },
+    "monthly_charges": {
+      "dtype": "float64",
+      "non_null": 1000
+    },
+    "total_charges": {
+      "dtype": "float64",
+      "non_null": 1000
+    },
+    "contract_type": {
+      "dtype": "str",
+      "non_null": 1000
+    },
+    "internet_service": {
+      "dtype": "str",
+      "non_null": 1000
+    },
+    "payment_method": {
+      "dtype": "str",
+      "non_null": 1000
+    },
+    "senior_citizen": {
+      "dtype": "int64",
+      "non_null": 1000
+    },
+    "partner": {
+      "dtype": "str",
+      "non_null": 1000
+    },
+    "dependents": {
+      "dtype": "str",
+      "non_null": 1000
+    },
+    "num_tech_tickets": {
+      "dtype": "int64",
+      "non_null": 1000
+    },
+    "num_admin_tickets": {
+      "dtype": "int64",
+      "non_null": 1000
+    },
+    "churn": {
+      "dtype": "int64",
+      "non_null": 1000
+    }
+  }
+}

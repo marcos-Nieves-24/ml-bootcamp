@@ -1,0 +1,50 @@
+{
+  "name": "biotech_quality",
+  "description": "Synthetic biotech manufacturing quality control dataset. Process parameters and quality outcomes for batch production.",
+  "source": "Generated synthetically for educational purposes.",
+  "license": "CC0-1.0",
+  "rows": 500,
+  "columns": 10,
+  "variables": {
+    "batch_id": {
+      "dtype": "int64",
+      "non_null": 500
+    },
+    "temperature": {
+      "dtype": "float64",
+      "non_null": 500
+    },
+    "ph_level": {
+      "dtype": "float64",
+      "non_null": 500
+    },
+    "pressure": {
+      "dtype": "float64",
+      "non_null": 500
+    },
+    "stirring_speed": {
+      "dtype": "float64",
+      "non_null": 500
+    },
+    "culture_time_hours": {
+      "dtype": "float64",
+      "non_null": 500
+    },
+    "oxygen_saturation": {
+      "dtype": "float64",
+      "non_null": 500
+    },
+    "nutrient_concentration": {
+      "dtype": "float64",
+      "non_null": 500
+    },
+    "quality_score": {
+      "dtype": "float64",
+      "non_null": 500
+    },
+    "pass_quality": {
+      "dtype": "int64",
+      "non_null": 500
+    }
+  }
+}

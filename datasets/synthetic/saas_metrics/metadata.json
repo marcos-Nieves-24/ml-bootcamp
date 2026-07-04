@@ -1,0 +1,50 @@
+{
+  "name": "saas_metrics",
+  "description": "Synthetic SaaS metrics dataset for time series analysis and data storytelling. Monthly KPIs for a fictional SaaS company.",
+  "source": "Generated synthetically for educational purposes.",
+  "license": "CC0-1.0",
+  "rows": 24,
+  "columns": 10,
+  "variables": {
+    "month": {
+      "dtype": "datetime64[us]",
+      "non_null": 24
+    },
+    "active_users": {
+      "dtype": "float64",
+      "non_null": 24
+    },
+    "new_signups": {
+      "dtype": "int64",
+      "non_null": 24
+    },
+    "churned_users": {
+      "dtype": "int64",
+      "non_null": 24
+    },
+    "mrr": {
+      "dtype": "float64",
+      "non_null": 24
+    },
+    "avg_revenue_per_user": {
+      "dtype": "float64",
+      "non_null": 24
+    },
+    "support_tickets": {
+      "dtype": "int64",
+      "non_null": 24
+    },
+    "feature_usage_pct": {
+      "dtype": "float64",
+      "non_null": 24
+    },
+    "churn_rate_pct": {
+      "dtype": "float64",
+      "non_null": 24
+    },
+    "net_new_users": {
+      "dtype": "int64",
+      "non_null": 24
+    }
+  }
+}

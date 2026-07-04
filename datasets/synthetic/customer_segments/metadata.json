@@ -1,0 +1,30 @@
+{
+  "name": "customer_segments",
+  "description": "Synthetic customer segmentation dataset for clustering exercises. Contains demographic and spending features.",
+  "source": "Generated synthetically for educational purposes.",
+  "license": "CC0-1.0",
+  "rows": 500,
+  "columns": 5,
+  "variables": {
+    "age": {
+      "dtype": "int64",
+      "non_null": 500
+    },
+    "annual_spend": {
+      "dtype": "int64",
+      "non_null": 500
+    },
+    "cluster": {
+      "dtype": "int64",
+      "non_null": 500
+    },
+    "membership_years": {
+      "dtype": "float64",
+      "non_null": 500
+    },
+    "num_purchases": {
+      "dtype": "int64",
+      "non_null": 500
+    }
+  }
+}

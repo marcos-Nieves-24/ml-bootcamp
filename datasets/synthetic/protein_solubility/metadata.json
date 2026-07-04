@@ -1,0 +1,46 @@
+{
+  "name": "protein_solubility",
+  "description": "Synthetic protein solubility dataset. Molecular descriptors and experimental solubility scores for protein engineering exercises.",
+  "source": "Generated synthetically for educational purposes.",
+  "license": "CC0-1.0",
+  "rows": 500,
+  "columns": 9,
+  "variables": {
+    "protein_id": {
+      "dtype": "str",
+      "non_null": 500
+    },
+    "molecular_weight": {
+      "dtype": "float64",
+      "non_null": 500
+    },
+    "hydrophobicity": {
+      "dtype": "float64",
+      "non_null": 500
+    },
+    "charge": {
+      "dtype": "float64",
+      "non_null": 500
+    },
+    "helix_fraction": {
+      "dtype": "float64",
+      "non_null": 500
+    },
+    "sheet_fraction": {
+      "dtype": "float64",
+      "non_null": 500
+    },
+    "loop_fraction": {
+      "dtype": "float64",
+      "non_null": 500
+    },
+    "length": {
+      "dtype": "int64",
+      "non_null": 500
+    },
+    "solubility": {
+      "dtype": "float64",
+      "non_null": 500
+    }
+  }
+}

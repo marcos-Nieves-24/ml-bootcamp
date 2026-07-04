@@ -1,0 +1,62 @@
+{
+  "name": "credit_data",
+  "description": "Synthetic credit application dataset for ethics and fairness analysis. Includes demographic attributes for bias detection exercises.",
+  "source": "Generated synthetically for educational purposes. Inspired by UCI Credit Approval dataset structure.",
+  "license": "CC0-1.0",
+  "rows": 2000,
+  "columns": 13,
+  "variables": {
+    "applicant_id": {
+      "dtype": "int64",
+      "non_null": 2000
+    },
+    "age": {
+      "dtype": "int64",
+      "non_null": 2000
+    },
+    "income": {
+      "dtype": "float64",
+      "non_null": 2000
+    },
+    "loan_amount": {
+      "dtype": "float64",
+      "non_null": 2000
+    },
+    "loan_term_months": {
+      "dtype": "int64",
+      "non_null": 2000
+    },
+    "credit_score": {
+      "dtype": "int64",
+      "non_null": 2000
+    },
+    "employment_years": {
+      "dtype": "int64",
+      "non_null": 2000
+    },
+    "debt_to_income": {
+      "dtype": "float64",
+      "non_null": 2000
+    },
+    "num_credit_lines": {
+      "dtype": "int64",
+      "non_null": 2000
+    },
+    "late_payments_2y": {
+      "dtype": "int64",
+      "non_null": 2000
+    },
+    "race": {
+      "dtype": "str",
+      "non_null": 2000
+    },
+    "gender": {
+      "dtype": "str",
+      "non_null": 2000
+    },
+    "default": {
+      "dtype": "int64",
+      "non_null": 2000
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "clinical_trial",
+  "description": "Synthetic clinical trial dataset for data analysis exercises. Patient demographics, treatment assignment, and outcomes.",
+  "source": "Generated synthetically for educational purposes.",
+  "license": "CC0-1.0",
+  "rows": 300,
+  "columns": 10,
+  "variables": {
+    "patient_id": {
+      "dtype": "int64",
+      "non_null": 300
+    },
+    "age": {
+      "dtype": "int64",
+      "non_null": 300
+    },
+    "sex": {
+      "dtype": "str",
+      "non_null": 300
+    },
+    "treatment_group": {
+      "dtype": "str",
+      "non_null": 300
+    },
+    "baseline_bp": {
+      "dtype": "float64",
+      "non_null": 300
+    },
+    "baseline_bmi": {
+      "dtype": "float64",
+      "non_null": 300
+    },
+    "baseline_glucose": {
+      "dtype": "float64",
+      "non_null": 300
+    },
+    "adherence_rate": {
+      "dtype": "float64",
+      "non_null": 300
+    },
+    "outcome_improvement": {
+      "dtype": "float64",
+      "non_null": 300
+    },
+    "responder": {
+      "dtype": "int64",
+      "non_null": 300
+    }
+  }
+}

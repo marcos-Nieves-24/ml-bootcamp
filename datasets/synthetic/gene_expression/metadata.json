@@ -1,0 +1,98 @@
+{
+  "name": "gene_expression",
+  "description": "Synthetic gene expression dataset for ML exercises. 200 patients, 20 genes, binary condition (control/treatment).",
+  "source": "Generated synthetically for educational purposes. Modeled after typical differential expression analysis datasets.",
+  "license": "CC0-1.0",
+  "rows": 200,
+  "columns": 22,
+  "variables": {
+    "patient_id": {
+      "dtype": "int64",
+      "non_null": 200
+    },
+    "condition": {
+      "dtype": "str",
+      "non_null": 200
+    },
+    "gene_01": {
+      "dtype": "float64",
+      "non_null": 200
+    },
+    "gene_02": {
+      "dtype": "float64",
+      "non_null": 200
+    },
+    "gene_03": {
+      "dtype": "float64",
+      "non_null": 200
+    },
+    "gene_04": {
+      "dtype": "float64",
+      "non_null": 200
+    },
+    "gene_05": {
+      "dtype": "float64",
+      "non_null": 200
+    },
+    "gene_06": {
+      "dtype": "float64",
+      "non_null": 200
+    },
+    "gene_07": {
+      "dtype": "float64",
+      "non_null": 200
+    },
+    "gene_08": {
+      "dtype": "float64",
+      "non_null": 200
+    },
+    "gene_09": {
+      "dtype": "float64",
+      "non_null": 200
+    },
+    "gene_10": {
+      "dtype": "float64",
+      "non_null": 200
+    },
+    "gene_11": {
+      "dtype": "float64",
+      "non_null": 200
+    },
+    "gene_12": {
+      "dtype": "float64",
+      "non_null": 200
+    },
+    "gene_13": {
+      "dtype": "float64",
+      "non_null": 200
+    },
+    "gene_14": {
+      "dtype": "float64",
+      "non_null": 200
+    },
+    "gene_15": {
+      "dtype": "float64",
+      "non_null": 200
+    },
+    "gene_16": {
+      "dtype": "float64",
+      "non_null": 200
+    },
+    "gene_17": {
+      "dtype": "float64",
+      "non_null": 200
+    },
+    "gene_18": {
+      "dtype": "float64",
+      "non_null": 200
+    },
+    "gene_19": {
+      "dtype": "float64",
+      "non_null": 200
+    },
+    "gene_20": {
+      "dtype": "float64",
+      "non_null": 200
+    }
+  }
+}
