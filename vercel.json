@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "pip install --break-system-packages -r requirements.txt && pip install --break-system-packages mkdocs mkdocs-material mkdocs-jupyter && mkdocs build",
+  "buildCommand": "uv venv && uv pip install mkdocs mkdocs-material mkdocs-jupyter nbformat && uv run mkdocs build",
   "outputDirectory": "site",
   "framework": null,
   "cleanUrls": true,
