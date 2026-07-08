@@ -273,8 +273,7 @@ for i, p in enumerate(products):
 
 # Growth rate (day-over-day)
 growth = np.diff(dau, axis=0) / dau[:-1] * 100
-print(f"\nGrowth rates (%):
-{growth}")
+print(f"\nGrowth rates (%):\n{growth}")
 
 # Correlation between products
 corr = np.corrcoef(dau.T)

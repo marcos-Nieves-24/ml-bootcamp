@@ -38,3 +38,9 @@ datasets/raw/large_*
 
 # Notebooks with sensitive outputs
 *.nbconvert.*
+
+# MkDocs build output
+site/
+
+# Vercel output
+.vercel

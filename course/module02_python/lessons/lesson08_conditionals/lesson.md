@@ -37,16 +37,16 @@ The simplest conditional executes code only when a condition is True:
 
 ```python
 if condition:
-    # code to execute if condition is True
+    pass  # code to execute if condition is True
 ```
 
 ### if/else
 
 ```python
 if condition:
-    # code if True
+    pass  # code if True
 else:
-    # code if False
+    pass  # code if False
 ```
 
 ### if/elif/else
@@ -55,13 +55,13 @@ Chain multiple conditions:
 
 ```python
 if condition1:
-    # condition1 is True
+    pass  # condition1 is True
 elif condition2:
-    # condition1 is False, condition2 is True
+    pass  # condition1 is False, condition2 is True
 elif condition3:
-    # condition1 and condition2 are False, condition3 is True
+    pass  # condition1 and condition2 are False, condition3 is True
 else:
-    # all conditions are False
+    pass  # all conditions are False
 ```
 
 ### Truthy and Falsy
@@ -84,11 +84,11 @@ Conditionals inside conditionals:
 ```python
 if condition1:
     if condition2:
-        # both True
+        pass  # both True
     else:
-        # condition1 True, condition2 False
+        pass  # condition1 True, condition2 False
 else:
-    # condition1 False
+    pass  # condition1 False
 ```
 
 ### Ternary (Conditional Expression)
@@ -105,12 +105,12 @@ Structural pattern matching (similar to switch/case):
 
 ```python
 match value:
-    case pattern1:
-        # handle pattern1
-    case pattern2:
-        # handle pattern2
+    case 1:
+        pass  # handle case 1
+    case 2:
+        pass  # handle case 2
     case _:
-        # default
+        pass  # default
 ```
 
 ## Visual Explanation

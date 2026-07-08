@@ -45,6 +45,7 @@ def bias_variance_demo():
         axes[i].set_ylim(-1.5, 1.5)
     plt.tight_layout()
     fig.savefig(FIGS_DIR / "bias_variance_demo.png", dpi=150)
+    fig.savefig(FIGS_DIR / "bias_variance_demo.svg", dpi=150)
     plt.close(fig)
     print("  ✓ bias_variance_demo.png")
 
@@ -65,6 +66,7 @@ def simple_linear_regression():
     ax.legend()
     ax.set_title('Simple Linear Regression')
     fig.savefig(FIGS_DIR / "simple_linear_regression.png", dpi=150)
+    fig.savefig(FIGS_DIR / "simple_linear_regression.svg", dpi=150)
     plt.close(fig)
     print("  ✓ simple_linear_regression.png")
 
@@ -87,6 +89,7 @@ def decision_boundary():
     ax.set_title('Logistic Regression Decision Boundary')
     fig.colorbar(ax.collections[0], ax=ax, label='Probability')
     fig.savefig(FIGS_DIR / "decision_boundary.png", dpi=150)
+    fig.savefig(FIGS_DIR / "decision_boundary.svg", dpi=150)
     plt.close(fig)
     print("  ✓ decision_boundary.png")
 
@@ -110,6 +113,7 @@ def roc_curve():
     ax.set_title('ROC Curve')
     ax.legend()
     fig.savefig(FIGS_DIR / "roc_curve.png", dpi=150)
+    fig.savefig(FIGS_DIR / "roc_curve.svg", dpi=150)
     plt.close(fig)
     print("  ✓ roc_curve.png")
 
@@ -123,6 +127,7 @@ def decision_tree_iris():
     plot_tree(tree, feature_names=['sepal_length', 'petal_length'],
               class_names=iris.target_names, filled=True, rounded=True, ax=ax)
     fig.savefig(FIGS_DIR / "decision_tree_iris.png", dpi=150)
+    fig.savefig(FIGS_DIR / "decision_tree_iris.svg", dpi=150)
     plt.close(fig)
     print("  ✓ decision_tree_iris.png")
 
@@ -145,6 +150,7 @@ def tree_vs_forest_boundary():
         ax.set_title(title)
     plt.tight_layout()
     fig.savefig(FIGS_DIR / "tree_vs_forest_boundary.png", dpi=150)
+    fig.savefig(FIGS_DIR / "tree_vs_forest_boundary.svg", dpi=150)
     plt.close(fig)
     print("  ✓ tree_vs_forest_boundary.png")
 
@@ -165,6 +171,7 @@ def kmeans_different_k():
         ax.set_ylabel('Feature 2')
     plt.tight_layout()
     fig.savefig(FIGS_DIR / "kmeans_different_k.png", dpi=150)
+    fig.savefig(FIGS_DIR / "kmeans_different_k.svg", dpi=150)
     plt.close(fig)
     print("  ✓ kmeans_different_k.png")
 
@@ -194,6 +201,7 @@ def elbow_silhouette():
     axes[1].grid(True)
     plt.tight_layout()
     fig.savefig(FIGS_DIR / "elbow_silhouette.png", dpi=150)
+    fig.savefig(FIGS_DIR / "elbow_silhouette.svg", dpi=150)
     plt.close(fig)
     print("  ✓ elbow_silhouette.png")
 
@@ -210,6 +218,7 @@ def pca_iris():
     ax.set_title('PCA of Iris Dataset (2 Components)')
     fig.colorbar(scatter, ax=ax, label='Species')
     fig.savefig(FIGS_DIR / "pca_iris.png", dpi=150)
+    fig.savefig(FIGS_DIR / "pca_iris.svg", dpi=150)
     plt.close(fig)
     print("  ✓ pca_iris.png")
 
@@ -230,6 +239,7 @@ def pca_variance():
     ax.legend()
     ax.grid(True)
     fig.savefig(FIGS_DIR / "pca_variance.png", dpi=150)
+    fig.savefig(FIGS_DIR / "pca_variance.svg", dpi=150)
     plt.close(fig)
     print("  ✓ pca_variance.png")
 
@@ -246,6 +256,7 @@ def pca_breast_cancer():
     ax.set_title(f'Breast Cancer: 2D PCA ({pca2.explained_variance_ratio_.sum():.1%} variance)')
     fig.colorbar(scatter, ax=ax, label='Malignant')
     fig.savefig(FIGS_DIR / "pca_breast_cancer.png", dpi=150)
+    fig.savefig(FIGS_DIR / "pca_breast_cancer.svg", dpi=150)
     plt.close(fig)
     print("  ✓ pca_breast_cancer.png")
 
@@ -269,6 +280,7 @@ def boosting_sequential():
     plt.suptitle('Gradient Boosting: Sequential Residual Fitting')
     plt.tight_layout()
     fig.savefig(FIGS_DIR / "boosting_sequential.png", dpi=150)
+    fig.savefig(FIGS_DIR / "boosting_sequential.svg", dpi=150)
     plt.close(fig)
     print("  ✓ boosting_sequential.png")
 
@@ -288,6 +300,7 @@ def plot_permutation_importance():
     ax.set_title('Feature Importance (Permutation)')
     plt.tight_layout()
     fig.savefig(FIGS_DIR / "permutation_importance.png", dpi=150)
+    fig.savefig(FIGS_DIR / "permutation_importance.svg", dpi=150)
     plt.close(fig)
     print("  ✓ permutation_importance.png")
 
@@ -307,6 +320,7 @@ def partial_dependence():
     plt.suptitle('Partial Dependence Plots')
     plt.tight_layout()
     fig.savefig(FIGS_DIR / "partial_dependence.png", dpi=150)
+    fig.savefig(FIGS_DIR / "partial_dependence.svg", dpi=150)
     plt.close(fig)
     print("  ✓ partial_dependence.png")
 
@@ -327,6 +341,7 @@ def pdp_breast_cancer():
     plt.suptitle('Partial Dependence: Breast Cancer')
     plt.tight_layout()
     fig.savefig(FIGS_DIR / "pdp_breast_cancer.png", dpi=150)
+    fig.savefig(FIGS_DIR / "pdp_breast_cancer.svg", dpi=150)
     plt.close(fig)
     print("  ✓ pdp_breast_cancer.png")
 

@@ -1,31 +1,22 @@
-# Subunit 03: Advanced Topics
+# Subunit 3: Advanced Topics in Machine Learning
 
-**Lessons:** L8 (Gradient Boosting), L9 (Model Interpretation)
+## Topics
 
-## Learning objectives
+- Neural Networks: perceptron, multi-layer networks, activation functions, backpropagation
+- Deep Learning overview: CNNs for images, RNNs/LSTMs for sequences
+- Natural Language Processing: tokenization, embeddings, transformers basics
+- Time Series Analysis: ARIMA, Prophet, LSTM for time series
+- Recommendation Systems: collaborative filtering, content-based, hybrid
+- Model Deployment: model serialization (pickle, joblib), REST APIs, containerization
+- MLOps fundamentals: experiment tracking, model versioning, CI/CD for ML
 
-After completing this subunit, students will be able to:
+## Key Skills
 
-- Explain the boosting paradigm and how it differs from bagging
-- Train gradient boosting models with scikit-learn
-- Describe how XGBoost and LightGBM improve upon basic gradient boosting
-- Compute and interpret permutation feature importance
-- Generate and interpret partial dependence plots
-- Explain the intuition behind SHAP and LIME
+- Understand when deep learning is appropriate vs. traditional ML
+- Build a simple neural network with scikit-learn or a framework
+- Deploy a trained model as a simple API
+- Track experiments and compare model versions
 
 ## Prerequisites
 
-L4 (Decision Trees), L5 (Random Forest), L2–L5 for model interpretation
-
-## Key concepts
-
-- Boosting, additive training, residual fitting
-- Learning rate, n_estimators, early stopping
-- XGBoost, LightGBM (conceptual)
-- Permutation importance, partial dependence
-- SHAP values, LIME explanations
-
-## Software
-
-scikit-learn, numpy, pandas, matplotlib
-Optional: xgboost, lightgbm, shap, lime
+Completion of subunits 1 and 2.

@@ -1,30 +1,34 @@
-# Subunit 04: Applications
+# Subunit 4: Applications of Machine Learning
 
-**Lessons:** L10 (Applications)
+## Application Areas
 
-## Learning objectives
+### Biotechnology & Healthcare
+- Drug discovery and virtual screening
+- Protein structure prediction (AlphaFold)
+- Medical image analysis (X-ray, MRI, histopathology)
+- Genomic variant interpretation
+- Personalized treatment planning
+- Clinical trial optimization
 
-After completing this subunit, students will be able to:
+### SaaS & Business Analytics
+- Customer churn prediction and prevention
+- Recommendation engines for SaaS platforms
+- Customer segmentation and personalization
+- Product usage analytics and feature adoption
+- Revenue forecasting and pricing optimization
+- Anomaly detection for system monitoring
 
-- Build an end-to-end ML pipeline from raw data to deployed model
-- Predict product quality in a biotechnology context
-- Segment customers using clustering in a SaaS context
-- Combine supervised and unsupervised techniques in a single project
+### Case Studies
+
+See `course/case_studies/` for complete walkthroughs:
+- Biotech Diagnosis
+- SaaS Churn Prediction
+- Clinical Trial Outcome Prediction
+- Customer Segmentation
+
+## Key Skills
+
+- Translate business problems into ML tasks
+- Select appropriate algorithms for domain-specific problems
 - Communicate ML results to non-technical stakeholders
-
-## Prerequisites
-
-All previous lessons (L1–L9)
-
-## Key concepts
-
-- End-to-end ML pipeline
-- Data preprocessing and feature engineering
-- Model selection and hyperparameter tuning
-- Business metrics vs. ML metrics
-- Model deployment considerations
-- Communication of results
-
-## Software
-
-scikit-learn, numpy, pandas, matplotlib, seaborn
+- Understand domain-specific constraints (regulatory, ethical, interpretability)

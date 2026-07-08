@@ -40,6 +40,7 @@ def figure1_1_ai_dimensions():
     ax.text(1.5, 0.5, "Rational\nAgent", ha="center", va="center", fontsize=11, fontweight="bold", color="darkgreen")
     ax.text(2.1, 0.5, "← This course", fontsize=10, color="green", va="center")
     fig.savefig(FIGS_DIR / "figure1_1_ai_dimensions.png", dpi=150, bbox_inches="tight")
+    fig.savefig(FIGS_DIR / "figure1_1_ai_dimensions.svg", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -66,6 +67,7 @@ def figure1_2_agent_environment():
     ax.text(0.5, 0.82, "Percepts", ha="center", fontsize=9, color="green", fontstyle="italic")
     ax.text(0.5, 0.12, "Actions", ha="center", fontsize=9, color="red", fontstyle="italic")
     fig.savefig(FIGS_DIR / "figure1_2_agent_environment.png", dpi=150, bbox_inches="tight")
+    fig.savefig(FIGS_DIR / "figure1_2_agent_environment.svg", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -105,6 +107,7 @@ def figure2_1_ai_timeline():
     ]
     ax.legend(handles=patches, loc="lower center", bbox_to_anchor=(0.5, -0.25), ncol=3, fontsize=9)
     fig.savefig(FIGS_DIR / "figure2_1_ai_timeline.png", dpi=150, bbox_inches="tight")
+    fig.savefig(FIGS_DIR / "figure2_1_ai_timeline.svg", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -131,6 +134,7 @@ def figure2_2_ai_hype_cycle():
     ax.set_title("Gartner Hype Cycle for AI", fontsize=13, fontweight="bold")
     ax.grid(True, alpha=0.3)
     fig.savefig(FIGS_DIR / "figure2_2_ai_hype_cycle.png", dpi=150, bbox_inches="tight")
+    fig.savefig(FIGS_DIR / "figure2_2_ai_hype_cycle.svg", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -160,6 +164,7 @@ def figure3_1_ai_capability_pyramid():
     ax.set_ylim(-0.2, 4.2)
     ax.set_title("The AI Capability Pyramid", fontsize=14, fontweight="bold")
     fig.savefig(FIGS_DIR / "figure3_1_ai_capability_pyramid.png", dpi=150, bbox_inches="tight")
+    fig.savefig(FIGS_DIR / "figure3_1_ai_capability_pyramid.svg", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -183,6 +188,7 @@ def figure3_2_types_of_ai():
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
     fig.savefig(FIGS_DIR / "figure3_2_types_of_ai.png", dpi=150, bbox_inches="tight")
+    fig.savefig(FIGS_DIR / "figure3_2_types_of_ai.svg", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -210,6 +216,7 @@ def figure4_1_paradigm_comparison():
     ax.text(0.5, 0.92, "AI Paradigms: Evolution of Approaches", ha="center", fontsize=13, fontweight="bold")
     ax.text(0.5, 0.02, "Increasing complexity and data requirements →", ha="center", fontsize=9, color="gray")
     fig.savefig(FIGS_DIR / "figure4_1_paradigm_comparison.png", dpi=150, bbox_inches="tight")
+    fig.savefig(FIGS_DIR / "figure4_1_paradigm_comparison.svg", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -243,6 +250,7 @@ def figure4_2_neural_network():
     ax.set_xlim(-2.2, 2.2)
     ax.set_ylim(-1.2, 1.2)
     fig.savefig(FIGS_DIR / "figure4_2_neural_network.png", dpi=150, bbox_inches="tight")
+    fig.savefig(FIGS_DIR / "figure4_2_neural_network.svg", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -270,6 +278,7 @@ def figure4_3_ml_workflow():
     ax.set_ylim(0, 1)
     ax.text(0.5, 0.93, "The Machine Learning Workflow", ha="center", fontsize=13, fontweight="bold")
     fig.savefig(FIGS_DIR / "figure4_3_ml_workflow.png", dpi=150, bbox_inches="tight")
+    fig.savefig(FIGS_DIR / "figure4_3_ml_workflow.svg", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -297,6 +306,7 @@ def figure5_1_applications_mindmap():
             item_y = y + (center[1] - y) * 0.35 + (j - 1) * 0.035
             ax.text(item_x, item_y, f"• {item}", ha="center", va="center", fontsize=7, color="dimgray")
     fig.savefig(FIGS_DIR / "figure5_1_applications_mindmap.png", dpi=150, bbox_inches="tight")
+    fig.savefig(FIGS_DIR / "figure5_1_applications_mindmap.svg", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -318,6 +328,7 @@ def figure5_2_recommendation_systems():
     ax.set_ylim(0, 1)
     ax.text(0.5, 0.9, "Recommendation System Approaches", ha="center", fontsize=13, fontweight="bold")
     fig.savefig(FIGS_DIR / "figure5_2_recommendation_systems.png", dpi=150, bbox_inches="tight")
+    fig.savefig(FIGS_DIR / "figure5_2_recommendation_systems.svg", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -348,6 +359,7 @@ def figure6_1_drug_discovery():
     ax.set_ylim(0, 1)
     ax.text(0.5, 0.93, "AI in the Drug Discovery Pipeline", ha="center", fontsize=13, fontweight="bold")
     fig.savefig(FIGS_DIR / "figure6_1_drug_discovery.png", dpi=150, bbox_inches="tight")
+    fig.savefig(FIGS_DIR / "figure6_1_drug_discovery.svg", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -377,6 +389,7 @@ def figure6_2_alphafold():
     ax.set_ylim(0, 1)
     ax.text(0.5, 0.95, "AlphaFold Architecture Concept", ha="center", fontsize=13, fontweight="bold")
     fig.savefig(FIGS_DIR / "figure6_2_alphafold.png", dpi=150, bbox_inches="tight")
+    fig.savefig(FIGS_DIR / "figure6_2_alphafold.svg", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -402,6 +415,7 @@ def figure6_3_medical_imaging():
     ax.set_ylim(0, 1)
     ax.text(0.5, 0.92, "AI-Powered Medical Imaging Workflow", ha="center", fontsize=13, fontweight="bold")
     fig.savefig(FIGS_DIR / "figure6_3_medical_imaging.png", dpi=150, bbox_inches="tight")
+    fig.savefig(FIGS_DIR / "figure6_3_medical_imaging.svg", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -428,6 +442,7 @@ def figure7_1_churn_pipeline():
     ax.set_ylim(0, 1)
     ax.text(0.5, 0.92, "Customer Churn Prediction Pipeline", ha="center", fontsize=13, fontweight="bold")
     fig.savefig(FIGS_DIR / "figure7_1_churn_pipeline.png", dpi=150, bbox_inches="tight")
+    fig.savefig(FIGS_DIR / "figure7_1_churn_pipeline.svg", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -461,6 +476,7 @@ def figure7_2_personalization_engine():
     ax.set_ylim(0, 1)
     ax.text(0.5, 0.92, "Personalization Engine Architecture", ha="center", fontsize=13, fontweight="bold")
     fig.savefig(FIGS_DIR / "figure7_2_personalization_engine.png", dpi=150, bbox_inches="tight")
+    fig.savefig(FIGS_DIR / "figure7_2_personalization_engine.svg", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -510,6 +526,7 @@ def figure7_3_saas_dashboard():
     axes[1, 2].tick_params(labelsize=6)
     plt.tight_layout()
     fig.savefig(FIGS_DIR / "figure7_3_saas_dashboard.png", dpi=150, bbox_inches="tight")
+    fig.savefig(FIGS_DIR / "figure7_3_saas_dashboard.svg", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
 

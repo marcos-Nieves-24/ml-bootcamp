@@ -42,8 +42,11 @@ Seaborn provides:
 
 ### Installation and Import
 
-```python
+```bash
 pip install seaborn
+```
+
+```python
 import seaborn as sns
 ```
 

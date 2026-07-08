@@ -256,6 +256,7 @@ def recommend(items, user_history, method='collaborative'):
     Returns: list of recommended item_ids
     """
     # Your implementation here
+    return []
 ```
 
 For collaborative filtering, create a simple version: find users with similar item histories and recommend items they liked that the current user has not seen.

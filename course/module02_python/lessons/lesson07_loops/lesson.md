@@ -37,7 +37,7 @@ The `for` loop iterates over a sequence (string, list, tuple, etc.):
 
 ```python
 for variable in sequence:
-    # code to repeat
+    pass  # code to repeat
 ```
 
 ### The range() Function
@@ -56,7 +56,7 @@ The `while` loop repeats as long as a condition is True:
 
 ```python
 while condition:
-    # code to repeat
+    pass  # code to repeat
 ```
 
 ### Break and Continue

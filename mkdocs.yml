@@ -1,0 +1,227 @@
+site_name: "ML Bootcamp — Machine Learning for Data Analysis and SaaS"
+site_description: "Curso universitario de introducción al Machine Learning para estudiantes de Biotecnología, Bioinformática y Análisis de Datos"
+site_url: "https://ml-bootcamp.vercel.app"
+repo_url: "https://github.com/marcos-Nieves-24/ml-bootcamp"
+repo_name: "marcos-Nieves-24/ml-bootcamp"
+edit_uri: "edit/main/docs/"
+
+theme:
+  name: material
+  language: es
+  favicon: assets/favicon.png
+  icon:
+    logo: fontawesome/solid/laptop-code
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Modo oscuro
+    - scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.annotate
+    - content.code.copy
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      include_source: true
+      execute: false
+      allow_errors: false
+      # ignore_h1_title: true
+  # - minify:  # requires mkdocs-minify-plugin
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/marcos-Nieves-24/ml-bootcamp
+  consent:
+    title: Aviso de cookies
+    description: Este sitio usa cookies para analytics.
+
+copyright: >
+  &copy; 2026 marcos-Nieves-24 &mdash; MIT License
+
+extra_css:
+  - assets/extra.css
+
+nav:
+  - Inicio: index.md
+  - "Módulo 1: Introducción a la IA":
+    - Overview: course/module01_ai/README.md
+    - L1. What is AI?: course/module01_ai/lessons/lesson01_what_is_ai/lesson.md
+    - "📓 Notebook L1": course/module01_ai/lessons/lesson01_what_is_ai/notebook.ipynb
+    - L2. History of AI: course/module01_ai/lessons/lesson02_history_of_ai/lesson.md
+    - "📓 Notebook L2": course/module01_ai/lessons/lesson02_history_of_ai/notebook.ipynb
+    - L3. Types of AI: course/module01_ai/lessons/lesson03_types_of_ai/lesson.md
+    - "📓 Notebook L3": course/module01_ai/lessons/lesson03_types_of_ai/notebook.ipynb
+    - L4. AI Paradigms: course/module01_ai/lessons/lesson04_ai_paradigms/lesson.md
+    - "📓 Notebook L4": course/module01_ai/lessons/lesson04_ai_paradigms/notebook.ipynb
+    - L5. AI Applications: course/module01_ai/lessons/lesson05_ai_applications/lesson.md
+    - "📓 Notebook L5": course/module01_ai/lessons/lesson05_ai_applications/notebook.ipynb
+    - L6. AI in Biotech: course/module01_ai/lessons/lesson06_ai_in_biotech/lesson.md
+    - "📓 Notebook L6": course/module01_ai/lessons/lesson06_ai_in_biotech/notebook.ipynb
+    - L7. AI in SaaS: course/module01_ai/lessons/lesson07_ai_in_saas/lesson.md
+    - "📓 Notebook L7": course/module01_ai/lessons/lesson07_ai_in_saas/notebook.ipynb
+    - "📓 Intro Notebook": course/module01_ai/notebooks/01_intro_to_ai.ipynb
+  - "Módulo 2: Python":
+    - Overview: course/module02_python/README.md
+    - L1. Installing Python: course/module02_python/lessons/lesson01_installing_python/lesson.md
+    - "📓 Notebook L1": course/module02_python/lessons/lesson01_installing_python/notebook.ipynb
+    - L2. Jupyter Notebook: course/module02_python/lessons/lesson02_jupyter_notebook/lesson.md
+    - "📓 Notebook L2": course/module02_python/lessons/lesson02_jupyter_notebook/notebook.ipynb
+    - L3. Variables: course/module02_python/lessons/lesson03_variables/lesson.md
+    - "📓 Notebook L3": course/module02_python/lessons/lesson03_variables/notebook.ipynb
+    - L4. Data Types: course/module02_python/lessons/lesson04_data_types/lesson.md
+    - "📓 Notebook L4": course/module02_python/lessons/lesson04_data_types/notebook.ipynb
+    - L5. Operators: course/module02_python/lessons/lesson05_operators/lesson.md
+    - "📓 Notebook L5": course/module02_python/lessons/lesson05_operators/notebook.ipynb
+    - L6. Functions: course/module02_python/lessons/lesson06_functions/lesson.md
+    - "📓 Notebook L6": course/module02_python/lessons/lesson06_functions/notebook.ipynb
+    - L7. Loops: course/module02_python/lessons/lesson07_loops/lesson.md
+    - "📓 Notebook L7": course/module02_python/lessons/lesson07_loops/notebook.ipynb
+    - L8. Conditionals: course/module02_python/lessons/lesson08_conditionals/lesson.md
+    - "📓 Notebook L8": course/module02_python/lessons/lesson08_conditionals/notebook.ipynb
+    - L9. Lists: course/module02_python/lessons/lesson09_lists/lesson.md
+    - "📓 Notebook L9": course/module02_python/lessons/lesson09_lists/notebook.ipynb
+    - L10. Tuples: course/module02_python/lessons/lesson10_tuples/lesson.md
+    - "📓 Notebook L10": course/module02_python/lessons/lesson10_tuples/notebook.ipynb
+    - L11. Dictionaries: course/module02_python/lessons/lesson11_dictionaries/lesson.md
+    - "📓 Notebook L11": course/module02_python/lessons/lesson11_dictionaries/notebook.ipynb
+    - L12. Sets: course/module02_python/lessons/lesson12_sets/lesson.md
+    - "📓 Notebook L12": course/module02_python/lessons/lesson12_sets/notebook.ipynb
+    - L13. NumPy: course/module02_python/lessons/lesson13_numpy/lesson.md
+    - "📓 Notebook L13": course/module02_python/lessons/lesson13_numpy/notebook.ipynb
+    - L14. Pandas: course/module02_python/lessons/lesson14_pandas/lesson.md
+    - "📓 Notebook L14": course/module02_python/lessons/lesson14_pandas/notebook.ipynb
+    - L15. Matplotlib: course/module02_python/lessons/lesson15_matplotlib/lesson.md
+    - "📓 Notebook L15": course/module02_python/lessons/lesson15_matplotlib/notebook.ipynb
+    - L16. Seaborn: course/module02_python/lessons/lesson16_seaborn/lesson.md
+    - "📓 Notebook L16": course/module02_python/lessons/lesson16_seaborn/notebook.ipynb
+    - "📓 Intro Notebook": course/module02_python/notebooks/01_python_fundamentals.ipynb
+  - "Módulo 3: Estadística":
+    - Overview: course/module03_statistics/README.md
+    - L1. Descriptive Stats: course/module03_statistics/lessons/lesson01_descriptive_stats/lesson.md
+    - "📓 Notebook L1": course/module03_statistics/lessons/lesson01_descriptive_stats/notebook.ipynb
+    - L2. Data Distribution: course/module03_statistics/lessons/lesson02_data_distribution/lesson.md
+    - "📓 Notebook L2": course/module03_statistics/lessons/lesson02_data_distribution/notebook.ipynb
+    - L3. Probability: course/module03_statistics/lessons/lesson03_probability/lesson.md
+    - "📓 Notebook L3": course/module03_statistics/lessons/lesson03_probability/notebook.ipynb
+    - L4. Statistical Distributions: course/module03_statistics/lessons/lesson04_statistical_distributions/lesson.md
+    - "📓 Notebook L4": course/module03_statistics/lessons/lesson04_statistical_distributions/notebook.ipynb
+    - L5. Relationships: course/module03_statistics/lessons/lesson05_relationships/lesson.md
+    - "📓 Notebook L5": course/module03_statistics/lessons/lesson05_relationships/notebook.ipynb
+    - L6. Exploratory Data Analysis: course/module03_statistics/lessons/lesson06_exploratory_data_analysis/lesson.md
+    - "📓 Notebook L6": course/module03_statistics/lessons/lesson06_exploratory_data_analysis/notebook.ipynb
+    - L7. Dimensionality Reduction: course/module03_statistics/lessons/lesson07_dimensionality_reduction/lesson.md
+    - "📓 Notebook L7": course/module03_statistics/lessons/lesson07_dimensionality_reduction/notebook.ipynb
+    - L8. Clustering: course/module03_statistics/lessons/lesson08_clustering/lesson.md
+    - "📓 Notebook L8": course/module03_statistics/lessons/lesson08_clustering/notebook.ipynb
+    - L9. Model Evaluation: course/module03_statistics/lessons/lesson09_model_evaluation/lesson.md
+    - "📓 Notebook L9": course/module03_statistics/lessons/lesson09_model_evaluation/notebook.ipynb
+    - L10. Data Storytelling: course/module03_statistics/lessons/lesson10_data_storytelling/lesson.md
+    - "📓 Notebook L10": course/module03_statistics/lessons/lesson10_data_storytelling/notebook.ipynb
+    - "📓 Intro Notebook": course/module03_statistics/notebooks/01_statistics_for_ml.ipynb
+  - "Módulo 4: Machine Learning":
+    - Overview: course/module04_machine_learning/README.md
+    - L1. ML Fundamentals: course/module04_machine_learning/lessons/lesson01_ml_fundamentals/lesson.md
+    - "📓 Notebook L1": course/module04_machine_learning/lessons/lesson01_ml_fundamentals/notebook.ipynb
+    - L2. Linear Regression: course/module04_machine_learning/lessons/lesson02_linear_regression/lesson.md
+    - "📓 Notebook L2": course/module04_machine_learning/lessons/lesson02_linear_regression/notebook.ipynb
+    - L3. Classification: course/module04_machine_learning/lessons/lesson03_classification/lesson.md
+    - "📓 Notebook L3": course/module04_machine_learning/lessons/lesson03_classification/notebook.ipynb
+    - L4. Decision Trees: course/module04_machine_learning/lessons/lesson04_decision_trees/lesson.md
+    - "📓 Notebook L4": course/module04_machine_learning/lessons/lesson04_decision_trees/notebook.ipynb
+    - L5. Random Forest: course/module04_machine_learning/lessons/lesson05_random_forest/lesson.md
+    - "📓 Notebook L5": course/module04_machine_learning/lessons/lesson05_random_forest/notebook.ipynb
+    - L6. K-Means: course/module04_machine_learning/lessons/lesson06_kmeans/lesson.md
+    - "📓 Notebook L6": course/module04_machine_learning/lessons/lesson06_kmeans/notebook.ipynb
+    - L7. PCA: course/module04_machine_learning/lessons/lesson07_pca/lesson.md
+    - "📓 Notebook L7": course/module04_machine_learning/lessons/lesson07_pca/notebook.ipynb
+    - L8. Gradient Boosting: course/module04_machine_learning/lessons/lesson08_gradient_boosting/lesson.md
+    - "📓 Notebook L8": course/module04_machine_learning/lessons/lesson08_gradient_boosting/notebook.ipynb
+    - L9. Model Interpretation: course/module04_machine_learning/lessons/lesson09_model_interpretation/lesson.md
+    - "📓 Notebook L9": course/module04_machine_learning/lessons/lesson09_model_interpretation/notebook.ipynb
+    - L10. Applications: course/module04_machine_learning/lessons/lesson10_applications/lesson.md
+    - "📓 Notebook L10": course/module04_machine_learning/lessons/lesson10_applications/notebook.ipynb
+    - "📓 Intro Notebook": course/module04_machine_learning/notebooks/01_intro_to_ml.ipynb
+    - Subunits:
+      - Supervised learning: course/module04_machine_learning/subunits/01_supervised/README.md
+      - Unsupervised learning: course/module04_machine_learning/subunits/02_unsupervised/README.md
+      - Advanced topics: course/module04_machine_learning/subunits/03_advanced/README.md
+      - Applications: course/module04_machine_learning/subunits/04_applications/README.md
+  - "Módulo 5: Ética en IA":
+    - Overview: course/module05_ethics/README.md
+    - L1. Intro to Ethics: course/module05_ethics/lessons/lesson01_intro_ethics/lesson.md
+    - "📓 Notebook L1": course/module05_ethics/lessons/lesson01_intro_ethics/notebook.ipynb
+    - L2. Bias and Fairness: course/module05_ethics/lessons/lesson02_bias_fairness/lesson.md
+    - "📓 Notebook L2": course/module05_ethics/lessons/lesson02_bias_fairness/notebook.ipynb
+    - L3. Transparency: course/module05_ethics/lessons/lesson03_transparency/lesson.md
+    - "📓 Notebook L3": course/module05_ethics/lessons/lesson03_transparency/notebook.ipynb
+    - L4. Privacy: course/module05_ethics/lessons/lesson04_privacy/lesson.md
+    - "📓 Notebook L4": course/module05_ethics/lessons/lesson04_privacy/notebook.ipynb
+    - L5. Social Impact: course/module05_ethics/lessons/lesson05_social_impact/lesson.md
+    - "📓 Notebook L5": course/module05_ethics/lessons/lesson05_social_impact/notebook.ipynb
+    - L6. Regulation: course/module05_ethics/lessons/lesson06_regulation/lesson.md
+    - "📓 Notebook L6": course/module05_ethics/lessons/lesson06_regulation/notebook.ipynb
+    - L7. Case Studies: course/module05_ethics/lessons/lesson07_case_studies/lesson.md
+    - "📓 Notebook L7": course/module05_ethics/lessons/lesson07_case_studies/notebook.ipynb
+    - "📓 Intro Notebook": course/module05_ethics/notebooks/01_ethics_in_ai.ipynb
+  - "Casos de Estudio":
+    - Diagnóstico Biotech: course/case_studies/biotech_diagnosis/README.md
+    - SaaS Churn: course/case_studies/saas_churn/README.md
+  - "Datasets":
+    - Biotech Diagnosis: datasets/synthetic/biotech_diagnosis/README.md
+    - Biotech Quality: datasets/synthetic/biotech_quality/README.md
+    - Clinical Trial: datasets/synthetic/clinical_trial/README.md
+    - Credit Data: datasets/synthetic/credit_data/README.md
+    - Customer Churn: datasets/synthetic/customer_churn/README.md
+    - Customer Segments: datasets/synthetic/customer_segments/README.md
+    - Gene Expression: datasets/synthetic/gene_expression/README.md
+    - Protein Solubility: datasets/synthetic/protein_solubility/README.md
+    - SaaS Metrics: datasets/synthetic/saas_metrics/README.md
+  - "Glosario": glossary.md
+
+watch:
+  - course
+  - datasets
+  - docs

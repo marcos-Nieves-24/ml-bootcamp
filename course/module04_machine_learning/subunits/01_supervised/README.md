@@ -1,32 +1,22 @@
-# Subunit 01: Supervised Learning
+# Subunit 1: Supervised Learning — Deep Dive
 
-**Lessons:** L1 (ML Fundamentals), L2 (Linear Regression), L3 (Classification), L4 (Decision Trees), L5 (Random Forest)
+## Topics
 
-## Learning objectives
+- Linear Regression: assumptions, interpretation, regularization (Ridge, Lasso)
+- Logistic Regression: odds ratios, decision boundaries, multiclass extensions
+- Decision Trees: splitting criteria (Gini, entropy), pruning, tree visualization
+- Ensemble Methods: Bagging, Random Forest, Gradient Boosting, XGBoost
+- Support Vector Machines: kernels, margin, soft margin
+- Model Evaluation: cross-validation strategies, hyperparameter tuning (GridSearchCV, RandomizedSearchCV)
+- Feature Engineering: polynomial features, interaction terms, domain-specific features
 
-After completing this subunit, students will be able to:
+## Key Skills
 
-- Distinguish supervised from unsupervised learning
-- Train regression and classification models with scikit-learn
-- Evaluate models using appropriate metrics (MSE, R², accuracy, precision, recall, F1, ROC AUC)
-- Interpret decision tree and random forest models
-- Identify and mitigate overfitting
+- Select appropriate supervised algorithm for different problem types
+- Implement cross-validation and hyperparameter tuning
+- Interpret model coefficients and feature importance
+- Diagnose overfitting and underfitting
 
-## Prerequisites
+## Lessons
 
-Module 3 statistics (variance, correlation, probability, Bayes theorem)
-
-## Key concepts
-
-- Features, labels, target variable
-- Training / validation / test split
-- Bias-variance tradeoff
-- Ordinary Least Squares, gradient descent
-- Logistic regression, decision boundary
-- Confusion matrix, ROC curve
-- Gini impurity, entropy, pruning
-- Bagging, ensemble, feature importance
-
-## Software
-
-scikit-learn, numpy, pandas, matplotlib, seaborn
+Refer to lessons 1-8 in the main module 4 directory.

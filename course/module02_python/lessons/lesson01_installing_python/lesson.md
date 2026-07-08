@@ -143,9 +143,9 @@ python
 Then type:
 
 ```python
->>> print("Hello, Python!")
->>> 2 + 2
->>> exit()
+print("Hello, Python!")
+result = 2 + 2
+print(result)
 ```
 
 ### Creating a Virtual Environment

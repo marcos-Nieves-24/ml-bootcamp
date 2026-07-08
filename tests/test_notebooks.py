@@ -160,6 +160,7 @@ def test_lesson_notebooks_have_exercises():
         pytest.fail(f"Lesson notebooks without exercise sections:\n" + "\n".join(errors))
 
 
+@pytest.mark.slow
 @pytest.mark.skipif(
     not Path(sys.prefix + "/bin") .exists() and not Path(sys.executable).parent.joinpath("jupyter").exists(),
     reason="jupyter not available for execution",

@@ -1,0 +1,15 @@
+{% extends "main.html" %}
+
+{% block content %}
+  <style>
+    .error-page { text-align: center; padding: 4rem 0; }
+    .error-page h1 { font-size: 4rem; margin-bottom: 0; }
+    .error-page .md-button { margin-top: 2rem; }
+  </style>
+  <div class="error-page">
+    <h1>404</h1>
+    <p>Esta página no existe en el curso.</p>
+    <p>Si creés que es un error, <a href="https://github.com/marcos-Nieves-24/ml-bootcamp/issues">abrí un issue</a>.</p>
+    <a href="{{ base_url }}" class="md-button md-button--primary">Volver al inicio</a>
+  </div>
+{% endblock %}
