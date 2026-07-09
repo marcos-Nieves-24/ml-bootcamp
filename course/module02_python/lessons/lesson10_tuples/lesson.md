@@ -21,15 +21,15 @@ Quiz: quiz.md
 
 # Tuplas
 
-## Motivation
+## Motivación
 
 Tuples are often called "immutable lists" — they store ordered collections like lists but cannot be changed after creation. This immutability makes them useful for fixed data that shouldn't be modified, like database records, coordinates, and function return values. In biotechnology, tuples represent (gene, expression) pairs, (patient_id, diagnosis) records, and DNA codon triplets. In SaaS, they store (user_id, timestamp, event) log entries.
 
-## Big Picture
+## Panorama General
 
 In the previous lesson, you learned lists — ordered, mutable collections. Tuples are ordered but immutable. Understanding the difference between mutable and immutable data structures is crucial for writing correct and efficient code. This lesson prepares you for dictionaries (next lesson), where tuples are used as keys (lists cannot be dictionary keys).
 
-## Theory
+## Teoría
 
 ### Creating Tuples
 
@@ -85,7 +85,7 @@ t.index(2)    # 1 (first occurrence)
 - **Multiple return values**: Functions return tuples by default
 - **Dictionary keys**: Tuples are hashable, lists are not
 - **Immutable requirements**: Data that should not change
-- **Performance**: Tuples are slightly faster than lists
+- **Rendimiento**: Tuples are slightly faster than lists
 
 ### Tuple vs List Comparison
 
@@ -99,7 +99,7 @@ t.index(2)    # 1 (first occurrence)
 | Memory | Slightly less | Slightly more |
 | Speed | Slightly faster | Slightly slower |
 
-## Visual Explanation
+## Explicación Visual
 
 ```
 Tuple vs List Memory
@@ -114,7 +114,7 @@ Tuple (immutable):          List (mutable):
 └───────────────────┘      └───────────────────┘
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 # Creating tuples
@@ -216,7 +216,7 @@ for ts, uid, event_type, meta in events:
         print(f"Purchase: {uid} bought {product} for ${amount:.2f}")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Forgetting comma for single-element tuple**: `(5)` is an int, `(5,)` is a tuple
 2. **Trying to modify a tuple**: Creates TypeError
@@ -224,7 +224,7 @@ for ts, uid, event_type, meta in events:
 4. **Unpacking mismatch**: Number of variables must match tuple length
 5. **Using mutable elements in tuple**: Tuple with a list inside is not immutable overall
 
-## Best Practices
+## Buenas Prácticas
 
 - Use tuples for fixed, structured data (like database records)
 - Use tuples for multiple return values from functions
@@ -232,7 +232,7 @@ for ts, uid, event_type, meta in events:
 - Use tuples as dictionary keys when you need compound keys
 - Prefer tuples over lists for data that shouldn't change
 
-## Summary
+## Resumen
 
 - Tuples are ordered, immutable sequences created with `()`
 - Single-element tuples require a trailing comma: `(42,)`
@@ -241,7 +241,7 @@ for ts, uid, event_type, meta in events:
 - Tuples protect data from accidental modification
 - Use tuples for fixed records and multiple return values
 
-## Key Terms
+## Términos Clave
 
 - **Tuple**: Immutable ordered sequence
 - **Immutable**: Cannot be changed after creation
@@ -249,25 +249,25 @@ for ts, uid, event_type, meta in events:
 - **Hashable**: Can be used as a dictionary key (tuple yes, list no)
 - **Packing**: Creating a tuple from multiple values
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic
+### Nivel 1: Básico
 
 1. How do you create a tuple with a single element?
 2. What happens if you try to change a tuple element?
 3. What is the output of `a, b, *rest = (1, 2, 3, 4, 5)`?
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
 4. Write a function `divide_and_remainder(a, b)` that returns a tuple (quotient, remainder) and use unpacking to print both values.
 5. Create a list of tuples representing (name, score) pairs for 5 students. Find the student with the highest score.
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 6. Why can tuples be used as dictionary keys but lists cannot? What property of tuples enables this?
 7. Under what circumstances would the immutability of tuples be a liability rather than an asset?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a program that manages **inventory items** as tuples:
 1. Each item is a tuple: `(item_id, name, quantity, price)`

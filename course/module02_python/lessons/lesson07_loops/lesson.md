@@ -21,15 +21,15 @@ Quiz: quiz.md
 
 # Bucles
 
-## Motivation
+## Motivación
 
 Loops allow you to repeat operations efficiently. Instead of writing the same code for each item in a dataset, you write a loop that processes all items automatically. In biotechnology, loops process thousands of genes, DNA sequences, or patient records. In SaaS, they iterate over user transactions, log entries, and feature calculations. Without loops, data analysis at scale would be impossible.
 
-## Big Picture
+## Panorama General
 
 In the previous lesson, you learned functions — reusable code blocks. Loops add repetition to your toolkit. Combined with conditionals (next lesson), loops enable you to build complex data processing pipelines. After this lesson, you will understand lists (Lesson 9) better because loops are the primary way to process list elements.
 
-## Theory
+## Teoría
 
 ### The for Loop
 
@@ -85,7 +85,7 @@ else:
     print("Loop completed without break")
 ```
 
-## Visual Explanation
+## Explicación Visual
 
 ```
 For Loop Flow:
@@ -111,7 +111,7 @@ While Loop Flow:
                   └─────────┘
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 # For loop with a list
@@ -220,7 +220,7 @@ print(f"\nTotal churned: {total_churned}")
 print(f"Avg monthly churn: {total_churned / len(monthly_activity):.0f}")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Infinite while loops**: Forgetting to update the condition variable
 2. **Modifying a list while iterating**: Can cause skipped items or errors. Iterate over a copy instead
@@ -228,7 +228,7 @@ print(f"Avg monthly churn: {total_churned / len(monthly_activity):.0f}")
 4. **Using `range(len(list))` instead of iterating directly**: Pythonic style prefers direct iteration
 5. **Forgetting colon and indentation**: Required syntax for loop blocks
 
-## Best Practices
+## Buenas Prácticas
 
 - Prefer `for` loops over `while` when iterating over sequences
 - Use `enumerate()` when you need both index and value
@@ -245,7 +245,7 @@ for gene, expression in zip(genes, expressions):
     print(f"{gene}: {expression}")
 ```
 
-## Summary
+## Resumen
 
 - `for` loops iterate over sequences (lists, strings, ranges)
 - `while` loops repeat while a condition is True
@@ -254,7 +254,7 @@ for gene, expression in zip(genes, expressions):
 - Nested loops handle multi-dimensional data
 - Loops can have `else` clauses that execute on normal completion
 
-## Key Terms
+## Términos Clave
 
 - **Iteration**: One execution of the loop body
 - **Iterable**: Object that can be looped over (list, str, range, etc.)
@@ -263,25 +263,25 @@ for gene, expression in zip(genes, expressions):
 - **Nested loop**: Loop inside another loop
 - **enumerate()**: Built-in that yields (index, value) pairs
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic
+### Nivel 1: Básico
 
 1. What is the output of `for i in range(3): print(i)`?
 2. What is the difference between `break` and `continue`?
 3. What happens if the condition in a `while` loop never becomes False?
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
 4. Write a for loop that calculates the sum of numbers from 1 to 100.
 5. Write a while loop that prints the Fibonacci sequence up to 100 (each number is the sum of the previous two: 0, 1, 1, 2, 3, 5, 8...).
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 6. Compare `for` loops and `while` loops. When would you choose one over the other?
 7. Why is modifying a list while iterating over it problematic? Show an example and the correct approach.
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a program that implements the **Sieve of Eratosthenes** to find all prime numbers up to a given limit `n`:
 1. Create a list of booleans from 0 to n, initially all True

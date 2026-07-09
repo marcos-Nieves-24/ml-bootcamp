@@ -22,15 +22,15 @@ Quiz: quiz.md
 
 # Pandas
 
-## Motivation
+## Motivación
 
 Pandas is the most widely used Python library for data manipulation and analysis. It provides the DataFrame — a tabular data structure with labeled rows and columns that makes data cleaning, transformation, and analysis intuitive. In biotechnology, Pandas handles clinical trial data, gene expression tables, and patient records. In SaaS, it processes customer databases, transaction logs, and A/B test results. Most of your time as a data scientist will be spent manipulating DataFrames.
 
-## Big Picture
+## Panorama General
 
 In the previous lesson, you learned NumPy for numerical computing. Pandas is built on top of NumPy and adds labeled axes, missing data handling, and powerful data operations. This lesson directly prepares you for the visualization lessons (Matplotlib, Seaborn) and for all of Machine Learning (scikit-learn expects NumPy arrays that come from Pandas DataFrames).
 
-## Theory
+## Teoría
 
 ### What is Pandas?
 
@@ -129,7 +129,7 @@ df["Column"].apply(lambda x: x ** 2)
 df["Column"].map({"old": "new"})
 ```
 
-## Visual Explanation
+## Explicación Visual
 
 ```
 DataFrame Structure
@@ -145,7 +145,7 @@ Row 0  Alice   25   50000
      Labeled axes for intuitive access
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import pandas as pd
@@ -293,7 +293,7 @@ high_risk = customers[(customers["Support_Tickets"] > 3) &
 print(f"\nHigh-risk customers: {len(high_risk)}")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Chaining `[]` instead of `loc`**: `df["A"][0]` works but causes a warning. Use `df.loc[0, "A"]`
 2. **Modifying a view vs copy**: `SettingWithCopyWarning` — use `.copy()` explicitly
@@ -301,7 +301,7 @@ print(f"\nHigh-risk customers: {len(high_risk)}")
 4. **Inplace operations**: Many methods have `inplace=True`, but chaining is usually cleaner
 5. **Merging without specifying key**: Can create a Cartesian product
 
-## Best Practices
+## Buenas Prácticas
 
 - Use `loc` and `iloc` for explicit selection
 - Use `query()` for complex filtering
@@ -310,7 +310,7 @@ print(f"\nHigh-risk customers: {len(high_risk)}")
 - Use `to_datetime()` for date columns
 - Profile performance: vectorized operations are faster than `apply()`
 
-## Summary
+## Resumen
 
 - Pandas provides Series (1D) and DataFrame (2D) for data analysis
 - Read data with `read_csv()`, explore with `head()`, `info()`, `describe()`
@@ -319,7 +319,7 @@ print(f"\nHigh-risk customers: {len(high_risk)}")
 - Merge DataFrames with `merge()` and `concat()`
 - Apply functions with `apply()` and `map()`
 
-## Key Terms
+## Términos Clave
 
 - **DataFrame**: 2D labeled data structure (rows × columns)
 - **Series**: 1D labeled array (single column)
@@ -330,25 +330,25 @@ print(f"\nHigh-risk customers: {len(high_risk)}")
 - **Boolean indexing**: Filtering with True/False conditions
 - **Method chaining**: Applying multiple operations sequentially
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic
+### Nivel 1: Básico
 
 1. How do you read a CSV file into a DataFrame?
 2. What is the difference between `loc` and `iloc`?
 3. How do you check for missing values in a DataFrame?
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
 4. Load a CSV and compute the mean of each numeric column grouped by a categorical column.
 5. Given a DataFrame with customer data, create a new column "Segment" that labels customers as "High Value" (spend > 100) or "Standard" (otherwise).
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 6. Compare and contrast the performance of `apply()` vs vectorized operations in Pandas. When would you need to use `apply()`?
 7. How would you handle missing values in a dataset? Compare `dropna()`, `fillna()`, and interpolation methods.
 
-## Coding Challenge
+## Desafío de Programación
 
 Create a **customer segmentation analysis** using Pandas:
 

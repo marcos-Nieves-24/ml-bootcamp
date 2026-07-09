@@ -21,15 +21,15 @@ Quiz: quiz.md
 
 # Funciones
 
-## Motivation
+## Motivación
 
 Functions are reusable blocks of code that solve a specific task. Instead of writing the same code multiple times, you define it once in a function and call it whenever needed. This is the foundation of modular, maintainable programming. In biotechnology, functions encapsulate DNA sequence analysis, statistical tests, and data preprocessing steps. In SaaS, functions calculate metrics, filter data, and generate reports.
 
-## Big Picture
+## Panorama General
 
 In previous lessons, you learned variables, data types, and operators. Functions combine these elements into reusable units. The next lessons on loops and conditionals will be used inside functions to create powerful, reusable logic.
 
-## Theory
+## Teoría
 
 ### What is a Function?
 
@@ -146,7 +146,7 @@ def calculate_bmi(weight, height):
     return weight / (height ** 2)
 ```
 
-## Visual Explanation
+## Explicación Visual
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -165,7 +165,7 @@ def calculate_bmi(weight, height):
 └─────────────────────────────────────────────────────┘
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 # Basic function
@@ -264,7 +264,7 @@ print(f"Churn: {churn_rate(lost, users):.1f}%")
 print(f"Health Score: {health}/100")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Forgetting parentheses when calling**: `result = my_func` (references the function) vs `result = my_func()` (calls it)
 2. **Modifying global variables inside functions**: Use `global` keyword if needed, but prefer passing parameters
@@ -272,7 +272,7 @@ print(f"Health Score: {health}/100")
 4. **Not returning a value**: Functions without `return` return `None`
 5. **Shadowing built-in functions**: Don't name variables `list`, `str`, `print`
 
-## Best Practices
+## Buenas Prácticas
 
 - Functions should do one thing well (Single Responsibility Principle)
 - Use descriptive names that indicate what the function does
@@ -281,7 +281,7 @@ print(f"Health Score: {health}/100")
 - Use type hints for better readability (Python 3.5+)
 - Prefer returning values over printing inside functions
 
-## Summary
+## Resumen
 
 - Functions are reusable code blocks defined with `def`
 - Parameters receive inputs; `return` sends outputs
@@ -290,7 +290,7 @@ print(f"Health Score: {health}/100")
 - Lambda functions are anonymous, single-expression functions
 - Docstrings document function purpose and usage
 
-## Key Terms
+## Términos Clave
 
 - **Function**: Named reusable block of code
 - **Parameter**: Variable in the function definition
@@ -301,25 +301,25 @@ print(f"Health Score: {health}/100")
 - **Docstring**: Documentation string for functions
 - **DRY**: Don't Repeat Yourself principle
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic
+### Nivel 1: Básico
 
 1. What is the difference between a parameter and an argument?
 2. What does a function return if it has no `return` statement?
 3. What is the purpose of a docstring?
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
 4. Write a function `is_palindrome(s)` that checks if a string is a palindrome (reads the same forward and backward).
 5. Write a function `mean(numbers)` that calculates the mean of a list of numbers without using `statistics.mean()`.
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 6. Why are mutable default arguments (like `def f(x=[])`) dangerous? What is the recommended alternative?
 7. Compare and contrast functions in Python with functions in mathematics. How are they similar? How are they different?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a module `sequence_tools.py` with these functions:
 1. `gc_content(sequence)` — calculates GC percentage

@@ -21,15 +21,15 @@ Quiz: quiz.md
 
 # Listas
 
-## Motivation
+## Motivación
 
 Lists are Python's most versatile data structure. They store collections of items in a specific order and can be modified after creation. In data science, lists are everywhere: feature vectors, sample names, prediction outputs, and intermediate computations. In biotechnology, lists hold gene names, expression values, patient IDs, and sequence fragments. In SaaS, they store user IDs, transaction records, and metric values.
 
-## Big Picture
+## Panorama General
 
 In previous lessons, you learned variables (single values), operators, functions, loops, and conditionals. Lists introduce the concept of **collections** — storing multiple values in a single structure. This is your first step toward working with datasets. The next lessons on tuples, dictionaries, and sets build on the same concepts with different characteristics.
 
-## Theory
+## Teoría
 
 ### Creating Lists
 
@@ -116,7 +116,7 @@ max(list)        # Maximum
 sum(list)        # Sum (numeric lists)
 ```
 
-## Visual Explanation
+## Explicación Visual
 
 ```
 List Indexing (0-indexed):
@@ -133,7 +133,7 @@ Slicing [start:stop]:
   [2:]  → "c", "d", "e"
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 # Creating and accessing lists
@@ -253,7 +253,7 @@ print(f"High-value transactions (> avg): {high_value}")
 print(f"Growth rates: {[f'{g:.1f}%' for g in growth_rates]}")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Index out of range**: Accessing index ≥ len(list) raises IndexError
 2. **Confusing append and extend**: `append` adds one element; `extend` adds elements from an iterable
@@ -261,7 +261,7 @@ print(f"Growth rates: {[f'{g:.1f}%' for g in growth_rates]}")
 4. **Shallow copy confusion**: `list2 = list1` doesn't copy; they reference the same object. Use `list2 = list1.copy()` or `list2 = list1[:]`
 5. **Off-by-one in slicing**: `list[a:b]` includes a, excludes b
 
-## Best Practices
+## Buenas Prácticas
 
 - Use list comprehensions for simple transformations
 - Use `enumerate()` when you need index and value
@@ -270,7 +270,7 @@ print(f"Growth rates: {[f'{g:.1f}%' for g in growth_rates]}")
 - Use `copy()` or `[:]` to create independent copies
 - Avoid modifying lists while iterating
 
-## Summary
+## Resumen
 
 - Lists are ordered, mutable collections created with `[]`
 - Indexing: 0-based, negative indexes from the end
@@ -279,7 +279,7 @@ print(f"Growth rates: {[f'{g:.1f}%' for g in growth_rates]}")
 - List comprehensions: `[expr for item in iterable if condition]`
 - Lists can contain mixed types and nested lists
 
-## Key Terms
+## Términos Clave
 
 - **List**: Ordered, mutable collection
 - **Index**: Numeric position of an element (0-based)
@@ -289,25 +289,25 @@ print(f"Growth rates: {[f'{g:.1f}%' for g in growth_rates]}")
 - **Nested list**: List containing lists (multi-dimensional)
 - **Shallow copy**: New reference to the same object
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic
+### Nivel 1: Básico
 
 1. What is the result of `[1, 2, 3][::-1]`?
 2. What is the difference between `append()` and `extend()`?
 3. What does `len([1, [2, 3], 4])` return?
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
 4. Write a function `remove_duplicates(items)` that returns a new list with duplicates removed, preserving order.
 5. Use a list comprehension to create a list of all even squares (squares of numbers that are even) from 1 to 20.
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 6. Compare the time complexity of list operations: indexing, append, insert, remove, in. Why is `in` on a list slow for large lists?
 7. When would you choose a list over a tuple, and vice versa? What are the trade-offs?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a program that implements a **rolling window average** calculator:
 1. Given a list of numbers and a window size k

@@ -21,15 +21,15 @@ Quiz: quiz.md
 
 # Diccionarios
 
-## Motivation
+## Motivación
 
 Dictionaries store data as key-value pairs, allowing you to look up values by a meaningful key rather than by numeric index. They are Python's most important built-in data structure for data science. In biotechnology, dictionaries map gene names to expression values, patient IDs to clinical data, and codons to amino acids. In SaaS, they map user IDs to profiles, product names to prices, and metric names to values.
 
-## Big Picture
+## Panorama General
 
 After learning about lists (ordered, indexed by position) and tuples (immutable), dictionaries introduce a new way to organize data: by key instead of position. This is closer to how real-world data works — you look up a patient by ID, not by numeric index. The next lesson on sets uses similar hash-based technology. Later, you'll use dictionaries extensively with Pandas DataFrames.
 
-## Theory
+## Teoría
 
 ### Creating Dictionaries
 
@@ -107,7 +107,7 @@ d1 | d2           # Merge (Python 3.9+)
 d1 |= d2          # Update in place (Python 3.9+)
 ```
 
-## Visual Explanation
+## Explicación Visual
 
 ```
 Dictionary Structure (Hash Table)
@@ -124,7 +124,7 @@ Key        Hash Function    Bucket
 Key lookup is O(1) — very fast!
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 # Creating a dictionary
@@ -242,7 +242,7 @@ for user, events in sorted(user_events.items()):
     print(f"  {user}: {total} events - {events}")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Accessing non-existent key directly**: `d["missing"]` raises KeyError. Use `d.get("missing")`
 2. **Mutable keys**: Lists cannot be dictionary keys. Use tuples instead
@@ -250,7 +250,7 @@ for user, events in sorted(user_events.items()):
 4. **Assuming dictionary order**: Python 3.7+ preserves insertion order, but don't rely on it for earlier versions
 5. **Confusing `in` for keys vs values**: `"key" in d` checks keys, not values
 
-## Best Practices
+## Buenas Prácticas
 
 - Use `get()` with defaults for safe access
 - Use `defaultdict` for nested or counting dictionaries
@@ -259,7 +259,7 @@ for user, events in sorted(user_events.items()):
 - Use `setdefault()` for conditional insertion
 - Prefer `collections.Counter` for counting tasks
 
-## Summary
+## Resumen
 
 - Dictionaries store key-value pairs using `{}`
 - Access values with `d[key]` (unsafe) or `d.get(key)` (safe)
@@ -269,7 +269,7 @@ for user, events in sorted(user_events.items()):
 - Dictionaries are O(1) for lookups — very fast
 - Use defaultdict and Counter for specialized needs
 
-## Key Terms
+## Términos Clave
 
 - **Dictionary**: Unordered (but insertion-ordered in 3.7+) mapping of keys to values
 - **Key**: Immutable identifier used for lookup
@@ -279,25 +279,25 @@ for user, events in sorted(user_events.items()):
 - **defaultdict**: Dictionary that provides default values for missing keys
 - **Counter**: Dictionary subclass for counting hashable objects
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic
+### Nivel 1: Básico
 
 1. What happens if you try to access a key that doesn't exist using `d["missing"]`?
 2. What types can be used as dictionary keys?
 3. What does `d.get("key", default)` return if "key" is not in the dictionary?
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
 4. Write a function `word_count(text)` that returns a dictionary counting word frequencies in a string.
 5. Given a dictionary of student grades, write a function that returns the student with the highest average grade.
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 6. How do Python dictionaries achieve O(1) lookup time? What is a hash collision and how is it resolved?
 7. When would you use a defaultdict instead of a regular dictionary with `get()`? Provide a concrete example.
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a program that implements an **in-memory key-value store** (like a simple database):
 1. Start with an empty dictionary

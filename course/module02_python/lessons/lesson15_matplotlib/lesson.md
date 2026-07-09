@@ -21,15 +21,15 @@ Quiz: quiz.md
 
 # Matplotlib
 
-## Motivation
+## Motivación
 
 Visualization is essential for understanding data. A well-chosen plot reveals patterns, outliers, and relationships that are invisible in raw numbers. Matplotlib is the foundational visualization library in Python, and most other visualization tools (Seaborn, Plotly) are built on top of it. In biotechnology, visualizations show gene expression distributions, patient survival curves, and protein structure analyses. In SaaS, they display revenue trends, user growth, and A/B test results.
 
-## Big Picture
+## Panorama General
 
 In the previous lesson, you learned Pandas for data manipulation. Now you'll learn to visualize that data with Matplotlib. The next lesson on Seaborn builds on Matplotlib to create statistically-focused visualizations with less code. Throughout the ML modules, you'll use Matplotlib daily to understand models, evaluate performance, and present results.
 
-## Theory
+## Teoría
 
 ### Matplotlib Architecture
 
@@ -97,7 +97,7 @@ plt.savefig("plot.pdf")
 plt.savefig("plot.svg")
 ```
 
-## Visual Explanation
+## Explicación Visual
 
 ```
 Matplotlib Figure Structure
@@ -120,7 +120,7 @@ Matplotlib Figure Structure
 └─────────────────────────────────────────────────┘
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import matplotlib.pyplot as plt
@@ -280,7 +280,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Plotting lists without conversion**: Matplotlib can plot lists, but NumPy arrays are faster
 2. **Not calling `plt.show()`**: In scripts, plots won't appear without it
@@ -289,7 +289,7 @@ plt.show()
 5. **Forgetting `tight_layout()`**: Labels can be cut off
 6. **Using default colors/styles**: Customize for professional-looking plots
 
-## Best Practices
+## Buenas Prácticas
 
 - Use the OO interface (`fig, ax = plt.subplots()`) for complex plots
 - Always label axes and include units
@@ -300,7 +300,7 @@ plt.show()
 - Add grid lines with low alpha for readability
 - Use `tight_layout()` to prevent label clipping
 
-## Summary
+## Resumen
 
 - Matplotlib's pyplot provides MATLAB-like plotting
 - Two interfaces: pyplot (simple) and OO (flexible)
@@ -310,7 +310,7 @@ plt.show()
 - Save in PNG, PDF, SVG formats
 - Always label axes and include legends
 
-## Key Terms
+## Términos Clave
 
 - **Figure**: The top-level container (entire window)
 - **Axes**: The actual plotting area (one figure can have many)
@@ -321,25 +321,25 @@ plt.show()
 - **Vector format**: SVG/PDF — scalable without quality loss
 - **Raster format**: PNG — pixel-based, quality depends on DPI
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic
+### Nivel 1: Básico
 
 1. What is the difference between `plt.plot()` and `plt.scatter()`?
 2. How do you save a figure as a PNG file?
 3. What does `fig, ax = plt.subplots(2, 3)` create?
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
 4. Plot the function f(x) = x² from -10 to 10 with labeled axes and a title.
 5. Create a bar chart showing the top 5 most frequent words in a given text.
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 6. When would you choose a line plot over a scatter plot, and vice versa?
 7. Why is it important to save figures in vector format (SVG/PDF) for publications?
 
-## Coding Challenge
+## Desafío de Programación
 
 Create a **comprehensive data report** with the following plots:
 

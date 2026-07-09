@@ -22,15 +22,15 @@ Quiz: quiz.md
 
 # NumPy
 
-## Motivation
+## Motivación
 
 NumPy (Numerical Python) is the foundation of scientific computing in Python. It provides a high-performance multidimensional array object and tools for working with these arrays. Most data science libraries (Pandas, scikit-learn, TensorFlow) are built on NumPy. In biotechnology, NumPy arrays represent gene expression matrices, DNA sequence encodings, and medical imaging data. In SaaS, they store feature matrices, time series data, and user-embedding vectors.
 
-## Big Picture
+## Panorama General
 
 In previous lessons, you learned Python's built-in data structures (lists, tuples, dicts, sets). Lists can store multidimensional data but are slow for numerical operations. NumPy arrays solve this with vectorized operations that run at C speed. This lesson bridges Python fundamentals to the data science libraries you'll use next: Pandas (built on NumPy), Matplotlib (plots NumPy arrays), scikit-learn (trains on NumPy arrays).
 
-## Theory
+## Teoría
 
 ### What is NumPy?
 
@@ -123,7 +123,7 @@ np.linalg.det(a)    # Determinant
 np.linalg.eig(a)    # Eigenvalues and eigenvectors
 ```
 
-## Visual Explanation
+## Explicación Visual
 
 ```
 NumPy Array Memory Layout
@@ -139,7 +139,7 @@ Each element is a           Homogeneous type
 Python object → slow        → fast computation
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import numpy as np
@@ -280,7 +280,7 @@ corr = np.corrcoef(dau.T)
 print(f"\nCorrelation matrix:\n{corr}")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Confusing np.array() with Python lists**: Arrays support element-wise operations; lists do not
 2. **Floating-point precision**: `np.float64` has limited precision like Python floats
@@ -289,7 +289,7 @@ print(f"\nCorrelation matrix:\n{corr}")
 5. **Using `==` with floats**: Same precision issues as Python; use `np.isclose()`
 6. **Forgetting dtype**: Mixed types in list → string dtype (all elements become strings)
 
-## Best Practices
+## Buenas Prácticas
 
 - Use `np.array()` with explicit dtype when needed
 - Use vectorized operations instead of Python loops (much faster)
@@ -298,7 +298,7 @@ print(f"\nCorrelation matrix:\n{corr}")
 - Use `axis=` parameter for row-wise/column-wise operations
 - Profile code: vectorized NumPy is 10-100x faster than Python loops
 
-## Summary
+## Resumen
 
 - NumPy provides the ndarray: fast, memory-efficient, multidimensional
 - Create arrays with `np.array()`, `np.zeros()`, `np.ones()`, `np.arange()`, etc.
@@ -308,7 +308,7 @@ print(f"\nCorrelation matrix:\n{corr}")
 - Linear algebra: `@`, `np.linalg.inv`, `np.linalg.eig`
 - Always prefer vectorized operations over Python loops
 
-## Key Terms
+## Términos Clave
 
 - **ndarray**: NumPy's multidimensional array object
 - **Shape**: Tuple of array dimensions
@@ -320,25 +320,25 @@ print(f"\nCorrelation matrix:\n{corr}")
 - **View**: Alternative access to the same data (no copy)
 - **Fancy indexing**: Indexing with boolean arrays or integer lists
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic
+### Nivel 1: Básico
 
 1. Create a 4×4 array of zeros. How would you create its identity matrix version?
 2. What is the difference between `arr[1]` and `arr[:, 1]` for a 2D array?
 3. What does `np.arange(2, 10, 3)` return?
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
 4. Write a function that normalizes a matrix to have mean=0 and std=1 along each column.
 5. Implement matrix multiplication manually (using loops) and then using `@`. Compare the performance on 100×100 matrices.
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 6. How does NumPy achieve its speed advantage over Python lists? What is the role of contiguous memory and vectorization?
 7. When would broadcasting fail? Give an example of incompatible shapes and explain how to fix it.
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a program that implements **Principal Component Analysis (PCA)** from scratch using NumPy:
 1. Generate a random dataset (100 samples, 5 features)

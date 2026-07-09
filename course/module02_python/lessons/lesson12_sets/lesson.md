@@ -21,15 +21,15 @@ Quiz: quiz.md
 
 # Conjuntos
 
-## Motivation
+## Motivación
 
 Sets are unordered collections of unique elements. They excel at two tasks: removing duplicates and fast membership testing. In biotechnology, sets help find unique genes across experiments, identify common variants between patients, and remove duplicate sequences. In SaaS, sets track unique users, find common features across plans, and filter out duplicates in event logs.
 
-## Big Picture
+## Panorama General
 
 In previous lessons, you learned lists (ordered, mutable) and tuples (ordered, immutable) and dictionaries (key-value). Sets are another fundamental collection type, optimized for uniqueness and mathematical set operations. They share the hash-based implementation with dictionaries but store only keys. Understanding sets completes your knowledge of Python's core data structures.
 
-## Theory
+## Teoría
 
 ### Creating Sets
 
@@ -102,7 +102,7 @@ if item in my_set:  # Fast
     pass
 ```
 
-## Visual Explanation
+## Explicación Visual
 
 ```
 Set Operations (Venn Diagram)
@@ -126,7 +126,7 @@ Set Operations (Venn Diagram)
   └────────┘           └────────────────┘
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 # Creating sets
@@ -233,7 +233,7 @@ print(f"Missing from basic: {missing_from_basic}")
 print(f"Is basic subset of premium? {basic_users.issubset(premium_users)}")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Using `{}` for empty set**: Creates an empty dict, not a set. Use `set()`
 2. **Assuming set order**: Sets are unordered — don't rely on element order
@@ -241,7 +241,7 @@ print(f"Is basic subset of premium? {basic_users.issubset(premium_users)}")
 4. **Modifying set while iterating**: Same issue as with lists
 5. **Confusing `add` and `update`**: `add` adds one element; `update` adds elements from an iterable
 
-## Best Practices
+## Buenas Prácticas
 
 - Use sets for fast membership testing (`in` is O(1))
 - Use sets to remove duplicates from sequences
@@ -249,7 +249,7 @@ print(f"Is basic subset of premium? {basic_users.issubset(premium_users)}")
 - Use `frozenset` when you need an immutable, hashable set (e.g., as dict key)
 - Prefer `discard` over `remove` when unsure if element exists
 
-## Summary
+## Resumen
 
 - Sets are unordered collections of unique, hashable elements
 - Created with `{1, 2, 3}` or `set([1, 2, 3])`; empty set with `set()`
@@ -258,7 +258,7 @@ print(f"Is basic subset of premium? {basic_users.issubset(premium_users)}")
 - Frozenset is immutable and hashable
 - Membership testing is O(1) — much faster than lists
 
-## Key Terms
+## Términos Clave
 
 - **Set**: Unordered collection of unique elements
 - **Frozenset**: Immutable version of set
@@ -269,25 +269,25 @@ print(f"Is basic subset of premium? {basic_users.issubset(premium_users)}")
 - **Hashable**: Can be used as set element (immutable types)
 - **Membership test**: Checking if an element is in a set (O(1))
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic
+### Nivel 1: Básico
 
 1. How do you create an empty set?
 2. What is the output of `set([1, 2, 2, 3, 1, 3])`?
 3. What is the difference between `add()` and `update()` for sets?
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
 4. Write a function `unique_words(text)` that returns a set of unique words in a string.
 5. Given two lists (e.g., users who viewed a page and users who purchased), find users who viewed but didn't purchase.
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 6. Why is membership testing O(1) for sets but O(n) for lists? What does the underlying implementation look like?
 7. How would you find elements that appear in at least k out of n sets without using Counter?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a program that implements a **Jaccard similarity** calculator:
 1. Jaccard similarity = |A ∩ B| / |A ∪ B| (size of intersection / size of union)

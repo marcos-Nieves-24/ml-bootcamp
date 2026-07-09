@@ -21,15 +21,15 @@ Quiz: quiz.md
 
 # Condicionales
 
-## Motivation
+## Motivación
 
 Conditionals allow programs to make decisions. Without them, code would execute the same way every time. With conditionals, your program can react differently based on data values, user input, or computed results. In biotechnology, conditionals determine diagnoses based on lab results, classify genetic mutations, and trigger alerts for abnormal values. In SaaS, they control access levels, calculate discounts, and segment customers.
 
-## Big Picture
+## Panorama General
 
 In the previous lesson, you learned loops (repetition). Now you learn conditionals (decision-making). These two control structures — loops and conditionals — form the backbone of all non-trivial programs. Together with functions and operators, you now have everything needed to write sophisticated data processing logic.
 
-## Theory
+## Teoría
 
 ### The if Statement
 
@@ -113,7 +113,7 @@ match value:
         pass  # default
 ```
 
-## Visual Explanation
+## Explicación Visual
 
 ```
 if/elif/else Flow:
@@ -142,7 +142,7 @@ if/elif/else Flow:
                 └───────────┘
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 # Basic if
@@ -308,7 +308,7 @@ discount = calculate_discount("professional", 25000, 4)
 print(f"Discount: {discount:.0%}")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Using `=` instead of `==`**: `if x = 5:` assigns 5 to x and is always True
 2. **Forgetting colon**: `if x > 5` without `:` raises SyntaxError
@@ -317,7 +317,7 @@ print(f"Discount: {discount:.0%}")
 5. **Checking boolean with `== True`**: Redundant — just use `if condition:`
 6. **Deep nesting**: More than 3 levels of nesting suggests refactoring
 
-## Best Practices
+## Buenas Prácticas
 
 - Use `elif` instead of nested `if` for mutually exclusive conditions
 - Keep conditions simple — extract complex logic into boolean variables
@@ -326,7 +326,7 @@ print(f"Discount: {discount:.0%}")
 - Use guard clauses (early returns) to reduce nesting
 - Use `in` for multiple comparisons: `if x in (1, 2, 3):`
 
-## Summary
+## Resumen
 
 - `if` executes code when a condition is True
 - `elif` checks additional conditions
@@ -336,7 +336,7 @@ print(f"Discount: {discount:.0%}")
 - Match statement (3.10+) for pattern matching
 - Avoid deep nesting; use guard clauses
 
-## Key Terms
+## Términos Clave
 
 - **Conditional**: Statement that executes code based on a condition
 - **Boolean expression**: Expression that evaluates to True or False
@@ -346,25 +346,25 @@ print(f"Discount: {discount:.0%}")
 - **Guard clause**: Early return to avoid nesting
 - **Match statement**: Python 3.10+ structural pattern matching
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic
+### Nivel 1: Básico
 
 1. What is the output of `if 0: print("yes") else: print("no")`?
 2. What is the difference between `=` and `==`?
 3. What values are considered falsy in Python?
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
 4. Write a function that takes a temperature in Celsius and returns "Cold" (< 15), "Mild" (15-25), "Hot" (> 25).
 5. Write a function that takes a year and returns whether it is a leap year (divisible by 400, or divisible by 4 but not by 100).
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 6. Why is `if x == True:` considered bad style? What is the Pythonic alternative?
 7. Compare and contrast if/elif/else chains with match statements. When would you use each?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a **credit scoring** system that:
 1. Takes income, credit history length (years), outstanding debt, and missed payments count

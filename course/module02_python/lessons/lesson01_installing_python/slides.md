@@ -1,81 +1,81 @@
-# Installing Python — Slide Outline
+# Instalación de Python — Guión de Diapositivas
 
-## Slide 1: Title Slide
-- Installing Python
-- Module 2: Python Programming Fundamentals
-- Course: Machine Learning for Data Analysis and SaaS
+## Diapositiva 1: Portada
+- Instalación de Python
+- Módulo 2: Fundamentos de Programación en Python
+- Curso: Machine Learning para Análisis de Datos y SaaS
 
-## Slide 2: Why This Matters
-- Every data scientist starts here
-- Foundation for all future lessons
-- Biotechnology: DNA analysis, clinical data
-- SaaS: Recommendation engines, customer analytics
+## Diapositiva 2: Por Qué es Importante
+- Todo científico de datos comienza aquí
+- Base para todas las lecciones futuras
+- Biotecnología: análisis de ADN, datos clínicos
+- SaaS: motores de recomendación, análisis de clientes
 
-## Slide 3: What is Python?
-- High-level, interpreted language (1991, Guido van Rossum)
-- Emphasizes readability
-- Most popular language for data science
-- Extensive ecosystem: NumPy, Pandas, scikit-learn
+## Diapositiva 3: ¿Qué es Python?
+- Lenguaje interpretado de alto nivel (1991, Guido van Rossum)
+- Enfatiza la legibilidad
+- Lenguaje más popular para ciencia de datos
+- Ecosistema extenso: NumPy, Pandas, scikit-learn
 
-## Slide 4: Python Distributions
-- Official Python (python.org)
-- Anaconda (250+ pre-installed packages)
-- Miniconda (minimal)
-- Microsoft Store Python
-- Recommendation: Official Python
+## Diapositiva 4: Distribuciones de Python
+- Python Oficial (python.org)
+- Anaconda (250+ paquetes preinstalados)
+- Miniconda (mínima)
+- Python de Microsoft Store
+- Recomendación: Python Oficial
 
-## Slide 5: Installation Steps
-1. Download from python.org
-2. Run installer
+## Diapositiva 5: Pasos de Instalación
+1. Descargar de python.org
+2. Ejecutar el instalador
 3. ✓ Add Python to PATH (Windows)
-4. Verify: `python --version`
-5. Verify pip: `pip --version`
+4. Verificar: `python --version`
+5. Verificar pip: `pip --version`
 
-## Slide 6: The Python Interpreter
-- Two modes: interactive (REPL) and script (.py files)
-- Demo: `python` then `print("Hello")`, `2 + 2`, `exit()`
+## Diapositiva 6: El Intérprete de Python
+- Dos modos: interactivo (REPL) y script (archivos .py)
+- Demo: `python` luego `print("Hello")`, `2 + 2`, `exit()`
 
-## Slide 7: pip — Package Installer
-- Python Package Index (PyPI): 400,000+ packages
+## Diapositiva 7: pip — Instalador de Paquetes
+- Python Package Index (PyPI): 400,000+ paquetes
 - `pip install pandas`
 - `pip uninstall pandas`
 - `pip list`
 - `pip freeze > requirements.txt`
 
-## Slide 8: Virtual Environments
-- Isolated Python environments per project
-- Why? Different projects need different package versions
-- Create: `python -m venv venv`
-- Activate: `source venv/bin/activate` (macOS/Linux) or `venv\Scripts\activate` (Windows)
+## Diapositiva 8: Entornos Virtuales
+- Entornos Python aislados por proyecto
+- ¿Por qué? Diferentes proyectos necesitan diferentes versiones de paquetes
+- Crear: `python -m venv venv`
+- Activar: `source venv/bin/activate` (macOS/Linux) o `venv\Scripts\activate` (Windows)
 
-## Slide 9: Biotechnology Example
-- Bioinformatics lab needs consistent environment
-- Create project with Biopython
-- Share `requirements.txt`
-- Reproducibility in research
+## Diapositiva 9: Ejemplo en Biotecnología
+- Laboratorio de bioinformática necesita entorno consistente
+- Crear proyecto con Biopython
+- Compartir `requirements.txt`
+- Reproducibilidad en investigación
 
-## Slide 10: SaaS Example
-- Customer churn prediction project
-- Isolate dependencies with venv
-- Freeze for deployment
-- Production matches development exactly
+## Diapositiva 10: Ejemplo en SaaS
+- Proyecto de predicción de abandono de clientes
+- Aislar dependencias con venv
+- Congelar para despliegue
+- Producción coincide exactamente con desarrollo
 
-## Slide 11: Common Mistakes
-- Forgetting to add Python to PATH
-- Installing globally without virtual environment
-- Committing venv to git
-- Using sudo pip install
+## Diapositiva 11: Errores Comunes
+- Olvidar agregar Python al PATH
+- Instalar globalmente sin entorno virtual
+- Subir venv a git
+- Usar sudo pip install
 
-## Slide 12: Best Practices
-- Always use virtual environments
-- Use `requirements.txt`
-- Keep Python updated
-- Document Python version
-- Never use `sudo pip install`
+## Diapositiva 12: Buenas Prácticas
+- Usa siempre entornos virtuales
+- Usa `requirements.txt`
+- Mantén Python actualizado
+- Documenta la versión de Python
+- Nunca uses `sudo pip install`
 
-## Slide 13: Summary
-- Install from python.org
-- Verify with `python --version`
-- pip installs packages
-- Virtual environments isolate projects
-- Reproducibility is key
+## Diapositiva 13: Resumen
+- Instalar desde python.org
+- Verificar con `python --version`
+- pip instala paquetes
+- Los entornos virtuales aíslan proyectos
+- La reproducibilidad es clave

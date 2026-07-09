@@ -21,15 +21,15 @@ Quiz: quiz.md
 
 # Seaborn
 
-## Motivation
+## Motivación
 
 Seaborn is a statistical visualization library built on Matplotlib that makes it easy to create informative, attractive plots with minimal code. It is designed specifically for exploring and understanding data. While Matplotlib gives you complete control, Seaborn gives you smart defaults and statistical plot types. In biotechnology, Seaborn creates publication-ready heatmaps of gene expression, box plots comparing treatment groups, and pair plots for biomarker discovery. In SaaS, it visualizes customer segments, correlation analyses, and A/B test results.
 
-## Big Picture
+## Panorama General
 
 In the previous lesson, you learned Matplotlib — the foundation for Python visualization. Seaborn builds on Matplotlib to provide higher-level, statistically-focused plots. Combined with Pandas for data manipulation, these three libraries (Pandas, Matplotlib, Seaborn) form the core data science toolkit. Throughout the ML modules, you'll use Seaborn for EDA and result visualization.
 
-## Theory
+## Teoría
 
 ### What is Seaborn?
 
@@ -84,7 +84,7 @@ sns.set_palette("viridis")  # Palettes: deep, muted, pastel, bright, dark, color
 sns.color_palette("husl", 8)  # Custom palette
 ```
 
-## Visual Explanation
+## Explicación Visual
 
 ```
 Seaborn Plot Types for Different Data
@@ -114,7 +114,7 @@ Correlation:              └─────────────────
 └──────────────────┘
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import seaborn as sns
@@ -260,7 +260,7 @@ plt.title("Customer Metrics Correlation")
 plt.show()
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Forgetting to import matplotlib**: Seaborn needs `plt.show()` to display plots
 2. **Overriding Seaborn's styles**: Setting Matplotlib styles after seaborn imports can conflict
@@ -268,7 +268,7 @@ plt.show()
 4. **Ignoring `hue` and `style` parameters**: These make Seaborn powerful — use them!
 5. **Not using Pandas DataFrames**: Seaborn works best with DataFrames; using raw arrays loses functionality
 
-## Best Practices
+## Buenas Prácticas
 
 - Use `sns.set_theme()` at the start for consistent styling
 - Use `hue` for categorical coloring and `size` for continuous values
@@ -277,7 +277,7 @@ plt.show()
 - Combine Seaborn plots with Matplotlib's `plt.subplots()` for complex layouts
 - Use `sns.heatmap()` with `annot=True` for correlation matrices
 
-## Summary
+## Resumen
 
 - Seaborn provides high-level statistical visualizations
 - Key plots: scatterplot, boxplot, violinplot, pairplot, heatmap
@@ -286,7 +286,7 @@ plt.show()
 - Built-in statistical aggregation (confidence intervals, etc.)
 - Easily customized with Matplotlib functions
 
-## Key Terms
+## Términos Clave
 
 - **Seaborn**: Statistical data visualization library
 - **Hue**: Color-coded categorical variable
@@ -297,25 +297,25 @@ plt.show()
 - **Facet**: Subplot based on variable values
 - **Palette**: Color scheme for categorical or continuous data
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic
+### Nivel 1: Básico
 
 1. What is the main advantage of Seaborn over Matplotlib?
 2. How do you add color coding for a categorical variable in a Seaborn plot?
 3. What does `sns.pairplot()` show?
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
 4. Using the tips dataset, create a box plot of total_bill grouped by day and sex.
 5. Create a heatmap of the correlation matrix of numeric columns in any dataset.
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 6. When would you choose a violin plot over a box plot? What additional information does the violin plot provide?
 7. How would you customize a Seaborn plot (e.g., change title, axis labels, figure size) that doesn't have those parameters directly?
 
-## Coding Challenge
+## Desafío de Programación
 
 Create a **comprehensive EDA report** of a synthetic customer dataset using Seaborn:
 

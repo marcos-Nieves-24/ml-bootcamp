@@ -1,45 +1,45 @@
-# Assignment: Python Environment Setup
+# Tarea: Configuración del Entorno Python
 
-## Objectives
+## Objetivos
 
-- Install Python and configure a development environment
-- Demonstrate understanding of virtual environments
-- Practice using pip for package management
-- Document the environment for reproducibility
+- Instalar Python y configurar un entorno de desarrollo
+- Demostrar comprensión de los entornos virtuales
+- Practicar el uso de pip para la gestión de paquetes
+- Documentar el entorno para la reproducibilidad
 
-## Instructions
+## Instrucciones
 
-1. Install Python 3.12 or later on your machine
-2. Create a project directory called `python_fundamentals`
-3. Create a virtual environment named `env` inside it
-4. Activate the virtual environment
-5. Install the following packages:
+1. Instala Python 3.12 o posterior en tu máquina
+2. Crea un directorio de proyecto llamado `python_fundamentals`
+3. Crea un entorno virtual llamado `env` dentro de él
+4. Activa el entorno virtual
+5. Instala los siguientes paquetes:
    - numpy
    - pandas
    - matplotlib
    - jupyter
    - scipy
-6. Create a Python script `verify_env.py` that imports each package and prints its version
-7. Generate a `requirements.txt` file
-8. Write a short report (paragraph) explaining why virtual environments are important
+6. Crea un script de Python `verify_env.py` que importe cada paquete e imprima su versión
+7. Genera un archivo `requirements.txt`
+8. Escribe un breve informe (párrafo) explicando por qué los entornos virtuales son importantes
 
-## Deliverables
+## Entregables
 
-- `verify_env.py` script
-- `requirements.txt` file
-- Brief report on virtual environments (in the script comments or a separate `.md` file)
+- Script `verify_env.py`
+- Archivo `requirements.txt`
+- Informe breve sobre entornos virtuales (en los comentarios del script o en un archivo `.md` separado)
 
-## Evaluation Rubric
+## Rúbrica de Evaluación
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
+| Criterio | Excelente (4 pts) | Bueno (3 pts) | Necesita Mejorar (1-2 pts) |
 |----------|-------------------|--------------|-----------------------------|
-| Python Installation | Python 3.12+ installed and verified | Python 3.x installed | Not installed or not verified |
-| Virtual Environment | Created and activated correctly | Created but not activated | Not created |
-| Package Installation | All packages installed and verified | Most packages installed | Few or none installed |
-| Script | Runs without errors, prints versions | Runs with minor errors | Does not run |
-| requirements.txt | Complete and correct | Partial | Missing |
-| Documentation | Clear explanation of virtual environments | Adequate explanation | Poor or missing |
+| Instalación de Python | Python 3.12+ instalado y verificado | Python 3.x instalado | No instalado o no verificado |
+| Entorno Virtual | Creado y activado correctamente | Creado pero no activado | No creado |
+| Instalación de Paquetes | Todos los paquetes instalados y verificados | La mayoría instalados | Pocos o ninguno instalado |
+| Script | Se ejecuta sin errores, imprime versiones | Se ejecuta con errores menores | No se ejecuta |
+| requirements.txt | Completo y correcto | Parcial | Faltante |
+| Documentación | Explicación clara de entornos virtuales | Explicación adecuada | Pobre o faltante |
 
-## Estimated Completion Time
+## Tiempo Estimado de Finalización
 
-45 minutes
+45 minutos

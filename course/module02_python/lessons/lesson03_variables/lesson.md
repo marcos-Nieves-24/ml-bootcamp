@@ -21,15 +21,15 @@ Quiz: quiz.md
 
 # Variables
 
-## Motivation
+## Motivación
 
 Variables are the fundamental building blocks of any program. They allow you to store, label, and manipulate data. Without variables, you would have to hard-code every value, making programs inflexible and unreadable. In biotechnology, variables store DNA sequences, gene expression levels, patient ages, and drug concentrations. In SaaS, variables store user counts, revenue figures, churn rates, and customer names. Mastering variables is your first step toward writing meaningful Python programs.
 
-## Big Picture
+## Panorama General
 
 In the previous lesson, you learned to execute Python code in Jupyter Notebook. Now you will learn how to store and manage data using variables. This directly prepares you for the next lesson on data types, where you will learn about the different kinds of data variables can hold.
 
-## Theory
+## Teoría
 
 ### What is a Variable?
 
@@ -97,7 +97,7 @@ print("Value:", 42)
 name = input("Enter your name: ")
 ```
 
-## Visual Explanation
+## Explicación Visual
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -118,7 +118,7 @@ Assignment Flow:
 └─────────┘     └──────────────┘     └─────────────────┘
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 # Variable assignment
@@ -196,7 +196,7 @@ print(f"Churn Rate: {churn_rate:.1%}")
 print(f"ARPU: ${average_revenue_per_user:.2f}")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Using undefined variables**: `print(x)` before `x = 5` raises `NameError`
 2. **Misspelling variable names**: `temperature` vs `temperture`
@@ -204,7 +204,7 @@ print(f"ARPU: ${average_revenue_per_user:.2f}")
 4. **Forgetting to convert input**: `input()` returns a string; use `int()` or `float()` for numbers
 5. **Case sensitivity confusion**: `data` and `Data` are different variables
 
-## Best Practices
+## Buenas Prácticas
 
 - Use descriptive, meaningful variable names
 - Follow `snake_case` convention
@@ -213,7 +213,7 @@ print(f"ARPU: ${average_revenue_per_user:.2f}")
 - Use constants for fixed values (UPPER_SNAKE_CASE)
 - One variable per logical purpose
 
-## Summary
+## Resumen
 
 - Variables store values in named memory locations
 - Python is dynamically typed — types are inferred
@@ -222,7 +222,7 @@ print(f"ARPU: ${average_revenue_per_user:.2f}")
 - PEP 8 recommends `snake_case` naming
 - `input()` reads user input as a string
 
-## Key Terms
+## Términos Clave
 
 - **Variable**: Named storage location for a value
 - **Assignment**: Using `=` to give a value to a variable
@@ -232,25 +232,25 @@ print(f"ARPU: ${average_revenue_per_user:.2f}")
 - **Type inference**: Python deduces the type from the value
 - **NameError**: Exception raised when using an undefined variable
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic
+### Nivel 1: Básico
 
 1. Which of the following are valid Python variable names? `2nd_place`, `my_var`, `class`, `_count`, `user-name`
 2. What is the type of `x` after `x = "3.14"`?
 3. What does `print()` do?
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
 4. Write a program that asks for the user's height in meters and weight in kilograms, then calculates and prints BMI (weight / height²).
 5. Create three variables with different types and use `type()` to verify each.
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 6. Why is dynamic typing both a strength and a weakness of Python? Provide an example of a bug that dynamic typing could cause.
 7. In large codebases, why is using descriptive variable names more important than writing short code?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a program that:
 1. Asks for a gene name, expression level, and p-value

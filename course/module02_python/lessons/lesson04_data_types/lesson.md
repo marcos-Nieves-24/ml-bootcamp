@@ -21,15 +21,15 @@ Quiz: quiz.md
 
 # Tipos de Datos
 
-## Motivation
+## Motivación
 
 Every piece of data in Python has a type that determines what operations are possible. Adding two numbers is arithmetic; adding two strings is concatenation. Understanding types is crucial because type errors are among the most common bugs in Python programs. In biotechnology, you need to distinguish between integer counts (number of cells), float measurements (gene expression ratios), strings (DNA sequences), and booleans (mutation present/absent). In SaaS, you work with integer user counts, float revenue, string customer names, and boolean subscription status.
 
-## Big Picture
+## Panorama General
 
 In the previous lesson, you learned to store values in variables. Now you will understand the different kinds of values variables can hold. This prepares you for the next lesson on operators, where each data type supports different operations.
 
-## Theory
+## Teoría
 
 ### The Four Basic Data Types
 
@@ -115,7 +115,7 @@ infinity = float('inf')
 not_a_number = float('nan')
 ```
 
-## Visual Explanation
+## Explicación Visual
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -135,7 +135,7 @@ not_a_number = float('nan')
 └─────────────────────────────────────────────────────┘
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 # Demonstrating all four types
@@ -224,7 +224,7 @@ print(f"Annual revenue: ${annual_revenue:,.2f}")
 print(f"After discount: ${discounted_revenue:,.2f}")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **String concatenation with non-strings**: `"count: " + 5` raises TypeError
 2. **Losing precision with float**: `0.1 + 0.2 != 0.3` exactly (floating-point arithmetic)
@@ -232,7 +232,7 @@ print(f"After discount: ${discounted_revenue:,.2f}")
 4. **Confusing `=` and `==`**: Assignment vs equality comparison
 5. **Forgetting that `input()` returns a string**: Always convert numeric input
 
-## Best Practices
+## Buenas Prácticas
 
 - Use `isinstance()` for type checking rather than `type() ==`
 - Convert types explicitly rather than relying on implicit conversion
@@ -240,7 +240,7 @@ print(f"After discount: ${discounted_revenue:,.2f}")
 - Use underscores in large numbers: `1_000_000` instead of `1000000`
 - Be aware of floating-point precision limitations
 
-## Summary
+## Resumen
 
 - Python has four primitive types: int, float, str, bool
 - Use `type()` to check a value's type
@@ -249,7 +249,7 @@ print(f"After discount: ${discounted_revenue:,.2f}")
 - `None` represents the absence of a value
 - Type errors are common and usually involve mixing strings with numbers
 
-## Key Terms
+## Términos Clave
 
 - **int**: Integer type for whole numbers
 - **float**: Floating-point type for decimal numbers
@@ -260,25 +260,25 @@ print(f"After discount: ${discounted_revenue:,.2f}")
 - **None**: Python's null value
 - **TypeError**: Exception raised when operating on incompatible types
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic
+### Nivel 1: Básico
 
 1. What type does `type(3.0)` return?
 2. What is the result of `int(7.9)` and why?
 3. What values convert to `False` when passed to `bool()`?
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
 4. Write a function that takes a string like "3.14" and returns both the float and the integer part.
 5. Ask the user for two numbers, add them, and print the result. Handle the type conversion correctly.
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 6. Why does `0.1 + 0.2` not equal `0.3` in floating-point arithmetic? How would you compare floating-point numbers safely?
 7. When would you explicitly use `bool()` instead of relying on truthy/falsy values?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a program that:
 1. Asks for the user's name (string), age (int), and salary (float)

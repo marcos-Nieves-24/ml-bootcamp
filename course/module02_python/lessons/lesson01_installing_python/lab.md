@@ -1,55 +1,55 @@
-# Lab: Setting Up Your Python Environment
+# Laboratorio: Configuración de tu Entorno Python
 
-## Objective
+## Objetivo
 
-Successfully install Python, create a virtual environment, install packages, and verify the setup.
+Instalar Python exitosamente, crear un entorno virtual, instalar paquetes y verificar la configuración.
 
-## Duration
+## Duración
 
-30 minutes
+30 minutos
 
-## Prerequisites
+## Prerrequisitos
 
-- A computer with internet access
-- Administrative rights to install software (or use package manager)
+- Una computadora con acceso a internet
+- Derechos administrativos para instalar software (o usar gestor de paquetes)
 
-## Instructions
+## Instrucciones
 
-### Part 1: Install Python
+### Parte 1: Instalar Python
 
-1. Download Python from https://python.org (latest stable version)
-2. Run the installer — ensure you check "Add Python to PATH" (Windows)
-3. Open a terminal and verify:
+1. Descarga Python desde https://python.org (última versión estable)
+2. Ejecuta el instalador — asegúrate de marcar "Add Python to PATH" (Windows)
+3. Abre una terminal y verifica:
    ```bash
    python --version
    ```
 
-### Part 2: Create and Activate a Virtual Environment
+### Parte 2: Crear y Activar un Entorno Virtual
 
 ```bash
-# Create project directory
+# Crear directorio del proyecto
 mkdir ml_project
 cd ml_project
 
-# Create virtual environment
+# Crear entorno virtual
 python -m venv venv
 
-# Activate (Windows)
+# Activar (Windows)
 venv\Scripts\activate
 
-# Activate (macOS/Linux)
+# Activar (macOS/Linux)
 source venv/bin/activate
 ```
 
-### Part 3: Install Packages
+### Parte 3: Instalar Paquetes
 
 ```bash
 pip install numpy pandas matplotlib jupyter
 ```
 
-### Part 4: Verify Installation
+### Parte 4: Verificar la Instalación
 
-Create a file `test_install.py` with:
+Crea un archivo `test_install.py` con:
 
 ```python
 import sys
@@ -63,12 +63,12 @@ print(f"Pandas version: {pd.__version__}")
 print("All packages installed successfully!")
 ```
 
-Run it:
+Ejecútalo:
 ```bash
 python test_install.py
 ```
 
-### Part 5: Save Dependencies
+### Parte 5: Guardar Dependencias
 
 ```bash
 pip freeze > requirements.txt
@@ -76,11 +76,11 @@ type requirements.txt  # Windows
 cat requirements.txt   # macOS/Linux
 ```
 
-## Deliverables
+## Entregables
 
-- Screenshot or copy of terminal output showing Python version and package versions
-- The `requirements.txt` file content
+- Captura de pantalla o copia de la salida de terminal mostrando la versión de Python y las versiones de los paquetes
+- El contenido del archivo `requirements.txt`
 
 ## Bonus
 
-Install a bioinformatics package (Biopython) and import it successfully.
+Instala un paquete de bioinformática (Biopython) e impórtalo exitosamente.

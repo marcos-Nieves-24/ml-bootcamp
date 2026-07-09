@@ -21,15 +21,15 @@ Quiz: quiz.md
 
 # Operadores
 
-## Motivation
+## Motivación
 
 Operators are the tools that let you compute, compare, and combine values. Every program — from a simple calculator to a machine learning model — relies on operators. In biotechnology, you use operators to calculate drug concentrations, compare gene expression levels, and determine significance. In SaaS, you use them to compute revenue, compare user engagement metrics, and evaluate business rules.
 
-## Big Picture
+## Panorama General
 
 In the previous lesson, you learned about the data types that values can have. Now you will learn how to perform operations on those values. Operators build on your understanding of types because different types support different operators. This prepares you for the next lessons on functions and control flow, where operators are used in conditions and computations.
 
-## Theory
+## Teoría
 
 ### Arithmetic Operators
 
@@ -97,7 +97,7 @@ Python follows standard mathematical precedence (PEMDAS):
 8. `and`
 9. `or`
 
-## Visual Explanation
+## Explicación Visual
 
 ```
 Operator Precedence (highest to lowest)
@@ -110,7 +110,7 @@ Example:   5 + 3 * 2 ** 2
            = 17               (addition last)
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 # Arithmetic operators
@@ -204,7 +204,7 @@ print(f"Basic tier: {is_basic_tier}")
 print(f"High churn risk: {high_churn_risk}")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Using `=` instead of `==` for comparison**: `if x = 5:` is assignment, not comparison
 2. **Integer division when float needed**: `5/2 = 2.5` (Python 3), but `5//2 = 2`
@@ -212,7 +212,7 @@ print(f"High churn risk: {high_churn_risk}")
 4. **Operator precedence confusion**: `3 + 4 * 2 = 11`, not `14`
 5. **Modulus with negative numbers**: `-5 % 3 = 1` (not -2)
 
-## Best Practices
+## Buenas Prácticas
 
 - Use parentheses to make precedence explicit
 - Use `+=` and similar operators for cleaner code
@@ -220,7 +220,7 @@ print(f"High churn risk: {high_churn_risk}")
 - Leverage Python's chained comparisons: `0 <= x <= 100`
 - Use `not` sparingly — rewrite conditions for readability
 
-## Summary
+## Resumen
 
 - Arithmetic: `+`, `-`, `*`, `/`, `//`, `%`, `**`
 - Comparison: `==`, `!=`, `<`, `>`, `<=`, `>=` (return bool)
@@ -229,7 +229,7 @@ print(f"High churn risk: {high_churn_risk}")
 - Precedence: `()` → `**` → `*,/` → `+,-` → comparisons → `not` → `and` → `or`
 - Use parentheses for clarity
 
-## Key Terms
+## Términos Clave
 
 - **Operator**: Symbol that performs an operation on operands
 - **Operand**: Value on which an operator acts
@@ -238,25 +238,25 @@ print(f"High churn risk: {high_churn_risk}")
 - **Modulus**: Remainder after division
 - **Short-circuit evaluation**: `and`/`or` stop evaluating when the result is determined
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic
+### Nivel 1: Básico
 
 1. What is the result of `15 // 4` and `15 % 4`?
 2. What is the value of `3 + 4 * 2 ** 3`?
 3. What does `not (True and False)` evaluate to?
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
 4. Write code that checks if a number is even (use `%`) and prints "even" or "odd".
 5. Write a BMI calculator: weight (kg) / height² (m). Categorize as underweight (< 18.5), normal (18.5-24.9), overweight (25-29.9), obese (≥ 30).
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 6. Why does `0.1 + 0.2 == 0.3` return False? How would you compare floating-point results safely?
 7. Short-circuit evaluation: What does `False and print("hello")` output? Why?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a program that:
 1. Asks for the number of DNA samples, the cost per sample, and the available budget
