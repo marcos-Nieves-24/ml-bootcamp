@@ -23,19 +23,19 @@ Quiz: quiz.md
 
 ## Motivación
 
-Functions are reusable blocks of code that solve a specific task. Instead of writing the same code multiple times, you define it once in a function and call it whenever needed. This is the foundation of modular, maintainable programming. In biotechnology, functions encapsulate DNA sequence analysis, statistical tests, and data preprocessing steps. In SaaS, functions calculate metrics, filter data, and generate reports.
+Las funciones son bloques de código reutilizables que resuelven una tarea específica. En lugar de escribir el mismo código múltiples veces, lo defines una vez en una función y la llamas cuando sea necesario. Esta es la base de la programación modular y mantenible. En biotecnología, las funciones encapsulan análisis de secuencias de ADN, pruebas estadísticas y pasos de preprocesamiento de datos. En SaaS, las funciones calculan métricas, filtran datos y generan informes.
 
 ## Panorama General
 
-In previous lessons, you learned variables, data types, and operators. Functions combine these elements into reusable units. The next lessons on loops and conditionals will be used inside functions to create powerful, reusable logic.
+En lecciones anteriores, aprendiste variables, tipos de datos y operadores. Las funciones combinan estos elementos en unidades reutilizables. Las próximas lecciones sobre bucles y condicionales se usarán dentro de funciones para crear lógica reutilizable poderosa.
 
 ## Teoría
 
-### ¿Qué es a Function?
+### ¿Qué es una Función?
 
-A function is a named block of code that takes inputs (parameters), performs a computation, and returns an output. Functions promote the DRY (Don't Repeat Yourself) principle.
+Una función es un bloque de código nombrado que recibe entradas (parámetros), realiza un cómputo y devuelve una salida. Las funciones promueven el principio DRY (Don't Repeat Yourself — No te Repitas).
 
-### Defining and Calling Functions
+### Definir y Llamar Funciones
 
 ```python
 def function_name(parameter1, parameter2):
@@ -44,22 +44,22 @@ def function_name(parameter1, parameter2):
     return result
 ```
 
-### Function Components
+### Componentes de una Función
 
-1. **def keyword**: Starts the function definition
-2. **Function name**: Follows naming conventions (snake_case)
-3. **Parameters**: Variables that receive input values
-4. **Colon**: Ends the function header
-5. **Body**: Indented block of code
-6. **return**: Sends output back to the caller
-7. **Docstring**: Documentation string (optional but recommended)
+1. **Palabra clave def**: Inicia la definición de la función
+2. **Nombre de la función**: Sigue las convenciones de nomenclatura (snake_case)
+3. **Parámetros**: Variables que reciben valores de entrada
+4. **Dos puntos**: Terminan el encabezado de la función
+5. **Cuerpo**: Bloque de código indentado
+6. **return**: Envía la salida de vuelta al llamante
+7. **Docstring**: Cadena de documentación (opcional pero recomendada)
 
-### Parameters vs Arguments
+### Parámetros vs Argumentos
 
-- **Parameter**: Variable listed in the function definition
-- **Argument**: Value passed to the function when called
+- **Parámetro**: Variable listada en la definición de la función
+- **Argumento**: Valor pasado a la función cuando se llama
 
-### Types of Arguments
+### Tipos de Argumentos
 
 ```python
 # Positional arguments (required, in order)
@@ -82,17 +82,17 @@ def sum_all(*args):
 sum_all(1, 2, 3, 4)  # 10
 ```
 
-### Return Values
+### Valores de Retorno
 
-Functions can return:
-- A single value: `return x`
-- Multiple values: `return x, y` (returns a tuple)
-- Nothing: `return None` (or no return statement)
+Las funciones pueden devolver:
+- Un solo valor: `return x`
+- Múltiples valores: `return x, y` (devuelve una tupla)
+- Nada: `return None` (o sin declaración return)
 
-### Scope
+### Ámbito (Scope)
 
-- **Local scope**: Variables defined inside a function are only accessible there
-- **Global scope**: Variables defined outside any function are accessible everywhere
+- **Ámbito local**: Las variables definidas dentro de una función solo son accesibles allí
+- **Ámbito global**: Las variables definidas fuera de cualquier función son accesibles en todas partes
 
 ```python
 x = 10  # global
@@ -107,9 +107,9 @@ print(x)  # works
 print(y)  # NameError
 ```
 
-### Lambda Functions
+### Funciones Lambda
 
-Lambda functions are anonymous, single-expression functions:
+Las funciones lambda son funciones anónimas de una sola expresión:
 
 ```python
 # Regular function
@@ -266,65 +266,65 @@ print(f"Health Score: {health}/100")
 
 ## Errores Comunes
 
-1. **Forgetting parentheses when calling**: `result = my_func` (references the function) vs `result = my_func()` (calls it)
-2. **Modifying global variables inside functions**: Use `global` keyword if needed, but prefer passing parameters
-3. **Mutable default arguments**: `def f(x=[])` — the list is shared across calls. Use `def f(x=None)` instead.
-4. **Not returning a value**: Functions without `return` return `None`
-5. **Shadowing built-in functions**: Don't name variables `list`, `str`, `print`
+1. **Olvidar los paréntesis al llamar**: `result = my_func` (referencia la función) vs `result = my_func()` (la llama)
+2. **Modificar variables globales dentro de funciones**: Usa la palabra clave `global` si es necesario, pero prefiere pasar parámetros
+3. **Argumentos por defecto mutables**: `def f(x=[])` — la lista se comparte entre llamadas. Usa `def f(x=None)` en su lugar.
+4. **No devolver un valor**: Las funciones sin `return` devuelven `None`
+5. **Sombrear funciones incorporadas**: No nombres variables `list`, `str`, `print`
 
 ## Buenas Prácticas
 
-- Functions should do one thing well (Single Responsibility Principle)
-- Use descriptive names that indicate what the function does
-- Write docstrings for all public functions
-- Keep functions short (typically < 20-30 lines)
-- Use type hints for better readability (Python 3.5+)
-- Prefer returning values over printing inside functions
+- Las funciones deberían hacer una cosa bien (Principio de Responsabilidad Única)
+- Usa nombres descriptivos que indiquen lo que hace la función
+- Escribe docstrings para todas las funciones públicas
+- Mantén las funciones cortas (típicamente < 20-30 líneas)
+- Usa type hints para mejor legibilidad (Python 3.5+)
+- Prefiere devolver valores en lugar de imprimir dentro de funciones
 
 ## Resumen
 
-- Functions are reusable code blocks defined with `def`
-- Parameters receive inputs; `return` sends outputs
-- Python supports positional, keyword, default, and variable-length arguments
-- Variables inside functions are local; variables outside are global
-- Lambda functions are anonymous, single-expression functions
-- Docstrings document function purpose and usage
+- Las funciones son bloques de código reutilizables definidos con `def`
+- Los parámetros reciben entradas; `return` envía salidas
+- Python soporta argumentos posicionales, de palabra clave, por defecto y de longitud variable
+- Las variables dentro de funciones son locales; las variables fuera son globales
+- Las funciones lambda son funciones anónimas de una sola expresión
+- Los docstrings documentan el propósito y uso de la función
 
 ## Términos Clave
 
-- **Function**: Named reusable block of code
-- **Parameter**: Variable in the function definition
-- **Argument**: Value passed when calling a function
-- **Return value**: Output sent back to the caller
-- **Scope**: Region where a variable is accessible
-- **Lambda**: Anonymous inline function
-- **Docstring**: Documentation string for functions
-- **DRY**: Don't Repeat Yourself principle
+- **Función**: Bloque de código reutilizable nombrado
+- **Parámetro**: Variable en la definición de la función
+- **Argumento**: Valor pasado al llamar una función
+- **Valor de retorno**: Salida enviada de vuelta al llamante
+- **Ámbito (Scope)**: Región donde una variable es accesible
+- **Lambda**: Función anónima en línea
+- **Docstring**: Cadena de documentación para funciones
+- **DRY**: Principio de No Repetición
 
 ## Ejercicios
 
 ### Nivel 1: Básico
 
-1. What is the difference between a parameter and an argument?
-2. What does a function return if it has no `return` statement?
-3. ¿Cuál es el propósito of a docstring?
+1. ¿Cuál es la diferencia entre un parámetro y un argumento?
+2. ¿Qué devuelve una función si no tiene declaración `return`?
+3. ¿Cuál es el propósito de un docstring?
 
 ### Nivel 2: Implementación
 
-4. Write a function `is_palindrome(s)` that checks if a string is a palindrome (reads the same forward and backward).
-5. Write a function `mean(numbers)` that calculates the mean of a list of numbers without using `statistics.mean()`.
+4. Escribe una función `is_palindrome(s)` que verifique si un string es un palíndromo (se lee igual al derecho y al revés).
+5. Escribe una función `mean(numbers)` que calcule el promedio de una lista de números sin usar `statistics.mean()`.
 
 ### Nivel 3: Pensamiento Crítico
 
-6. Why are mutable default arguments (like `def f(x=[])`) dangerous? What is the recommended alternative?
-7. Compara y contrasta functions in Python with functions in mathematics. How are they similar? How are they different?
+6. ¿Por qué son peligrosos los argumentos por defecto mutables (como `def f(x=[])`)? ¿Cuál es la alternativa recomendada?
+7. Compara y contrasta las funciones en Python con las funciones en matemáticas. ¿En qué se parecen? ¿En qué se diferencian?
 
 ## Desafío de Programación
 
-Write a module `sequence_tools.py` with these functions:
-1. `gc_content(sequence)` — calculates GC percentage
-2. `reverse_complement(sequence)` — returns reverse complement
-3. `has_motif(sequence, motif)` — checks if a motif exists
-4. `filter_sequences(sequences, min_gc=40, max_gc=60)` — filters a list of sequences by GC content range
+Escribe un módulo `sequence_tools.py` con estas funciones:
+1. `gc_content(sequence)` — calcula el porcentaje de GC
+2. `reverse_complement(sequence)` — devuelve el complemento inverso
+3. `has_motif(sequence, motif)` — verifica si existe un motivo
+4. `filter_sequences(sequences, min_gc=40, max_gc=60)` — filtra una lista de secuencias por rango de contenido GC
 
 Include docstrings for each function and a `if __name__ == "__main__":` block that demonstrates usage.

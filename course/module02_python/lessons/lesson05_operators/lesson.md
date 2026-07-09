@@ -23,56 +23,56 @@ Quiz: quiz.md
 
 ## Motivación
 
-Operators are the tools that let you compute, compare, and combine values. Every program — from a simple calculator to a machine learning model — relies on operators. In biotechnology, you use operators to calculate drug concentrations, compare gene expression levels, and determine significance. In SaaS, you use them to compute revenue, compare user engagement metrics, and evaluate business rules.
+Los operadores son las herramientas que te permiten calcular, comparar y combinar valores. Cada programa — desde una calculadora simple hasta un modelo de machine learning — depende de operadores. En biotecnología, usas operadores para calcular concentraciones de fármacos, comparar niveles de expresión génica y determinar significancia. En SaaS, los usas para calcular ingresos, comparar métricas de compromiso de usuarios y evaluar reglas de negocio.
 
 ## Panorama General
 
-En la lección anterior, aprendiste about the data types that values can have. Ahora aprenderás how to perform operations on those values. Operators build on your understanding of types because different types support different operators. This prepares you for the next lessons on functions and control flow, where operators are used in conditions and computations.
+En la lección anterior, aprendiste sobre los tipos de datos que los valores pueden tener. Ahora aprenderás a realizar operaciones sobre esos valores. Los operadores se basan en tu comprensión de los tipos porque diferentes tipos soportan diferentes operadores. Esto te prepara para las próximas lecciones sobre funciones y control de flujo, donde los operadores se usan en condiciones y cálculos.
 
 ## Teoría
 
-### Arithmetic Operators
+### Operadores Aritméticos
 
-Arithmetic operators perform mathematical operations on numeric types (int, float).
+Los operadores aritméticos realizan operaciones matemáticas sobre tipos numéricos (int, float).
 
-| Operator | Name | Example | Result |
-|----------|------|---------|--------|
-| `+` | Addition | `5 + 3` | `8` |
-| `-` | Subtraction | `5 - 3` | `2` |
-| `*` | Multiplication | `5 * 3` | `15` |
-| `/` | Float division | `5 / 3` | `1.666...` |
-| `//` | Integer division | `5 // 3` | `1` |
-| `%` | Modulus (remainder) | `5 % 3` | `2` |
-| `**` | Exponentiation | `5 ** 3` | `125` |
+| Operador | Nombre | Ejemplo | Resultado |
+|----------|--------|---------|-----------|
+| `+` | Suma | `5 + 3` | `8` |
+| `-` | Resta | `5 - 3` | `2` |
+| `*` | Multiplicación | `5 * 3` | `15` |
+| `/` | División float | `5 / 3` | `1.666...` |
+| `//` | División entera | `5 // 3` | `1` |
+| `%` | Módulo (resto) | `5 % 3` | `2` |
+| `**` | Exponente | `5 ** 3` | `125` |
 
-### Comparison Operators
+### Operadores de Comparación
 
-Comparison operators compare two values and return a boolean.
+Los operadores de comparación comparan dos valores y devuelven un booleano.
 
-| Operator | Meaning | Example | Result |
-|----------|---------|---------|--------|
-| `==` | Equal to | `5 == 3` | `False` |
-| `!=` | Not equal to | `5 != 3` | `True` |
-| `<` | Less than | `5 < 3` | `False` |
-| `>` | Greater than | `5 > 3` | `True` |
-| `<=` | Less than or equal | `5 <= 5` | `True` |
-| `>=` | Greater than or equal | `5 >= 3` | `True` |
+| Operador | Significado | Ejemplo | Resultado |
+|----------|-------------|---------|-----------|
+| `==` | Igual a | `5 == 3` | `False` |
+| `!=` | Distinto de | `5 != 3` | `True` |
+| `<` | Menor que | `5 < 3` | `False` |
+| `>` | Mayor que | `5 > 3` | `True` |
+| `<=` | Menor o igual | `5 <= 5` | `True` |
+| `>=` | Mayor o igual | `5 >= 3` | `True` |
 
-### Logical Operators
+### Operadores Lógicos
 
-Logical operators combine boolean expressions.
+Los operadores lógicos combinan expresiones booleanas.
 
-| Operator | Description | Example | Result |
-|----------|-------------|---------|--------|
-| `and` | True if both are True | `True and False` | `False` |
-| `or` | True if at least one is True | `True or False` | `True` |
-| `not` | Inverts the boolean | `not True` | `False` |
+| Operador | Descripción | Ejemplo | Resultado |
+|----------|-------------|---------|-----------|
+| `and` | True si ambos son True | `True and False` | `False` |
+| `or` | True si al menos uno es True | `True or False` | `True` |
+| `not` | Invierte el booleano | `not True` | `False` |
 
-### Assignment Operators
+### Operadores de Asignación
 
-Assignment operators update variables with a computation.
+Los operadores de asignación actualizan variables con un cálculo.
 
-| Operator | Example | Equivalent to |
+| Operador | Ejemplo | Equivalente a |
 |----------|---------|---------------|
 | `=` | `x = 5` | `x = 5` |
 | `+=` | `x += 3` | `x = x + 3` |
@@ -83,16 +83,16 @@ Assignment operators update variables with a computation.
 | `%=` | `x %= 3` | `x = x % 3` |
 | `**=` | `x **= 3` | `x = x ** 3` |
 
-### Operator Precedence
+### Precedencia de Operadores
 
-Python follows standard mathematical precedence (PEMDAS):
+Python sigue la precedencia matemática estándar (PEMDAS):
 
-1. Parentheses `()`
-2. Exponentiation `**`
-3. Unary `+`, `-`
-4. Multiplication `*`, Division `/`, Integer division `//`, Modulus `%`
-5. Addition `+`, Subtraction `-`
-6. Comparison `<`, `<=`, `>`, `>=`, `==`, `!=`
+1. Paréntesis `()`
+2. Exponente `**`
+3. Unario `+`, `-`
+4. Multiplicación `*`, División `/`, División entera `//`, Módulo `%`
+5. Suma `+`, Resta `-`
+6. Comparación `<`, `<=`, `>`, `>=`, `==`, `!=`
 7. `not`
 8. `and`
 9. `or`
@@ -206,62 +206,62 @@ print(f"High churn risk: {high_churn_risk}")
 
 ## Errores Comunes
 
-1. **Using `=` instead of `==` for comparison**: `if x = 5:` is assignment, not comparison
-2. **Integer division when float needed**: `5/2 = 2.5` (Python 3), but `5//2 = 2`
-3. **Chaining comparisons incorrectly**: Python allows `a < b < c`, which is `a < b and b < c`
-4. **Operator precedence confusion**: `3 + 4 * 2 = 11`, not `14`
-5. **Modulus with negative numbers**: `-5 % 3 = 1` (not -2)
+1. **Usar `=` en lugar de `==` para comparación**: `if x = 5:` es asignación, no comparación
+2. **División entera cuando se necesita float**: `5/2 = 2.5` (Python 3), pero `5//2 = 2`
+3. **Encadenar comparaciones incorrectamente**: Python permite `a < b < c`, que es `a < b and b < c`
+4. **Confundir precedencia de operadores**: `3 + 4 * 2 = 11`, no `14`
+5. **Módulo con números negativos**: `-5 % 3 = 1` (no -2)
 
 ## Buenas Prácticas
 
-- Use parentheses to make precedence explicit
-- Use `+=` and similar operators for cleaner code
-- Use `==` with caution for float comparison; use `abs(a-b) < epsilon`
-- Leverage Python's chained comparisons: `0 <= x <= 100`
-- Use `not` sparingly — rewrite conditions for readability
+- Usa paréntesis para hacer explícita la precedencia
+- Usa `+=` y operadores similares para código más limpio
+- Usa `==` con cuidado para comparación float; usa `abs(a-b) < epsilon`
+- Aprovecha las comparaciones encadenadas de Python: `0 <= x <= 100`
+- Usa `not` con moderación — reescribe condiciones para legibilidad
 
 ## Resumen
 
-- Arithmetic: `+`, `-`, `*`, `/`, `//`, `%`, `**`
-- Comparison: `==`, `!=`, `<`, `>`, `<=`, `>=` (return bool)
-- Logical: `and`, `or`, `not`
-- Assignment: `=`, `+=`, `-=`, `*=`, `/=`, `//=`, `%=`, `**=`
-- Precedence: `()` → `**` → `*,/` → `+,-` → comparisons → `not` → `and` → `or`
-- Use parentheses for clarity
+- Aritméticos: `+`, `-`, `*`, `/`, `//`, `%`, `**`
+- Comparación: `==`, `!=`, `<`, `>`, `<=`, `>=` (devuelven bool)
+- Lógicos: `and`, `or`, `not`
+- Asignación: `=`, `+=`, `-=`, `*=`, `/=`, `//=`, `%=`, `**=`
+- Precedencia: `()` → `**` → `*,/` → `+,-` → comparaciones → `not` → `and` → `or`
+- Usa paréntesis para claridad
 
 ## Términos Clave
 
-- **Operator**: Symbol that performs an operation on operands
-- **Operand**: Value on which an operator acts
-- **Expression**: Combination of operators and operands that evaluates to a value
-- **Precedence**: Rules determining the order of evaluation
-- **Modulus**: Remainder after division
-- **Short-circuit evaluation**: `and`/`or` stop evaluating when the result is determined
+- **Operador**: Símbolo que realiza una operación sobre operandos
+- **Operando**: Valor sobre el que actúa un operador
+- **Expresión**: Combinación de operadores y operandos que se evalúa a un valor
+- **Precedencia**: Reglas que determinan el orden de evaluación
+- **Módulo**: Resto después de la división
+- **Evaluación de cortocircuito**: `and`/`or` dejan de evaluar cuando el resultado está determinado
 
 ## Ejercicios
 
 ### Nivel 1: Básico
 
-1. What is the result of `15 // 4` and `15 % 4`?
-2. What is the value of `3 + 4 * 2 ** 3`?
-3. What does `not (True and False)` evaluate to?
+1. ¿Cuál es el resultado de `15 // 4` y `15 % 4`?
+2. ¿Cuál es el valor de `3 + 4 * 2 ** 3`?
+3. ¿A qué evalúa `not (True and False)`?
 
 ### Nivel 2: Implementación
 
-4. Write code that checks if a number is even (use `%`) and prints "even" or "odd".
-5. Write a BMI calculator: weight (kg) / height² (m). Categorize as underweight (< 18.5), normal (18.5-24.9), overweight (25-29.9), obese (≥ 30).
+4. Escribe código que verifique si un número es par (usa `%`) e imprima "par" o "impar".
+5. Escribe una calculadora de IMC: peso (kg) / altura² (m). Categoriza como bajo peso (< 18.5), normal (18.5-24.9), sobrepeso (25-29.9), obeso (≥ 30).
 
 ### Nivel 3: Pensamiento Crítico
 
-6. Why does `0.1 + 0.2 == 0.3` return False? How would you compare floating-point results safely?
-7. Short-circuit evaluation: What does `False and print("hello")` output? Why?
+6. ¿Por qué `0.1 + 0.2 == 0.3` devuelve False? ¿Cómo compararías resultados de punto flotante de forma segura?
+7. Evaluación de cortocircuito: ¿Qué imprime `False and print("hello")`? ¿Por qué?
 
 ## Desafío de Programación
 
 Escribe un programa que:
-1. Asks for the number of DNA samples, the cost per sample, and the available budget
-2. Calculates the total cost and whether it's within budget
-3. Applies a 15% discount if the number of samples > 100
-4. Calculates the remaining budget after the purchase
-5. Uses at least one operator from each category (arithmetic, comparison, logical, assignment)
+1. Pida el número de muestras de ADN, el costo por muestra y el presupuesto disponible
+2. Calcule el costo total y si está dentro del presupuesto
+3. Aplique un descuento del 15% si el número de muestras > 100
+4. Calcule el presupuesto restante después de la compra
+5. Use al menos un operador de cada categoría (aritmético, comparación, lógico, asignación)
 6. Prints a formatted summary of all calculations
