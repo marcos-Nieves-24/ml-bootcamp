@@ -3,13 +3,13 @@ Module: 4
 Lesson Number: 3
 Lesson Title: Clasificación
 Estimated Duration: 90 minutes
-Prerequisites: L1 (ML Fundamentals)
+Prerequisites: L1 (Fundamentos de ML)
 Learning Objectives:
-  - Explicar binary classification and the logistic function
-  - Train and evaluate logistic regression models with scikit-learn
-  - Interpret a confusion matrix and derive precision, recall, F1
-  - Plot and interpret ROC curves and AUC scores
-  - Comparar classification metrics for different business contexts
+  - Explicar la clasificación binaria y la función logística
+  - Entrenar y evaluar modelos de regresión logística con scikit-learn
+  - Interpretar una matriz de confusión y derivar precision, recall y F1
+  - Graficar e interpretar curvas ROC y puntuaciones AUC
+  - Comparar métricas de clasificación para diferentes contextos de negocio
 Keywords: binary classification, logistic regression, confusion matrix, precision, recall, F1, ROC, AUC, decision boundary
 Difficulty: Principiante
 Programming Concepts: sklearn.linear_model.LogisticRegression, sklearn.metrics

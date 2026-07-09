@@ -3,13 +3,13 @@ Module: 3
 Lesson Number: 6
 Lesson Title: Exploratory Data Analysis (EDA)
 Estimated Duration: 90 minutes
-Prerequisites: Lessons 1-5
+Prerequisites: Lecciones 1-5
 Learning Objectives:
-  - Detect and handle missing values in a dataset
-  - Identificar outliers using multiple methods
-  - Crear effective visualizations for data exploration
-  - Generate automated EDA reports with pandas-profiling
-  - Design a systematic EDA workflow
+  - Detectar y manejar valores faltantes en un dataset
+  - Identificar outliers usando múltiples métodos
+  - Crear visualizaciones efectivas para exploración de datos
+  - Generar reportes EDA automatizados con pandas-profiling
+  - Diseñar un workflow EDA sistemático
 Keywords: EDA, missing values, outliers, visualization, pandas profiling, feature exploration
 Difficulty: Intermedio
 Programming Concepts: pandas, matplotlib, seaborn, pandas-profiling

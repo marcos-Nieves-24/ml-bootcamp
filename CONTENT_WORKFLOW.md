@@ -1,41 +1,41 @@
 # CONTENT_WORKFLOW.md
 
-# AI Content Generation Workflow
+# Flujo de Trabajo de Generación de Contenido con IA
 
-## Purpose
+## Propósito
 
-This document defines the mandatory workflow OpenCode must follow when contributing to this repository.
+Este documento define el flujo de trabajo obligatorio que OpenCode debe seguir al contribuir a este repositorio.
 
-OpenCode is not expected to simply generate text.
+No se espera que OpenCode simplemente genere texto.
 
-Instead, it should behave as:
+En cambio, debe comportarse como:
 
-- University professor
-- Curriculum designer
-- Machine Learning engineer
-- Scientific writer
-- Software engineer
-- Technical reviewer
+- Profesor universitario
+- Diseñador curricular
+- Ingeniero de Machine Learning
+- Redactor científico
+- Ingeniero de software
+- Revisor técnico
 
-Every modification should improve the quality, consistency, and maintainability of the course.
-
----
-
-# General Principle
-
-Always think before writing.
-
-Never generate content immediately.
-
-Every request should follow the workflow described below.
+Cada modificación debe mejorar la calidad, consistencia y mantenibilidad del curso.
 
 ---
 
-# Phase 1 — Repository Analysis
+# Principio General
 
-Before generating any content, OpenCode must:
+Pensar siempre antes de escribir.
 
-1. Read the following files:
+Nunca generar contenido inmediatamente.
+
+Cada solicitud debe seguir el flujo de trabajo descrito a continuación.
+
+---
+
+# Fase 1 — Análisis del Repositorio
+
+Antes de generar cualquier contenido, OpenCode debe:
+
+1. Leer los siguientes archivos:
 
 - README.md
 - AGENTS.md
@@ -45,39 +45,39 @@ Before generating any content, OpenCode must:
 - LESSON_TEMPLATE.md
 - ROADMAP.md
 
-2. Understand
+2. Comprender
 
-- repository organization
-- educational philosophy
-- current module
-- lesson dependencies
-- existing materials
+- organización del repositorio
+- filosofía educativa
+- módulo actual
+- dependencias entre lecciones
+- materiales existentes
 
-3. Identify which files will be modified.
+3. Identificar qué archivos serán modificados.
 
-Do not create duplicate content.
-
----
-
-# Phase 2 — Planning
-
-Before creating files, OpenCode must produce an implementation plan.
-
-The plan should include
-
-## Objective
-
-What is being created?
-
-Example
-
-Generate Module 3 Lesson 2.
+No crear contenido duplicado.
 
 ---
 
-## Required files
+# Fase 2 — Planificación
 
-Example
+Antes de crear archivos, OpenCode debe producir un plan de implementación.
+
+El plan debe incluir
+
+## Objetivo
+
+¿Qué se está creando?
+
+Ejemplo
+
+Generar Módulo 3 Lección 2.
+
+---
+
+## Archivos requeridos
+
+Ejemplo
 
 lesson.md
 
@@ -95,78 +95,78 @@ README.md
 
 ---
 
-## Required figures
+## Figuras requeridas
 
-List every figure that should be created.
+Listar cada figura que debe crearse.
 
-Example
+Ejemplo
 
-- Histogram
-- Scatter plot
-- Distribution comparison
-
----
-
-## Required datasets
-
-Specify
-
-- existing dataset
-- synthetic dataset
-- public dataset
+- Histograma
+- Gráfico de dispersión
+- Comparación de distribuciones
 
 ---
 
-## Required Python examples
+## Datasets requeridos
 
-List every notebook section.
+Especificar
 
----
-
-## Expected learning outcomes
-
-Describe what students should learn.
+- dataset existente
+- dataset sintético
+- dataset público
 
 ---
 
-Only after the plan is approved should content generation begin.
+## Ejemplos en Python requeridos
+
+Listar cada sección del notebook.
 
 ---
 
-# Phase 3 — Content Generation
+## Resultados de aprendizaje esperados
 
-Generate educational content following LESSON_TEMPLATE.md.
-
-The lesson should include
-
-- learning objectives
-- motivation
-- theory
-- mathematical intuition
-- mathematical derivation
-- biological examples
-- SaaS examples
-- Python implementation
-- visualization
-- summary
-- glossary
-- exercises
-
-Do not skip sections.
+Describir qué deberían aprender los estudiantes.
 
 ---
 
-# Phase 4 — Notebook Generation
+Solo después de que el plan sea aprobado debe comenzar la generación de contenido.
 
-Generate a complete Jupyter Notebook.
+---
 
-Notebook structure
+# Fase 3 — Generación de Contenido
 
-Introduction
+Generar contenido educativo siguiendo LESSON_TEMPLATE.md.
+
+La lección debe incluir
+
+- objetivos de aprendizaje
+- motivación
+- teoría
+- intuición matemática
+- derivación matemática
+- ejemplos biológicos
+- ejemplos SaaS
+- implementación en Python
+- visualización
+- resumen
+- glosario
+- ejercicios
+
+No omitir secciones.
+
+---
+
+# Fase 4 — Generación del Notebook
+
+Generar un notebook de Jupyter completo.
+
+Estructura del notebook
+
+Introducción
 
 ↓
 
-Theory
+Teoría
 
 ↓
 
@@ -174,222 +174,222 @@ Python
 
 ↓
 
-Visualization
+Visualización
 
 ↓
 
-Interpretation
+Interpretación
 
 ↓
 
-Exercises
+Ejercicios
 
 ↓
 
-Challenge
+Desafío
 
-Notebook must execute without errors.
+El notebook debe ejecutarse sin errores.
 
 ---
 
-# Phase 5 — Figures
+# Fase 5 — Figuras
 
-Whenever a figure is needed
+Cuando se necesite una figura
 
-Generate the Python script first.
+Generar el script de Python primero.
 
-Then generate
+Luego generar
 
 SVG
 
 PNG
 
-PDF (optional)
+PDF (opcional)
 
-Never manually draw figures.
+Nunca dibujar figuras manualmente.
 
-All figures must be reproducible.
+Todas las figuras deben ser reproducibles.
 
 ---
 
-# Phase 6 — Dataset Handling
+# Fase 6 — Manejo de Datasets
 
-Before creating datasets
+Antes de crear datasets
 
-Determine whether
+Determinar si
 
-- existing dataset
-- synthetic dataset
-- external dataset
+- dataset existente
+- dataset sintético
+- dataset externo
 
-is appropriate.
+es apropiado.
 
-If creating synthetic datasets
+Si se crean datasets sintéticos
 
-Document
+Documentar
 
-- assumptions
+- supuestos
 - variables
-- distributions
-- missing values
-- class imbalance
+- distribuciones
+- valores faltantes
+- desbalanceo de clases
 
-Every dataset must include metadata.
-
----
-
-# Phase 7 — Assessment Generation
-
-Generate
-
-Quiz
-
-Assignment
-
-Solutions
-
-Rubric
-
-Coding Challenge
-
-Assessment should evaluate
-
-- conceptual understanding
-- coding ability
-- interpretation
-- critical thinking
-
-Avoid memorization-only questions.
+Cada dataset debe incluir metadatos.
 
 ---
 
-# Phase 8 — Cross-Validation
+# Fase 7 — Generación de Evaluaciones
 
-Before finishing
+Generar
 
-Verify
+Cuestionario
 
-Does the lesson depend on future concepts?
+Tarea
 
-If yes
+Soluciones
 
-Revise.
+Rúbrica
 
-Does terminology match previous lessons?
+Desafío de Programación
 
-If no
+La evaluación debe medir
 
-Revise.
+- comprensión conceptual
+- habilidad de programación
+- interpretación
+- pensamiento crítico
 
-Are equations explained?
-
-If no
-
-Revise.
-
-Does every code example run?
-
-If no
-
-Fix.
+Evitar preguntas solo de memorización.
 
 ---
 
-# Phase 9 — Repository Consistency
+# Fase 8 — Validación Cruzada
 
-Verify
+Antes de finalizar
 
-Folder structure
+Verificar
 
-File names
+¿La lección depende de conceptos futuros?
 
-Links
+Si es así
 
-Notebook names
+Revisar.
 
-Figure names
+¿La terminología coincide con lecciones anteriores?
 
-References
+Si no
 
-Nothing should break existing content.
+Revisar.
 
----
+¿Están explicadas las ecuaciones?
 
-# Phase 10 — Scientific Review
+Si no
 
-Review the lesson as if preparing it for publication.
+Revisar.
 
-Check
+¿Cada ejemplo de código se ejecuta?
 
-Scientific accuracy
+Si no
 
-Mathematical correctness
-
-Programming correctness
-
-Grammar
-
-Readability
-
-Pedagogical flow
-
-APA references
-
-Consistency
+Corregir.
 
 ---
 
-# Phase 11 — Final Deliverables
+# Fase 9 — Consistencia del Repositorio
 
-Summarize
+Verificar
 
-Files created
+Estructura de carpetas
 
-Files modified
+Nombres de archivos
 
-Datasets created
+Enlaces
 
-Figures created
+Nombres de notebooks
 
-Notebooks created
+Nombres de figuras
 
-Estimated lesson duration
+Referencias
 
-Prerequisites
-
-Next recommended lesson
+Nada debe romper el contenido existente.
 
 ---
 
-# Writing Guidelines
+# Fase 10 — Revisión Científica
 
-Always
+Revisar la lección como si se preparara para publicación.
 
-Explain before defining.
+Verificar
 
-Use intuition before equations.
+Precisión científica
 
-Use examples before abstractions.
+Corrección matemática
 
-Prefer active voice.
+Corrección de programación
 
-Use short paragraphs.
+Gramática
 
-Avoid unnecessary jargon.
+Legibilidad
 
-Explain every new concept.
+Flujo pedagógico
 
-Use diagrams whenever possible.
+Referencias APA
 
-Include biological examples whenever possible.
-
-Include SaaS examples whenever possible.
+Consistencia
 
 ---
 
-# Programming Guidelines
+# Fase 11 — Entregables Finales
 
-Use
+Resumir
+
+Archivos creados
+
+Archivos modificados
+
+Datasets creados
+
+Figuras creadas
+
+Notebooks creados
+
+Duración estimada de la lección
+
+Prerrequisitos
+
+Próxima lección recomendada
+
+---
+
+# Guías de Redacción
+
+Siempre
+
+Explicar antes de definir.
+
+Usar intuición antes que ecuaciones.
+
+Usar ejemplos antes que abstracciones.
+
+Preferir voz activa.
+
+Usar párrafos cortos.
+
+Evitar jerga innecesaria.
+
+Explicar cada concepto nuevo.
+
+Usar diagramas siempre que sea posible.
+
+Incluir ejemplos biológicos siempre que sea posible.
+
+Incluir ejemplos SaaS siempre que sea posible.
+
+---
+
+# Guías de Programación
+
+Usar
 
 Python 3.12+
 
@@ -405,43 +405,43 @@ typing
 
 pathlib
 
-Prefer functions over scripts.
+Preferir funciones sobre scripts.
 
-Use descriptive variable names.
+Usar nombres de variables descriptivos.
 
-Follow PEP8.
+Seguir PEP8.
 
-Document every function.
+Documentar cada función.
 
-Every notebook must execute from top to bottom.
+Cada notebook debe ejecutarse de principio a fin.
 
 ---
 
-# Documentation Guidelines
+# Guías de Documentación
 
-Every generated folder should include
+Cada carpeta generada debe incluir
 
 README.md
 
-explaining
+explicando
 
-Purpose
+Propósito
 
-Contents
+Contenido
 
-Dependencies
+Dependencias
 
-Usage
+Uso
 
-Learning outcomes
+Resultados de aprendizaje
 
 ---
 
-# Git Guidelines
+# Guías de Git
 
-One logical change per commit.
+Un cambio lógico por commit.
 
-Suggested commit format
+Formato de commit sugerido
 
 feat(module): add lesson on probability distributions
 
@@ -453,98 +453,98 @@ refactor(slides): simplify clustering diagrams
 
 ---
 
-# Never Do
+# Nunca Hacer
 
-Never invent citations.
+Nunca inventar citas.
 
-Never invent datasets presented as real.
+Nunca inventar datasets presentados como reales.
 
-Never use copyrighted images without attribution.
+Nunca usar imágenes con copyright sin atribución.
 
-Never create duplicate lessons.
+Nunca crear lecciones duplicadas.
 
-Never overwrite existing material without justification.
+Nunca sobrescribir material existente sin justificación.
 
-Never reference concepts that students have not learned yet.
+Nunca referenciar conceptos que los estudiantes aún no han aprendido.
 
-Never leave notebooks untested.
+Nunca dejar notebooks sin probar.
 
-Never leave TODOs inside educational content.
-
----
-
-# Preferred Workflow
-
-Request
-
-↓
-
-Analyze repository
-
-↓
-
-Read repository instructions
-
-↓
-
-Create implementation plan
-
-↓
-
-Wait for approval (if requested)
-
-↓
-
-Generate lesson
-
-↓
-
-Generate notebook
-
-↓
-
-Generate figures
-
-↓
-
-Generate quiz
-
-↓
-
-Generate assignment
-
-↓
-
-Validate
-
-↓
-
-Review
-
-↓
-
-Summarize
-
-↓
-
-Suggest next lesson
+Nunca dejar TODOs dentro del contenido educativo.
 
 ---
 
-# Continuous Improvement
+# Flujo de Trabajo Preferido
 
-OpenCode should continuously improve the repository.
+Solicitud
 
-When appropriate
+↓
 
-- simplify explanations
-- improve figures
-- improve notebooks
-- improve code quality
-- improve exercises
-- remove redundancy
-- improve readability
+Analizar repositorio
 
-without changing the educational objectives.
+↓
 
-The repository should evolve as a maintainable, open-source university course that can be reused, extended, and published.
+Leer instrucciones del repositorio
+
+↓
+
+Crear plan de implementación
+
+↓
+
+Esperar aprobación (si se solicita)
+
+↓
+
+Generar lección
+
+↓
+
+Generar notebook
+
+↓
+
+Generar figuras
+
+↓
+
+Generar cuestionario
+
+↓
+
+Generar tarea
+
+↓
+
+Validar
+
+↓
+
+Revisar
+
+↓
+
+Resumir
+
+↓
+
+Sugerir siguiente lección
+
+---
+
+# Mejora Continua
+
+OpenCode debe mejorar continuamente el repositorio.
+
+Cuando sea apropiado
+
+- simplificar explicaciones
+- mejorar figuras
+- mejorar notebooks
+- mejorar calidad del código
+- mejorar ejercicios
+- eliminar redundancia
+- mejorar legibilidad
+
+sin cambiar los objetivos educativos.
+
+El repositorio debe evolucionar como un curso universitario de código abierto, mantenible, que pueda ser reutilizado, extendido y publicado.

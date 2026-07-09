@@ -1,16 +1,16 @@
 ---
 Module: 5
 Lesson Number: 4
-Lesson Title: Privacy and Data Protection
+Lesson Title: Privacidad y Protección de Datos
 Estimated Duration: 60 minutes
-Prerequisites: L1 (Introduction to AI Ethics)
+Prerequisites: L1 (Introducción a la Ética de la IA)
 Learning Objectives:
-  - Explicar data privacy principles in the context of ML
-  - Describir key provisions of GDPR and HIPAA relevant to AI
-  - Comparar anonymization, pseudonymization, and differential privacy
-  - Implementar a simple differential privacy mechanism
-  - Evaluar privacy risks in ML systems (membership inference, model inversion)
-Keywords: privacy, GDPR, HIPAA, differential privacy, anonymization, consent, data protection
+  - Explicar los principios de privacidad de datos en el contexto de ML
+  - Describir las disposiciones clave de GDPR y HIPAA relevantes para la IA
+  - Comparar anonimización, seudonimización y privacidad diferencial
+  - Implementar un mecanismo simple de privacidad diferencial
+  - Evaluar riesgos de privacidad en sistemas de ML (inferencia de pertenencia, inversión de modelos)
+Keywords: privacidad, GDPR, HIPAA, privacidad diferencial, anonimización, consentimiento, protección de datos
 Difficulty: Intermedio
 Programming Concepts: numpy, random noise addition
 Mathematical Concepts: Laplace mechanism, epsilon parameter

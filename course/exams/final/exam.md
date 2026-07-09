@@ -3,131 +3,131 @@ Module: 4-5
 Exam: Final
 Estimated Duration: 150 minutes
 Total Points: 100
-Prerequisites: All modules
-Topics: Machine Learning, Model Evaluation, Ethics in AI
+Prerequisites: Todos los módulos
+Topics: Machine Learning, Evaluación de Modelos, Ética en IA
 ---
 
-# Final Exam — Machine Learning for Data Analysis and SaaS
+# Examen Final — Machine Learning for Data Analysis and SaaS
 
 ## Instrucciones
 
-- Answer all questions.
-- Duration: 150 minutes.
-- Total points: 100.
-- Show your work for partial credit.
-- Code questions must be answered in Python using scikit-learn.
-- Write your answers in the provided answer sheets.
+- Responde todas las preguntas.
+- Duración: 150 minutos.
+- Puntaje total: 100 puntos.
+- Muestra tu trabajo para obtener crédito parcial.
+- Las preguntas de código deben responderse en Python usando scikit-learn.
+- Escribe tus respuestas en las hojas de respuesta proporcionadas.
 
 ---
 
-## Section 1: Multiple Choice (20 points, 2 points each)
+## Sección 1: Opción Múltiple (20 puntos, 2 puntos cada una)
 
-1. In Decision Trees, what does Gini impurity measure?
-   a) The depth of the tree
-   b) The probability of incorrect classification of a random sample
-   c) The number of leaves in the tree
-   d) The accuracy of the model
+1. En los Árboles de Decisión, ¿qué mide la impureza de Gini?
+   a) La profundidad del árbol
+   b) La probabilidad de clasificación incorrecta de una muestra aleatoria
+   c) El número de hojas en el árbol
+   d) La precisión del modelo
 
-2. What is the key difference between Bagging (Random Forest) and Boosting (Gradient Boosting)?
-   a) Bagging trains models sequentially; Boosting trains in parallel
-   b) Bagging trains models in parallel; Boosting trains sequentially
-   c) Bagging uses only linear models; Boosting uses trees
-   d) There is no difference
+2. ¿Cuál es la diferencia clave entre Bagging (Random Forest) y Boosting (Gradient Boosting)?
+   a) Bagging entrena modelos secuencialmente; Boosting entrena en paralelo
+   b) Bagging entrena modelos en paralelo; Boosting entrena secuencialmente
+   c) Bagging usa solo modelos lineales; Boosting usa árboles
+   d) No hay diferencia
 
-3. What does the silhouette score measure in clustering?
-   a) How fast the algorithm converges
-   b) How similar an object is to its own cluster vs other clusters
-   c) The total number of clusters
-   d) The accuracy of the clustering
+3. ¿Qué mide la puntuación de silueta (*silhouette score*) en clustering?
+   a) Qué tan rápido converge el algoritmo
+   b) Qué tan similar es un objeto a su propio cluster versus otros clusters
+   c) El número total de clusters
+   d) La precisión del clustering
 
-4. Which of these is NOT an ethical principle for AI?
-   a) Transparency
-   b) Fairness
-   c) Profit maximization
-   d) Accountability
+4. ¿Cuál de estos NO es un principio ético para la IA?
+   a) Transparencia
+   b) Equidad
+   c) Maximización de ganancias
+   d) Responsabilidad
 
-5. What is the purpose of cross-validation?
-   a) To increase training data
-   b) To reduce overfitting by testing on multiple data splits
-   c) To make the model train faster
-   d) To eliminate the need for a test set
+5. ¿Cuál es el propósito de la validación cruzada (*cross-validation*)?
+   a) Aumentar los datos de entrenamiento
+   b) Reducir el overfitting probando en múltiples divisiones de datos
+   c) Hacer que el modelo entrene más rápido
+   d) Eliminar la necesidad de un conjunto de prueba
 
-6. In the context of AI ethics, what is "algorithmic bias"?
-   a) When algorithms run faster on certain hardware
-   b) When an algorithm produces systematically unfair outcomes
-   c) When algorithms have bugs in the code
-   d) When algorithms are too complex to understand
+6. En el contexto de la ética en IA, ¿qué es el "sesgo algorítmico" (*algorithmic bias*)?
+   a) Cuando los algoritmos se ejecutan más rápido en cierto hardware
+   b) Cuando un algoritmo produce resultados sistemáticamente injustos
+   c) Cuando los algoritmos tienen errores en el código
+   d) Cuando los algoritmos son demasiado complejos para entenderlos
 
-7. What is the main goal of feature importance analysis?
-   a) To reduce the number of features
-   b) To understand which features most influence predictions
-   c) To make the model more accurate
-   d) To visualize the data
+7. ¿Cuál es el objetivo principal del análisis de importancia de features?
+   a) Reducir el número de features
+   b) Entender qué features influyen más en las predicciones
+   c) Hacer el modelo más preciso
+   d) Visualizar los datos
 
-8. The General Data Protection Regulation (GDPR) is primarily concerned with:
-   a) Algorithm speed
-   b) Data privacy and protection
-   c) Model accuracy
-   d) Open-source licensing
+8. El Reglamento General de Protección de Datos (GDPR) se ocupa principalmente de:
+   a) La velocidad del algoritmo
+   b) La privacidad y protección de datos
+   c) La precisión del modelo
+   d) Las licencias de código abierto
 
-9. In K-Means clustering, what does the Elbow Method help determine?
-   a) The optimal number of clusters
-   b) The optimal learning rate
-   c) The maximum number of iterations
-   d) The cluster centroids
+9. En el clustering con K-Means, ¿qué ayuda a determinar el Método del Codo (*Elbow Method*)?
+   a) El número óptimo de clusters
+   b) La tasa de aprendizaje óptima
+   c) El número máximo de iteraciones
+   d) Los centroides de los clusters
 
-10. What is the difference between explainability and interpretability in ML?
-    a) They are the same thing
-    b) Explainability refers to understanding how a model works; interpretability refers to understanding specific predictions
-    c) Interpretability refers to understanding how a model works; explainability refers to understanding specific predictions
-    d) Neither is important for ML
-
----
-
-## Section 2: Short Answer (24 points, 6 points each)
-
-11. Explain how a Random Forest algorithm works. What makes it better than a single Decision Tree?
-
-12. What is the bias-variance tradeoff? How does it relate to overfitting and underfitting?
-
-13. Describe three types of bias that can appear in AI systems. Provide a real-world example for each.
-
-14. What is model interpretation and why is it important? Name two techniques for interpreting ML models.
+10. ¿Cuál es la diferencia entre explicabilidad e interpretabilidad en ML?
+    a) Son lo mismo
+    b) La explicabilidad se refiere a entender cómo funciona un modelo; la interpretabilidad se refiere a entender predicciones específicas
+    c) La interpretabilidad se refiere a entender cómo funciona un modelo; la explicabilidad se refiere a entender predicciones específicas
+    d) Ninguna es importante para ML
 
 ---
 
-## Section 3: Coding (30 points)
+## Sección 2: Respuesta Breve (24 puntos, 6 puntos cada una)
 
-15. (15 points) Implement a complete machine learning pipeline that:
-   - Loads a dataset
-   - Splits into train/test sets (80/20)
-   - Trains a Random Forest classifier
-   - Evaluates using accuracy, precision, recall, and F1-score
-   - Prints a confusion matrix
+11. Explica cómo funciona el algoritmo Random Forest. ¿Qué lo hace mejor que un solo Árbol de Decisión?
 
-16. (15 points) Using K-Means clustering:
-   - Generate or load a dataset with 3 natural clusters
-   - Use the Elbow Method to determine the optimal K
-   - Apply K-Means with the optimal K
-   - Visualize the resulting clusters
-   - Calculate the silhouette score
+12. ¿Qué es el equilibrio sesgo-varianza (*bias-variance tradeoff*)? ¿Cómo se relaciona con overfitting y underfitting?
+
+13. Describe tres tipos de sesgo que pueden aparecer en sistemas de IA. Proporciona un ejemplo del mundo real para cada uno.
+
+14. ¿Qué es la interpretación de modelos y por qué es importante? Nombra dos técnicas para interpretar modelos de ML.
 
 ---
 
-## Section 4: Ethics Case Study (26 points)
+## Sección 3: Codificación (30 puntos)
 
-17. (13 points) A hospital deploys an AI system to prioritize patients for organ transplants. The system recommends lower priority for patients from certain demographic groups. 
-   a) Identify the ethical issues in this scenario.
-   b) Propose three specific actions the hospital should take.
-   c) What metrics should they monitor to ensure fairness?
+15. (15 puntos) Implementa un pipeline completo de machine learning que:
+   - Cargue un dataset
+   - Divida en conjuntos de train/test (80/20)
+   - Entrene un clasificador Random Forest
+   - Evalúe usando precisión (accuracy), precisión positiva (*precision*), sensibilidad (*recall*) y F1-score
+   - Imprima una matriz de confusión
 
-18. (13 points) A SaaS company uses customer data to train a churn prediction model. They want to use the model to automatically cancel subscriptions for high-churn-risk customers before they churn.
-   a) What are the ethical concerns with this approach?
-   b) Propose a better strategy that respects customer autonomy.
-   c) How would you ensure transparency and informed consent?
+16. (15 puntos) Usando K-Means clustering:
+   - Genera o carga un dataset con 3 clusters naturales
+   - Usa el Método del Codo para determinar la K óptima
+   - Aplica K-Means con la K óptima
+   - Visualiza los clusters resultantes
+   - Calcula la puntuación de silueta (*silhouette score*)
+
+---
+
+## Sección 4: Caso de Estudio de Ética (26 puntos)
+
+17. (13 puntos) Un hospital despliega un sistema de IA para priorizar pacientes para trasplantes de órganos. El sistema recomienda menor prioridad para pacientes de ciertos grupos demográficos.
+   a) Identifica los problemas éticos en este escenario.
+   b) Propón tres acciones específicas que el hospital debería tomar.
+   c) ¿Qué métricas deberían monitorear para garantizar equidad?
+
+18. (13 puntos) Una empresa SaaS utiliza datos de clientes para entrenar un modelo de predicción de churn. Quieren usar el modelo para cancelar automáticamente las suscripciones de clientes con alto riesgo de churn antes de que se vayan.
+   a) ¿Cuáles son las preocupaciones éticas con este enfoque?
+   b) Propón una estrategia mejor que respete la autonomía del cliente.
+   c) ¿Cómo garantizarías transparencia y consentimiento informado?
 
 ---
 
 ## Clave de Respuestas
 
-*(Provided separately to instructors)*
+*(Proporcionada por separado a los instructores)*

@@ -3,13 +3,13 @@ Module: 5
 Lesson Number: 2
 Lesson Title: Sesgo y Equidad
 Estimated Duration: 75 minutes
-Prerequisites: L1 (Introduction to AI Ethics)
+Prerequisites: L1 (Introducción a la Ética de la IA)
 Learning Objectives:
-  - Differentiate between data bias, algorithmic bias, and societal bias
-  - Implementar fairness metrics using Python and sklearn
-  - Detect bias in a dataset using statistical analysis
-  - Analizar the COMPAS recidivism case and facial recognition bias case
-  - Aplicar bias mitigation strategies to a real dataset
+  - Diferenciar entre sesgo de datos, sesgo algorítmico y sesgo social
+  - Implementar métricas de equidad usando Python y sklearn
+  - Detectar sesgo en un dataset usando análisis estadístico
+  - Analizar el caso COMPAS de reincidencia y el caso de sesgo en reconocimiento facial
+  - Aplicar estrategias de mitigación de sesgo a un dataset real
 Keywords: bias, fairness, disparate impact, equal opportunity, demographic parity, COMPAS, fairness metrics
 Difficulty: Intermedio
 Programming Concepts: pandas, numpy, python functions

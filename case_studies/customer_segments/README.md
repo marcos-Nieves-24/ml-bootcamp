@@ -1,23 +1,23 @@
-# Case Study: Customer Segmentation for SaaS
+# Caso de Estudio: Segmentación de Clientes para SaaS
 
-## Business Context
+## Contexto de Negocio
 
-A SaaS company wants to understand its customer base better. By segmenting customers into meaningful groups, they can tailor marketing campaigns, improve product features, and reduce churn.
+Una empresa SaaS quiere entender mejor su base de clientes. Al segmentar a los clientes en grupos significativos, pueden adaptar campañas de marketing, mejorar características del producto y reducir la cancelación de clientes (*churn*).
 
 ## Dataset
 
-- **Source:** `datasets/synthetic/customer_segments/customer_segments.csv`
-- **Features:** Usage metrics, subscription tier, tenure, support tickets, feature adoption
-- **Target:** Customer segments (unsupervised)
+- **Fuente:** `datasets/synthetic/customer_segments/customer_segments.csv`
+- **Features:** Métricas de uso, nivel de suscripción, antigüedad, tickets de soporte, adopción de features
+- **Target:** Segmentos de clientes (no supervisado)
 
-## Learning Objectives
+## Objetivos de Aprendizaje
 
-1. Apply K-Means clustering to segment customers
-2. Determine optimal number of clusters using Elbow Method and Silhouette Score
-3. Interpret and profile each customer segment
-4. Translate findings into business recommendations
-5. Present segmentation results to stakeholders
+1. Aplicar clustering con K-Means para segmentar clientes
+2. Determinar el número óptimo de clusters usando el Método del Codo y la Puntuación de Silueta
+3. Interpretar y perfilar cada segmento de clientes
+4. Traducir los hallazgos en recomendaciones de negocio
+5. Presentar los resultados de segmentación a las partes interesadas
 
-## Instructions
+## Instrucciones
 
-See `instructions.md` for the full case study workflow.
+Ver `instructions.md` para el flujo de trabajo completo del caso de estudio.

@@ -5,15 +5,15 @@ Lesson Title: Seaborn
 Estimated Duration: 60 minutes
 Prerequisites: L15 — Matplotlib
 Learning Objectives:
-  - Crear statistical visualizations using Seaborn
-  - Usar pairplot and heatmap for multi-variable exploration
-  - Crear box plots and violin plots for distribution comparison
-  - Aplicar Seaborn themes and color palettes
-  - Customize Seaborn plots with Matplotlib integration
-Keywords: Seaborn, pairplot, heatmap, boxplot, violinplot, palette, theme
-Difficulty: Beginner-Intermediate
-Programming Concepts: Statistical visualization, data exploration
-Datasets Used: None (synthetic data)
+  - Crear visualizaciones estadísticas usando Seaborn
+  - Usar pairplot y heatmap para exploración multivariable
+  - Crear box plots y violin plots para comparación de distribuciones
+  - Aplicar temas y paletas de colores de Seaborn
+  - Personalizar gráficos de Seaborn con integración de Matplotlib
+Keywords: Seaborn, pairplot, heatmap, boxplot, violinplot, paleta, tema
+Difficulty: Principiante-Intermedio
+Programming Concepts: Visualización estadística, exploración de datos
+Datasets Used: Ninguno (datos sintéticos)
 Notebook: notebook.ipynb
 Assignment: assignment.md
 Quiz: quiz.md

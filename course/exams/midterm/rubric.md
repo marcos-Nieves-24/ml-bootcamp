@@ -1,13 +1,13 @@
-# Midterm Exam Rubric
+# Rúbrica del Examen Parcial
 
-| Section | Questions | Puntos | Criterio |
+| Sección | Preguntas | Puntos | Criterio |
 |---------|-----------|--------|----------|
-| Multiple Choice | 1-10 | 20 | 2 points each. No partial credit. |
-| Short Answer | 11-15 | 30 | 5 points: accurate and complete. 3 points: partially correct. 1 point: attempted. |
-| Coding Q16 | 16 | 15 | 5 pts: function definition correct. 5 pts: NumPy usage correct. 3 pts: error handling. 2 pts: returns dict. |
-| Coding Q17 | 17 | 15 | 3 pts: loads CSV. 3 pts: displays head. 3 pts: checks missing. 4 pts: fills missing. 2 pts: saves correctly. |
-| Interpretation Q18 | 18 | 10 | 4 pts: identifies accuracy paradox. 4 pts: suggests proper metric. 2 pts: clear explanation. |
-| Interpretation Q19 | 19 | 10 | 4 pts: interprets variance. 4 pts: makes recommendation. 2 pts: reasoning. |
+| Opción Múltiple | 1-10 | 20 | 2 puntos cada una. Sin crédito parcial. |
+| Respuesta Breve | 11-15 | 30 | 5 puntos: precisa y completa. 3 puntos: parcialmente correcta. 1 punto: intentada. |
+| Codificación P16 | 16 | 15 | 5 pts: definición de función correcta. 5 pts: uso correcto de NumPy. 3 pts: manejo de errores. 2 pts: devuelve diccionario. |
+| Codificación P17 | 17 | 15 | 3 pts: carga CSV. 3 pts: muestra head. 3 pts: verifica faltantes. 4 pts: llena faltantes. 2 pts: guarda correctamente. |
+| Interpretación P18 | 18 | 10 | 4 pts: identifica la paradoja de precisión. 4 pts: sugiere métrica adecuada. 2 pts: explicación clara. |
+| Interpretación P19 | 19 | 10 | 4 pts: interpreta la varianza. 4 pts: hace recomendación. 2 pts: razonamiento. |
 
-**Passing threshold:** 60/100
-**Grading scale:** A (90+), B (80-89), C (70-79), D (60-69), F (<60)
+**Umbral de aprobación:** 60/100
+**Escala de calificación:** A (90+), B (80-89), C (70-79), D (60-69), F (<60)

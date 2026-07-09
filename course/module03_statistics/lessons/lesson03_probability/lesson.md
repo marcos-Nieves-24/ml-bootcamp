@@ -1,16 +1,16 @@
 ---
 Module: 3
 Lesson Number: 3
-Lesson Title: Probability Fundamentals
+Lesson Title: Fundamentos de Probabilidad
 Estimated Duration: 90 minutes
-Prerequisites: Lesson 1 (Descriptive Statistics)
+Prerequisites: Lección 1 (Estadística Descriptiva)
 Learning Objectives:
-  - State Kolmogorov's three axioms of probability
-  - Calculate conditional probabilities using Bayes' theorem
-  - Aplicar the law of total probability to partition problems
-  - Distinguish between discrete and continuous random variables
-  - Solve probability problems with real-world data
-Keywords: probability, Kolmogorov axioms, conditional probability, Bayes theorem, random variables, law of total probability
+  - Enunciar los tres axiomas de probabilidad de Kolmogorov
+  - Calcular probabilidades condicionales usando el teorema de Bayes
+  - Aplicar la ley de probabilidad total a problemas de partición
+  - Distinguir entre variables aleatorias discretas y continuas
+  - Resolver problemas de probabilidad con datos del mundo real
+Keywords: probabilidad, axiomas de Kolmogorov, probabilidad condicional, teorema de Bayes, variables aleatorias, ley de probabilidad total
 Difficulty: Intermedio
 Programming Concepts: numpy, scipy.stats, matplotlib
 Mathematical Concepts: probability axioms, conditional probability, Bayes rule, expectation, variance

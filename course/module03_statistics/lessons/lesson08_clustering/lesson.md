@@ -3,13 +3,13 @@ Module: 3
 Lesson Number: 8
 Lesson Title: Clustering (K-Means)
 Estimated Duration: 90 minutes
-Prerequisites: Lesson 1 (Descriptive Statistics), Lesson 5 (Relationships)
+Prerequisites: Lección 1 (Estadística Descriptiva), Lección 5 (Relaciones Entre Variables)
 Learning Objectives:
-  - Explicar the K-Means clustering algorithm and its intuition
-  - Determine the optimal number of clusters using the elbow method and silhouette score
-  - Implementar K-Means clustering using sklearn.cluster.KMeans
-  - Visualize clustering results with PCA
-  - Interpret cluster characteristics
+  - Explicar el algoritmo de clustering K-Means y su intuición
+  - Determinar el número óptimo de clusters usando el método del codo y el silhouette score
+  - Implementar K-Means clustering usando sklearn.cluster.KMeans
+  - Visualizar resultados de clustering con PCA
+  - Interpretar las características de los clusters
 Keywords: K-Means, clustering, elbow method, silhouette score, unsupervised learning, centroid
 Difficulty: Intermedio
 Programming Concepts: sklearn.cluster.KMeans, numpy, pandas, matplotlib

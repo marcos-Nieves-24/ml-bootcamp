@@ -1,33 +1,33 @@
 # LESSON_TEMPLATE.md
 
-# Lesson Generation Specification
+# Especificación de Generación de Lecciones
 
-This document defines the required structure for every lesson in the course.
+Este documento define la estructura requerida para cada lección del curso.
 
-OpenCode MUST follow this specification whenever creating or updating lessons.
+OpenCode DEBE seguir esta especificación cada vez que cree o actualice lecciones.
 
-The objective is to ensure consistency across the entire course.
-
----
-
-# General Principles
-
-Every lesson should
-
-- teach one concept well
-- build upon previous lessons
-- prepare students for the next lesson
-- combine theory with practice
-- include reproducible Python examples
-- use real-world applications
-- emphasize intuition before mathematics
-- encourage active learning
+El objetivo es garantizar consistencia en todo el curso.
 
 ---
 
-# Lesson Metadata
+# Principios Generales
 
-Every lesson begins with
+Cada lección debe
+
+- enseñar un concepto bien
+- basarse en lecciones anteriores
+- preparar a los estudiantes para la siguiente lección
+- combinar teoría con práctica
+- incluir ejemplos reproducibles en Python
+- usar aplicaciones del mundo real
+- enfatizar la intuición antes que las matemáticas
+- fomentar el aprendizaje activo
+
+---
+
+# Metadatos de la Lección
+
+Cada lección comienza con
 
 ```yaml
 Module:
@@ -61,169 +61,169 @@ Quiz:
 
 ---
 
-# Learning Objectives
+# Objetivos de Aprendizaje
 
-Provide 3–6 measurable learning objectives.
+Proporcionar de 3 a 6 objetivos de aprendizaje medibles.
 
-Use Bloom's Taxonomy.
+Usar la Taxonomía de Bloom.
 
-Examples
+Ejemplos
 
-- Explain...
-- Implement...
-- Compare...
-- Interpret...
-- Evaluate...
-- Design...
+- Explicar...
+- Implementar...
+- Comparar...
+- Interpretar...
+- Evaluar...
+- Diseñar...
 
-Avoid vague verbs such as
+Evitar verbos vagos como
 
-- understand
-- know
-- learn
+- entender
+- saber
+- aprender
 
 ---
 
-# Lesson Motivation
+# Motivación de la Lección
 
-Start every lesson by answering
+Comenzar cada lección respondiendo
 
-Why should students care?
+¿Por qué debería importarles a los estudiantes?
 
-Use
+Usar
 
-- biotechnology
-- healthcare
-- business
+- biotecnología
+- salud
+- negocios
 - SaaS
-- everyday examples
+- ejemplos cotidianos
 
-Students should immediately understand the value of the lesson.
-
----
-
-# Big Picture
-
-Show how this lesson connects to
-
-Previous lesson
-
-↓
-
-Current lesson
-
-↓
-
-Next lesson
-
-Students should always know where they are in the course.
+Los estudiantes deben entender de inmediato el valor de la lección.
 
 ---
 
-# Theory
+# Panorama General
 
-Explain the concept.
+Mostrar cómo se conecta esta lección con
 
-Requirements
-
-- conversational
-- academic
-- technically correct
-
-Introduce terminology gradually.
-
-Every new concept must include
-
-Definition
+Lección anterior
 
 ↓
 
-Intuition
+Lección actual
 
 ↓
 
-Formal explanation
+Lección siguiente
+
+Los estudiantes deben saber siempre dónde se encuentran en el curso.
+
+---
+
+# Teoría
+
+Explicar el concepto.
+
+Requisitos
+
+- conversacional
+- académico
+- técnicamente correcto
+
+Introducir la terminología gradualmente.
+
+Cada concepto nuevo debe incluir
+
+Definición
 
 ↓
 
-Example
+Intuición
+
+↓
+
+Explicación formal
+
+↓
+
+Ejemplo
 
 ---
 
-# Mathematical Foundation
+# Fundamentos Matemáticos
 
-If mathematics is required
+Si se requieren matemáticas
 
-Explain
+Explicar
 
-1. notation
+1. notación
 
-2. intuition
+2. intuición
 
-3. derivation
+3. derivación
 
-4. interpretation
+4. interpretación
 
-Avoid presenting equations without explanation.
+Evitar presentar ecuaciones sin explicación.
 
-Every variable must be defined.
-
----
-
-# Visual Explanation
-
-Every lesson should include figures whenever possible.
-
-Examples
-
-- diagrams
-- flowcharts
-- distributions
-- decision trees
-- scatter plots
-- ROC curves
-
-Figures should be generated programmatically.
-
-Never rely exclusively on screenshots.
+Cada variable debe estar definida.
 
 ---
 
-# Python Implementation
+# Explicación Visual
 
-Every lesson includes executable Python code.
+Cada lección debe incluir figuras siempre que sea posible.
 
-Requirements
+Ejemplos
+
+- diagramas
+- diagramas de flujo
+- distribuciones
+- árboles de decisión
+- gráficos de dispersión
+- curvas ROC
+
+Las figuras deben generarse programáticamente.
+
+Nunca depender exclusivamente de capturas de pantalla.
+
+---
+
+# Implementación en Python
+
+Cada lección incluye código Python ejecutable.
+
+Requisitos
 
 - PEP8
-- comments
-- readable variable names
-- modular functions
+- comentarios
+- nombres de variables legibles
+- funciones modulares
 
-Preferred libraries
+Librerías preferidas
 
 - numpy
 - pandas
 - matplotlib
 - scikit-learn
 
-Optional
+Opcionales
 
 - scipy
 - seaborn
 - plotly
 
-Every code block must execute.
+Cada bloque de código debe ejecutarse.
 
 ---
 
-# Walkthrough Example
+# Ejemplo Guiado (Walkthrough)
 
-Provide one complete worked example.
+Proporcionar un ejemplo completo.
 
-Structure
+Estructura
 
-Problem
+Problema
 
 ↓
 
@@ -231,112 +231,112 @@ Dataset
 
 ↓
 
-Analysis
+Análisis
 
 ↓
 
-Model
+Modelo
 
 ↓
 
-Interpretation
+Interpretación
 
 ↓
 
-Conclusion
+Conclusión
 
-Students should be able to reproduce the example.
+Los estudiantes deben poder reproducir el ejemplo.
 
 ---
 
-# Biotechnology Example
+# Ejemplo de Biotecnología
 
-Whenever appropriate
+Cuando corresponda
 
-Include an application related to
+Incluir una aplicación relacionada con
 
-- genomics
-- transcriptomics
-- proteins
-- healthcare
-- laboratory data
-- clinical data
+- genómica
+- transcriptómica
+- proteínas
+- salud
+- datos de laboratorio
+- datos clínicos
 
 ---
 
-# SaaS Example
+# Ejemplo de SaaS
 
-Whenever appropriate
+Cuando corresponda
 
-Include an application involving
+Incluir una aplicación que involucre
 
 - customer churn
 
-- revenue prediction
+- predicción de ingresos
 
-- recommendation systems
+- sistemas de recomendación
 
-- customer segmentation
+- segmentación de clientes
 
-- product analytics
+- analítica de producto
 
-- marketing analytics
-
----
-
-# Common Mistakes
-
-Include a section
-
-Common Mistakes
-
-Examples
-
-- misunderstanding assumptions
-
-- incorrect interpretation
-
-- coding errors
-
-- statistical mistakes
-
-- visualization mistakes
-
-Explain how to avoid them.
+- analítica de marketing
 
 ---
 
-# Best Practices
+# Errores Comunes
 
-Explain
+Incluir una sección
 
-- professional workflow
+Errores Comunes
 
-- reproducibility
+Ejemplos
 
-- documentation
+- malinterpretación de supuestos
 
-- code organization
+- interpretación incorrecta
 
-- version control
+- errores de código
+
+- errores estadísticos
+
+- errores de visualización
+
+Explicar cómo evitarlos.
+
+---
+
+# Buenas Prácticas
+
+Explicar
+
+- workflow profesional
+
+- reproducibilidad
+
+- documentación
+
+- organización del código
+
+- control de versiones
 
 - testing
 
 ---
 
-# Summary
+# Resumen
 
-Summarize the lesson using concise bullet points.
+Resumir la lección usando viñetas concisas.
 
-Students should be able to review this section before an exam.
+Los estudiantes deberían poder repasar esta sección antes de un examen.
 
 ---
 
-# Key Terms
+# Términos Clave
 
-Provide a glossary.
+Proporcionar un glosario.
 
-Example
+Ejemplo
 
 Feature
 
@@ -348,151 +348,151 @@ Overfitting
 
 Generalization
 
-Each definition should be concise.
+Cada definición debe ser concisa.
 
 ---
 
-# Exercises
+# Ejercicios
 
-Include three levels.
+Incluir tres niveles.
 
-Level 1
+Nivel 1
 
-Basic understanding
+Comprensión básica
 
-Level 2
+Nivel 2
 
-Implementation
+Implementación
 
-Level 3
+Nivel 3
 
-Critical thinking
+Pensamiento crítico
 
 ---
 
-# Coding Challenge
+# Desafío de Programación
 
-Every lesson includes one coding challenge.
+Cada lección incluye un desafío de programación.
 
-Students write code independently.
+Los estudiantes escriben código de forma independiente.
 
-Avoid giving the complete solution.
+Evitar dar la solución completa.
 
 ---
 
 # Notebook
 
-Generate a Jupyter notebook.
+Generar un notebook de Jupyter.
 
-Structure
+Estructura
 
 Markdown
 
 ↓
 
-Code
+Código
 
 ↓
 
-Output
+Salida
 
 ↓
 
-Interpretation
+Interpretación
 
 ↓
 
-Exercises
+Ejercicios
 
-Notebook must execute without errors.
-
----
-
-# Quiz
-
-Generate
-
-5 multiple-choice questions
-
-2 short-answer questions
-
-1 coding question
-
-Include an answer key.
+El notebook debe ejecutarse sin errores.
 
 ---
 
-# Assignment
+# Cuestionario
 
-Assignments should integrate previous lessons.
+Generar
 
-Include
+5 preguntas de opción múltiple
 
-Objectives
+2 preguntas de respuesta breve
 
-Instructions
+1 pregunta de código
 
-Deliverables
-
-Evaluation rubric
-
-Estimated completion time
+Incluir una clave de respuestas.
 
 ---
 
-# References
+# Tarea (Assignment)
 
-Use APA 7.
+Las tareas deben integrar lecciones anteriores.
 
-Prioritize
+Incluir
 
-- textbooks
-- peer-reviewed papers
-- official documentation
+Objetivos
 
-Avoid blogs unless explicitly requested.
+Instrucciones
 
----
+Entregables
 
-# Lesson Checklist
+Rúbrica de evaluación
 
-Before finishing a lesson verify
-
-□ Learning objectives included
-
-□ Motivation included
-
-□ Theory complete
-
-□ Mathematics explained
-
-□ Figures generated
-
-□ Python examples tested
-
-□ Biotechnology example included
-
-□ SaaS example included
-
-□ Summary written
-
-□ Glossary included
-
-□ Exercises included
-
-□ Notebook generated
-
-□ Quiz generated
-
-□ Assignment generated
-
-□ References formatted
+Tiempo estimado de finalización
 
 ---
 
-# Deliverables
+# Referencias
 
-For every lesson OpenCode should generate
+Usar APA 7.
+
+Priorizar
+
+- libros de texto
+- artículos revisados por pares
+- documentación oficial
+
+Evitar blogs a menos que se solicite explícitamente.
+
+---
+
+# Lista de Verificación de la Lección
+
+Antes de finalizar una lección, verificar
+
+□ Objetivos de aprendizaje incluidos
+
+□ Motivación incluida
+
+□ Teoría completa
+
+□ Matemáticas explicadas
+
+□ Figuras generadas
+
+□ Ejemplos en Python probados
+
+□ Ejemplo de biotecnología incluido
+
+□ Ejemplo de SaaS incluido
+
+□ Resumen escrito
+
+□ Glosario incluido
+
+□ Ejercicios incluidos
+
+□ Notebook generado
+
+□ Cuestionario generado
+
+□ Tarea generada
+
+□ Referencias formateadas
+
+---
+
+# Entregables
+
+Por cada lección, OpenCode debe generar
 
 lesson.md
 
@@ -514,17 +514,17 @@ README.md
 
 ---
 
-# Quality Standards
+# Estándares de Calidad
 
-Every lesson should
+Cada lección debe
 
-- be reproducible
-- be modular
-- be self-contained
-- maintain consistent terminology
-- build upon previous lessons
-- prepare students for future lessons
-- use professional scientific writing
-- maintain a consistent tone throughout the course
+- ser reproducible
+- ser modular
+- ser autocontenida
+- mantener terminología consistente
+- basarse en lecciones anteriores
+- preparar a los estudiantes para lecciones futuras
+- usar redacción científica profesional
+- mantener un tono consistente en todo el curso
 
-The lesson should be publishable as university teaching material without requiring substantial rewriting.
+La lección debe ser publicable como material universitario sin requerir reescritura sustancial.

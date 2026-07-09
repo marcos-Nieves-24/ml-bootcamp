@@ -3,16 +3,15 @@ Module: 2
 Lesson Number: 7
 Lesson Title: Bucles
 Estimated Duration: 60 minutes
-Prerequisites: L6 — Functions
+Prerequisites: L6 — Funciones
 Learning Objectives:
-  - Usar for loops to iterate over sequences
-  - Usar while loops for conditional iteration
-  - Usar range() to generate numeric sequences
-  - Control loop flow with break and continue
-  - Escribir nested loops for multi-dimensional data
-Keywords: for, while, range, break, continue, nested loop, iteration
-Difficulty: Principiante
-Programming Concepts: Iteration, loop control, nested loops
+  - Usar bucles for para iterar sobre secuencias
+  - Usar bucles while para iteración condicional
+  - Usar range() para generar secuencias numéricas
+  - Controlar el flujo del bucle con break y continue
+  - Escribir bucles anidados para datos multidimensionales
+Keywords: for, while, range, break, continue, bucle anidado, iteración
+Programming Concepts: Iteración, control de bucles, bucles anidados
 Datasets Used: Ninguno
 Notebook: notebook.ipynb
 Assignment: assignment.md

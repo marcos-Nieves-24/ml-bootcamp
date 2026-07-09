@@ -2,197 +2,197 @@
 
 # Machine Learning for Data Analysis and SaaS
 
-## Purpose
+## Propósito
 
-This document defines the canonical structure of the course.
+Este documento define la estructura canónica del curso.
 
-OpenCode MUST use this file as the source of truth when generating educational content.
+OpenCode DEBE usar este archivo como fuente de verdad al generar contenido educativo.
 
-Every lesson, notebook, lab, quiz, assignment, dataset, figure, and project must follow this structure.
+Cada lección, notebook, laboratorio, cuestionario, assignment, dataset, figura y proyecto debe seguir esta estructura.
 
-Do not change the order of the modules unless explicitly instructed.
-
----
-
-# Target Audience
-
-Undergraduate students in
-
-- Biotechnology
-- Bioinformatics
-- Biological Sciences
-- Data Analysis
-- Engineering
-
-Prerequisites
-
-- High-school mathematics
-- Basic algebra
-- No previous programming experience
-- No previous Machine Learning experience
+No cambiar el orden de los módulos a menos que se indique explícitamente.
 
 ---
 
-# Course Learning Objectives
+# Audiencia objetivo
 
-At the end of the course students should be able to
+Estudiantes universitarios de
 
-- Understand the foundations of Artificial Intelligence.
-- Understand Machine Learning fundamentals.
-- Write Python code for data analysis.
-- Explore and clean datasets.
-- Apply statistical concepts to real data.
-- Train supervised learning models.
-- Train unsupervised learning models.
-- Evaluate machine learning models.
-- Interpret model outputs.
-- Communicate findings using data storytelling.
-- Solve biotechnology and SaaS problems using Machine Learning.
+- Biotecnología
+- Bioinformática
+- Ciencias Biológicas
+- Análisis de Datos
+- Ingeniería
+
+Prerrequisitos
+
+- Matemáticas de bachillerato
+- Álgebra básica
+- Sin experiencia previa en programación
+- Sin experiencia previa en Machine Learning
 
 ---
 
-# Module 1
-# Introduction to Artificial Intelligence
+# Objetivos de Aprendizaje del Curso
 
-## Learning Goal
+Al finalizar el curso, los estudiantes deberían poder
 
-Introduce Artificial Intelligence, its history, paradigms, and applications.
+- Comprender los fundamentos de la Inteligencia Artificial.
+- Comprender los fundamentos de Machine Learning.
+- Escribir código Python para análisis de datos.
+- Explorar y limpiar datasets.
+- Aplicar conceptos estadísticos a datos reales.
+- Entrenar modelos de supervised learning.
+- Entrenar modelos de unsupervised learning.
+- Evaluar modelos de machine learning.
+- Interpretar resultados de modelos.
+- Comunicar hallazgos usando data storytelling.
+- Resolver problemas de biotecnología y SaaS usando Machine Learning.
 
-Lessons
+---
 
-1. What is Artificial Intelligence?
-2. History of AI
-3. Types of AI
-4. AI Paradigms
-    - Expert Systems
-    - Rule-Based Systems
+# Módulo 1
+# Introducción a la Inteligencia Artificial
+
+## Objetivo de Aprendizaje
+
+Introducir la Inteligencia Artificial, su historia, paradigmas y aplicaciones.
+
+Lecciones
+
+1. ¿Qué es la Inteligencia Artificial?
+2. Historia de la IA
+3. Tipos de IA
+4. Paradigmas de IA
+    - Sistemas Expertos
+    - Sistemas Basados en Reglas
     - Machine Learning
     - Deep Learning
     - Large Language Models
-5. AI Applications
-6. AI in Biotechnology
-7. AI in SaaS
+5. Aplicaciones de IA
+6. IA en Biotecnología
+7. IA en SaaS
 
-Deliverables
+Entregables
 
-- Lecture
+- Clase
 - Notebook
-- Quiz
-- Lab
-- Assignment
-- Slides
-- Figures
-- Glossary
+- Cuestionario
+- Laboratorio
+- Tarea
+- Diapositivas
+- Figuras
+- Glosario
 
 ---
 
-# Module 2
-# Python Programming Fundamentals
+# Módulo 2
+# Fundamentos de Programación en Python
 
-## Learning Goal
+## Objetivo de Aprendizaje
 
-Teach Python programming required for Machine Learning.
+Enseñar la programación en Python requerida para Machine Learning.
 
-Lessons
+Lecciones
 
-1. Installing Python
+1. Instalación de Python
 2. Jupyter Notebook
 3. Variables
-4. Data Types
-5. Operators
-6. Functions
-7. Loops
-8. Conditionals
-9. Lists
-10. Tuples
-11. Dictionaries
+4. Tipos de Datos
+5. Operadores
+6. Funciones
+7. Bucles
+8. Condicionales
+9. Listas
+10. Tuplas
+11. Diccionarios
 12. Sets
 13. NumPy
 14. Pandas
 15. Matplotlib
 16. Seaborn
 
-Deliverables
+Entregables
 
-- Notebook-first lessons
-- Coding exercises
-- Mini-projects
-- Labs
-- Quiz
+- Lecciones basadas en notebooks
+- Ejercicios de programación
+- Mini-proyectos
+- Laboratorios
+- Cuestionario
 
 ---
 
-# Module 3
-# Statistics for Machine Learning
+# Módulo 3
+# Estadística para Machine Learning
 
-## Learning Goal
+## Objetivo de Aprendizaje
 
-Develop statistical intuition for Machine Learning.
+Desarrollar intuición estadística para Machine Learning.
 
-Lessons
+Lecciones
 
-### Descriptive Statistics
+### Estadística Descriptiva
 
-- Mean
-- Median
-- Mode
-- Variance
-- Standard Deviation
-- Range
-- Interquartile Range
+- Media
+- Mediana
+- Moda
+- Varianza
+- Desviación Estándar
+- Rango
+- Rango Intercuartílico
 
-### Data Distribution
+### Distribución de Datos
 
-- Histograms
-- Density
-- Skewness
-- Kurtosis
+- Histogramas
+- Densidad
+- Asimetría (Skewness)
+- Curtosis (Kurtosis)
 
-### Probability
+### Probabilidad
 
-- Probability Fundamentals
-- Kolmogorov Axioms
-- Conditional Probability
-- Bayes Theorem
-- Total Probability
-- Random Variables
+- Fundamentos de Probabilidad
+- Axiomas de Kolmogorov
+- Probabilidad Condicional
+- Teorema de Bayes
+- Probabilidad Total
+- Variables Aleatorias
 
-### Statistical Distributions
+### Distribuciones Estadísticas
 
 - Bernoulli
 - Binomial
 - Poisson
-- Normal Distribution
-- Standardization
+- Distribución Normal
+- Estandarización
 
-### Relationships
+### Relaciones
 
-- Covariance
-- Pearson Correlation
-- Spearman Correlation
+- Covarianza
+- Correlación de Pearson
+- Correlación de Spearman
 
-### Exploratory Data Analysis
+### Análisis Exploratorio de Datos (EDA)
 
-- Missing Values
-- Outliers
-- Visualization
-- Feature Exploration
+- Valores Faltantes
+- Valores Atípicos (Outliers)
+- Visualización
+- Exploración de Features
 
-### Dimensionality Reduction
+### Reducción de Dimensionalidad
 
 - PCA
-- Explained Variance
+- Varianza Explicada
 
 ### Clustering
 
 - K-Means
-- Elbow Method
-- Silhouette Score
+- Método del Codo (Elbow Method)
+- Puntuación de Silueta (Silhouette Score)
 
-### Model Evaluation
+### Evaluación de Modelos
 
-- Train/Test Split
-- Cross Validation
+- División Train/Test
+- Validación Cruzada (Cross Validation)
 - MAE
 - MSE
 - RMSE
@@ -200,54 +200,54 @@ Lessons
 
 ### Data Storytelling
 
-Deliverables
+Entregables
 
-Every statistical concept must include
+Cada concepto estadístico debe incluir
 
-- intuition
-- mathematical explanation
-- derivation when appropriate
-- Python implementation
-- visualization
-- interpretation
-- exercises
+- intuición
+- explicación matemática
+- derivación cuando corresponda
+- implementación en Python
+- visualización
+- interpretación
+- ejercicios
 
 ---
 
-# Module 4
-# Introduction to Machine Learning
+# Módulo 4
+# Introducción al Machine Learning
 
-## Learning Goal
+## Objetivo de Aprendizaje
 
-Teach the Machine Learning workflow.
+Enseñar el workflow de Machine Learning.
 
-Lessons
+Lecciones
 
-### ML Fundamentals
+### Fundamentos de ML
 
 - Features
 - Labels
 - Target
 - Training
-- Prediction
-- Generalization
+- Predicción
+- Generalización
 - Overfitting
 - Underfitting
 
 ### Supervised Learning
 
-Regression
+Regresión
 
-- Linear Regression
+- Regresión Lineal
 
-Classification
+Clasificación
 
-- Binary Classification
-- Multiclass Classification
+- Clasificación Binaria
+- Clasificación Multiclase
 
-Algorithms
+Algoritmos
 
-- Decision Trees
+- Árboles de Decisión
 - Random Forest
 - Gradient Boosting
 
@@ -256,53 +256,53 @@ Algorithms
 - K-Means
 - PCA
 
-### Model Interpretation
+### Interpretación de Modelos
 
-- Feature Importance
-- Performance Metrics
-- Result Interpretation
+- Importancia de Features
+- Métricas de Rendimiento
+- Interpretación de Resultados
 
-### Applications
+### Aplicaciones
 
-- Product Quality Prediction
-- Customer Segmentation
-- Biotechnology
-- SaaS Analytics
+- Predicción de Calidad de Producto
+- Segmentación de Clientes
+- Biotecnología
+- Analítica SaaS
 
-Deliverables
+Entregables
 
-Each algorithm must include
+Cada algoritmo debe incluir
 
-- intuition
-- mathematics
-- visualization
-- sklearn implementation
-- real dataset
-- exercises
+- intuición
+- matemáticas
+- visualización
+- implementación con sklearn
+- dataset real
+- ejercicios
 - notebook
-- lab
+- laboratorio
 
 ---
 
-# Final Project
+# Proyecto Final
 
-Students must complete one end-to-end Machine Learning project.
+Los estudiantes deben completar un proyecto de Machine Learning de principio a fin.
 
 Pipeline
 
-Problem
+Problema
 
 ↓
 
-Data Collection
+Recolección de Datos
 
 ↓
 
-Exploratory Data Analysis
+Análisis Exploratorio de Datos (EDA)
 
 ↓
 
-Data Cleaning
+Limpieza de Datos
 
 ↓
 
@@ -310,62 +310,62 @@ Feature Engineering
 
 ↓
 
-Model Training
+Entrenamiento del Modelo
 
 ↓
 
-Model Evaluation
+Evaluación del Modelo
 
 ↓
 
-Interpretation
+Interpretación
 
 ↓
 
-Presentation
+Presentación
 
-Possible domains
+Dominios posibles
 
-- Biotechnology
-- Healthcare
-- Agriculture
-- Customer Analytics
-- SaaS Metrics
+- Biotecnología
+- Salud
+- Agricultura
+- Analítica de Clientes
+- Métricas SaaS
 
 ---
 
-# Repository Generation Rules
+# Reglas de Generación del Repositorio
 
-For every lesson OpenCode must generate
+Por cada lección, OpenCode debe generar
 
 1. lesson.md
 2. notebook.ipynb
 3. quiz.md
 4. lab.md
 5. assignment.md
-6. figures
-7. references
-8. glossary
+6. figuras
+7. referencias
+8. glosario
 
-Every lesson must contain
+Cada lección debe contener
 
-- learning objectives
-- prerequisites
-- concepts
-- mathematical intuition
-- Python examples
-- biological examples whenever possible
-- SaaS examples whenever possible
-- summary
-- key takeaways
+- objetivos de aprendizaje
+- prerrequisitos
+- conceptos
+- intuición matemática
+- ejemplos en Python
+- ejemplos biológicos cuando sea posible
+- ejemplos SaaS cuando sea posible
+- resumen
+- conclusiones clave
 
 ---
 
-# Dependency Graph
+# Grafo de Dependencias
 
-Students must learn topics in this order
+Los estudiantes deben aprender los temas en este orden
 
-Artificial Intelligence
+Inteligencia Artificial
 
 ↓
 
@@ -373,11 +373,11 @@ Python
 
 ↓
 
-Statistics
+Estadística
 
 ↓
 
-Exploratory Data Analysis
+Análisis Exploratorio de Datos (EDA)
 
 ↓
 
@@ -385,20 +385,20 @@ Machine Learning
 
 ↓
 
-Model Evaluation
+Evaluación de Modelos
 
 ↓
 
-Projects
+Proyectos
 
-Do not generate lessons that require concepts from future modules.
+No generar lecciones que requieran conceptos de módulos futuros.
 
 ---
 
-# Course Philosophy
+# Filosofía del Curso
 
-This course emphasizes learning by building.
+Este curso enfatiza el aprendizaje mediante la construcción.
 
-Every theoretical lesson should be followed by practical coding.
+Cada lección teórica debe ir seguida de práctica de codificación.
 
-Students should finish the course with a portfolio of notebooks, labs, and Machine Learning projects rather than only lecture notes.
+Los estudiantes deberían terminar el curso con un portafolio de notebooks, laboratorios y proyectos de Machine Learning, no solo apuntes de clase.

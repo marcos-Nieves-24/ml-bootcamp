@@ -3,13 +3,13 @@ Module: 4
 Lesson Number: 9
 Lesson Title: Interpretación de Modelos
 Estimated Duration: 75 minutes
-Prerequisites: L2-L5 (Linear Regression, Classification, Decision Trees, Random Forest)
+Prerequisites: L2-L5 (Regresión Lineal, Clasificación, Árboles de Decisión, Random Forest)
 Learning Objectives:
-  - Explicar why model interpretability matters in biotechnology and SaaS
-  - Compute and interpret permutation feature importance
-  - Generate and interpret partial dependence plots
-  - Explicar the intuition behind SHAP and LIME
-  - Comparar global and local interpretability methods
+  - Explicar por qué la interpretabilidad de modelos es importante en biotecnología y SaaS
+  - Calcular e interpretar la importancia de features por permutación
+  - Generar e interpretar gráficos de dependencia parcial (partial dependence plots)
+  - Explicar la intuición detrás de SHAP y LIME
+  - Comparar métodos de interpretabilidad global y local
 Keywords: interpretability, feature importance, permutation importance, partial dependence, SHAP, LIME
 Difficulty: Avanzado
 Programming Concepts: sklearn.inspection.permutation_importance, sklearn.inspection.PartialDependenceDisplay

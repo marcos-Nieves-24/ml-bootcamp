@@ -1,70 +1,70 @@
-# Rubric: SaaS Customer Churn Prediction
+# Rúbrica: Predicción de Cancelación de Clientes SaaS
 
-**Total points: 100**
+**Puntaje total: 100**
 
-## Task 1: Data Loading and Initial Exploration (10 points)
+## Tarea 1: Carga de Datos y Exploración Inicial (10 puntos)
 
-| Criterio | Excellent (10) | Good (7) | Adequate (4) | Insuficiente (1) |
-|----------|----------------|----------|--------------|----------|
-| Data loading | Loaded correctly with error handling | Loaded correctly | Loaded with minor issues | Not loaded |
-| Initial inspection | Displayed head, info, describe, shape, churn rate | Displayed most inspections | Basic inspection | Missing key items |
-| Missing values | Checked and reported | Checked | Mentioned | Not checked |
+| Criterio | Excelente (10) | Bueno (7) | Adecuado (4) | Insuficiente (1) |
+|----------|----------------|-----------|--------------|------------------|
+| Carga de datos | Cargado correctamente con manejo de errores | Cargado correctamente | Cargado con problemas menores | No cargado |
+| Inspección inicial | Mostró head, info, describe, shape, tasa de churn | Mostró la mayoría de las inspecciones | Inspección básica | Faltan elementos clave |
+| Valores faltantes | Verificó y reportó | Verificó | Mencionó | No verificó |
 
-## Task 2: Exploratory Data Analysis (20 points)
+## Tarea 2: Análisis Exploratorio de Datos (20 puntos)
 
-| Criterio | Excellent (20) | Good (15) | Adequate (10) | Poor (5) |
-|----------|----------------|-----------|---------------|----------|
-| Churn distribution | Clear visualization with percentages | Good plot | Basic plot | Missing |
-| Feature distributions | KDE/hist for all numerical features with hue | Most features | Some features | Missing |
-| Boxplots | Boxplots for all numerical features | Most features | Some features | Missing |
-| Correlation heatmap | Annotated heatmap with insights | Good heatmap | Basic heatmap | Missing |
-| Categorical analysis | Churn rate by contract type and payment method | One analysis | Basic | Missing |
+| Criterio | Excelente (20) | Bueno (15) | Adecuado (10) | Deficiente (5) |
+|----------|----------------|------------|---------------|----------------|
+| Distribución de churn | Visualización clara con porcentajes | Buen gráfico | Gráfico básico | Faltante |
+| Distribuciones de features | KDE/hist para todas las features numéricas con hue | La mayoría de features | Algunas features | Faltante |
+| Boxplots | Boxplots para todas las features numéricas | La mayoría de features | Algunas features | Faltante |
+| Heatmap de correlación | Heatmap anotado con insights | Buen heatmap | Heatmap básico | Faltante |
+| Análisis categórico | Tasa de churn por tipo de contrato y método de pago | Un análisis | Básico | Faltante |
 
-## Task 3: Data Preprocessing (15 points)
+## Tarea 3: Preprocesamiento de Datos (15 puntos)
 
-| Criterio | Excellent (15) | Good (11) | Adequate (7) | Poor (3) |
-|----------|----------------|-----------|--------------|----------|
-| Encoding | Correct one-hot encoding of all categorical features | Correct encoding | Partial encoding | Missing |
-| Train/test split | Stratified split, correct proportions | Correct split | Basic split | Missing |
-| Scaling | Features scaled correctly | Scaled | Partial | Missing |
+| Criterio | Excelente (15) | Bueno (11) | Adecuado (7) | Deficiente (3) |
+|----------|----------------|------------|--------------|----------------|
+| Codificación | One-hot encoding correcto de todas las features categóricas | Codificación correcta | Codificación parcial | Faltante |
+| División train/test | División estratificada, proporciones correctas | División correcta | División básica | Faltante |
+| Escalado | Features escaladas correctamente | Escaladas | Parcial | Faltante |
 
-## Task 4: Model Training (25 points)
+## Tarea 4: Entrenamiento de Modelos (25 puntos)
 
-| Criterio | Excellent (25) | Good (19) | Adequate (13) | Poor (6) |
-|----------|----------------|-----------|---------------|----------|
-| Logistic Regression | Trained correctly, printed metrics | Trained | Partial | Not trained |
-| Random Forest | Trained correctly, printed metrics | Trained | Partial | Not trained |
-| Gradient Boosting | Trained correctly, printed metrics | Trained | Partial | Not trained |
-| Code quality | Clean, documented, no errors | Mostly clean | Some issues | Poor quality |
+| Criterio | Excelente (25) | Bueno (19) | Adecuado (13) | Deficiente (6) |
+|----------|----------------|------------|---------------|----------------|
+| Regresión Logística | Entrenada correctamente, métricas impresas | Entrenada | Parcial | No entrenada |
+| Random Forest | Entrenado correctamente, métricas impresas | Entrenado | Parcial | No entrenado |
+| Gradient Boosting | Entrenado correctamente, métricas impresas | Entrenado | Parcial | No entrenado |
+| Calidad del código | Limpio, documentado, sin errores | Mayormente limpio | Algunos problemas | Mala calidad |
 
-## Task 5: Model Evaluation (15 points)
+## Tarea 5: Evaluación de Modelos (15 puntos)
 
-| Criterio | Excellent (15) | Good (11) | Adequate (7) | Poor (3) |
-|----------|----------------|-----------|--------------|----------|
-| Confusion matrices | All 3 models, heatmaps | All 3 models | One model | Missing |
-| Classification reports | All 3 models, formatted | All 3 models | One model | Missing |
-| ROC curves | All 3 on same plot with AUC | All 3 | One model | Missing |
-| Comparison chart | Bar chart comparing all metrics | Most metrics | Basic | Missing |
+| Criterio | Excelente (15) | Bueno (11) | Adecuado (7) | Deficiente (3) |
+|----------|----------------|------------|--------------|----------------|
+| Matrices de confusión | Los 3 modelos, con heatmaps | Los 3 modelos | Un modelo | Faltante |
+| Reportes de clasificación | Los 3 modelos, formateados | Los 3 modelos | Un modelo | Faltante |
+| Curvas ROC | Las 3 en el mismo gráfico con AUC | Las 3 | Un modelo | Faltante |
+| Gráfico comparativo | Gráfico de barras comparando todas las métricas | La mayoría de métricas | Básico | Faltante |
 
-## Task 6: Feature Importance (10 points)
+## Tarea 6: Importancia de Features (10 puntos)
 
-| Criterio | Excellent (10) | Good (7) | Adequate (5) | Poor (2) |
-|----------|----------------|----------|--------------|----------|
-| RF Importance | Extracted, top 10 plotted | Extracted and plotted | Extracted | Not done |
-| GBT Importance | Extracted, top 10 plotted | Extracted and plotted | Extracted | Not done |
-| Top 3 drivers | Identified and discussed | Identified | Basic | Missing |
+| Criterio | Excelente (10) | Bueno (7) | Adecuado (5) | Deficiente (2) |
+|----------|----------------|-----------|--------------|----------------|
+| Importancia RF | Extraída, top 10 graficados | Extraída y graficada | Extraída | No realizada |
+| Importancia GBT | Extraída, top 10 graficados | Extraída y graficada | Extraída | No realizada |
+| Top 3 impulsores | Identificados y discutidos | Identificados | Básico | Faltante |
 
-## Task 7: Business Recommendations (5 points)
+## Tarea 7: Recomendaciones de Negocio (5 puntos)
 
-| Criterio | Excellent (5) | Good (4) | Adequate (3) | Insuficiente (1) |
-|----------|---------------|----------|--------------|----------|
-| Recommendations | 3 actionable, data-driven recommendations | 2 recommendations | 1 recommendation | Missing |
-| Cost-benefit | Complete analysis with calculations and conclusion | Partial analysis | Basic calculation | Missing |
+| Criterio | Excelente (5) | Bueno (4) | Adecuado (3) | Insuficiente (1) |
+|----------|---------------|-----------|--------------|------------------|
+| Recomendaciones | 3 recomendaciones accionables basadas en datos | 2 recomendaciones | 1 recomendación | Faltante |
+| Costo-beneficio | Análisis completo con cálculos y conclusión | Análisis parcial | Cálculo básico | Faltante |
 
-## Code Quality and Presentation
+## Calidad del Código y Presentación
 
 | Criterio | Puntos |
 |----------|--------|
-| Code executes without errors | −5 if errors present |
-| All visualizations have titles, axis labels, legends | −2 per missing element |
-| Professional formatting | −2 for poor formatting |
+| El código se ejecuta sin errores | −5 si hay errores |
+| Todas las visualizaciones tienen títulos, etiquetas de ejes y leyendas | −2 por elemento faltante |
+| Formato profesional | −2 por formato deficiente |

@@ -3,13 +3,13 @@ Module: 3
 Lesson Number: 7
 Lesson Title: Dimensionality Reduction (PCA)
 Estimated Duration: 90 minutes
-Prerequisites: Lesson 5 (Relationships)
+Prerequisites: Lección 5 (Relaciones Entre Variables)
 Learning Objectives:
-  - Explicar the intuition behind Principal Component Analysis
-  - Interpret explained variance ratios
-  - Aplicar PCA using sklearn.decomposition.PCA
-  - Visualize high-dimensional data in 2D using PCA
-  - Determine the optimal number of principal components
+  - Explicar la intuición detrás del Análisis de Componentes Principales (PCA)
+  - Interpretar los ratios de varianza explicada
+  - Aplicar PCA usando sklearn.decomposition.PCA
+  - Visualizar datos de alta dimensionalidad en 2D usando PCA
+  - Determinar el número óptimo de componentes principales
 Keywords: PCA, dimensionality reduction, explained variance, eigenvectors, scree plot, feature reduction
 Difficulty: Intermedio
 Programming Concepts: sklearn.decomposition.PCA, numpy, matplotlib

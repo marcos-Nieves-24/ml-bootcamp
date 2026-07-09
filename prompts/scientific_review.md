@@ -1,12 +1,12 @@
-# Prompt: Scientific Review
+# Prompt: Revisión Científica
 
-Review the generated lesson as if preparing it for publication.
+Revisar la lección generada como si se preparara para publicación.
 
-Check:
-- Scientific accuracy
-- Mathematical correctness
-- Programming correctness
-- Grammar and readability
-- Pedagogical flow
-- APA references
-- Consistency with previous lessons
+Verificar:
+- Precisión científica
+- Corrección matemática
+- Corrección de programación
+- Gramática y legibilidad
+- Flujo pedagógico
+- Referencias APA
+- Consistencia con lecciones anteriores

@@ -1,10 +1,10 @@
-# Prompt: Quiz Generation
+# Prompt: Generación de Cuestionarios
 
-Generate a quiz for the lesson.
+Generar un cuestionario para la lección.
 
-Requirements:
-- 5 multiple-choice questions
-- 2 short-answer questions
-- 1 coding question
-- Include answer key
-- Evaluate conceptual understanding, not memorization
+Requisitos:
+- 5 preguntas de opción múltiple
+- 2 preguntas de respuesta breve
+- 1 pregunta de código
+- Incluir clave de respuestas
+- Evaluar comprensión conceptual, no memorización

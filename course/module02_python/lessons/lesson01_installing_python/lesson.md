@@ -5,12 +5,12 @@ Lesson Title: Instalación de Python
 Estimated Duration: 30 minutes
 Prerequisites: Ninguno
 Learning Objectives:
-  - Explicar what Python is and why it is used for data science
-  - Instalar Python on Windows, macOS, or Linux
-  - Verificar the installation using the command line
-  - Usar pip to install Python packages
-  - Crear and activate a virtual environment
-Keywords: Python, pip, virtual environment, command line, installation
+  - Explicar qué es Python y por qué se utiliza para ciencia de datos
+  - Instalar Python en Windows, macOS o Linux
+  - Verificar la instalación usando la línea de comandos
+  - Usar pip para instalar paquetes de Python
+  - Crear y activar un entorno virtual (virtual environment)
+Keywords: Python, pip, virtual environment, línea de comandos, instalación
 Difficulty: Principiante
 Programming Concepts: Python interpreter, CLI, package management, virtual environments
 Datasets Used: Ninguno

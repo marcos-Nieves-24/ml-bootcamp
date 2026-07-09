@@ -3,16 +3,15 @@ Module: 2
 Lesson Number: 6
 Lesson Title: Funciones
 Estimated Duration: 60 minutes
-Prerequisites: L5 — Operators
+Prerequisites: L5 — Operadores
 Learning Objectives:
   - Definir funciones usando la palabra clave def
   - Pasar argumentos y devolver valores desde funciones
   - Distinguir entre ámbito local y global
   - Crear funciones lambda (anónimas)
   - Escribir docstrings siguiendo PEP 257
-Keywords: function, parameter, argument, return, scope, lambda, docstring
-Difficulty: Principiante
-Programming Concepts: Function definition, parameter passing, scope, lambda expressions, documentation
+Keywords: función, parámetro, argumento, retorno, ámbito, lambda, docstring
+Programming Concepts: Definición de funciones, paso de parámetros, ámbito, expresiones lambda, documentación
 Datasets Used: Ninguno
 Notebook: notebook.ipynb
 Assignment: assignment.md

@@ -3,13 +3,13 @@ Module: 4
 Lesson Number: 4
 Lesson Title: Árboles de Decisión
 Estimated Duration: 75 minutes
-Prerequisites: L1 (ML Fundamentals)
+Prerequisites: L1 (Fundamentos de ML)
 Learning Objectives:
-  - Explicar how decision trees make predictions by recursive partitioning
-  - Describir Gini impurity and entropy as splitting criteria
-  - Train and visualize decision trees with scikit-learn
-  - Diagnose overfitting in decision trees and apply pruning
-  - Comparar decision trees with linear models
+  - Explicar cómo los árboles de decisión hacen predicciones mediante particionamiento recursivo
+  - Describir la impureza de Gini y la entropía como criterios de división
+  - Entrenar y visualizar árboles de decisión con scikit-learn
+  - Diagnosticar overfitting en árboles de decisión y aplicar pruning
+  - Comparar árboles de decisión con modelos lineales
 Keywords: decision tree, Gini impurity, entropy, information gain, pruning, overfitting
 Difficulty: Intermedio
 Programming Concepts: sklearn.tree.DecisionTreeClassifier, sklearn.tree.plot_tree

@@ -1,16 +1,16 @@
 ---
 Module: 5
 Lesson Number: 3
-Lesson Title: Transparency and Explainability
+Lesson Title: Transparencia y Explicabilidad
 Estimated Duration: 60 minutes
-Prerequisites: L1 (Introduction to AI Ethics), Module 4 (ML)
+Prerequisites: L1 (Introducción a la Ética de la IA), Módulo 4 (ML)
 Learning Objectives:
-  - Differentiate between interpretability and explainability
-  - Explicar the black box problem in ML
-  - Describir SHAP and LIME as methods for model explanation
-  - Implementar LIME to explain a classifier prediction
-  - Evaluar the limitations of post-hoc explanation methods
-Keywords: transparency, explainability, interpretability, XAI, SHAP, LIME, black box
+  - Diferenciar entre interpretabilidad y explicabilidad
+  - Explicar el problema de la caja negra (black box) en ML
+  - Describir SHAP y LIME como métodos de explicación de modelos
+  - Implementar LIME para explicar la predicción de un clasificador
+  - Evaluar las limitaciones de los métodos de explicación post-hoc
+Keywords: transparencia, explicabilidad, interpretabilidad, XAI, SHAP, LIME, caja negra
 Difficulty: Intermedio
 Programming Concepts: Function calls, library usage, visualization
 Mathematical Concepts: Feature importance, local approximations

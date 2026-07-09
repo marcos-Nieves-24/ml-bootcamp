@@ -3,13 +3,13 @@ Module: 4
 Lesson Number: 8
 Lesson Title: Gradient Boosting
 Estimated Duration: 90 minutes
-Prerequisites: L4 (Decision Trees), L5 (Random Forest)
+Prerequisites: L4 (Árboles de Decisión), L5 (Random Forest)
 Learning Objectives:
-  - Explicar the boosting paradigm and how it differs from bagging
-  - Describir the Gradient Boosting algorithm
-  - Train Gradient Boosting models with scikit-learn
-  - Tune hyperparameters: learning rate, n_estimators, max_depth
-  - Describir how XGBoost and LightGBM improve upon basic gradient boosting
+  - Explicar el paradigma de boosting y cómo difiere de bagging
+  - Describir el algoritmo de Gradient Boosting
+  - Entrenar modelos de Gradient Boosting con scikit-learn
+  - Ajustar hiperparámetros: learning rate, n_estimators, max_depth
+  - Describir cómo XGBoost y LightGBM mejoran el gradient boosting básico
 Keywords: boosting, gradient boosting, XGBoost, LightGBM, learning rate, additive model, residual
 Difficulty: Avanzado
 Programming Concepts: sklearn.ensemble.GradientBoostingClassifier, learning_rate, early_stopping

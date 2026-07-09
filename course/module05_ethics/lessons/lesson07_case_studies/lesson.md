@@ -1,15 +1,15 @@
 ---
 Module: 5
 Lesson Number: 7
-Lesson Title: Case Studies in Health and SaaS
+Lesson Title: Casos de Estudio en Salud y SaaS
 Estimated Duration: 75 minutes
 Prerequisites: L1–L6
 Learning Objectives:
-  - Analizar real-world bias in healthcare algorithms using ethical principles
-  - Evaluar fairness in credit scoring and lending algorithms
-  - Design responsible SaaS analytics with privacy and transparency
-  - Aplicar bias detection and mitigation techniques to real datasets
-  - Synthesize all Module 5 concepts in a comprehensive case analysis
+  - Analizar el sesgo del mundo real en algoritmos de salud usando principios éticos
+  - Evaluar la equidad en algoritmos de credit scoring y préstamos
+  - Diseñar analítica SaaS responsable con privacidad y transparencia
+  - Aplicar técnicas de detección y mitigación de sesgo a datasets reales
+  - Sintetizar todos los conceptos del Módulo 5 en un análisis de caso integral
 Keywords: case studies, healthcare bias, credit scoring, responsible AI, algorithmic fairness, ethical deployment
 Difficulty: Avanzado
 Programming Concepts: pandas, sklearn, data analysis

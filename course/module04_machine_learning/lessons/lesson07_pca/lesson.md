@@ -3,13 +3,13 @@ Module: 4
 Lesson Number: 7
 Lesson Title: Principal Component Analysis (PCA)
 Estimated Duration: 75 minutes
-Prerequisites: L1 (ML Fundamentals), Module 3 (covariance, eigenvalues)
+Prerequisites: L1 (Fundamentos de ML), Módulo 3 (covarianza, eigenvalues)
 Learning Objectives:
-  - Explicar PCA intuition: finding directions of maximum variance
-  - Aplicar PCA for dimensionality reduction with scikit-learn
-  - Interpret explained variance ratio and cumulative variance plot
-  - Usar PCA for 2D visualization of high-dimensional data
-  - Describir the relationship between eigenvectors and principal components
+  - Explicar la intuición de PCA: encontrar direcciones de máxima varianza
+  - Aplicar PCA para reducción de dimensionalidad con scikit-learn
+  - Interpretar el ratio de varianza explicada y el gráfico de varianza acumulada
+  - Usar PCA para visualización 2D de datos de alta dimensionalidad
+  - Describir la relación entre eigenvectors y componentes principales
 Keywords: PCA, dimensionality reduction, eigenvalues, eigenvectors, explained variance, feature extraction
 Difficulty: Intermedio
 Programming Concepts: sklearn.decomposition.PCA, fit_transform, explained_variance_ratio_

@@ -1,16 +1,16 @@
 ---
 Module: 3
 Lesson Number: 5
-Lesson Title: Relationships Between Variables
+Lesson Title: Relaciones Entre Variables
 Estimated Duration: 60 minutes
-Prerequisites: Lesson 1 (Descriptive Statistics)
+Prerequisites: Lección 1 (Estadística Descriptiva)
 Learning Objectives:
-  - Compute and interpret covariance between two variables
-  - Distinguish between Pearson and Spearman correlation
-  - Crear and interpret a correlation matrix heatmap
-  - Choose the appropriate correlation coefficient based on data characteristics
-  - Identificar spurious correlations
-Keywords: covariance, Pearson correlation, Spearman correlation, correlation matrix, heatmap, monotonic relationship
+  - Calcular e interpretar la covarianza entre dos variables
+  - Distinguir entre correlación de Pearson y Spearman
+  - Crear e interpretar un heatmap de matriz de correlación
+  - Elegir el coeficiente de correlación apropiado según las características de los datos
+  - Identificar correlaciones espurias
+Keywords: covarianza, correlación de Pearson, correlación de Spearman, matriz de correlación, heatmap, relación monótona
 Difficulty: Principiante
 Programming Concepts: numpy, pandas, matplotlib, seaborn
 Mathematical Concepts: covariance, correlation coefficient, rank correlation

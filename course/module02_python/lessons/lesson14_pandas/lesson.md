@@ -5,16 +5,16 @@ Lesson Title: Pandas
 Estimated Duration: 90 minutes
 Prerequisites: L13 — NumPy
 Learning Objectives:
-  - Crear and manipulate Series and DataFrame objects
-  - Load data from CSV files using read_csv()
-  - Filter, select, and subset data using boolean indexing
-  - Usar groupby for data aggregation
-  - Merge/join multiple DataFrames
-  - Aplicar functions to data with apply() and map()
+  - Crear y manipular objetos Series y DataFrame
+  - Cargar datos desde archivos CSV usando read_csv()
+  - Filtrar, seleccionar y subdividir datos usando indexación booleana
+  - Usar groupby para agregación de datos
+  - Fusionar/unir múltiples DataFrames
+  - Aplicar funciones a datos con apply() y map()
 Keywords: Pandas, DataFrame, Series, groupby, merge, apply, read_csv
-Difficulty: Beginner-Intermediate
-Programming Concepts: Data manipulation, tabular data, aggregation
-Datasets Used: None (synthetic data)
+Difficulty: Principiante-Intermedio
+Programming Concepts: Manipulación de datos, datos tabulares, agregación
+Datasets Used: Ninguno (datos sintéticos)
 Notebook: notebook.ipynb
 Assignment: assignment.md
 Quiz: quiz.md

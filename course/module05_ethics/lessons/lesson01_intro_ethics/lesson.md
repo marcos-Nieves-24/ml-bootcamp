@@ -3,18 +3,18 @@ Module: 5
 Lesson Number: 1
 Lesson Title: Introducción a la Ética de la IA
 Estimated Duration: 60 minutes
-Prerequisites: Module 4 (Machine Learning)
+Prerequisites: Módulo 4 (Machine Learning)
 Learning Objectives:
-  - Definir ethics in the context of artificial intelligence
-  - Explicar why AI ethics matters for biotechnology and SaaS applications
-  - Identificar the five key ethical principles for AI: beneficence, non-maleficence, autonomy, justice, explicability
-  - Analizar real-world cases where ethical failures in AI caused harm
-  - Evaluar trade-offs between competing ethical principles in system design
-Keywords: ethics, beneficence, non-maleficence, autonomy, justice, explicability, fairness, accountability
-Difficulty: Introductory
+  - Definir la ética en el contexto de la inteligencia artificial
+  - Explicar por qué la ética en IA es importante para aplicaciones de biotecnología y SaaS
+  - Identificar los cinco principios éticos clave para la IA: beneficencia, no maleficencia, autonomía, justicia, explicabilidad
+  - Analizar casos del mundo real donde fallos éticos en IA causaron daño
+  - Evaluar las compensaciones entre principios éticos en competencia en el diseño de sistemas
+Keywords: ética, beneficencia, no maleficencia, autonomía, justicia, explicabilidad, equidad, responsabilidad
+Difficulty: Introductorio
 Programming Concepts: Ninguno
 Mathematical Concepts: Ninguno
-Machine Learning Concepts: Model evaluation, classification, regression (review)
+Machine Learning Concepts: Evaluación de modelos, clasificación, regresión (repaso)
 Datasets Used: Ninguno
 Notebook: notebook.ipynb
 Assignment: assignment.md

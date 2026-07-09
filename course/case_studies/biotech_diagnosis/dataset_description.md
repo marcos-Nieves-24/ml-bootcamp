@@ -1,55 +1,55 @@
-# Dataset Description: Biotech Gene Expression
+# Descripción del Dataset: Expresión Génica en Biotecnología
 
-## Overview
+## Resumen
 
-This is a **synthetic gene expression dataset** designed to simulate a real microarray experiment for binary disease diagnosis. The dataset contains expression levels for 20 genes measured across 100 patient samples.
+Este es un **dataset sintético de expresión génica** diseñado para simular un experimento real de microarreglos para el diagnóstico binario de enfermedades. El dataset contiene niveles de expresión de 20 genes medidos en 100 muestras de pacientes.
 
-## Data Generation
+## Generación de Datos
 
-The dataset was generated using a controlled simulation process:
+El dataset se generó utilizando un proceso de simulación controlado:
 
-1. **Baseline expression**: Each gene's baseline expression is sampled from a log-normal distribution to mimic real gene expression data.
-2. **Differential expression**: 8 out of 20 genes (BRCA1, TP53, EGFR, MYC, KRAS, PTEN, CDKN2A, ERBB2) are set as differentially expressed between the two classes.
-3. **Technical noise**: Gaussian noise is added to simulate microarray measurement variability.
-4. **Class balance**: 50 healthy controls (class 0) and 50 disease patients (class 1).
+1. **Expresión basal**: La expresión basal de cada gen se muestrea de una distribución log-normal para imitar datos reales de expresión génica.
+2. **Expresión diferencial**: 8 de los 20 genes (BRCA1, TP53, EGFR, MYC, KRAS, PTEN, CDKN2A, ERBB2) se establecen como diferencialmente expresados entre las dos clases.
+3. **Ruido técnico**: Se agrega ruido Gaussiano para simular la variabilidad de medición de los microarreglos.
+4. **Balance de clases**: 50 controles sanos (clase 0) y 50 pacientes con enfermedad (clase 1).
 
-## File Format
+## Formato del Archivo
 
-CSV file with 100 rows and 21 columns.
+Archivo CSV con 100 filas y 21 columnas.
 
-## Columns
+## Columnas
 
-| Column | Type | Description |
-|--------|------|-------------|
-| Patient_ID | string | Unique patient identifier |
-| GENE_01–GENE_20 | float | Normalized gene expression values (log2 scale) |
-| Diagnosis | int | Binary label: 0 = Healthy, 1 = Diseased |
+| Columna | Tipo | Descripción |
+|---------|------|-------------|
+| Patient_ID | string | Identificador único del paciente |
+| GENE_01–GENE_20 | float | Valores de expresión génica normalizados (escala log2) |
+| Diagnosis | int | Etiqueta binaria: 0 = Sano, 1 = Enfermo |
 
-## Gene Annotations
+## Anotaciones de Genes
 
-| Gene Code | Gene Name | Biological Function | Differential? |
-|-----------|-----------|-------------------|:-------------:|
-| GENE_01 | BRCA1 | DNA repair, tumor suppression | Yes |
-| GENE_02 | TP53 | Cell cycle regulation, apoptosis | Yes |
-| GENE_03 | EGFR | Cell growth receptor signaling | Yes |
-| GENE_04 | MYC | Transcription factor, cell proliferation | Yes |
-| GENE_05 | KRAS | GTPase, cell signaling | Yes |
-| GENE_06 | PTEN | Tumor suppressor, PI3K pathway | Yes |
-| GENE_07 | CDKN2A | Cell cycle inhibitor | Yes |
-| GENE_08 | ERBB2 | Growth factor receptor | Yes |
-| GENE_09–GENE_20 | — | Housekeeping / non-differentially expressed genes | No |
+| Código del Gen | Nombre del Gen | Función Biológica | ¿Diferencial? |
+|----------------|----------------|-------------------|:-------------:|
+| GENE_01 | BRCA1 | Reparación de ADN, supresión tumoral | Sí |
+| GENE_02 | TP53 | Regulación del ciclo celular, apoptosis | Sí |
+| GENE_03 | EGFR | Señalización del receptor de crecimiento celular | Sí |
+| GENE_04 | MYC | Factor de transcripción, proliferación celular | Sí |
+| GENE_05 | KRAS | GTPasa, señalización celular | Sí |
+| GENE_06 | PTEN | Supresor tumoral, vía PI3K | Sí |
+| GENE_07 | CDKN2A | Inhibidor del ciclo celular | Sí |
+| GENE_08 | ERBB2 | Receptor de factor de crecimiento | Sí |
+| GENE_09–GENE_20 | — | Genes housekeeping / no diferencialmente expresados | No |
 
-## Statistical Properties
+## Propiedades Estadísticas
 
-- **Samples**: 100 (50 per class)
+- **Muestras**: 100 (50 por clase)
 - **Features**: 20 genes
-- **Expression range**: Approximately −2 to +6 (log2 scale)
-- **Signal-to-noise ratio**: Moderate; differential genes show 1.5–3.0 fold change
-- **Noise level**: σ ≈ 0.3 Gaussian noise
+- **Rango de expresión**: Aproximadamente −2 a +6 (escala log2)
+- **Relación señal-ruido**: Moderada; los genes diferenciales muestran un cambio de 1,5 a 3,0 veces
+- **Nivel de ruido**: σ ≈ 0,3 ruido Gaussiano
 
-## Usage Notes
+## Notas de Uso
 
-- Expression values are already normalized (log2 scale). No additional normalization is required.
-- The dataset is small by design (100 samples) to allow rapid experimentation.
-- Class labels are balanced, so accuracy is a meaningful metric.
-- This is a synthetic dataset — patterns are simplified compared to real gene expression data.
+- Los valores de expresión ya están normalizados (escala log2). No se requiere normalización adicional.
+- El dataset es pequeño por diseño (100 muestras) para permitir experimentación rápida.
+- Las etiquetas de clase están balanceadas, por lo que la precisión (accuracy) es una métrica significativa.
+- Este es un dataset sintético — los patrones son simplificados en comparación con datos reales de expresión génica.

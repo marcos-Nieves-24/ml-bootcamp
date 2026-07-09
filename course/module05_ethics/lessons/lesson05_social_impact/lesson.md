@@ -1,17 +1,17 @@
 ---
 Module: 5
 Lesson Number: 5
-Lesson Title: Social Impact of AI
+Lesson Title: Impacto Social de la IA
 Estimated Duration: 60 minutes
-Prerequisites: L1 (Introduction to AI Ethics)
+Prerequisites: L1 (Introducción a la Ética de la IA)
 Learning Objectives:
-  - Analizar the impact of AI on employment and the labor market
-  - Evaluar the environmental footprint of large-scale AI models
-  - Explicar AI safety challenges including alignment and robustness
-  - Analizar how AI contributes to misinformation and disinformation
-  - Evaluar ethical considerations for autonomous systems
-Keywords: job displacement, automation, environmental impact, AI safety, misinformation, autonomous systems, alignment
-Difficulty: Introductory
+  - Analizar el impacto de la IA en el empleo y el mercado laboral
+  - Evaluar la huella ambiental de los modelos de IA a gran escala
+  - Explicar los desafíos de seguridad de la IA, incluyendo alineación y robustez
+  - Analizar cómo la IA contribuye a la desinformación
+  - Evaluar consideraciones éticas para sistemas autónomos
+Keywords: desplazamiento laboral, automatización, impacto ambiental, seguridad de IA, desinformación, sistemas autónomos, alineación
+Difficulty: Introductorio
 Programming Concepts: Ninguno
 Mathematical Concepts: Ninguno
 Machine Learning Concepts: Training cost, model scale

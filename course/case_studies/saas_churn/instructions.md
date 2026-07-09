@@ -1,77 +1,77 @@
-# Instructions: SaaS Customer Churn Prediction
+# Instrucciones: Predicción de Cancelación de Clientes SaaS
 
-## Problem Statement
+## Planteamiento del Problema
 
-You are a data scientist at a SaaS company offering a project management platform. The company has 1,000 customers and is experiencing a churn rate of approximately 25%. Your CEO has asked you to build a predictive model that identifies customers at risk of churning so the company can proactively offer retention incentives.
+Eres un científico de datos en una empresa SaaS que ofrece una plataforma de gestión de proyectos. La empresa tiene 1.000 clientes y experimenta una tasa de cancelación (churn rate) de aproximadamente el 25%. Tu CEO te ha pedido que construyas un modelo predictivo que identifique a los clientes en riesgo de cancelación para que la empresa pueda ofrecer incentivos de retención de forma proactiva.
 
-Your analysis will directly impact business strategy: every customer retained saves the company money on acquisition costs and increases lifetime value. You need to recommend a cost-effective retention strategy based on your model's insights.
+Tu análisis impactará directamente en la estrategia de negocio: cada cliente retenido le ahorra a la empresa costos de adquisición y aumenta el valor de por vida (lifetime value). Debes recomendar una estrategia de retención rentable basada en los insights de tu modelo.
 
-## Tasks
+## Tareas
 
-### Task 1: Data Loading and Initial Exploration (10 points)
+### Tarea 1: Carga de Datos y Exploración Inicial (10 puntos)
 
-1. Load the dataset using pandas.
-2. Display the first 5 rows, data types, and basic statistics.
-3. Check for missing values.
-4. Print the dataset shape and churn rate.
+1. Carga el dataset usando pandas.
+2. Muestra las primeras 5 filas, los tipos de datos y las estadísticas básicas.
+3. Verifica si hay valores faltantes.
+4. Imprime la forma del dataset y la tasa de churn.
 
-### Task 2: Exploratory Data Analysis (20 points)
+### Tarea 2: Análisis Exploratorio de Datos (20 puntos)
 
-1. Plot the churn distribution (bar chart or pie chart).
-2. Create histograms or KDE plots for numerical features, colored by churn status.
-3. Plot boxplots comparing churned vs. retained customers for each numerical feature.
-4. Create a correlation heatmap of numerical features.
-5. Analyze churn rate by contract type (bar chart).
-6. Analyze churn rate by payment method (bar chart).
+1. Grafica la distribución de churn (gráfico de barras o circular).
+2. Crea histogramas o gráficos KDE para las features numéricas, coloreadas por estado de churn.
+3. Grafica boxplots comparando clientes que cancelaron vs. los que se quedaron para cada feature numérica.
+4. Crea un heatmap de correlación de las features numéricas.
+5. Analiza la tasa de churn por tipo de contrato (gráfico de barras).
+6. Analiza la tasa de churn por método de pago (gráfico de barras).
 
-### Task 3: Data Preprocessing (15 points)
+### Tarea 3: Preprocesamiento de Datos (15 puntos)
 
-1. Drop the CustomerID column.
-2. Encode categorical variables using one-hot encoding.
-3. Separate features (X) and target (y).
-4. Split into training (70%) and testing (30%) sets with stratification.
-5. Standardize numerical features using StandardScaler.
+1. Elimina la columna CustomerID.
+2. Codifica las variables categóricas usando one-hot encoding.
+3. Separa las features (X) y el target (y).
+4. Divide en conjuntos de entrenamiento (70%) y prueba (30%) con estratificación.
+5. Estandariza las features numéricas usando StandardScaler.
 
-### Task 4: Model Training (25 points)
+### Tarea 4: Entrenamiento de Modelos (25 puntos)
 
-Train the following three classifiers:
+Entrena los siguientes tres clasificadores:
 
-1. **Logistic Regression**:
-   - Train with default parameters.
-   - Print training and testing accuracy.
+1. **Regresión Logística**:
+   - Entrena con parámetros por defecto.
+   - Imprime la precisión (accuracy) de entrenamiento y prueba.
 
 2. **Random Forest**:
-   - Train with 100 trees.
-   - Print training and testing accuracy.
+   - Entrena con 100 árboles.
+   - Imprime la precisión (accuracy) de entrenamiento y prueba.
 
 3. **Gradient Boosting**:
-   - Train with 100 estimators.
-   - Print training and testing accuracy.
+   - Entrena con 100 estimadores.
+   - Imprime la precisión (accuracy) de entrenamiento y prueba.
 
-### Task 5: Model Evaluation (15 points)
+### Tarea 5: Evaluación de Modelos (15 puntos)
 
-For all three models, compute and display:
+Para los tres modelos, calcula y muestra:
 
-1. Confusion matrix (visualize with heatmaps)
-2. Classification report (precision, recall, F1-score for both classes)
-3. ROC curves with AUC scores on the same axis
-4. A comparison bar chart of all metrics across models
+1. Matriz de confusión (visualiza con heatmaps)
+2. Reporte de clasificación (precision, recall, F1-score para ambas clases)
+3. Curvas ROC con puntuaciones AUC en el mismo eje
+4. Un gráfico de barras comparativo de todas las métricas entre modelos
 
-### Task 6: Feature Importance Analysis (10 points)
+### Tarea 6: Análisis de Importancia de Features (10 puntos)
 
-1. Extract feature importances from the Random Forest and Gradient Boosting models.
-2. Plot the top 10 most important features for each.
-3. Compare with Logistic Regression coefficients.
-4. Identify the top 3 drivers of churn.
+1. Extrae las importancias de features de los modelos Random Forest y Gradient Boosting.
+2. Grafica las 10 features más importantes para cada uno.
+3. Compara con los coeficientes de la Regresión Logística.
+4. Identifica los 3 principales impulsores del churn.
 
-### Task 7: Business Recommendations & Cost-Benefit (5 points)
+### Tarea 7: Recomendaciones de Negocio y Análisis Costo-Beneficio (5 puntos)
 
-1. Based on your findings, recommend 3 business actions to reduce churn.
-2. **Cost-benefit analysis**: Assume:
-   - Customer acquisition cost (CAC): $500
-   - Monthly revenue per customer: $75
-   - Average customer lifetime for non-churning: 36 months
-   - Retention discount offer: 20% off for 6 months ($90 discount per saved customer)
-   - Assume your model can identify 60% of churning customers and retention saves 40% of those targeted.
-   - Calculate: total savings vs. total cost of the retention program.
-   - Is the program worth implementing?
+1. Basándote en tus hallazgos, recomienda 3 acciones de negocio para reducir el churn.
+2. **Análisis costo-beneficio**: Supón:
+   - Costo de adquisición de cliente (CAC): $500
+   - Ingreso mensual por cliente: $75
+   - Vida útil promedio del cliente que no cancela: 36 meses
+   - Descuento de retención: 20% de descuento por 6 meses ($90 de descuento por cliente retenido)
+   - Supón que tu modelo puede identificar el 60% de los clientes que cancelarán y la retención salva al 40% de esos clientes objetivo.
+   - Calcula: ahorro total vs. costo total del programa de retención.
+   - ¿Vale la pena implementar el programa?

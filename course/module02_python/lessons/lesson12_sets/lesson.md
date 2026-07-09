@@ -3,16 +3,15 @@ Module: 2
 Lesson Number: 12
 Lesson Title: Conjuntos
 Estimated Duration: 30 minutes
-Prerequisites: L9 — Lists
+Prerequisites: L9 — Listas
 Learning Objectives:
-  - Crear sets and explain their properties (unordered, unique, hashable)
-  - Realizar set operations: union, intersection, difference, symmetric difference
-  - Usar sets for removing duplicates and membership testing
-  - Distinguish between sets and frozensets
-  - Choose between sets, lists, and tuples based on use case
-Keywords: set, frozenset, union, intersection, difference, membership
-Difficulty: Principiante
-Programming Concepts: Hash sets, uniqueness, set operations
+  - Crear conjuntos (sets) y explicar sus propiedades (no ordenados, únicos, hashable)
+  - Realizar operaciones de conjuntos: unión, intersección, diferencia, diferencia simétrica
+  - Usar conjuntos para eliminar duplicados y probar pertenencia
+  - Distinguir entre sets y frozensets
+  - Elegir entre conjuntos, listas y tuplas según el caso de uso
+Keywords: set, frozenset, unión, intersección, diferencia, pertenencia
+Programming Concepts: Hash sets, unicidad, operaciones de conjuntos
 Datasets Used: Ninguno
 Notebook: notebook.ipynb
 Assignment: assignment.md

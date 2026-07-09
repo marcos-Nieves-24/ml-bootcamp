@@ -1,10 +1,10 @@
-# Prompt: Dataset Generation
+# Prompt: Generación de Datasets
 
-Generate a synthetic dataset for the lesson.
+Generar un dataset sintético para la lección.
 
-Include:
-- README.md (source, variables, citation, preprocessing)
+Incluir:
+- README.md (fuente, variables, cita, preprocesamiento)
 - metadata.json
 - license.txt
-- Document assumptions, variables, distributions
-- Consider missing values and class imbalance when appropriate
+- Documentar supuestos, variables, distribuciones
+- Considerar valores faltantes y desbalanceo de clases cuando corresponda

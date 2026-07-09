@@ -1,13 +1,13 @@
-# Final Exam Rubric
+# Rúbrica del Examen Final
 
-| Section | Questions | Puntos | Criterio |
+| Sección | Preguntas | Puntos | Criterio |
 |---------|-----------|--------|----------|
-| Multiple Choice | 1-10 | 20 | 2 points each. No partial credit. |
-| Short Answer | 11-14 | 24 | 6 points: complete and accurate. 3-4 pts: partially correct. 1 pt: attempted. |
-| Coding Q15 | 15 | 15 | 3 pts: loads and splits. 4 pts: trains RF. 5 pts: computes all metrics. 3 pts: confusion matrix. |
-| Coding Q16 | 16 | 15 | 3 pts: creates/loads data. 4 pts: elbow method. 4 pts: KMeans + vis. 4 pts: silhouette score. |
-| Ethics Q17 | 17 | 13 | 4 pts: identifies issues. 5 pts: proposes actions. 4 pts: fairness metrics. |
-| Ethics Q18 | 18 | 13 | 4 pts: ethical concerns. 5 pts: alternative strategy. 4 pts: transparency plan. |
+| Opción Múltiple | 1-10 | 20 | 2 puntos cada una. Sin crédito parcial. |
+| Respuesta Breve | 11-14 | 24 | 6 puntos: completa y precisa. 3-4 pts: parcialmente correcta. 1 pt: intentada. |
+| Codificación P15 | 15 | 15 | 3 pts: carga y divide. 4 pts: entrena RF. 5 pts: calcula todas las métricas. 3 pts: matriz de confusión. |
+| Codificación P16 | 16 | 15 | 3 pts: crea/carga datos. 4 pts: método del codo. 4 pts: KMeans + visualización. 4 pts: silhouette score. |
+| Ética P17 | 17 | 13 | 4 pts: identifica problemas. 5 pts: propone acciones. 4 pts: métricas de equidad. |
+| Ética P18 | 18 | 13 | 4 pts: preocupaciones éticas. 5 pts: estrategia alternativa. 4 pts: plan de transparencia. |
 
-**Passing threshold:** 60/100
-**Grading scale:** A (90+), B (80-89), C (70-79), D (60-69), F (<60)
+**Umbral de aprobación:** 60/100
+**Escala de calificación:** A (90+), B (80-89), C (70-79), D (60-69), F (<60)

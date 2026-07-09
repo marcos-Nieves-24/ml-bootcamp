@@ -1,17 +1,17 @@
 ---
 Module: 5
 Lesson Number: 6
-Lesson Title: Regulation and Governance of AI
+Lesson Title: Regulación y Gobernanza de la IA
 Estimated Duration: 60 minutes
-Prerequisites: L1 (Introduction to AI Ethics)
+Prerequisites: L1 (Introducción a la Ética de la IA)
 Learning Objectives:
-  - Describir the global AI regulatory landscape (EU AI Act, US frameworks, China)
-  - Explicar the EU AI Act's risk-based classification system
-  - Evaluar the role of corporate AI ethics boards and internal governance
-  - Describir the algorithmic auditing process
-  - Analizar the challenges of regulating rapidly evolving AI technology
-Keywords: regulation, governance, EU AI Act, auditing, ethics board, compliance, risk classification
-Difficulty: Introductory
+  - Describir el panorama regulatorio global de la IA (EU AI Act, marcos de EE.UU., China)
+  - Explicar el sistema de clasificación basado en riesgos del EU AI Act
+  - Evaluar el rol de los comités de ética corporativos y la gobernanza interna
+  - Describir el proceso de auditoría algorítmica
+  - Analizar los desafíos de regular la tecnología de IA en rápida evolución
+Keywords: regulación, gobernanza, EU AI Act, auditoría, comité de ética, cumplimiento, clasificación de riesgos
+Difficulty: Introductorio
 Programming Concepts: Ninguno
 Mathematical Concepts: Ninguno
 Machine Learning Concepts: Model evaluation, validation

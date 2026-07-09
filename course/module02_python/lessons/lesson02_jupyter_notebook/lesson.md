@@ -3,16 +3,16 @@ Module: 2
 Lesson Number: 2
 Lesson Title: Jupyter Notebook
 Estimated Duration: 45 minutes
-Prerequisites: L1 — Installing Python
+Prerequisites: L1 — Instalación de Python
 Learning Objectives:
-  - Launch Jupyter Notebook from the command line
-  - Crear and edit code cells and markdown cells
-  - Execute Python code interactively in a notebook
-  - Usar keyboard shortcuts to navigate efficiently
-  - Export a notebook to HTML or PDF
-Keywords: Jupyter, notebook, cell, kernel, markdown, REPL
+  - Iniciar Jupyter Notebook desde la línea de comandos
+  - Crear y editar celdas de código y celdas markdown
+  - Ejecutar código Python de forma interactiva en un notebook
+  - Usar atajos de teclado para navegar eficientemente
+  - Exportar un notebook a HTML o PDF
+Keywords: Jupyter, notebook, celda, kernel, markdown, REPL
 Difficulty: Principiante
-Programming Concepts: Notebook interface, markdown, code execution, kernel
+Programming Concepts: Interfaz de notebook, markdown, ejecución de código, kernel
 Datasets Used: Ninguno
 Notebook: notebook.ipynb
 Assignment: assignment.md

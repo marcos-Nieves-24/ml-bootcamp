@@ -1,23 +1,23 @@
-# Case Study: Clinical Trial Outcome Prediction
+# Caso de Estudio: Predicción de Resultados de Ensayos Clínicos
 
-## Business Context
+## Contexto de Negocio
 
-A pharmaceutical company is running clinical trials for a new drug. They need to predict which patients are most likely to respond positively to the treatment, enabling more efficient trial design and personalized medicine approaches.
+Una empresa farmacéutica está realizando ensayos clínicos para un nuevo fármaco. Necesitan predecir qué pacientes tienen más probabilidades de responder positivamente al tratamiento, lo que permite un diseño de ensayos más eficiente y enfoques de medicina personalizada.
 
 ## Dataset
 
-- **Source:** `datasets/synthetic/clinical_trial/clinical_trial.csv`
-- **Features:** Patient demographics, biomarkers, dosage, treatment group
-- **Target:** Treatment outcome (responder/non-responder)
+- **Fuente:** `datasets/synthetic/clinical_trial/clinical_trial.csv`
+- **Features:** Demografía de pacientes, biomarcadores, dosis, grupo de tratamiento
+- **Target:** Resultado del tratamiento (respondedor/no respondedor)
 
-## Learning Objectives
+## Objetivos de Aprendizaje
 
-1. Apply classification algorithms to a healthcare dataset
-2. Handle class imbalance in medical data
-3. Evaluate models using sensitivity and specificity
-4. Interpret feature importance for clinical decision-making
-5. Discuss ethical implications of patient selection
+1. Aplicar algoritmos de clasificación a un dataset de salud
+2. Manejar desbalanceo de clases en datos médicos
+3. Evaluar modelos usando sensibilidad y especificidad
+4. Interpretar la importancia de features para la toma de decisiones clínicas
+5. Discutir las implicaciones éticas de la selección de pacientes
 
-## Instructions
+## Instrucciones
 
-See `instructions.md` for the full case study workflow.
+Ver `instructions.md` para el flujo de trabajo completo del caso de estudio.

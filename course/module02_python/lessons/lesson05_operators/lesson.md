@@ -3,16 +3,15 @@ Module: 2
 Lesson Number: 5
 Lesson Title: Operadores
 Estimated Duration: 45 minutes
-Prerequisites: L4 — Data Types
+Prerequisites: L4 — Tipos de Datos
 Learning Objectives:
   - Usar operadores aritméticos para cómputo numérico
   - Usar operadores de comparación para comparar valores
   - Usar operadores lógicos para combinar expresiones booleanas
   - Usar operadores de asignación para actualizar variables
   - Comprender la precedencia de operadores
-Keywords: arithmetic, comparison, logical, assignment, operator precedence
-Difficulty: Principiante
-Programming Concepts: Operators, expressions, operator precedence
+Keywords: aritméticos, comparación, lógicos, asignación, precedencia de operadores
+Programming Concepts: Operadores, expresiones, precedencia de operadores
 Datasets Used: Ninguno
 Notebook: notebook.ipynb
 Assignment: assignment.md

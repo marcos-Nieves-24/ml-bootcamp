@@ -1,32 +1,32 @@
 # PROJECT_STRUCTURE.md
 
-# Repository Structure
+# Estructura del Repositorio
 
-This repository contains all the material required to develop, maintain, and publish the university course:
+Este repositorio contiene todo el material requerido para desarrollar, mantener y publicar el curso universitario:
 
 > **Machine Learning for Data Analysis and SaaS**
 
-The repository is organized following a modular architecture inspired by software engineering projects.
+El repositorio está organizado siguiendo una arquitectura modular inspirada en proyectos de ingeniería de software.
 
-The AI assistant (OpenCode) MUST always follow this structure when creating, modifying, or organizing content.
+El asistente de IA (OpenCode) DEBE seguir siempre esta estructura al crear, modificar u organizar contenido.
 
 ---
 
-# Root Directory
+# Directorio Raíz
 
 ```
 ml-bootcamp/
 ```
 
-Contains the entire course.
+Contiene el curso completo.
 
-No educational content should be placed directly in the root directory except documentation files.
+No se debe colocar contenido educativo directamente en el directorio raíz, excepto archivos de documentación.
 
 ---
 
 # docs/
 
-Contains documentation intended for instructors.
+Contiene documentación destinada a instructores.
 
 ```
 docs/
@@ -42,46 +42,46 @@ docs/
 
 ## syllabus/
 
-Contains
+Contiene
 
-- official syllabus
-- course description
-- learning outcomes
-- curriculum documents
+- programa oficial del curso
+- descripción del curso
+- resultados de aprendizaje
+- documentos curriculares
 
 ## instructor/
 
-Contains
+Contiene
 
-- teaching notes
-- semester planning
-- class schedules
-- instructor checklists
+- notas de enseñanza
+- planificación semestral
+- horarios de clase
+- listas de verificación para instructores
 
 ## grading/
 
-Contains
+Contiene
 
-- grading rubrics
-- evaluation policies
-- assessment criteria
+- rúbricas de evaluación
+- políticas de evaluación
+- criterios de evaluación
 
 ## references/
 
-Contains
+Contiene
 
-- bibliographies
-- citation databases
-- recommended books
-- recommended papers
+- bibliografías
+- bases de datos de citas
+- libros recomendados
+- artículos recomendados
 
 ---
 
 # course/
 
-Contains the educational content.
+Contiene el contenido educativo.
 
-Every module has its own directory.
+Cada módulo tiene su propio directorio.
 
 ```
 course/
@@ -95,7 +95,7 @@ course/
     module04_machine_learning/
 ```
 
-Every module must contain
+Cada módulo debe contener
 
 ```
 README.md
@@ -117,17 +117,17 @@ quizzes/
 references/
 ```
 
-Modules must be independent.
+Los módulos deben ser independientes.
 
 ---
 
 # lessons/
 
-Contains lecture material.
+Contiene el material de clase.
 
-Each lesson should be stored inside its own directory.
+Cada lección debe almacenarse dentro de su propio directorio.
 
-Example
+Ejemplo
 
 ```
 lesson01_intro_ai/
@@ -139,37 +139,37 @@ figures/
 references.bib
 ```
 
-Every lesson must include
+Cada lección debe incluir
 
-- learning objectives
+- objetivos de aprendizaje
 
-- prerequisites
+- prerrequisitos
 
-- theoretical explanation
+- explicación teórica
 
-- intuition
+- intuición
 
-- mathematical concepts
+- conceptos matemáticos
 
-- biological examples
+- ejemplos biológicos
 
-- SaaS examples
+- ejemplos SaaS
 
-- summary
+- resumen
 
-- glossary
+- glosario
 
-- references
+- referencias
 
 ---
 
 # notebooks/
 
-Contains Jupyter notebooks.
+Contiene notebooks de Jupyter.
 
-Each notebook should accompany one lesson.
+Cada notebook debe acompañar a una lección.
 
-Notebook naming
+Nomenclatura de notebooks
 
 ```
 01_intro.ipynb
@@ -179,33 +179,33 @@ Notebook naming
 03_clustering.ipynb
 ```
 
-Every notebook must contain
+Cada notebook debe contener
 
 Markdown
 
 ↓
 
-Code
+Código
 
 ↓
 
-Output
+Salida
 
 ↓
 
-Interpretation
+Interpretación
 
 ↓
 
-Exercises
+Ejercicios
 
 ---
 
 # labs/
 
-Contains practical classroom activities.
+Contiene actividades prácticas para el aula.
 
-Each lab should include
+Cada laboratorio debe incluir
 
 ```
 README.md
@@ -221,9 +221,9 @@ dataset.csv
 
 # assignments/
 
-Contains homework.
+Contiene tareas.
 
-Each assignment should include
+Cada tarea debe incluir
 
 ```
 instructions.md
@@ -239,9 +239,9 @@ solution.ipynb
 
 # quizzes/
 
-Contains formative assessments.
+Contiene evaluaciones formativas.
 
-Each quiz includes
+Cada cuestionario incluye
 
 ```
 questions.md
@@ -249,37 +249,37 @@ questions.md
 answer_key.md
 ```
 
-Quizzes may include
+Los cuestionarios pueden incluir
 
-- multiple choice
+- opción múltiple
 
-- true/false
+- verdadero/falso
 
-- coding questions
+- preguntas de código
 
-- interpretation questions
+- preguntas de interpretación
 
 ---
 
 # exams/
 
-Contains
+Contiene
 
-- midterm
+- examen parcial
 
-- final exam
+- examen final
 
-- answer keys
+- claves de respuestas
 
-- grading rubrics
+- rúbricas de evaluación
 
 ---
 
 # projects/
 
-Contains capstone projects.
+Contiene proyectos integradores.
 
-Each project includes
+Cada proyecto incluye
 
 ```
 README.md
@@ -295,13 +295,13 @@ rubric.md
 solution/
 ```
 
-Projects should integrate multiple modules.
+Los proyectos deben integrar múltiples módulos.
 
 ---
 
 # datasets/
 
-Contains all datasets used in the course.
+Contiene todos los datasets utilizados en el curso.
 
 ```
 datasets/
@@ -315,9 +315,9 @@ synthetic/
 external/
 ```
 
-Datasets must never be duplicated.
+Los datasets nunca deben duplicarse.
 
-Each dataset folder should include
+Cada carpeta de dataset debe incluir
 
 ```
 README.md
@@ -327,27 +327,27 @@ metadata.json
 license.txt
 ```
 
-README must explain
+El README debe explicar
 
-- source
+- fuente
 
 - variables
 
-- citation
+- cita
 
-- preprocessing
+- preprocesamiento
 
 ---
 
 # figures/
 
-Contains reusable figures.
+Contiene figuras reutilizables.
 
-Figures should never be manually edited.
+Las figuras nunca deben editarse manualmente.
 
-All figures should be generated from Python scripts whenever possible.
+Todas las figuras deben generarse a partir de scripts de Python siempre que sea posible.
 
-Accepted formats
+Formatos aceptados
 
 - SVG
 
@@ -359,9 +359,9 @@ Accepted formats
 
 # scripts/
 
-Contains automation scripts.
+Contiene scripts de automatización.
 
-Examples
+Ejemplos
 
 ```
 generate_figures.py
@@ -375,15 +375,15 @@ build_course.py
 publish_site.py
 ```
 
-Scripts should never contain educational content.
+Los scripts nunca deben contener contenido educativo.
 
 ---
 
 # prompts/
 
-Contains reusable prompts used with OpenCode.
+Contiene prompts reutilizables para usar con OpenCode.
 
-Examples
+Ejemplos
 
 ```
 lesson_generation.md
@@ -399,15 +399,15 @@ slides.md
 scientific_review.md
 ```
 
-Prompts should be reusable across modules.
+Los prompts deben ser reutilizables entre módulos.
 
 ---
 
 # website/
 
-Contains files used to publish the course online.
+Contiene archivos utilizados para publicar el curso en línea.
 
-May include
+Puede incluir
 
 - Quarto
 
@@ -421,9 +421,9 @@ May include
 
 # tests/
 
-Contains automated tests.
+Contiene pruebas automatizadas.
 
-Examples
+Ejemplos
 
 ```
 test_notebooks.py
@@ -435,15 +435,15 @@ test_datasets.py
 test_examples.py
 ```
 
-All executable notebooks should be tested.
+Todos los notebooks ejecutables deben ser probados.
 
 ---
 
 # .github/
 
-Contains GitHub configuration.
+Contiene la configuración de GitHub.
 
-Including
+Incluye
 
 ```
 workflows/
@@ -453,68 +453,68 @@ ISSUE_TEMPLATE/
 PULL_REQUEST_TEMPLATE/
 ```
 
-GitHub Actions should automatically
+GitHub Actions debe automáticamente
 
-- execute notebooks
+- ejecutar notebooks
 
-- validate datasets
+- validar datasets
 
-- build documentation
+- construir documentación
 
-- publish website
+- publicar el sitio web
 
 ---
 
-# General Rules
+# Reglas Generales
 
-OpenCode must always follow these rules.
+OpenCode debe seguir siempre estas reglas.
 
-1. Never place files in the wrong directory.
+1. Nunca colocar archivos en el directorio incorrecto.
 
-2. Never duplicate datasets.
+2. Nunca duplicar datasets.
 
-3. Never create notebooks without corresponding lessons.
+3. Nunca crear notebooks sin las lecciones correspondientes.
 
-4. Every lesson should have:
+4. Cada lección debe tener:
 
     - notebook
 
-    - quiz
+    - cuestionario
 
-    - lab
+    - laboratorio
 
-    - references
+    - referencias
 
-5. Every Python example must execute without errors.
+5. Cada ejemplo en Python debe ejecutarse sin errores.
 
-6. Every dataset must contain documentation.
+6. Cada dataset debe contener documentación.
 
-7. Figures should be reproducible.
+7. Las figuras deben ser reproducibles.
 
-8. Educational content must remain modular.
+8. El contenido educativo debe permanecer modular.
 
-9. Prefer improving existing material over creating duplicate files.
+9. Preferir mejorar material existente sobre crear archivos duplicados.
 
-10. Every change should preserve consistency across the entire repository.
+10. Cada cambio debe preservar la consistencia en todo el repositorio.
 
 ---
 
-# Repository Philosophy
+# Filosofía del Repositorio
 
-The repository is treated as a software project.
+El repositorio se trata como un proyecto de software.
 
-Every educational artifact should be:
+Cada artefacto educativo debe ser:
 
-- version controlled
+- versionado
 
 - reproducible
 
-- testable
+- comprobable
 
-- documented
+- documentado
 
-- reusable
+- reutilizable
 
 - modular
 
-The objective is not only to create lecture notes, but to build a complete, maintainable, open-source university course that can evolve over time through collaboration with OpenCode.
+El objetivo no es solo crear apuntes de clase, sino construir un curso universitario completo, mantenible y de código abierto que pueda evolucionar con el tiempo a través de la colaboración con OpenCode.

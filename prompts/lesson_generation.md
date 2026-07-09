@@ -1,22 +1,22 @@
-# Prompt: Lesson Generation
+# Prompt: Generación de Lecciones
 
-Generate a complete lesson following LESSON_STRUCTURE.md.
+Generar una lección completa siguiendo LESSON_STRUCTURE.md.
 
-Include:
-- YAML metadata
-- Learning objectives (Bloom's Taxonomy)
-- Motivation
-- Big picture
-- Theory (definition → intuition → formal → example)
-- Mathematical foundation
-- Visual explanation
-- Python implementation
-- Walkthrough example
-- Biotechnology example
-- SaaS example
-- Common mistakes
-- Best practices
-- Summary
-- Key terms
-- Exercises (3 levels)
-- Coding challenge
+Incluir:
+- Metadatos YAML
+- Objetivos de aprendizaje (Taxonomía de Bloom)
+- Motivación
+- Panorama general
+- Teoría (definición → intuición → formal → ejemplo)
+- Fundamentos matemáticos
+- Explicación visual
+- Implementación en Python
+- Ejemplo guiado (Walkthrough)
+- Ejemplo de Biotecnología
+- Ejemplo de SaaS
+- Errores comunes
+- Buenas prácticas
+- Resumen
+- Términos clave
+- Ejercicios (3 niveles)
+- Desafío de programación

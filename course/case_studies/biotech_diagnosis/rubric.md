@@ -1,65 +1,65 @@
-# Rubric: Disease Diagnosis from Gene Expression Data
+# Rúbrica: Diagnóstico de Enfermedades a partir de Datos de Expresión Génica
 
-**Total points: 100**
+**Puntaje total: 100**
 
-## Task 1: Data Loading and Exploration (15 points)
+## Tarea 1: Carga de Datos y Exploración (15 puntos)
 
-| Criterio | Excellent (15) | Good (11) | Adequate (7) | Poor (3) |
-|----------|----------------|-----------|--------------|----------|
-| Data loading | Loaded correctly with error handling | Loaded correctly | Loaded with minor issues | Not loaded or incorrect |
-| Data inspection | Displayed head, info, describe, shape, class distribution | Displayed most inspections | Displayed basic info | Missing key inspections |
-| Missing values | Checked and reported | Checked | Mentioned | Not checked |
+| Criterio | Excelente (15) | Bueno (11) | Adecuado (7) | Deficiente (3) |
+|----------|----------------|------------|--------------|----------------|
+| Carga de datos | Cargado correctamente con manejo de errores | Cargado correctamente | Cargado con problemas menores | No cargado o incorrecto |
+| Inspección de datos | Mostró head, info, describe, shape, distribución de clases | Mostró la mayoría de inspecciones | Mostró info básica | Faltan inspecciones clave |
+| Valores faltantes | Verificó y reportó | Verificó | Mencionó | No verificó |
 
-## Task 2: Exploratory Data Analysis (20 points)
+## Tarea 2: Análisis Exploratorio de Datos (20 puntos)
 
-| Criterio | Excellent (20) | Good (15) | Adequate (10) | Poor (5) |
-|----------|----------------|-----------|---------------|----------|
-| Expression distributions | Clear KDE/histograms with legend and labels | Good plots with labels | Basic plots | Missing or unclear |
-| Boxplot comparison | Well-formatted boxplot of differential genes | Good boxplot | Basic boxplot | Missing |
-| Correlation heatmap | Annotated heatmap with interpretation | Good heatmap | Basic heatmap | Missing |
-| Variance analysis | Top genes identified and plotted | Identified and plotted | Identified | Not done |
+| Criterio | Excelente (20) | Bueno (15) | Adecuado (10) | Deficiente (5) |
+|----------|----------------|------------|---------------|----------------|
+| Distribuciones de expresión | KDE/histogramas claros con leyenda y etiquetas | Buenos gráficos con etiquetas | Gráficos básicos | Faltante o poco claro |
+| Boxplot comparativo | Boxplot bien formateado de genes diferenciales | Buen boxplot | Boxplot básico | Faltante |
+| Heatmap de correlación | Heatmap anotado con interpretación | Buen heatmap | Heatmap básico | Faltante |
+| Análisis de varianza | Genes principales identificados y graficados | Identificados y graficados | Identificados | No realizado |
 
-## Task 3: Feature Selection (10 points)
+## Tarea 3: Selección de Features (10 puntos)
 
-| Criterio | Excellent (10) | Good (7) | Adequate (5) | Poor (2) |
-|----------|----------------|----------|--------------|----------|
-| Variance selection | Top 10 selected correctly | Selected with minor issue | Selected | Not done |
-| Train/test split | Stratified split, correct proportions | Correct split | Basic split | Missing |
+| Criterio | Excelente (10) | Bueno (7) | Adecuado (5) | Deficiente (2) |
+|----------|----------------|-----------|--------------|----------------|
+| Selección por varianza | Top 10 seleccionados correctamente | Seleccionados con problema menor | Seleccionados | No realizado |
+| División train/test | División estratificada, proporciones correctas | División correcta | División básica | Faltante |
 
-## Task 4: Model Training (25 points)
+## Tarea 4: Entrenamiento de Modelos (25 puntos)
 
-| Criterio | Excellent (25) | Good (19) | Adequate (13) | Poor (6) |
-|----------|----------------|-----------|---------------|----------|
-| Logistic Regression | Trained correctly, printed metrics | Trained with minor issue | Trained | Not trained |
-| Random Forest | Trained correctly, printed metrics | Trained with minor issue | Trained | Not trained |
-| Code quality | Clean, documented, no errors | Mostly clean | Some issues | Poor quality |
+| Criterio | Excelente (25) | Bueno (19) | Adecuado (13) | Deficiente (6) |
+|----------|----------------|------------|---------------|----------------|
+| Regresión Logística | Entrenada correctamente, métricas impresas | Entrenada con problema menor | Entrenada | No entrenada |
+| Random Forest | Entrenado correctamente, métricas impresas | Entrenado con problema menor | Entrenado | No entrenado |
+| Calidad del código | Limpio, documentado, sin errores | Mayormente limpio | Algunos problemas | Mala calidad |
 
-## Task 5: Model Evaluation (15 points)
+## Tarea 5: Evaluación de Modelos (15 puntos)
 
-| Criterio | Excellent (15) | Good (11) | Adequate (7) | Poor (3) |
-|----------|----------------|-----------|--------------|----------|
-| Confusion matrices | Both models, clear visualization | Both models | One model | Missing |
-| Classification reports | Both models, formatted | Both models | One model | Missing |
-| ROC curves | Both models with AUC, well-plotted | Both models | One model | Missing |
-| Model comparison | Bar chart comparing all metrics | Chart with most metrics | Basic comparison | Missing |
+| Criterio | Excelente (15) | Bueno (11) | Adecuado (7) | Deficiente (3) |
+|----------|----------------|------------|--------------|----------------|
+| Matrices de confusión | Ambos modelos, visualización clara | Ambos modelos | Un modelo | Faltante |
+| Reportes de clasificación | Ambos modelos, formateados | Ambos modelos | Un modelo | Faltante |
+| Curvas ROC | Ambos modelos con AUC, bien graficadas | Ambos modelos | Un modelo | Faltante |
+| Comparación de modelos | Gráfico de barras comparando todas las métricas | Gráfico con la mayoría de métricas | Comparación básica | Faltante |
 
-## Task 6: Feature Importance (10 points)
+## Tarea 6: Importancia de Features (10 puntos)
 
-| Criterio | Excellent (10) | Good (7 | Adequate (5) | Poor (2) |
-|----------|----------------|---------|--------------|----------|
-| Importance extraction | RF importance extracted, top 10 plotted | Extracted and plotted | Extracted | Not done |
-| Interpretation | Identified key genes with biological context | Good interpretation | Basic | Missing |
+| Criterio | Excelente (10) | Bueno (7) | Adecuado (5) | Deficiente (2) |
+|----------|----------------|-----------|--------------|----------------|
+| Extracción de importancia | Importancia RF extraída, top 10 graficados | Extraída y graficada | Extraída | No realizada |
+| Interpretación | Genes clave identificados con contexto biológico | Buena interpretación | Básica | Faltante |
 
-## Task 7: Biological Interpretation (5 points)
+## Tarea 7: Interpretación Biológica (5 puntos)
 
-| Criterio | Excellent (5) | Good (4) | Adequate (3) | Insuficiente (1) |
-|----------|---------------|----------|--------------|----------|
-| Discussion | Insightful discussion with implications and limitations | Good discussion | Basic discussion | Missing or superficial |
+| Criterio | Excelente (5) | Bueno (4) | Adecuado (3) | Insuficiente (1) |
+|----------|---------------|-----------|--------------|------------------|
+| Discusión | Discusión profunda con implicaciones y limitaciones | Buena discusión | Discusión básica | Faltante o superficial |
 
-## Code Quality and Presentation
+## Calidad del Código y Presentación
 
 | Criterio | Puntos |
 |----------|--------|
-| Code executes without errors | −5 if errors present |
-| All visualizations have titles, axis labels, legends | −2 per missing element |
-| Professional formatting | −2 for poor formatting |
+| El código se ejecuta sin errores | −5 si hay errores |
+| Todas las visualizaciones tienen títulos, etiquetas de ejes y leyendas | −2 por elemento faltante |
+| Formato profesional | −2 por formato deficiente |

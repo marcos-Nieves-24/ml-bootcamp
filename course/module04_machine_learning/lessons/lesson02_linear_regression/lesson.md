@@ -3,13 +3,13 @@ Module: 4
 Lesson Number: 2
 Lesson Title: Regresión Lineal
 Estimated Duration: 90 minutes
-Prerequisites: L1 (ML Fundamentals), Module 3 statistics (variance, covariance, correlation)
+Prerequisites: L1 (Fundamentos de ML), Módulo 3 estadística (varianza, covarianza, correlación)
 Learning Objectives:
-  - Explicar the mathematical formulation of simple and multiple linear regression
-  - Implementar linear regression with scikit-learn
-  - Interpret regression coefficients in context
-  - Evaluar regression models using R², MSE, and RMSE
-  - Describir how gradient descent optimizes model parameters
+  - Explicar la formulación matemática de la regresión lineal simple y múltiple
+  - Implementar regresión lineal con scikit-learn
+  - Interpretar coeficientes de regresión en contexto
+  - Evaluar modelos de regresión usando R², MSE y RMSE
+  - Describir cómo el descenso por gradiente optimiza los parámetros del modelo
 Keywords: linear regression, OLS, gradient descent, R-squared, MSE, coefficient, intercept
 Difficulty: Principiante
 Programming Concepts: sklearn.linear_model.LinearRegression, numpy linear algebra
