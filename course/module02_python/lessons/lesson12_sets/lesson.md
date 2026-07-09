@@ -23,15 +23,15 @@ Quiz: quiz.md
 
 ## Motivación
 
-Sets are unordered collections of unique elements. They excel at two tasks: removing duplicates and fast membership testing. In biotechnology, sets help find unique genes across experiments, identify common variants between patients, and remove duplicate sequences. In SaaS, sets track unique users, find common features across plans, and filter out duplicates in event logs.
+Los conjuntos son colecciones no ordenadas de elementos únicos. They excel at two tasks: removing duplicates and fast membership testing. In biotechnology, sets help find unique genes across experiments, identify common variants between patients, and remove duplicate sequences. In SaaS, sets track unique users, find common features across plans, and filter out duplicates in event logs.
 
 ## Panorama General
 
-In previous lessons, you learned lists (ordered, mutable) and tuples (ordered, immutable) and dictionaries (key-value). Sets are another fundamental collection type, optimized for uniqueness and mathematical set operations. They share the hash-based implementation with dictionaries but store only keys. Understanding sets completes your knowledge of Python's core data structures.
+En lecciones anteriores, aprendiste lists (ordered, mutable) and tuples (ordered, immutable) and dictionaries (key-value). Sets are another fundamental collection type, optimized for uniqueness and mathematical set operations. They share the hash-based implementation with dictionaries but store only keys. Understanding sets completes your knowledge of Python's core data structures.
 
 ## Teoría
 
-### Creating Sets
+### Creando Conjuntos
 
 Sets are created with curly braces `{}` or `set()`:
 
@@ -49,7 +49,7 @@ string_set = set("hello")  # {'h', 'e', 'l', 'o'}
 - **Mutable**: Can add/remove elements
 - **Hashable elements only**: Elements must be immutable (like dict keys)
 
-### Set Operations
+### Operaciones de Conjuntos
 
 ```python
 a = {1, 2, 3, 4, 5}

@@ -23,17 +23,17 @@ Quiz: quiz.md
 
 ## Motivación
 
-Conditionals allow programs to make decisions. Without them, code would execute the same way every time. With conditionals, your program can react differently based on data values, user input, or computed results. In biotechnology, conditionals determine diagnoses based on lab results, classify genetic mutations, and trigger alerts for abnormal values. In SaaS, they control access levels, calculate discounts, and segment customers.
+Los condicionales permiten que los programas tomen decisiones. Sin ellos, el código se ejecutaría igual cada vez. Con condicionales, tu programa puede reaccionar diferente según valores de datos, entrada del usuario o resultados calculados. En biotecnología, los condicionales determinan diagnósticos basados en resultados de laboratorio, clasifican mutaciones genéticas y activan alertas para valores anormales. En SaaS, controlan niveles de acceso, calculan descuentos y segmentan clientes.
 
 ## Panorama General
 
-En la lección anterior, aprendiste loops (repetition). Now you learn conditionals (decision-making). These two control structures — loops and conditionals — form the backbone of all non-trivial programs. Together with functions and operators, you now have everything needed to write sophisticated data processing logic.
+En la lección anterior, aprendiste bucles (repetición). Ahora aprenderás condicionales (toma de decisiones). Estas dos estructuras de control — bucles y condicionales — forman la columna vertebral de todos los programas no triviales. Junto con funciones y operadores, ahora tienes todo lo necesario para escribir lógica sofisticada de procesamiento de datos.
 
 ## Teoría
 
-### The if Statement
+### La Sentencia if
 
-The simplest conditional executes code only when a condition is True:
+El condicional más simple ejecuta código solo cuando una condición es True:
 
 ```python
 if condition:
@@ -51,7 +51,7 @@ else:
 
 ### if/elif/else
 
-Chain multiple conditions:
+Encadena múltiples condiciones:
 
 ```python
 if condition1:
@@ -64,22 +64,22 @@ else:
     pass  # all conditions are False
 ```
 
-### Truthy and Falsy
+### Valores Truthy y Falsy
 
-In Python, values can be "truthy" or "falsy" when used in a condition:
+En Python, los valores pueden ser "truthy" o "falsy" cuando se usan en una condición:
 
-**Falsy values** (evaluate to False):
+**Valores Falsy** (evalúan a False):
 - `None`
 - `False`
 - `0`, `0.0`, `0j`
-- Empty sequences: `""`, `[]`, `()`, `{}`, `set()`
-- Custom objects that return `False` from `__bool__`
+- Secuencias vacías: `""`, `[]`, `()`, `{}`, `set()`
+- Objetos personalizados que devuelven `False` de `__bool__`
 
-**Everything else is truthy.**
+**Todo lo demás es truthy.**
 
-### Nested Conditionals
+### Condicionales Anidados
 
-Conditionals inside conditionals:
+Condicionales dentro de condicionales:
 
 ```python
 if condition1:
@@ -91,17 +91,17 @@ else:
     pass  # condition1 False
 ```
 
-### Ternary (Conditional Expression)
+### Ternaria (Expresión Condicional)
 
-One-line conditional:
+Condicional de una línea:
 
 ```python
 value = true_value if condition else false_value
 ```
 
-### Match Statement (Python 3.10+)
+### Sentencia Match (Python 3.10+)
 
-Structural pattern matching (similar to switch/case):
+Coincidencia de patrones estructural (similar a switch/case):
 
 ```python
 match value:
@@ -310,66 +310,66 @@ print(f"Discount: {discount:.0%}")
 
 ## Errores Comunes
 
-1. **Using `=` instead of `==`**: `if x = 5:` assigns 5 to x and is always True
-2. **Forgetting colon**: `if x > 5` without `:` raises SyntaxError
-3. **Indentation errors**: Inconsistent indentation breaks conditionals
-4. **Comparing None with `==`**: Use `is None` instead of `== None`
-5. **Checking boolean with `== True`**: Redundant — just use `if condition:`
-6. **Deep nesting**: More than 3 levels of nesting suggests refactoring
+1. **Usar `=` en lugar de `==`**: `if x = 5:` asigna 5 a x y siempre es True
+2. **Olvidar los dos puntos**: `if x > 5` sin `:` genera SyntaxError
+3. **Errores de indentación**: La indentación inconsistente rompe los condicionales
+4. **Comparar None con `==`**: Usa `is None` en lugar de `== None`
+5. **Verificar booleano con `== True`**: Redundante — solo usa `if condition:`
+6. **Anidamiento profundo**: Más de 3 niveles de anidamiento sugiere refactorización
 
 ## Buenas Prácticas
 
-- Use `elif` instead of nested `if` for mutually exclusive conditions
-- Keep conditions simple — extract complex logic into boolean variables
-- Use truthy/falsy checks naturally: `if items:` rather than `if len(items) > 0:`
-- Avoid deep nesting (max 3 levels)
-- Use guard clauses (early returns) to reduce nesting
-- Use `in` for multiple comparisons: `if x in (1, 2, 3):`
+- Usa `elif` en lugar de `if` anidados para condiciones mutuamente excluyentes
+- Mantén las condiciones simples — extrae la lógica compleja a variables booleanas
+- Usa verificaciones truthy/falsy naturalmente: `if items:` en lugar de `if len(items) > 0:`
+- Evita el anidamiento profundo (máx. 3 niveles)
+- Usa cláusulas de guarda (retornos tempranos) para reducir el anidamiento
+- Usa `in` para comparaciones múltiples: `if x in (1, 2, 3):`
 
 ## Resumen
 
-- `if` executes code when a condition is True
-- `elif` checks additional conditions
-- `else` handles the default case
-- Values are truthy (True) or falsy (False, None, 0, empty sequences)
-- Ternary: `x if condition else y`
-- Match statement (3.10+) for pattern matching
-- Avoid deep nesting; use guard clauses
+- `if` ejecuta código cuando una condición es True
+- `elif` verifica condiciones adicionales
+- `else` maneja el caso por defecto
+- Los valores son truthy (True) o falsy (False, None, 0, secuencias vacías)
+- Ternaria: `x if condition else y`
+- Match statement (3.10+) para coincidencia de patrones
+- Evita el anidamiento profundo; usa cláusulas de guarda
 
 ## Términos Clave
 
-- **Conditional**: Statement that executes code based on a condition
-- **Boolean expression**: Expression that evaluates to True or False
-- **Truthy**: Value that evaluates to True in a boolean context
-- **Falsy**: Value that evaluates to False in a boolean context
-- **Ternary operator**: Conditional expression for inline if/else
-- **Guard clause**: Early return to avoid nesting
-- **Match statement**: Python 3.10+ structural pattern matching
+- **Condicional**: Sentencia que ejecuta código basado en una condición
+- **Expresión booleana**: Expresión que evalúa a True o False
+- **Truthy**: Valor que evalúa a True en un contexto booleano
+- **Falsy**: Valor que evalúa a False en un contexto booleano
+- **Operador ternario**: Expresión condicional para if/else en línea
+- **Cláusula de guarda**: Retorno temprano para evitar anidamiento
+- **Match statement**: Coincidencia de patrones estructural de Python 3.10+
 
 ## Ejercicios
 
 ### Nivel 1: Básico
 
-1. What is the output of `if 0: print("yes") else: print("no")`?
-2. What is the difference between `=` and `==`?
-3. What values are considered falsy in Python?
+1. ¿Cuál es la salida de `if 0: print("yes") else: print("no")`?
+2. ¿Cuál es la diferencia entre `=` y `==`?
+3. ¿Qué valores se consideran falsy en Python?
 
 ### Nivel 2: Implementación
 
-4. Write a function that takes a temperature in Celsius and returns "Cold" (< 15), "Mild" (15-25), "Hot" (> 25).
-5. Write a function that takes a year and returns whether it is a leap year (divisible by 400, or divisible by 4 but not by 100).
+4. Escribe una función que reciba una temperatura en Celsius y devuelva "Frío" (< 15), "Templado" (15-25), "Calor" (> 25).
+5. Escribe una función que reciba un año y devuelva si es bisiesto (divisible por 400, o divisible por 4 pero no por 100).
 
 ### Nivel 3: Pensamiento Crítico
 
-6. Why is `if x == True:` considered bad style? What is the Pythonic alternative?
-7. Compara y contrasta if/elif/else chains with match statements. When would you use each?
+6. ¿Por qué `if x == True:` se considera mal estilo? ¿Cuál es la alternativa Pythonica?
+7. Compara y contrasta las cadenas if/elif/else con match statements. ¿Cuándo usarías cada una?
 
 ## Desafío de Programación
 
-Write a **credit scoring** system that:
-1. Takes income, credit history length (years), outstanding debt, and missed payments count
-2. Calculates a credit score (0-100) using a weighted formula
-3. Assigns a rating: Excellent (≥ 80), Good (60-79), Fair (40-59), Poor (< 40)
-4. Applies modifiers: if debt > income → -20 points; if missed payments > 3 → -15 points; if credit history > 10 years → +10 points
-5. Uses `match` for the rating assignment
-6. Prints the final score, rating, and approval status (Excellent/Good → Approved, otherwise → Review Required)
+Escribe un sistema de **puntuación crediticia** que:
+1. Reciba ingresos, años de historial crediticio, deuda pendiente y cantidad de pagos atrasados
+2. Calcule una puntuación crediticia (0-100) usando una fórmula ponderada
+3. Asigne una calificación: Excelente (≥ 80), Buena (60-79), Regular (40-59), Mala (< 40)
+4. Aplique modificadores: si deuda > ingresos → -20 puntos; si pagos atrasados > 3 → -15 puntos; si historial crediticio > 10 años → +10 puntos
+5. Use `match` para la asignación de calificación
+6. Imprima la puntuación final, calificación y estado de aprobación (Excelente/Buena → Aprobado, si no → Revisión Requerida)

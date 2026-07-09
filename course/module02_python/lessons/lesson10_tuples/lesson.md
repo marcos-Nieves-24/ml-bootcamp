@@ -23,15 +23,15 @@ Quiz: quiz.md
 
 ## Motivación
 
-Tuples are often called "immutable lists" — they store ordered collections like lists but cannot be changed after creation. This immutability makes them useful for fixed data that shouldn't be modified, like database records, coordinates, and function return values. In biotechnology, tuples represent (gene, expression) pairs, (patient_id, diagnosis) records, and DNA codon triplets. In SaaS, they store (user_id, timestamp, event) log entries.
+Las tuplas a menudo se llaman "immutable lists" — almacenan colecciones ordenadas como las listas pero no pueden cambiarse after creation. This immutability makes them useful for fixed data that shouldn't be modified, like database records, coordinates, and function return values. En biotecnología, las tuplas representan (gene, expression) pairs, (patient_id, diagnosis) records, and DNA codon triplets. En SaaS, almacenan (user_id, timestamp, event) log entries.
 
 ## Panorama General
 
-En la lección anterior, aprendiste lists — ordered, mutable collections. Tuples are ordered but immutable. Understanding the difference between mutable and immutable data structures is crucial for writing correct and efficient code. This lesson prepares you for dictionaries (next lesson), where tuples are used as keys (lists cannot be dictionary keys).
+En la lección anterior, aprendiste lists — ordered, mutable collections. Tuples are ordered but immutable. Entender la diferencia entre mutable and immutable data structures es crucial para escribir código correcto and efficient code. This lesson prepares you for dictionaries (next lesson), where tuples are used as keys (lists cannot be dictionary keys).
 
 ## Teoría
 
-### Creating Tuples
+### Creando Tuplas
 
 Tuples are created with parentheses `()`:
 
@@ -53,7 +53,7 @@ point = (3, 4)
 point[0] = 5  # TypeError: 'tuple' object does not support item assignment
 ```
 
-### Tuple Unpacking
+### Desempaquetado de Tuplas
 
 Assign tuple elements to multiple variables:
 

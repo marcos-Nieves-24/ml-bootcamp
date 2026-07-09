@@ -23,7 +23,7 @@ Quiz: quiz.md
 
 ## Motivación
 
-Dictionaries store data as key-value pairs, allowing you to look up values by a meaningful key rather than by numeric index. They are Python's most important built-in data structure for data science. In biotechnology, dictionaries map gene names to expression values, patient IDs to clinical data, and codons to amino acids. In SaaS, they map user IDs to profiles, product names to prices, and metric names to values.
+Dictionaries store data as key-value pairs, allowing you to look up values by a meaningful key rather than by numeric index. They are Python's most important built-in data structure for data science. En biotecnología, los diccionarios mapean gene names to expression values, patient IDs to clinical data, and codons to amino acids. In SaaS, they map user IDs to profiles, product names to prices, and metric names to values.
 
 ## Panorama General
 
@@ -31,7 +31,7 @@ After learning about lists (ordered, indexed by position) and tuples (immutable)
 
 ## Teoría
 
-### Creating Dictionaries
+### Creando Diccionarios
 
 Dictionaries are created with curly braces `{}`:
 
@@ -70,7 +70,7 @@ popped = student.pop("age")   # Remove and return value
 student.clear()               # Remove all entries
 ```
 
-### Dictionary Methods
+### Métodos de Diccionarios
 
 ```python
 d = {"a": 1, "b": 2, "c": 3}
@@ -81,7 +81,7 @@ d.get("a")    # 1 (safe access)
 d.setdefault("d", 4)  # Set if key doesn't exist
 ```
 
-### Dictionary Comprehension
+### Comprensión de Diccionarios
 
 ```python
 squares = {x: x ** 2 for x in range(5)}
@@ -261,7 +261,7 @@ for user, events in sorted(user_events.items()):
 
 ## Resumen
 
-- Dictionaries store key-value pairs using `{}`
+- Los diccionarios almacenan pares clave-valor using `{}`
 - Access values with `d[key]` (unsafe) or `d.get(key)` (safe)
 - Keys must be immutable and hashable (strings, numbers, tuples)
 - Methods: keys(), values(), items(), get(), update(), pop()

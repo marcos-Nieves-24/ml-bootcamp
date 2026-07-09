@@ -24,11 +24,11 @@ Quiz: quiz.md
 
 ## Motivación
 
-NumPy (Numerical Python) is the foundation of scientific computing in Python. It provides a high-performance multidimensional array object and tools for working with these arrays. Most data science libraries (Pandas, scikit-learn, TensorFlow) are built on NumPy. In biotechnology, NumPy arrays represent gene expression matrices, DNA sequence encodings, and medical imaging data. In SaaS, they store feature matrices, time series data, and user-embedding vectors.
+NumPy (Numerical Python) is the foundation of scientific computing in Python. It provides a high-performance multidimensional array object and tools for working with these arrays. Most data science libraries (Pandas, scikit-learn, TensorFlow) are built on NumPy. In biotechnology, NumPy arrays represent gene expression matrices, DNA sequence encodings, and medical imaging data. En SaaS, almacenan feature matrices, time series data, and user-embedding vectors.
 
 ## Panorama General
 
-In previous lessons, you learned Python's built-in data structures (lists, tuples, dicts, sets). Lists can store multidimensional data but are slow for numerical operations. NumPy arrays solve this with vectorized operations that run at C speed. This lesson bridges Python fundamentals to the data science libraries you'll use next: Pandas (built on NumPy), Matplotlib (plots NumPy arrays), scikit-learn (trains on NumPy arrays).
+En lecciones anteriores, aprendiste Python's built-in data structures (lists, tuples, dicts, sets). Lists can store multidimensional data but are slow for numerical operations. NumPy arrays solve this with vectorized operations that run at C speed. This lesson bridges Python fundamentals to the data science libraries you'll use next: Pandas (built on NumPy), Matplotlib (plots NumPy arrays), scikit-learn (trains on NumPy arrays).
 
 ## Teoría
 

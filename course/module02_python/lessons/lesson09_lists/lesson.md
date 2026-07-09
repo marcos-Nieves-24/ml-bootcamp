@@ -23,17 +23,17 @@ Quiz: quiz.md
 
 ## Motivación
 
-Lists are Python's most versatile data structure. They store collections of items in a specific order and can be modified after creation. In data science, lists are everywhere: feature vectors, sample names, prediction outputs, and intermediate computations. In biotechnology, lists hold gene names, expression values, patient IDs, and sequence fragments. In SaaS, they store user IDs, transaction records, and metric values.
+Las listas son la estructura de datos más versátil de Python. Almacenan colecciones de elementos en un orden específico y pueden modificarse después de su creación. En ciencia de datos, las listas están en todas partes: vectores de características, nombres de muestras, salidas de predicción y cómputos intermedios. En biotecnología, las listas contienen nombres de genes, valores de expresión, IDs de pacientes y fragmentos de secuencias. En SaaS, almacenan IDs de usuarios, registros de transacciones y valores de métricas.
 
 ## Panorama General
 
-In previous lessons, you learned variables (single values), operators, functions, loops, and conditionals. Lists introduce the concept of **collections** — storing multiple values in a single structure. This is your first step toward working with datasets. The next lessons on tuples, dictionaries, and sets build on the same concepts with different characteristics.
+En lecciones anteriores, aprendiste variables (valores individuales), operadores, funciones, bucles y condicionales. Las listas introducen el concepto de **colecciones** — almacenar múltiples valores en una sola estructura. Este es tu primer paso hacia trabajar con conjuntos de datos. Las próximas lecciones sobre tuplas, diccionarios y conjuntos se basan en los mismos conceptos con diferentes características.
 
 ## Teoría
 
-### Creating Lists
+### Creando Listas
 
-Lists are created with square brackets `[]`:
+Las listas se crean con corchetes `[]`:
 
 ```python
 empty = []
@@ -42,9 +42,9 @@ mixed = [1, "hello", 3.14, True]
 nested = [[1, 2], [3, 4], [5, 6]]
 ```
 
-### Indexing
+### Indexación
 
-Access elements by position (0-indexed):
+Accede a los elementos por posición (indexado desde 0):
 
 ```python
 fruits = ["apple", "banana", "cherry", "date"]
@@ -53,9 +53,9 @@ fruits[-1]   # "date" (last)
 fruits[-2]   # "cherry" (second to last)
 ```
 
-### Slicing
+### Segmentación (Slicing)
 
-Extract sublists with `[start:stop:step]`:
+Extrae sublistas con `[inicio:fin:paso]`:
 
 ```python
 numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -66,7 +66,7 @@ numbers[::2]     # [0, 2, 4, 6, 8]
 numbers[::-1]    # [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 ```
 
-### List Methods
+### Métodos de Listas
 
 ```python
 fruits = ["apple", "banana"]
@@ -80,9 +80,9 @@ index = fruits.index("apple")  # Find index of item
 count = fruits.count("apple")  # Count occurrences
 ```
 
-### List Comprehension
+### Comprensión de Listas (List Comprehension)
 
-Concise way to create lists:
+Forma concisa de crear listas:
 
 ```python
 # Basic
@@ -95,16 +95,16 @@ evens = [x for x in range(20) if x % 2 == 0]
 matrix = [[i * j for j in range(3)] for i in range(3)]
 ```
 
-### Mutability
+### Mutabilidad
 
-Lists are **mutable** — you can change elements:
+Las listas son **mutables** — puedes cambiar elementos:
 
 ```python
 fruits = ["apple", "banana", "cherry"]
 fruits[1] = "blueberry"     # ["apple", "blueberry", "cherry"]
 ```
 
-### Common Operations
+### Operaciones Comunes
 
 ```python
 len(list)        # Number of elements
