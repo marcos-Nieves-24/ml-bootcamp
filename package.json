@@ -1,0 +1,31 @@
+{
+  "name": "ml-bootcamp",
+  "version": "1.0.0",
+  "description": "Curso universitario de introducción al Machine Learning para estudiantes de Biotecnología, Bioinformática, Ciencias Biológicas, Análisis de Datos e Ingeniería.",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "pytest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcos-Nieves-24/ml-bootcamp.git"
+  },
+  "keywords": [
+    "machine-learning",
+    "python",
+    "mkdocs",
+    "education"
+  ],
+  "author": "marcos-Nieves-24",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcos-Nieves-24/ml-bootcamp/issues"
+  },
+  "homepage": "https://github.com/marcos-Nieves-24/ml-bootcamp#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
