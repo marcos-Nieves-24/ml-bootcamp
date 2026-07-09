@@ -1,139 +1,139 @@
 ---
 Module: 1
 Lesson: 7
-Title: AI in SaaS
+Title: IA en SaaS
 ---
 
-# Slide Deck: AI in SaaS
+# Presentación: IA en SaaS
 
-## Slide 1: Title Slide
-- **AI in SaaS**
-- Module 1: Introduction to AI
-- Lesson 7
+## Diapositiva 1: Portada
+- **IA en SaaS**
+- Módulo 1: Introducción a la IA
+- Lección 7
 
-## Slide 2: Lesson Objectives
-- Describe AI applications in SaaS
-- Build a churn prediction model
-- Understand business impact of AI
+## Diapositiva 2: Objetivos de la Lección
+- Describir aplicaciones de IA en SaaS
+- Construir un modelo de predicción de abandono
+- Entender el impacto empresarial de la IA
 
-## Slide 3: Why AI in SaaS?
-- SaaS = recurring revenue model
-- Losing customers = losing revenue forever
-- AI can predict churn, personalize, optimize
-- Every major SaaS uses AI
+## Diapositiva 3: ¿Por Qué IA en SaaS?
+- SaaS = modelo de ingresos recurrentes
+- Perder clientes = perder ingresos para siempre
+- La IA puede predecir abandono, personalizar, optimizar
+- Cada gran SaaS usa IA
 
-## Slide 4: Key SaaS Metrics
-- MRR: Monthly Recurring Revenue
-- Churn Rate: % of customers lost per month
-- CLV: Customer Lifetime Value
-- CAC: Customer Acquisition Cost
-- NRR: Net Revenue Retention
+## Diapositiva 4: Métricas Clave de SaaS
+- MRR: Ingresos Recurrentes Mensuales
+- Tasa de Abandono: % de clientes perdidos por mes
+- CLV: Valor de Vida del Cliente
+- CAC: Costo de Adquisición de Clientes
+- NRR: Retención de Ingresos Netos
 
-## Slide 5: Customer Churn
-- 5-7% monthly churn is common
-- 5% churn reduction → 25-95% profit increase
-- Better to retain than acquire (5-7x cheaper)
+## Diapositiva 5: Abandono de Clientes
+- 5-7% de abandono mensual es común
+- 5% de reducción → 25-95% de aumento en ganancias
+- Mejor retener que adquirir (5-7x más barato)
 
-## Slide 6: Churn Prediction Pipeline
+## Diapositiva 6: Pipeline de Predicción de Abandono
 ```
-Customer Data → Features → ML Model → Churn Score → Intervention
-    ↑                                              ↓
- Historical                                     Email/Discount/
- Behavior                                       Call/Account
-```
-
-## Slide 7: Features for Churn Prediction
-- Login frequency
-- Support tickets
-- Feature usage
-- Days since last login
-- Payment history
-- Plan changes
-
-## Slide 8: Churn Modeling Approach
-- Binary classification
-- Methods: Logistic Regression, Random Forest, Gradient Boosting
-- Metrics: Precision, Recall, F1 (not just accuracy)
-- Challenge: Class imbalance (5-10% churn)
-
-## Slide 9: Precision vs. Recall
-```
-Precision = TP / (TP + FP)
-  "Of predicted churners, how many actually churned?"
-
-Recall = TP / (TP + FN)
-  "Of actual churners, how many did we catch?"
-
-F1 = 2 × (Precision × Recall) / (Precision + Recall)
+Datos Cliente → Características → Modelo ML → Puntaje Abandono → Intervención
+    ↑                                                         ↓
+ Histórico                                               Email/Descuento/
+ Comportamiento                                          Llamada/Cuenta
 ```
 
-## Slide 10: Personalization
-- Content: relevant articles, tutorials
-- Product: feature suggestions, UI adaptation
-- Pricing: targeted discounts
-- Email: tailored campaigns
+## Diapositiva 7: Características para Predicción de Abandono
+- Frecuencia de inicio de sesión
+- Tickets de soporte
+- Uso de funciones
+- Días desde último inicio de sesión
+- Historial de pagos
+- Cambios de plan
 
-## Slide 11: Recommendation Approaches
+## Diapositiva 8: Enfoque de Modelado de Abandono
+- Clasificación binaria
+- Métodos: Regresión Logística, Random Forest, Gradient Boosting
+- Métricas: Precisión, Exhaustividad, F1 (no solo exactitud)
+- Desafío: Desequilibrio de clases (5-10% abandono)
+
+## Diapositiva 9: Precisión vs. Exhaustividad
 ```
-Collaborative: "Users like you also upgraded to Pro"
-Content-based: "You use Reporting → try Advanced Reports"
-Hybrid: Combined approach
+Precisión = VP / (VP + FP)
+  "De los abandonos predichos, ¿cuántos realmente abandonaron?"
+
+Exhaustividad = VP / (VP + FN)
+  "De los abandonos reales, ¿cuántos detectamos?"
+
+F1 = 2 × (Precisión × Exhaustividad) / (Precisión + Exhaustividad)
 ```
 
-## Slide 12: Marketing Analytics
-- Customer segmentation
-- Lead scoring
-- Attribution modeling
-- Campaign optimization
-- Budget allocation
+## Diapositiva 10: Personalización
+- Contenido: artículos relevantes, tutoriales
+- Producto: sugerencias de funciones, adaptación de UI
+- Precios: descuentos específicos
+- Email: campañas personalizadas
 
-## Slide 13: Product Analytics
-- Feature adoption analysis
-- User journey mapping
-- Anomaly detection
-- A/B testing analysis
-- Predictive forecasting
+## Diapositiva 11: Enfoques de Recomendación
+```
+Colaborativo: "Usuarios como tú también mejoraron a Pro"
+Basado en Contenido: "Usas Informes → prueba Informes Avanzados"
+Híbrido: Enfoque combinado
+```
 
-## Slide 14: CLV Prediction
-- CLV = Value × Frequency × Lifespan
-- Predict future revenue per customer
-- Decide acquisition spend
-- Segment by value
+## Diapositiva 12: Analítica de Marketing
+- Segmentación de clientes
+- Puntuación de leads
+- Modelado de atribución
+- Optimización de campañas
+- Asignación de presupuesto
 
-## Slide 15: AI Techniques in SaaS
-| Application | Technique |
+## Diapositiva 13: Analítica de Producto
+- Análisis de adopción de funciones
+- Mapeo del recorrido del usuario
+- Detección de anomalías
+- Análisis de pruebas A/B
+- Pronóstico predictivo
+
+## Diapositiva 14: Predicción de CLV
+- CLV = Valor × Frecuencia × Vida útil
+- Predecir ingresos futuros por cliente
+- Decidir gasto de adquisición
+- Segmentar por valor
+
+## Diapositiva 15: Técnicas de IA en SaaS
+| Aplicación | Técnica |
 |---|---|
-| Churn prediction | Classification (RF, GB) |
-| Recommendation | Collaborative filtering |
-| Segmentation | Clustering (K-Means) |
-| Lead scoring | Classification |
-| CLV prediction | Regression |
-| Anomaly detection | Isolation Forest |
+| Predicción de abandono | Clasificación (RF, GB) |
+| Recomendación | Filtrado colaborativo |
+| Segmentación | Agrupamiento (K-Means) |
+| Puntuación de leads | Clasificación |
+| Predicción de CLV | Regresión |
+| Detección de anomalías | Isolation Forest |
 
-## Slide 16: Common Mistakes
-- Using accuracy for imbalanced data
-- Survivorship bias
-- Ignoring temporal effects
-- Not acting on predictions
-- Over-engineering features
+## Diapositiva 16: Errores Comunes
+- Usar exactitud para datos desbalanceados
+- Sesgo de supervivencia
+- Ignorar efectos temporales
+- No actuar según las predicciones
+- Sobre-ingeniería de características
 
-## Slide 17: Best Practices
-- Use time-based validation
-- Start simple, iterate
-- Monitor model drift
-- Balance privacy and personalization
-- Close the loop: track intervention effectiveness
+## Diapositiva 17: Buenas Prácticas
+- Usar validación basada en tiempo
+- Empezar simple, iterar
+- Monitorear deriva del modelo
+- Equilibrar privacidad y personalización
+- Cerrar el ciclo: rastrear efectividad de intervenciones
 
-## Slide 18: Module 1 Summary
-- Lesson 1: What is AI? — Intelligent agents
-- Lesson 2: History — Dartmouth to deep learning
-- Lesson 3: Types — Narrow AI, AGI, types by function
-- Lesson 4: Paradigms — Rules, ML, DL, LLMs
-- Lesson 5: Applications — CV, NLP, Robotics, RecSys, GenAI
-- Lesson 6: AI in Biotech — Drug discovery, AlphaFold
-- Lesson 7: AI in SaaS — Churn, personalization
+## Diapositiva 18: Resumen del Módulo 1
+- Lección 1: ¿Qué es la IA? — Agentes inteligentes
+- Lección 2: Historia — Dartmouth a deep learning
+- Lección 3: Tipos — IA Estrecha, AGI, tipos por función
+- Lección 4: Paradigmas — Reglas, ML, DL, LLMs
+- Lección 5: Aplicaciones — CV, PLN, Robótica, RecSys, GenAI
+- Lección 6: IA en Biotech — Descubrimiento de fármacos, AlphaFold
+- Lección 7: IA en SaaS — Abandono, personalización
 
-## Slide 19: Next Steps
-- Module 2: Python Programming Fundamentals
-- You will learn to code!
-- First Python → then NumPy, Pandas, Matplotlib
+## Diapositiva 19: Próximos Pasos
+- Módulo 2: Fundamentos de Programación en Python
+- ¡Aprenderás a programar!
+- Primero Python → luego NumPy, Pandas, Matplotlib

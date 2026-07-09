@@ -7,11 +7,11 @@ Prerequisites: Lesson 1 (Descriptive Statistics)
 Learning Objectives:
   - State Kolmogorov's three axioms of probability
   - Calculate conditional probabilities using Bayes' theorem
-  - Apply the law of total probability to partition problems
+  - Aplicar the law of total probability to partition problems
   - Distinguish between discrete and continuous random variables
   - Solve probability problems with real-world data
 Keywords: probability, Kolmogorov axioms, conditional probability, Bayes theorem, random variables, law of total probability
-Difficulty: Intermediate
+Difficulty: Intermedio
 Programming Concepts: numpy, scipy.stats, matplotlib
 Mathematical Concepts: probability axioms, conditional probability, Bayes rule, expectation, variance
 Machine Learning Concepts: probabilistic thinking, uncertainty quantification

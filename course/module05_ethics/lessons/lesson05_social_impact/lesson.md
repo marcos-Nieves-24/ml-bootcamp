@@ -5,17 +5,17 @@ Lesson Title: Social Impact of AI
 Estimated Duration: 60 minutes
 Prerequisites: L1 (Introduction to AI Ethics)
 Learning Objectives:
-  - Analyze the impact of AI on employment and the labor market
-  - Evaluate the environmental footprint of large-scale AI models
-  - Explain AI safety challenges including alignment and robustness
-  - Analyze how AI contributes to misinformation and disinformation
-  - Evaluate ethical considerations for autonomous systems
+  - Analizar the impact of AI on employment and the labor market
+  - Evaluar the environmental footprint of large-scale AI models
+  - Explicar AI safety challenges including alignment and robustness
+  - Analizar how AI contributes to misinformation and disinformation
+  - Evaluar ethical considerations for autonomous systems
 Keywords: job displacement, automation, environmental impact, AI safety, misinformation, autonomous systems, alignment
 Difficulty: Introductory
-Programming Concepts: None
-Mathematical Concepts: None
+Programming Concepts: Ninguno
+Mathematical Concepts: Ninguno
 Machine Learning Concepts: Training cost, model scale
-Datasets Used: None
+Datasets Used: Ninguno
 Notebook: notebook.ipynb
 Assignment: assignment.md
 Quiz: quiz.md

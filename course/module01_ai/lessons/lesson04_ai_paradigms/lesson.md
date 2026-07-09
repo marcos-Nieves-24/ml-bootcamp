@@ -1,170 +1,170 @@
 ---
 Module: 1
 Lesson Number: 4
-Lesson Title: AI Paradigms
+Lesson Title: Paradigmas de IA
 Estimated Duration: 75 minutes
-Prerequisites: Lesson 1 — What is Artificial Intelligence?
+Prerequisites: Lección 1 — ¿Qué es la Inteligencia Artificial?
 Learning Objectives:
-  - Compare and contrast Expert Systems, Rule-Based Systems, Machine Learning, Deep Learning, and Large Language Models
-  - Explain when each paradigm is appropriate
-  - Describe the limitations of rule-based approaches and the advantages of learning-based approaches
-  - Implement a simple rule-based system and a basic ML model
-  - Identify which paradigm a given AI system uses
-Keywords: Expert systems, rule-based systems, machine learning, deep learning, large language models, symbolic AI, connectionism, neural networks, paradigms
+  - Comparar y contrastar Sistemas Expertos, Sistemas Basados en Reglas, Machine Learning, Deep Learning y Large Language Models
+  - Explicar cuándo es apropiado cada paradigma
+  - Describir las limitaciones de los enfoques basados en reglas y las ventajas de los enfoques basados en aprendizaje
+  - Implementarar un sistema simple basado en reglas y un modelo básico de ML
+  - Identificar qué paradigma utiliza un sistema de IA dado
+Keywords: Sistemas expertos, sistemas basados en reglas, machine learning, deep learning, large language models, IA simbólica, conexionismo, redes neuronales, paradigmas
 Difficulty: Intermediate
-Programming Concepts: Functions, conditionals, scikit-learn basics
-Mathematical Concepts: Basic probability, linear algebra intuition
+Programming Concepts: Funciones, condicionales, conceptos básicos de scikit-learn
+Mathematical Concepts: Probabilidad básica, intuición de álgebra lineal
 Machine Learning Concepts: Features, labels, training, prediction
-Datasets Used: Synthetic dataset for classification
+Datasets Used: Conjunto de datos sintético para clasificación
 Notebook: notebook.ipynb
 Assignment: assignment.md
 Quiz: quiz.md
 ---
 
-# Lesson 4: AI Paradigms
+# Lección 4: Paradigmas de IA
 
-## Lesson Motivation
+## Motivación de la Lección
 
-AI is not one technology — it is a collection of different approaches, each with its own strengths and weaknesses. Some problems are best solved with explicit rules. Others require learning from data. Understanding which paradigm to use for which problem is one of the most important skills you will develop in this course. Choose the wrong paradigm, and your system will fail. Choose the right one, and you can build powerful, practical AI.
+La IA no es una sola tecnología — es una colección de diferentes enfoques, cada uno con sus propias fortalezas y debilidades. Algunos problemas se resuelven mejor con reglas explícitas. Otros requieren aprender de datos. Entender qué paradigma usar para cada problema es una de las habilidades más importantes que desarrollarás en este curso. Elige el paradigma equivocado y tu sistema fallará. Elige el correcto y podrás construir IA poderosa y práctica.
 
-## Big Picture
+## Panorama General
 
-Lesson 3 taught you to classify AI by capability and functionality. Now we dive into the technical approaches that make AI work — the paradigms. This is the most important technical foundation for the rest of the course. Lesson 5 will show applications of these paradigms in various domains. Module 4 (Machine Learning) will dive deep into the ML paradigm.
+La Lección 3 te enseñó a clasificar la IA por capacidad y funcionalidad. Ahora nos sumergimos en los enfoques técnicos que hacen funcionar la IA — los paradigmas. Esta es la base técnica más importante para el resto del curso. La Lección 5 mostrará aplicaciones de estos paradigmas en varios dominios. El Módulo 4 (Machine Learning) profundizará en el paradigma de ML.
 
 ```
-Lesson 3 (Types of AI) → Lesson 4 (Paradigms) → Lesson 5 (Applications) → Module 4 (ML)
+Lección 3 (Tipos de IA) → Lección 4 (Paradigmas) → Lección 5 (Aplicaciones) → Módulo 4 (ML)
 ```
 
-## Theory
+## Teoría
 
-### Overview of AI Paradigms
+### Resumen de Paradigmas de IA
 
-The field of AI has developed several distinct paradigms over its history. Each represents a fundamentally different approach to building intelligent systems.
+El campo de la IA ha desarrollado varios paradigmas distintos a lo largo de su historia. Cada uno representa un enfoque fundamentalmente diferente para construir sistemas inteligentes.
 
-| Paradigm | Core Idea | Era | Example |
+| Paradigma | Idea Central | Era | Ejemplo |
 |---|---|---|---|
-| Expert Systems | Encode human expertise as rules | 1970s–1980s | MYCIN |
-| Rule-Based Systems | General-purpose if-then rules | 1980s–1990s | Business rules engines |
-| Machine Learning | Learn patterns from data | 1990s–present | Spam filters |
-| Deep Learning | Multi-layer neural networks | 2010s–present | Image recognition |
-| Large Language Models | Massive neural nets trained on text | 2020s–present | ChatGPT |
+| Sistemas Expertos | Codificar experiencia humana como reglas | 1970s–1980s | MYCIN |
+| Sistemas Basados en Reglas | Reglas si-entonces de propósito general | 1980s–1990s | Motores de reglas de negocio |
+| Machine Learning | Aprender patrones de datos | 1990s–presente | Filtros de spam |
+| Deep Learning | Redes neuronales multicapa | 2010s–presente | Reconocimiento de imágenes |
+| Large Language Models | Redes neuronales masivas entrenadas en texto | 2020s–presente | ChatGPT |
 
-### Expert Systems
+### Sistemas Expertos
 
-**Definition**: A computer system that emulates the decision-making ability of a human expert in a specific domain.
+**Definición**: Un sistema informático que emula la capacidad de toma de decisiones de un experto humano en un dominio específico.
 
-**Intuition**: Like having a specialist doctor in a box. You describe symptoms, and the system applies expert knowledge to reach a diagnosis.
+**Intuición**: Como tener un médico especialista en una caja. Describes síntomas y el sistema aplica conocimiento experto para llegar a un diagnóstico.
 
-**Formal explanation**: Expert systems consist of three components:
-1. **Knowledge Base**: A collection of facts and rules about a domain
-2. **Inference Engine**: A mechanism that applies rules to facts to derive conclusions
-3. **User Interface**: Allows users to query the system
+**Explicación formal**: Los sistemas expertos constan de tres componentes:
+1. **Base de Conocimiento**: Una colección de hechos y reglas sobre un dominio
+2. **Motor de Inferencia**: Un mecanismo que aplica reglas a los hechos para derivar conclusiones
+3. **Interfaz de Usuario**: Permite a los usuarios consultar el sistema
 
-**Example**: MYCIN (1976) diagnosed bacterial infections and recommended antibiotics. It had ~450 rules and performed as well as infectious disease specialists.
+**Ejemplo**: MYCIN (1976) diagnosticaba infecciones bacterianas y recomendaba antibióticos. Tenía ~450 reglas y rendía tan bien como especialistas en enfermedades infecciosas.
 
-**Limitations**: Knowledge acquisition bottleneck (rules must be hand-crafted by experts), brittleness (small changes break the system), no learning from data.
+**Limitaciones**: CUELLO de botella de adquisición de conocimiento (las reglas deben ser creadas manualmente por expertos), fragilidad (cambios pequeños rompen el sistema), sin aprendizaje a partir de datos.
 
-### Rule-Based Systems
+### Sistemas Basados en Reglas
 
-**Definition**: Systems that use a set of if-then rules to process data and make decisions.
+**Definición**: Sistemas que usan un conjunto de reglas si-entonces para procesar datos y tomar decisiones.
 
-**Intuition**: Think of it as a very detailed checklist: IF condition THEN action.
+**Intuición**: Piensa en ello como una lista de verificación muy detallada: SI condición ENTONCES acción.
 
-**Formal explanation**: A rule has two parts:
-- **Antecedent (IF part)**: A condition or pattern to match
-- **Consequent (THEN part)**: An action or conclusion
+**Explicación formal**: Una regla tiene dos partes:
+- **Antecedente (parte SI)**: Una condición o patrón a coincidir
+- **Consecuente (parte ENTONCES)**: Una acción o conclusión
 
-Rules can be chained:
-- **Forward chaining**: Start with facts, apply rules to derive new facts
-- **Backward chaining**: Start with a goal, work backward to find supporting facts
+Las reglas se pueden encadenar:
+- **Encadenamiento hacia adelante**: Comienza con hechos, aplica reglas para derivar nuevos hechos
+- **Encadenamiento hacia atrás**: Comienza con un objetivo, trabaja hacia atrás para encontrar hechos que lo respalden
 
-**Example**: A spam filter: IF email contains "free money" AND "urgent" THEN classify as spam.
+**Ejemplo**: Un filtro de spam: SI el correo contiene "dinero gratis" Y "urgente" ENTONCES clasificar como spam.
 
-**Difference from Expert Systems**: All expert systems are rule-based, but not all rule-based systems are expert systems. Expert systems specifically encode human expertise. Rule-based systems can encode any kind of logic.
+**Diferencia de los Sistemas Expertos**: Todos los sistemas expertos están basados en reglas, pero no todos los sistemas basados en reglas son sistemas expertos. Los sistemas expertos codifican específicamente la experiencia humana. Los sistemas basados en reglas pueden codificar cualquier tipo de lógica.
 
 ### Machine Learning
 
-**Definition**: A paradigm where systems learn patterns from data without being explicitly programmed.
+**Definición**: Un paradigma donde los sistemas aprenden patrones a partir de datos sin ser programados explícitamente.
 
-**Intuition**: Instead of writing rules, you show the system examples and it figures out the rules itself.
+**Intuición**: En lugar de escribir reglas, le muestras ejemplos al sistema y él mismo descubre las reglas.
 
-**Formal explanation**: Machine Learning algorithms find patterns in data. The three main types are:
-- **Supervised Learning**: Learn from labeled examples (input → output mapping)
-- **Unsupervised Learning**: Find structure in unlabeled data
-- **Reinforcement Learning**: Learn through trial and error
+**Explicación formal**: Los algoritmos de Machine Learning encuentran patrones en los datos. Los tres tipos principales son:
+- **Aprendizaje Supervisado**: Aprender de ejemplos etiquetados (mapeo entrada → salida)
+- **Aprendizaje No Supervisado**: Encontrar estructura en datos no etiquetados
+- **Aprendizaje por Refuerzo**: Aprender a través de prueba y error
 
-**Key concepts**:
-- **Features**: Input variables used for prediction
-- **Labels**: Output variable being predicted
-- **Training**: The process of learning from data
-- **Generalization**: Performing well on unseen data
+**Conceptos clave**:
+- **Features**: Variables de entrada utilizadas para la predicción
+- **Labels**: Variable de salida que se predice
+- **Training**: El proceso de aprender a partir de datos
+- **Generalization**: Rendir bien en datos no vistos
 
-**Example**: Instead of writing rules for spam detection, you show an ML model thousands of emails labeled "spam" or "not spam." The model learns the patterns.
+**Ejemplo**: En lugar de escribir reglas para detección de spam, le muestras a un modelo de ML miles de correos etiquetados como "spam" o "no spam". El modelo aprende los patrones.
 
 ### Deep Learning
 
-**Definition**: A subfield of Machine Learning using artificial neural networks with multiple layers.
+**Definición**: Un subcampo del Machine Learning que utiliza redes neuronales artificiales con múltiples capas.
 
-**Intuition**: Like a brain-inspired computer program that learns hierarchical representations. Early layers detect simple patterns (edges), later layers combine them into complex concepts (faces).
+**Intuición**: Como un programa informático inspirado en el cerebro que aprende representaciones jerárquicas. Las capas tempranas detectan patrones simples (bordes), las capas posteriores los combinan en conceptos complejos (rostros).
 
-**Formal explanation**: Deep neural networks consist of:
-- **Input layer**: Receives raw data
-- **Hidden layers**: Transform the data through weighted connections
-- **Output layer**: Produces the prediction
+**Explicación formal**: Las redes neuronales profundas constan de:
+- **Capa de entrada**: Recibe datos sin procesar
+- **Capas ocultas**: Transforman los datos a través de conexiones ponderadas
+- **Capa de salida**: Produce la predicción
 
-Each neuron computes: output = activation(weight · input + bias)
+Cada neurona computa: salida = activación(peso · entrada + sesgo)
 
-**Why "deep"?** Multiple hidden layers allow the network to learn hierarchical features.
+**¿Por qué "profundo"?** Múltiples capas ocultas permiten a la red aprender características jerárquicas.
 
-**Example**: AlexNet (2012) used 8 layers to classify images into 1000 categories, achieving state-of-the-art results.
+**Ejemplo**: AlexNet (2012) usó 8 capas para clasificar imágenes en 1000 categorías, logrando resultados de vanguardia.
 
 ### Large Language Models (LLMs)
 
-**Definition**: Deep learning models trained on massive text corpora to generate and understand human language.
+**Definición**: Modelos de deep learning entrenados en corpus masivos de texto para generar y entender lenguaje humano.
 
-**Intuition**: Like a statistical parrot with an extraordinarily large brain. LLMs predict the next word in a sequence based on all the text they have seen.
+**Intuición**: Como un loro estadístico con un cerebro extraordinariamente grande. Los LLMs predicen la siguiente palabra en una secuencia basándose en todo el texto que han visto.
 
-**Formal explanation**: LLMs are based on the **Transformer architecture** (Vaswani et al., 2017). Key innovations:
-- **Self-attention**: The model weighs the importance of different words in the input
-- **Scale**: Billions of parameters trained on trillions of words
-- **Emergent abilities**: At sufficient scale, LLMs exhibit capabilities not explicitly trained (e.g., translation, coding, reasoning)
+**Explicación formal**: Los LLMs se basan en la **arquitectura Transformer** (Vaswani et al., 2017). Innovaciones clave:
+- **Self-attention**: El modelo pondera la importancia de diferentes palabras en la entrada
+- **Escala**: Miles de millones de parámetros entrenados en billones de palabras
+- **Habilidades emergentes**: A escala suficiente, los LLMs exhiben capacidades no entrenadas explícitamente (ej., traducción, codificación, razonamiento)
 
-**Examples**: GPT-4, Claude, Gemini, LLaMA.
+**Ejemplos**: GPT-4, Claude, Gemini, LLaMA.
 
-**Limitations**: Hallucinations, lack of factual grounding, no causal understanding, biases in training data.
+**Limitaciones**: Alucinaciones, falta de base factual, sin comprensión causal, sesgos en los datos de entrenamiento.
 
-### When to Use Each Paradigm
+### Cuándo Usar Cada Paradigma
 
-| Problem Characteristic | Best Paradigm |
+| Característica del Problema | Mejor Paradigma |
 |---|---|
-| Domain knowledge is clear and stable | Expert / Rule-Based Systems |
-| Rules are unknown or too complex | Machine Learning |
-| Small amount of data | Rule-Based (no data needed) or ML (with careful validation) |
-| Large amount of structured data | Machine Learning |
-| Images, audio, or complex patterns | Deep Learning |
-| Language understanding and generation | Large Language Models |
-| Need interpretability | Rule-Based or simple ML |
-| Need maximum accuracy on complex task | Deep Learning |
+| El conocimiento del dominio es claro y estable | Sistemas Expertos / Basados en Reglas |
+| Las reglas son desconocidas o demasiado complejas | Machine Learning |
+| Pequeña cantidad de datos | Basado en Reglas (sin datos) o ML (con validación cuidadosa) |
+| Gran cantidad de datos estructurados | Machine Learning |
+| Imágenes, audio o patrones complejos | Deep Learning |
+| Comprensión y generación de lenguaje | Large Language Models |
+| Se necesita interpretabilidad | Basado en Reglas o ML simple |
+| Se necesita máxima precisión en tarea compleja | Deep Learning |
 
-## Visual Explanation
+## Explicación Visual
 
-**Figure 4.1**: The paradigm comparison chart.
+**Figura 4.1**: Gráfico comparativo de paradigmas.
 
-A 2×2 grid comparing paradigms along dimensions: "requires data" (low→high) and "complexity" (low→high). Expert Systems are low data, low complexity; ML is high data, medium; DL is high data, high; LLMs are very high data, very high.
+Una cuadrícula de 2×2 que compara paradigmas en las dimensiones: "requiere datos" (bajo→alto) y "complejidad" (bajo→alto). Los Sistemas Expertos son bajos en datos y complejidad; ML es alto en datos, medio; DL es alto en datos, alto; LLMs son muy altos en datos, muy altos.
 
-**Figure 4.2**: Neural network architecture.
+**Figura 4.2**: Arquitectura de red neuronal.
 
-A diagram showing input layer → hidden layers → output layer, with neurons and connections. Labels for weights, biases, and activation functions.
+Un diagrama que muestra capa de entrada → capas ocultas → capa de salida, con neuronas y conexiones. Etiquetas para pesos, sesgos y funciones de activación.
 
-**Figure 4.3**: The ML workflow.
+**Figura 4.3**: El flujo de trabajo de ML.
 
-A flowchart: Data Collection → Data Preparation → Train/Test Split → Model Training → Model Evaluation → Deployment.
+Un diagrama de flujo: Recolección de Datos → Preparación de Datos → División Train/Test → Entrenamiento del Modelo → Evaluación del Modelo → Despliegue.
 
-## Python Implementation
+## Implementación en Python
 
-We will implement three paradigms in Python: a rule-based system, a simple ML model, and a minimal neural network concept.
+Implementaremos tres paradigmas en Python: un sistema basado en reglas, un modelo simple de ML y un concepto mínimo de red neuronal.
 
-### Rule-Based System: Email Classifier
+### Sistema Basado en Reglas: Clasificador de Correos
 
 ```python
 def classify_email(subject, body):
@@ -190,7 +190,7 @@ def classify_email(subject, body):
         return "safe"
 ```
 
-### Machine Learning: Iris Classification
+### Machine Learning: Clasificación de Iris
 
 ```python
 from sklearn.datasets import load_iris
@@ -217,96 +217,96 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f"Accuracy: {accuracy:.2%}")
 ```
 
-## Biotechnology Example
+## Ejemplo en Biotecnología
 
-**Paradigm comparison for protein function prediction:**
+**Comparación de paradigmas para predicción de función de proteínas:**
 
-- **Expert System**: Rules like "IF sequence contains motif X THEN function is Y" — works for well-known motifs but misses novel patterns.
-- **Machine Learning**: Train on known protein sequences to predict function from sequence features.
-- **Deep Learning**: Use convolutional or transformer networks on raw sequence data. AlphaFold uses deep learning to predict 3D structure.
-- **LLM**: Protein language models (ESM-2, ProtGPT2) are trained on protein sequences like a language model — they capture evolutionary and functional information.
+- **Sistema Experto**: Reglas como "SI la secuencia contiene el motivo X ENTONCES la función es Y" — funciona para motivos conocidos pero no detecta patrones novedosos.
+- **Machine Learning**: Entrenar con secuencias de proteínas conocidas para predecir función a partir de características de la secuencia.
+- **Deep Learning**: Usar redes convolucionales o transformer en datos de secuencia sin procesar. AlphaFold usa deep learning para predecir estructura 3D.
+- **LLM**: Los modelos de lenguaje de proteínas (ESM-2, ProtGPT2) se entrenan en secuencias de proteínas como un modelo de lenguaje — capturan información evolutiva y funcional.
 
-The evolution from rules to learning mirrors the broader shift in AI paradigms.
+La evolución de reglas a aprendizaje refleja el cambio más amplio en los paradigmas de IA.
 
-## SaaS Example
+## Ejemplo en SaaS
 
-**Paradigm comparison for customer churn prediction:**
+**Comparación de paradigmas para predicción de abandono de clientes:**
 
-- **Rule-Based**: IF (login frequency < 1/week AND support tickets > 3) THEN churn risk = HIGH. Simple, interpretable, but misses complex patterns.
-- **Machine Learning**: Train a Random Forest on historical customer data. Captures non-linear relationships.
-- **Deep Learning**: Use a neural network with customer behavior sequences. Can capture temporal patterns.
-- **LLM**: Analyze customer support conversations and sentiment to predict churn.
+- **Basado en Reglas**: SI (frecuencia de inicio de sesión < 1/semana Y tickets de soporte > 3) ENTONCES riesgo de abandono = ALTO. Simple, interpretable, pero no detecta patrones complejos.
+- **Machine Learning**: Entrenar un Random Forest con datos históricos de clientes. Captura relaciones no lineales.
+- **Deep Learning**: Usar una red neuronal con secuencias de comportamiento del cliente. Puede capturar patrones temporales.
+- **LLM**: Analizar conversaciones de soporte al cliente y sentimiento para predecir abandono.
 
-Most SaaS companies use ML (Random Forest or Gradient Boosting) for churn due to the balance of accuracy and interpretability.
+La mayoría de las empresas SaaS usan ML (Random Forest o Gradient Boosting) para abandono debido al equilibrio entre precisión e interpretabilidad.
 
-## Common Mistakes
+## Errores Comunes
 
-1. **Using deep learning when simpler methods work**: If logistic regression achieves 95% accuracy, do not use a neural network.
-2. **Assuming expert systems are obsolete**: For well-understood domains with stable rules, rule-based systems are often better.
-3. **Ignoring the knowledge acquisition bottleneck**: Hand-crafting rules does not scale.
-4. **Confusing paradigms with implementations**: Decision Trees are ML; deep neural networks are DL; both have their place.
-5. **Thinking LLMs are the answer to everything**: LLMs are powerful but expensive, slow, and unreliable for many tasks.
+1. **Usar deep learning cuando métodos más simples funcionan**: Si la regresión logística alcanza 95% de precisión, no uses una red neuronal.
+2. **Asumir que los sistemas expertos están obsoletos**: Para dominios bien comprendidos con reglas estables, los sistemas basados en reglas suelen ser mejores.
+3. **Ignorar el cuello de botella de adquisición de conocimiento**: Crear reglas manualmente no escala.
+4. **Confundir paradigmas con implementaciones**: Los Árboles de Decisión son ML; las redes neuronales profundas son DL; ambos tienen su lugar.
+5. **Pensar que los LLMs son la respuesta a todo**: Los LLMs son poderosos pero costosos, lentos y poco confiables para muchas tareas.
 
-## Best Practices
+## Buenas Prácticas
 
-1. **Start simple**: Begin with the simplest paradigm that could work. Add complexity only when needed.
-2. **Match paradigm to problem**: Consider data availability, interpretability needs, and problem complexity.
-3. **Hybrid systems are common**: Many production systems combine rules with ML (e.g., rules for edge cases, ML for core predictions).
-4. **Consider the cost**: Deep learning requires more data, compute, and expertise.
-5. **Plan for maintenance**: Rule-based systems need manual updates; ML systems need data pipeline maintenance.
-6. **Evaluate before scaling**: Test multiple paradigms on your problem before committing.
+1. **Empieza simple**: Comienza con el paradigma más simple que podría funcionar. Agrega complejidad solo cuando sea necesario.
+2. **Empareja paradigma con problema**: Considera la disponibilidad de datos, las necesidades de interpretabilidad y la complejidad del problema.
+3. **Los sistemas híbridos son comunes**: Muchos sistemas de producción combinan reglas con ML (ej., reglas para casos extremos, ML para predicciones centrales).
+4. **Considera el costo**: El deep learning requiere más datos, cómputo y experiencia.
+5. **Planifica el mantenimiento**: Los sistemas basados en reglas necesitan actualizaciones manuales; los sistemas de ML necesitan mantenimiento del pipeline de datos.
+6. **Evalúa antes de escalar**: Prueba múltiples paradigmas en tu problema antes de comprometerte.
 
-## Summary
+## Resumen
 
-- AI has five major paradigms: Expert Systems, Rule-Based Systems, Machine Learning, Deep Learning, and Large Language Models
-- Rule-Based systems encode explicit knowledge; ML learns from data
-- Deep Learning uses multi-layer neural networks for complex patterns
-- LLMs are a specialized form of deep learning for language
-- Choose the simplest paradigm that solves your problem
-- Hybrid approaches are common in production systems
-- Understanding all paradigms makes you a more versatile AI practitioner
+- La IA tiene cinco paradigmas principales: Sistemas Expertos, Sistemas Basados en Reglas, Machine Learning, Deep Learning y Large Language Models
+- Los sistemas Basados en Reglas codifican conocimiento explícito; ML aprende de datos
+- El Deep Learning usa redes neuronales multicapa para patrones complejos
+- Los LLMs son una forma especializada de deep learning para lenguaje
+- Elige el paradigma más simple que resuelva tu problema
+- Los enfoques híbridos son comunes en sistemas de producción
+- Entender todos los paradigmas te convierte en un profesional de IA más versátil
 
-## Key Terms
+## Términos Clave
 
-| Term | Definition |
+| Término | Definición |
 |---|---|
-| **Expert System** | AI that emulates human expert decision-making using rules |
-| **Rule-Based System** | System using if-then rules for decision making |
-| **Knowledge Base** | The collection of facts and rules in an expert system |
-| **Inference Engine** | The component that applies rules to derive conclusions |
-| **Machine Learning** | Paradigm where systems learn patterns from data |
-| **Deep Learning** | ML using multi-layer neural networks |
-| **Large Language Model** | Deep learning model trained on massive text for language tasks |
-| **Neural Network** | Computing system inspired by biological neural networks |
-| **Transformer** | Neural network architecture using self-attention |
-| **Feature** | Input variable used by an ML model |
-| **Label** | Output variable being predicted |
-| **Supervised Learning** | Learning from labeled training data |
-| **Unsupervised Learning** | Finding patterns in unlabeled data |
+| **Sistema Experto** | IA que emula la toma de decisiones de un experto humano usando reglas |
+| **Sistema Basado en Reglas** | Sistema que usa reglas si-entonces para la toma de decisiones |
+| **Base de Conocimiento** | La colección de hechos y reglas en un sistema experto |
+| **Motor de Inferencia** | El componente que aplica reglas para derivar conclusiones |
+| **Machine Learning** | Paradigma donde los sistemas aprenden patrones a partir de datos |
+| **Deep Learning** | ML que usa redes neuronales multicapa |
+| **Large Language Model** | Modelo de deep learning entrenado en texto masivo para tareas de lenguaje |
+| **Red Neuronal** | Sistema computacional inspirado en redes neuronales biológicas |
+| **Transformer** | Arquitectura de red neuronal que utiliza self-attention |
+| **Feature** | Variable de entrada utilizada por un modelo de ML |
+| **Label** | Variable de salida que se predice |
+| **Aprendizaje Supervisado** | Aprendizaje a partir de datos de entrenamiento etiquetados |
+| **Aprendizaje No Supervisado** | Encontrar patrones en datos no etiquetados |
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic Understanding
+### Nivel 1: Comprensión Básica
 
-1. List the five AI paradigms in chronological order.
-2. What are the three components of an expert system?
-3. What is the key difference between Machine Learning and Deep Learning?
+1. Enumera los cinco paradigmas de IA en orden cronológico.
+2. ¿Cuáles son los tres componentes de un sistema experto?
+3. ¿Cuál es la diferencia clave entre Machine Learning y Deep Learning?
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
-4. Extend the email classifier to include at least 5 additional spam rules. Test it on 3 example emails.
-5. Train a Decision Tree classifier on the iris dataset. Print the tree structure and interpret one decision path.
+4. Extiende el clasificador de correos para incluir al menos 5 reglas de spam adicionales. Pruébalo en 3 correos de ejemplo.
+5. Entrena un clasificador Árbol de Decisión en el conjunto de datos iris. Imprime la estructura del árbol e interpreta una ruta de decisión.
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
-6. You are building an AI system for a hospital. The system must diagnose a rare disease where only 100 cases are known worldwide. Which paradigm would you choose and why?
-7. "Large Language Models are just very large neural networks — they do not represent a new paradigm." Argue for or against this position.
+6. Estás construyendo un sistema de IA para un hospital. El sistema debe diagnosticar una enfermedad rara de la que solo se conocen 100 casos en el mundo. ¿Qué paradigma elegirías y por qué?
+7. "Los Large Language Models son solo redes neuronales muy grandes — no representan un nuevo paradigma". Argumenta a favor o en contra de esta posición.
 
-## Coding Challenge
+## Desafío de Programación
 
-Build a **hybrid system** that combines rule-based logic with machine learning:
+Construye un **sistema híbrido** que combine lógica basada en reglas con machine learning:
 
-1. Create a rule-based pre-filter that classifies emails as "definitely spam," "definitely not spam," or "uncertain"
-2. For "uncertain" emails, pass them to an ML classifier
-3. Use a synthetic dataset (generate random email features)
-4. Compare the hybrid accuracy with using either approach alone
+1. Crea un pre-filtro basado en reglas que clasifique correos como "definitivamente spam", "definitivamente no spam" o "incierto"
+2. Para los correos "inciertos", pásalos a un clasificador de ML
+3. Usa un conjunto de datos sintético (genera características aleatorias de correos)
+4. Compara la precisión híbrida con usar cualquiera de los enfoques por separado

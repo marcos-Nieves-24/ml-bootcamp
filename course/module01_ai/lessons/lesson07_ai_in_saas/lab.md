@@ -1,38 +1,38 @@
 ---
 Module: 1
 Lesson: 7
-Title: AI in SaaS
+Title: IA en SaaS
 ---
 
-# Lab 7: Building a Churn Prediction System
+# Laboratorio 7: Construcción de un Sistema de Predicción de Abandono
 
-## Objectives
+## Objetivos
 
-By the end of this lab, you will be able to:
-- Generate and explore synthetic customer data
-- Engineer features for churn prediction
-- Train and evaluate multiple classifiers
-- Interpret model results for business action
-- Recommend interventions based on churn risk
+Al finalizar este laboratorio, podrás:
+- Generar y explorar datos sintéticos de clientes
+- Crear características para la predicción de abandono
+- Entrenar y evaluar múltiples clasificadores
+- Interpretar resultados del modelo para acciones empresariales
+- Recomendar intervenciones basadas en el riesgo de abandono
 
-## Duration
+## Duración
 
-60 minutes
+60 minutos
 
-## Prerequisites
+## Prerrequisitos
 
-- Lesson 7: AI in SaaS
-- Python with pandas, scikit-learn, matplotlib
+- Lección 7: IA en SaaS
+- Python con pandas, scikit-learn, matplotlib
 
-## Materials
+## Materiales
 
-- Python notebook environment
+- Entorno de notebook Python
 
-## Instructions
+## Instrucciones
 
-### Part 1: Generate and Explore Data (10 minutes)
+### Parte 1: Generar y Explorar Datos (10 minutos)
 
-Generate a synthetic customer dataset:
+Genera un conjunto de datos sintéticos de clientes:
 
 ```python
 import numpy as np
@@ -68,9 +68,9 @@ print(f"Churn rate: {data['churn'].mean():.1%}")
 print(data.head())
 ```
 
-### Part 2: Feature Engineering (10 minutes)
+### Parte 2: Ingeniería de Características (10 minutos)
 
-Create additional features:
+Crea características adicionales:
 
 ```python
 data['login_per_month'] = data['login_frequency'] / data['tenure_months']
@@ -85,7 +85,7 @@ X = data[features]
 y = data['churn']
 ```
 
-### Part 3: Train and Compare Models (20 minutes)
+### Parte 3: Entrenar y Comparar Modelos (20 minutos)
 
 ```python
 from sklearn.model_selection import train_test_split
@@ -122,11 +122,11 @@ for name, model in models.items():
     print(f"ROC-AUC: {roc_auc_score(y_test, y_prob):.3f}")
 ```
 
-### Part 4: Business Interpretation (20 minutes)
+### Parte 4: Interpretación Empresarial (20 minutos)
 
-1. Select the best model and get feature importance
-2. Create churn risk segments
-3. Recommend intervention strategies
+1. Selecciona el mejor modelo y obtén la importancia de características
+2. Crea segmentos de riesgo de abandono
+3. Recomienda estrategias de intervención
 
 ```python
 best_model = models['Random Forest']
@@ -145,20 +145,20 @@ segments = pd.cut(y_prob, bins=[0, 0.2, 0.5, 1.0],
 print(f"\nRisk Distribution:\n{segments.value_counts()}")
 ```
 
-Write a paragraph recommending what actions to take for each risk segment.
+Escribe un párrafo recomendando qué acciones tomar para cada segmento de riesgo.
 
-## Deliverables
+## Entregables
 
-- Completed notebook with all 4 parts
-- Part 1-4: Code with outputs
-- Intervention recommendation paragraph
+- Notebook completado con las 4 partes
+- Partes 1-4: Código con resultados
+- Párrafo de recomendación de intervención
 
-## Grading Criteria
+## Criterios de Evaluación
 
-| Criteria | Points |
+| Criterio | Puntos |
 |---|---|
-| Correct data generation and exploration | 2 |
-| Feature engineering quality | 2 |
-| Model training and comparison | 3 |
-| Business interpretation and recommendations | 3 |
+| Generación y exploración correcta de datos | 2 |
+| Calidad de la ingeniería de características | 2 |
+| Entrenamiento y comparación de modelos | 3 |
+| Interpretación empresarial y recomendaciones | 3 |
 | **Total** | **10** |

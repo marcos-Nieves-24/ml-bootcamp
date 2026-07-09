@@ -5,11 +5,11 @@ Lesson Title: Matplotlib
 Estimated Duration: 75 minutes
 Prerequisites: L14 — Pandas
 Learning Objectives:
-  - Create basic plots using pyplot: line, scatter, bar, histogram
+  - Crear basic plots using pyplot: line, scatter, bar, histogram
   - Customize plots with titles, labels, legends, and colors
-  - Use the figure/axes interface for multi-panel plots
+  - Usar the figure/axes interface for multi-panel plots
   - Save figures to files in various formats
-  - Apply different plot styles and color maps
+  - Aplicar different plot styles and color maps
 Keywords: Matplotlib, pyplot, figure, axes, plot, scatter, histogram, bar chart
 Difficulty: Beginner-Intermediate
 Programming Concepts: Data visualization, plotting, customization

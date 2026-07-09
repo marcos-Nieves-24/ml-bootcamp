@@ -1,121 +1,121 @@
 ---
 Module: 1
 Lesson: 5
-Title: AI Applications
+Title: Aplicaciones de la IA
 ---
 
-# Slide Deck: AI Applications
+# Presentación: Aplicaciones de la IA
 
-## Slide 1: Title Slide
-- **AI Applications**
-- Module 1: Introduction to AI
-- Lesson 5
+## Diapositiva 1: Portada
+- **Aplicaciones de la IA**
+- Módulo 1: Introducción a la IA
+- Lección 5
 
-## Slide 2: Lesson Objectives
-- Describe major AI application areas
-- Map applications to paradigms
-- Understand real-world AI use cases
+## Diapositiva 2: Objetivos de la Lección
+- Describir las principales áreas de aplicación de la IA
+- Mapear aplicaciones a paradigmas
+- Entender casos de uso reales de IA
 
-## Slide 3: Five Major Application Areas
-1. Computer Vision
-2. Natural Language Processing
-3. Robotics
-4. Recommendation Systems
-5. Generative AI
+## Diapositiva 3: Cinco Áreas Principales de Aplicación
+1. Visión por Computadora
+2. Procesamiento de Lenguaje Natural
+3. Robótica
+4. Sistemas de Recomendación
+5. IA Generativa
 
-## Slide 4: Computer Vision
-- Machines understanding visual information
-- Key tasks: classification, detection, segmentation
-- Technology: CNNs, Vision Transformers
-- Example: Face ID, Google Photos
+## Diapositiva 4: Visión por Computadora
+- Máquinas entendiendo información visual
+- Tareas clave: clasificación, detección, segmentación
+- Tecnología: CNNs, Vision Transformers
+- Ejemplo: Face ID, Google Photos
 
-## Slide 5: Computer Vision Tasks
+## Diapositiva 5: Tareas de Visión por Computadora
 ```
-Image → [CNN] → Class: "cat"
-Image → [YOLO] → Objects: [cat@(10,20), dog@(50,60)]
-Image → [U-Net] → Pixel masks
-```
-
-## Slide 6: Natural Language Processing
-- Machines understanding human language
-- Key tasks: classification, NER, translation, summarization
-- Technology: Transformers (BERT, GPT)
-- Example: Google Translate, Gmail Smart Compose
-
-## Slide 7: NLP Pipeline
-```
-Text → [Tokenizer] → [Transformer] → [Output]
+Imagen → [CNN] → Clase: "gato"
+Imagen → [YOLO] → Objetos: [gato@(10,20), perro@(50,60)]
+Imagen → [U-Net] → Máscaras de píxeles
 ```
 
-## Slide 8: Robotics
-- AI in the physical world
-- Perception + Action + Planning
-- Technology: RL, CV, sensor fusion
-- Example: Warehouse robots, Roomba
+## Diapositiva 6: Procesamiento de Lenguaje Natural
+- Máquinas entendiendo lenguaje humano
+- Tareas clave: clasificación, NER, traducción, resumen
+- Tecnología: Transformers (BERT, GPT)
+- Ejemplo: Google Translate, Gmail Smart Compose
 
-## Slide 9: Recommendation Systems
-- Predict user preferences
-- Collaborative: "users like you"
-- Content-based: "items like this"
-- Hybrid: combine both
-- Example: Netflix, Spotify, Amazon
-
-## Slide 10: Recommendation Approaches
+## Diapositiva 7: Pipeline de PLN
 ```
-Collaborative Filtering:
-User A likes {X, Y, Z}
-User B likes {X, Y} → Recommend Z
-
-Content-Based:
-User likes {Action movies} → Recommend action movies
+Texto → [Tokenizer] → [Transformer] → [Salida]
 ```
 
-## Slide 11: Generative AI
-- Create new content
-- Text: GPT-4, Claude
-- Images: DALL-E, Midjourney
-- Music: Suno
-- Code: GitHub Copilot
+## Diapositiva 8: Robótica
+- IA en el mundo físico
+- Percepción + Acción + Planificación
+- Tecnología: RL, CV, fusión de sensores
+- Ejemplo: Robots de almacén, Roomba
+
+## Diapositiva 9: Sistemas de Recomendación
+- Predicen preferencias del usuario
+- Colaborativo: "usuarios como tú"
+- Basado en contenido: "elementos como este"
+- Híbrido: combina ambos
+- Ejemplo: Netflix, Spotify, Amazon
+
+## Diapositiva 10: Enfoques de Recomendación
+```
+Filtrado Colaborativo:
+Usuario A le gusta {X, Y, Z}
+Usuario B le gusta {X, Y} → Recomendar Z
+
+Basado en Contenido:
+Usuario le gusta {Películas de Acción} → Recomendar acción
+```
+
+## Diapositiva 11: IA Generativa
+- Crear contenido nuevo
+- Texto: GPT-4, Claude
+- Imágenes: DALL-E, Midjourney
+- Música: Suno
+- Código: GitHub Copilot
 - Video: Sora
 
-## Slide 12: How Generative AI Works
+## Diapositiva 12: Cómo Funciona la IA Generativa
 ```
-Text Prompt → [Transformer/Diffusion Model] → New Content
-"a cat on Mars" → Image of cat on Mars
-"write a poem about AI" → Poem
+Prompt de Texto → [Transformer/Modelo de Difusión] → Contenido Nuevo
+"un gato en Marte" → Imagen de gato en Marte
+"escribe un poema sobre IA" → Poema
 ```
 
-## Slide 13: Biotechnology Applications
-- CV: Medical image analysis
-- NLP: Literature mining
-- Robotics: Lab automation
-- Recommendation: Clinical trial matching
-- Generative: Drug molecule design
+## Diapositiva 13: Aplicaciones en Biotecnología
+- CV: Análisis de imágenes médicas
+- PLN: Minería de literatura
+- Robótica: Automatización de laboratorio
+- Recomendación: Emparejamiento de ensayos clínicos
+- Generativa: Diseño de moléculas farmacológicas
 
-## Slide 14: SaaS Applications
-- CV: Document processing
-- NLP: Chatbots, sentiment
-- Recommendation: Product suggestions
-- Generative: Report generation
-- Predictive: Churn, LTV
+## Diapositiva 14: Aplicaciones en SaaS
+- CV: Procesamiento de documentos
+- PLN: Chatbots, sentimiento
+- Recomendación: Sugerencias de productos
+- Generativa: Generación de informes
+- Predictiva: Abandono, LTV
 
-## Slide 15: Application Areas Summary
-| Area | Input | Output | Key Tech |
+## Diapositiva 15: Resumen de Áreas de Aplicación
+| Área | Entrada | Salida | Tecnología Clave |
 |---|---|---|---|
-| CV | Images | Labels/Boxes | CNN |
-| NLP | Text | Text/Classes | Transformer |
-| Robotics | Sensors | Actions | RL |
-| RecSys | User history | Suggestions | CF/CBF |
-| GenAI | Prompt | Content | Transformer/Diffusion |
+| CV | Imágenes | Etiquetas/Cajas | CNN |
+| PLN | Texto | Texto/Clases | Transformer |
+| Robótica | Sensores | Acciones | RL |
+| RecSys | Historial usuario | Sugerencias | CF/CBF |
+| GenAI | Prompt | Contenido | Transformer/Difusión |
 
-## Slide 16: Common Mistakes
-- One tech does not fit all
-- Underestimating data needs
-- Ignoring cold start
-- Confusing generative with AGI
+## Diapositiva 16: Errores Comunes
+- Una tecnología no sirve para todo
+- Subestimar necesidades de datos
+- Ignorar el arranque en frío
+- Confundir generativa con AGI
 
-## Slide 17: Summary
-- Five major application areas
-- Each uses specific technologies
-- Vast industry impact
-- Understanding applications helps identify opportunities
+## Diapositiva 17: Resumen
+- Cinco áreas principales de aplicación
+- Cada una usa tecnologías específicas
+- Vasto impacto en la industria
+- Entender las aplicaciones ayuda a identificar oportunidades

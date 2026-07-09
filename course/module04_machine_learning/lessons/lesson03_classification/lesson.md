@@ -1,17 +1,17 @@
 ---
 Module: 4
 Lesson Number: 3
-Lesson Title: Classification
+Lesson Title: Clasificación
 Estimated Duration: 90 minutes
 Prerequisites: L1 (ML Fundamentals)
 Learning Objectives:
-  - Explain binary classification and the logistic function
+  - Explicar binary classification and the logistic function
   - Train and evaluate logistic regression models with scikit-learn
   - Interpret a confusion matrix and derive precision, recall, F1
   - Plot and interpret ROC curves and AUC scores
-  - Compare classification metrics for different business contexts
+  - Comparar classification metrics for different business contexts
 Keywords: binary classification, logistic regression, confusion matrix, precision, recall, F1, ROC, AUC, decision boundary
-Difficulty: Beginner
+Difficulty: Principiante
 Programming Concepts: sklearn.linear_model.LogisticRegression, sklearn.metrics
 Mathematical Concepts: sigmoid function, log-odds, cross-entropy loss
 Machine Learning Concepts: decision boundary, threshold, ROC curve, AUC
@@ -21,7 +21,7 @@ Assignment: assignment.md
 Quiz: quiz.md
 ---
 
-# Classification
+# Clasificación
 
 ## Motivation
 

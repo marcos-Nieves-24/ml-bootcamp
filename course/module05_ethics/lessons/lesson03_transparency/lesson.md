@@ -6,12 +6,12 @@ Estimated Duration: 60 minutes
 Prerequisites: L1 (Introduction to AI Ethics), Module 4 (ML)
 Learning Objectives:
   - Differentiate between interpretability and explainability
-  - Explain the black box problem in ML
-  - Describe SHAP and LIME as methods for model explanation
-  - Implement LIME to explain a classifier prediction
-  - Evaluate the limitations of post-hoc explanation methods
+  - Explicar the black box problem in ML
+  - Describir SHAP and LIME as methods for model explanation
+  - Implementar LIME to explain a classifier prediction
+  - Evaluar the limitations of post-hoc explanation methods
 Keywords: transparency, explainability, interpretability, XAI, SHAP, LIME, black box
-Difficulty: Intermediate
+Difficulty: Intermedio
 Programming Concepts: Function calls, library usage, visualization
 Mathematical Concepts: Feature importance, local approximations
 Machine Learning Concepts: Model prediction, classification, feature importance

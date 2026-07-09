@@ -7,13 +7,13 @@ Prerequisites: L2 — Jupyter Notebook
 Learning Objectives:
   - Assign values to variables using the assignment operator
   - Follow Python naming conventions for variables
-  - Explain dynamic typing and type inference
-  - Use basic input/output with print() and input()
+  - Explicar dynamic typing and type inference
+  - Usar basic input/output with print() and input()
   - Reassign variables and understand mutable state
 Keywords: variable, assignment, naming convention, dynamic typing, I/O, print
-Difficulty: Beginner
+Difficulty: Principiante
 Programming Concepts: Variable assignment, naming, scope, type inference
-Datasets Used: None
+Datasets Used: Ninguno
 Notebook: notebook.ipynb
 Assignment: assignment.md
 Quiz: quiz.md

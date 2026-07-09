@@ -1,57 +1,57 @@
 ---
 Module: 1
 Lesson: 1
-Title: What is Artificial Intelligence?
+Title: ¿Qué es la Inteligencia Artificial?
 ---
 
-# Quiz: What is Artificial Intelligence?
+# Cuestionario: ¿Qué es la Inteligencia Artificial?
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 preguntas)
 
-**1. According to Russell & Norvig, which approach to AI focuses on building agents that achieve the best outcome?**
+**1. Según Russell & Norvig, ¿qué enfoque de la IA se centra en construir agentes que logran el mejor resultado?**
 
-a) Acting humanly
-b) Thinking humanly
-c) Thinking rationally
-d) Acting rationally
+a) Actuar humanamente
+b) Pensar humanamente
+c) Pensar racionalmente
+d) Actuar racionalmente
 
-**2. What is the primary sensor used by a facial recognition system on a smartphone?**
+**2. ¿Cuál es el sensor principal que utiliza un sistema de reconocimiento facial en un teléfono inteligente?**
 
-a) Microphone
-b) Camera
-c) Touchscreen
-d) Accelerometer
+a) Micrófono
+b) Cámara
+c) Pantalla táctil
+d) Acelerómetro
 
-**3. Which of the following is a limitation of the Turing Test?**
+**3. ¿Cuál de las siguientes es una limitación del Test de Turing?**
 
-a) It requires the machine to physically resemble a human
-b) It only tests conversational ability, not perception or creativity
-c) It is too computationally expensive to run
-d) It requires multiple human evaluators
+a) Requiere que la máquina se parezca físicamente a un humano
+b) Solo evalúa la capacidad conversacional, no la percepción ni la creatividad
+c) Es demasiado costoso computacionalmente para ejecutarlo
+d) Requiere múltiples evaluadores humanos
 
-**4. Which statement about Artificial Intelligence is TRUE?**
+**4. ¿Qué afirmación sobre la Inteligencia Artificial es VERDADERA?**
 
-a) AI and Machine Learning are the same thing
-b) All Machine Learning systems are AI, but not all AI systems use Machine Learning
-c) AI systems are always conscious
-d) AI systems never make mistakes
+a) La IA y el Machine Learning son lo mismo
+b) Todos los sistemas de Machine Learning son IA, pero no todos los sistemas de IA usan Machine Learning
+c) Los sistemas de IA siempre son conscientes
+d) Los sistemas de IA nunca cometen errores
 
-**5. An intelligent spam filter that learns to classify emails based on user feedback is an example of:**
+**5. Un filtro de spam inteligente que aprende a clasificar correos electrónicos basándose en la retroalimentación del usuario es un ejemplo de:**
 
-a) Thinking humanly
-b) Acting humanly
-c) Acting rationally
-d) A system that does not use AI
+a) Pensar humanamente
+b) Actuar humanamente
+c) Actuar racionalmente
+d) Un sistema que no usa IA
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 preguntas)
 
-**6. Define an intelligent agent and list its three key components.**
+**6. Define un agente inteligente y enumera sus tres componentes clave.**
 
-**7. Explain why the rational agent approach is preferred over the Turing Test approach for building practical AI systems.**
+**7. Explica por qué el enfoque del agente racional es preferible al enfoque del Test de Turing para construir sistemas prácticos de IA.**
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 pregunta)
 
-**8.** Write a Python function `describe_agent(sensors, actuators, goal)` that takes three lists (sensors, actuators, and goals) and returns a formatted string describing the agent. For example:
+**8.** Escribe una función en Python `describe_agent(sensors, actuators, goal)` que reciba tres listas (sensores, actuadores y objetivo) y devuelva una cadena formateada que describa el agente. Por ejemplo:
 
 ```python
 describe_agent(
@@ -61,21 +61,21 @@ describe_agent(
 )
 ```
 
-Should return: `"Agent perceives via camera, microphone and acts via speaker, screen to assist the user."`
+Debería devolver: `"Agent perceives via camera, microphone and acts via speaker, screen to assist the user."`
 
-Note: You do not need to run this code yet — we will learn Python in Module 2. Write the function as best you can conceptually.
+Nota: No necesitas ejecutar este código aún — aprenderemos Python en el Módulo 2. Escribe la función lo mejor que puedas conceptualmente.
 
 ---
 
-## Answer Key
+## Clave de Respuestas
 
-1. **d)** Acting rationally
-2. **b)** Camera
-3. **b)** It only tests conversational ability, not perception or creativity
-4. **b)** All ML is AI, but not all AI is ML
-5. **c)** Acting rationally
-6. An intelligent agent is a system that perceives its environment through sensors and acts upon it through actuators to achieve goals. Its three key components are: sensors (to perceive), actuators (to act), and a performance measure (to evaluate success).
-7. The rational agent approach is preferred because: (a) it is more general — it does not require human-like behavior; (b) it is measurable — performance can be objectively evaluated; (c) it is engineering-friendly — the focus is on achieving the best outcome rather than mimicking human cognition.
+1. **d)** Actuar racionalmente
+2. **b)** Cámara
+3. **b)** Solo evalúa la capacidad conversacional, no la percepción ni la creatividad
+4. **b)** Todo ML es IA, pero no toda IA es ML
+5. **c)** Actuar racionalmente
+6. Un agente inteligente es un sistema que percibe su entorno a través de sensores y actúa sobre él mediante actuadores para alcanzar objetivos. Sus tres componentes clave son: sensores (para percibir), actuadores (para actuar) y una medida de rendimiento (para evaluar el éxito).
+7. El enfoque del agente racional es preferible porque: (a) es más general — no requiere comportamiento similar al humano; (b) es medible — el rendimiento puede evaluarse objetivamente; (c) es amigable para la ingeniería — el enfoque está en lograr el mejor resultado en lugar de imitar la cognición humana.
 8. 
 ```python
 def describe_agent(sensors, actuators, goal):

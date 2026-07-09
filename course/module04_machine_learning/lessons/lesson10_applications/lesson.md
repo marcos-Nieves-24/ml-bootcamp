@@ -1,17 +1,17 @@
 ---
 Module: 4
 Lesson Number: 10
-Lesson Title: Applications
+Lesson Title: Aplicaciones
 Estimated Duration: 90 minutes
 Prerequisites: L1-L9 (all previous lessons)
 Learning Objectives:
-  - Build an end-to-end ML pipeline from raw data to evaluation
-  - Apply regression to a biotech product quality prediction problem
-  - Apply clustering + classification to a SaaS customer analytics problem
+  - Construir an end-to-end ML pipeline from raw data to evaluation
+  - Aplicar regression to a biotech product quality prediction problem
+  - Aplicar clustering + classification to a SaaS customer analytics problem
   - Select appropriate models and metrics for different business contexts
   - Communicate ML results to non-technical stakeholders
 Keywords: pipeline, end-to-end, biotechnology, SaaS, product quality, customer segmentation, deployment
-Difficulty: Advanced
+Difficulty: Avanzado
 Programming Concepts: Pipeline, ColumnTransformer, GridSearchCV
 Mathematical Concepts: integration of multiple ML concepts
 Machine Learning Concepts: full ML workflow, model deployment considerations
@@ -21,7 +21,7 @@ Assignment: assignment.md
 Quiz: quiz.md
 ---
 
-# Applications
+# Aplicaciones
 
 ## Motivation
 

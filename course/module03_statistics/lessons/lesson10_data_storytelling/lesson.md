@@ -1,17 +1,17 @@
 ---
 Module: 3
 Lesson Number: 10
-Lesson Title: Data Storytelling
+Lesson Title: Narración de Datos
 Estimated Duration: 60 minutes
 Prerequisites: Lessons 1-6
 Learning Objectives:
   - Structure a data story with narrative arc
-  - Apply visualization best practices for effective communication
+  - Aplicar visualization best practices for effective communication
   - Design informative dashboards
   - Communicate statistical findings to non-technical audiences
   - Avoid common visualization pitfalls
 Keywords: data storytelling, visualization, dashboard, communication, narrative, data journalism
-Difficulty: Intermediate
+Difficulty: Intermedio
 Programming Concepts: matplotlib, plotly, seaborn, dashboards
 Mathematical Concepts: None (application-oriented)
 Machine Learning Concepts: result communication, model interpretation

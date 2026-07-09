@@ -1,250 +1,250 @@
 ---
 Module: 1
 Lesson Number: 5
-Lesson Title: AI Applications
+Lesson Title: Aplicaciones de la IA
 Estimated Duration: 45 minutes
-Prerequisites: Lesson 4 — AI Paradigms
+Prerequisites: Lección 4 — Paradigmas de IA
 Learning Objectives:
-  - Describe the major application areas of AI: Computer Vision, NLP, Robotics, Recommendation Systems, and Generative AI
-  - Explain how each application area maps to specific AI paradigms
-  - Identify which AI technologies power common real-world systems
-  - Evaluate the current capabilities and limitations of each application area
-  - Connect application areas to biotechnology and SaaS use cases
-Keywords: Computer Vision, Natural Language Processing, Robotics, recommendation systems, generative AI, image recognition, speech recognition, text generation
+  - Describir las principales áreas de aplicación de la IA: Visión por Computadora, PLN, Robótica, Sistemas de Recomendación e IA Generativa
+  - Explicar cómo cada área de aplicación se asigna a paradigmas específicos de IA
+  - Identificar qué tecnologías de IA impulsan sistemas comunes del mundo real
+  - Evaluar las capacidades y limitaciones actuales de cada área de aplicación
+  - Conectar las áreas de aplicación con casos de uso en biotecnología y SaaS
+Keywords: Visión por Computadora, Procesamiento de Lenguaje Natural, Robótica, sistemas de recomendación, IA generativa, reconocimiento de imágenes, reconocimiento de voz, generación de texto
 Difficulty: Beginner
 Programming Concepts: None
 Mathematical Concepts: None
-Machine Learning Concepts: Basic understanding of ML paradigms (Lesson 4)
+Machine Learning Concepts: Comprensión básica de los paradigmas de ML (Lección 4)
 Datasets Used: None
 Notebook: notebook.ipynb
 Assignment: assignment.md
 Quiz: quiz.md
 ---
 
-# Lesson 5: AI Applications
+# Lección 5: Aplicaciones de la IA
 
-## Lesson Motivation
+## Motivación de la Lección
 
-AI is not an abstract academic field — it is transforming every industry. Smartphones use AI for photography. Hospitals use AI for diagnosis. Banks use AI for fraud detection. Streaming services use AI for recommendations. In this lesson, you will see where AI is applied today and, more importantly, understand which technologies make each application possible. This knowledge will help you identify opportunities for AI in your own field.
+La IA no es un campo académico abstracto — está transformando todas las industrias. Los teléfonos inteligentes usan IA para fotografía. Los hospitales usan IA para diagnóstico. Los bancos usan IA para detección de fraude. Los servicios de streaming usan IA para recomendaciones. En esta lección, verás dónde se aplica la IA hoy y, más importante aún, entenderás qué tecnologías hacen posible cada aplicación. Este conocimiento te ayudará a identificar oportunidades para la IA en tu propio campo.
 
-## Big Picture
+## Panorama General
 
-Lessons 1–3 established what AI is and how it is classified. Lesson 4 explained the technical paradigms. Now we see these paradigms in action across major application areas. Lesson 6 (Biotechnology) and Lesson 7 (SaaS) will explore specific industry applications in depth.
+Las Lecciones 1 a 3 establecieron qué es la IA y cómo se clasifica. La Lección 4 explicó los paradigmas técnicos. Ahora vemos estos paradigmas en acción en las principales áreas de aplicación. La Lección 6 (Biotecnología) y la Lección 7 (SaaS) explorarán aplicaciones específicas de la industria en profundidad.
 
 ```
-Lesson 4 (Paradigms) → Lesson 5 (Applications) → Lesson 6 (Biotech) & 7 (SaaS)
+Lección 4 (Paradigmas) → Lección 5 (Aplicaciones) → Lección 6 (Biotech) y 7 (SaaS)
 ```
 
-## Theory
+## Teoría
 
-### Computer Vision
+### Visión por Computadora (Computer Vision)
 
-**Definition**: The field of AI that enables machines to interpret and understand visual information from the world.
+**Definición**: El campo de la IA que permite a las máquinas interpretar y entender información visual del mundo.
 
-**Intuition**: Giving computers eyes — and a brain to understand what they see.
+**Intuición**: Dar ojos a las computadoras — y un cerebro para entender lo que ven.
 
-**Key tasks**:
-- **Image classification**: What object is in this image? (cat vs. dog)
-- **Object detection**: Where are objects in this image? (bounding boxes)
-- **Image segmentation**: Which pixels belong to which object? (pixel-level masks)
-- **Face recognition**: Who is this person?
-- **Optical Character Recognition (OCR)**: What text is in this image?
+**Tareas clave**:
+- **Clasificación de imágenes**: ¿Qué objeto hay en esta imagen? (gato vs. perro)
+- **Detección de objetos**: ¿Dónde están los objetos en esta imagen? (cajas delimitadoras)
+- **Segmentación de imágenes**: ¿Qué píxeles pertenecen a qué objeto? (máscaras a nivel de píxel)
+- **Reconocimiento facial**: ¿Quién es esta persona?
+- **Reconocimiento Óptico de Caracteres (OCR)**: ¿Qué texto hay en esta imagen?
 
-**Technology stack**: Deep learning (CNNs), specifically architectures like ResNet, YOLO, and Vision Transformers.
+**Stack tecnológico**: Deep learning (CNNs), específicamente arquitecturas como ResNet, YOLO y Vision Transformers.
 
-**Example**: A smartphone camera detects faces and adjusts focus automatically. The AI identifies face regions (object detection) and optimizes camera settings.
+**Ejemplo**: Una cámara de teléfono inteligente detecta rostros y ajusta el enfoque automáticamente. La IA identifica regiones faciales (detección de objetos) y optimiza la configuración de la cámara.
 
-**Limitations**: Sensitive to lighting, angle, occlusion; requires large labeled datasets; struggles with adversarial examples.
+**Limitaciones**: Sensible a iluminación, ángulo, oclusión; requiere grandes conjuntos de datos etiquetados; tiene dificultades con ejemplos adversariales.
 
-### Natural Language Processing (NLP)
+### Procesamiento de Lenguaje Natural (PLN / NLP)
 
-**Definition**: The field of AI focused on enabling computers to understand, interpret, and generate human language.
+**Definición**: El campo de la IA centrado en permitir que las computadoras entiendan, interpreten y generen lenguaje humano.
 
-**Intuition**: Teaching computers to read, write, and understand language as humans do.
+**Intuición**: Enseñar a las computadoras a leer, escribir y entender el lenguaje como lo hacen los humanos.
 
-**Key tasks**:
-- **Text classification**: Spam detection, sentiment analysis
-- **Named Entity Recognition (NER)**: Extracting names, dates, locations from text
-- **Machine Translation**: Converting text between languages
-- **Summarization**: Condensing long documents into key points
-- **Question Answering**: Answering questions based on context
-- **Text Generation**: Writing coherent text
+**Tareas clave**:
+- **Clasificación de texto**: Detección de spam, análisis de sentimiento
+- **Reconocimiento de Entidades Nombradas (NER)**: Extraer nombres, fechas, ubicaciones del texto
+- **Traducción Automática**: Convertir texto entre idiomas
+- **Resumen**: Condensar documentos largos en puntos clave
+- **Respuesta a Preguntas**: Responder preguntas basadas en contexto
+- **Generación de Texto**: Escribir texto coherente
 
-**Technology stack**: Transformers (BERT, GPT), RNNs/LSTMs (historical), Large Language Models.
+**Stack tecnológico**: Transformers (BERT, GPT), RNNs/LSTMs (histórico), Large Language Models.
 
-**Example**: Gmail's Smart Compose suggests sentence completions as you type. The AI predicts the next words based on the email context.
+**Ejemplo**: Smart Compose de Gmail sugiere completar frases mientras escribes. La IA predice las siguientes palabras basándose en el contexto del correo.
 
-**Limitations**: Lack of true understanding, hallucination, bias in training data, sensitivity to input phrasing.
+**Limitaciones**: Falta de comprensión real, alucinaciones, sesgo en los datos de entrenamiento, sensibilidad a la redacción de la entrada.
 
-### Robotics
+### Robótica
 
-**Definition**: The intersection of AI with physical machines that can perceive and act in the real world.
+**Definición**: La intersección de la IA con máquinas físicas que pueden percibir y actuar en el mundo real.
 
-**Intuition**: Giving bodies to AI — not just brains but arms, legs, and sensors.
+**Intuición**: Dar cuerpos a la IA — no solo cerebros sino brazos, piernas y sensores.
 
-**Key tasks**:
-- **Manipulation**: Grasping and moving objects
-- **Navigation**: Moving through space without collision
-- **Planning**: Determining sequences of actions
-- **Human-robot interaction**: Working alongside people
+**Tareas clave**:
+- **Manipulación**: Agarrar y mover objetos
+- **Navegación**: Moverse por el espacio sin colisiones
+- **Planificación**: Determinar secuencias de acciones
+- **Interacción humano-robot**: Trabajar junto a personas
 
-**Technology stack**: Reinforcement learning, computer vision, sensor fusion, control theory.
+**Stack tecnológico**: Aprendizaje por refuerzo, visión por computadora, fusión de sensores, teoría de control.
 
-**Example**: Warehouse robots (like those from Amazon Robotics) navigate shelves, pick items, and deliver them to packing stations.
+**Ejemplo**: Los robots de almacén (como los de Amazon Robotics) navegan estantes, recogen artículos y los entregan en estaciones de empaque.
 
-**Limitations**: Physical world is unpredictable; hardware is expensive; safety concerns; Moravec's Paradox (perception and movement are harder than reasoning for AI).
+**Limitaciones**: El mundo físico es impredecible; el hardware es costoso; preocupaciones de seguridad; Paradoja de Moravec (la percepción y el movimiento son más difíciles que el razonamiento para la IA).
 
-### Recommendation Systems
+### Sistemas de Recomendación
 
-**Definition**: AI systems that predict user preferences and suggest relevant items.
+**Definición**: Sistemas de IA que predicen las preferencias del usuario y sugieren elementos relevantes.
 
-**Intuition": Like a personal shopper who knows your taste perfectly.
+**Intuición**: Como un asistente de compras personal que conoce tus gustos a la perfección.
 
-**Key approaches**:
-- **Collaborative Filtering**: "People like you also liked..."
-    - User-based: Find similar users, recommend what they liked
-    - Item-based: Find similar items to ones you liked
-- **Content-Based Filtering**: "Because you liked X, you might like Y"
-    - Recommend items with similar features to past preferences
-- **Hybrid Methods**: Combine collaborative and content-based
+**Enfoques clave**:
+- **Filtrado Colaborativo**: "A las personas como tú también les gustó..."
+    - Basado en usuarios: Encontrar usuarios similares, recomendar lo que les gustó
+    - Basado en elementos: Encontrar elementos similares a los que te gustaron
+- **Filtrado Basado en Contenido**: "Como te gustó X, podría gustarte Y"
+    - Recomendar elementos con características similares a preferencias pasadas
+- **Métodos Híbridos**: Combinar filtrado colaborativo y basado en contenido
 
-**Technology stack**: Matrix factorization, k-nearest neighbors, deep learning.
+**Stack tecnológico**: Factorización de matrices, k-vecinos más cercanos, deep learning.
 
-**Example**: Netflix recommends movies based on your viewing history (collaborative), genre preferences (content-based), and time of day (context).
+**Ejemplo**: Netflix recomienda películas según tu historial de visualización (colaborativo), preferencias de género (basado en contenido) y hora del día (contexto).
 
-**Limitations": Cold start problem (new users/items), filter bubbles, popularity bias.
+**Limitaciones**: Problema de arranque en frío (nuevos usuarios/elementos), burbujas de filtro, sesgo de popularidad.
 
-### Generative AI
+### IA Generativa
 
-**Definition**: AI systems that create new content — text, images, music, code, video — rather than just analyzing or classifying.
+**Definición**: Sistemas de IA que crean contenido nuevo — texto, imágenes, música, código, video — en lugar de solo analizar o clasificar.
 
-**Intuition": An AI artist or writer that produces original work.
+**Intuición**: Un artista o escritor de IA que produce trabajo original.
 
-**Key types**:
-- **Text generation**: GPT-4, Claude — write essays, code, poetry
-- **Image generation**: DALL-E, Stable Diffusion, Midjourney — create images from text descriptions
-- **Music generation**: Suno, MusicLM — compose music
-- **Video generation**: Sora — create video from text
-- **Code generation**: GitHub Copilot — write and complete code
+**Tipos clave**:
+- **Generación de texto**: GPT-4, Claude — escriben ensayos, código, poesía
+- **Generación de imágenes**: DALL-E, Stable Diffusion, Midjourney — crean imágenes a partir de descripciones textuales
+- **Generación de música**: Suno, MusicLM — componen música
+- **Generación de video**: Sora — crea video a partir de texto
+- **Generación de código**: GitHub Copilot — escribe y completa código
 
-**Technology stack**: Transformers (text), diffusion models (images), GANs (historical).
+**Stack tecnológico**: Transformers (texto), modelos de difusión (imágenes), GANs (histórico).
 
-**Example**: DALL-E generates an image from the prompt "a cat wearing a space suit on Mars in the style of Van Gogh."
+**Ejemplo**: DALL-E genera una imagen a partir del prompt "un gato con traje espacial en Marte al estilo de Van Gogh."
 
-**Limitations**: Copyright concerns, factual inaccuracies, bias, lack of originality (remixes training data), computational cost.
+**Limitaciones**: Preocupaciones de copyright, imprecisiones factuales, sesgo, falta de originalidad (remezcla datos de entrenamiento), costo computacional.
 
-## Visual Explanation
+## Explicación Visual
 
-**Figure 5.1**: AI applications mind map.
+**Figura 5.1**: Mapa mental de aplicaciones de IA.
 
-A central node "AI Applications" with branches to Computer Vision, NLP, Robotics, Recommendation Systems, and Generative AI. Each branch has 3-4 sub-branches with specific tasks.
+Un nodo central "Aplicaciones de IA" con ramas a Visión por Computadora, PLN, Robótica, Sistemas de Recomendación e IA Generativa. Cada rama tiene 3-4 sub-ramas con tareas específicas.
 
-**Figure 5.2**: Recommendation system approaches.
+**Figura 5.2**: Enfoques de sistemas de recomendación.
 
-A diagram showing collaborative filtering (users connected by shared preferences) vs. content-based filtering (items connected by shared features).
+Un diagrama que muestra filtrado colaborativo (usuarios conectados por preferencias compartidas) vs. filtrado basado en contenido (elementos conectados por características compartidas).
 
-## Python Implementation
+## Implementación en Python
 
-This lesson is survey-oriented and does not require deep implementation. The notebook will include simple demonstrations using pre-trained models.
+Esta lección está orientada a la visión general y no requiere implementación profunda. El notebook incluirá demostraciones simples usando modelos pre-entrenados.
 
-## Biotechnology Example
+## Ejemplo en Biotecnología
 
-AI applications in biotechnology span multiple areas:
+Las aplicaciones de IA en biotecnología abarcan múltiples áreas:
 
-- **Computer Vision**: Analyzing medical images (X-rays, MRIs, CT scans) for tumor detection
-- **NLP**: Mining scientific literature for drug discovery insights
-- **Robotics**: Automated laboratory robots for high-throughput screening
-- **Recommendation**: Recommending clinical trials to patients based on genomic profiles
-- **Generative AI**: Designing new drug molecules (generative chemistry)
+- **Visión por Computadora**: Análisis de imágenes médicas (rayos X, resonancias, tomografías) para detección de tumores
+- **PLN**: Minería de literatura científica para descubrimiento de fármacos
+- **Robótica**: Robots de laboratorio automatizados para cribado de alto rendimiento
+- **Recomendación**: Recomendar ensayos clínicos a pacientes según perfiles genómicos
+- **IA Generativa**: Diseño de nuevas moléculas farmacológicas (química generativa)
 
-**Example**: AI-powered pathology systems use Computer Vision to detect cancer cells in biopsy slides with accuracy matching human pathologists.
+**Ejemplo**: Los sistemas de patología impulsados por IA usan Visión por Computadora para detectar células cancerosas en muestras de biopsia con una precisión que iguala a los patólogos humanos.
 
-## SaaS Example
+## Ejemplo en SaaS
 
-AI applications in SaaS companies:
+Aplicaciones de IA en empresas SaaS:
 
-- **Computer Vision**: Document processing automation (invoice scanning, ID verification)
-- **NLP**: Customer support chatbots, sentiment analysis, email classification
-- **Recommendation**: Product recommendations, content personalization
-- **Generative AI**: Automated report generation, marketing copy, code documentation
-- **Predictive Analytics**: Churn prediction, lifetime value estimation
+- **Visión por Computadora**: Automatización de procesamiento de documentos (escaneo de facturas, verificación de identidad)
+- **PLN**: Chatbots de atención al cliente, análisis de sentimiento, clasificación de correos
+- **Recomendación**: Recomendaciones de productos, personalización de contenido
+- **IA Generativa**: Generación automatizada de informes, copy de marketing, documentación de código
+- **Analítica Predictiva**: Predicción de abandono, estimación de valor de vida útil
 
-**Example**: HubSpot uses AI for lead scoring, content recommendation, and automated email marketing campaign optimization.
+**Ejemplo**: HubSpot usa IA para puntuación de leads, recomendación de contenido y optimización automatizada de campañas de email marketing.
 
-## Common Mistakes
+## Errores Comunes
 
-1. **Assuming one AI technique works for all applications**: Computer Vision needs different algorithms than NLP.
-2. **Underestimating data requirements**: Many AI applications fail because high-quality labeled data is scarce.
-3. **Ignoring the cold start problem**: New recommendation systems start with no user data.
-4. **Confusing generative AI with AGI**: Generative models are still Narrow AI.
-5. **Thinking AI applications are plug-and-play**: Most require significant customization and tuning.
+1. **Asumir que una técnica de IA funciona para todas las aplicaciones**: La Visión por Computadora necesita algoritmos diferentes al PLN.
+2. **Subestimar los requisitos de datos**: Muchas aplicaciones de IA fallan porque los datos etiquetados de alta calidad son escasos.
+3. **Ignorar el problema de arranque en frío**: Los nuevos sistemas de recomendación comienzan sin datos de usuario.
+4. **Confundir IA generativa con AGI**: Los modelos generativos siguen siendo IA Estrecha.
+5. **Pensar que las aplicaciones de IA son plug-and-play**: La mayoría requiere personalización y ajuste significativos.
 
-## Best Practices
+## Buenas Prácticas
 
-1. **Start with a clear problem definition**: What exactly is the AI application supposed to do?
-2. **Match the application to the right technology**: Use CNNs for images, Transformers for text.
-3. **Consider the full pipeline**: Data collection → preprocessing → model → deployment → monitoring.
-4. **Evaluate on real-world data**: Lab performance often differs from production.
-5. **Plan for failure modes**: What happens when the AI is wrong?
-6. **Respect ethical boundaries**: Privacy, bias, transparency, and consent.
+1. **Empieza con una definición clara del problema**: ¿Qué se supone que debe hacer exactamente la aplicación de IA?
+2. **Empareja la aplicación con la tecnología correcta**: Usa CNNs para imágenes, Transformers para texto.
+3. **Considera el pipeline completo**: Recolección de datos → preprocesamiento → modelo → despliegue → monitoreo.
+4. **Evalúa con datos del mundo real**: El rendimiento en laboratorio a menudo difiere de la producción.
+5. **Planifica los modos de fallo**: ¿Qué pasa cuando la IA se equivoca?
+6. **Respeta los límites éticos**: Privacidad, sesgo, transparencia y consentimiento.
 
-## Summary
+## Resumen
 
-- AI applications span Computer Vision, NLP, Robotics, Recommendation Systems, and Generative AI
-- Each application area uses specific AI paradigms and technologies
-- Computer Vision: deep learning (CNNs) for visual understanding
-- NLP: Transformers and LLMs for language tasks
-- Robotics: reinforcement learning and sensor fusion
-- Recommendation: collaborative and content-based filtering
-- Generative AI: transformers (text), diffusion models (images)
-- Biotechnology and SaaS use combinations of these applications
-- Successful deployment requires matching the right technology to the problem
+- Las aplicaciones de IA abarcan Visión por Computadora, PLN, Robótica, Sistemas de Recomendación e IA Generativa
+- Cada área de aplicación utiliza paradigmas y tecnologías específicas de IA
+- Visión por Computadora: deep learning (CNNs) para comprensión visual
+- PLN: Transformers y LLMs para tareas de lenguaje
+- Robótica: aprendizaje por refuerzo y fusión de sensores
+- Recomendación: filtrado colaborativo y basado en contenido
+- IA Generativa: transformers (texto), modelos de difusión (imágenes)
+- La biotecnología y el SaaS usan combinaciones de estas aplicaciones
+- El despliegue exitoso requiere emparejar la tecnología correcta con el problema
 
-## Key Terms
+## Términos Clave
 
-| Term | Definition |
+| Término | Definición |
 |---|---|
-| **Computer Vision** | AI field focused on visual understanding |
-| **Natural Language Processing** | AI field focused on language understanding and generation |
-| **Robotics** | AI field combining perception and physical action |
-| **Recommendation System** | AI that predicts user preferences |
-| **Generative AI** | AI that creates new content |
-| **Convolutional Neural Network (CNN)** | Neural network architecture for image processing |
-| **Transformer** | Neural network architecture using self-attention, foundational for NLP |
-| **Diffusion Model** | Generative model that creates data by reversing a noise process |
-| **Collaborative Filtering** | Recommendation using patterns across many users |
-| **Content-Based Filtering** | Recommendation using item features |
-| **Cold Start** | Problem of recommending for new users or items with no history |
-| **Object Detection** | Identifying and locating objects in images |
-| **Sentiment Analysis** | Determining the emotional tone of text |
+| **Visión por Computadora** | Campo de IA centrado en la comprensión visual |
+| **Procesamiento de Lenguaje Natural (PLN)** | Campo de IA centrado en la comprensión y generación de lenguaje |
+| **Robótica** | Campo de IA que combina percepción y acción física |
+| **Sistema de Recomendación** | IA que predice las preferencias del usuario |
+| **IA Generativa** | IA que crea contenido nuevo |
+| **Red Neuronal Convolucional (CNN)** | Arquitectura de red neuronal para procesamiento de imágenes |
+| **Transformer** | Arquitectura de red neuronal usando self-attention, fundamental para PLN |
+| **Modelo de Difusión** | Modelo generativo que crea datos revirtiendo un proceso de ruido |
+| **Filtrado Colaborativo** | Recomendación usando patrones entre muchos usuarios |
+| **Filtrado Basado en Contenido** | Recomendación usando características de elementos |
+| **Arranque en Frío** | Problema de recomendar a nuevos usuarios o elementos sin historial |
+| **Detección de Objetos** | Identificar y localizar objetos en imágenes |
+| **Análisis de Sentimiento** | Determinar el tono emocional de un texto |
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic Understanding
+### Nivel 1: Comprensión Básica
 
-1. List five major application areas of AI.
-2. What technology stack is most commonly used for Computer Vision? For NLP?
-3. What is the cold start problem in recommendation systems?
+1. Enumera cinco áreas principales de aplicación de la IA.
+2. ¿Qué stack tecnológico se usa más comúnmente para Visión por Computadora? ¿Para PLN?
+3. ¿Qué es el problema de arranque en frío en los sistemas de recomendación?
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
-4. For each of the following tasks, name the AI application area and the specific sub-task:
-   - (a) Detecting tumors in MRI scans
-   - (b) Translating a document from Spanish to English
-   - (c) Suggesting songs on Spotify
-   - (d) A robot vacuum cleaning a room
-   - (e) Generating an image from a text description
+4. Para cada una de las siguientes tareas, nombra el área de aplicación de IA y la sub-tarea específica:
+   - (a) Detectar tumores en resonancias magnéticas
+   - (b) Traducir un documento de español a inglés
+   - (c) Sugerir canciones en Spotify
+   - (d) Una aspiradora robot limpiando una habitación
+   - (e) Generar una imagen a partir de una descripción textual
 
-5. Compare collaborative filtering and content-based filtering with a concrete example for each.
+5. Compara el filtrado colaborativo y el filtrado basado en contenido con un ejemplo concreto para cada uno.
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
-6. "Generative AI raises more ethical concerns than other AI applications." Argue for or against this position with specific examples.
-7. Choose an industry (e.g., healthcare, finance, education, agriculture). Identify three AI applications that could transform it. For each, identify the appropriate technology and one major challenge.
+6. "La IA Generativa plantea más preocupaciones éticas que otras aplicaciones de IA." Argumenta a favor o en contra de esta posición con ejemplos específicos.
+7. Elige una industria (ej., salud, finanzas, educación, agricultura). Identifica tres aplicaciones de IA que podrían transformarla. Para cada una, identifica la tecnología apropiada y un desafío importante.
 
-## Coding Challenge
+## Desafío de Programación
 
-Write a Python function `recommend(items, user_history, method='collaborative')` that implements a simple recommendation system:
+Escribe una función en Python `recommend(items, user_history, method='collaborative')` que implemente un sistema de recomendación simple:
 
 ```python
 def recommend(items, user_history, method='collaborative'):
@@ -259,4 +259,4 @@ def recommend(items, user_history, method='collaborative'):
     return []
 ```
 
-For collaborative filtering, create a simple version: find users with similar item histories and recommend items they liked that the current user has not seen.
+Para el filtrado colaborativo, crea una versión simple: encuentra usuarios con historiales de artículos similares y recomienda artículos que les gustaron y que el usuario actual no ha visto.

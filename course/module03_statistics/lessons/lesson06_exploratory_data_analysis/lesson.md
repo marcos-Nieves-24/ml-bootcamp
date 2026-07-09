@@ -6,12 +6,12 @@ Estimated Duration: 90 minutes
 Prerequisites: Lessons 1-5
 Learning Objectives:
   - Detect and handle missing values in a dataset
-  - Identify outliers using multiple methods
-  - Create effective visualizations for data exploration
+  - Identificar outliers using multiple methods
+  - Crear effective visualizations for data exploration
   - Generate automated EDA reports with pandas-profiling
   - Design a systematic EDA workflow
 Keywords: EDA, missing values, outliers, visualization, pandas profiling, feature exploration
-Difficulty: Intermediate
+Difficulty: Intermedio
 Programming Concepts: pandas, matplotlib, seaborn, pandas-profiling
 Mathematical Concepts: IQR, Z-scores, distribution analysis
 Machine Learning Concepts: data quality, feature understanding, preprocessing

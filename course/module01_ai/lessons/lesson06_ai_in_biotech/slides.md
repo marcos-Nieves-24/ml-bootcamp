@@ -1,121 +1,121 @@
 ---
 Module: 1
 Lesson: 6
-Title: AI in Biotechnology
+Title: IA en Biotecnología
 ---
 
-# Slide Deck: AI in Biotechnology
+# Presentación: IA en Biotecnología
 
-## Slide 1: Title Slide
-- **AI in Biotechnology**
-- Module 1: Introduction to AI
-- Lesson 6
+## Diapositiva 1: Portada
+- **IA en Biotecnología**
+- Módulo 1: Introducción a la IA
+- Lección 6
 
-## Slide 2: Lesson Objectives
-- Describe AI applications in drug discovery, genomics, protein folding, medical imaging, and personalized medicine
-- Understand how AI accelerates biotech
+## Diapositiva 2: Objetivos de la Lección
+- Describir aplicaciones de IA en descubrimiento de fármacos, genómica, plegamiento de proteínas, imágenes médicas y medicina personalizada
+- Entender cómo la IA acelera la biotecnología
 
-## Slide 3: Why AI in Biotech?
-- Drug discovery: 10-15 years, $2.6B per drug
-- AI can cut time by 50%, cost by 50%+
-- AlphaFold solved 50-year protein folding problem
-- AI imaging matches human experts
+## Diapositiva 3: ¿Por Qué IA en Biotecnología?
+- Descubrimiento de fármacos: 10-15 años, $2.6B por fármaco
+- La IA puede reducir el tiempo un 50%, el costo un 50%+
+- AlphaFold resolvió el problema de plegamiento de 50 años
+- Las imágenes con IA igualan a expertos humanos
 
-## Slide 4: Drug Discovery Pipeline
+## Diapositiva 4: Pipeline de Descubrimiento de Fármacos
 ```
-Target ID → Hit Discovery → Lead Optimization → Preclinical → Clinical Trials
-    ↑              ↑                ↑               ↑              ↑
-   AI/ML          Virtual        Generative       ADMET        Patient
-                Screening           AI          Prediction    Selection
-```
-
-## Slide 5: AI in Target Identification
-- Analyze genomic data for disease targets
-- NLP on scientific literature
-- Protein interaction networks
-- Example: Deep learning finds novel gene targets
-
-## Slide 6: Virtual Screening
-- Traditional: screen 1M compounds (months, $1M+)
-- AI-powered: screen 1B compounds (days, $1K)
-- Methods: QSAR, docking, deep learning
-- Example: Atomwise screens millions daily
-
-## Slide 7: Generative AI for Drug Design
-- AI learns "chemical language"
-- Generates novel molecules with desired properties
-- Example: Insilico Medicine — fibrosis drug in 18 months
-
-## Slide 8: ADMET Prediction
-- Predict Absorption, Distribution, Metabolism, Excretion, Toxicity
-- Catches failures early
-- Reduces costly late-stage clinical trial failures
-
-## Slide 9: AI in Genomics
-- Variant calling from DNA sequences
-- Predicting variant pathogenicity
-- Gene expression analysis
-- Example: DeepVariant, DeepSEA
-
-## Slide 10: AlphaFold
-- Input: amino acid sequence
-- Output: 3D protein structure
-- Technology: Transformers + geometric neural networks
-- CASP14 score: 90 GDT (previous best: ~60)
-- 200M+ protein structures predicted
-
-## Slide 11: How AlphaFold Works
-```
-Sequence → [MSA] → [Transformer] → [Structure Module] → 3D Structure
-                              ↓
-                        Recycling
+ID Objetivo → Descub. Aciertos → Optim. Líder → Preclínico → Ensayos Clínicos
+     ↑              ↑                ↑            ↑              ↑
+   IA/ML        Cribado         Generativa     ADMET        Selección
+                Virtual            IA        Predicción     Pacientes
 ```
 
-## Slide 12: AI in Medical Imaging
-- Modalities: X-ray, CT, MRI, ultrasound
-- Tasks: Detection, segmentation, classification
-- Performance: matches human radiologists
-- FDA-approved AI diagnostic tools exist
+## Diapositiva 5: IA en Identificación de Objetivos
+- Analizar datos genómicos para objetivos de enfermedades
+- PLN en literatura científica
+- Redes de interacción de proteínas
+- Ejemplo: Deep learning encuentra nuevos objetivos genéticos
 
-## Slide 13: Medical Imaging AI Workflow
+## Diapositiva 6: Cribado Virtual
+- Tradicional: evaluar 1M compuestos (meses, $1M+)
+- Con IA: evaluar 1B compuestos (días, $1K)
+- Métodos: QSAR, acoplamiento, deep learning
+- Ejemplo: Atomwise evalúa millones diariamente
+
+## Diapositiva 7: IA Generativa para Diseño de Fármacos
+- La IA aprende el "lenguaje químico"
+- Genera moléculas novedosas con propiedades deseadas
+- Ejemplo: Insilico Medicine — fármaco para fibrosis en 18 meses
+
+## Diapositiva 8: Predicción ADMET
+- Predecir Absorción, Distribución, Metabolismo, Excreción, Toxicidad
+- Detecta fallos tempranamente
+- Reduce costosos fracasos en etapas tardías de ensayos clínicos
+
+## Diapositiva 9: IA en Genómica
+- Llamado de variantes a partir de secuencias de ADN
+- Predicción de patogenicidad de variantes
+- Análisis de expresión génica
+- Ejemplo: DeepVariant, DeepSEA
+
+## Diapositiva 10: AlphaFold
+- Entrada: secuencia de aminoácidos
+- Salida: estructura 3D de la proteína
+- Tecnología: Transformers + redes neuronales geométricas
+- Puntuación CASP14: 90 GDT (mejor anterior: ~60)
+- 200M+ estructuras de proteínas predichas
+
+## Diapositiva 11: Cómo Funciona AlphaFold
 ```
-Image → [CNN] → Segmentation/Classification → Radiologist Review → Diagnosis
+Secuencia → [MSA] → [Transformer] → [Módulo de Estructura] → Estructura 3D
+                                  ↓
+                            Reciclaje
 ```
 
-## Slide 14: AI in Personalized Medicine
-- Integrate genomics, clinical data, lifestyle
-- Predict disease risk
-- Select optimal therapies
-- Pharmacogenomics: genes → drug response
-- Example: Oncologist AI for targeted therapy
+## Diapositiva 12: IA en Imágenes Médicas
+- Modalidades: Rayos X, TC, RMN, ultrasonido
+- Tareas: Detección, segmentación, clasificación
+- Rendimiento: iguala a radiólogos humanos
+- Existen herramientas de diagnóstico con IA aprobadas por FDA
 
-## Slide 15: Key AI Techniques in Biotech
-| Application | AI Technique |
+## Diapositiva 13: Flujo de Trabajo de IA en Imágenes Médicas
+```
+Imagen → [CNN] → Segmentación/Clasificación → Revisión del Radiólogo → Diagnóstico
+```
+
+## Diapositiva 14: IA en Medicina Personalizada
+- Integrar genómica, datos clínicos, estilo de vida
+- Predecir riesgo de enfermedad
+- Seleccionar terapias óptimas
+- Farmacogenómica: genes → respuesta a fármacos
+- Ejemplo: IA oncológica para terapia dirigida
+
+## Diapositiva 15: Técnicas Clave de IA en Biotecnología
+| Aplicación | Técnica de IA |
 |---|---|
-| Virtual screening | ML (Random Forest, SVM) |
-| Drug design | Generative AI (GANs, VAEs) |
-| Protein folding | Deep learning (Transformers) |
-| Medical imaging | Deep learning (CNNs) |
-| Genomics | Deep learning (CNNs, RNNs) |
-| Literature mining | NLP (LLMs) |
+| Cribado virtual | ML (Random Forest, SVM) |
+| Diseño de fármacos | IA Generativa (GANs, VAEs) |
+| Plegamiento de proteínas | Deep learning (Transformers) |
+| Imágenes médicas | Deep learning (CNNs) |
+| Genómica | Deep learning (CNNs, RNNs) |
+| Minería de literatura | NLP (LLMs) |
 
-## Slide 16: Challenges
-- Small datasets in biology
-- Need for experimental validation
-- Data heterogeneity
-- Correlation ≠ causation
-- Regulatory hurdles
+## Diapositiva 16: Desafíos
+- Conjuntos de datos pequeños en biología
+- Necesidad de validación experimental
+- Heterogeneidad de datos
+- Correlación ≠ causalidad
+- Obstáculos regulatorios
 
-## Slide 17: Best Practices
-- Combine AI with domain expertise
-- Validate experimentally
-- Handle data ethically
-- Ensure interpretability
-- Account for batch effects
+## Diapositiva 17: Buenas Prácticas
+- Combinar IA con experiencia en el dominio
+- Validar experimentalmente
+- Manejar datos éticamente
+- Asegurar interpretabilidad
+- Considerar efectos de lote
 
-## Slide 18: Summary
-- AI transforms drug discovery, genomics, protein science, imaging, and personalized medicine
-- AI accelerates every stage of the drug pipeline
-- AlphaFold is a landmark achievement
-- Successful biotech AI requires domain + ML expertise
-- The field will continue to grow rapidly
+## Diapositiva 18: Resumen
+- La IA transforma el descubrimiento de fármacos, genómica, ciencia de proteínas, imágenes y medicina personalizada
+- La IA acelera cada etapa del pipeline farmacéutico
+- AlphaFold es un logro histórico
+- La IA biotecnológica exitosa requiere dominio + experiencia en ML
+- El campo continuará creciendo rápidamente

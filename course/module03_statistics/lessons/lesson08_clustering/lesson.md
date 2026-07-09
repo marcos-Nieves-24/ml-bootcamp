@@ -5,13 +5,13 @@ Lesson Title: Clustering (K-Means)
 Estimated Duration: 90 minutes
 Prerequisites: Lesson 1 (Descriptive Statistics), Lesson 5 (Relationships)
 Learning Objectives:
-  - Explain the K-Means clustering algorithm and its intuition
+  - Explicar the K-Means clustering algorithm and its intuition
   - Determine the optimal number of clusters using the elbow method and silhouette score
-  - Implement K-Means clustering using sklearn.cluster.KMeans
+  - Implementar K-Means clustering using sklearn.cluster.KMeans
   - Visualize clustering results with PCA
   - Interpret cluster characteristics
 Keywords: K-Means, clustering, elbow method, silhouette score, unsupervised learning, centroid
-Difficulty: Intermediate
+Difficulty: Intermedio
 Programming Concepts: sklearn.cluster.KMeans, numpy, pandas, matplotlib
 Mathematical Concepts: Euclidean distance, inertia, within-cluster sum of squares
 Machine Learning Concepts: unsupervised learning, clustering, segmentation

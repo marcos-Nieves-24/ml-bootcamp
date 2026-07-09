@@ -1,81 +1,81 @@
 ---
 Module: 1
 Lesson: 2
-Title: History of AI
+Title: Historia de la IA
 ---
 
-# Lab 2: AI Timeline and Hype Cycles
+# Laboratorio 2: Línea de Tiempo y Ciclos de Hype de la IA
 
-## Objectives
+## Objetivos
 
-By the end of this lab, you will be able to:
-- Construct a timeline of major AI milestones
-- Analyze the pattern of AI winters and springs
-- Compare historical predictions with actual outcomes
-- Visualize AI progress over time
+Al finalizar este laboratorio, podrás:
+- Construir una línea de tiempo de los hitos principales de la IA
+- Analizar el patrón de los inviernos y primaveras de la IA
+- Comparar predicciones históricas con resultados reales
+- Visualizar el progreso de la IA a lo largo del tiempo
 
-## Duration
+## Duración
 
-45 minutes
+45 minutos
 
-## Prerequisites
+## Prerrequisitos
 
-- Lesson 1: What is Artificial Intelligence?
-- Lesson 2: History of AI
+- Lección 1: ¿Qué es la Inteligencia Artificial?
+- Lección 2: Historia de la IA
 
-## Materials
+## Materiales
 
-- Pen and paper or digital document
-- Python environment (for optional coding exercise)
+- Lápiz y papel o un documento digital
+- Entorno de Python (para el ejercicio opcional de programación)
 
-## Instructions
+## Instrucciones
 
-### Part 1: Build a Timeline (15 minutes)
+### Parte 1: Construye una Línea de Tiempo (15 minutos)
 
-Using the milestones from Lesson 2, create a visual timeline. Include at least 15 events. For each event, write:
-1. Year
-2. Event name
-3. One-sentence significance
+Usando los hitos de la Lección 2, crea una línea de tiempo visual. Incluye al menos 15 eventos. Para cada evento, escribe:
+1. Año
+2. Nombre del evento
+3. Significado en una oración
 
-Arrange them chronologically. Add color coding:
-- Green: AI Spring / progress period
-- Red: AI Winter / decline period
-- Blue: Foundational / theoretical milestones
+Organízalos cronológicamente. Agrega código de colores:
+- Verde: Primavera de la IA / período de progreso
+- Rojo: Invierno de la IA / período de declive
+- Azul: Hitos fundacionales / teóricos
 
-### Part 2: Analyze the Hype Cycle (15 minutes)
+### Parte 2: Analiza el Ciclo de Hype (15 minutos)
 
-Research one of these historical AI predictions:
+Investiga una de estas predicciones históricas de IA:
 
-- "Machines will be capable, within twenty years, of doing any work a man can do." — Herbert Simon, 1965
-- "In from 3 to 8 years we will have a machine with the general intelligence of an average human being." — Marvin Minsky, 1970
-- "No computer will ever beat a world champion in chess." — Early critics, c. 1960
+- "Las máquinas serán capaces, en veinte años, de hacer cualquier trabajo que un hombre pueda hacer." — Herbert Simon, 1965
+- "En 3 a 8 años tendremos una máquina con la inteligencia general de un ser humano promedio." — Marvin Minsky, 1970
+- "Ninguna computadora vencerá jamás a un campeón mundial de ajedrez." — Críticos tempranos, c. 1960
 
-For your chosen prediction, answer:
-1. Was the prediction accurate? If not, how far off was it?
-2. Why was it optimistic/pessimistic?
-3. What assumptions did the prediction make?
-4. What does this tell us about predicting AI progress?
+Para la predicción que elijas, responde:
+1. ¿Fue precisa la predicción? Si no, ¿qué tan lejos estuvo?
+2. ¿Por qué fue optimista/pesimista?
+3. ¿Qué supuestos hizo la predicción?
+4. ¿Qué nos dice esto sobre predecir el progreso de la IA?
 
-### Part 3: Future Predictions (15 minutes)
+### Parte 3: Predicciones Futuras (15 minutos)
 
-Write your own prediction for AI in 2035:
-1. What will AI be able to do that it cannot do today?
-2. What challenges remain?
-3. Will we experience another AI winter before 2035?
-4. What evidence supports your prediction?
+Escribe tu propia predicción para la IA en 2035:
+1. ¿Qué podrá hacer la IA que no puede hacer hoy?
+2. ¿Qué desafíos quedan?
+3. ¿Experimentaremos otro invierno de la IA antes de 2035?
+4. ¿Qué evidencia respalda tu predicción?
 
-## Deliverables
+## Entregables
 
-Submit a document containing:
-- Part 1: Visual timeline with 15+ events and color coding
-- Part 2: Hype cycle analysis (1 paragraph per question)
-- Part 3: Future predictions (2-3 paragraphs)
+Entrega un documento que contenga:
+- Parte 1: Línea de tiempo visual con 15+ eventos y código de colores
+- Parte 2: Análisis del ciclo de hype (1 párrafo por pregunta)
+- Parte 3: Predicciones futuras (2-3 párrafos)
 
-## Grading Criteria
+## Criterios de Evaluación
 
-| Criteria | Points |
+| Criterio | Puntos |
 |---|---|
-| Timeline accuracy and completeness | 4 |
-| Hype cycle analysis quality | 3 |
-| Thoughtful future predictions | 3 |
+| Precisión y completitud de la línea de tiempo | 4 |
+| Calidad del análisis del ciclo de hype | 3 |
+| Predicciones futuras reflexivas | 3 |
 | **Total** | **10** |

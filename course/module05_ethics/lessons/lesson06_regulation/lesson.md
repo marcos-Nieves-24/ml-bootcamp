@@ -5,17 +5,17 @@ Lesson Title: Regulation and Governance of AI
 Estimated Duration: 60 minutes
 Prerequisites: L1 (Introduction to AI Ethics)
 Learning Objectives:
-  - Describe the global AI regulatory landscape (EU AI Act, US frameworks, China)
-  - Explain the EU AI Act's risk-based classification system
-  - Evaluate the role of corporate AI ethics boards and internal governance
-  - Describe the algorithmic auditing process
-  - Analyze the challenges of regulating rapidly evolving AI technology
+  - Describir the global AI regulatory landscape (EU AI Act, US frameworks, China)
+  - Explicar the EU AI Act's risk-based classification system
+  - Evaluar the role of corporate AI ethics boards and internal governance
+  - Describir the algorithmic auditing process
+  - Analizar the challenges of regulating rapidly evolving AI technology
 Keywords: regulation, governance, EU AI Act, auditing, ethics board, compliance, risk classification
 Difficulty: Introductory
-Programming Concepts: None
-Mathematical Concepts: None
+Programming Concepts: Ninguno
+Mathematical Concepts: Ninguno
 Machine Learning Concepts: Model evaluation, validation
-Datasets Used: None
+Datasets Used: Ninguno
 Notebook: notebook.ipynb
 Assignment: assignment.md
 Quiz: quiz.md

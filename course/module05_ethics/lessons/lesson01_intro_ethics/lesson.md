@@ -1,27 +1,27 @@
 ---
 Module: 5
 Lesson Number: 1
-Lesson Title: Introduction to AI Ethics
+Lesson Title: Introducción a la Ética de la IA
 Estimated Duration: 60 minutes
 Prerequisites: Module 4 (Machine Learning)
 Learning Objectives:
-  - Define ethics in the context of artificial intelligence
-  - Explain why AI ethics matters for biotechnology and SaaS applications
-  - Identify the five key ethical principles for AI: beneficence, non-maleficence, autonomy, justice, explicability
-  - Analyze real-world cases where ethical failures in AI caused harm
-  - Evaluate trade-offs between competing ethical principles in system design
+  - Definir ethics in the context of artificial intelligence
+  - Explicar why AI ethics matters for biotechnology and SaaS applications
+  - Identificar the five key ethical principles for AI: beneficence, non-maleficence, autonomy, justice, explicability
+  - Analizar real-world cases where ethical failures in AI caused harm
+  - Evaluar trade-offs between competing ethical principles in system design
 Keywords: ethics, beneficence, non-maleficence, autonomy, justice, explicability, fairness, accountability
 Difficulty: Introductory
-Programming Concepts: None
-Mathematical Concepts: None
+Programming Concepts: Ninguno
+Mathematical Concepts: Ninguno
 Machine Learning Concepts: Model evaluation, classification, regression (review)
-Datasets Used: None
+Datasets Used: Ninguno
 Notebook: notebook.ipynb
 Assignment: assignment.md
 Quiz: quiz.md
 ---
 
-# Introduction to AI Ethics
+# Introducción a la Ética de la IA
 
 ## Learning Objectives
 
@@ -49,7 +49,7 @@ If you work in biotechnology, healthcare, or SaaS, you will almost certainly dep
 
 | Previous Module | Current Lesson | Next Lesson |
 |---|---|---|
-| Module 4: Introduction to ML (training models, evaluation) | L1: Introduction to AI Ethics (principles, why ethics matters) | L2: Bias and Fairness (types of bias, fairness metrics) |
+| Módulo 4: Introduction to ML (training models, evaluation) | L1: Introduction to AI Ethics (principles, why ethics matters) | L2: Bias and Fairness (types of bias, fairness metrics) |
 
 This lesson lays the philosophical and practical foundation. Every subsequent lesson — bias, transparency, privacy, social impact, regulation, case studies — builds on these five principles.
 

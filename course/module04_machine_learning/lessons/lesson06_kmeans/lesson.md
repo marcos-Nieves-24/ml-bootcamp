@@ -5,13 +5,13 @@ Lesson Title: K-Means Clustering
 Estimated Duration: 75 minutes
 Prerequisites: L1 (ML Fundamentals)
 Learning Objectives:
-  - Explain the K-Means algorithm and its steps
+  - Explicar the K-Means algorithm and its steps
   - Determine the optimal number of clusters using elbow method and silhouette score
-  - Implement K-Means clustering with scikit-learn
+  - Implementar K-Means clustering with scikit-learn
   - Interpret cluster centers and assignments
   - Distinguish between supervised and unsupervised learning
 Keywords: K-Means, clustering, elbow method, silhouette score, inertia, unsupervised learning
-Difficulty: Intermediate
+Difficulty: Intermedio
 Programming Concepts: sklearn.cluster.KMeans, sklearn.metrics.silhouette_score
 Mathematical Concepts: Euclidean distance, inertia, within-cluster sum of squares
 Machine Learning Concepts: unsupervised learning, clustering, centroid

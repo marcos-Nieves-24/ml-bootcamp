@@ -1,78 +1,78 @@
 ---
 Module: 1
 Lesson: 4
-Title: AI Paradigms
+Title: Paradigmas de IA
 ---
 
-# Assignment 4: Paradigm Selection Report
+# Tarea 4: Informe de Selección de Paradigma
 
-## Objectives
+## Objetivos
 
-- Apply AI paradigm knowledge to a real-world problem
-- Justify paradigm selection based on problem characteristics
-- Evaluate trade-offs between different approaches
-- Design a hybrid system combining multiple paradigms
+- Aplicar el conocimiento de paradigmas de IA a un problema del mundo real
+- Justificar la selección de paradigma basándose en las características del problema
+- Evaluar las ventajas y desventajas entre diferentes enfoques
+- Diseñar un sistema híbrido que combine múltiples paradigmas
 
-## Instructions
+## Instrucciones
 
-Choose a real-world problem from the list below (or propose your own):
+Elige un problema del mundo real de la siguiente lista (o propón uno propio):
 
-1. **Medical diagnosis from patient symptoms** (healthcare)
-2. **Fraud detection in credit card transactions** (finance)
-3. **Crop disease identification from leaf images** (agriculture)
-4. **Customer support ticket routing** (SaaS)
-5. **Drug-target interaction prediction** (biotechnology)
+1. **Diagnóstico médico a partir de síntomas del paciente** (salud)
+2. **Detección de fraude en transacciones con tarjeta de crédito** (finanzas)
+3. **Identificación de enfermedades de cultivos a partir de imágenes de hojas** (agricultura)
+4. **Enrutamiento de tickets de soporte al cliente** (SaaS)
+5. **Predicción de interacción fármaco-objetivo** (biotecnología)
 
-### Write a report (1000-1200 words) with:
+### Escribe un informe (1000-1200 palabras) con:
 
-**Section 1: Problem Definition (200 words)**
-- What is the problem?
-- What data is available (volume, type, quality)?
-- Who are the users? What are the requirements?
+**Sección 1: Definición del Problema (200 palabras)**
+- ¿Cuál es el problema?
+- ¿Qué datos están disponibles (volumen, tipo, calidad)?
+- ¿Quiénes son los usuarios? ¿Cuáles son los requisitos?
 
-**Section 2: Paradigm Analysis (400 words)**
-Analyze at least 3 paradigms for this problem:
-- How would each paradigm approach the problem?
-- What are the expected advantages and disadvantages?
-- Which paradigm do you recommend? Why?
+**Sección 2: Análisis de Paradigmas (400 palabras)**
+Analiza al menos 3 paradigmas para este problema:
+- ¿Cómo abordaría cada paradigma el problema?
+- ¿Cuáles son las ventajas y desventajas esperadas?
+- ¿Qué paradigma recomiendas? ¿Por qué?
 
-**Section 3: Hybrid Design (300 words)**
-Design a hybrid system that combines two paradigms:
-- What does each component do?
-- How do they interact?
-- What are the failure modes?
+**Sección 3: Diseño Híbrido (300 palabras)**
+Diseña un sistema híbrido que combine dos paradigmas:
+- ¿Qué hace cada componente?
+- ¿Cómo interactúan?
+- ¿Cuáles son los modos de fallo?
 
-**Section 4: Implementation Plan (200 words)**
-- What resources are needed?
-- What is the development timeline?
-- How will you evaluate success?
+**Sección 4: Plan de Implementación (200 palabras)**
+- ¿Qué recursos se necesitan?
+- ¿Cuál es el cronograma de desarrollo?
+- ¿Cómo evaluarás el éxito?
 
-## Deliverables
+## Entregables
 
-- PDF or Markdown document
-- 1000-1200 words
-- At least 3 cited references
-- Include a diagram of your hybrid system architecture
+- Documento en PDF o Markdown
+- 1000-1200 palabras
+- Al menos 3 referencias citadas
+- Incluye un diagrama de la arquitectura de tu sistema híbrido
 
-## Evaluation Rubric
+## Rúbrica de Evaluación
 
-| Criteria | Excellent (4) | Good (3) | Adequate (2) | Poor (1) |
+| Criterio | Excelente (4) | Bueno (3) | Adecuado (2) | Insuficiente (1) |
 |---|---|---|---|---|
-| **Paradigm Understanding** | Deep understanding shown for all paradigms | Good understanding | Some gaps | Fundamental errors |
-| **Problem Analysis** | Thorough analysis of problem requirements | Good analysis | Surface-level | Missing |
-| **Hybrid Design** | Creative, well-reasoned hybrid architecture | Good design | Basic design | No design |
-| **Justification** | Clear, evidence-based paradigm selection | Good justification | Weak justification | No justification |
-| **Writing & References** | Excellent writing, 3+ quality citations | Good | Adequate | Poor |
+| **Comprensión de Paradigmas** | Comprensión profunda de todos los paradigmas | Buena comprensión | Algunas lagunas | Errores fundamentales |
+| **Análisis del Problema** | Análisis exhaustivo de los requisitos | Buen análisis | Superficial | Ausente |
+| **Diseño Híbrido** | Arquitectura híbrida creativa y bien razonada | Buen diseño | Diseño básico | Sin diseño |
+| **Justificación** | Selección de paradigma clara y basada en evidencia | Buena justificación | Justificación débil | Sin justificación |
+| **Redacción y Referencias** | Excelente redacción, 3+ citas de calidad | Buena | Adecuada | Deficiente |
 
-## Estimated Time
+## Tiempo Estimado
 
-3-4 hours
+3-4 horas
 
-## Submission Deadline
+## Fecha de Entrega
 
-As specified by your instructor.
+Según lo especificado por tu instructor.
 
-## References
+## Referencias
 
 Russell, S., & Norvig, P. (2021). *Artificial intelligence: A modern approach* (4th ed.). Pearson.
 

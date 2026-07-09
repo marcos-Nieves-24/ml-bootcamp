@@ -5,13 +5,13 @@ Lesson Title: Case Studies in Health and SaaS
 Estimated Duration: 75 minutes
 Prerequisites: L1–L6
 Learning Objectives:
-  - Analyze real-world bias in healthcare algorithms using ethical principles
-  - Evaluate fairness in credit scoring and lending algorithms
+  - Analizar real-world bias in healthcare algorithms using ethical principles
+  - Evaluar fairness in credit scoring and lending algorithms
   - Design responsible SaaS analytics with privacy and transparency
-  - Apply bias detection and mitigation techniques to real datasets
+  - Aplicar bias detection and mitigation techniques to real datasets
   - Synthesize all Module 5 concepts in a comprehensive case analysis
 Keywords: case studies, healthcare bias, credit scoring, responsible AI, algorithmic fairness, ethical deployment
-Difficulty: Advanced
+Difficulty: Avanzado
 Programming Concepts: pandas, sklearn, data analysis
 Mathematical Concepts: Fairness metrics, statistical disparities
 Machine Learning Concepts: Classification, model evaluation

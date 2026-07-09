@@ -1,74 +1,74 @@
 ---
 Module: 1
 Lesson: 2
-Title: History of AI
+Title: Historia de la IA
 ---
 
-# Assignment 2: The AI Hype Cycle Report
+# Tarea 2: Informe sobre el Ciclo de Hype de la IA
 
-## Objectives
+## Objetivos
 
-- Analyze a specific period in AI history in depth
-- Evaluate the causes and consequences of AI winters and springs
-- Connect historical patterns to current AI developments
-- Practice research and source citation
+- Analizar un período específico de la historia de la IA en profundidad
+- Evaluar las causas y consecuencias de los inviernos y primaveras de la IA
+- Conectar patrones históricos con desarrollos actuales de la IA
+- Practicar investigación y citación de fuentes
 
-## Instructions
+## Instrucciones
 
-Choose **one** historical period from the list below:
+Elige **un** período histórico de la siguiente lista:
 
-1. **The Dartmouth Conference and its aftermath (1956–1965)**
-2. **The first AI Winter (1974–1980)**
-3. **The Expert Systems boom and bust (1980–1993)**
-4. **The Deep Learning revolution (2006–present)**
-5. **The rise of Large Language Models (2018–present)**
+1. **La Conferencia de Dartmouth y sus consecuencias (1956–1965)**
+2. **El primer Invierno de la IA (1974–1980)**
+3. **El auge y caída de los Sistemas Expertos (1980–1993)**
+4. **La revolución del Deep Learning (2006–presente)**
+5. **El auge de los Large Language Models (2018–presente)**
 
-### Write a report (800-1000 words) with the following sections:
+### Escribe un informe (800-1000 palabras) con las siguientes secciones:
 
-**Section 1: Context (200 words)**
-- What was the state of AI before this period?
-- What were the key technological, social, and economic factors?
+**Sección 1: Contexto (200 palabras)**
+- ¿Cuál era el estado de la IA antes de este período?
+- ¿Cuáles eran los factores tecnológicos, sociales y económicos clave?
 
-**Section 2: Events (300 words)**
-- What were the major milestones during this period?
-- Who were the key people and organizations involved?
-- What specific systems or breakthroughs were achieved?
+**Sección 2: Eventos (300 palabras)**
+- ¿Cuáles fueron los hitos principales durante este período?
+- ¿Quiénes fueron las personas y organizaciones clave involucradas?
+- ¿Qué sistemas o avances específicos se lograron?
 
-**Section 3: Analysis (300 words)**
-- Was this period a spring or a winter? Why?
-- What drove progress (or decline)?
-- What lessons can we learn?
+**Sección 3: Análisis (300 palabras)**
+- ¿Fue este período una primavera o un invierno? ¿Por qué?
+- ¿Qué impulsó el progreso (o el declive)?
+- ¿Qué lecciones podemos aprender?
 
-**Section 4: Modern Parallels (200 words)**
-- How does this historical period relate to current AI developments?
-- What warnings or inspirations does it offer?
+**Sección 4: Paralelismos Modernos (200 palabras)**
+- ¿Cómo se relaciona este período histórico con los desarrollos actuales de la IA?
+- ¿Qué advertencias o inspiraciones ofrece?
 
-## Deliverables
+## Entregables
 
-- PDF or Markdown document
-- 800-1000 words
-- At least 3 cited references (use APA 7 format)
-- Include a timeline figure for your chosen period
+- Documento en PDF o Markdown
+- 800-1000 palabras
+- Al menos 3 referencias citadas (usa formato APA 7)
+- Incluye una figura de línea de tiempo para el período elegido
 
-## Evaluation Rubric
+## Rúbrica de Evaluación
 
-| Criteria | Excellent (4) | Good (3) | Adequate (2) | Poor (1) |
+| Criterio | Excelente (4) | Bueno (3) | Adecuado (2) | Insuficiente (1) |
 |---|---|---|---|---|
-| **Historical Accuracy** | All facts correct, well-researched | Mostly accurate | Several errors | Major inaccuracies |
-| **Analysis Depth** | Deep causal analysis of events | Good analysis | Surface-level | No analysis |
-| **Modern Connections** | Insightful parallels to today | Good connections | Weak connections | No connections |
-| **Writing Quality** | Clear, organized, professional | Good writing | Adequate | Poor |
-| **References** | 3+ quality sources, correct APA | 3 sources | 2 sources | 1 or fewer |
+| **Precisión Histórica** | Todos los datos correctos, bien investigados | Mayormente preciso | Varios errores | Imprecisiones graves |
+| **Profundidad del Análisis** | Análisis causal profundo de los eventos | Buen análisis | Superficial | Sin análisis |
+| **Conexiones Modernas** | Paralelismos profundos con la actualidad | Buenas conexiones | Conexiones débiles | Sin conexiones |
+| **Calidad de Redacción** | Clara, organizada, profesional | Buena redacción | Adecuada | Deficiente |
+| **Referencias** | 3+ fuentes de calidad, APA correcto | 3 fuentes | 2 fuentes | 1 o menos |
 
-## Estimated Time
+## Tiempo Estimado
 
-2-3 hours
+2-3 horas
 
-## Submission Deadline
+## Fecha de Entrega
 
-As specified by your instructor.
+Según lo especificado por tu instructor.
 
-## References
+## Referencias
 
 Russell, S., & Norvig, P. (2021). *Artificial intelligence: A modern approach* (4th ed.). Pearson.
 

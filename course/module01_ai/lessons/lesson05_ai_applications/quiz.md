@@ -1,69 +1,69 @@
 ---
 Module: 1
 Lesson: 5
-Title: AI Applications
+Title: Aplicaciones de la IA
 ---
 
-# Quiz: AI Applications
+# Cuestionario: Aplicaciones de la IA
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 preguntas)
 
-**1. Which AI architecture is most commonly used for Computer Vision tasks?**
+**1. ¿Qué arquitectura de IA se usa más comúnmente para tareas de Visión por Computadora?**
 
 a) Transformer
-b) Convolutional Neural Network (CNN)
-c) Recurrent Neural Network (RNN)
-d) Decision Tree
+b) Red Neuronal Convolucional (CNN)
+c) Red Neuronal Recurrente (RNN)
+d) Árbol de Decisión
 
-**2. What is collaborative filtering in recommendation systems?**
+**2. ¿Qué es el filtrado colaborativo en los sistemas de recomendación?**
 
-a) Recommending items with similar features to past preferences
-b) Recommending items based on what similar users liked
-c) Filtering out low-quality items collaboratively
-d) Using human experts to curate recommendations
+a) Recomendar elementos con características similares a preferencias pasadas
+b) Recomendar elementos basándose en lo que les gustó a usuarios similares
+c) Filtrar elementos de baja calidad de forma colaborativa
+d) Usar expertos humanos para seleccionar recomendaciones
 
-**3. Which of the following is a task in Natural Language Processing?**
+**3. ¿Cuál de las siguientes es una tarea del Procesamiento de Lenguaje Natural?**
 
-a) Image segmentation
-b) Object tracking
-c) Named Entity Recognition
-d) Path planning
+a) Segmentación de imágenes
+b) Seguimiento de objetos
+c) Reconocimiento de Entidades Nombradas
+d) Planificación de rutas
 
-**4. What technology powers modern image generation systems like DALL-E and Stable Diffusion?**
+**4. ¿Qué tecnología impulsa los sistemas modernos de generación de imágenes como DALL-E y Stable Diffusion?**
 
-a) Recurrent Neural Networks
-b) Diffusion Models
-c) Support Vector Machines
-d) Decision Trees
+a) Redes Neuronales Recurrentes
+b) Modelos de Difusión
+c) Máquinas de Vectores de Soporte
+d) Árboles de Decisión
 
-**5. Which problem occurs when a recommendation system encounters a new user with no history?**
+**5. ¿Qué problema ocurre cuando un sistema de recomendación encuentra un nuevo usuario sin historial?**
 
-a) Overfitting problem
-b) Cold start problem
-c) Vanishing gradient problem
-d) Black swan problem
+a) Problema de sobreajuste
+b) Problema de arranque en frío
+c) Problema de gradiente desvaneciente
+d) Problema del cisne negro
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 preguntas)
 
-**6. Explain the difference between object detection and image classification.**
+**6. Explica la diferencia entre detección de objetos y clasificación de imágenes.**
 
-**7. Give one real-world example of Generative AI in a SaaS product. What does it generate and how is it used?**
+**7. Da un ejemplo real de IA Generativa en un producto SaaS. ¿Qué genera y cómo se usa?**
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 pregunta)
 
-**8.** Write a Python function `identify_application(task_description)` that takes a task description and returns which AI application area it belongs to ('computer_vision', 'nlp', 'robotics', 'recommendation', 'generative'). Use keyword matching.
+**8.** Escribe una función en Python `identify_application(task_description)` que reciba una descripción de tarea y devuelva a qué área de aplicación de IA pertenece ('computer_vision', 'nlp', 'robotics', 'recommendation', 'generative'). Usa coincidencia de palabras clave.
 
 ---
 
-## Answer Key
+## Clave de Respuestas
 
-1. **b)** Convolutional Neural Network (CNN)
-2. **b)** Recommending items based on what similar users liked
-3. **c)** Named Entity Recognition
-4. **b)** Diffusion Models
-5. **b)** Cold start problem
-6. Image classification assigns a single label to the entire image ("this is a cat"). Object detection identifies and locates multiple objects in an image with bounding boxes ("there is a cat at position (10, 20, 100, 150) and a dog at (200, 50, 300, 200)").
-7. Example: GitHub Copilot generates code as the developer types. It uses Generative AI (LLM) to suggest completions, function implementations, and even entire functions based on context and comments.
+1. **b)** Red Neuronal Convolucional (CNN)
+2. **b)** Recomendar elementos basándose en lo que les gustó a usuarios similares
+3. **c)** Reconocimiento de Entidades Nombradas
+4. **b)** Modelos de Difusión
+5. **b)** Problema de arranque en frío
+6. La clasificación de imágenes asigna una sola etiqueta a toda la imagen ("esto es un gato"). La detección de objetos identifica y localiza múltiples objetos en una imagen con cajas delimitadoras ("hay un gato en la posición (10, 20, 100, 150) y un perro en (200, 50, 300, 200)").
+7. Ejemplo: GitHub Copilot genera código mientras el desarrollador escribe. Usa IA Generativa (LLM) para sugerir completaciones, implementaciones de funciones e incluso funciones completas basándose en el contexto y los comentarios.
 8. 
 ```python
 def identify_application(task_description):

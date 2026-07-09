@@ -1,16 +1,16 @@
 ---
 Module: 1
 Lesson Number: 3
-Lesson Title: Types of AI
+Lesson Title: Tipos de IA
 Estimated Duration: 45 minutes
-Prerequisites: Lesson 1 — What is Artificial Intelligence?
+Prerequisites: Lección 1 — ¿Qué es la Inteligencia Artificial?
 Learning Objectives:
-  - Distinguish between Narrow AI, General AI, and Superintelligence
-  - Classify AI systems by functionality (reactive, limited memory, theory of mind, self-aware)
-  - Evaluate which type of AI current systems belong to
-  - Explain why General AI remains an unsolved challenge
-  - Identify examples of each AI type in real-world applications
-Keywords: Narrow AI, Artificial General Intelligence, Superintelligence, reactive machines, limited memory, theory of mind, self-aware AI, strong AI, weak AI
+  - Distinguir entre IA Estrecha, IA General y Superinteligencia
+  - Clasificar sistemas de IA por funcionalidad (reactivos, memoria limitada, teoría de la mente, autoconscientes)
+  - Evaluar a qué tipo de IA pertenecen los sistemas actuales
+  - Explicar por qué la IA General sigue siendo un desafío no resuelto
+  - Identificar ejemplos de cada tipo de IA en aplicaciones del mundo real
+Keywords: IA Estrecha, Inteligencia Artificial General, Superinteligencia, máquinas reactivas, memoria limitada, teoría de la mente, IA autoconsciente, IA fuerte, IA débil
 Difficulty: Beginner
 Programming Concepts: None
 Mathematical Concepts: None
@@ -21,231 +21,231 @@ Assignment: assignment.md
 Quiz: quiz.md
 ---
 
-# Lesson 3: Types of AI
+# Lección 3: Tipos de IA
 
-## Lesson Motivation
+## Motivación de la Lección
 
-Not all AI is created equal. When you hear news about AI, it is crucial to understand what kind of AI is being discussed. Is it a narrow system that can only play chess? Is it a general system that could one day replace human workers? Or is it science fiction? This lesson gives you the framework to classify any AI system and evaluate claims critically — a skill every professional needs in the age of AI.
+No toda la IA es igual. Cuando escuchas noticias sobre IA, es crucial entender de qué tipo de IA se está hablando. ¿Es un sistema estrecho que solo puede jugar al ajedrez? ¿Es un sistema general que podría algún día reemplazar a trabajadores humanos? ¿O es ciencia ficción? Esta lección te da el marco para clasificar cualquier sistema de IA y evaluar afirmaciones críticamente — una habilidad que todo profesional necesita en la era de la IA.
 
-## Big Picture
+## Panorama General
 
-Lesson 1 defined AI and intelligent agents. Lesson 2 showed how the field developed over time. Now we categorize AI systems by capability and functionality. This classification framework will help you understand Lesson 4 (AI Paradigms) — different approaches work better for different types of AI. Lesson 5 will then show real applications of these types.
+La Lección 1 definió IA y agentes inteligentes. La Lección 2 mostró cómo se desarrolló el campo a lo largo del tiempo. Ahora categorizamos los sistemas de IA por capacidad y funcionalidad. Este marco de clasificación te ayudará a entender la Lección 4 (Paradigmas de IA) — diferentes enfoques funcionan mejor para diferentes tipos de IA. La Lección 5 mostrará aplicaciones reales de estos tipos.
 
 ```
-Lesson 2 (History) → Lesson 3 (Types of AI) → Lesson 4 (Paradigms) → Lesson 5 (Applications)
+Lección 2 (Historia) → Lección 3 (Tipos de IA) → Lección 4 (Paradigmas) → Lección 5 (Aplicaciones)
 ```
 
-## Theory
+## Teoría
 
-### Classification by Capability
+### Clasificación por Capacidad
 
-#### Narrow AI (Weak AI)
+#### IA Estrecha (IA Débil)
 
-**Definition**: AI systems designed to perform one specific task or a narrow range of tasks.
+**Definición**: Sistemas de IA diseñados para realizar una tarea específica o un rango estrecho de tareas.
 
-**Intuition**: Narrow AI is like a specialist — brilliant at one thing, useless at everything else.
+**Intuición**: La IA Estrecha es como un especialista — brillante en una cosa, inútil en todo lo demás.
 
-**Formal explanation**: A narrow AI system operates within a constrained domain. It cannot generalize its knowledge to tasks outside its training. All current AI systems — no matter how impressive — are Narrow AI.
+**Explicación formal**: Un sistema de IA estrecha opera dentro de un dominio limitado. No puede generalizar su conocimiento a tareas fuera de su entrenamiento. Todos los sistemas de IA actuales — por impresionantes que sean — son IA Estrecha.
 
-**Examples**:
-- Chess engines (Deep Blue)
-- Image recognition (facial recognition on your phone)
-- Language models (ChatGPT, Claude)
-- Recommendation systems (Netflix, Spotify)
-- Self-driving cars (still narrow — they cannot have a conversation)
+**Ejemplos**:
+- Motores de ajedrez (Deep Blue)
+- Reconocimiento de imágenes (reconocimiento facial en tu teléfono)
+- Modelos de lenguaje (ChatGPT, Claude)
+- Sistemas de recomendación (Netflix, Spotify)
+- Autos autónomos (siguen siendo estrechos — no pueden mantener una conversación)
 
-**Key limitation**: No generalization across domains. A chess AI cannot learn to drive. A language model cannot play chess.
+**Limitación clave**: Sin generalización entre dominios. Una IA de ajedrez no puede aprender a conducir. Un modelo de lenguaje no puede jugar al ajedrez.
 
-#### Artificial General Intelligence (AGI / Strong AI)
+#### Inteligencia Artificial General (AGI / IA Fuerte)
 
-**Definition**: A hypothetical AI system with human-level intelligence across all cognitive tasks.
+**Definición**: Un sistema hipotético de IA con inteligencia a nivel humano en todas las tareas cognitivas.
 
-**Intuition**: AGI would be like a human — able to learn any intellectual task, reason across domains, adapt to new situations, and understand context.
+**Intuición**: AGI sería como un humano — capaz de aprender cualquier tarea intelectual, razonar entre dominios, adaptarse a nuevas situaciones y entender el contexto.
 
-**Formal explanation**: AGI would match or exceed human performance on virtually any cognitive task. It would possess:
-- **Transfer learning**: Apply knowledge from one domain to another
-- **Common sense reasoning**: Understand everyday physics and social norms
-- **Metacognition**: Reflect on its own thinking process
-- **Generalization**: Learn new tasks with few examples
+**Explicación formal**: AGI igualaría o superaría el rendimiento humano en prácticamente cualquier tarea cognitiva. Poseería:
+- **Transfer learning**: Aplicar conocimiento de un dominio a otro
+- **Razonamiento de sentido común**: Entender la física cotidiana y las normas sociales
+- **Metacognición**: Reflexionar sobre su propio proceso de pensamiento
+- **Generalización**: Aprender nuevas tareas con pocos ejemplos
 
-**Current status**: AGI does not exist. Estimates for when AGI might arrive range from 5 years to never.
+**Estado actual**: AGI no existe. Las estimaciones de cuándo podría llegar AGI van de 5 años a nunca.
 
-**Why AGI is hard**:
-- **Fragile knowledge**: AI lacks common sense
-- **Brittle to distribution shift**: AI fails when the test data differs from training data
-- **No causal understanding**: AI learns correlations, not causes
-- **No true language comprehension**: LLMs manipulate language statistically without understanding
+**Por qué AGI es difícil**:
+- **Conocimiento frágil**: La IA carece de sentido común
+- **Vulnerable a cambios de distribución**: La IA falla cuando los datos de prueba difieren de los de entrenamiento
+- **Sin comprensión causal**: La IA aprende correlaciones, no causas
+- **Sin comprensión real del lenguaje**: Los LLMs manipulan el lenguaje estadísticamente sin entenderlo
 
-#### Artificial Superintelligence (ASI)
+#### Superinteligencia Artificial (ASI)
 
-**Definition**: A hypothetical AI that vastly exceeds human intelligence across all domains.
+**Definición**: Una IA hipotética que supera vastamente la inteligencia humana en todos los dominios.
 
-**Intuition**: ASI would be to humans as humans are to ants — incomprehensibly superior.
+**Intuición**: ASI sería para los humanos lo que los humanos son para las hormigas — incomprensiblemente superior.
 
-**Formal explanation**: ASI would surpass the best human minds in creativity, problem-solving, social skills, and scientific discovery. It could potentially:
-- Solve problems humans cannot even formulate
-- Make scientific breakthroughs at superhuman speed
-- Design better AI systems recursively (intelligence explosion)
+**Explicación formal**: ASI superaría a las mejores mentes humanas en creatividad, resolución de problemas, habilidades sociales y descubrimiento científico. Potencialmente podría:
+- Resolver problemas que los humanos ni siquiera pueden formular
+- Hacer avances científicos a velocidad sobrehumana
+- Diseñar mejores sistemas de IA recursivamente (explosión de inteligencia)
 
-**Current status**: Entirely hypothetical. This concept is central to discussions of AI safety and existential risk.
+**Estado actual**: Completamente hipotético. Este concepto es central en las discusiones sobre seguridad de la IA y riesgo existencial.
 
-**Key debate**: Would ASI be benevolent, neutral, or dangerous? This is the subject of intense debate (Bostrom, 2014; Russell, 2019).
+**Debate clave**: ¿Sería ASI benévola, neutral o peligrosa? Este es el tema de un intenso debate (Bostrom, 2014; Russell, 2019).
 
-### Classification by Functionality
+### Clasificación por Funcionalidad
 
-This taxonomy comes from Arend Hintze (2016) and categorizes AI by what it can do:
+Esta taxonomía proviene de Arend Hintze (2016) y categoriza la IA por lo que puede hacer:
 
-#### Type 1: Reactive Machines
+#### Tipo 1: Máquinas Reactivas
 
-**Definition**: AI systems that cannot form memories or use past experiences to inform current decisions.
+**Definición**: Sistemas de IA que no pueden formar recuerdos ni usar experiencias pasadas para informar decisiones actuales.
 
-**Intuition**: They see the world as it is now and react to it, with no concept of past or future.
+**Intuición**: Ven el mundo tal como es ahora y reaccionan a él, sin concepto de pasado o futuro.
 
-**Characteristics**:
-- No memory
-- No learning from experience
-- Purely reactive to current input
+**Características**:
+- Sin memoria
+- Sin aprendizaje de la experiencia
+- Puramente reactivo a la entrada actual
 
-**Example**: Deep Blue (IBM's chess computer). It evaluated the current board position and selected the best move without remembering past games.
+**Ejemplo**: Deep Blue (la computadora de ajedrez de IBM). Evaluaba la posición actual del tablero y seleccionaba el mejor movimiento sin recordar partidas pasadas.
 
-#### Type 2: Limited Memory
+#### Tipo 2: Memoria Limitada
 
-**Definition**: AI systems that can use recent past information to inform decisions.
+**Definición**: Sistemas de IA que pueden usar información reciente del pasado para informar decisiones.
 
-**Intuition**: They have a short-term memory — like driving a car where you remember the last few seconds of traffic.
+**Intuición**: Tienen una memoria a corto plazo — como conducir un auto donde recuerdas los últimos segundos del tráfico.
 
-**Characteristics**:
-- Can use historical data for a limited time window
-- Can learn from training data (but static after deployment)
-- All modern ML systems fall into this category
+**Características**:
+- Pueden usar datos históricos en una ventana de tiempo limitada
+- Pueden aprender de datos de entrenamiento (pero son estáticos después del despliegue)
+- Todos los sistemas modernos de ML caen en esta categoría
 
-**Example**: Self-driving cars. They observe the speed and trajectory of nearby cars from the last few seconds and use this to predict future positions.
+**Ejemplo**: Autos autónomos. Observan la velocidad y trayectoria de los autos cercanos de los últimos segundos y los usan para predecir posiciones futuras.
 
-#### Type 3: Theory of Mind
+#### Tipo 3: Teoría de la Mente
 
-**Definition**: A hypothetical AI system that understands that others have beliefs, desires, and intentions.
+**Definición**: Un sistema hipotético de IA que entiende que otros tienen creencias, deseos e intenciones.
 
-**Intuition**: Humans naturally understand that other people have minds. Theory of Mind AI would attribute mental states to others.
+**Intuición**: Los humanos entienden naturalmente que otras personas tienen mentes. La IA con Teoría de la Mente atribuiría estados mentales a otros.
 
-**Characteristics**:
-- Understands beliefs and intentions of others
-- Can predict how others will behave
-- Can engage in sophisticated social interaction
+**Características**:
+- Entiende creencias e intenciones de otros
+- Puede predecir cómo se comportarán otros
+- Puede participar en interacciones sociales sofisticadas
 
-**Current status**: Does not exist in AI. Children develop theory of mind around age 4.
+**Estado actual**: No existe en IA. Los niños desarrollan la teoría de la mente alrededor de los 4 años.
 
-#### Type 4: Self-Aware
+#### Tipo 4: Autoconsciente
 
-**Definition**: A hypothetical AI system with consciousness and self-awareness.
+**Definición**: Un sistema hipotético de IA con conciencia y autoconciencia.
 
-**Intuition**: Would not only understand others' minds but be aware of its own existence.
+**Intuición**: No solo entendería las mentes de otros sino que sería consciente de su propia existencia.
 
-**Characteristics**:
-- Consciousness
-- Self-awareness
-- Emotions
-- Sense of identity
+**Características**:
+- Conciencia
+- Autoconciencia
+- Emociones
+- Sentido de identidad
 
-**Current status**: Does not exist. May never exist. This is the realm of philosophy and science fiction.
+**Estado actual**: No existe. Puede que nunca exista. Este es el ámbito de la filosofía y la ciencia ficción.
 
-## Visual Explanation
+## Explicación Visual
 
-**Figure 3.1**: The AI capability pyramid.
+**Figura 3.1**: La pirámide de capacidades de la IA.
 
-A pyramid diagram with Narrow AI at the bottom (broad base, labeled "all current AI"), AGI in the middle (labeled "future goal"), and ASI at the top (labeled "hypothetical"). Each level is annotated with capabilities and examples.
+Un diagrama de pirámide con IA Estrecha en la base (base amplia, etiquetada "toda la IA actual"), AGI en el medio (etiquetada "objetivo futuro") y ASI en la cima (etiquetada "hipotética"). Cada nivel está anotado con capacidades y ejemplos.
 
-**Figure 3.2**: The four types of AI by functionality.
+**Figura 3.2**: Los cuatro tipos de IA por funcionalidad.
 
-A 2×2 grid or a progression diagram showing: Reactive Machines → Limited Memory → Theory of Mind → Self-Aware. The first two are shaded (exist today), the last two are outlined (do not exist).
+Una cuadrícula de 2×2 o un diagrama de progresión que muestra: Máquinas Reactivas → Memoria Limitada → Teoría de la Mente → Autoconsciente. Los dos primeros están sombreados (existen hoy), los dos últimos están delineados (no existen).
 
-## Python Implementation
+## Implementación en Python
 
-No Python implementation is required for the core concepts. The notebook will include a classification exercise.
+No se requiere implementación en Python para los conceptos centrales. El notebook incluirá un ejercicio de clasificación.
 
-## Biotechnology Example
+## Ejemplo en Biotecnología
 
-**Narrow AI in biotech**: AlphaFold predicts protein structures — one task, done brilliantly. It cannot diagnose diseases or design drugs, though it can be a component in those pipelines.
+**IA Estrecha en biotech**: AlphaFold predice estructuras de proteínas — una tarea, hecha brillantemente. No puede diagnosticar enfermedades ni diseñar fármacos, aunque puede ser un componente en esos pipelines.
 
-**Potential AGI in biotech**: Would integrate genomics, proteomics, clinical data, and literature to autonomously discover new drugs, design clinical trials, and personalize treatments.
+**AGI potencial en biotech**: Integraría genómica, proteómica, datos clínicos y literatura para descubrir nuevos fármacos de forma autónoma, diseñar ensayos clínicos y personalizar tratamientos.
 
-**Current reality**: We use a collection of narrow AI systems (one for gene sequencing, one for protein structure, one for patient matching) assembled by humans into a pipeline.
+**Realidad actual**: Usamos una colección de sistemas de IA estrecha (uno para secuenciación genética, otro para estructura de proteínas, otro para emparejamiento de pacientes) ensamblados por humanos en un pipeline.
 
-## SaaS Example
+## Ejemplo en SaaS
 
-**Narrow AI in SaaS**: A customer churn prediction model that works only on that company's data. It cannot do marketing analytics or product recommendations.
+**IA Estrecha en SaaS**: Un modelo de predicción de abandono de clientes que funciona solo con los datos de esa empresa. No puede hacer análisis de marketing ni recomendaciones de productos.
 
-**Multi-agent systems**: Modern SaaS platforms combine multiple narrow AIs. For example, a marketing platform might use:
-- One model for customer segmentation (narrow)
-- One model for churn prediction (narrow)
-- One for recommendation (narrow)
+**Sistemas multi-agente**: Las plataformas SaaS modernas combinan múltiples IAs estrechas. Por ejemplo, una plataforma de marketing podría usar:
+- Un modelo para segmentación de clientes (estrecho)
+- Un modelo para predicción de abandono (estrecho)
+- Uno para recomendaciones (estrecho)
 
-Each is Narrow AI. Together they form a powerful system, but there is no general intelligence coordinating them.
+Cada uno es IA Estrecha. Juntos forman un sistema potente, pero no hay inteligencia general coordinándolos.
 
-## Common Mistakes
+## Errores Comunes
 
-1. **Calling ChatGPT "AGI"**: Despite impressive capabilities, LLMs are still Narrow AI. They cannot reason causally, lack common sense, and fail on simple tasks outside their training distribution.
-2. **Assuming AGI is just a bigger version of current AI**: AGI likely requires fundamentally different architectures, not just scaling.
-3. **Confusing "narrow" with "simple"**: Narrow AI can be extremely complex (e.g., AlphaFold, GPT-4).
-4. **Thinking AI is on a straight path to AGI**: The current paradigm (deep learning) may hit fundamental limitations.
-5. **Anthropomorphizing AI systems**: Current AI systems have no beliefs, desires, or consciousness — they simulate these convincingly.
+1. **Llamar "AGI" a ChatGPT**: A pesar de sus capacidades impresionantes, los LLMs siguen siendo IA Estrecha. No pueden razonar causalmente, carecen de sentido común y fallan en tareas simples fuera de su distribución de entrenamiento.
+2. **Asumir que AGI es solo una versión más grande de la IA actual**: AGI probablemente requiere arquitecturas fundamentalmente diferentes, no solo escalar.
+3. **Confundir "estrecho" con "simple"**: La IA Estrecha puede ser extremadamente compleja (ej., AlphaFold, GPT-4).
+4. **Pensar que la IA está en un camino recto hacia AGI**: El paradigma actual (deep learning) podría encontrar limitaciones fundamentales.
+5. **Antropomorfizar los sistemas de IA**: Los sistemas actuales de IA no tienen creencias, deseos ni conciencia — los simulan de manera convincente.
 
-## Best Practices
+## Buenas Prácticas
 
-1. **Be precise about AI types**: When discussing AI, specify whether it is Narrow AI, AGI, or theoretical.
-2. **Use the functionality taxonomy**: Classify systems as reactive or limited memory to understand their capabilities.
-3. **Manage expectations**: For business applications, assume Narrow AI (since that is all we have).
-4. **Design for narrow scope**: Successful AI systems solve well-defined problems, not general ones.
-5. **Stay informed on AGI progress**: The field is evolving, but remain skeptical of bold claims.
+1. **Sé preciso sobre los tipos de IA**: Al discutir IA, especifica si es IA Estrecha, AGI o teórica.
+2. **Usa la taxonomía de funcionalidad**: Clasifica los sistemas como reactivos o de memoria limitada para entender sus capacidades.
+3. **Gestiona las expectativas**: Para aplicaciones empresariales, asume IA Estrecha (ya que es todo lo que tenemos).
+4. **Diseña para alcance estrecho**: Los sistemas de IA exitosos resuelven problemas bien definidos, no generales.
+5. **Mantente informado sobre el progreso de AGI**: El campo está evolucionando, pero mantén escepticismo ante afirmaciones audaces.
 
-## Summary
+## Resumen
 
-- All current AI is **Narrow AI** — excellent at specific tasks, useless at others
-- **AGI** (human-level general intelligence) does not exist yet
-- **Superintelligence** is hypothetical and raises important safety questions
-- By functionality: Reactive Machines → Limited Memory (both exist) → Theory of Mind → Self-Aware (neither exists)
-- Understanding these categories helps evaluate AI claims critically
-- Narrow AI is powerful and useful — do not underestimate it just because it is not AGI
+- Toda la IA actual es **IA Estrecha** — excelente en tareas específicas, inútil en otras
+- **AGI** (inteligencia general a nivel humano) aún no existe
+- La **Superinteligencia** es hipotética y plantea importantes preguntas de seguridad
+- Por funcionalidad: Máquinas Reactivas → Memoria Limitada (ambas existen) → Teoría de la Mente → Autoconsciente (ninguna existe)
+- Entender estas categorías ayuda a evaluar afirmaciones sobre IA críticamente
+- La IA Estrecha es poderosa y útil — no la subestimes solo porque no es AGI
 
-## Key Terms
+## Términos Clave
 
-| Term | Definition |
+| Término | Definición |
 |---|---|
-| **Narrow AI** | AI systems designed for specific tasks; all current AI |
-| **Artificial General Intelligence (AGI)** | Hypothetical AI with human-level ability across all cognitive tasks |
-| **Superintelligence** | Hypothetical AI vastly exceeding human intelligence |
-| **Reactive Machine** | AI with no memory, purely reactive to current input |
-| **Limited Memory** | AI that can use recent historical data for decisions |
-| **Theory of Mind** | Hypothetical AI that understands others' mental states |
-| **Self-Aware AI** | Hypothetical AI with consciousness |
-| **Strong AI** | Another term for AGI |
-| **Weak AI** | Another term for Narrow AI |
-| **Generalization** | The ability to apply learned knowledge to new situations |
+| **IA Estrecha** | Sistemas de IA diseñados para tareas específicas; toda la IA actual |
+| **Inteligencia Artificial General (AGI)** | IA hipotética con capacidad a nivel humano en todas las tareas cognitivas |
+| **Superinteligencia** | IA hipotética que supera vastamente la inteligencia humana |
+| **Máquina Reactiva** | IA sin memoria, puramente reactiva a la entrada actual |
+| **Memoria Limitada** | IA que puede usar datos históricos recientes para decisiones |
+| **Teoría de la Mente** | IA hipotética que entiende los estados mentales de otros |
+| **IA Autoconsciente** | IA hipotética con conciencia |
+| **IA Fuerte** | Otro término para AGI |
+| **IA Débil** | Otro término para IA Estrecha |
+| **Generalización** | La capacidad de aplicar conocimiento aprendido a nuevas situaciones |
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic Understanding
+### Nivel 1: Comprensión Básica
 
-1. What are the three types of AI by capability? Which one includes all current AI systems?
-2. Name the four types of AI by functionality. Which two exist today?
-3. Give one example of a reactive machine and one example of a limited memory AI.
+1. ¿Cuáles son los tres tipos de IA por capacidad? ¿Cuál incluye todos los sistemas de IA actuales?
+2. Nombra los cuatro tipos de IA por funcionalidad. ¿Cuáles dos existen hoy?
+3. Da un ejemplo de una máquina reactiva y un ejemplo de una IA de memoria limitada.
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
-4. Create a table comparing Narrow AI, AGI, and ASI across: capability, current status, examples, and risks.
-5. For each of the following systems, classify by both capability and functionality:
-   - (a) A thermostat
+4. Crea una tabla comparando IA Estrecha, AGI y ASI en: capacidad, estado actual, ejemplos y riesgos.
+5. Para cada uno de los siguientes sistemas, clasifícalos por capacidad y funcionalidad:
+   - (a) Un termostato
    - (b) Google Search
-   - (c) A self-driving car
+   - (c) Un auto autónomo
    - (d) ChatGPT
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
-6. "Large Language Models like GPT-4 exhibit behaviors that look like general intelligence, but they are still Narrow AI." Argue for or against this position using specific examples.
-7. What fundamental breakthroughs are needed to achieve AGI? Do you think the current deep learning approach can lead to AGI, or do we need a different paradigm?
+6. "Los Large Language Models como GPT-4 exhiben comportamientos que parecen inteligencia general, pero siguen siendo IA Estrecha". Argumenta a favor o en contra de esta posición usando ejemplos específicos.
+7. ¿Qué avances fundamentales se necesitan para lograr AGI? ¿Crees que el enfoque actual de deep learning puede llevar a AGI, o necesitamos un paradigma diferente?
 
-## Coding Challenge
+## Desafío de Programación
 
-Write a Python function `classify_ai(system_description)` that takes a text description of an AI system and classifies it by capability and functionality. Use keyword matching to implement a basic classifier:
+Escribe una función en Python `classify_ai(system_description)` que reciba una descripción textual de un sistema de IA y lo clasifique por capacidad y funcionalidad. Usa coincidencia de palabras clave para implementar un clasificador básico:
 
 ```python
 def classify_ai(description):
@@ -257,6 +257,6 @@ def classify_ai(description):
     pass
 ```
 
-For example:
+Por ejemplo:
 - "A chess engine that evaluates the current board" → (Narrow AI, Reactive Machine)
 - "A self-driving car that tracks nearby vehicles" → (Narrow AI, Limited Memory)

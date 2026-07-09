@@ -1,25 +1,25 @@
 ---
 Module: 2
 Lesson Number: 5
-Lesson Title: Operators
+Lesson Title: Operadores
 Estimated Duration: 45 minutes
 Prerequisites: L4 — Data Types
 Learning Objectives:
-  - Use arithmetic operators for numeric computation
-  - Use comparison operators to compare values
-  - Use logical operators to combine boolean expressions
-  - Use assignment operators to update variables
-  - Understand operator precedence
+  - Usar arithmetic operators for numeric computation
+  - Usar comparison operators to compare values
+  - Usar logical operators to combine boolean expressions
+  - Usar assignment operators to update variables
+  - Comprender operator precedence
 Keywords: arithmetic, comparison, logical, assignment, operator precedence
-Difficulty: Beginner
+Difficulty: Principiante
 Programming Concepts: Operators, expressions, operator precedence
-Datasets Used: None
+Datasets Used: Ninguno
 Notebook: notebook.ipynb
 Assignment: assignment.md
 Quiz: quiz.md
 ---
 
-# Operators
+# Operadores
 
 ## Motivation
 

@@ -1,17 +1,17 @@
 ---
 Module: 3
 Lesson Number: 1
-Lesson Title: Descriptive Statistics
+Lesson Title: Estadística Descriptiva
 Estimated Duration: 75 minutes
 Prerequisites: Module 2 (Python Programming Fundamentals)
 Learning Objectives:
-  - Explain the difference between measures of central tendency and measures of dispersion
+  - Explicar the difference between measures of central tendency and measures of dispersion
   - Calculate mean, median, mode, variance, standard deviation, range, and IQR using Python
   - Interpret descriptive statistics to summarize a dataset
   - Choose the appropriate measure of central tendency based on data distribution
-  - Identify outliers using the IQR method
+  - Identificar outliers using the IQR method
 Keywords: mean, median, mode, variance, standard deviation, range, IQR, boxplot, descriptive statistics
-Difficulty: Beginner
+Difficulty: Principiante
 Programming Concepts: numpy, pandas, matplotlib
 Mathematical Concepts: mean, variance, standard deviation, quartiles, percentiles
 Machine Learning Concepts: data summarization, feature understanding

@@ -5,16 +5,16 @@ Lesson Title: NumPy
 Estimated Duration: 90 minutes
 Prerequisites: L9-L12 — Lists, Tuples, Dictionaries, Sets
 Learning Objectives:
-  - Create NumPy arrays from Python lists and with built-in functions
+  - Crear NumPy arrays from Python lists and with built-in functions
   - Access and modify array elements using indexing and slicing
-  - Perform element-wise operations with universal functions
-  - Use broadcasting to perform operations on arrays of different shapes
-  - Perform basic linear algebra operations
+  - Realizar element-wise operations with universal functions
+  - Usar broadcasting to perform operations on arrays of different shapes
+  - Realizar basic linear algebra operations
 Keywords: NumPy, array, ndarray, broadcasting, universal function, linear algebra
 Difficulty: Beginner-Intermediate
 Programming Concepts: Array computing, vectorization, broadcasting, linear algebra
 Mathematical Concepts: Matrix operations, broadcasting, linear algebra
-Datasets Used: None
+Datasets Used: Ninguno
 Notebook: notebook.ipynb
 Assignment: assignment.md
 Quiz: quiz.md

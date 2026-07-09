@@ -1,69 +1,69 @@
 ---
 Module: 1
 Lesson: 7
-Title: AI in SaaS
+Title: IA en SaaS
 ---
 
-# Quiz: AI in SaaS
+# Cuestionario: IA en SaaS
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 preguntas)
 
-**1. What is customer churn in a SaaS context?**
+**1. ¿Qué es el abandono de clientes (churn) en el contexto SaaS?**
 
-a) When a customer complains about the product
-b) When a customer cancels their subscription
-c) When a customer upgrades their plan
-d) When a customer refers a new user
+a) Cuando un cliente se queja del producto
+b) Cuando un cliente cancela su suscripción
+c) Cuando un cliente mejora su plan
+d) Cuando un cliente recomienda a un nuevo usuario
 
-**2. Why is reducing churn by 5% often more valuable than acquiring 5% more customers?**
+**2. ¿Por qué reducir el abandono en un 5% suele ser más valioso que adquirir un 5% más de clientes?**
 
-a) Acquiring new customers costs 5-7x more than retaining existing ones
-b) New customers always pay less
-c) Churn reduction is easier than acquisition
-d) It increases stock price
+a) Adquirir nuevos clientes cuesta 5-7 veces más que retener los existentes
+b) Los nuevos clientes siempre pagan menos
+c) Reducir el abandono es más fácil que la adquisición
+d) Aumenta el precio de las acciones
 
-**3. Which metric is most appropriate for evaluating a churn prediction model when only 5% of customers churn?**
+**3. ¿Qué métrica es más apropiada para evaluar un modelo de predicción de abandono cuando solo el 5% de los clientes abandonan?**
 
-a) Accuracy (because it is simple)
-b) F1 Score (balances precision and recall for imbalanced data)
-c) Mean Absolute Error
-d) R-squared
+a) Exactitud (porque es simple)
+b) Puntuación F1 (equilibra precisión y exhaustividad para datos desbalanceados)
+c) Error Absoluto Medio
+d) R-cuadrado
 
-**4. What is Customer Lifetime Value (CLV)?**
+**4. ¿Qué es el Valor de Vida del Cliente (CLV)?**
 
-a) The total revenue a customer generates over their relationship with the company
-b) How long a customer has been subscribed
-c) The cost of acquiring a customer
-d) The monthly revenue per customer
+a) Los ingresos totales que un cliente genera durante su relación con la empresa
+b) Cuánto tiempo ha estado suscrito un cliente
+c) El costo de adquirir un cliente
+d) Los ingresos mensuales por cliente
 
-**5. Which of the following is NOT a typical feature for churn prediction?**
+**5. ¿Cuál de los siguientes NO es una característica típica para la predicción de abandono?**
 
-a) Login frequency
-b) Number of support tickets
-c) Customer's favorite color
-d) Days since last purchase
+a) Frecuencia de inicio de sesión
+b) Número de tickets de soporte
+c) Color favorito del cliente
+d) Días desde la última compra
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 preguntas)
 
-**6. Explain the difference between precision and recall in the context of churn prediction. Which one matters more for a SaaS company?**
+**6. Explica la diferencia entre precisión y exhaustividad (recall) en el contexto de la predicción de abandono. ¿Cuál es más importante para una empresa SaaS?**
 
-**7. What is the cold start problem in personalization and how can it be addressed?**
+**7. ¿Qué es el problema de arranque en frío en la personalización y cómo puede abordarse?**
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 pregunta)
 
-**8.** Write a function `churn_risk_segment(probability)` that takes a churn probability (0-1) and returns 'Low' if < 0.2, 'Medium' if 0.2-0.5, 'High' if > 0.5.
+**8.** Escribe una función `churn_risk_segment(probability)` que reciba una probabilidad de abandono (0-1) y devuelva 'Bajo' si < 0.2, 'Medio' si 0.2-0.5, 'Alto' si > 0.5.
 
 ---
 
-## Answer Key
+## Clave de Respuestas
 
-1. **b)** When a customer cancels their subscription
-2. **a)** Acquiring new customers costs 5-7x more than retaining existing ones
-3. **b)** F1 Score (balances precision and recall for imbalanced data)
-4. **a)** The total revenue a customer generates over their relationship with the company
-5. **c)** Customer's favorite color
-6. Precision = of all customers predicted to churn, how many actually churned. Recall = of all customers who actually churned, how many were correctly predicted. For SaaS, recall often matters more (we want to catch at-risk customers), but low precision wastes intervention resources. The trade-off depends on intervention cost vs. churn cost.
-7. The cold start problem occurs when a new user has no history, making personalization impossible. Solutions: (a) use demographic data for initial recommendations; (b) ask users about preferences during onboarding; (c) use popular/trending items as default; (d) use content-based features rather than collaborative filtering initially.
+1. **b)** Cuando un cliente cancela su suscripción
+2. **a)** Adquirir nuevos clientes cuesta 5-7 veces más que retener los existentes
+3. **b)** Puntuación F1 (equilibra precisión y exhaustividad para datos desbalanceados)
+4. **a)** Los ingresos totales que un cliente genera durante su relación con la empresa
+5. **c)** Color favorito del cliente
+6. Precisión = de todos los clientes predichos como abandono, cuántos realmente abandonaron. Exhaustividad = de todos los clientes que realmente abandonaron, cuántos fueron correctamente predichos. Para SaaS, la exhaustividad suele importar más (queremos detectar clientes en riesgo), pero una baja precisión desperdicia recursos de intervención. La compensación depende del costo de intervención vs. el costo del abandono.
+7. El problema de arranque en frío ocurre cuando un nuevo usuario no tiene historial, haciendo imposible la personalización. Soluciones: (a) usar datos demográficos para recomendaciones iniciales; (b) preguntar a los usuarios sobre preferencias durante la incorporación; (c) usar elementos populares/tendencia como predeterminados; (d) usar características basadas en contenido en lugar de filtrado colaborativo inicialmente.
 8. 
 ```python
 def churn_risk_segment(probability):

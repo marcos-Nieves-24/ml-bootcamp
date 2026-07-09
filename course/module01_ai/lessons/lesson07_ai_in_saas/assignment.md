@@ -1,83 +1,83 @@
 ---
 Module: 1
 Lesson: 7
-Title: AI in SaaS
+Title: IA en SaaS
 ---
 
-# Assignment 7: AI SaaS Solution Design
+# Tarea 7: Diseño de Solución SaaS con IA
 
-## Objectives
+## Objetivos
 
-- Design an AI-powered feature for a SaaS product
-- Apply all concepts from Module 1 to a practical business problem
-- Evaluate technical feasibility and business impact
-- Present a professional proposal
+- Diseñar una funcionalidad impulsada por IA para un producto SaaS
+- Aplicar todos los conceptos del Módulo 1 a un problema empresarial práctico
+- Evaluar la viabilidad técnica y el impacto empresarial
+- Presentar una propuesta profesional
 
-## Instructions
+## Instrucciones
 
-Choose one SaaS product from the list (or propose your own):
+Elige un producto SaaS de la lista (o propón uno propio):
 
-1. **Slack** — AI for team communication analytics
-2. **Notion** — AI for knowledge management and recommendations
-3. **Shopify** — AI for e-commerce personalization
-4. **Zoom** — AI for meeting analytics and productivity
-5. **Asana** — AI for project management optimization
-6. **Calendly** — AI for scheduling optimization
+1. **Slack** — IA para analítica de comunicación en equipo
+2. **Notion** — IA para gestión de conocimiento y recomendaciones
+3. **Shopify** — IA para personalización de comercio electrónico
+4. **Zoom** — IA para analítica de reuniones y productividad
+5. **Asana** — IA para optimización de gestión de proyectos
+6. **Calendly** — IA para optimización de programación
 
-### Write a proposal (1000-1200 words) with:
+### Escribe una propuesta (1000-1200 palabras) con:
 
-**Section 1: Problem Definition (200 words)**
-- What customer problem does the AI feature solve?
-- What is the current state (without AI)?
-- What metrics would improve?
+**Sección 1: Definición del Problema (200 palabras)**
+- ¿Qué problema del cliente resuelve la funcionalidad de IA?
+- ¿Cuál es el estado actual (sin IA)?
+- ¿Qué métricas mejorarían?
 
-**Section 2: AI Solution Design (300 words)**
-- What AI paradigm(s) would you use?
-- What data would you need?
-- What features would you engineer?
-- What model would you train?
+**Sección 2: Diseño de la Solución de IA (300 palabras)**
+- ¿Qué paradigma(s) de IA usarías?
+- ¿Qué datos necesitarías?
+- ¿Qué características crearías?
+- ¿Qué modelo entrenarías?
 
-**Section 3: Technical Implementation (250 words)**
-- How would you collect and process data?
-- How would you train and evaluate the model?
-- How would you deploy and monitor it?
+**Sección 3: Implementación Técnica (250 palabras)**
+- ¿Cómo recopilarías y procesarías los datos?
+- ¿Cómo entrenarías y evaluarías el modelo?
+- ¿Cómo lo desplegarías y monitorearías?
 
-**Section 4: Business Impact (250 words)**
-- What is the expected impact on key metrics?
-- How would you measure success?
-- What is the ROI estimate?
+**Sección 4: Impacto Empresarial (250 palabras)**
+- ¿Cuál es el impacto esperado en métricas clave?
+- ¿Cómo medirías el éxito?
+- ¿Cuál es la estimación del ROI?
 
-**Section 5: Risks and Mitigations (200 words)**
-- What could go wrong?
-- What ethical concerns exist?
-- How would you mitigate risks?
+**Sección 5: Riesgos y Mitigaciones (200 palabras)**
+- ¿Qué podría salir mal?
+- ¿Qué preocupaciones éticas existen?
+- ¿Cómo mitigarías los riesgos?
 
-## Deliverables
+## Entregables
 
-- PDF or Markdown document
-- 1000-1200 words
-- Include a system architecture diagram
-- Cite at least 3 references
+- Documento en PDF o Markdown
+- 1000-1200 palabras
+- Incluye un diagrama de arquitectura del sistema
+- Cita al menos 3 referencias
 
-## Evaluation Rubric
+## Rúbrica de Evaluación
 
-| Criteria | Excellent (4) | Good (3) | Adequate (2) | Poor (1) |
+| Criterio | Excelente (4) | Bueno (3) | Adecuado (2) | Insuficiente (1) |
 |---|---|---|---|---|
-| **Problem Understanding** | Deep understanding of SaaS and customer needs | Good understanding | Surface-level | Misunderstood |
-| **AI Solution Design** | Well-designed, appropriate AI approach | Good design | Basic design | Poor design |
-| **Technical Feasibility** | Realistic implementation plan | Feasible plan | Some gaps | Not feasible |
-| **Business Impact** | Clear, quantified business impact | Good analysis | Vague impact | No analysis |
-| **Writing & Presentation** | Professional, clear, persuasive | Good writing | Adequate | Poor |
+| **Comprensión del Problema** | Comprensión profunda de SaaS y necesidades del cliente | Buena comprensión | Superficial | Malinterpretado |
+| **Diseño de Solución de IA** | Enfoque de IA bien diseñado y apropiado | Buen diseño | Diseño básico | Diseño pobre |
+| **Viabilidad Técnica** | Plan de implementación realista | Plan factible | Algunas brechas | No factible |
+| **Impacto Empresarial** | Impacto empresarial claro y cuantificado | Buen análisis | Impacto vago | Sin análisis |
+| **Redacción y Presentación** | Profesional, clara, persuasiva | Buena redacción | Adecuada | Deficiente |
 
-## Estimated Time
+## Tiempo Estimado
 
-3-4 hours
+3-4 horas
 
-## Submission Deadline
+## Fecha de Entrega
 
-As specified by your instructor.
+Según lo especificado por tu instructor.
 
-## References
+## Referencias
 
 Russell, S., & Norvig, P. (2021). *Artificial intelligence: A modern approach* (4th ed.). Pearson.
 

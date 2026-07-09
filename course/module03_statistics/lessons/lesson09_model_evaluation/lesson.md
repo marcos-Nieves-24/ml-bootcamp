@@ -1,17 +1,17 @@
 ---
 Module: 3
 Lesson Number: 9
-Lesson Title: Model Evaluation
+Lesson Title: Evaluación de Modelos
 Estimated Duration: 75 minutes
 Prerequisites: Lesson 1 (Descriptive Statistics)
 Learning Objectives:
   - Split data into training and testing sets using train_test_split
-  - Implement k-fold cross-validation
+  - Implementar k-fold cross-validation
   - Compute and interpret MAE, MSE, RMSE, and R²
   - Choose appropriate evaluation metrics for regression problems
   - Diagnose overfitting using cross-validation
 Keywords: train-test split, cross-validation, MAE, MSE, RMSE, R², overfitting, sklearn.metrics
-Difficulty: Intermediate
+Difficulty: Intermedio
 Programming Concepts: sklearn.model_selection, sklearn.metrics, numpy, pandas
 Mathematical Concepts: mean absolute error, mean squared error, root mean squared error, coefficient of determination
 Machine Learning Concepts: model evaluation, overfitting, generalization, cross-validation

@@ -1,25 +1,25 @@
 ---
 Module: 2
 Lesson Number: 8
-Lesson Title: Conditionals
+Lesson Title: Condicionales
 Estimated Duration: 45 minutes
 Prerequisites: L6 — Functions
 Learning Objectives:
-  - Write if/elif/else conditional statements
-  - Evaluate boolean expressions with comparison and logical operators
-  - Use truthy and falsy values in conditions
-  - Write nested conditional statements
-  - Use conditional expressions (ternary operator)
+  - Escribir if/elif/else conditional statements
+  - Evaluar boolean expressions with comparison and logical operators
+  - Usar truthy and falsy values in conditions
+  - Escribir nested conditional statements
+  - Usar conditional expressions (ternary operator)
 Keywords: if, elif, else, boolean, truthy, falsy, conditional, ternary
-Difficulty: Beginner
+Difficulty: Principiante
 Programming Concepts: Control flow, boolean logic, conditional expressions
-Datasets Used: None
+Datasets Used: Ninguno
 Notebook: notebook.ipynb
 Assignment: assignment.md
 Quiz: quiz.md
 ---
 
-# Conditionals
+# Condicionales
 
 ## Motivation
 

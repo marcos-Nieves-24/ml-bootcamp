@@ -1,25 +1,25 @@
 ---
 Module: 2
 Lesson Number: 6
-Lesson Title: Functions
+Lesson Title: Funciones
 Estimated Duration: 60 minutes
 Prerequisites: L5 — Operators
 Learning Objectives:
-  - Define functions using the def keyword
+  - Definir functions using the def keyword
   - Pass arguments and return values from functions
   - Distinguish between local and global scope
-  - Create lambda (anonymous) functions
-  - Write docstrings following PEP 257
+  - Crear lambda (anonymous) functions
+  - Escribir docstrings following PEP 257
 Keywords: function, parameter, argument, return, scope, lambda, docstring
-Difficulty: Beginner
+Difficulty: Principiante
 Programming Concepts: Function definition, parameter passing, scope, lambda expressions, documentation
-Datasets Used: None
+Datasets Used: Ninguno
 Notebook: notebook.ipynb
 Assignment: assignment.md
 Quiz: quiz.md
 ---
 
-# Functions
+# Funciones
 
 ## Motivation
 

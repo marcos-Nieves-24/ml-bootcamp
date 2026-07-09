@@ -1,25 +1,25 @@
 ---
 Module: 2
 Lesson Number: 9
-Lesson Title: Lists
+Lesson Title: Listas
 Estimated Duration: 60 minutes
 Prerequisites: L7 — Loops, L8 — Conditionals
 Learning Objectives:
-  - Create lists with various data types
+  - Crear lists with various data types
   - Access elements using indexing and slicing
   - Modify lists using built-in methods
-  - Use list comprehensions for concise list creation
+  - Usar list comprehensions for concise list creation
   - Choose between lists and tuples based on use case
 Keywords: list, index, slice, append, list comprehension, mutable
-Difficulty: Beginner
+Difficulty: Principiante
 Programming Concepts: Sequence types, mutability, indexing, slicing, comprehensions
-Datasets Used: None
+Datasets Used: Ninguno
 Notebook: notebook.ipynb
 Assignment: assignment.md
 Quiz: quiz.md
 ---
 
-# Lists
+# Listas
 
 ## Motivation
 

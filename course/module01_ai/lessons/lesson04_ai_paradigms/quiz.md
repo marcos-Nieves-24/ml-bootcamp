@@ -1,72 +1,72 @@
 ---
 Module: 1
 Lesson: 4
-Title: AI Paradigms
+Title: Paradigmas de IA
 ---
 
-# Quiz: AI Paradigms
+# Cuestionario: Paradigmas de IA
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 preguntas)
 
-**1. Which of the following is NOT a component of an expert system?**
+**1. ¿Cuál de los siguientes NO es un componente de un sistema experto?**
 
-a) Knowledge Base
-b) Inference Engine
-c) Training Dataset
-d) User Interface
+a) Base de Conocimiento
+b) Motor de Inferencia
+c) Conjunto de Datos de Entrenamiento
+d) Interfaz de Usuario
 
-**2. What is the key advantage of Machine Learning over Rule-Based systems?**
+**2. ¿Cuál es la ventaja clave del Machine Learning sobre los sistemas Basados en Reglas?**
 
-a) ML is always more accurate
-b) ML can learn patterns from data without explicit programming
-c) ML does not require data
-d) ML is easier to interpret
+a) ML siempre es más preciso
+b) ML puede aprender patrones de datos sin programación explícita
+c) ML no requiere datos
+d) ML es más fácil de interpretar
 
-**3. What architecture forms the foundation of modern Large Language Models?**
+**3. ¿Qué arquitectura forma la base de los Large Language Models modernos?**
 
-a) Recurrent Neural Networks
-b) Convolutional Neural Networks
+a) Redes Neuronales Recurrentes
+b) Redes Neuronales Convolucionales
 c) Transformer
-d) Decision Trees
+d) Árboles de Decisión
 
-**4. In which scenario would a rule-based system be preferred over deep learning?**
+**4. ¿En qué escenario se preferiría un sistema basado en reglas sobre deep learning?**
 
-a) When you have millions of labeled images
-b) When the domain has clear, stable rules and interpretability is critical
-c) When you need to process natural language
-d) When you want maximum accuracy
+a) Cuando tienes millones de imágenes etiquetadas
+b) Cuando el dominio tiene reglas claras y estables y la interpretabilidad es crítica
+c) Cuando necesitas procesar lenguaje natural
+d) Cuando quieres máxima precisión
 
-**5. What does "deep" refer to in Deep Learning?**
+**5. ¿A qué se refiere "profundo" en Deep Learning?**
 
-a) The depth of understanding the model achieves
-b) The number of hidden layers in the neural network
-c) The amount of training data required
-d) The computational depth required for training
+a) La profundidad de comprensión que alcanza el modelo
+b) El número de capas ocultas en la red neuronal
+c) La cantidad de datos de entrenamiento requeridos
+d) La profundidad computacional requerida para el entrenamiento
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 preguntas)
 
-**6. Explain the knowledge acquisition bottleneck in expert systems.**
+**6. Explica el cuello de botella de adquisición de conocimiento en los sistemas expertos.**
 
-**7. You need to build a system to classify X-ray images as normal or abnormal. Which AI paradigm would you choose and why?**
+**7. Necesitas construir un sistema para clasificar imágenes de rayos X como normales o anormales. ¿Qué paradigma de IA elegirías y por qué?**
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 pregunta)
 
-**8.** Write a Python function `hybrid_decision(rules_result, ml_confidence, threshold=0.7)` that:
-- If `rules_result` is "definite", return it immediately
-- If `rules_result` is "uncertain" and `ml_confidence >= threshold`, return "positive"
-- If `rules_result` is "uncertain" and `ml_confidence < threshold`, return "negative"
+**8.** Escribe una función en Python `hybrid_decision(rules_result, ml_confidence, threshold=0.7)` que:
+- Si `rules_result` es "definite", devuélvelo inmediatamente
+- Si `rules_result` es "uncertain" y `ml_confidence >= threshold`, devuelve "positive"
+- Si `rules_result` es "uncertain" y `ml_confidence < threshold`, devuelve "negative"
 
 ---
 
-## Answer Key
+## Clave de Respuestas
 
-1. **c)** Training Dataset
-2. **b)** ML can learn patterns from data without explicit programming
+1. **c)** Conjunto de Datos de Entrenamiento
+2. **b)** ML puede aprender patrones de datos sin programación explícita
 3. **c)** Transformer
-4. **b)** When the domain has clear, stable rules and interpretability is critical
-5. **b)** The number of hidden layers in the neural network
-6. The knowledge acquisition bottleneck is the difficulty of extracting expert knowledge and encoding it into rules. Human experts are rare, expensive, and may not be able to articulate their knowledge explicitly. Rules also need constant updating as knowledge evolves.
-7. Deep learning (specifically convolutional neural networks) because: (a) X-ray images are high-dimensional data; (b) patterns indicating abnormalities are complex and hierarchical; (c) CNNs excel at image classification; (d) there are large datasets of labeled X-rays available.
+4. **b)** Cuando el dominio tiene reglas claras y estables y la interpretabilidad es crítica
+5. **b)** El número de capas ocultas en la red neuronal
+6. El cuello de botella de adquisición de conocimiento es la dificultad de extraer conocimiento experto y codificarlo en reglas. Los expertos humanos son escasos, costosos y pueden no ser capaces de articular su conocimiento explícitamente. Las reglas también necesitan actualización constante a medida que el conocimiento evoluciona.
+7. Deep learning (específicamente redes neuronales convolucionales) porque: (a) las imágenes de rayos X son datos de alta dimensión; (b) los patrones que indican anomalías son complejos y jerárquicos; (c) las CNN sobresalen en clasificación de imágenes; (d) hay grandes conjuntos de datos de rayos X etiquetados disponibles.
 8. 
 ```python
 def hybrid_decision(rules_result, ml_confidence, threshold=0.7):

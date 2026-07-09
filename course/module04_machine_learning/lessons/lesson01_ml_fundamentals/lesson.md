@@ -1,17 +1,17 @@
 ---
 Module: 4
 Lesson Number: 1
-Lesson Title: ML Fundamentals
+Lesson Title: Fundamentos de ML
 Estimated Duration: 75 minutes
 Prerequisites: Module 3 (Statistics for Machine Learning)
 Learning Objectives:
-  - Explain what Machine Learning is and how it differs from traditional programming
-  - Define features, labels, training, and prediction
+  - Explicar what Machine Learning is and how it differs from traditional programming
+  - Definir features, labels, training, and prediction
   - Distinguish between supervised and unsupervised learning
   - Diagnose overfitting and underfitting from learning curves
-  - Explain the bias-variance tradeoff with examples
+  - Explicar the bias-variance tradeoff with examples
 Keywords: supervised learning, unsupervised learning, features, labels, overfitting, underfitting, bias-variance tradeoff, generalization
-Difficulty: Beginner
+Difficulty: Principiante
 Programming Concepts: train_test_split, model.fit, model.predict
 Mathematical Concepts: variance, bias, mean squared error
 Machine Learning Concepts: training set, test set, generalization, overfitting, underfitting
@@ -21,7 +21,7 @@ Assignment: assignment.md
 Quiz: quiz.md
 ---
 
-# ML Fundamentals
+# Fundamentos de ML
 
 ## Motivation
 

@@ -1,101 +1,101 @@
 ---
 Module: 1
 Lesson: 1
-Title: What is Artificial Intelligence?
+Title: ¿Qué es la Inteligencia Artificial?
 ---
 
-# Slide Deck: What is Artificial Intelligence?
+# Presentación: ¿Qué es la Inteligencia Artificial?
 
-## Slide 1: Title Slide
-- **What is Artificial Intelligence?**
-- Module 1: Introduction to AI
-- Course: Machine Learning for Data Analysis and SaaS
+## Diapositiva 1: Portada
+- **¿Qué es la Inteligencia Artificial?**
+- Módulo 1: Introducción a la IA
+- Curso: Machine Learning para Análisis de Datos y SaaS
 
-## Slide 2: Lesson Objectives
-- Define AI and distinguish it from natural intelligence
-- Explain the Turing Test and its limitations
-- Describe intelligent agents
-- Identify the four goals of AI
+## Diapositiva 2: Objetivos de la Lección
+- Definir IA y distinguirla de la inteligencia natural
+- Explicar el Test de Turing y sus limitaciones
+- Describir los agentes inteligentes
+- Identificar los cuatro objetivos de la IA
 
-## Slide 3: Why Should You Care?
-- AI is everywhere: facial recognition, recommendations, voice assistants
-- AI in biotech: drug discovery, personalized medicine
-- AI in SaaS: churn prediction, customer analytics
-- This course will teach you to build AI systems
+## Diapositiva 3: ¿Por Qué Debería Importarte?
+- La IA está en todas partes: reconocimiento facial, recomendaciones, asistentes de voz
+- IA en biotecnología: descubrimiento de fármacos, medicina personalizada
+- IA en SaaS: predicción de abandono, análisis de clientes
+- Este curso te enseñará a construir sistemas de IA
 
-## Slide 4: Definitions of AI — Two Dimensions
-- Thinking vs Acting
-- Humanly vs Rationally
-- Four combinations → Four approaches
+## Diapositiva 4: Definiciones de IA — Dos Dimensiones
+- Pensar vs Actuar
+- Humanamente vs Racionalmente
+- Cuatro combinaciones → Cuatro enfoques
 
-## Slide 5: The Four Approaches
-| | Human | Rational |
+## Diapositiva 5: Los Cuatro Enfoques
+| | Humano | Racional |
 |---|---|---|
-| Thinking | Cognitive Science | Laws of Thought |
-| Acting | Turing Test | Rational Agent |
+| Pensar | Ciencia Cognitiva | Leyes del Pensamiento |
+| Actuar | Test de Turing | Agente Racional |
 
-- This course focuses on **Acting Rationally**
+- Este curso se centra en **Actuar Racionalmente**
 
-## Slide 6: The Turing Test
-- Proposed by Alan Turing in 1950
-- Human evaluator converses with machine and human
-- If evaluator cannot distinguish → machine is "intelligent"
-- Limitations: only tests conversation, can be gamed
+## Diapositiva 6: El Test de Turing
+- Propuesto por Alan Turing en 1950
+- Un evaluador humano conversa con una máquina y un humano
+- Si el evaluador no puede distinguir → la máquina es "inteligente"
+- Limitaciones: solo evalúa conversación, puede ser engañado
 
-## Slide 7: Intelligent Agents
-- Agent: perceives environment → acts upon it
-- Sensors: input channels
-- Actuators: output mechanisms
-- Performance measure: defines success
+## Diapositiva 7: Agentes Inteligentes
+- Agente: percibe el entorno → actúa sobre él
+- Sensores: canales de entrada
+- Actuadores: mecanismos de salida
+- Medida de rendimiento: define el éxito
 
-## Slide 8: Agent-Environment Diagram
+## Diapositiva 8: Diagrama Agente-Entorno
 ```
-Environment → [Sensors] → Agent → [Actuators] → Actions
+Entorno → [Sensores] → Agente → [Actuadores] → Acciones
 ```
 
-## Slide 9: Rational Agent
-- Acts to maximize performance measure
-- Based on percept sequence and built-in knowledge
-- Most general and practical AI approach
+## Diapositiva 9: Agente Racional
+- Actúa para maximizar una medida de rendimiento
+- Basado en la secuencia de percepciones y el conocimiento incorporado
+- El enfoque de IA más general y práctico
 
-## Slide 10: Biotechnology Example
-- Genomic analysis AI:
-  - Sensors: DNA sequencing data
-  - Actuators: mutation flags, therapy recommendations
-  - Goal: identify pathogenic mutations
+## Diapositiva 10: Ejemplo en Biotecnología
+- IA para análisis genómico:
+  - Sensores: datos de secuenciación de ADN
+  - Actuadores: marcadores de mutaciones, recomendaciones de terapia
+  - Objetivo: identificar mutaciones patogénicas
 
-## Slide 11: SaaS Example
-- Music recommendation AI (Spotify):
-  - Sensors: listening history, skips, likes
-  - Actuators: song recommendations
-  - Goal: maximize user engagement
+## Diapositiva 11: Ejemplo en SaaS
+- IA de recomendación musical (Spotify):
+  - Sensores: historial de escucha, saltos, gustos
+  - Actuadores: recomendaciones de canciones
+  - Objetivo: maximizar el compromiso del usuario
 
-## Slide 12: AI vs Machine Learning
+## Diapositiva 12: IA vs Machine Learning
 ```
-AI (broadest)
+IA (la más amplia)
 ├── Machine Learning
 │   ├── Deep Learning
 │   ├── Random Forest
 │   └── ...
-├── Expert Systems
-├── Rule-Based Systems
+├── Sistemas Expertos
+├── Sistemas Basados en Reglas
 └── ...
 ```
 
-## Slide 13: Common Mistakes
-- AI ≠ ML
-- AI does not require consciousness
-- AI is not infallible
-- Human-like behavior is not always the goal
+## Diapositiva 13: Errores Comunes
+- IA ≠ ML
+- La IA no requiere conciencia
+- La IA no es infalible
+- El comportamiento similar al humano no siempre es el objetivo
 
-## Slide 14: Summary
-- AI: building systems that exhibit intelligent behavior
-- Four approaches: acting/thinking × humanly/rationally
-- Rational agent is the most practical framework
-- Sensors → Agent → Actuators
-- Turing Test is a historical milestone but limited
+## Diapositiva 14: Resumen
+- IA: construir sistemas que exhiben comportamiento inteligente
+- Cuatro enfoques: actuar/pensar × humana/racionalmente
+- El agente racional es el marco más práctico
+- Sensores → Agente → Actuadores
+- El Test de Turing es un hito histórico pero limitado
 
-## Slide 15: Next Lesson
-- History of AI: from Dartmouth 1956 to today
-- AI winters and springs
-- Key milestones and breakthroughs
+## Diapositiva 15: Próxima Lección
+- Historia de la IA: desde Dartmouth 1956 hasta hoy
+- Inviernos y primaveras de la IA
+- Hitos clave y avances

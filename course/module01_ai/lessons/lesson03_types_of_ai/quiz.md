@@ -1,69 +1,69 @@
 ---
 Module: 1
 Lesson: 3
-Title: Types of AI
+Title: Tipos de IA
 ---
 
-# Quiz: Types of AI
+# Cuestionario: Tipos de IA
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 preguntas)
 
-**1. Which of the following best describes Narrow AI?**
+**1. ¿Cuál de las siguientes opciones describe mejor la IA Estrecha?**
 
-a) AI that is not very intelligent
-b) AI designed to perform a specific task or narrow range of tasks
-c) AI that can perform any intellectual task a human can
-d) AI that is self-aware
+a) IA que no es muy inteligente
+b) IA diseñada para realizar una tarea específica o un rango estrecho de tareas
+c) IA que puede realizar cualquier tarea intelectual que un humano pueda
+d) IA que es autoconsciente
 
-**2. Deep Blue, the chess computer that beat Garry Kasparov, is an example of which functionality type?**
+**2. Deep Blue, la computadora de ajedrez que venció a Garry Kasparov, es un ejemplo de qué tipo funcional?**
 
-a) Limited Memory
-b) Theory of Mind
-c) Reactive Machine
-d) Self-Aware
+a) Memoria Limitada
+b) Teoría de la Mente
+c) Máquina Reactiva
+d) Autoconsciente
 
-**3. What is the key difference between Limited Memory AI and Reactive Machines?**
+**3. ¿Cuál es la diferencia clave entre la IA de Memoria Limitada y las Máquinas Reactivas?**
 
-a) Limited Memory AI is faster
-b) Limited Memory AI can use past data to inform decisions
-c) Limited Memory AI is self-aware
-d) Reactive Machines use neural networks
+a) La IA de Memoria Limitada es más rápida
+b) La IA de Memoria Limitada puede usar datos pasados para informar decisiones
+c) La IA de Memoria Limitada es autoconsciente
+d) Las Máquinas Reactivas usan redes neuronales
 
-**4. Which type of AI does not exist today and is purely hypothetical?**
+**4. ¿Qué tipo de IA no existe hoy y es puramente hipotético?**
 
-a) Narrow AI
-b) Limited Memory AI
-c) Artificial General Intelligence
-d) All of the above exist today
+a) IA Estrecha
+b) IA de Memoria Limitada
+c) Inteligencia Artificial General
+d) Todas las anteriores existen hoy
 
-**5. Self-driving cars are typically classified as:**
+**5. Los autos autónomos se clasifican típicamente como:**
 
-a) Reactive Machine
-b) Limited Memory
-c) Theory of Mind
-d) Self-Aware
+a) Máquina Reactiva
+b) Memoria Limitada
+c) Teoría de la Mente
+d) Autoconsciente
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 preguntas)
 
-**6. Explain why ChatGPT is considered Narrow AI despite its impressive abilities.**
+**6. Explica por qué ChatGPT se considera IA Estrecha a pesar de sus impresionantes capacidades.**
 
-**7. What is the "theory of mind" type of AI? Why is it difficult to build?**
+**7. ¿Qué es el tipo de IA "teoría de la mente"? ¿Por qué es difícil de construir?**
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 pregunta)
 
-**8.** Write a function `ai_type_examples(ai_type)` that takes a string ('narrow', 'agi', or 'asi') and returns a dictionary with keys 'description', 'exists', and 'example'. Provide reasonable content for each type.
+**8.** Escribe una función `ai_type_examples(ai_type)` que reciba un string ('narrow', 'agi' o 'asi') y devuelva un diccionario con las claves 'description', 'exists' y 'example'. Proporciona contenido razonable para cada tipo.
 
 ---
 
-## Answer Key
+## Clave de Respuestas
 
-1. **b)** AI designed to perform a specific task or narrow range of tasks
-2. **c)** Reactive Machine
-3. **b)** Limited Memory AI can use past data to inform decisions
-4. **c)** Artificial General Intelligence
-5. **b)** Limited Memory
-6. ChatGPT is Narrow AI because: (a) it is trained only on text, not other modalities; (b) it fails on tasks outside its training distribution; (c) it lacks causal understanding, common sense, and transfer learning across domains; (d) it cannot reliably learn new tasks from a few examples.
-7. Theory of Mind AI would understand that others have beliefs, desires, and intentions — it could model the mental states of other agents. It is difficult because: (a) we do not fully understand how human theory of mind works; (b) it requires modeling unobservable mental states; (c) it involves recursive reasoning ("what does the agent think I think?").
+1. **b)** IA diseñada para realizar una tarea específica o un rango estrecho de tareas
+2. **c)** Máquina Reactiva
+3. **b)** La IA de Memoria Limitada puede usar datos pasados para informar decisiones
+4. **c)** Inteligencia Artificial General
+5. **b)** Memoria Limitada
+6. ChatGPT es IA Estrecha porque: (a) está entrenado solo en texto, no en otras modalidades; (b) falla en tareas fuera de su distribución de entrenamiento; (c) carece de comprensión causal, sentido común y transfer learning entre dominios; (d) no puede aprender nuevas tareas de manera confiable con pocos ejemplos.
+7. La IA de Teoría de la Mente entendería que otros tienen creencias, deseos e intenciones — podría modelar los estados mentales de otros agentes. Es difícil porque: (a) no entendemos completamente cómo funciona la teoría de la mente humana; (b) requiere modelar estados mentales no observables; (c) implica razonamiento recursivo ("¿qué cree el agente que yo pienso?").
 8. 
 ```python
 def ai_type_examples(ai_type):

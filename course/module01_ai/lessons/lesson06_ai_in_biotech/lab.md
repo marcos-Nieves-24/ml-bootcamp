@@ -1,37 +1,37 @@
 ---
 Module: 1
 Lesson: 6
-Title: AI in Biotechnology
+Title: IA en Biotecnología
 ---
 
-# Lab 6: Virtual Drug Screening Simulation
+# Laboratorio 6: Simulación de Cribado Virtual de Fármacos
 
-## Objectives
+## Objetivos
 
-By the end of this lab, you will be able to:
-- Build a simple virtual screening pipeline
-- Train a classifier to predict molecular activity
-- Evaluate screening performance
-- Interpret which molecular features drive predictions
+Al finalizar este laboratorio, podrás:
+- Construir un pipeline simple de cribado virtual
+- Entrenar un clasificador para predecir actividad molecular
+- Evaluar el rendimiento del cribado
+- Interpretar qué características moleculares impulsan las predicciones
 
-## Duration
+## Duración
 
-60 minutes
+60 minutos
 
-## Prerequisites
+## Prerrequisitos
 
-- Lesson 6: AI in Biotechnology
-- Basic Python and scikit-learn knowledge
+- Lección 6: IA en Biotecnología
+- Conocimientos básicos de Python y scikit-learn
 
-## Materials
+## Materiales
 
-- Python environment with numpy, pandas, scikit-learn, matplotlib
+- Entorno de Python con numpy, pandas, scikit-learn, matplotlib
 
-## Instructions
+## Instrucciones
 
-### Part 1: Generate Synthetic Molecular Data (10 minutes)
+### Parte 1: Generar Datos Moleculares Sintéticos (10 minutos)
 
-Create a dataset of 1000 molecules with 20 chemical descriptors each. Generate ~5% active compounds.
+Crea un conjunto de datos de 1000 moléculas con 20 descriptores químicos cada una. Genera ~5% de compuestos activos.
 
 ```python
 import numpy as np
@@ -53,9 +53,9 @@ print(f"Dataset: {n_compounds} compounds")
 print(f"Active: {y.sum()} ({y.mean():.1%})")
 ```
 
-### Part 2: Train Classifier (15 minutes)
+### Parte 2: Entrenar Clasificador (15 minutos)
 
-Split data, train a Random Forest, and evaluate:
+Divide los datos, entrena un Random Forest y evalúa:
 
 ```python
 from sklearn.ensemble import RandomForestClassifier
@@ -82,9 +82,9 @@ print("\nTop 5 important features:")
 print(importance.head(5))
 ```
 
-### Part 3: Virtual Screening (15 minutes)
+### Parte 3: Cribado Virtual (15 minutos)
 
-Screen the test set for new active compounds:
+Evalúa el conjunto de prueba en busca de nuevos compuestos activos:
 
 ```python
 def screen_compounds(model, X_test, y_test, n_top=10):
@@ -108,25 +108,25 @@ top10_hits = screening_results.head(10)['true_active'].sum()
 print(f"\nHits in top 10: {top10_hits}/10")
 ```
 
-### Part 4: Reflection (20 minutes)
+### Parte 4: Reflexión (20 minutos)
 
-Write a paragraph answering:
-1. What would you do if the model found no active compounds?
-2. How would you validate these predictions experimentally?
-3. What are the limitations of using synthetic data?
+Escribe un párrafo respondiendo:
+1. ¿Qué harías si el modelo no encontrara compuestos activos?
+2. ¿Cómo validarías estas predicciones experimentalmente?
+3. ¿Cuáles son las limitaciones de usar datos sintéticos?
 
-## Deliverables
+## Entregables
 
-- Completed notebook with all four parts
-- Part 1-3: Code with outputs
-- Part 4: Reflection paragraph
+- Notebook completado con las cuatro partes
+- Partes 1-3: Código con resultados
+- Parte 4: Párrafo de reflexión
 
-## Grading Criteria
+## Criterios de Evaluación
 
-| Criteria | Points |
+| Criterio | Puntos |
 |---|---|
-| Correct implementation of screening pipeline | 3 |
-| Model evaluation and interpretation | 3 |
-| Screening results analysis | 2 |
-| Quality of reflection | 2 |
+| Implementación correcta del pipeline de cribado | 3 |
+| Evaluación e interpretación del modelo | 3 |
+| Análisis de resultados del cribado | 2 |
+| Calidad de la reflexión | 2 |
 | **Total** | **10** |

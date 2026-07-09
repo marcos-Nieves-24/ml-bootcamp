@@ -1,83 +1,83 @@
 ---
 Module: 1
 Lesson: 5
-Title: AI Applications
+Title: Aplicaciones de la IA
 ---
 
-# Assignment 5: AI Application Deep Dive
+# Tarea 5: Análisis Profundo de una Aplicación de IA
 
-## Objectives
+## Objetivos
 
-- Research and analyze a specific AI application in depth
-- Map the application to its underlying technology stack
-- Evaluate the application's impact, limitations, and future potential
-- Communicate technical concepts to a non-technical audience
+- Investigar y analizar una aplicación específica de IA en profundidad
+- Mapear la aplicación a su stack tecnológico subyacente
+- Evaluar el impacto, las limitaciones y el potencial futuro de la aplicación
+- Comunicar conceptos técnicos a una audiencia no técnica
 
-## Instructions
+## Instrucciones
 
-Choose one AI-powered product or service from the list below (or propose your own with instructor approval):
+Elige un producto o servicio impulsado por IA de la siguiente lista (o propón uno propio con la aprobación del instructor):
 
-1. **AlphaFold** (protein structure prediction)
-2. **ChatGPT** (conversational AI)
-3. **Tesla Autopilot** (self-driving)
-4. **Spotify Discover Weekly** (music recommendation)
-5. **DeepMind's AlphaGo/AlphaZero** (game playing AI)
-6. **DALL-E / Midjourney** (image generation)
-7. **Google Search** (information retrieval)
-8. **Netflix recommendation system**
+1. **AlphaFold** (predicción de estructura de proteínas)
+2. **ChatGPT** (IA conversacional)
+3. **Tesla Autopilot** (conducción autónoma)
+4. **Spotify Discover Weekly** (recomendación musical)
+5. **AlphaGo/AlphaZero de DeepMind** (IA para juegos)
+6. **DALL-E / Midjourney** (generación de imágenes)
+7. **Google Search** (recuperación de información)
+8. **Sistema de recomendación de Netflix**
 
-### Write a report (800-1000 words) with:
+### Escribe un informe (800-1000 palabras) con:
 
-**Section 1: Product Overview (150 words)**
-- What does it do? Who created it? When was it launched?
-- How many users does it have?
+**Sección 1: Descripción del Producto (150 palabras)**
+- ¿Qué hace? ¿Quién lo creó? ¿Cuándo se lanzó?
+- ¿Cuántos usuarios tiene?
 
-**Section 2: AI Technology (300 words)**
-- What AI application area(s) does it use?
-- What specific AI technologies power it?
-- What data was used to train it?
-- How does it work at a high level?
+**Sección 2: Tecnología de IA (300 palabras)**
+- ¿Qué área(s) de aplicación de IA utiliza?
+- ¿Qué tecnologías específicas de IA lo impulsan?
+- ¿Qué datos se usaron para entrenarlo?
+- ¿Cómo funciona a alto nivel?
 
-**Section 3: Impact (200 words)**
-- What has this application changed in its field?
-- What are the measurable results?
-- How do people interact with it?
+**Sección 3: Impacto (200 palabras)**
+- ¿Qué ha cambiado esta aplicación en su campo?
+- ¿Cuáles son los resultados medibles?
+- ¿Cómo interactúan las personas con ella?
 
-**Section 4: Limitations and Challenges (200 words)**
-- What can it not do?
-- What are its failure modes?
-- What ethical concerns does it raise?
+**Sección 4: Limitaciones y Desafíos (200 palabras)**
+- ¿Qué no puede hacer?
+- ¿Cuáles son sus modos de fallo?
+- ¿Qué preocupaciones éticas plantea?
 
-**Section 5: Future Potential (150 words)**
-- What improvements are coming?
-- How might it evolve?
+**Sección 5: Potencial Futuro (150 palabras)**
+- ¿Qué mejoras están por venir?
+- ¿Cómo podría evolucionar?
 
-## Deliverables
+## Entregables
 
-- PDF or Markdown document
-- 800-1000 words
-- At least 3 cited references
-- Include one diagram or figure
+- Documento en PDF o Markdown
+- 800-1000 palabras
+- Al menos 3 referencias citadas
+- Incluye un diagrama o figura
 
-## Evaluation Rubric
+## Rúbrica de Evaluación
 
-| Criteria | Excellent (4) | Good (3) | Adequate (2) | Poor (1) |
+| Criterio | Excelente (4) | Bueno (3) | Adecuado (2) | Insuficiente (1) |
 |---|---|---|---|---|
-| **Technical Accuracy** | Accurate description of AI technology | Mostly accurate | Some errors | Major errors |
-| **Depth of Analysis** | Deep insight into the application | Good analysis | Surface-level | Superficial |
-| **Critical Evaluation** | Honest assessment of limitations | Good critique | Some critique | None |
-| **Writing & Communication** | Clear, engaging, accessible | Good writing | Adequate | Poor |
-| **References** | 3+ quality sources, correct APA | 3 sources | 2 sources | 1 or fewer |
+| **Precisión Técnica** | Descripción precisa de la tecnología de IA | Mayormente precisa | Algunos errores | Errores graves |
+| **Profundidad del Análisis** | Visión profunda de la aplicación | Buen análisis | Superficial | Muy superficial |
+| **Evaluación Crítica** | Evaluación honesta de limitaciones | Buena crítica | Alguna crítica | Ninguna |
+| **Redacción y Comunicación** | Clara, atractiva, accesible | Buena redacción | Adecuada | Deficiente |
+| **Referencias** | 3+ fuentes de calidad, APA correcto | 3 fuentes | 2 fuentes | 1 o menos |
 
-## Estimated Time
+## Tiempo Estimado
 
-2-3 hours
+2-3 horas
 
-## Submission Deadline
+## Fecha de Entrega
 
-As specified by your instructor.
+Según lo especificado por tu instructor.
 
-## References
+## Referencias
 
 Russell, S., & Norvig, P. (2021). *Artificial intelligence: A modern approach* (4th ed.). Pearson.
 

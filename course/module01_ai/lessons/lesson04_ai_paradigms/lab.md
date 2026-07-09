@@ -1,38 +1,38 @@
 ---
 Module: 1
 Lesson: 4
-Title: AI Paradigms
+Title: Paradigmas de IA
 ---
 
-# Lab 4: Comparing AI Paradigms
+# Laboratorio 4: Comparando Paradigmas de IA
 
-## Objectives
+## Objetivos
 
-By the end of this lab, you will be able to:
-- Implement a simple rule-based system
-- Train and evaluate a basic machine learning model
-- Compare the performance of different paradigms on the same task
-- Choose the appropriate paradigm for a given problem
+Al finalizar este laboratorio, podrás:
+- Implementar un sistema simple basado en reglas
+- Entrenar y evaluar un modelo básico de machine learning
+- Comparar el rendimiento de diferentes paradigmas en la misma tarea
+- Elegir el paradigma apropiado para un problema dado
 
-## Duration
+## Duración
 
-75 minutes
+75 minutos
 
-## Prerequisites
+## Prerrequisitos
 
-- Lesson 4: AI Paradigms
-- Basic Python knowledge (or work through Module 2 first)
+- Lección 4: Paradigmas de IA
+- Conocimientos básicos de Python (o completa el Módulo 2 primero)
 
-## Materials
+## Materiales
 
-- Python environment with numpy, pandas, scikit-learn, matplotlib
-- Lab notebook (provided)
+- Entorno de Python con numpy, pandas, scikit-learn, matplotlib
+- Notebook de laboratorio (proporcionado)
 
-## Instructions
+## Instrucciones
 
-### Part 1: Rule-Based Classifier (20 minutes)
+### Parte 1: Clasificador Basado en Reglas (20 minutos)
 
-You are building a system to classify wine quality based on chemical properties. Implement a rule-based classifier:
+Estás construyendo un sistema para clasificar la calidad del vino basado en propiedades químicas. Implementa un clasificador basado en reglas:
 
 ```python
 def wine_quality_rule(acidity, sugar, alcohol, sulfur):
@@ -51,11 +51,11 @@ def wine_quality_rule(acidity, sugar, alcohol, sulfur):
     else: return 'low'
 ```
 
-Test it on 5 sample wines and document the results.
+Pruébalo en 5 vinos de muestra y documenta los resultados.
 
-### Part 2: ML Classifier (25 minutes)
+### Parte 2: Clasificador de ML (25 minutos)
 
-Train a Decision Tree classifier on the wine quality dataset:
+Entrena un clasificador Árbol de Decisión en el conjunto de datos de calidad del vino:
 
 ```python
 from sklearn.datasets import load_wine
@@ -74,34 +74,34 @@ y_pred = model.predict(X_test)
 print(f"Accuracy: {accuracy_score(y_test, y_pred):.2%}")
 ```
 
-Document the accuracy and interpret one decision path from the tree.
+Documenta la precisión e interpreta una ruta de decisión del árbol.
 
-### Part 3: Comparison (20 minutes)
+### Parte 3: Comparación (20 minutos)
 
-Compare the two approaches across these dimensions:
-1. Accuracy on test data
-2. Interpretability (can you explain the decision?)
-3. Development effort (how long to build?)
-4. Maintenance (how to update?)
+Compara los dos enfoques en estas dimensiones:
+1. Precisión en datos de prueba
+2. Interpretabilidad (¿puedes explicar la decisión?)
+3. Esfuerzo de desarrollo (¿cuánto tiempo para construir?)
+4. Mantenimiento (¿cómo actualizar?)
 
-### Part 4: Reflection (10 minutes)
+### Parte 4: Reflexión (10 minutos)
 
-Answer: If you were building a wine quality system for a real winery, which paradigm would you use? Why? What would the trade-offs be?
+Responde: Si estuvieras construyendo un sistema de calidad de vino para una bodega real, ¿qué paradigma usarías? ¿Por qué? ¿Cuáles serían las ventajas y desventajas?
 
-## Deliverables
+## Entregables
 
-- Completed notebook or document with all four parts
-- Part 1: Rules and test results
-- Part 2: ML model and accuracy
-- Part 3: Comparison table
-- Part 4: Reflection paragraph
+- Notebook o documento completado con las cuatro partes
+- Parte 1: Reglas y resultados de prueba
+- Parte 2: Modelo de ML y precisión
+- Parte 3: Tabla de comparación
+- Parte 4: Párrafo de reflexión
 
-## Grading Criteria
+## Criterios de Evaluación
 
-| Criteria | Points |
+| Criterio | Puntos |
 |---|---|
-| Rule-based system implementation and testing | 3 |
-| ML model training and evaluation | 3 |
-| Thoughtful comparison analysis | 2 |
-| Quality of reflection | 2 |
+| Implementación y prueba del sistema basado en reglas | 3 |
+| Entrenamiento y evaluación del modelo de ML | 3 |
+| Análisis comparativo reflexivo | 2 |
+| Calidad de la reflexión | 2 |
 | **Total** | **10** |

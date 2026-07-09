@@ -1,25 +1,25 @@
 ---
 Module: 2
 Lesson Number: 1
-Lesson Title: Installing Python
+Lesson Title: Instalación de Python
 Estimated Duration: 30 minutes
-Prerequisites: None
+Prerequisites: Ninguno
 Learning Objectives:
-  - Explain what Python is and why it is used for data science
-  - Install Python on Windows, macOS, or Linux
-  - Verify the installation using the command line
-  - Use pip to install Python packages
-  - Create and activate a virtual environment
+  - Explicar what Python is and why it is used for data science
+  - Instalar Python on Windows, macOS, or Linux
+  - Verificar the installation using the command line
+  - Usar pip to install Python packages
+  - Crear and activate a virtual environment
 Keywords: Python, pip, virtual environment, command line, installation
-Difficulty: Beginner
+Difficulty: Principiante
 Programming Concepts: Python interpreter, CLI, package management, virtual environments
-Datasets Used: None
+Datasets Used: Ninguno
 Notebook: notebook.ipynb
 Assignment: assignment.md
 Quiz: quiz.md
 ---
 
-# Installing Python
+# Instalación de Python
 
 ## Motivation
 

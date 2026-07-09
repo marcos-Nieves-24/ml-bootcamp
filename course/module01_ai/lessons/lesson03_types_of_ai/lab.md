@@ -1,75 +1,75 @@
 ---
 Module: 1
 Lesson: 3
-Title: Types of AI
+Title: Tipos de IA
 ---
 
-# Lab 3: AI Type Classification
+# Laboratorio 3: Clasificación de Tipos de IA
 
-## Objectives
+## Objetivos
 
-By the end of this lab, you will be able to:
-- Classify AI systems by capability (Narrow AI, AGI, ASI)
-- Classify AI systems by functionality (Reactive, Limited Memory, Theory of Mind, Self-Aware)
-- Evaluate real systems against these classification frameworks
-- Identify when AI claims are exaggerated
+Al finalizar este laboratorio, podrás:
+- Clasificar sistemas de IA por capacidad (IA Estrecha, AGI, ASI)
+- Clasificar sistemas de IA por funcionalidad (Reactiva, Memoria Limitada, Teoría de la Mente, Autoconsciente)
+- Evaluar sistemas reales contra estos marcos de clasificación
+- Identificar cuándo las afirmaciones sobre IA son exageradas
 
-## Duration
+## Duración
 
-45 minutes
+45 minutos
 
-## Prerequisites
+## Prerrequisitos
 
-- Lesson 3: Types of AI
+- Lección 3: Tipos de IA
 
-## Materials
+## Materiales
 
-- Lab worksheet (this document)
-- Access to the internet for research
+- Hoja de trabajo del laboratorio (este documento)
+- Acceso a internet para investigación
 
-## Instructions
+## Instrucciones
 
-### Part 1: System Classification (20 minutes)
+### Parte 1: Clasificación de Sistemas (20 minutos)
 
-For each system below, classify it by:
-1. **Capability**: Narrow AI, AGI, or ASI
-2. **Functionality**: Reactive Machine, Limited Memory, Theory of Mind, or Self-Aware
+Para cada sistema a continuación, clasifícalo por:
+1. **Capacidad**: IA Estrecha, AGI o ASI
+2. **Funcionalidad**: Máquina Reactiva, Memoria Limitada, Teoría de la Mente o Autoconsciente
 
-| System | Capability | Functionality | Justification |
+| Sistema | Capacidad | Funcionalidad | Justificación |
 |---|---|---|---|
-| Roomba vacuum cleaner | | | |
+| Aspiradora Roomba | | | |
 | Google Translate | | | |
 | Tesla Autopilot | | | |
 | Siri / Alexa | | | |
-| Spotify recommendations | | | |
+| Recomendaciones de Spotify | | | |
 | ChatGPT | | | |
 | AlphaFold | | | |
-| A calculator | | | |
+| Una calculadora | | | |
 
-### Part 2: Justification (15 minutes)
+### Parte 2: Justificación (15 minutos)
 
-For **three** of the systems above, write a 3-4 sentence justification for your classification. Address:
-- What makes it Narrow AI (not AGI)?
-- What functionality type does it use?
-- What data does it use?
-- What are its limitations?
+Para **tres** de los sistemas anteriores, escribe una justificación de 3 a 4 oraciones para tu clasificación. Aborda:
+- ¿Qué lo hace IA Estrecha (no AGI)?
+- ¿Qué tipo de funcionalidad utiliza?
+- ¿Qué datos utiliza?
+- ¿Cuáles son sus limitaciones?
 
-### Part 3: Exaggerated Claims (10 minutes)
+### Parte 3: Afirmaciones Exageradas (10 minutos)
 
-Find one news headline or article that makes an exaggerated claim about AI (e.g., "AI is conscious," "AI will replace all jobs," "AGI has arrived"). Deconstruct the claim using the frameworks from this lesson.
+Encuentra un titular de noticias o artículo que haga una afirmación exagerada sobre IA (ej., "la IA es consciente", "la IA reemplazará todos los trabajos", "AGI ha llegado"). Deconstruye la afirmación usando los marcos de esta lección.
 
-## Deliverables
+## Entregables
 
-Submit a document containing:
-- Part 1: Completed table for all 8 systems
-- Part 2: Justifications for 3 systems
-- Part 3: Deconstruction of an exaggerated AI claim
+Entrega un documento que contenga:
+- Parte 1: Tabla completada para los 8 sistemas
+- Parte 2: Justificaciones para 3 sistemas
+- Parte 3: Deconstrucción de una afirmación exagerada sobre IA
 
-## Grading Criteria
+## Criterios de Evaluación
 
-| Criteria | Points |
+| Criterio | Puntos |
 |---|---|
-| Correct classification of all 8 systems | 4 |
-| Clear, accurate justifications | 3 |
-| Insightful claim deconstruction | 3 |
+| Clasificación correcta de los 8 sistemas | 4 |
+| Justificaciones claras y precisas | 3 |
+| Deconstrucción profunda de afirmaciones | 3 |
 | **Total** | **10** |

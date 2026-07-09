@@ -1,79 +1,79 @@
 ---
 Module: 1
 Lesson: 1
-Title: What is Artificial Intelligence?
+Title: ¿Qué es la Inteligencia Artificial?
 ---
 
-# Assignment 1: AI System Analysis
+# Tarea 1: Análisis de un Sistema de IA
 
-## Objectives
+## Objetivos
 
-- Apply the concept of intelligent agents to real-world systems
-- Analyze AI systems using the framework from Russell & Norvig
-- Develop critical thinking about what makes a system "intelligent"
-- Practice structured technical communication
+- Aplicar el concepto de agentes inteligentes a sistemas del mundo real
+- Analizar sistemas de IA utilizando el marco de Russell & Norvig
+- Desarrollar pensamiento crítico sobre qué hace que un sistema sea "inteligente"
+- Practicar la comunicación técnica estructurada
 
-## Instructions
+## Instrucciones
 
-Choose **one** AI system from the following list (or propose your own with instructor approval):
+Elige **un** sistema de IA de la siguiente lista (o propón uno propio con la aprobación del instructor):
 
-1. **Google Maps** (route planning and traffic prediction)
-2. **Netflix** (content recommendation)
-3. **Tesla Autopilot** (self-driving assistance)
-4. **DeepMind's AlphaFold** (protein structure prediction)
-5. **ChatGPT** (conversational AI)
-6. **Spotify** (music recommendation)
+1. **Google Maps** (planificación de rutas y predicción de tráfico)
+2. **Netflix** (recomendación de contenido)
+3. **Tesla Autopilot** (asistencia de conducción autónoma)
+4. **AlphaFold de DeepMind** (predicción de estructura de proteínas)
+5. **ChatGPT** (IA conversacional)
+6. **Spotify** (recomendación musical)
 
-### Write a report (600-800 words) addressing:
+### Escribe un informe (600-800 palabras) que aborde:
 
-**Section 1: System Description (150 words)**
-- What is the system?
-- Who created it?
-- What problem does it solve?
+**Sección 1: Descripción del Sistema (150 palabras)**
+- ¿Qué es el sistema?
+- ¿Quién lo creó?
+- ¿Qué problema resuelve?
 
-**Section 2: Agent Analysis (300 words)**
-- Sensors: What data does the system collect?
-- Environment: Where does it operate?
-- Actuators: What actions does it take?
-- Performance measure: How do we know if it is successful?
-- Percept sequence: What history does it use?
+**Sección 2: Análisis del Agente (300 palabras)**
+- Sensores: ¿Qué datos recopila el sistema?
+- Entorno: ¿Dónde opera?
+- Actuadores: ¿Qué acciones realiza?
+- Medida de rendimiento: ¿Cómo sabemos si tiene éxito?
+- Secuencia de percepciones: ¿Qué historial utiliza?
 
-**Section 3: Classification (150 words)**
-- Does this system act humanly or rationally?
-- Would it pass the Turing Test? Why or why not?
-- Which of the four AI approaches does it best exemplify?
+**Sección 3: Clasificación (150 palabras)**
+- ¿Este sistema actúa humanamente o racionalmente?
+- ¿Pasaría el Test de Turing? ¿Por qué sí o por qué no?
+- ¿Cuál de los cuatro enfoques de IA ejemplifica mejor?
 
-**Section 4: Critical Reflection (200 words)**
-- What are the system's limitations?
-- What could make it more intelligent?
-- What ethical concerns does it raise?
+**Sección 4: Reflexión Crítica (200 palabras)**
+- ¿Cuáles son las limitaciones del sistema?
+- ¿Qué podría hacerlo más inteligente?
+- ¿Qué preocupaciones éticas plantea?
 
-## Deliverables
+## Entregables
 
-- A PDF or Markdown document
-- 600-800 words
-- Include at least one diagram (hand-drawn or digital) of the agent-environment loop
-- Cite at least two sources (can be course materials or external references)
+- Un documento en PDF o Markdown
+- 600-800 palabras
+- Incluye al menos un diagrama (dibujado a mano o digital) del bucle agente-entorno
+- Cita al menos dos fuentes (pueden ser materiales del curso o referencias externas)
 
-## Evaluation Rubric
+## Rúbrica de Evaluación
 
-| Criteria | Excellent (4) | Good (3) | Adequate (2) | Poor (1) |
+| Criterio | Excelente (4) | Bueno (3) | Adecuado (2) | Insuficiente (1) |
 |---|---|---|---|---|
-| **Agent Analysis** | Accurately identifies all agent components with specific details | Identifies most components | Missing 1-2 components | Missing 3+ components |
-| **Classification** | Insightful classification with strong justification | Correct classification with good justification | Correct classification, weak justification | Incorrect classification |
-| **Critical Thinking** | Deep reflection on limitations and ethics | Good reflection | Surface-level reflection | No reflection |
-| **Structure & Writing** | Clear, well-organized, professional | Mostly clear | Somewhat disorganized | Poorly written |
-| **Diagram** | Clear, correct, well-labeled | Correct but unclear | Missing elements | No diagram |
+| **Análisis del Agente** | Identifica con precisión todos los componentes del agente con detalles específicos | Identifica la mayoría de los componentes | Faltan 1-2 componentes | Faltan 3+ componentes |
+| **Clasificación** | Clasificación profunda con justificación sólida | Clasificación correcta con buena justificación | Clasificación correcta, justificación débil | Clasificación incorrecta |
+| **Pensamiento Crítico** | Reflexión profunda sobre limitaciones y ética | Buena reflexión | Reflexión superficial | Sin reflexión |
+| **Estructura y Redacción** | Clara, bien organizada, profesional | Mayormente clara | Algo desorganizada | Mal redactada |
+| **Diagrama** | Claro, correcto, bien etiquetado | Correcto pero poco claro | Faltan elementos | Sin diagrama |
 
-## Estimated Time
+## Tiempo Estimado
 
-2-3 hours
+2-3 horas
 
-## Submission Deadline
+## Fecha de Entrega
 
-As specified by your instructor.
+Según lo especificado por tu instructor.
 
-## References
+## Referencias
 
 Russell, S., & Norvig, P. (2021). *Artificial intelligence: A modern approach* (4th ed.). Pearson.
 

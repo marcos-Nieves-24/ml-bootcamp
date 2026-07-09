@@ -1,97 +1,97 @@
 ---
 Module: 1
 Lesson: 2
-Title: History of AI
+Title: Historia de la IA
 ---
 
-# Slide Deck: History of AI
+# Presentación: Historia de la IA
 
-## Slide 1: Title Slide
-- **History of AI**
-- Module 1: Introduction to AI
-- Lesson 2
+## Diapositiva 1: Portada
+- **Historia de la IA**
+- Módulo 1: Introducción a la IA
+- Lección 2
 
-## Slide 2: Lesson Objectives
-- Describe the Dartmouth Conference (1956)
-- Explain AI winters and springs
-- Identify major milestones
-- Compare symbolic vs connectionist AI
+## Diapositiva 2: Objetivos de la Lección
+- Describir la Conferencia de Dartmouth (1956)
+- Explicar los inviernos y primaveras de la IA
+- Identificar los hitos principales
+- Comparar la IA simbólica vs la conexionista
 
-## Slide 3: Before AI (1940s–1950s)
-- Alan Turing proposes the Turing Test (1950)
-- Early computing: ENIAC, stored-program computers
-- Cybernetics movement
+## Diapositiva 3: Antes de la IA (1940s–1950s)
+- Alan Turing propone el Test de Turing (1950)
+- Computación temprana: ENIAC, computadoras de programa almacenado
+- Movimiento cibernético
 
-## Slide 4: The Dartmouth Conference (1956)
+## Diapositiva 4: La Conferencia de Dartmouth (1956)
 - John McCarthy, Marvin Minsky, Nathaniel Rochester, Claude Shannon
-- "Every aspect of learning can be so precisely described that a machine can be made to simulate it"
-- The term "Artificial Intelligence" is coined
+- "Cada aspecto del aprendizaje puede describirse con tanta precisión que una máquina puede simularlo"
+- Se acuña el término "Inteligencia Artificial"
 
-## Slide 5: The Golden Years (1956–1974)
-- Logic Theorist (1956) — first AI program
+## Diapositiva 5: Los Años Dorados (1956–1974)
+- Logic Theorist (1956) — primer programa de IA
 - General Problem Solver (1957)
-- Lisp programming language (1958)
-- ELIZA chatbot (1966)
+- Lenguaje de programación Lisp (1958)
+- Chatbot ELIZA (1966)
 - Shakey the Robot (1966–1972)
 
-## Slide 6: Early Optimism
-- Herbert Simon (1965): "Machines will be capable of any work a man can do within twenty years"
-- Predictions were far too optimistic
-- This overconfidence led to disappointment
+## Diapositiva 6: Optimismo Temprano
+- Herbert Simon (1965): "Las máquinas serán capaces de cualquier trabajo que un hombre pueda hacer en veinte años"
+- Las predicciones eran demasiado optimistas
+- Este exceso de confianza llevó a la decepción
 
-## Slide 7: First AI Winter (1974–1980)
-- Computers too weak for real-world problems
-- Combinatorial explosion
-- Moravec's Paradox
-- Lighthill Report kills UK funding
-- Funding cuts worldwide
+## Diapositiva 7: Primer Invierno de la IA (1974–1980)
+- Computadoras demasiado débiles para problemas reales
+- Explosión combinatoria
+- Paradoja de Moravec
+- El Informe Lighthill elimina la financiación del Reino Unido
+- Recortes de financiación en todo el mundo
 
-## Slide 8: Expert Systems Era (1980–1987)
-- Rule-based systems encoding expert knowledge
-- MYCIN: bacterial infection diagnosis
-- XCON: computer configuration (saved $40M/year)
-- Commercial success → investment boom
+## Diapositiva 8: Era de los Sistemas Expertos (1980–1987)
+- Sistemas basados en reglas que codifican conocimiento experto
+- MYCIN: diagnóstico de infecciones bacterianas
+- XCON: configuración de computadoras (ahorró $40M/año)
+- Éxito comercial → auge de inversiones
 
-## Slide 9: Second AI Winter (1987–1993)
-- Expert systems were brittle
-- Maintenance nightmare
-- Knowledge bottleneck
-- Japanese Fifth Generation project fails
-- Lisp machine market collapses
+## Diapositiva 9: Segundo Invierno de la IA (1987–1993)
+- Los sistemas expertos eran frágiles
+- Pesadilla de mantenimiento
+- CUELLO de botella del conocimiento
+- El proyecto Japonés de Quinta Generación fracasa
+- El mercado de máquinas Lisp colapsa
 
-## Slide 10: Machine Learning Rises (1990s–2000s)
-- Shift from symbolic to connectionist AI
-- Deep Blue beats Kasparov (1997)
-- Statistical ML (SVMs, Random Forests)
-- Web generates massive datasets
+## Diapositiva 10: El Auge del Machine Learning (1990s–2000s)
+- Cambio de IA simbólica a conexionista
+- Deep Blue vence a Kasparov (1997)
+- ML estadístico (SVMs, Random Forests)
+- La web genera conjuntos de datos masivos
 
-## Slide 11: Deep Learning Revolution (2006–2012)
-- Hinton's deep learning breakthrough (2006)
-- ImageNet dataset (2009)
-- AlexNet wins ImageNet (2012) — turning point
-- GPU computing enables deep networks
+## Diapositiva 11: Revolución del Deep Learning (2006–2012)
+- Avance de Hinton en deep learning (2006)
+- Dataset ImageNet (2009)
+- AlexNet gana ImageNet (2012) — punto de inflexión
+- La computación con GPU habilita redes profundas
 
-## Slide 12: Modern Milestones (2016–2024)
-- AlphaGo defeats Lee Sedol (2016)
-- AlphaFold solves protein folding (2020)
+## Diapositiva 12: Hitos Modernos (2016–2024)
+- AlphaGo derrota a Lee Sedol (2016)
+- AlphaFold resuelve el plegamiento de proteínas (2020)
 - GPT-3 (2020), ChatGPT (2022)
-- AI passes professional exams (2023–2024)
+- La IA aprueba exámenes profesionales (2023–2024)
 
-## Slide 13: The Hype Cycle Pattern
-- Peaks of inflated expectation
-- Troughs of disillusionment
-- Slopes of enlightenment
-- Plateaus of productivity
+## Diapositiva 13: El Patrón del Ciclo de Hype
+- Picos de expectativas infladas
+- Valles de desilusión
+- Pendientes de iluminación
+- Mesetas de productividad
 
-## Slide 14: Key Lessons from History
-- Progress is cyclical, not linear
-- Hardware improvements drive AI advances
-- Narrow AI works; general AI is still hard
-- Be skeptical of bold predictions
+## Diapositiva 14: Lecciones Clave de la Historia
+- El progreso es cíclico, no lineal
+- Las mejoras de hardware impulsan los avances de IA
+- La IA estrecha funciona; la IA general sigue siendo difícil
+- Sé escéptico ante predicciones audaces
 
-## Slide 15: Summary
-- Dartmouth 1956: the birth of AI
-- Two AI winters caused by overpromising
-- Expert systems showed commercial value
-- Deep learning is the current paradigm
-- History teaches humility in prediction
+## Diapositiva 15: Resumen
+- Dartmouth 1956: el nacimiento de la IA
+- Dos inviernos de IA causados por promesas excesivas
+- Los sistemas expertos demostraron valor comercial
+- El deep learning es el paradigma actual
+- La historia enseña humildad en las predicciones

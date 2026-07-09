@@ -1,16 +1,16 @@
 ---
 Module: 1
 Lesson Number: 1
-Lesson Title: What is Artificial Intelligence?
+Lesson Title: ¿Qué es la Inteligencia Artificial?
 Estimated Duration: 60 minutes
 Prerequisites: None
 Learning Objectives:
-  - Define Artificial Intelligence and distinguish it from natural intelligence
-  - Explain the Turing Test and its limitations
-  - Describe the characteristics of intelligent agents
-  - Identify the four goals of AI according to Russell & Norvig
-  - Compare thinking vs acting, humanly vs rationally approaches
-Keywords: Artificial Intelligence, Turing Test, intelligent agent, rationality, cognitive science, acting humanly, acting rationally, thinking humanly, thinking rationally
+  - Definir Inteligencia Artificial y distinguirla de la inteligencia natural
+  - Explicar el Test de Turing y sus limitaciones
+  - Describir las características de los agentes inteligentes
+  - Identificar los cuatro objetivos de la IA según Russell & Norvig
+  - Comparar los enfoques de pensar vs actuar, humana vs racionalmente
+Keywords: Inteligencia Artificial, Test de Turing, agente inteligente, racionalidad, ciencia cognitiva, actuar humanamente, actuar racionalmente, pensar humanamente, pensar racionalmente
 Difficulty: Beginner
 Programming Concepts: None
 Mathematical Concepts: None
@@ -21,187 +21,187 @@ Assignment: assignment.md
 Quiz: quiz.md
 ---
 
-# Lesson 1: What is Artificial Intelligence?
+# Lección 1: ¿Qué es la Inteligencia Artificial?
 
-## Lesson Motivation
+## Motivación de la Lección
 
-Artificial Intelligence is no longer science fiction. Every time you unlock your phone with facial recognition, receive a product recommendation on Amazon, or ask Siri for the weather, you are interacting with AI. In biotechnology, AI is accelerating drug discovery and enabling personalized medicine. In SaaS, AI powers customer analytics, churn prediction, and automated marketing. Understanding what AI is — and what it is not — is the foundation for everything that follows in this course.
+La Inteligencia Artificial ya no es ciencia ficción. Cada vez que desbloqueas tu teléfono con reconocimiento facial, recibes una recomendación de producto en Amazon o le preguntas el clima a Siri, estás interactuando con IA. En biotecnología, la IA está acelerando el descubrimiento de fármacos y habilitando la medicina personalizada. En SaaS, la IA impulsa el análisis de clientes, la predicción de abandono (*churn prediction*) y el marketing automatizado. Entender qué es la IA — y qué no es — es la base de todo lo que sigue en este curso.
 
-## Big Picture
+## Panorama General
 
-This is the first lesson of the course. It establishes the foundational definition of AI. Lesson 2 will explore the history of how we arrived at today's AI systems. Lesson 3 will classify different types of AI, and Lesson 4 will dive into the paradigms that make AI work. You will refer back to these core concepts throughout the entire program.
+Esta es la primera lección del curso. Establece la definición fundamental de IA. La Lección 2 explorará la historia de cómo llegamos a los sistemas de IA actuales. La Lección 3 clasificará los diferentes tipos de IA, y la Lección 4 profundizará en los paradigmas que hacen funcionar la IA. Volverás a referirte a estos conceptos centrales a lo largo de todo el programa.
 
 ```
-Lesson 1 (What is AI?) → Lesson 2 (History) → Lesson 3 (Types of AI) → Lesson 4 (Paradigms)
+Lección 1 (¿Qué es la IA?) → Lección 2 (Historia) → Lección 3 (Tipos de IA) → Lección 4 (Paradigmas)
 ```
 
-## Theory
+## Teoría
 
-### Definition of Artificial Intelligence
+### Definición de Inteligencia Artificial
 
-**Definition**: Artificial Intelligence is the branch of computer science concerned with building systems that exhibit intelligent behavior.
+**Definición**: La Inteligencia Artificial es la rama de la informática que se ocupa de construir sistemas que exhiben un comportamiento inteligente.
 
-**Intuition**: Think of AI as the attempt to give machines the ability to perceive, reason, learn, and make decisions — tasks that normally require human intelligence.
+**Intuición**: Piensa en la IA como el intento de dotar a las máquinas de la capacidad de percibir, razonar, aprender y tomar decisiones — tareas que normalmente requieren inteligencia humana.
 
-**Formal explanation**: There is no single universally accepted definition. However, the most influential textbook in the field — *Artificial Intelligence: A Modern Approach* by Stuart Russell and Peter Norvig — organizes definitions along two dimensions:
+**Explicación formal**: No existe una única definición universalmente aceptada. Sin embargo, el libro de texto más influyente en el campo — *Artificial Intelligence: A Modern Approach* de Stuart Russell y Peter Norvig — organiza las definiciones en dos dimensiones:
 
-| | Human performance | Rational performance |
+| | Rendimiento humano | Rendimiento racional |
 |---|---|---|
-| **Thinking** | "Thinking humanly" — modeling cognitive processes | "Thinking rationally" — following logical rules (laws of thought) |
-| **Acting** | "Acting humanly" — passing the Turing Test | "Acting rationally" — achieving goals (rational agent) |
+| **Pensar** | "Pensar humanamente" — modelar procesos cognitivos | "Pensar racionalmente" — seguir reglas lógicas (leyes del pensamiento) |
+| **Actuar** | "Actuar humanamente" — pasar el Test de Turing | "Actuar racionalmente" — alcanzar objetivos (agente racional) |
 
-1. **Acting humanly**: The Turing Test approach. If a machine can converse with a human evaluator who cannot tell they are talking to a machine, the machine is said to be intelligent.
-2. **Thinking humanly**: Cognitive modeling approach. We simulate the brain's thought processes.
-3. **Thinking rationally**: The "laws of thought" approach. We use symbolic logic to represent knowledge and derive conclusions.
-4. **Acting rationally**: The rational agent approach. We build agents that perceive their environment and take actions to achieve the best outcome.
+1. **Actuar humanamente**: El enfoque del Test de Turing. Si una máquina puede conversar con un evaluador humano que no puede distinguir si está hablando con una máquina, se dice que la máquina es inteligente.
+2. **Pensar humanamente**: El enfoque de modelado cognitivo. Simulamos los procesos de pensamiento del cerebro.
+3. **Pensar racionalmente**: El enfoque de las "leyes del pensamiento". Usamos lógica simbólica para representar conocimiento y derivar conclusiones.
+4. **Actuar racionalmente**: El enfoque del agente racional. Construimos agentes que perciben su entorno y toman acciones para lograr el mejor resultado.
 
-This course focuses on **acting rationally** — building agents that make good decisions — because it is the most general and practically useful approach.
+Este curso se centra en **actuar racionalmente** — construir agentes que toman buenas decisiones — porque es el enfoque más general y prácticamente útil.
 
-**Example**: A self-driving car perceives its environment via cameras and LiDAR, processes this data to identify obstacles, and acts by steering, accelerating, or braking. It is an intelligent agent acting rationally to reach its destination safely.
+**Ejemplo**: Un auto autónomo percibe su entorno a través de cámaras y LiDAR, procesa estos datos para identificar obstáculos y actúa girando el volante, acelerando o frenando. Es un agente inteligente que actúa racionalmente para llegar a su destino de forma segura.
 
-### The Turing Test
+### El Test de Turing
 
-Alan Turing proposed the **Imitation Game** in 1950 as a criterion for intelligence.
+Alan Turing propuso el **Juego de la Imitación** en 1950 como criterio de inteligencia.
 
-**How it works**:
-1. A human evaluator communicates via text with two hidden entities: a human and a machine.
-2. The machine tries to convince the evaluator it is human.
-3. If the evaluator cannot reliably distinguish the machine from the human, the machine passes the test.
+**Cómo funciona**:
+1. Un evaluador humano se comunica por texto con dos entidades ocultas: un humano y una máquina.
+2. La máquina intenta convencer al evaluador de que es humana.
+3. Si el evaluador no puede distinguir de manera confiable entre la máquina y el humano, la máquina pasa la prueba.
 
-**Limitations**:
-- Focuses only on conversational ability
-- Does not test perception, creativity, or physical interaction
-- Can be "gamed" by superficial tricks (e.g., ELIZA chatbot in 1966)
-- Modern AI (e.g., ChatGPT) can pass simplified versions, yet many argue they are not truly intelligent
+**Limitaciones**:
+- Se centra únicamente en la capacidad conversacional
+- No evalúa percepción, creatividad ni interacción física
+- Puede ser "engañado" con trucos superficiales (ej., el chatbot ELIZA en 1966)
+- La IA moderna (ej., ChatGPT) puede pasar versiones simplificadas, pero muchos argumentan que no es verdaderamente inteligente
 
-### Intelligent Agents
+### Agentes Inteligentes
 
-An **agent** is anything that perceives its environment through sensors and acts upon it through actuators.
+Un **agente** es cualquier cosa que percibe su entorno a través de sensores y actúa sobre él mediante actuadores.
 
 ```
-          Sensors
+          Sensores
              ↓
-Environment → Agent → Actions
+Entorno → Agente → Acciones
              ↑
-          Actuators
+         Actuadores
 ```
 
-A **rational agent** acts to maximize a performance measure based on:
-- Its percept sequence (history of everything it has perceived)
-- Its knowledge of the environment
-- The actions available to it
+Un **agente racional** actúa para maximizar una medida de rendimiento basándose en:
+- Su secuencia de percepciones (historial de todo lo que ha percibido)
+- Su conocimiento del entorno
+- Las acciones disponibles para él
 
-**Example**: A thermostat is a simple agent. It senses temperature (sensor), compares it to a set point, and turns heating on/off (actuator).
+**Ejemplo**: Un termostato es un agente simple. Detecta la temperatura (sensor), la compara con un punto de referencia y enciende o apaga la calefacción (actuador).
 
-### The Four Goals of AI
+### Los Cuatro Objetivos de la IA
 
-Russell & Norvig (2021) identify four historical goals:
+Russell & Norvig (2021) identifican cuatro objetivos históricos:
 
-1. **Human-centered vs rational-centered**: Should AI mimic humans or achieve ideal performance?
-2. **Reason vs behavior**: Should AI focus on internal reasoning or external actions?
+1. **Centrado en humanos vs centrado en la racionalidad**: ¿Debería la IA imitar a los humanos o alcanzar un rendimiento ideal?
+2. **Razonamiento vs comportamiento**: ¿Debería la IA centrarse en el razonamiento interno o en las acciones externas?
 
-| | Human-centered | Rational-centered |
+| | Centrado en humanos | Centrado en la racionalidad |
 |---|---|---|
-| **Reasoning** | Cognitive Science | Laws of Thought |
-| **Behavior** | Turing Test | Rational Agent |
+| **Razonamiento** | Ciencia Cognitiva | Leyes del Pensamiento |
+| **Comportamiento** | Test de Turing | Agente Racional |
 
-This course adopts the **Rational Agent** perspective because:
-- It is more general (does not require human-like behavior)
-- It is more engineering-friendly (success is measurable)
-- It aligns with modern Machine Learning
+Este curso adopta la perspectiva del **Agente Racional** porque:
+- Es más general (no requiere comportamiento similar al humano)
+- Es más amigable para la ingeniería (el éxito es medible)
+- Se alinea con el Machine Learning moderno
 
-## Visual Explanation
+## Explicación Visual
 
-**Figure 1.1**: The two dimensions of AI definitions.
+**Figura 1.1**: Las dos dimensiones de las definiciones de IA.
 
-A 2×2 matrix with rows "Thinking" and "Acting" and columns "Humanly" and "Rationally". Each cell contains the name of the approach and a brief description. The "Acting Rationally" cell is highlighted as the focus of this course.
+Una matriz de 2×2 con filas "Pensar" y "Actuar" y columnas "Humanamente" y "Racionalmente". Cada celda contiene el nombre del enfoque y una breve descripción. La celda "Actuar Racionalmente" está resaltada como el enfoque de este curso.
 
-**Figure 1.2**: The agent-environment interaction loop.
+**Figura 1.2**: El bucle de interacción agente-entorno.
 
-A diagram showing the environment on the left, the agent on the right, with arrows labeled "sensors" (environment → agent) and "actuators" (agent → environment), and a loop showing feedback.
+Un diagrama que muestra el entorno a la izquierda, el agente a la derecha, con flechas etiquetadas como "sensores" (entorno → agente) y "actuadores" (agente → entorno), y un bucle que muestra la retroalimentación.
 
-## Python Implementation
+## Implementación en Python
 
-This introductory lesson does not require Python code. We will begin programming in Module 2 (Python Fundamentals). However, we encourage you to set up your Python environment now following the instructions in the course README.
+Esta lección introductoria no requiere código Python. Comenzaremos a programar en el Módulo 2 (Fundamentos de Python). Sin embargo, te recomendamos configurar tu entorno Python ahora siguiendo las instrucciones en el README del curso.
 
-## Biotechnology Example
+## Ejemplo en Biotecnología
 
-In biotechnology, intelligent agents can be designed to analyze genomic sequences. For example, an AI system can:
-- **Perceive**: Read DNA sequencing data from a patient sample
-- **Reason**: Compare the sequence against known genomic databases
-- **Act**: Flag pathogenic mutations and suggest targeted therapies
+En biotecnología, se pueden diseñar agentes inteligentes para analizar secuencias genómicas. Por ejemplo, un sistema de IA puede:
+- **Percibir**: Leer datos de secuenciación de ADN de una muestra de paciente
+- **Razonar**: Comparar la secuencia con bases de datos genómicas conocidas
+- **Actuar**: Marcar mutaciones patogénicas y sugerir terapias dirigidas
 
-This is an intelligent agent acting rationally — using data to drive clinical decisions.
+Este es un agente inteligente que actúa racionalmente — usando datos para impulsar decisiones clínicas.
 
-## SaaS Example
+## Ejemplo en SaaS
 
-In a SaaS company like Spotify, AI agents:
-- **Perceive**: Your listening history, skips, likes, playlist additions
-- **Reason**: Identify patterns in your music preferences
-- **Act**: Recommend new songs and artists you might enjoy
+En una empresa SaaS como Spotify, los agentes de IA:
+- **Perciben**: Tu historial de escucha, saltos, gustos, agregados a listas de reproducción
+- **Razonan**: Identifican patrones en tus preferencias musicales
+- **Actúan**: Recomiendan nuevas canciones y artistas que podrías disfrutar
 
-This rational agent maximizes user engagement and satisfaction.
+Este agente racional maximiza el compromiso y la satisfacción del usuario.
 
-## Common Mistakes
+## Errores Comunes
 
-1. **Confusing AI with Machine Learning**: AI is the broader field. ML is a subfield of AI. All ML is AI, but not all AI is ML.
-2. **Assuming AI requires consciousness**: Modern AI does not possess consciousness, self-awareness, or emotions. It performs tasks without understanding.
-3. **Equating AI with human-like intelligence**: A chess AI that beats world champions is not "thinking" like a human — it uses different computational strategies.
-4. **Believing AI is infallible**: AI systems make mistakes. Their decisions depend on data quality, algorithm design, and problem framing.
+1. **Confundir IA con Machine Learning**: La IA es el campo más amplio. ML es un subcampo de la IA. Todo ML es IA, pero no toda IA es ML.
+2. **Asumir que la IA requiere conciencia**: La IA moderna no posee conciencia, autoconciencia ni emociones. Realiza tareas sin comprensión.
+3. **Equiparar IA con inteligencia similar a la humana**: Un ajedrez de IA que vence a campeones mundiales no "piensa" como un humano — utiliza estrategias computacionales diferentes.
+4. **Creer que la IA es infalible**: Los sistemas de IA cometen errores. Sus decisiones dependen de la calidad de los datos, el diseño del algoritmo y el planteamiento del problema.
 
-## Best Practices
+## Buenas Prácticas
 
-1. **Use precise language**: Distinguish between AI, Machine Learning, and Deep Learning.
-2. **Think in terms of agents and environments**: Frame problems as agents perceiving and acting.
-3. **Define success metrics**: For any AI project, specify how you will measure performance.
-4. **Consider the boundaries**: Know what your AI system can and cannot do.
-5. **Start simple**: The simplest rational agent that solves the problem is often the best.
+1. **Usa un lenguaje preciso**: Distingue entre IA, Machine Learning y Deep Learning.
+2. **Piensa en términos de agentes y entornos**: Formula los problemas como agentes que perciben y actúan.
+3. **Define métricas de éxito**: Para cualquier proyecto de IA, especifica cómo medirás el rendimiento.
+4. **Considera los límites**: Conoce lo que tu sistema de IA puede y no puede hacer.
+5. **Empieza simple**: El agente racional más simple que resuelve el problema suele ser el mejor.
 
-## Summary
+## Resumen
 
-- AI is the field of building intelligent systems, with multiple definitions organized along thinking/acting and humanly/rationally dimensions.
-- The Turing Test evaluates whether a machine can exhibit human-like conversation, but it has significant limitations.
-- An intelligent agent perceives its environment and takes actions to achieve goals.
-- The rational agent approach is the most practical framework for building AI systems.
-- AI is broader than Machine Learning; not every AI system learns from data.
+- La IA es el campo de construcción de sistemas inteligentes, con múltiples definiciones organizadas en las dimensiones de pensar/actuar y humana/racionalmente.
+- El Test de Turing evalúa si una máquina puede exhibir conversación similar a la humana, pero tiene limitaciones significativas.
+- Un agente inteligente percibe su entorno y toma acciones para alcanzar objetivos.
+- El enfoque del agente racional es el marco más práctico para construir sistemas de IA.
+- La IA es más amplia que el Machine Learning; no todo sistema de IA aprende de datos.
 
-## Key Terms
+## Términos Clave
 
-| Term | Definition |
+| Término | Definición |
 |---|---|
-| **Artificial Intelligence** | The field of study concerned with building systems that exhibit intelligent behavior |
-| **Turing Test** | A test proposed by Alan Turing where a machine tries to convince a human evaluator that it is human |
-| **Intelligent Agent** | A system that perceives its environment and takes actions to achieve goals |
-| **Rational Agent** | An agent that acts to maximize a performance measure |
-| **Sensors** | Mechanisms by which an agent perceives its environment |
-| **Actuators** | Mechanisms by which an agent acts upon its environment |
-| **Cognition** | The mental processes involved in acquiring knowledge and understanding |
-| **Imitation Game** | The original name for the Turing Test |
+| **Inteligencia Artificial** | El campo de estudio que se ocupa de construir sistemas que exhiben comportamiento inteligente |
+| **Test de Turing** | Una prueba propuesta por Alan Turing donde una máquina intenta convencer a un evaluador humano de que es humana |
+| **Agente Inteligente** | Un sistema que percibe su entorno y toma acciones para alcanzar objetivos |
+| **Agente Racional** | Un agente que actúa para maximizar una medida de rendimiento |
+| **Sensores** | Mecanismos mediante los cuales un agente percibe su entorno |
+| **Actuadores** | Mecanismos mediante los cuales un agente actúa sobre su entorno |
+| **Cognición** | Los procesos mentales involucrados en adquirir conocimiento y comprensión |
+| **Juego de la Imitación** | El nombre original del Test de Turing |
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic Understanding
+### Nivel 1: Comprensión Básica
 
-1. List the four approaches to defining AI according to Russell & Norvig.
-2. What is the Turing Test? Provide one reason it is not a perfect measure of intelligence.
-3. Define an intelligent agent and name its two main components.
+1. Enumera los cuatro enfoques para definir la IA según Russell & Norvig.
+2. ¿Qué es el Test de Turing? Proporciona una razón por la que no es una medida perfecta de inteligencia.
+3. Define un agente inteligente y nombra sus dos componentes principales.
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
-4. Draw an agent-environment diagram for an AI-powered spam filter. Label the sensors, actuators, environment, and performance measure.
-5. For each of the following systems, identify whether they exemplify "acting humanly" or "acting rationally": (a) a chatbot, (b) a chess engine, (c) a self-driving car.
+4. Dibuja un diagrama agente-entorno para un filtro de spam impulsado por IA. Etiqueta los sensores, actuadores, entorno y medida de rendimiento.
+5. Para cada uno de los siguientes sistemas, identifica si ejemplifican "actuar humanamente" o "actuar racionalmente": (a) un chatbot, (b) un motor de ajedrez, (c) un auto autónomo.
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
-6. "A calculator is more intelligent than a human at arithmetic, but we do not consider it intelligent." Discuss what is missing from calculators that prevents us from classifying them as AI.
-7. If an AI system could pass the Turing Test for 30 minutes but failed in a 3-hour conversation, would it be considered intelligent? Where would you draw the boundary?
+6. "Una calculadora es más inteligente que un humano en aritmética, pero no la consideramos inteligente". Discute qué le falta a las calculadoras para que no las clasifiquemos como IA.
+7. Si un sistema de IA pudiera pasar el Test de Turing durante 30 minutos pero fallara en una conversación de 3 horas, ¿se consideraría inteligente? ¿Dónde trazarías el límite?
 
-## Coding Challenge
+## Desafío de Programación
 
-Since this lesson does not assume programming knowledge, the challenge is conceptual:
+Dado que esta lección no asume conocimientos de programación, el desafío es conceptual:
 
-Research one AI system you use daily (e.g., Google Search, Netflix recommendations, facial recognition on your phone). Write a paragraph identifying:
-1. What it perceives (sensors/input)
-2. What actions it takes (actuators/output)
-3. What goal it is trying to achieve (performance measure)
-4. Whether it acts humanly or rationally
+Investiga un sistema de IA que uses a diario (ej., Búsqueda de Google, recomendaciones de Netflix, reconocimiento facial en tu teléfono). Escribe un párrafo identificando:
+1. Qué percibe (sensores/entrada)
+2. Qué acciones realiza (actuadores/salida)
+3. Qué objetivo intenta alcanzar (medida de rendimiento)
+4. Si actúa humanamente o racionalmente

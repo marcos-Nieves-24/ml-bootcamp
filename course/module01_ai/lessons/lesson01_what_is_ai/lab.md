@@ -1,76 +1,76 @@
 ---
 Module: 1
 Lesson: 1
-Title: What is Artificial Intelligence?
+Title: ¿Qué es la Inteligencia Artificial?
 ---
 
-# Lab 1: Identifying Intelligent Agents in Everyday Life
+# Laboratorio 1: Identificando Agentes Inteligentes en la Vida Cotidiana
 
-## Objectives
+## Objetivos
 
-By the end of this lab, you will be able to:
-- Identify AI systems in your daily environment
-- Decompose an AI system into its agent components
-- Evaluate whether a system acts humanly or rationally
-- Communicate your analysis in a structured format
+Al finalizar este laboratorio, podrás:
+- Identificar sistemas de IA en tu entorno diario
+- Descomponer un sistema de IA en sus componentes de agente
+- Evaluar si un sistema actúa humanamente o racionalmente
+- Comunicar tu análisis en un formato estructurado
 
-## Duration
+## Duración
 
-45 minutes
+45 minutos
 
-## Prerequisites
+## Prerrequisitos
 
-- Lesson 1: What is Artificial Intelligence?
+- Lección 1: ¿Qué es la Inteligencia Artificial?
 
-## Materials Needed
+## Materiales Necesarios
 
-- Pen and paper or a text editor
-- Access to the internet (optional)
+- Lápiz y papel o un editor de texto
+- Acceso a internet (opcional)
 
-## Instructions
+## Instrucciones
 
-### Part 1: Find AI Systems (15 minutes)
+### Parte 1: Encuentra Sistemas de IA (15 minutos)
 
-Walk around your environment (home, campus, workplace) or think about digital services you use daily. Identify **three** systems that use Artificial Intelligence.
+Camina por tu entorno (hogar, campus, lugar de trabajo) o piensa en servicios digitales que uses a diario. Identifica **tres** sistemas que utilicen Inteligencia Artificial.
 
-Examples: Google Search, Netflix recommendations, spam filter, voice assistants (Siri, Alexa), facial recognition, autocomplete, translation services, navigation apps.
+Ejemplos: Búsqueda de Google, recomendaciones de Netflix, filtro de spam, asistentes de voz (Siri, Alexa), reconocimiento facial, autocompletado, servicios de traducción, aplicaciones de navegación.
 
-For each system, write down:
-1. The name of the system
-2. What problem does it solve?
-3. How do you know it uses AI?
+Para cada sistema, escribe:
+1. El nombre del sistema
+2. ¿Qué problema resuelve?
+3. ¿Cómo sabes que usa IA?
 
-### Part 2: Agent Analysis (20 minutes)
+### Parte 2: Análisis del Agente (20 minutos)
 
-For each system you identified, analyze it as an intelligent agent:
+Para cada sistema que identificaste, analízalo como un agente inteligente:
 
-| Component | Description |
+| Componente | Descripción |
 |---|---|
-| **Sensors** | What data does the system perceive? |
-| **Environment** | What is the context it operates in? |
-| **Actuators** | What actions does it take? |
-| **Performance Measure** | How is success measured? |
-| **Approach** | Acting humanly or acting rationally? |
+| **Sensores** | ¿Qué datos percibe el sistema? |
+| **Entorno** | ¿Cuál es el contexto en el que opera? |
+| **Actuadores** | ¿Qué acciones realiza? |
+| **Medida de Rendimiento** | ¿Cómo se mide el éxito? |
+| **Enfoque** | ¿Actúa humanamente o racionalmente? |
 
-### Part 3: Reflection (10 minutes)
+### Parte 3: Reflexión (10 minutos)
 
-Write a 2-3 paragraph reflection answering:
-1. Which of your three systems is the most "intelligent"? Why?
-2. What are the limitations of each system?
-3. Would any of them pass the Turing Test? Explain.
+Escribe una reflexión de 2 a 3 párrafos respondiendo:
+1. ¿Cuál de tus tres sistemas es el más "inteligente"? ¿Por qué?
+2. ¿Cuáles son las limitaciones de cada sistema?
+3. ¿Alguno de ellos pasaría el Test de Turing? Explica.
 
-## Deliverables
+## Entregables
 
-Submit a single document containing:
-- Part 1: Three AI systems with descriptions
-- Part 2: Agent analysis table for each system
-- Part 3: Reflection paragraphs
+Entrega un solo documento que contenga:
+- Parte 1: Tres sistemas de IA con descripciones
+- Parte 2: Tabla de análisis de agente para cada sistema
+- Parte 3: Párrafos de reflexión
 
-## Grading Criteria
+## Criterios de Evaluación
 
-| Criteria | Points |
+| Criterio | Puntos |
 |---|---|
-| Correct identification of AI systems | 3 |
-| Accurate agent analysis (sensors, actuators, environment, performance measure) | 4 |
-| Thoughtful reflection | 3 |
+| Identificación correcta de sistemas de IA | 3 |
+| Análisis preciso del agente (sensores, actuadores, entorno, medida de rendimiento) | 4 |
+| Reflexión profunda | 3 |
 | **Total** | **10** |

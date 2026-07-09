@@ -5,13 +5,13 @@ Lesson Title: Gradient Boosting
 Estimated Duration: 90 minutes
 Prerequisites: L4 (Decision Trees), L5 (Random Forest)
 Learning Objectives:
-  - Explain the boosting paradigm and how it differs from bagging
-  - Describe the Gradient Boosting algorithm
+  - Explicar the boosting paradigm and how it differs from bagging
+  - Describir the Gradient Boosting algorithm
   - Train Gradient Boosting models with scikit-learn
   - Tune hyperparameters: learning rate, n_estimators, max_depth
-  - Describe how XGBoost and LightGBM improve upon basic gradient boosting
+  - Describir how XGBoost and LightGBM improve upon basic gradient boosting
 Keywords: boosting, gradient boosting, XGBoost, LightGBM, learning rate, additive model, residual
-Difficulty: Advanced
+Difficulty: Avanzado
 Programming Concepts: sklearn.ensemble.GradientBoostingClassifier, learning_rate, early_stopping
 Mathematical Concepts: gradient descent in function space, additive modeling
 Machine Learning Concepts: boosting, weak learners, sequential ensemble

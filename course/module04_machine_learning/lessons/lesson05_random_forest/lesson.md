@@ -5,13 +5,13 @@ Lesson Title: Random Forest
 Estimated Duration: 75 minutes
 Prerequisites: L4 (Decision Trees)
 Learning Objectives:
-  - Explain how bagging reduces variance in ensemble models
+  - Explicar how bagging reduces variance in ensemble models
   - Train and evaluate Random Forest classifiers with scikit-learn
   - Compute and interpret feature importance from Random Forests
-  - Compare Random Forest performance to single decision trees
+  - Comparar Random Forest performance to single decision trees
   - Tune Random Forest hyperparameters
 Keywords: random forest, ensemble, bagging, bootstrap, feature importance, out-of-bag
-Difficulty: Intermediate
+Difficulty: Intermedio
 Programming Concepts: sklearn.ensemble.RandomForestClassifier, n_estimators, oob_score
 Mathematical Concepts: bagging, bootstrap sampling, majority voting
 Machine Learning Concepts: ensemble learning, variance reduction, feature importance

@@ -1,7 +1,7 @@
 ---
 Module: 3
 Lesson Number: 2
-Lesson Title: Data Distribution
+Lesson Title: Distribución de Datos
 Estimated Duration: 60 minutes
 Prerequisites: Lesson 1 (Descriptive Statistics)
 Learning Objectives:
@@ -9,9 +9,9 @@ Learning Objectives:
   - Interpret skewness and kurtosis values
   - Distinguish between symmetric, left-skewed, and right-skewed distributions
   - Choose appropriate bin width for histograms
-  - Explain how distribution shape affects choice of summary statistics
+  - Explicar how distribution shape affects choice of summary statistics
 Keywords: histogram, density plot, skewness, kurtosis, KDE, distribution shape
-Difficulty: Beginner
+Difficulty: Principiante
 Programming Concepts: matplotlib, seaborn, numpy, pandas
 Mathematical Concepts: skewness, kurtosis, probability density function
 Machine Learning Concepts: data distribution understanding

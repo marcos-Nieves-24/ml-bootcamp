@@ -1,17 +1,17 @@
 ---
 Module: 4
 Lesson Number: 9
-Lesson Title: Model Interpretation
+Lesson Title: Interpretación de Modelos
 Estimated Duration: 75 minutes
 Prerequisites: L2-L5 (Linear Regression, Classification, Decision Trees, Random Forest)
 Learning Objectives:
-  - Explain why model interpretability matters in biotechnology and SaaS
+  - Explicar why model interpretability matters in biotechnology and SaaS
   - Compute and interpret permutation feature importance
   - Generate and interpret partial dependence plots
-  - Explain the intuition behind SHAP and LIME
-  - Compare global and local interpretability methods
+  - Explicar the intuition behind SHAP and LIME
+  - Comparar global and local interpretability methods
 Keywords: interpretability, feature importance, permutation importance, partial dependence, SHAP, LIME
-Difficulty: Advanced
+Difficulty: Avanzado
 Programming Concepts: sklearn.inspection.permutation_importance, sklearn.inspection.PartialDependenceDisplay
 Mathematical Concepts: marginal effect, feature perturbation
 Machine Learning Concepts: global interpretation, local interpretation, model-agnostic methods
@@ -21,7 +21,7 @@ Assignment: assignment.md
 Quiz: quiz.md
 ---
 
-# Model Interpretation
+# Interpretación de Modelos
 
 ## Motivation
 

@@ -7,11 +7,11 @@ Prerequisites: Lesson 1 (Descriptive Statistics)
 Learning Objectives:
   - Compute and interpret covariance between two variables
   - Distinguish between Pearson and Spearman correlation
-  - Create and interpret a correlation matrix heatmap
+  - Crear and interpret a correlation matrix heatmap
   - Choose the appropriate correlation coefficient based on data characteristics
-  - Identify spurious correlations
+  - Identificar spurious correlations
 Keywords: covariance, Pearson correlation, Spearman correlation, correlation matrix, heatmap, monotonic relationship
-Difficulty: Beginner
+Difficulty: Principiante
 Programming Concepts: numpy, pandas, matplotlib, seaborn
 Mathematical Concepts: covariance, correlation coefficient, rank correlation
 Machine Learning Concepts: feature relationships, multicollinearity, feature selection
@@ -32,7 +32,7 @@ In machine learning, we rarely work with isolated variables. The relationship be
 You already know how to describe single variables (Lessons 1-2). Now you will learn to quantify relationships between pairs of variables. This is essential preparation for:
 - Lesson 6 (EDA): relationships are a key part of exploration
 - Lesson 7 (PCA): PCA is built on the covariance matrix
-- All of Module 4: correlation informs feature selection and model choice
+- All of Módulo 4: correlation informs feature selection and model choice
 
 ## Theory
 

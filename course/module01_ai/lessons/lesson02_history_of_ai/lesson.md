@@ -1,16 +1,16 @@
 ---
 Module: 1
 Lesson Number: 2
-Lesson Title: History of AI
+Lesson Title: Historia de la IA
 Estimated Duration: 45 minutes
-Prerequisites: Lesson 1 — What is Artificial Intelligence?
+Prerequisites: Lección 1 — ¿Qué es la Inteligencia Artificial?
 Learning Objectives:
-  - Describe the key events at the Dartmouth Conference of 1956
-  - Explain the causes and effects of AI winters and AI springs
-  - Identify major milestones in AI development from 1950 to present
-  - Compare the symbolic AI approach with the connectionist approach
-  - Evaluate how historical events shaped modern AI
-Keywords: Dartmouth Conference, AI winter, AI spring, symbolic AI, connectionism, expert systems, neural networks, deep learning, machine learning history
+  - Describir los eventos clave de la Conferencia de Dartmouth de 1956
+  - Explicar las causas y efectos de los inviernos y primaveras de la IA
+  - Identificar los hitos principales en el desarrollo de la IA desde 1950 hasta la actualidad
+  - Comparar el enfoque de IA simbólica con el enfoque conexionista
+  - Evaluar cómo los eventos históricos moldearon la IA moderna
+Keywords: Conferencia de Dartmouth, invierno de la IA, primavera de la IA, IA simbólica, conexionismo, sistemas expertos, redes neuronales, deep learning, historia del machine learning
 Difficulty: Beginner
 Programming Concepts: None
 Mathematical Concepts: None
@@ -21,194 +21,194 @@ Assignment: assignment.md
 Quiz: quiz.md
 ---
 
-# Lesson 2: History of AI
+# Lección 2: Historia de la IA
 
-## Lesson Motivation
+## Motivación de la Lección
 
-Understanding the history of AI helps you appreciate why the field looks the way it does today. The pattern of hype, disappointment, and renewed hope has repeated multiple times. By learning this history, you will understand why some claims about AI should be taken with skepticism, why certain techniques fell out of favor and later returned, and why we are currently in a period of extraordinary progress. This perspective is invaluable for anyone building AI systems professionally.
+Comprender la historia de la IA te ayuda a apreciar por qué el campo luce como lo hace hoy. El patrón de hype, decepción y esperanza renovada se ha repetido múltiples veces. Al aprender esta historia, entenderás por qué algunas afirmaciones sobre la IA deben tomarse con escepticismo, por qué ciertas técnicas cayeron en desgracia y luego regresaron, y por qué estamos actualmente en un período de progreso extraordinario. Esta perspectiva es invaluable para cualquiera que construya sistemas de IA profesionalmente.
 
-## Big Picture
+## Panorama General
 
-In Lesson 1, we defined AI and intelligent agents. Now we explore how the field developed over 70+ years. This historical context will help you understand Lesson 3 (Types of AI) — particularly why the distinction between Narrow AI and General AI exists. Lesson 4 (AI Paradigms) will then explain the technical approaches that emerged from this history.
+En la Lección 1, definimos IA y agentes inteligentes. Ahora exploramos cómo se desarrolló el campo durante más de 70 años. Este contexto histórico te ayudará a entender la Lección 3 (Tipos de IA) — particularmente por qué existe la distinción entre IA Estrecha e IA General. La Lección 4 (Paradigmas de IA) explicará luego los enfoques técnicos que surgieron de esta historia.
 
 ```
-Lesson 1 (What is AI) → Lesson 2 (History) → Lesson 3 (Types of AI) → Lesson 4 (Paradigms)
+Lección 1 (¿Qué es la IA?) → Lección 2 (Historia) → Lección 3 (Tipos de IA) → Lección 4 (Paradigmas)
 ```
 
-## Theory
+## Teoría
 
-### The Birth of AI: Dartmouth Conference (1956)
+### El Nacimiento de la IA: Conferencia de Dartmouth (1956)
 
-The field of Artificial Intelligence was officially born in the summer of 1956 at Dartmouth College in Hanover, New Hampshire. A group of scientists — including **John McCarthy**, **Marvin Minsky**, **Nathaniel Rochester**, and **Claude Shannon** — organized a two-month workshop.
+El campo de la Inteligencia Artificial nació oficialmente en el verano de 1956 en Dartmouth College en Hanover, New Hampshire. Un grupo de científicos — incluyendo a **John McCarthy**, **Marvin Minsky**, **Nathaniel Rochester** y **Claude Shannon** — organizaron un taller de dos meses.
 
-**The proposal** read: "Every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it."
+**La propuesta** decía: "Cada aspecto del aprendizaje o cualquier otra característica de la inteligencia puede, en principio, describirse con tanta precisión que se puede hacer que una máquina lo simule."
 
-This statement captured the **optimism** of early AI researchers. They believed that creating human-level intelligence was a straightforward engineering problem solvable within a generation.
+Esta declaración capturó el **optimismo** de los primeros investigadores de IA. Creían que crear inteligencia a nivel humano era un problema de ingeniería sencillo, resoluble en una generación.
 
-**Key outcomes**:
-- The term "Artificial Intelligence" was coined
-- Early work on symbolic reasoning and problem-solving began
-- The field gained academic legitimacy
+**Resultados clave**:
+- Se acuñó el término "Inteligencia Artificial"
+- Comenzó el trabajo temprano en razonamiento simbólico y resolución de problemas
+- El campo ganó legitimidad académica
 
-### The Golden Years (1956–1974)
+### Los Años Dorados (1956–1974)
 
-The decades following Dartmouth saw remarkable progress:
+Las décadas posteriores a Dartmouth vieron un progreso notable:
 
-- **Logic Theorist** (1956): The first AI program, created by Allen Newell and Herbert Simon. It could prove mathematical theorems.
-- **General Problem Solver** (1957): A program designed to solve any problem that could be formalized.
-- **Lisp** (1958): John McCarthy created the programming language that became the lingua franca of AI for decades.
-- **ELIZA** (1966): Joseph Weizenbaum created a chatbot that simulated a psychotherapist.
-- **Shakey the Robot** (1966–1972): The first general-purpose mobile robot.
+- **Logic Theorist** (1956): El primer programa de IA, creado por Allen Newell y Herbert Simon. Podía demostrar teoremas matemáticos.
+- **General Problem Solver** (1957): Un programa diseñado para resolver cualquier problema que pudiera formalizarse.
+- **Lisp** (1958): John McCarthy creó el lenguaje de programación que se convirtió en la lengua franca de la IA durante décadas.
+- **ELIZA** (1966): Joseph Weizenbaum creó un chatbot que simulaba un psicoterapeuta.
+- **Shakey the Robot** (1966–1972): El primer robot móvil de propósito general.
 
-Researchers were overly optimistic. Simon predicted in 1965 that "machines will be capable, within twenty years, of doing any work a man can do."
+Los investigadores eran excesivamente optimistas. Simon predijo en 1965 que "las máquinas serán capaces, en veinte años, de hacer cualquier trabajo que un hombre pueda hacer."
 
-### First AI Winter (1974–1980)
+### Primer Invierno de la IA (1974–1980)
 
-Progress stalled. Key problems emerged:
+El progreso se estancó. Surgieron problemas clave:
 
-- **Computational limitations**: Computers lacked the power needed for real-world problems.
-- **Combinatorial explosion**: Simple problems required exponentially growing computation.
-- **Moravec's Paradox**: What is hard for humans (chess) is easy for computers, but what is easy for humans (perception, movement) is hard for computers.
+- **Limitaciones computacionales**: Las computadoras carecían de la potencia necesaria para problemas del mundo real.
+- **Explosión combinatoria**: Problemas simples requerían un crecimiento exponencial de cómputo.
+- **Paradoja de Moravec**: Lo que es difícil para los humanos (ajedrez) es fácil para las computadoras, pero lo que es fácil para los humanos (percepción, movimiento) es difícil para las computadoras.
 
-Funding agencies grew frustrated with unfulfilled promises, leading to the **Lighthill Report** (1973) in the UK, which sharply criticized AI research. Funding was cut dramatically — the first **AI Winter**.
+Las agencias de financiamiento se frustraron con las promesas incumplidas, lo que llevó al **Informe Lighthill** (1973) en el Reino Unido, que criticó duramente la investigación en IA. La financiación se redujo drásticamente — el primer **Invierno de la IA**.
 
-### Expert Systems Era (1980–1987)
+### Era de los Sistemas Expertos (1980–1987)
 
-The field revived with **expert systems** — programs that encoded human expert knowledge into rules.
+El campo revivió con los **sistemas expertos** — programas que codificaban el conocimiento de expertos humanos en reglas.
 
-- **MYCIN** (1970s): Diagnosed bacterial infections, outperforming some human doctors.
-- **XCON** (1980): Configured computer systems for DEC, saving the company $40M per year.
-- **Commercial success**: Companies invested heavily. The AI industry grew to billions of dollars.
+- **MYCIN** (1970s): Diagnosticaba infecciones bacterianas, superando a algunos médicos humanos.
+- **XCON** (1980): Configuraba sistemas informáticos para DEC, ahorrando a la compañía $40M por año.
+- **Éxito comercial**: Las empresas invirtieron fuertemente. La industria de la IA creció a miles de millones de dólares.
 
-Expert systems worked because they were **narrow** — they solved specific, well-defined problems without attempting general intelligence.
+Los sistemas expertos funcionaban porque eran **estrechos** — resolvían problemas específicos y bien definidos sin intentar inteligencia general.
 
-### Second AI Winter (1987–1993)
+### Segundo Invierno de la IA (1987–1993)
 
-The expert systems boom collapsed:
+El auge de los sistemas expertos colapsó:
 
-- **Maintenance nightmare**: Expert systems were brittle. Changing one rule could break the entire system.
-- **Knowledge bottleneck**: Hand-crafting rules required rare, expensive human experts.
-- **Japanese Fifth Generation project failed**: A massive government initiative to create advanced AI did not deliver.
-- **Lisp machine market collapsed**: Specialized hardware companies went bankrupt.
+- **Pesadilla de mantenimiento**: Los sistemas expertos eran frágiles. Cambiar una regla podía romper todo el sistema.
+- **CUELLO de botella del conocimiento**: Crear reglas manualmente requería expertos humanos escasos y costosos.
+- **El proyecto Japonés de Quinta Generación fracasó**: Una iniciativa gubernamental masiva para crear IA avanzada no dio resultados.
+- **El mercado de máquinas Lisp colapsó**: Empresas de hardware especializado quebraron.
 
-Funding and interest dried up once again.
+La financiación y el interés se evaporaron una vez más.
 
-### AI Spring: Machine Learning Rises (1990s–2000s)
+### Primavera de la IA: El Auge del Machine Learning (1990s–2000s)
 
-The field shifted from **symbolic AI** (hand-crafted rules) to **connectionist AI** (learning from data). Key milestones:
+El campo pasó de la **IA simbólica** (reglas hechas a mano) a la **IA conexionista** (aprendizaje a partir de datos). Hitos clave:
 
-- **1997**: IBM's Deep Blue defeated world chess champion Garry Kasparov.
-- **2006**: Geoffrey Hinton published breakthrough work on **deep learning**, showing that deep neural networks could be trained effectively.
-- **2012**: AlexNet won the ImageNet competition by a large margin, sparking the deep learning revolution.
+- **1997**: Deep Blue de IBM derrotó al campeón mundial de ajedrez Garry Kasparov.
+- **2006**: Geoffrey Hinton publicó un trabajo innovador sobre **deep learning**, demostrando que las redes neuronales profundas podían entrenarse eficazmente.
+- **2012**: AlexNet ganó la competencia ImageNet por un margen amplio, desencadenando la revolución del deep learning.
 
-### Modern AI (2010s–Present)
+### IA Moderna (2010s–Presente)
 
-The current AI spring is driven by:
+La primavera actual de la IA está impulsada por:
 
-- **Big data**: The internet generated massive datasets for training.
-- **GPU computing**: Graphics processing units enabled parallel computation at scale.
-- **Deep learning breakthroughs**: Image recognition, speech recognition, natural language processing.
+- **Big data**: Internet generó conjuntos de datos masivos para el entrenamiento.
+- **Computación con GPU**: Las unidades de procesamiento gráfico habilitaron la computación paralela a escala.
+- **Avances en deep learning**: Reconocimiento de imágenes, reconocimiento de voz, procesamiento de lenguaje natural.
 - **Large Language Models**: GPT (2018), BERT (2018), GPT-3 (2020), GPT-4 (2023), Claude (2023).
 
-Key milestones:
-- **2011**: IBM Watson won Jeopardy!
-- **2016**: DeepMind's AlphaGo defeated Lee Sedol (world Go champion).
-- **2020**: AlphaFold solved protein folding.
-- **2022**: ChatGPT reached 100 million users in two months.
-- **2024**: AI systems passed the Medical Licensing Exam, Bar Exam, and more.
+Hitos clave:
+- **2011**: IBM Watson ganó Jeopardy!
+- **2016**: AlphaGo de DeepMind derrotó a Lee Sedol (campeón mundial de Go).
+- **2020**: AlphaFold resolvió el plegamiento de proteínas.
+- **2022**: ChatGPT alcanzó 100 millones de usuarios en dos meses.
+- **2024**: Los sistemas de IA aprobaron el Examen de Licencia Médica, el Examen de Abogacía y más.
 
-## Visual Explanation
+## Explicación Visual
 
-**Figure 2.1**: AI timeline (1950–present).
+**Figura 2.1**: Línea de tiempo de la IA (1950–presente).
 
-A horizontal timeline with key events: Turing Test proposal (1950), Dartmouth Conference (1956), ELIZA (1966), first AI winter (1974), expert systems (1980), second AI winter (1987), Deep Blue (1997), ImageNet (2009), AlexNet (2012), AlphaGo (2016), GPT-3 (2020), ChatGPT (2022).
+Una línea de tiempo horizontal con eventos clave: propuesta del Test de Turing (1950), Conferencia de Dartmouth (1956), ELIZA (1966), primer invierno de la IA (1974), sistemas expertos (1980), segundo invierno de la IA (1987), Deep Blue (1997), ImageNet (2009), AlexNet (2012), AlphaGo (2016), GPT-3 (2020), ChatGPT (2022).
 
-**Figure 2.2**: AI hype cycle.
+**Figura 2.2**: Ciclo de hype de la IA.
 
-A diagram showing peaks of inflated expectations and troughs of disillusionment over time, with the AI winters clearly marked.
+Un diagrama que muestra picos de expectativas infladas y valles de desilusión a lo largo del tiempo, con los inviernos de la IA claramente marcados.
 
-## Python Implementation
+## Implementación en Python
 
-No Python implementation is required for this lesson. We will create a simple timeline visualization in the notebook.
+No se requiere implementación en Python para esta lección. Crearemos una visualización de línea de tiempo simple en el notebook.
 
-## Biotechnology Example
+## Ejemplo en Biotecnología
 
-The history of AI in biotechnology parallels the broader field. Early attempts used expert systems for diagnosis (MYCIN). Modern approaches use deep learning for protein folding (AlphaFold). This shift — from hand-crafted rules to data-driven learning — transformed biotechnology:
+La historia de la IA en biotecnología corre en paralelo con el campo más amplio. Los primeros intentos usaron sistemas expertos para diagnóstico (MYCIN). Los enfoques modernos usan deep learning para el plegamiento de proteínas (AlphaFold). Este cambio — de reglas hechas a mano al aprendizaje impulsado por datos — transformó la biotecnología:
 
-- **1970s**: MYCIN diagnosed infections using doctor-crafted rules
-- **2000s**: Machine learning predicted protein structures from known data
-- **2020**: AlphaFold solved the 50-year protein folding problem using deep learning
+- **1970s**: MYCIN diagnosticaba infecciones usando reglas creadas por médicos
+- **2000s**: El machine learning predecía estructuras de proteínas a partir de datos conocidos
+- **2020**: AlphaFold resolvió el problema del plegamiento de proteínas de 50 años usando deep learning
 
-## SaaS Example
+## Ejemplo en SaaS
 
-SaaS analytics followed a similar trajectory:
+El análisis en SaaS siguió una trayectoria similar:
 
-- **1990s**: Rule-based systems for detecting fraudulent transactions
-- **2000s**: Machine learning for customer churn prediction
-- **2010s**: Deep learning for real-time personalization
-- **2020s**: Large Language Models for customer support automation
+- **1990s**: Sistemas basados en reglas para detectar transacciones fraudulentas
+- **2000s**: Machine learning para predicción de abandono de clientes
+- **2010s**: Deep learning para personalización en tiempo real
+- **2020s**: Large Language Models para automatización de atención al cliente
 
-## Common Mistakes
+## Errores Comunes
 
-1. **Thinking AI progress was linear**: The history is cyclical — booms followed by busts.
-2. **Believing early AI researchers were naive**: Their predictions were optimistic, but their foundational work was brilliant.
-3. **Assuming deep learning is the final paradigm**: The field has shifted before and will shift again.
-4. **Confusing symbolic AI with connectionist AI**: Symbolic AI uses explicit rules; connectionist AI learns patterns from data.
+1. **Pensar que el progreso de la IA fue lineal**: La historia es cíclica — auges seguidos de caídas.
+2. **Creer que los primeros investigadores de IA eran ingenuos**: Sus predicciones eran optimistas, pero su trabajo fundacional fue brillante.
+3. **Asumir que el deep learning es el paradigma final**: El campo ha cambiado antes y cambiará de nuevo.
+4. **Confundir la IA simbólica con la IA conexionista**: La IA simbólica usa reglas explícitas; la IA conexionista aprende patrones a partir de datos.
 
-## Best Practices
+## Buenas Prácticas
 
-1. **Study history to avoid repeating mistakes**: Understand why past systems failed.
-2. **Be skeptical of hype**: Current AI excitement mirrors past booms.
-3. **Appreciate foundational ideas**: Many "new" ideas have roots in 1950s–1960s research.
-4. **Know the hardware story**: AI progress is tightly coupled with computational advances.
-5. **Respect the winters**: Funding can disappear quickly over unfulfilled promises.
+1. **Estudia la historia para evitar repetir errores**: Comprende por qué fracasaron los sistemas del pasado.
+2. **Sé escéptico ante el hype**: La emoción actual por la IA refleja auges pasados.
+3. **Aprecia las ideas fundamentales**: Muchas ideas "nuevas" tienen raíces en la investigación de las décadas de 1950 y 1960.
+4. **Conoce la historia del hardware**: El progreso de la IA está estrechamente vinculado con los avances computacionales.
+5. **Respeta los inviernos**: La financiación puede desaparecer rápidamente por promesas incumplidas.
 
-## Summary
+## Resumen
 
-- AI was officially founded at the Dartmouth Conference in 1956.
-- Early optimism led to the first AI winter when promises were not kept.
-- Expert systems revived AI in the 1980s but were brittle and hard to maintain.
-- The second AI winter followed the expert systems collapse.
-- Modern AI relies on machine learning, big data, and powerful hardware.
-- The field is cyclical — current progress is real but not guaranteed to continue linearly.
-- Deep learning and LLMs represent the current paradigm, but the field continues to evolve.
+- La IA fue fundada oficialmente en la Conferencia de Dartmouth en 1956.
+- El optimismo temprano llevó al primer invierno de la IA cuando no se cumplieron las promesas.
+- Los sistemas expertos revivieron la IA en los 1980s pero eran frágiles y difíciles de mantener.
+- El segundo invierno de la IA siguió al colapso de los sistemas expertos.
+- La IA moderna se basa en machine learning, big data y hardware potente.
+- El campo es cíclico — el progreso actual es real pero no está garantizado que continúe linealmente.
+- El deep learning y los LLMs representan el paradigma actual, pero el campo continúa evolucionando.
 
-## Key Terms
+## Términos Clave
 
-| Term | Definition |
+| Término | Definición |
 |---|---|
-| **Dartmouth Conference** | The 1956 workshop that founded AI as a field |
-| **AI Winter** | A period of reduced funding and interest in AI |
-| **AI Spring** | A period of rapid progress and investment in AI |
-| **Expert System** | A program that encodes human knowledge as rules |
-| **Symbolic AI** | AI based on explicit symbols and rules (GOFAI) |
-| **Connectionism** | AI based on neural networks learning from data |
-| **GOFAI** | Good Old-Fashioned AI — symbolic, rule-based AI |
-| **Combinatorial Explosion** | The rapid growth of computational requirements as problem size increases |
-| **Moravec's Paradox** | The observation that easy human tasks are hard for AI, and vice versa |
-| **Deep Learning** | Multi-layer neural networks trained on large datasets |
+| **Conferencia de Dartmouth** | El taller de 1956 que fundó la IA como campo |
+| **Invierno de la IA** | Período de reducción de financiación e interés en la IA |
+| **Primavera de la IA** | Período de progreso rápido e inversión en la IA |
+| **Sistema Experto** | Programa que codifica el conocimiento humano como reglas |
+| **IA Simbólica** | IA basada en símbolos y reglas explícitas (GOFAI) |
+| **Conexionismo** | IA basada en redes neuronales que aprenden de datos |
+| **GOFAI** | Good Old-Fashioned AI — IA simbólica basada en reglas |
+| **Explosión Combinatoria** | El crecimiento rápido de los requisitos computacionales a medida que aumenta el tamaño del problema |
+| **Paradoja de Moravec** | La observación de que las tareas humanas fáciles son difíciles para la IA, y viceversa |
+| **Deep Learning** | Redes neuronales multicapa entrenadas con grandes conjuntos de datos |
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic Understanding
+### Nivel 1: Comprensión Básica
 
-1. When and where was the term "Artificial Intelligence" first coined?
-2. What were the main causes of the first AI winter (1974–1980)?
-3. Name two successful expert systems from the 1970s–1980s and what they did.
+1. ¿Cuándo y dónde se acuñó por primera vez el término "Inteligencia Artificial"?
+2. ¿Cuáles fueron las causas principales del primer invierno de la IA (1974–1980)?
+3. Nombra dos sistemas expertos exitosos de las décadas de 1970–1980 y qué hacían.
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
-4. Create a timeline of 10 major AI milestones with years. Place them in chronological order.
-5. Compare symbolic AI with connectionist AI in a table with at least 4 comparison criteria.
+4. Crea una línea de tiempo de 10 hitos importantes de la IA con años. Colócalos en orden cronológico.
+5. Compara la IA simbólica con la IA conexionista en una tabla con al menos 4 criterios de comparación.
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
-6. "The history of AI shows that the field progresses in cycles, not in a straight line." Argue for or against this statement using historical evidence.
-7. If you were an AI researcher in 1985, what evidence would lead you to be optimistic about the future? What evidence would make you cautious?
+6. "La historia de la IA muestra que el campo progresa en ciclos, no en línea recta". Argumenta a favor o en contra de esta afirmación usando evidencia histórica.
+7. Si fueras un investigador de IA en 1985, ¿qué evidencia te llevaría a ser optimista sobre el futuro? ¿Qué evidencia te haría ser cauteloso?
 
-## Coding Challenge
+## Desafío de Programación
 
-Create a Python list of AI milestones (year, event) and write a function that prints a timeline:
+Crea una lista de Python con hitos de la IA (año, evento) y escribe una función que imprima una línea de tiempo:
 
 ```python
 milestones = [
@@ -227,4 +227,4 @@ milestones = [
 ]
 ```
 
-Write a function `print_timeline(milestones)` that sorts by year and prints each milestone with a visual separator.
+Escribe una función `print_timeline(milestones)` que ordene por año e imprima cada hito con un separador visual.

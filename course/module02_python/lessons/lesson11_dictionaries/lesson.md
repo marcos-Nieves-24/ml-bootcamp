@@ -1,25 +1,25 @@
 ---
 Module: 2
 Lesson Number: 11
-Lesson Title: Dictionaries
+Lesson Title: Diccionarios
 Estimated Duration: 60 minutes
 Prerequisites: L9 — Lists
 Learning Objectives:
-  - Create dictionaries with key-value pairs
+  - Crear dictionaries with key-value pairs
   - Access, add, update, and delete dictionary entries
-  - Use dictionary methods: keys(), values(), items(), get()
-  - Write dictionary comprehensions
-  - Use dictionaries for data aggregation and counting
+  - Usar dictionary methods: keys(), values(), items(), get()
+  - Escribir dictionary comprehensions
+  - Usar dictionaries for data aggregation and counting
 Keywords: dictionary, key, value, mapping, hash table, comprehension
-Difficulty: Beginner
+Difficulty: Principiante
 Programming Concepts: Key-value pairs, hash tables, mapping
-Datasets Used: None
+Datasets Used: Ninguno
 Notebook: notebook.ipynb
 Assignment: assignment.md
 Quiz: quiz.md
 ---
 
-# Dictionaries
+# Diccionarios
 
 ## Motivation
 

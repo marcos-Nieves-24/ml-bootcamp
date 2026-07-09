@@ -1,91 +1,91 @@
 ---
 Module: 1
 Lesson: 5
-Title: AI Applications
+Title: Aplicaciones de la IA
 ---
 
-# Lab 5: AI Application Mapping
+# Laboratorio 5: Mapeo de Aplicaciones de IA
 
-## Objectives
+## Objetivos
 
-By the end of this lab, you will be able to:
-- Map real-world products to AI application areas
-- Identify the underlying AI technology in common applications
-- Analyze the capabilities and limitations of AI applications
-- Connect applications to industry use cases
+Al finalizar este laboratorio, podrás:
+- Mapear productos del mundo real a áreas de aplicación de IA
+- Identificar la tecnología de IA subyacente en aplicaciones comunes
+- Analizar las capacidades y limitaciones de las aplicaciones de IA
+- Conectar aplicaciones con casos de uso de la industria
 
-## Duration
+## Duración
 
-45 minutes
+45 minutos
 
-## Prerequisites
+## Prerrequisitos
 
-- Lesson 5: AI Applications
+- Lección 5: Aplicaciones de la IA
 
-## Materials
+## Materiales
 
-- Internet access for research
-- Worksheet (this document)
+- Acceso a internet para investigación
+- Hoja de trabajo (este documento)
 
-## Instructions
+## Instrucciones
 
-### Part 1: Application Inventory (15 minutes)
+### Parte 1: Inventario de Aplicaciones (15 minutos)
 
-For each product below, identify:
-1. Primary AI application area (Computer Vision, NLP, Robotics, Recommendation, Generative AI)
-2. Specific AI tasks it performs
-3. What data does it use?
+Para cada producto a continuación, identifica:
+1. Área de aplicación principal de IA (Visión por Computadora, PLN, Robótica, Recomendación, IA Generativa)
+2. Tareas específicas de IA que realiza
+3. ¿Qué datos utiliza?
 
-| Product | Application Area | AI Tasks | Data Used |
+| Producto | Área de Aplicación | Tareas de IA | Datos Utilizados |
 |---|---|---|---|
 | Google Photos | | | |
 | Grammarly | | | |
-| TikTok "For You" feed | | | |
+| Feed "Para Ti" de TikTok | | | |
 | Amazon Alexa | | | |
 | Tesla Autopilot | | | |
 | GitHub Copilot | | | |
 
-### Part 2: Technology Mapping (15 minutes)
+### Parte 2: Mapeo de Tecnología (15 minutos)
 
-Match each product to its underlying technology:
+Empareja cada producto con su tecnología subyacente:
 - CNN / Vision Transformer
 - Transformer / LLM
-- Collaborative Filtering
-- Reinforcement Learning
-- Diffusion Model
+- Filtrado Colaborativo
+- Aprendizaje por Refuerzo
+- Modelo de Difusión
 
-| Product | Technology | Justification |
+| Producto | Tecnología | Justificación |
 |---|---|---|
 | DALL-E | | |
-| Netflix recommendations | | |
-| Roomba vacuum | | |
+| Recomendaciones de Netflix | | |
+| Aspiradora Roomba | | |
 | Google Translate | | |
-| Face ID on iPhone | | |
+| Face ID en iPhone | | |
 
-### Part 3: Application Design (15 minutes)
+### Parte 3: Diseño de Aplicación (15 minutos)
 
-Design an AI-powered feature for a product of your choice:
+Diseña una funcionalidad impulsada por IA para un producto de tu elección:
 
-1. What is the product?
-2. What AI application area would you use?
-3. What specific task would the AI perform?
-4. What data would it need?
-5. How would users benefit?
-6. What could go wrong?
+1. ¿Cuál es el producto?
+2. ¿Qué área de aplicación de IA usarías?
+3. ¿Qué tarea específica realizaría la IA?
+4. ¿Qué datos necesitaría?
+5. ¿Cómo se beneficiarían los usuarios?
+6. ¿Qué podría salir mal?
 
-## Deliverables
+## Entregables
 
-Submit a document containing:
-- Part 1: Completed application inventory table
-- Part 2: Completed technology mapping table
-- Part 3: AI feature design (2-3 paragraphs)
+Entrega un documento que contenga:
+- Parte 1: Tabla de inventario de aplicaciones completada
+- Parte 2: Tabla de mapeo de tecnología completada
+- Parte 3: Diseño de funcionalidad de IA (2-3 párrafos)
 
-## Grading Criteria
+## Criterios de Evaluación
 
-| Criteria | Points |
+| Criterio | Puntos |
 |---|---|
-| Correct application area identification | 3 |
-| Accurate technology mapping | 3 |
-| Creative and thoughtful application design | 2 |
-| Quality of analysis and justification | 2 |
+| Identificación correcta del área de aplicación | 3 |
+| Mapeo preciso de tecnología | 3 |
+| Diseño de aplicación creativo y reflexivo | 2 |
+| Calidad del análisis y la justificación | 2 |
 | **Total** | **10** |

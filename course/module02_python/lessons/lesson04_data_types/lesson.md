@@ -1,25 +1,25 @@
 ---
 Module: 2
 Lesson Number: 4
-Lesson Title: Data Types
+Lesson Title: Tipos de Datos
 Estimated Duration: 60 minutes
 Prerequisites: L3 — Variables
 Learning Objectives:
-  - Identify the four basic data types: int, float, str, bool
-  - Use type() to inspect variable types
+  - Identificar the four basic data types: int, float, str, bool
+  - Usar type() to inspect variable types
   - Convert between data types using int(), float(), str(), bool()
-  - Explain the difference between mutable and immutable types
+  - Explicar the difference between mutable and immutable types
   - Handle type errors appropriately
 Keywords: int, float, str, bool, type conversion, type casting, type()
-Difficulty: Beginner
+Difficulty: Principiante
 Programming Concepts: Primitive types, type conversion, type checking
-Datasets Used: None
+Datasets Used: Ninguno
 Notebook: notebook.ipynb
 Assignment: assignment.md
 Quiz: quiz.md
 ---
 
-# Data Types
+# Tipos de Datos
 
 ## Motivation
 

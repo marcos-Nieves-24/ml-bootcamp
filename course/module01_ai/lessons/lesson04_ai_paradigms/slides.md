@@ -1,131 +1,131 @@
 ---
 Module: 1
 Lesson: 4
-Title: AI Paradigms
+Title: Paradigmas de IA
 ---
 
-# Slide Deck: AI Paradigms
+# Presentación: Paradigmas de IA
 
-## Slide 1: Title Slide
-- **AI Paradigms**
-- Module 1: Introduction to AI
-- Lesson 4
+## Diapositiva 1: Portada
+- **Paradigmas de IA**
+- Módulo 1: Introducción a la IA
+- Lección 4
 
-## Slide 2: Lesson Objectives
-- Compare Expert Systems, Rule-Based, ML, DL, and LLMs
-- Explain when each paradigm is appropriate
-- Implement simple examples of each
+## Diapositiva 2: Objetivos de la Lección
+- Comparar Sistemas Expertos, Basados en Reglas, ML, DL y LLMs
+- Explicar cuándo es apropiado cada paradigma
+- Implementar ejemplos simples de cada uno
 
-## Slide 3: Five AI Paradigms
-1. Expert Systems (1970s)
-2. Rule-Based Systems (1980s)
+## Diapositiva 3: Cinco Paradigmas de IA
+1. Sistemas Expertos (1970s)
+2. Sistemas Basados en Reglas (1980s)
 3. Machine Learning (1990s)
 4. Deep Learning (2010s)
 5. Large Language Models (2020s)
 
-## Slide 4: Expert Systems
-- Emulate human expert decision-making
-- Components: Knowledge Base + Inference Engine + UI
-- Example: MYCIN (bacterial infection diagnosis)
-- Limitation: Knowledge acquisition bottleneck
+## Diapositiva 4: Sistemas Expertos
+- Emulan la toma de decisiones de un experto humano
+- Componentes: Base de Conocimiento + Motor de Inferencia + UI
+- Ejemplo: MYCIN (diagnóstico de infecciones bacterianas)
+- Limitación: CUELLO de botella de adquisición de conocimiento
 
-## Slide 5: How Expert Systems Work
+## Diapositiva 5: Cómo Funcionan los Sistemas Expertos
 ```
-User Input → Inference Engine → Knowledge Base → Output
-                    ↑                    ↑
-              Forward/Backward      Facts + Rules
-                 Chaining
-```
-
-## Slide 6: Rule-Based Systems
-- IF condition THEN action
-- Forward chaining: facts → conclusions
-- Backward chaining: goal → supporting facts
-- Simple, interpretable, no data needed
-
-## Slide 7: Machine Learning
-- Learn patterns from data
-- Three types: Supervised, Unsupervised, Reinforcement
-- Key concepts: features, labels, training, prediction
-- Example: Spam filter learning from examples
-
-## Slide 8: ML Workflow
-```
-Data → Prepare → Split → Train → Evaluate → Deploy
+Entrada Usuario → Motor de Inferencia → Base de Conocimiento → Salida
+                        ↑                         ↑
+              Encadenamiento              Hechos + Reglas
+              Adelante/Atrás
 ```
 
-- 80/20 train/test split
-- Accuracy, precision, recall as metrics
+## Diapositiva 6: Sistemas Basados en Reglas
+- SI condición ENTONCES acción
+- Encadenamiento hacia adelante: hechos → conclusiones
+- Encadenamiento hacia atrás: objetivo → hechos de soporte
+- Simple, interpretable, sin datos necesarios
 
-## Slide 9: Deep Learning
-- Multi-layer neural networks
-- Learns hierarchical features
-- Excels at: images, audio, complex patterns
-- Requires: large data, GPU compute
+## Diapositiva 7: Machine Learning
+- Aprende patrones de datos
+- Tres tipos: Supervisado, No Supervisado, Por Refuerzo
+- Conceptos clave: features, labels, training, prediction
+- Ejemplo: Filtro de spam aprendiendo de ejemplos
 
-## Slide 10: Neural Network Structure
+## Diapositiva 8: Flujo de Trabajo de ML
 ```
-Input Layer → Hidden Layer(s) → Output Layer
+Datos → Preparar → Dividir → Entrenar → Evaluar → Desplegar
+```
+
+- División 80/20 train/test
+- Precisión, precisión positiva, exhaustividad como métricas
+
+## Diapositiva 9: Deep Learning
+- Redes neuronales multicapa
+- Aprende características jerárquicas
+- Sobresale en: imágenes, audio, patrones complejos
+- Requiere: muchos datos, cómputo GPU
+
+## Diapositiva 10: Estructura de Red Neuronal
+```
+Capa de Entrada → Capa(s) Oculta(s) → Capa de Salida
     [x1] ───→ [h1] ───→ [y1]
     [x2] ───→ [h2] ───→ [y2]
     [x3] ───→ [h3]
-    Weights + Bias + Activation Function
+    Pesos + Sesgo + Función de Activación
 ```
 
-## Slide 11: Large Language Models
-- Transformers with self-attention
-- Trained on massive text corpora
-- Emergent abilities at scale
-- Examples: GPT-4, Claude, Gemini
+## Diapositiva 11: Large Language Models
+- Transformers con self-attention
+- Entrenados en corpus masivos de texto
+- Habilidades emergentes a escala
+- Ejemplos: GPT-4, Claude, Gemini
 
-## Slide 12: LLM Capabilities
-- Text generation
-- Translation, summarization
-- Code generation
-- Question answering
-- Reasoning (limited)
+## Diapositiva 12: Capacidades de los LLM
+- Generación de texto
+- Traducción, resumen
+- Generación de código
+- Respuesta a preguntas
+- Razonamiento (limitado)
 
-## Slide 13: Paradigm Comparison
-| Paradigm | Data Need | Complexity | Interpretability |
+## Diapositiva 13: Comparación de Paradigmas
+| Paradigma | Necesidad de Datos | Complejidad | Interpretabilidad |
 |---|---|---|---|
-| Rules | None | Low | High |
-| ML | Medium | Medium | Medium |
-| DL | High | High | Low |
-| LLM | Very High | Very High | Low |
+| Reglas | Ninguna | Baja | Alta |
+| ML | Media | Media | Media |
+| DL | Alta | Alta | Baja |
+| LLM | Muy Alta | Muy Alta | Baja |
 
-## Slide 14: When to Use What
-- Clear stable rules → Rule-Based
-- Enough labeled data → ML
-- Images/complex → DL
-- Language tasks → LLM
-- Often: combine multiple paradigms
+## Diapositiva 14: Cuándo Usar Qué
+- Reglas claras y estables → Basado en Reglas
+- Suficientes datos etiquetados → ML
+- Imágenes/complejo → DL
+- Tareas de lenguaje → LLM
+- A menudo: combinar múltiples paradigmas
 
-## Slide 15: Biotechnology Example
-- Rule: IF sequence contains motif X THEN function Y
-- ML: Predict function from sequence features
-- DL: AlphaFold for protein structure
-- LLM: ESM-2 protein language model
+## Diapositiva 15: Ejemplo en Biotecnología
+- Regla: SI secuencia contiene motivo X ENTONCES función Y
+- ML: Predecir función a partir de características de secuencia
+- DL: AlphaFold para estructura de proteínas
+- LLM: Modelo de lenguaje de proteínas ESM-2
 
-## Slide 16: SaaS Example
-- Rule: IF login < 1/week THEN churn risk high
-- ML: Random Forest for churn prediction
-- DL: Temporal patterns in user behavior
-- LLM: Analyze support conversations
+## Diapositiva 16: Ejemplo en SaaS
+- Regla: SI inicio de sesión < 1/semana ENTONCES riesgo alto
+- ML: Random Forest para predicción de abandono
+- DL: Patrones temporales en comportamiento de usuario
+- LLM: Analizar conversaciones de soporte
 
-## Slide 17: Common Mistakes
-- Using DL when simple ML would work
-- Ignoring the knowledge bottleneck
-- Thinking LLMs solve everything
-- Not considering hybrid approaches
+## Diapositiva 17: Errores Comunes
+- Usar DL cuando ML simple funcionaría
+- Ignorar el cuello de botella del conocimiento
+- Pensar que los LLMs lo resuelven todo
+- No considerar enfoques híbridos
 
-## Slide 18: Summary
-- Five paradigms, each with strengths
-- Expert/Rule: interpretable, no data
-- ML/DL: learn from data, powerful
-- LLMs: language understanding at scale
-- Choose the simplest paradigm that works
-- Hybrid systems are often best
+## Diapositiva 18: Resumen
+- Cinco paradigmas, cada uno con fortalezas
+- Experto/Reglas: interpretable, sin datos
+- ML/DL: aprenden de datos, poderosos
+- LLMs: comprensión del lenguaje a escala
+- Elige el paradigma más simple que funcione
+- Los sistemas híbridos suelen ser los mejores
 
-## Slide 19: Preview
-- Next: AI Applications in the real world
-- Computer Vision, NLP, Robotics, Generative AI
+## Diapositiva 19: Vista Previa
+- Siguiente: Aplicaciones de IA en el mundo real
+- Visión por Computadora, PLN, Robótica, IA Generativa

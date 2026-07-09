@@ -1,16 +1,16 @@
 ---
 Module: 3
 Lesson Number: 4
-Lesson Title: Statistical Distributions
+Lesson Title: Distribuciones Estadísticas
 Estimated Duration: 75 minutes
 Prerequisites: Lesson 3 (Probability Fundamentals)
 Learning Objectives:
-  - Describe the Bernoulli, Binomial, Poisson, and Normal distributions
+  - Describir the Bernoulli, Binomial, Poisson, and Normal distributions
   - Calculate probabilities using PMFs, PDFs, and CDFs with scipy.stats
   - Standardize a normal distribution to Z-scores
   - Choose the appropriate distribution for a given data scenario
 Keywords: Bernoulli, Binomial, Poisson, Normal, Gaussian, Z-score, standardization, scipy.stats, PMF, PDF, CDF
-Difficulty: Intermediate
+Difficulty: Intermedio
 Programming Concepts: scipy.stats, numpy, matplotlib
 Mathematical Concepts: PMF, PDF, CDF, standardization, central limit theorem
 Machine Learning Concepts: feature normalization, distribution assumptions

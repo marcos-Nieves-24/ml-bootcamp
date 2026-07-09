@@ -1,25 +1,25 @@
 ---
 Module: 2
 Lesson Number: 10
-Lesson Title: Tuples
+Lesson Title: Tuplas
 Estimated Duration: 30 minutes
 Prerequisites: L9 — Lists
 Learning Objectives:
-  - Create tuples and explain their immutability
-  - Use tuple unpacking for multiple assignment
-  - Compare tuples with lists and choose appropriately
-  - Use tuples as dictionary keys
+  - Crear tuples and explain their immutability
+  - Usar tuple unpacking for multiple assignment
+  - Comparar tuples with lists and choose appropriately
+  - Usar tuples as dictionary keys
   - Return multiple values from functions using tuples
 Keywords: tuple, immutable, unpacking, hashable, sequence
-Difficulty: Beginner
+Difficulty: Principiante
 Programming Concepts: Immutable sequences, packing/unpacking, hashable types
-Datasets Used: None
+Datasets Used: Ninguno
 Notebook: notebook.ipynb
 Assignment: assignment.md
 Quiz: quiz.md
 ---
 
-# Tuples
+# Tuplas
 
 ## Motivation
 

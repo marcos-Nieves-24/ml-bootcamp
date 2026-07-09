@@ -1,102 +1,102 @@
 ---
 Module: 1
 Lesson: 3
-Title: Types of AI
+Title: Tipos de IA
 ---
 
-# Slide Deck: Types of AI
+# Presentación: Tipos de IA
 
-## Slide 1: Title Slide
-- **Types of AI**
-- Module 1: Introduction to AI
-- Lesson 3
+## Diapositiva 1: Portada
+- **Tipos de IA**
+- Módulo 1: Introducción a la IA
+- Lección 3
 
-## Slide 2: Lesson Objectives
-- Distinguish Narrow AI, AGI, and Superintelligence
-- Classify AI by functionality (4 types)
-- Evaluate which type current systems belong to
+## Diapositiva 2: Objetivos de la Lección
+- Distinguir entre IA Estrecha, AGI y Superinteligencia
+- Clasificar la IA por funcionalidad (4 tipos)
+- Evaluar a qué tipo pertenecen los sistemas actuales
 
-## Slide 3: Classification by Capability
-- Three levels:
-  1. Narrow AI (all current AI)
-  2. General AI (AGI) — does not exist
-  3. Superintelligence (ASI) — hypothetical
-- Like a pyramid: narrow at the bottom, broad at the top
+## Diapositiva 3: Clasificación por Capacidad
+- Tres niveles:
+   1. IA Estrecha (toda la IA actual)
+   2. IA General (AGI) — no existe
+   3. Superinteligencia (ASI) — hipotética
+- Como una pirámide: estrecha en la base, amplia en la cima
 
-## Slide 4: Narrow AI (Weak AI)
-- Specialized in one task
-- Cannot generalize to other domains
-- Examples: chess engines, image recognition, LLMs
-- "All current AI is Narrow AI"
+## Diapositiva 4: IA Estrecha (IA Débil)
+- Especializada en una tarea
+- No puede generalizar a otros dominios
+- Ejemplos: motores de ajedrez, reconocimiento de imágenes, LLMs
+- "Toda la IA actual es IA Estrecha"
 
-## Slide 5: AGI (Strong AI)
-- Human-level intelligence across all tasks
-- Transfer learning, common sense, metacognition
-- Does NOT exist yet
-- Estimates for arrival: 5 years to never
+## Diapositiva 5: AGI (IA Fuerte)
+- Inteligencia a nivel humano en todas las tareas
+- Transfer learning, sentido común, metacognición
+- Aún NO existe
+- Estimaciones de llegada: 5 años a nunca
 
-## Slide 6: Why AGI is Hard
-- No causal understanding
-- Brittle to distribution shift
-- No common sense
-- No true language comprehension
-- Current architectures may be insufficient
+## Diapositiva 6: Por Qué AGI es Difícil
+- Sin comprensión causal
+- Vulnerable a cambios de distribución
+- Sin sentido común
+- Sin comprensión real del lenguaje
+- Las arquitecturas actuales pueden ser insuficientes
 
-## Slide 7: Superintelligence (ASI)
-- Vastly exceeds human intelligence
-- Could solve problems humans cannot formulate
-- Raises existential safety questions
-- Entirely hypothetical
+## Diapositiva 7: Superinteligencia (ASI)
+- Supera vastamente la inteligencia humana
+- Podría resolver problemas que los humanos no pueden formular
+- Plantea preguntas existenciales de seguridad
+- Completamente hipotética
 
-## Slide 8: Classification by Functionality
-1. Reactive Machines
-2. Limited Memory
-3. Theory of Mind
-4. Self-Aware
+## Diapositiva 8: Clasificación por Funcionalidad
+1. Máquinas Reactivas
+2. Memoria Limitada
+3. Teoría de la Mente
+4. Autoconsciente
 
-## Slide 9: Type 1 — Reactive Machines
-- No memory, purely reactive
-- Example: Deep Blue
-- Sees the current state, acts on it
-- No learning from past experience
+## Diapositiva 9: Tipo 1 — Máquinas Reactivas
+- Sin memoria, puramente reactivas
+- Ejemplo: Deep Blue
+- Ve el estado actual, actúa sobre él
+- Sin aprendizaje de la experiencia pasada
 
-## Slide 10: Type 2 — Limited Memory
-- Uses recent past information
-- Example: Self-driving cars tracking nearby vehicles
-- All modern ML systems
+## Diapositiva 10: Tipo 2 — Memoria Limitada
+- Usa información reciente del pasado
+- Ejemplo: Autos autónomos rastreando vehículos cercanos
+- Todos los sistemas modernos de ML
 
-## Slide 11: Type 3 — Theory of Mind
-- Understands others' mental states
-- Does NOT exist in AI
-- Children develop this around age 4
-- Needed for true social interaction
+## Diapositiva 11: Tipo 3 — Teoría de la Mente
+- Entiende los estados mentales de otros
+- NO existe en IA
+- Los niños desarrollan esto alrededor de los 4 años
+- Necesaria para una verdadera interacción social
 
-## Slide 12: Type 4 — Self-Aware
-- Consciousness, self-awareness, emotions
-- Does NOT exist
-- Realm of philosophy and science fiction
+## Diapositiva 12: Tipo 4 — Autoconsciente
+- Conciencia, autoconciencia, emociones
+- NO existe
+- Ámbito de la filosofía y la ciencia ficción
 
-## Slide 13: Current AI Landscape
+## Diapositiva 13: Panorama Actual de la IA
 ```
-Type 1: Reactive Machines ── Deep Blue
-Type 2: Limited Memory ──── Self-driving cars, LLMs, AlphaFold
-Type 3: Theory of Mind ──── DOES NOT EXIST
-Type 4: Self-Aware ──────── DOES NOT EXIST
+Tipo 1: Máquinas Reactivas ──── Deep Blue
+Tipo 2: Memoria Limitada ────── Autos autónomos, LLMs, AlphaFold
+Tipo 3: Teoría de la Mente ──── NO EXISTE
+Tipo 4: Autoconsciente ──────── NO EXISTE
 ```
 
-## Slide 14: Common Misconceptions
-- ChatGPT is NOT AGI
-- Scaling current approaches may not lead to AGI
-- Narrow AI can be extremely powerful
-- AI is not on a guaranteed path to consciousness
+## Diapositiva 14: Conceptos Erróneos Comunes
+- ChatGPT NO es AGI
+- Escalar los enfoques actuales puede no llevar a AGI
+- La IA Estrecha puede ser extremadamente poderosa
+- La IA no está en un camino garantizado hacia la conciencia
 
-## Slide 15: Summary
-- All current AI is Narrow AI
-- AGI and ASI are hypothetical
-- Two functionality types exist today: Reactive and Limited Memory
-- Theory of Mind and Self-Aware AI do not exist
-- Classify systems critically — do not overclaim
+## Diapositiva 15: Resumen
+- Toda la IA actual es IA Estrecha
+- AGI y ASI son hipotéticas
+- Dos tipos funcionales existen hoy: Reactivas y Memoria Limitada
+- La Teoría de la Mente y la IA Autoconsciente no existen
+- Clasifica los sistemas críticamente — no exageres
 
-## Slide 16: Preview — Next Lesson
-- AI Paradigms: Expert Systems, ML, Deep Learning, LLMs
-- The technical approaches behind AI
+## Diapositiva 16: Vista Previa — Próxima Lección
+- Paradigmas de IA: Sistemas Expertos, ML, Deep Learning, LLMs
+- Los enfoques técnicos detrás de la IA

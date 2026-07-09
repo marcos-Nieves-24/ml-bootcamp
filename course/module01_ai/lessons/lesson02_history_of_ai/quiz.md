@@ -1,57 +1,57 @@
 ---
 Module: 1
 Lesson: 2
-Title: History of AI
+Title: Historia de la IA
 ---
 
-# Quiz: History of AI
+# Cuestionario: Historia de la IA
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 preguntas)
 
-**1. Where and when was the field of Artificial Intelligence officially founded?**
+**1. ¿Dónde y cuándo se fundó oficialmente el campo de la Inteligencia Artificial?**
 
 a) MIT, 1950
 b) Dartmouth College, 1956
-c) Stanford University, 1962
-d) University of Edinburgh, 1973
+c) Universidad de Stanford, 1962
+d) Universidad de Edimburgo, 1973
 
-**2. What was the primary cause of the first AI winter (1974–1980)?**
+**2. ¿Cuál fue la causa principal del primer invierno de la IA (1974–1980)?**
 
-a) Governments banned AI research
-b) Computers lacked power and AI failed to deliver on optimistic promises
-c) Scientists lost interest in AI
-d) A virus attacked AI systems
+a) Los gobiernos prohibieron la investigación en IA
+b) Las computadoras carecían de potencia y la IA no cumplió las promesas optimistas
+c) Los científicos perdieron interés en la IA
+d) Un virus atacó los sistemas de IA
 
-**3. Which system defeated world champion Garry Kasparov in 1997?**
+**3. ¿Qué sistema derrotó al campeón mundial Garry Kasparov en 1997?**
 
 a) AlphaGo
 b) Watson
 c) Deep Blue
 d) ELIZA
 
-**4. What was the key problem with expert systems that led to the second AI winter?**
+**4. ¿Cuál fue el problema clave de los sistemas expertos que llevó al segundo invierno de la IA?**
 
-a) They were too expensive to build
-b) They were brittle, hard to maintain, and required rare human experts
-c) They could not solve any real problems
-d) They required too much data
+a) Eran demasiado costosos de construir
+b) Eran frágiles, difíciles de mantener y requerían expertos humanos escasos
+c) No podían resolver ningún problema real
+d) Requerían demasiados datos
 
-**5. Which event in 2012 sparked the modern deep learning revolution?**
+**5. ¿Qué evento en 2012 desencadenó la revolución moderna del deep learning?**
 
-a) IBM Watson won Jeopardy!
-b) AlexNet won the ImageNet competition
-c) AlphaGo defeated Lee Sedol
-d) GPT-3 was released
+a) IBM Watson ganó Jeopardy!
+b) AlexNet ganó la competencia ImageNet
+c) AlphaGo derrotó a Lee Sedol
+d) Se lanzó GPT-3
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 preguntas)
 
-**6. What is Moravec's Paradox? Provide an example.**
+**6. ¿Qué es la Paradoja de Moravec? Proporciona un ejemplo.**
 
-**7. Explain the difference between symbolic AI and connectionist AI.**
+**7. Explica la diferencia entre la IA simbólica y la IA conexionista.**
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 pregunta)
 
-**8.** Write a Python function `timeline_from_year(milestones, year)` that takes a list of (year, event) tuples and a starting year, and returns only the events from that year onward. Example:
+**8.** Escribe una función en Python `timeline_from_year(milestones, year)` que reciba una lista de tuplas (año, evento) y un año de inicio, y devuelva solo los eventos desde ese año en adelante. Ejemplo:
 
 ```python
 milestones = [(1950, "Turing Test"), (1956, "Dartmouth"), (2012, "AlexNet")]
@@ -61,15 +61,15 @@ events_after_2000 = timeline_from_year(milestones, 2000)
 
 ---
 
-## Answer Key
+## Clave de Respuestas
 
 1. **b)** Dartmouth College, 1956
-2. **b)** Computers lacked power and AI failed to deliver on optimistic promises
+2. **b)** Las computadoras carecían de potencia y la IA no cumplió las promesas optimistas
 3. **c)** Deep Blue
-4. **b)** They were brittle, hard to maintain, and required rare human experts
-5. **b)** AlexNet won the ImageNet competition
-6. Moravec's Paradox is the observation that tasks that are hard for humans (e.g., chess, mathematical theorem proving) are easy for computers, while tasks that are easy for humans (e.g., recognizing a face, picking up an object) are hard for computers.
-7. Symbolic AI (GOFAI) uses explicit symbols, rules, and logic to represent knowledge and reason. Connectionist AI uses neural networks that learn patterns from data without explicit rules.
+4. **b)** Eran frágiles, difíciles de mantener y requerían expertos humanos escasos
+5. **b)** AlexNet ganó la competencia ImageNet
+6. La Paradoja de Moravec es la observación de que las tareas que son difíciles para los humanos (ej., ajedrez, demostración de teoremas matemáticos) son fáciles para las computadoras, mientras que las tareas que son fáciles para los humanos (ej., reconocer una cara, recoger un objeto) son difíciles para las computadoras.
+7. La IA simbólica (GOFAI) usa símbolos, reglas y lógica explícitas para representar conocimiento y razonar. La IA conexionista usa redes neuronales que aprenden patrones a partir de datos sin reglas explícitas.
 8. 
 ```python
 def timeline_from_year(milestones, year):

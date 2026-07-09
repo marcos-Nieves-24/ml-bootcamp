@@ -1,82 +1,82 @@
 ---
 Module: 1
 Lesson: 6
-Title: AI in Biotechnology
+Title: IA en Biotecnología
 ---
 
-# Assignment 6: AI in Biotech — Case Study Analysis
+# Tarea 6: IA en Biotecnología — Análisis de Caso de Estudio
 
-## Objectives
+## Objetivos
 
-- Research a real AI application in biotechnology
-- Analyze the problem, approach, and impact
-- Evaluate technical and ethical considerations
-- Communicate findings in a structured report
+- Investigar una aplicación real de IA en biotecnología
+- Analizar el problema, el enfoque y el impacto
+- Evaluar consideraciones técnicas y éticas
+- Comunicar hallazgos en un informe estructurado
 
-## Instructions
+## Instrucciones
 
-Choose **one** case study from the list below:
+Elige **un** caso de estudio de la siguiente lista:
 
-1. **AlphaFold** — DeepMind's protein structure prediction
-2. **Insilico Medicine** — AI-discovered drug for fibrosis
-3. **Zebra Medical Vision** — AI-powered medical imaging
-4. **DeepVariant** — Google's AI for genomic variant calling
-5. **IBM Watson for Oncology** — AI for cancer treatment recommendations
-6. **Atomwise** — AI for virtual screening and drug discovery
+1. **AlphaFold** — Predicción de estructura de proteínas de DeepMind
+2. **Insilico Medicine** — Fármaco descubierto por IA para fibrosis
+3. **Zebra Medical Vision** — Imágenes médicas impulsadas por IA
+4. **DeepVariant** — IA de Google para llamado de variantes genómicas
+5. **IBM Watson for Oncology** — IA para recomendaciones de tratamiento contra el cáncer
+6. **Atomwise** — IA para cribado virtual y descubrimiento de fármacos
 
-### Write a report (1000-1200 words) with:
+### Escribe un informe (1000-1200 palabras) con:
 
-**Section 1: Background (200 words)**
-- What problem does the AI system address?
-- What was the state of the field before AI?
-- Who developed the system?
+**Sección 1: Antecedentes (200 palabras)**
+- ¿Qué problema aborda el sistema de IA?
+- ¿Cuál era el estado del campo antes de la IA?
+- ¿Quién desarrolló el sistema?
 
-**Section 2: Technology (300 words)**
-- What AI paradigms and techniques are used?
-- What data was used for training?
-- How does the system work at a technical level?
+**Sección 2: Tecnología (300 palabras)**
+- ¿Qué paradigmas y técnicas de IA se utilizan?
+- ¿Qué datos se usaron para el entrenamiento?
+- ¿Cómo funciona el sistema a nivel técnico?
 
-**Section 3: Impact (250 words)**
-- What results has the system achieved?
-- How has it changed the field?
-- What limitations remain?
+**Sección 3: Impacto (250 palabras)**
+- ¿Qué resultados ha logrado el sistema?
+- ¿Cómo ha cambiado el campo?
+- ¿Qué limitaciones persisten?
 
-**Section 4: Ethical and Regulatory Considerations (250 words)**
-- What ethical issues arise?
-- What regulatory approvals are needed?
-- How are patient data protected?
+**Sección 4: Consideraciones Éticas y Regulatorias (250 palabras)**
+- ¿Qué problemas éticos surgen?
+- ¿Qué aprobaciones regulatorias se necesitan?
+- ¿Cómo se protegen los datos de los pacientes?
 
-**Section 5: Future Outlook (200 words)**
-- What improvements are expected?
-- How will this technology evolve?
-- What new applications will it enable?
+**Sección 5: Perspectiva Futura (200 palabras)**
+- ¿Qué mejoras se esperan?
+- ¿Cómo evolucionará esta tecnología?
+- ¿Qué nuevas aplicaciones permitirá?
 
-## Deliverables
+## Entregables
 
-- PDF or Markdown document
-- 1000-1200 words
-- At least 4 cited references
-- Include a diagram of the AI system architecture
+- Documento en PDF o Markdown
+- 1000-1200 palabras
+- Al menos 4 referencias citadas
+- Incluye un diagrama de la arquitectura del sistema de IA
 
-## Evaluation Rubric
+## Rúbrica de Evaluación
 
-| Criteria | Excellent (4) | Good (3) | Adequate (2) | Poor (1) |
+| Criterio | Excelente (4) | Bueno (3) | Adecuado (2) | Insuficiente (1) |
 |---|---|---|---|---|
-| **Technical Accuracy** | Accurate, detailed description of AI technology | Mostly accurate | Some errors | Major errors |
-| **Impact Assessment** | Insightful analysis of achievements and limitations | Good analysis | Surface-level | Superficial |
-| **Ethical Consideration** | Thoughtful discussion of ethics and regulations | Good discussion | Mentioned briefly | None |
-| **Writing & Structure** | Clear, professional, well-organized | Good writing | Adequate | Poor |
-| **References** | 4+ quality sources, correct APA | 3 sources | 2 sources | 1 or fewer |
+| **Precisión Técnica** | Descripción precisa y detallada de la tecnología de IA | Mayormente precisa | Algunos errores | Errores graves |
+| **Evaluación de Impacto** | Análisis profundo de logros y limitaciones | Buen análisis | Superficial | Muy superficial |
+| **Consideración Ética** | Discusión reflexiva sobre ética y regulaciones | Buena discusión | Mencionado brevemente | Ninguna |
+| **Redacción y Estructura** | Clara, profesional, bien organizada | Buena redacción | Adecuada | Deficiente |
+| **Referencias** | 4+ fuentes de calidad, APA correcto | 3 fuentes | 2 fuentes | 1 o menos |
 
-## Estimated Time
+## Tiempo Estimado
 
-3-4 hours
+3-4 horas
 
-## Submission Deadline
+## Fecha de Entrega
 
-As specified by your instructor.
+Según lo especificado por tu instructor.
 
-## References
+## Referencias
 
 Jumper, J., et al. (2021). Highly accurate protein structure prediction with AlphaFold. *Nature*, 596, 583–589.
 
