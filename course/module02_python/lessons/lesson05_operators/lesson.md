@@ -5,11 +5,11 @@ Lesson Title: Operadores
 Estimated Duration: 45 minutes
 Prerequisites: L4 — Data Types
 Learning Objectives:
-  - Usar arithmetic operators for numeric computation
-  - Usar comparison operators to compare values
-  - Usar logical operators to combine boolean expressions
-  - Usar assignment operators to update variables
-  - Comprender operator precedence
+  - Usar operadores aritméticos para cómputo numérico
+  - Usar operadores de comparación para comparar valores
+  - Usar operadores lógicos para combinar expresiones booleanas
+  - Usar operadores de asignación para actualizar variables
+  - Comprender la precedencia de operadores
 Keywords: arithmetic, comparison, logical, assignment, operator precedence
 Difficulty: Principiante
 Programming Concepts: Operators, expressions, operator precedence
@@ -27,7 +27,7 @@ Operators are the tools that let you compute, compare, and combine values. Every
 
 ## Panorama General
 
-In the previous lesson, you learned about the data types that values can have. Now you will learn how to perform operations on those values. Operators build on your understanding of types because different types support different operators. This prepares you for the next lessons on functions and control flow, where operators are used in conditions and computations.
+En la lección anterior, aprendiste about the data types that values can have. Ahora aprenderás how to perform operations on those values. Operators build on your understanding of types because different types support different operators. This prepares you for the next lessons on functions and control flow, where operators are used in conditions and computations.
 
 ## Teoría
 
@@ -258,7 +258,7 @@ print(f"High churn risk: {high_churn_risk}")
 
 ## Desafío de Programación
 
-Write a program that:
+Escribe un programa que:
 1. Asks for the number of DNA samples, the cost per sample, and the available budget
 2. Calculates the total cost and whether it's within budget
 3. Applies a 15% discount if the number of samples > 100

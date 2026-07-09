@@ -1,32 +1,32 @@
-# Quiz: Variables
+# Cuestionario: Variables
 
-## Opción Múltiple (5 questions)
+## Opción Múltiple (5 preguntas)
 
-**P1:** Which of the following is a valid Python variable name?
+**P1:** ¿Cuál de los siguientes es un nombre de variable válido en Python?
 - A) `2nd_place`
 - B) `my-variable`
 - C) `_count`
 - D) `class`
 
-**P2:** What is the type of `x` after `x = "42"`?
+**P2:** ¿Cuál es el tipo de `x` después de `x = "42"`?
 - A) int
 - B) float
 - C) str
 - D) bool
 
-**P3:** What does `input()` always return?
+**P3:** ¿Qué devuelve `input()` siempre?
 - A) int
 - B) float
 - C) str
-- D) The type of the input value
+- D) El tipo del valor ingresado
 
-**P4:** What is the value of `a` and `b` after `a, b = b, a` if initially `a=3` and `b=7`?
+**P4:** ¿Cuál es el valor de `a` y `b` después de `a, b = b, a` si inicialmente `a=3` y `b=7`?
 - A) a=3, b=7
 - B) a=7, b=3
 - C) a=3, b=3
 - D) Error
 
-**P5:** Which naming convention does PEP 8 recommend for variables?
+**P5:** ¿Qué convención de nomenclatura recomienda PEP 8 para variables?
 - A) camelCase
 - B) PascalCase
 - C) snake_case
@@ -34,16 +34,16 @@
 
 ## Respuesta Corta (2 questions)
 
-**P6:** Explain what dynamic typing means in Python and give an example.
+**P6:** Explica qué significa el tipado dinámico en Python y da un ejemplo.
 
-**P7:** Why can't you use `if` or `for` as variable names?
+**P7:** ¿Por qué no puedes usar `if` o `for` como nombres de variables?
 
 ## Pregunta de Programación
 
-**P8:** Write code that:
-1. Asks the user for their name, age, and favorite color
-2. Stores them in variables
-3. Prints "Hello [name], you are [age] years old and your favorite color is [color]."
+**P8:** Escribe código que:
+1. Pida al usuario su nombre, edad y color favorito
+2. Los almacene en variables
+3. Imprima "Hola [nombre], tienes [edad] años y tu color favorito es [color]."
 
 ## Clave de Respuestas
 
@@ -57,14 +57,14 @@
 
 **P5:** C) snake_case
 
-**P6:** Dynamic typing means a variable can change its type during execution. For example:
+**P6:** El tipado dinámico significa que una variable puede cambiar su tipo durante la ejecución. Por ejemplo:
 ```python
 x = 10      # x is int
 x = "hello" # x is now str
 ```
-The type is determined by the value assigned, not declared upfront.
+El tipo está determinado por el valor asignado, no declarado de antemano.
 
-**P7:** `if` and `for` are reserved keywords in Python. They are part of the language syntax. Using them as variable names would create ambiguity between the keyword and the variable, so Python raises a `SyntaxError`.
+**P7:** `if` y `for` son palabras clave reservadas en Python. Son parte de la sintaxis del lenguaje. Usarlas como nombres de variables crearía ambigüedad entre la palabra clave y la variable, por lo que Python lanza un `SyntaxError`.
 
 **P8:**
 ```python

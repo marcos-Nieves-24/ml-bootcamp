@@ -309,7 +309,7 @@ print(f"Growth rates: {[f'{g:.1f}%' for g in growth_rates]}")
 
 ## Desafío de Programación
 
-Write a program that implements a **rolling window average** calculator:
+Escribe un programa que implements a **rolling window average** calculator:
 1. Given a list of numbers and a window size k
 2. Compute the average of every consecutive k elements
 3. Return a list of these averages

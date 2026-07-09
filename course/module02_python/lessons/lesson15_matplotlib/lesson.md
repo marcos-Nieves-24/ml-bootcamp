@@ -27,7 +27,7 @@ Visualization is essential for understanding data. A well-chosen plot reveals pa
 
 ## Panorama General
 
-In the previous lesson, you learned Pandas for data manipulation. Now you'll learn to visualize that data with Matplotlib. The next lesson on Seaborn builds on Matplotlib to create statistically-focused visualizations with less code. Throughout the ML modules, you'll use Matplotlib daily to understand models, evaluate performance, and present results.
+En la lección anterior, aprendiste Pandas for data manipulation. Now you'll learn to visualize that data with Matplotlib. The next lesson on Seaborn builds on Matplotlib to create statistically-focused visualizations with less code. Throughout the ML modules, you'll use Matplotlib daily to understand models, evaluate performance, and present results.
 
 ## Teoría
 

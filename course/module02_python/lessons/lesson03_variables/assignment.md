@@ -1,48 +1,48 @@
-# Assignment: Variables in Practice
+# Tarea: Variables en la Práctica
 
 ## Objetivos
 
-- Demonstrate variable assignment and reassignment
-- Use type conversion correctly
-- Implement a simple data pipeline using variables
-- Apply naming conventions
+- Demostrar la asignación y reasignación de variables
+- Usar la conversión de tipos correctamente
+- Implementar un pipeline de datos simple usando variables
+- Aplicar las convenciones de nomenclatura
 
 ## Instrucciones
 
-Create a Python script `patient_analysis.py` that:
+Crea un script de Python `patient_analysis.py` que:
 
-1. **Data collection**: Use `input()` to collect:
-   - Patient ID
-   - Age (years)
-   - Height (meters)
-   - Weight (kilograms)
-   - Systolic blood pressure
-   - Diastolic blood pressure
+1. **Recolección de datos**: Usa `input()` para recolectar:
+   - ID del paciente
+   - Edad (años)
+   - Altura (metros)
+   - Peso (kilogramos)
+   - Presión arterial sistólica
+   - Presión arterial diastólica
 
-2. **Calculations**: Compute:
-   - BMI = weight / (height²)
-   - Mean arterial pressure = diastolic + (systolic - diastolic) / 3
+2. **Cálculos**: Calcula:
+   - IMC = peso / (altura²)
+   - Presión arterial media = diastólica + (sistólica - diastólica) / 3
 
-3. **Classification**: Determine:
-   - BMI category (underweight < 18.5, normal 18.5-24.9, overweight 25-29.9, obese ≥ 30)
-   - Blood pressure category (normal: systolic < 120 AND diastolic < 80)
+3. **Clasificación**: Determina:
+   - Categoría de IMC (bajo peso < 18.5, normal 18.5-24.9, sobrepeso 25-29.9, obeso ≥ 30)
+   - Categoría de presión arterial (normal: sistólica < 120 Y diastólica < 80)
 
-4. **Output**: Print a formatted patient summary report
+4. **Salida**: Imprime un informe de resumen del paciente formateado
 
 ## Entregables
 
-- `patient_analysis.py` (well-commented, PEP 8 compliant)
-- Example output showing the results
+- `patient_analysis.py` (bien comentado, conforme a PEP 8)
+- Salida de ejemplo mostrando los resultados
 
-## Evaluation Rubric
+## Rúbrica de Evaluación
 
-| Criterio | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
+| Criterio | Excelente (4 pts) | Bueno (3 pts) | Necesita Mejorar (1-2 pts) |
 |----------|-------------------|--------------|-----------------------------|
-| Variable Usage | Clear, descriptive names, proper case | Acceptable names | Poor naming |
-| Type Conversion | Correct conversion of input() results | Mostly correct | Missing conversions |
-| Calculations | All formulas correct | Minor errors | Major errors |
-| Output | Formatted, readable summary | Adequate | Hard to read |
-| Code Quality | PEP 8, commented, organized | Mostly compliant | Disorganized |
+| Uso de Variables | Nombres claros, descriptivos, mayúsculas correctas | Nombres aceptables | Nombres pobres |
+| Conversión de Tipos | Conversión correcta de resultados de input() | Mayormente correcta | Conversiones faltantes |
+| Cálculos | Todas las fórmulas correctas | Errores menores | Errores graves |
+| Salida | Resumen formateado y legible | Adecuado | Difícil de leer |
+| Calidad del Código | PEP 8, comentado, organizado | Mayormente conforme | Desorganizado |
 
 ## Estimated Completion Time
 

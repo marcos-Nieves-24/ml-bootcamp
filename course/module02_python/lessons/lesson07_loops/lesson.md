@@ -27,7 +27,7 @@ Loops allow you to repeat operations efficiently. Instead of writing the same co
 
 ## Panorama General
 
-In the previous lesson, you learned functions — reusable code blocks. Loops add repetition to your toolkit. Combined with conditionals (next lesson), loops enable you to build complex data processing pipelines. After this lesson, you will understand lists (Lesson 9) better because loops are the primary way to process list elements.
+En la lección anterior, aprendiste functions — reusable code blocks. Loops add repetition to your toolkit. Combined with conditionals (next lesson), loops enable you to build complex data processing pipelines. After this lesson, you will understand lists (Lesson 9) better because loops are the primary way to process list elements.
 
 ## Teoría
 
@@ -283,7 +283,7 @@ for gene, expression in zip(genes, expressions):
 
 ## Desafío de Programación
 
-Write a program that implements the **Sieve of Eratosthenes** to find all prime numbers up to a given limit `n`:
+Escribe un programa que implements the **Sieve of Eratosthenes** to find all prime numbers up to a given limit `n`:
 1. Create a list of booleans from 0 to n, initially all True
 2. For each number from 2 to sqrt(n), mark multiples as False
 3. The remaining True indices are prime numbers

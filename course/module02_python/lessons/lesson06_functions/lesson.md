@@ -5,11 +5,11 @@ Lesson Title: Funciones
 Estimated Duration: 60 minutes
 Prerequisites: L5 — Operators
 Learning Objectives:
-  - Definir functions using the def keyword
-  - Pass arguments and return values from functions
-  - Distinguish between local and global scope
-  - Crear lambda (anonymous) functions
-  - Escribir docstrings following PEP 257
+  - Definir funciones usando la palabra clave def
+  - Pasar argumentos y devolver valores desde funciones
+  - Distinguir entre ámbito local y global
+  - Crear funciones lambda (anónimas)
+  - Escribir docstrings siguiendo PEP 257
 Keywords: function, parameter, argument, return, scope, lambda, docstring
 Difficulty: Principiante
 Programming Concepts: Function definition, parameter passing, scope, lambda expressions, documentation
@@ -307,7 +307,7 @@ print(f"Health Score: {health}/100")
 
 1. What is the difference between a parameter and an argument?
 2. What does a function return if it has no `return` statement?
-3. What is the purpose of a docstring?
+3. ¿Cuál es el propósito of a docstring?
 
 ### Nivel 2: Implementación
 

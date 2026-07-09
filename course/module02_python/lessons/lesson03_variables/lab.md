@@ -1,27 +1,27 @@
-# Lab: Working with Variables
+# Laboratorio: Trabajando con Variables
 
-## Objective
+## Objetivo
 
-Practice variable assignment, naming conventions, dynamic typing, and basic I/O.
+Practicar la asignación de variables, las convenciones de nomenclatura, el tipado dinámico y la E/S básica.
 
 ## Duración
 
-45 minutes
+45 minutos
 
 ## Prerrequisitos
 
-Lesson 2: Jupyter Notebook
+Lección 2: Jupyter Notebook
 
 ## Instrucciones
 
-### Part 1: Basic Assignment
+### Parte 1: Asignación Básica
 
-In a Jupyter notebook cell, assign the following and print each:
-- A variable `species` with "Homo sapiens"
-- A variable `chromosome_count` with 46
-- A variable `genome_size` with 3.1 (billion base pairs)
+En una celda de Jupyter notebook, asigna lo siguiente e imprime cada uno:
+- Una variable `species` con "Homo sapiens"
+- Una variable `chromosome_count` con 46
+- Una variable `genome_size` con 3.1 (miles de millones de pares de bases)
 
-### Part 2: Dynamic Typing
+### Parte 2: Tipado Dinámico
 
 ```python
 value = 100
@@ -32,7 +32,7 @@ value = "one hundred"
 print(type(value))
 ```
 
-### Part 3: User Input
+### Parte 3: Entrada de Usuario
 
 ```python
 name = input("Enter your name: ")
@@ -41,9 +41,9 @@ age = 2026 - year
 print(f"Hello {name}, you are about {age} years old.")
 ```
 
-### Part 4: Variable Swapping
+### Parte 4: Intercambio de Variables
 
-Demonstrate variable swapping using tuple unpacking:
+Demuestra el intercambio de variables usando desempaquetado de tuplas:
 ```python
 x = 5
 y = 10
@@ -51,9 +51,9 @@ x, y = y, x
 print(f"x={x}, y={y}")
 ```
 
-### Part 5: Biotechnology Context
+### Parte 5: Contexto de Biotecnología
 
-Write code that stores information about a DNA sequence:
+Escribe código que almacene información sobre una secuencia de ADN:
 ```python
 sequence_id = "SEQ001"
 sequence = "AGCTTCGATCG"
@@ -64,4 +64,4 @@ print(f"{sequence_id}: GC content = {gc_percent:.1f}%")
 
 ## Entregables
 
-A Jupyter notebook (`variables_lab.ipynb`) with all cells executed and outputs visible.
+Un Jupyter notebook (`variables_lab.ipynb`) con todas las celdas ejecutadas y las salidas visibles.

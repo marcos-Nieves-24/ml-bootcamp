@@ -27,7 +27,7 @@ Tuples are often called "immutable lists" — they store ordered collections lik
 
 ## Panorama General
 
-In the previous lesson, you learned lists — ordered, mutable collections. Tuples are ordered but immutable. Understanding the difference between mutable and immutable data structures is crucial for writing correct and efficient code. This lesson prepares you for dictionaries (next lesson), where tuples are used as keys (lists cannot be dictionary keys).
+En la lección anterior, aprendiste lists — ordered, mutable collections. Tuples are ordered but immutable. Understanding the difference between mutable and immutable data structures is crucial for writing correct and efficient code. This lesson prepares you for dictionaries (next lesson), where tuples are used as keys (lists cannot be dictionary keys).
 
 ## Teoría
 
@@ -269,7 +269,7 @@ for ts, uid, event_type, meta in events:
 
 ## Desafío de Programación
 
-Write a program that manages **inventory items** as tuples:
+Escribe un programa que manages **inventory items** as tuples:
 1. Each item is a tuple: `(item_id, name, quantity, price)`
 2. Create a list of at least 5 inventory items
 3. Write a function `total_value(inventory)` that returns the total value (sum of quantity * price for all items)

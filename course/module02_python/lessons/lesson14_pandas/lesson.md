@@ -28,7 +28,7 @@ Pandas is the most widely used Python library for data manipulation and analysis
 
 ## Panorama General
 
-In the previous lesson, you learned NumPy for numerical computing. Pandas is built on top of NumPy and adds labeled axes, missing data handling, and powerful data operations. This lesson directly prepares you for the visualization lessons (Matplotlib, Seaborn) and for all of Machine Learning (scikit-learn expects NumPy arrays that come from Pandas DataFrames).
+En la lección anterior, aprendiste NumPy for numerical computing. Pandas is built on top of NumPy and adds labeled axes, missing data handling, and powerful data operations. This lesson directly prepares you for the visualization lessons (Matplotlib, Seaborn) and for all of Machine Learning (scikit-learn expects NumPy arrays that come from Pandas DataFrames).
 
 ## Teoría
 

@@ -27,7 +27,7 @@ Conditionals allow programs to make decisions. Without them, code would execute 
 
 ## Panorama General
 
-In the previous lesson, you learned loops (repetition). Now you learn conditionals (decision-making). These two control structures — loops and conditionals — form the backbone of all non-trivial programs. Together with functions and operators, you now have everything needed to write sophisticated data processing logic.
+En la lección anterior, aprendiste loops (repetition). Now you learn conditionals (decision-making). These two control structures — loops and conditionals — form the backbone of all non-trivial programs. Together with functions and operators, you now have everything needed to write sophisticated data processing logic.
 
 ## Teoría
 

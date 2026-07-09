@@ -299,7 +299,7 @@ for user, events in sorted(user_events.items()):
 
 ## Desafío de Programación
 
-Write a program that implements an **in-memory key-value store** (like a simple database):
+Escribe un programa que implements an **in-memory key-value store** (like a simple database):
 1. Start with an empty dictionary
 2. Implement functions: `put(key, value)`, `get(key)`, `delete(key)`, `keys()`, `values()`, `search(field, value)`
 3. Store structured data: each value should be a dictionary with fields like `{"name": "...", "age": ..., "city": "..."}`

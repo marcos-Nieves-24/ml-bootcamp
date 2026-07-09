@@ -27,7 +27,7 @@ Seaborn is a statistical visualization library built on Matplotlib that makes it
 
 ## Panorama General
 
-In the previous lesson, you learned Matplotlib — the foundation for Python visualization. Seaborn builds on Matplotlib to provide higher-level, statistically-focused plots. Combined with Pandas for data manipulation, these three libraries (Pandas, Matplotlib, Seaborn) form the core data science toolkit. Throughout the ML modules, you'll use Seaborn for EDA and result visualization.
+En la lección anterior, aprendiste Matplotlib — the foundation for Python visualization. Seaborn builds on Matplotlib to provide higher-level, statistically-focused plots. Combined with Pandas for data manipulation, these three libraries (Pandas, Matplotlib, Seaborn) form the core data science toolkit. Throughout the ML modules, you'll use Seaborn for EDA and result visualization.
 
 ## Teoría
 

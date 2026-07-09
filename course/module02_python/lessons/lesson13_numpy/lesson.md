@@ -340,7 +340,7 @@ print(f"\nCorrelation matrix:\n{corr}")
 
 ## Desafío de Programación
 
-Write a program that implements **Principal Component Analysis (PCA)** from scratch using NumPy:
+Escribe un programa que implements **Principal Component Analysis (PCA)** from scratch using NumPy:
 1. Generate a random dataset (100 samples, 5 features)
 2. Center the data (subtract each column's mean)
 3. Compute the covariance matrix

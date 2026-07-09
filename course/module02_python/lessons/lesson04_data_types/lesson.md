@@ -5,11 +5,11 @@ Lesson Title: Tipos de Datos
 Estimated Duration: 60 minutes
 Prerequisites: L3 — Variables
 Learning Objectives:
-  - Identificar the four basic data types: int, float, str, bool
-  - Usar type() to inspect variable types
-  - Convert between data types using int(), float(), str(), bool()
-  - Explicar the difference between mutable and immutable types
-  - Handle type errors appropriately
+  - Identificar los cuatro tipos de datos básicos: int, float, str, bool
+  - Usar type() para inspeccionar tipos de variables
+  - Convertir entre tipos de datos usando int(), float(), str(), bool()
+  - Explicar la diferencia entre tipos mutables e inmutables
+  - Manejar errores de tipo apropiadamente
 Keywords: int, float, str, bool, type conversion, type casting, type()
 Difficulty: Principiante
 Programming Concepts: Primitive types, type conversion, type checking
@@ -27,7 +27,7 @@ Every piece of data in Python has a type that determines what operations are pos
 
 ## Panorama General
 
-In the previous lesson, you learned to store values in variables. Now you will understand the different kinds of values variables can hold. This prepares you for the next lesson on operators, where each data type supports different operations.
+En la lección anterior, aprendiste to store values in variables. Now you will understand the different kinds of values variables can hold. This prepares you for the next lesson on operators, where each data type supports different operations.
 
 ## Teoría
 
@@ -280,7 +280,7 @@ print(f"After discount: ${discounted_revenue:,.2f}")
 
 ## Desafío de Programación
 
-Write a program that:
+Escribe un programa que:
 1. Asks for the user's name (string), age (int), and salary (float)
 2. Asks if they are a student (convert answer to bool: "yes"/"no")
 3. Stores each value with the correct type

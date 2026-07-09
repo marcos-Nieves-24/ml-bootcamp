@@ -289,7 +289,7 @@ print(f"Is basic subset of premium? {basic_users.issubset(premium_users)}")
 
 ## Desafío de Programación
 
-Write a program that implements a **Jaccard similarity** calculator:
+Escribe un programa que implements a **Jaccard similarity** calculator:
 1. Jaccard similarity = |A ∩ B| / |A ∪ B| (size of intersection / size of union)
 2. Write `jaccard_similarity(set1, set2)` that returns a value between 0 and 1
 3. Given a list of gene sets (each a set of gene names), find the pair with the highest Jaccard similarity
