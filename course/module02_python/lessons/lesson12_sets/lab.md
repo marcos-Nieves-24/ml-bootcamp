@@ -4,15 +4,15 @@
 
 Practice creating sets, performing set operations, and using sets for data analysis.
 
-## Duration
+## Duración
 
 30 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lesson 9: Lists
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Creating Sets
 
@@ -83,6 +83,6 @@ print(f"A is superset of B: {a.issuperset(b)}")
 print(f"A and C are disjoint: {a.isdisjoint(c)}")
 ```
 
-## Deliverables
+## Entregables
 
 Jupyter notebook `sets_lab.ipynb` with all exercises.

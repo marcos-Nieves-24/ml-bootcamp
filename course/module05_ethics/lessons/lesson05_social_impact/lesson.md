@@ -33,7 +33,7 @@ By the end of this lesson, students will be able to:
 4. **Analyze** the role of AI in the spread of misinformation and disinformation
 5. **Evaluate** the ethical challenges of autonomous systems (vehicles, weapons)
 
-## Motivation
+## Motivación
 
 In 2022, a large language model was trained using enough electricity to power a small town for a year. The training process emitted approximately 500 tons of CO2 — comparable to the lifetime emissions of several cars. And that was just one model. Today, thousands of models are trained every day, each consuming significant computational resources.
 
@@ -43,13 +43,13 @@ And AI-generated content is spreading faster than our ability to detect it. Deep
 
 AI is not neutral in its social effects. It is reshaping the labor market, the environment, the information ecosystem, and the very nature of human decision-making. Understanding these impacts is essential for anyone building or deploying AI systems.
 
-## Big Picture
+## Panorama General
 
 | Previous Lesson | Current Lesson | Next Lesson |
 |---|---|---|
 | L4: Privacy (individual-level impacts) | L5: Social Impact of AI (society-level impacts) | L6: Regulation and Governance (policy responses) |
 
-## Theory
+## Teoría
 
 ### AI and Employment
 
@@ -193,7 +193,7 @@ A social media SaaS platform uses AI to moderate content. Social impact consider
 - **Misinformation:** The platform's recommendation algorithm may amplify false content.
 - **Labor:** Content moderation is often outsourced to low-wage workers in developing countries.
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Technological determinism.** Assuming AI's social effects are inevitable and cannot be shaped by policy or design choices.
 2. **Ignoring the environmental cost.** Forgetting that ML models have a real carbon footprint.
@@ -201,7 +201,7 @@ A social media SaaS platform uses AI to moderate content. Social impact consider
 4. **Underestimating the misinformation challenge.** AI-generated content is already hard to detect.
 5. **Treating autonomous systems as purely technical problems.** They involve fundamental ethical and political questions.
 
-## Best Practices
+## Buenas Prácticas
 
 1. **Consider labor impacts** when designing automation systems. Can you augment rather than replace workers?
 2. **Measure and report** the carbon footprint of your ML work.
@@ -209,7 +209,7 @@ A social media SaaS platform uses AI to moderate content. Social impact consider
 4. **Be aware of misinformation risks** when deploying generative AI.
 5. **Engage with affected communities** before deploying systems that change their lives.
 
-## Summary
+## Resumen
 
 - AI affects employment by automating routine tasks, potentially increasing inequality.
 - Large AI models have significant environmental costs in training and deployment.
@@ -218,7 +218,7 @@ A social media SaaS platform uses AI to moderate content. Social impact consider
 - Autonomous systems raise fundamental ethical questions about responsibility and control.
 - Social impacts are not inevitable — they can be shaped by design and policy choices.
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|------------|
@@ -231,11 +231,11 @@ A social media SaaS platform uses AI to moderate content. Social impact consider
 | Content provenance | Verifiable information about the origin and history of content |
 | Autonomous system | A system that makes decisions without direct human control |
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic Understanding
+### Nivel 1: Comprensión Básica
 
-1. List three sectors with high automation risk and three with low automation risk. What distinguishes them?
+1. Enumera tres sectors with high automation risk and three with low automation risk. What distinguishes them?
 2. What is a deepfake? Give two examples of how deepfakes could cause harm.
 
 ### Level 2: Analysis
@@ -243,17 +243,17 @@ A social media SaaS platform uses AI to moderate content. Social impact consider
 3. A company replaces its customer support team with an AI chatbot. Analyze this decision using the five ethical principles from Lesson 1. Which principles are most relevant?
 4. Compare the environmental impact of training a large language model vs. training a small logistic regression model. What factors determine the difference?
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 5. Is it ethical to deploy autonomous weapons? Consider the arguments for (reduced civilian casualties, faster response) and against (accountability, arms race). What is your position?
 6. Who should be liable when an autonomous vehicle kills a pedestrian: the manufacturer, the software developer, or the owner? Design a liability framework and justify your choices.
 7. Some argue that AI will create more jobs than it destroys. What evidence supports or refutes this claim? How would you design a study to test this hypothesis?
 
-## Coding Challenge
+## Desafío de Programación
 
 No coding challenge for this lesson. Instead, write a 500-word policy memo to a government official recommending actions to address the social impacts of AI (employment, environment, misinformation, or autonomous systems). The memo should be specific, evidence-based, and actionable.
 
-## References
+## Referencias
 
 Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021). On the dangers of stochastic parrots: Can language models be too big? *Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency*, 610–623. https://doi.org/10.1145/3442188.3445922
 

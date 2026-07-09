@@ -4,11 +4,11 @@
 
 Apply Bayes' theorem and probability concepts to real-world problems through simulation.
 
-## Duration
+## Duración
 
 60 minutes
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Diagnostic Test Analysis (20 min)
 
@@ -39,14 +39,14 @@ A spam filter has these rates:
 3. Simulate 50,000 rolls to verify
 4. Compute E[X] and Var(X)
 
-## Deliverables
+## Entregables
 
 - Python script with all calculations, simulations, and a plot
 - Written interpretations for each part
 
 ## Rubric
 
-| Criteria | Points |
+| Criterio | Puntos |
 |----------|--------|
 | Correct Bayes calculations | 3 |
 | Simulation verification | 2 |

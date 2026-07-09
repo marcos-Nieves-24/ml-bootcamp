@@ -23,17 +23,17 @@ Quiz: clustering_quiz.md
 
 # Lesson 8: Clustering (K-Means)
 
-## Motivation
+## Motivación
 
 Not all data comes with labels. In many real-world scenarios — customer segmentation, gene expression analysis, image compression — we need to discover groups within the data without prior knowledge. Clustering algorithms find these groups automatically. K-Means is the most widely used clustering algorithm due to its simplicity, speed, and interpretability.
 
 In biotechnology, clustering identifies patient subgroups with similar molecular profiles (precision medicine). In SaaS, clustering segments users for targeted marketing and personalized experiences.
 
-## Big Picture
+## Panorama General
 
 This lesson introduces unsupervised learning, a core ML paradigm. It builds on descriptive statistics (Lesson 1 — distances) and relationships (Lesson 5 — similarity). It connects to Lesson 7 (PCA), which is often used to visualize clusters. K-Means will reappear in Module 4 as an unsupervised learning algorithm.
 
-## Theory
+## Teoría
 
 ### K-Means Algorithm
 
@@ -76,7 +76,7 @@ Where \(a(i)\) is the average distance to points in the same cluster, and \(b(i)
 
 Smart centroid initialization that spreads initial centroids apart, improving convergence and results. Default in sklearn.
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import numpy as np
@@ -269,7 +269,7 @@ print("\nSegment Profiles:")
 print(user_data.groupby('segment').describe().round(1))
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Not standardizing features**: K-Means uses Euclidean distance; features on larger scales dominate.
 2. **Assuming k is known**: Always validate k with elbow method and silhouette score.
@@ -277,7 +277,7 @@ print(user_data.groupby('segment').describe().round(1))
 4. **Interpreting clusters without domain validation**: Clusters are mathematical constructs — verify they make sense.
 5. **Running K-Means once**: Results depend on initialization; use `n_init=10` and set `random_state`.
 
-## Best Practices
+## Buenas Prácticas
 
 - Always standardize features before clustering
 - Use k-means++ initialization (default in sklearn)
@@ -286,7 +286,7 @@ print(user_data.groupby('segment').describe().round(1))
 - Profile each cluster to understand its characteristics
 - Run K-Means multiple times with different seeds
 
-## Summary
+## Resumen
 
 - K-Means partitions data into k groups based on Euclidean distance to centroids
 - Elbow method plots inertia vs k to find optimal k
@@ -294,7 +294,7 @@ print(user_data.groupby('segment').describe().round(1))
 - Always standardize data before K-Means
 - K-Means works best for spherical, well-separated clusters
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|------------|
@@ -306,7 +306,7 @@ print(user_data.groupby('segment').describe().round(1))
 | K-Means++ | Smart centroid initialization method |
 | Unsupervised Learning | Learning without labeled data |
 
-## Exercises
+## Ejercicios
 
 **Level 1: Basic Understanding**
 
@@ -323,7 +323,7 @@ print(user_data.groupby('segment').describe().round(1))
 5. A bioinformatician applies K-Means to single-cell RNA-seq data and gets clusters that don't match known cell types. What could explain this? Suggest three diagnostic checks.
 6. Why does K-Means fail on data with elongated or irregularly shaped clusters? What alternative algorithm would work better?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a Python script that:
 1. Generates synthetic data with `make_blobs` (4 centers, different standard deviations)

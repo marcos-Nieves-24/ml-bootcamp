@@ -33,7 +33,7 @@ By the end of this lesson, students will be able to:
 4. **Describe** the algorithmic auditing process
 5. **Analyze** the challenges of regulating AI given its rapid evolution
 
-## Motivation
+## Motivación
 
 In 2024, the European Union passed the AI Act — the world's first comprehensive legal framework for artificial intelligence. It bans certain AI practices outright (social scoring, real-time biometric surveillance in public spaces), imposes strict requirements on "high-risk" AI systems (hiring, credit scoring, medical devices), and creates a new European AI Office to oversee enforcement.
 
@@ -41,13 +41,13 @@ Meanwhile, the US has taken a different approach. The White House issued an Exec
 
 AI regulation is not a theoretical future possibility. It is happening now. If you build or deploy AI systems, you will need to understand the regulatory environment. Non-compliance can mean fines of up to 7% of global revenue (EU AI Act), criminal liability, and reputational damage.
 
-## Big Picture
+## Panorama General
 
 | Previous Lesson | Current Lesson | Next Lesson |
 |---|---|---|
 | L5: Social Impact (society-level effects) | L6: Regulation and Governance (policy responses) | L7: Case Studies (applying all concepts) |
 
-## Theory
+## Teoría
 
 ### The Regulatory Landscape
 
@@ -226,7 +226,7 @@ A SaaS platform offering AI-powered analytics must navigate:
 - **Sectoral regulation:** Financial analytics may fall under financial regulations.
 - **Customer contracts:** SaaS providers must offer AI compliance guarantees to enterprise customers.
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Assuming regulation does not apply to you.** The EU AI Act has extraterritorial scope — if your system affects EU residents, it applies.
 2. **Treating compliance as a one-time activity.** AI regulation requires ongoing monitoring and updating.
@@ -234,7 +234,7 @@ A SaaS platform offering AI-powered analytics must navigate:
 4. **Ethics washing.** Creating an ethics board without real authority is worse than having none — it creates a false sense of security.
 5. **Assuming self-regulation is sufficient.** Industry self-regulation has historically failed to prevent harm.
 
-## Best Practices
+## Buenas Prácticas
 
 1. **Stay informed.** AI regulation is evolving rapidly. Monitor developments in jurisdictions where you operate.
 2. **Build compliance into the development process.** Do not treat it as an afterthought.
@@ -243,7 +243,7 @@ A SaaS platform offering AI-powered analytics must navigate:
 5. **Invest in auditing capacity.** Either build internal capability or engage external auditors.
 6. **Be transparent.** Public-facing AI documentation builds trust and prepares you for regulatory requirements.
 
-## Summary
+## Resumen
 
 - Global AI regulation is diverse: EU (risk-based comprehensive), US (sectoral + executive action), China (content-focused).
 - The EU AI Act classifies AI systems into four risk levels with graduated requirements.
@@ -251,7 +251,7 @@ A SaaS platform offering AI-powered analytics must navigate:
 - Algorithmic auditing is a systematic process for evaluating AI systems.
 - Regulating AI faces fundamental challenges: pacing, definition, jurisdiction, enforcement, and coordination.
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|------------|
@@ -265,11 +265,11 @@ A SaaS platform offering AI-powered analytics must navigate:
 | Ethics washing | Using ethics processes to create appearance of responsibility without substantive change |
 | Extraterritorial scope | Regulation applies to entities outside the jurisdiction if they affect residents |
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic Understanding
+### Nivel 1: Comprensión Básica
 
-1. List the four risk levels of the EU AI Act. Give an example of an AI system at each level.
+1. List the four risk levels of the EU AI Act. Da un ejemplo of an AI system at each level.
 2. What is the "pacing problem" in AI regulation? Why is it particularly challenging for AI compared to other technologies?
 
 ### Level 2: Analysis
@@ -277,17 +277,17 @@ A SaaS platform offering AI-powered analytics must navigate:
 3. A US-based SaaS company offers a resume screening AI to EU customers. Which regulations apply? What steps must the company take for compliance?
 4. Compare the EU and US approaches to AI regulation. What are the advantages and disadvantages of each?
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 5. Some argue that the EU AI Act is too strict and will stifle innovation. Others argue it is too weak and does not adequately protect fundamental rights. Take a position and defend it with evidence.
 6. Design an ideal AI regulatory framework for a country that has not yet passed AI laws. What elements would you include? What would you prioritize? How would you address the pacing problem?
 7. Is "ethics washing" inevitable in corporate AI governance? What structural changes could make corporate ethics boards more effective?
 
-## Coding Challenge
+## Desafío de Programación
 
 No coding challenge for this lesson. Instead, write a 400-word regulatory compliance memo for a hypothetical AI-powered medical diagnosis system. Address which regulations apply (EU AI Act, FDA, GDPR, HIPAA), what risk classification it falls under, and what specific requirements must be met.
 
-## References
+## Referencias
 
 European Commission. (2024). The EU Artificial Intelligence Act. https://artificialintelligenceact.eu/
 

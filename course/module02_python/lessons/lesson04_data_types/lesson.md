@@ -184,7 +184,7 @@ result = "The answer is " + str(42)  # Correct
 
 ## Biotechnology Example
 
-**Scenario**: Processing gene expression data from a microarray experiment.
+**Escenario**: Processing gene expression data from a microarray experiment.
 
 ```python
 gene_name = "EGFR"
@@ -206,7 +206,7 @@ if isinstance(expression_ratio, float):
 
 ## SaaS Example
 
-**Scenario**: Processing customer subscription data.
+**Escenario**: Processing customer subscription data.
 
 ```python
 customer_name = "Acme Corp"

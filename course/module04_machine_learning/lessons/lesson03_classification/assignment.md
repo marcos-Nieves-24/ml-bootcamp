@@ -1,6 +1,6 @@
 # Assignment 3: Classification
 
-## Objectives
+## Objetivos
 
 - Build a complete classification pipeline
 - Handle imbalanced data appropriately
@@ -15,7 +15,7 @@ You work for a **healthtech startup** that has developed a blood test to detect 
 
 Use `load_breast_cancer()` from scikit-learn. Treat malignant = positive (disease present), benign = negative.
 
-## Instructions
+## Instrucciones
 
 1. **Split** into train (60%), validation (20%), test (20%) with stratification
 2. **Train** logistic regression (default settings)
@@ -29,7 +29,7 @@ Use `load_breast_cancer()` from scikit-learn. Treat malignant = positive (diseas
    - What is the tradeoff you are making?
    - What is the expected false positive rate?
 
-## Deliverables
+## Entregables
 
 - Python script or notebook
 - Table with metrics at different thresholds
@@ -38,7 +38,7 @@ Use `load_breast_cancer()` from scikit-learn. Treat malignant = positive (diseas
 
 ## Rubric
 
-| Criteria | Excellent (4) | Good (3) | Adequate (2) | Needs Work (1) |
+| Criterio | Excelente (4) | Bueno (3) | Adecuado (2) | Needs Work (1) |
 |----------|--------------|----------|-------------|----------------|
 | Pipeline | Complete, stratified split | Complete | Partial | Missing |
 | Threshold analysis | Both scenarios with justification | One scenario | Basic | Missing |

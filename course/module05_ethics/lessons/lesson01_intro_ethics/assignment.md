@@ -1,12 +1,12 @@
 # Assignment: Ethical Analysis of an AI System
 
-## Objectives
+## Objetivos
 
 - Apply the five ethical principles of AI to a real or hypothetical system
 - Identify ethical trade-offs and propose mitigations
 - Communicate ethical reasoning clearly and concisely
 
-## Instructions
+## Instrucciones
 
 Choose an AI system that has been deployed in the real world (or is proposed for deployment). It could be:
 
@@ -26,13 +26,13 @@ Write a report of 1000–1500 words addressing the following:
 
 4. **Mitigation Recommendations** (200 words): Propose at least three concrete recommendations to improve the ethical performance of the system.
 
-## Deliverables
+## Entregables
 
 Submit a single PDF document. Use APA 7 format for any references.
 
 ## Rubric
 
-| Criterion | Points | Excellent | Good | Satisfactory | Needs Improvement |
+| Criterion | Puntos | Excellent | Good | Satisfactory | Needs Improvement |
 |-----------|--------|-----------|------|--------------|-------------------|
 | System description | 10 | Clear, detailed, accurate | Mostly clear | Somewhat unclear | Missing or inaccurate |
 | Five principles analysis | 40 | Each principle correctly applied with nuanced reasoning | Four principles well applied | Three or fewer | Missing or incorrect |
@@ -42,7 +42,7 @@ Submit a single PDF document. Use APA 7 format for any references.
 
 **Total: 100 points**
 
-## Estimated Time
+## Tiempo Estimado
 
 3–4 hours
 

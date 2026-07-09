@@ -4,7 +4,7 @@
 
 Explore correlations between variables in real datasets and interpret the strength and direction of relationships.
 
-## Duration
+## Duración
 
 60 minutes
 
@@ -12,7 +12,7 @@ Explore correlations between variables in real datasets and interpret the streng
 
 The `mpg` dataset from seaborn.
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Pairwise Scatter Plots (15 min)
 
@@ -44,14 +44,14 @@ anscombe = sns.load_dataset('anscombe')
 2. Create a scatter plot for each group with the correlation in the title
 3. Explain why identical correlations don't imply identical relationships
 
-## Deliverables
+## Entregables
 
 - Jupyter notebook with all visualizations and interpretations
 - Written answer identifying the most important features for predicting mpg
 
 ## Rubric
 
-| Criteria | Points |
+| Criterio | Puntos |
 |----------|--------|
 | Scatter plots with interpretations | 3 |
 | Pearson vs Spearman comparison | 2 |

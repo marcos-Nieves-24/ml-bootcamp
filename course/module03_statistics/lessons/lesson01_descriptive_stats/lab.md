@@ -4,7 +4,7 @@
 
 Apply descriptive statistics to analyze a real-world dataset using Python.
 
-## Duration
+## Duración
 
 60 minutes
 
@@ -19,7 +19,7 @@ df = diabetes.data
 df['target'] = diabetes.target
 ```
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Data Overview (10 min)
 
@@ -60,7 +60,7 @@ Write a function `summarize(df)` that returns a DataFrame with:
 - Q1, Q3, IQR
 - Outlier count
 
-## Deliverables
+## Entregables
 
 Submit a single Python script (`.py` or `.ipynb`) containing:
 - All code with comments
@@ -69,7 +69,7 @@ Submit a single Python script (`.py` or `.ipynb`) containing:
 
 ## Rubric
 
-| Criteria | Points |
+| Criterio | Puntos |
 |----------|--------|
 | Correct descriptive statistics computation | 4 |
 | Outlier detection implementation | 3 |

@@ -1,12 +1,12 @@
 # Assignment: PCA Analysis
 
-## Objectives
+## Objetivos
 
 - Apply PCA to analyze high-dimensional data
 - Determine optimal number of components
 - Interpret principal components in terms of original features
 
-## Instructions
+## Instrucciones
 
 1. Load the breast cancer dataset from sklearn:
 ```python
@@ -38,13 +38,13 @@ cancer = load_breast_cancer()
 
 7. **Report**: Write a summary interpreting what PCA reveals about the breast cancer dataset
 
-## Deliverables
+## Entregables
 
 - Jupyter notebook with code, plots, and written interpretations
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Adequate (2 pts) | Poor (1 pt) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Adequate (2 pts) | Poor (1 pt) |
 |----------|------------------|--------------|------------------|-------------|
 | PCA application | Correct with all steps | Minor issues | Partial | Missing |
 | Scree + components selection | Clear and justified | Basic | Confusing | Missing |
@@ -55,6 +55,6 @@ cancer = load_breast_cancer()
 
 **Total: 24 points**
 
-## Estimated Time
+## Tiempo Estimado
 
 3 hours

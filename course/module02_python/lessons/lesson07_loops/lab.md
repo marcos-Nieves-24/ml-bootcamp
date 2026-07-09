@@ -4,15 +4,15 @@
 
 Practice for loops, while loops, range(), break/continue, and nested loops.
 
-## Duration
+## Duración
 
 60 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lesson 6: Functions
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Basic for Loop
 
@@ -89,6 +89,6 @@ else:
     print(f"{search_for} not found")
 ```
 
-## Deliverables
+## Entregables
 
 Jupyter notebook `loops_lab.ipynb` with all exercises completed.

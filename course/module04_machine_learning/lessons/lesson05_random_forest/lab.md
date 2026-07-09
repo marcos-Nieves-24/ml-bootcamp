@@ -1,6 +1,6 @@
 # Lab 5: Random Forest
 
-## Objectives
+## Objetivos
 
 - Compare single trees vs. Random Forest
 - Use OOB score for model evaluation
@@ -43,7 +43,7 @@ Use `make_classification(weights=[0.9, 0.1])` to create imbalanced data. Compare
 
 Report precision and recall for the minority class.
 
-## Deliverables
+## Entregables
 
 - Notebook with all 5 parts
 - OOB vs. n_estimators plot

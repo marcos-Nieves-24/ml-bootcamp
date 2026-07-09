@@ -1,6 +1,6 @@
 # Quiz: Case Studies in Health and SaaS
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **Q1.** In the Obermeyer et al. (2019) healthcare algorithm study, what was the root cause of racial bias?
 
@@ -37,13 +37,13 @@ B. Equal opportunity (equal TPR)
 C. Individual fairness
 D. Disparate impact ratio
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **Q6.** Explain how the Obermeyer algorithm caused harm despite being well-intentioned. What ethical principle (from Lesson 1) was primarily violated?
 
 **Q7.** A SaaS company builds a churn prediction model and plans to offer retention discounts only to customers predicted as high-churn. Discuss at least two ethical concerns with this approach.
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **Q8.** Write a Python function `audit_healthcare_algorithm(y_true, y_pred, protected_attr, group_names=None)` that:
 - Takes true labels, predicted labels, and a protected attribute
@@ -52,7 +52,7 @@ D. Disparate impact ratio
 
 ---
 
-## Answer Key
+## Clave de Respuestas
 
 **Q1.** B — The algorithm used cost as a proxy for need. Due to unequal access to care, Black patients with the same health needs had lower costs, so the algorithm systematically underestimated their needs.
 

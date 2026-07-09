@@ -23,15 +23,15 @@ Quiz: quiz.md
 
 # Regresión Lineal
 
-## Motivation
+## Motivación
 
 A biotech company wants to predict drug solubility from molecular properties. A SaaS company wants to forecast monthly recurring revenue. Both are *regression* problems — predicting a continuous number. Linear regression is the simplest and most interpretable regression algorithm. Understanding it thoroughly is essential because many advanced models (regularized regression, neural networks) build on its ideas.
 
-## Big Picture
+## Panorama General
 
 **Previous:** ML Fundamentals gave you the mental model. **This lesson:** Your first real algorithm — Linear Regression. **Next:** Classification — predicting categories instead of numbers.
 
-## Theory
+## Teoría
 
 ### Simple Linear Regression
 
@@ -107,7 +107,7 @@ $$\boldsymbol{\beta} = (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\mathbf{y}
 4. **Normality:** Residuals are normally distributed (for inference)
 5. **No multicollinearity:** Features are not highly correlated
 
-## Visual Explanation
+## Explicación Visual
 
 ```python
 import numpy as np
@@ -135,7 +135,7 @@ plt.savefig('figures/simple_linear_regression.png', dpi=150)
 plt.show()
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import numpy as np
@@ -264,7 +264,7 @@ for col, coef in zip(X_r.columns, model_r.coef_):
     print(f"{col}: {coef:.2f}")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Interpreting coefficients causally** — correlation ≠ causation
 2. **Ignoring multicollinearity** — correlated features inflate coefficient variance
@@ -272,7 +272,7 @@ for col, coef in zip(X_r.columns, model_r.coef_):
 4. **Using R² alone** — always check residual plots and MSE too
 5. **Forgetting to scale features** — coefficients are not comparable when features have different units
 
-## Best Practices
+## Buenas Prácticas
 
 - Always visualize the data first
 - Check residual plots (residuals vs. fitted, Q-Q plot)
@@ -280,7 +280,7 @@ for col, coef in zip(X_r.columns, model_r.coef_):
 - Compare model performance to a baseline (mean predictor)
 - Consider regularization (Ridge, Lasso) when many features
 
-## Summary
+## Resumen
 
 - Linear regression models the target as a weighted sum of features
 - OLS finds coefficients that minimize MSE
@@ -288,7 +288,7 @@ for col, coef in zip(X_r.columns, model_r.coef_):
 - Gradient descent is an iterative alternative to OLS for large datasets
 - Always check assumptions and residual plots
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|-----------|
@@ -301,7 +301,7 @@ for col, coef in zip(X_r.columns, model_r.coef_):
 | RMSE | Square root of MSE, in original units |
 | Gradient Descent | Iterative optimization algorithm |
 
-## Exercises
+## Ejercicios
 
 **Level 1 — Basic:** What do R² = 1, R² = 0, and R² = -0.5 mean in practice?
 
@@ -309,6 +309,6 @@ for col, coef in zip(X_r.columns, model_r.coef_):
 
 **Level 3 — Critical Thinking:** You have a dataset with 5 features. After training, 3 features have very large coefficients and 2 have tiny coefficients. Does this mean the 2 features are unimportant? Why or why not?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a function `linear_regression_from_scratch(X, y)` that implements OLS using the closed-form solution. Compare your coefficients to `sklearn.linear_model.LinearRegression`. Return the coefficients, intercept, and R².

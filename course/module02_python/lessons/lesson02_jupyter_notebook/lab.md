@@ -4,15 +4,15 @@
 
 Launch Jupyter, create a notebook with code and markdown cells, and practice keyboard shortcuts.
 
-## Duration
+## Duración
 
 45 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Python installed (Lesson 1)
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Launch Jupyter
 
@@ -55,7 +55,7 @@ Practice these shortcuts:
 
 Export your notebook as HTML: File → Download as → HTML
 
-## Deliverables
+## Entregables
 
 - Screenshot of your notebook in the browser
 - The exported HTML file

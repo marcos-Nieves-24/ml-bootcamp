@@ -1,6 +1,6 @@
 # Lab 4: Decision Trees
 
-## Objectives
+## Objetivos
 
 - Train and visualize decision trees
 - Understand how depth affects overfitting
@@ -45,7 +45,7 @@ Use `DecisionTreeRegressor` on the diabetes dataset. Report train and test R² a
 from sklearn.tree import DecisionTreeRegressor
 ```
 
-## Deliverables
+## Entregables
 
 - Notebook with all 5 parts
 - Tree visualization (Part 1)

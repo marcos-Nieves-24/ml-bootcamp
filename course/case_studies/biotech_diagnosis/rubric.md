@@ -4,7 +4,7 @@
 
 ## Task 1: Data Loading and Exploration (15 points)
 
-| Criteria | Excellent (15) | Good (11) | Adequate (7) | Poor (3) |
+| Criterio | Excellent (15) | Good (11) | Adequate (7) | Poor (3) |
 |----------|----------------|-----------|--------------|----------|
 | Data loading | Loaded correctly with error handling | Loaded correctly | Loaded with minor issues | Not loaded or incorrect |
 | Data inspection | Displayed head, info, describe, shape, class distribution | Displayed most inspections | Displayed basic info | Missing key inspections |
@@ -12,7 +12,7 @@
 
 ## Task 2: Exploratory Data Analysis (20 points)
 
-| Criteria | Excellent (20) | Good (15) | Adequate (10) | Poor (5) |
+| Criterio | Excellent (20) | Good (15) | Adequate (10) | Poor (5) |
 |----------|----------------|-----------|---------------|----------|
 | Expression distributions | Clear KDE/histograms with legend and labels | Good plots with labels | Basic plots | Missing or unclear |
 | Boxplot comparison | Well-formatted boxplot of differential genes | Good boxplot | Basic boxplot | Missing |
@@ -21,14 +21,14 @@
 
 ## Task 3: Feature Selection (10 points)
 
-| Criteria | Excellent (10) | Good (7) | Adequate (5) | Poor (2) |
+| Criterio | Excellent (10) | Good (7) | Adequate (5) | Poor (2) |
 |----------|----------------|----------|--------------|----------|
 | Variance selection | Top 10 selected correctly | Selected with minor issue | Selected | Not done |
 | Train/test split | Stratified split, correct proportions | Correct split | Basic split | Missing |
 
 ## Task 4: Model Training (25 points)
 
-| Criteria | Excellent (25) | Good (19) | Adequate (13) | Poor (6) |
+| Criterio | Excellent (25) | Good (19) | Adequate (13) | Poor (6) |
 |----------|----------------|-----------|---------------|----------|
 | Logistic Regression | Trained correctly, printed metrics | Trained with minor issue | Trained | Not trained |
 | Random Forest | Trained correctly, printed metrics | Trained with minor issue | Trained | Not trained |
@@ -36,7 +36,7 @@
 
 ## Task 5: Model Evaluation (15 points)
 
-| Criteria | Excellent (15) | Good (11) | Adequate (7) | Poor (3) |
+| Criterio | Excellent (15) | Good (11) | Adequate (7) | Poor (3) |
 |----------|----------------|-----------|--------------|----------|
 | Confusion matrices | Both models, clear visualization | Both models | One model | Missing |
 | Classification reports | Both models, formatted | Both models | One model | Missing |
@@ -45,20 +45,20 @@
 
 ## Task 6: Feature Importance (10 points)
 
-| Criteria | Excellent (10) | Good (7 | Adequate (5) | Poor (2) |
+| Criterio | Excellent (10) | Good (7 | Adequate (5) | Poor (2) |
 |----------|----------------|---------|--------------|----------|
 | Importance extraction | RF importance extracted, top 10 plotted | Extracted and plotted | Extracted | Not done |
 | Interpretation | Identified key genes with biological context | Good interpretation | Basic | Missing |
 
 ## Task 7: Biological Interpretation (5 points)
 
-| Criteria | Excellent (5) | Good (4) | Adequate (3) | Poor (1) |
+| Criterio | Excellent (5) | Good (4) | Adequate (3) | Insuficiente (1) |
 |----------|---------------|----------|--------------|----------|
 | Discussion | Insightful discussion with implications and limitations | Good discussion | Basic discussion | Missing or superficial |
 
 ## Code Quality and Presentation
 
-| Criteria | Points |
+| Criterio | Puntos |
 |----------|--------|
 | Code executes without errors | −5 if errors present |
 | All visualizations have titles, axis labels, legends | −2 per missing element |

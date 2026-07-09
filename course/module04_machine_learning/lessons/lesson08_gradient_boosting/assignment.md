@@ -1,6 +1,6 @@
 # Assignment 8: Gradient Boosting
 
-## Objectives
+## Objetivos
 
 - Apply gradient boosting to a regression problem
 - Tune hyperparameters systematically
@@ -20,7 +20,7 @@ data = fetch_california_housing()
 
 A real estate analytics company needs a model to predict house prices. You must compare multiple ensemble methods and recommend the best one.
 
-## Instructions
+## Instrucciones
 
 1. **Split** into train (70%), validation (15%), test (15%)
 2. **Train the following models** (use validation set for tuning):
@@ -31,7 +31,7 @@ A real estate analytics company needs a model to predict house prices. You must 
 4. **Select the best model** and evaluate on test set
 5. **Create a learning curve** for the best model (R² vs. n_estimators)
 
-## Deliverables
+## Entregables
 
 - Notebook with all steps
 - Table comparing all models (R², RMSE on train/val)
@@ -44,7 +44,7 @@ A real estate analytics company needs a model to predict house prices. You must 
 
 ## Rubric
 
-| Criteria | Excellent (4) | Good (3) | Adequate (2) | Needs Work (1) |
+| Criterio | Excelente (4) | Bueno (3) | Adecuado (2) | Needs Work (1) |
 |----------|--------------|----------|-------------|----------------|
 | Model comparison | 3+ models with tuning | 2 models | 1 model | Missing |
 | Hyperparameter tuning | Systematic search | Partial | Minimal | Missing |

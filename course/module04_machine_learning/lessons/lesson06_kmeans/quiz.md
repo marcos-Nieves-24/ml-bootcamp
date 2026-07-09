@@ -1,6 +1,6 @@
 # Quiz: K-Means Clustering
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **Q1.** Which of the following best describes unsupervised learning?
 
@@ -47,7 +47,7 @@ d) It is not important — K-Means handles scale automatically
 
 <details><summary>Answer</summary>b) Features with larger units would dominate the Euclidean distance calculation, making the algorithm effectively ignore smaller-scale features</details>
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **Q6.** Explain the difference between inertia and silhouette score. When would each be misleading?
 
@@ -57,7 +57,7 @@ d) It is not important — K-Means handles scale automatically
 
 <details><summary>Answer</summary>K-Means depends on random centroid initialization. Different initial positions lead to different local minima of the inertia objective (the problem is NP-hard). K-Means++ initialization (default in sklearn) helps but doesn't guarantee global optimum. Using n_init=10 runs the algorithm 10 times and returns the best one.</details>
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **Q8.** Write a Python function `kmeans_with_metrics(X, K_range)` that performs K-Means for each K in K_range, computes inertia and silhouette scores, and returns a DataFrame with columns ['K', 'inertia', 'silhouette'].
 

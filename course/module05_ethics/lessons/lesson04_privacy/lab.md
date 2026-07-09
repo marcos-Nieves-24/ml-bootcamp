@@ -4,11 +4,11 @@
 
 Implement and compare privacy-preserving techniques for releasing statistical summaries. Evaluate the privacy-utility trade-off for different epsilon values.
 
-## Duration
+## Duración
 
 60 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lesson 4, Python (numpy, pandas, matplotlib)
 
@@ -16,7 +16,7 @@ Lesson 4, Python (numpy, pandas, matplotlib)
 
 Use the Adult Income dataset from UCI (or a synthetic dataset with demographic and income columns).
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Baseline Statistics (10 minutes)
 
@@ -48,7 +48,7 @@ Use the Adult Income dataset from UCI (or a synthetic dataset with demographic a
 3. For a total budget of epsilon=1, how would you allocate the budget across the three statistics to minimize total error?
 4. Implement and test your allocation strategy.
 
-## Deliverables
+## Entregables
 
 Submit a Jupyter notebook with:
 - All code and visualizations
@@ -56,7 +56,7 @@ Submit a Jupyter notebook with:
 
 ## Rubric
 
-| Criterion | Points | Excellent | Good | Satisfactory | Needs Improvement |
+| Criterion | Puntos | Excellent | Good | Satisfactory | Needs Improvement |
 |-----------|--------|-----------|------|--------------|-------------------|
 | Baseline statistics | 10 | All computed correctly | Most | Some | Missing |
 | DP for statistics | 25 | Full implementation with analysis | Good | Partial | Missing |

@@ -1,13 +1,13 @@
 # Assignment: Social Impact Assessment Report
 
-## Objectives
+## Objetivos
 
 - Conduct a comprehensive social impact assessment of a real AI system
 - Analyze multiple dimensions of social impact using evidence
 - Develop policy recommendations
 - Communicate findings in a professional report format
 
-## Instructions
+## Instrucciones
 
 Select a real, deployed AI system with documented social impact. Examples:
 
@@ -51,13 +51,13 @@ Evaluate safety:
 ### 6. Recommendations (200 words)
 Propose 3 specific recommendations for the company, regulators, or society to address the impacts you identified.
 
-## Deliverables
+## Entregables
 
 A single PDF document.
 
 ## Rubric
 
-| Criterion | Points | Excellent | Good | Satisfactory | Needs Improvement |
+| Criterion | Puntos | Excellent | Good | Satisfactory | Needs Improvement |
 |-----------|--------|-----------|------|--------------|-------------------|
 | System description | 10 | Accurate, detailed | Adequate | Vague | Missing |
 | Employment analysis | 20 | Evidence-based, nuanced | Good | Basic | Missing/inaccurate |
@@ -69,7 +69,7 @@ A single PDF document.
 
 **Total: 100 points**
 
-## Estimated Time
+## Tiempo Estimado
 
 6–8 hours
 

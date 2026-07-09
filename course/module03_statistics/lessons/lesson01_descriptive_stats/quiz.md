@@ -1,6 +1,6 @@
 # Quiz: Descriptive Statistics
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **1. Which measure of central tendency is most affected by outliers?**
 
@@ -37,13 +37,13 @@ b) Below Q1 - 1.5×IQR or above Q3 + 1.5×IQR
 c) More than 2 standard deviations from the mean
 d) Below the mean minus the range
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **6.** Explain why the median is preferred over the mean for reporting household income in a country with high income inequality.
 
 **7.** A biotech researcher measures protein concentration in 100 samples. The mean is 45 mg/dL with a standard deviation of 3 mg/dL. Interpret these values in plain language.
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **8.** Write Python code using numpy to:
 - Create an array `data = np.array([2, 4, 6, 8, 10, 100])`

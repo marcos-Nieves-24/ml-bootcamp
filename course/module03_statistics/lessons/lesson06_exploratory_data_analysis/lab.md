@@ -4,7 +4,7 @@
 
 Perform a complete EDA on the MPG dataset, documenting findings and cleaning decisions.
 
-## Duration
+## Duración
 
 90 minutes
 
@@ -12,7 +12,7 @@ Perform a complete EDA on the MPG dataset, documenting findings and cleaning dec
 
 Seaborn's `mpg` dataset.
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Data Loading and Overview (10 min)
 1. Load `mpg` from seaborn
@@ -48,13 +48,13 @@ Write a markdown summary with:
 - Recommended preprocessing steps
 - 3 interesting patterns discovered
 
-## Deliverables
+## Entregables
 
 - Jupyter notebook with code, visualizations, and markdown summary
 
 ## Rubric
 
-| Criteria | Points |
+| Criterio | Puntos |
 |----------|--------|
 | Missing value analysis | 2 |
 | Univariate analysis (histograms + shape stats) | 2 |

@@ -4,15 +4,15 @@
 
 Practice creating various plot types, customizing figures, and using subplots.
 
-## Duration
+## Duración
 
 75 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lesson 14: Pandas
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Line Plot
 
@@ -104,6 +104,6 @@ plt.tight_layout()
 plt.show()
 ```
 
-## Deliverables
+## Entregables
 
 Jupyter notebook `matplotlib_lab.ipynb` with all plots visible.

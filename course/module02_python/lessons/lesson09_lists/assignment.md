@@ -1,13 +1,13 @@
 # Assignment: Data Processing with Lists
 
-## Objectives
+## Objetivos
 
 - Create and manipulate lists effectively
 - Use list comprehensions for concise code
 - Work with nested lists (matrices)
 - Process data using lists and loops
 
-## Instructions
+## Instrucciones
 
 Create a Python script `list_processor.py` that performs the following tasks:
 
@@ -31,14 +31,14 @@ dna = "ATGCGATCGAATTCGATCGATCGAATTCGATCGA"
 data_points = [10, 12, 11, 13, 45, 12, 11, 10, 13, 12, 48, 11, 10, 13]
 ```
 
-## Deliverables
+## Entregables
 
 - `list_processor.py` with all 5 tasks
 - Output for each task
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
 |----------|-------------------|--------------|-----------------------------|
 | List Operations | All operations correct and efficient | Most correct | Errors present |
 | List Comprehensions | Used appropriately throughout | Used occasionally | Not used |

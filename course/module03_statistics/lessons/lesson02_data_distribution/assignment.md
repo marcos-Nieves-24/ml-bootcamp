@@ -1,12 +1,12 @@
 # Assignment: Data Distribution Analysis
 
-## Objectives
+## Objetivos
 
 - Analyze the distribution of real-world data
 - Apply log-transformation for normalization
 - Interpret skewness and kurtosis in context
 
-## Instructions
+## Instrucciones
 
 1. Load the `diamonds` dataset from seaborn
 2. For the `price` column:
@@ -23,13 +23,13 @@
    - How log transformation helps
    - Which features might need transformation before ML modeling
 
-## Deliverables
+## Entregables
 
 - Jupyter notebook with code, plots, and written summary
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Adequate (2 pts) | Poor (1 pt) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Adequate (2 pts) | Poor (1 pt) |
 |----------|------------------|--------------|------------------|-------------|
 | Histograms/KDE | All correctly created | Minor issues | Missing elements | Poor quality |
 | Shape statistics | Correctly computed and interpreted | Correct but brief | Some errors | Missing/incomplete |
@@ -38,6 +38,6 @@
 
 **Total: 16 points**
 
-## Estimated Time
+## Tiempo Estimado
 
 2 hours

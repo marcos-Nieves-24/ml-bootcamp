@@ -23,17 +23,17 @@ Quiz: model_evaluation_quiz.md
 
 # Lesson 9: Model Evaluation
 
-## Motivation
+## Motivación
 
 Building a model is only half the work. The critical question is: how well does this model perform on new, unseen data? A model that memorizes the training data but fails on new data is useless — this is overfitting. Model evaluation metrics and cross-validation give us reliable estimates of real-world performance.
 
 In biotechnology, evaluating a drug response prediction model determines whether it can guide treatment decisions. In SaaS, evaluating a churn prediction model determines whether it's worth deploying to retain customers.
 
-## Big Picture
+## Panorama General
 
 This lesson introduces the core concepts of model evaluation that underpin all of machine learning. It connects to Lesson 6 (EDA) — good evaluation starts with clean data. It prepares you for Module 4, where you will train, evaluate, and compare many types of models.
 
-## Theory
+## Teoría
 
 ### Train/Test Split
 
@@ -78,7 +78,7 @@ $$R^2 = 1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2}$$
 
 Intuition: Proportion of variance in the target explained by the model. Ranges from (-∞, 1], where 1 is perfect prediction and 0 means the model performs no better than predicting the mean.
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import numpy as np
@@ -270,7 +270,7 @@ cv_scores = cross_val_score(LinearRegression(), X, y, cv=5, scoring='r2')
 print(f"\nCV R²: {cv_scores.mean():.3f} (±{cv_scores.std():.3f})")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Evaluating on training data**: This gives an overly optimistic estimate. Always use a held-out test set.
 2. **Data leakage**: Using test data information during training (e.g., scaling before splitting).
@@ -278,7 +278,7 @@ print(f"\nCV R²: {cv_scores.mean():.3f} (±{cv_scores.std():.3f})")
 4. **Ignoring residual patterns**: Residuals should be randomly scattered around 0; patterns indicate model misspecification.
 5. **Using a single train/test split**: Performance depends on the random split; use cross-validation for more reliable estimates.
 
-## Best Practices
+## Buenas Prácticas
 
 - Always split before any preprocessing (avoid data leakage)
 - Use cross-validation for model selection and hyperparameter tuning
@@ -286,7 +286,7 @@ print(f"\nCV R²: {cv_scores.mean():.3f} (±{cv_scores.std():.3f})")
 - Check residual plots for model assumptions
 - Compare model performance against a simple baseline
 
-## Summary
+## Resumen
 
 - Train/test split simulates model performance on unseen data
 - Cross-validation provides more reliable performance estimates
@@ -296,7 +296,7 @@ print(f"\nCV R²: {cv_scores.mean():.3f} (±{cv_scores.std():.3f})")
 - R²: proportion of variance explained
 - Never evaluate on training data
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|------------|
@@ -310,7 +310,7 @@ print(f"\nCV R²: {cv_scores.mean():.3f} (±{cv_scores.std():.3f})")
 | Overfitting | Model memorizes training data, fails on new data |
 | Data Leakage | Using test data information during training |
 
-## Exercises
+## Ejercicios
 
 **Level 1: Basic Understanding**
 
@@ -327,7 +327,7 @@ print(f"\nCV R²: {cv_scores.mean():.3f} (±{cv_scores.std():.3f})")
 5. A model achieves R² = 0.95 on the training set but R² = 0.45 on the test set. What is happening? What steps should be taken?
 6. In a biotech drug response prediction problem, which metric (MAE, MSE, RMSE, or R²) is most clinically meaningful? Justify your answer.
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a Python script that:
 1. Loads the California housing dataset

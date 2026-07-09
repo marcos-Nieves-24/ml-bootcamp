@@ -1,6 +1,6 @@
 # Quiz: Transparency and Explainability
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **Q1.** Which of the following best describes the difference between interpretability and explainability?
 
@@ -37,13 +37,13 @@ B. They approximate the model and can be incorrect or unstable
 C. They only work for linear models
 D. They require the model to be open-source
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **Q6.** Explain the black box problem. Why is it especially concerning in healthcare and criminal justice applications?
 
 **Q7.** A bank uses a Gradient Boosting model for loan approvals and uses LIME to generate explanations for denied applicants. A denied applicant receives an explanation and sues, claiming the model is discriminatory. The bank argues the explanation shows the model is fair. What are the weaknesses of the bank's position?
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **Q8.** Write a Python function `explain_prediction(model, instance, feature_names, explainer_type='lime')` that:
 - Takes a trained classifier, a single instance (1D array), feature names, and explainer type
@@ -54,7 +54,7 @@ You do not need to train the model. Assume `lime` and `shap` libraries are impor
 
 ---
 
-## Answer Key
+## Clave de Respuestas
 
 **Q1.** B — Interpretability = understanding model inner workings; explainability = understanding why a specific prediction was made.
 

@@ -4,15 +4,15 @@
 
 Practice creating, accessing, modifying, and comprehending lists.
 
-## Duration
+## Duración
 
 60 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lessons 7 (Loops), 8 (Conditionals)
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Basic List Operations
 
@@ -89,6 +89,6 @@ for i, (gene, expr, p) in enumerate(zip(genes, expressions, p_values)):
     print(f"{i}. {gene}: expr={expr}, p={p} ({status})")
 ```
 
-## Deliverables
+## Entregables
 
 Jupyter notebook `lists_lab.ipynb` with all cells executed.

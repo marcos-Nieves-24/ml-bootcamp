@@ -1,6 +1,6 @@
 # Midterm Exam Rubric
 
-| Section | Questions | Points | Criteria |
+| Section | Questions | Puntos | Criterio |
 |---------|-----------|--------|----------|
 | Multiple Choice | 1-10 | 20 | 2 points each. No partial credit. |
 | Short Answer | 11-15 | 30 | 5 points: accurate and complete. 3 points: partially correct. 1 point: attempted. |

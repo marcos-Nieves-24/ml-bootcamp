@@ -1,6 +1,6 @@
 # Quiz: Introduction to AI Ethics
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **Q1.** Which of the following best defines AI ethics?
 
@@ -37,19 +37,19 @@ B. Non-maleficence
 C. Profitability
 D. Autonomy
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **Q6.** Explain why a machine learning model that achieves high average accuracy can still be ethically problematic. Provide a concrete example.
 
 **Q7.** Describe an ethical trade-off between the principles of privacy and transparency. How might a system designer navigate this conflict?
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **Q8.** (Conceptual — no coding) You are designing an AI system to help university admissions committees evaluate applications. Write a short analysis (approximately 150 words) explaining how each of the five ethical principles applies to this system. Identify at least one potential conflict between principles.
 
 ---
 
-## Answer Key
+## Clave de Respuestas
 
 **Q1.** B — The application of moral principles to the design, development, and deployment of AI systems.
 

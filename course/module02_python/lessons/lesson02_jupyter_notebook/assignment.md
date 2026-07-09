@@ -1,12 +1,12 @@
 # Assignment: Jupyter Notebook Portfolio
 
-## Objectives
+## Objetivos
 
 - Demonstrate proficiency with Jupyter Notebook
 - Create well-structured notebooks with markdown and code
 - Practice keyboard shortcuts and efficient workflow
 
-## Instructions
+## Instrucciones
 
 Create a Jupyter notebook called `portfolio.ipynb` that includes:
 
@@ -21,7 +21,7 @@ Create a Jupyter notebook called `portfolio.ipynb` that includes:
 
 Export the notebook as both HTML and Python script (`.py`).
 
-## Deliverables
+## Entregables
 
 - `portfolio.ipynb`
 - `portfolio.html`
@@ -29,7 +29,7 @@ Export the notebook as both HTML and Python script (`.py`).
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
 |----------|-------------------|--------------|-----------------------------|
 | Markdown Cells | Well-structured with headings, lists, formatting | Adequate structure | Poor or missing |
 | Code Cells | All execute correctly, well-commented | Most execute | Errors present |

@@ -1,6 +1,6 @@
 # Quiz: Data Storytelling
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **1. The data-ink ratio measures:**
 
@@ -37,13 +37,13 @@ b) Top-left
 c) Center
 d) Bottom-left
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **6.** What is chartjunk? Give two examples.
 
 **7.** Explain why 3D charts are generally discouraged in data visualization.
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **8.** Write Python code that creates a simple bar chart with:
 - Categories: ['Q1', 'Q2', 'Q3', 'Q4']

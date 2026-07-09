@@ -1,13 +1,13 @@
 # Assignment: Model Evaluation Report
 
-## Objectives
+## Objetivos
 
 - Train multiple regression models and compare performance
 - Use cross-validation for reliable evaluation
 - Diagnose overfitting and model assumptions
 - Write a professional evaluation report
 
-## Instructions
+## Instrucciones
 
 1. Load the California housing dataset
 2. Train and compare 3 models:
@@ -35,13 +35,13 @@
    - Best model analysis (plots and interpretations)
    - Conclusions and recommendations
 
-## Deliverables
+## Entregables
 
 - Jupyter notebook with all code and a markdown report
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Adequate (2 pts) | Poor (1 pt) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Adequate (2 pts) | Poor (1 pt) |
 |----------|------------------|--------------|------------------|-------------|
 | Model comparison | All 3 models, proper CV | Minor issues | Missing one | Incomplete |
 | Performance metrics | All metrics for all models | Most metrics | Partial | Missing |
@@ -51,6 +51,6 @@
 
 **Total: 20 points**
 
-## Estimated Time
+## Tiempo Estimado
 
 3 hours

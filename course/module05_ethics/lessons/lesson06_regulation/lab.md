@@ -4,15 +4,15 @@
 
 Apply the EU AI Act framework to real AI systems. Analyze compliance requirements and identify gaps.
 
-## Duration
+## Duración
 
 45 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lesson 6
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Classification Exercise (15 minutes)
 
@@ -49,13 +49,13 @@ For the same system, identify:
 2. The cost and difficulty of closing each gap
 3. Priority order for remediation
 
-## Deliverables
+## Entregables
 
 Submit your classification (Part 1), compliance map (Part 2), and gap analysis (Part 3).
 
 ## Rubric
 
-| Criterion | Points | Excellent | Good | Satisfactory | Needs Improvement |
+| Criterion | Puntos | Excellent | Good | Satisfactory | Needs Improvement |
 |-----------|--------|-----------|------|--------------|-------------------|
 | Classification accuracy | 25 | All correct with justification | 5/6 correct | 4/6 correct | < 4 correct |
 | Compliance map | 35 | Comprehensive, specific | Good coverage | Partial | Missing |

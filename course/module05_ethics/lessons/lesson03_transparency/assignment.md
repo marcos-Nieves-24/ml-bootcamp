@@ -1,13 +1,13 @@
 # Assignment: Building an Explanation Dashboard
 
-## Objectives
+## Objetivos
 
 - Implement LIME and SHAP for a real dataset
 - Build a function that generates explanations for multiple instances
 - Critically evaluate explanation quality
 - Write a report suitable for a non-technical audience
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Model and Data (1 hour)
 
@@ -44,14 +44,14 @@ Write a 500-word report explaining your findings for a non-technical audience (e
 - Limitations of the methods
 - Recommendations for using explanations in practice
 
-## Deliverables
+## Entregables
 
 - A Jupyter notebook with Parts 1–3
 - A PDF report (Part 4)
 
 ## Rubric
 
-| Criterion | Points | Excellent | Good | Satisfactory | Needs Improvement |
+| Criterion | Puntos | Excellent | Good | Satisfactory | Needs Improvement |
 |-----------|--------|-----------|------|--------------|-------------------|
 | Models and data | 15 | Two models, appropriate dataset | Two models | One model | Missing |
 | Explanation functions | 25 | All four functions, clean code | Three functions | Two or fewer | Not working |
@@ -61,7 +61,7 @@ Write a 500-word report explaining your findings for a non-technical audience (e
 
 **Total: 100 points**
 
-## Estimated Time
+## Tiempo Estimado
 
 6–8 hours
 

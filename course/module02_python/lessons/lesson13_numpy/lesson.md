@@ -32,7 +32,7 @@ In previous lessons, you learned Python's built-in data structures (lists, tuple
 
 ## Teoría
 
-### What is NumPy?
+### ¿Qué es NumPy?
 
 NumPy is a Python library that provides:
 - **ndarray**: Fast, memory-efficient multidimensional array
@@ -209,7 +209,7 @@ print(f"Determinant: {np.linalg.det(a):.1f}")
 
 ## Biotechnology Example
 
-**Scenario**: Analyzing gene expression data as a NumPy matrix.
+**Escenario**: Analyzing gene expression data as a NumPy matrix.
 
 ```python
 import numpy as np
@@ -245,7 +245,7 @@ print(f"\nHigh expression indices: {list(zip(high_expr[0], high_expr[1]))}")
 
 ## SaaS Example
 
-**Scenario**: Analyzing user engagement metrics.
+**Escenario**: Analyzing user engagement metrics.
 
 ```python
 import numpy as np
@@ -336,7 +336,7 @@ print(f"\nCorrelation matrix:\n{corr}")
 ### Nivel 3: Pensamiento Crítico
 
 6. How does NumPy achieve its speed advantage over Python lists? What is the role of contiguous memory and vectorization?
-7. When would broadcasting fail? Give an example of incompatible shapes and explain how to fix it.
+7. When would broadcasting fail? Da un ejemplo of incompatible shapes and explain how to fix it.
 
 ## Desafío de Programación
 

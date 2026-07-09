@@ -1,6 +1,6 @@
 # Quiz: Clustering (K-Means)
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **1. K-Means is an example of:**
 
@@ -37,13 +37,13 @@ b) Irregularly shaped
 c) Hierarchical
 d) Overlapping
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **6.** Why is it important to standardize features before applying K-Means?
 
 **7.** A bioinformatician applies K-Means to single-cell RNA-seq data and finds clusters that don't match known cell types. List three possible explanations.
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **8.** Write Python code using sklearn that:
 - Generates synthetic data with `make_blobs` (300 samples, 3 centers)

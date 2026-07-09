@@ -4,7 +4,7 @@
 
 Work with named distributions to model real-world phenomena and understand standardization.
 
-## Duration
+## Duración
 
 60 minutes
 
@@ -12,7 +12,7 @@ Work with named distributions to model real-world phenomena and understand stand
 
 Synthetic and real data (iris dataset).
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Distribution Identification (15 min)
 
@@ -43,14 +43,14 @@ For each scenario, identify the appropriate distribution and compute the request
 3. Plot histograms of the sample means
 4. Observe how the distribution becomes normal as n increases
 
-## Deliverables
+## Entregables
 
 - Python script or notebook with all computations and plots
 - Written answers to the interpretation questions
 
 ## Rubric
 
-| Criteria | Points |
+| Criterio | Puntos |
 |----------|--------|
 | Distribution identification | 3 |
 | Normal fitting and Q-Q plot | 3 |

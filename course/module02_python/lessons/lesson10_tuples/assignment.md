@@ -1,13 +1,13 @@
 # Assignment: Data Records with Tuples
 
-## Objectives
+## Objetivos
 
 - Use tuples to represent structured records
 - Practice tuple unpacking
 - Understand when immutability is beneficial
 - Use function return tuples effectively
 
-## Instructions
+## Instrucciones
 
 Create a Python script `student_records.py` that:
 
@@ -33,14 +33,14 @@ students = [
 ]
 ```
 
-## Deliverables
+## Entregables
 
 - `student_records.py`
 - Output showing the analysis
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
 |----------|-------------------|--------------|-----------------------------|
 | Tuple Usage | Appropriate use throughout | Mostly appropriate | Poor use |
 | Unpacking | Used effectively in all functions | Used occasionally | Not used |

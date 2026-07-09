@@ -9,7 +9,7 @@ Topics: Machine Learning, Model Evaluation, Ethics in AI
 
 # Final Exam — Machine Learning for Data Analysis and SaaS
 
-## Instructions
+## Instrucciones
 
 - Answer all questions.
 - Duration: 150 minutes.
@@ -128,6 +128,6 @@ Topics: Machine Learning, Model Evaluation, Ethics in AI
 
 ---
 
-## Answer Key
+## Clave de Respuestas
 
 *(Provided separately to instructors)*

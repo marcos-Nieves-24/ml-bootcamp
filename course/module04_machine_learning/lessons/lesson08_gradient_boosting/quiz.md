@@ -1,6 +1,6 @@
 # Quiz: Gradient Boosting
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **Q1.** What is the key difference between bagging and boosting?
 
@@ -47,7 +47,7 @@ d) Replacement of trees with neural networks
 
 <details><summary>Answer</summary>a) Regularization to prevent overfitting (L1 and L2 regularization on tree weights)</details>
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **Q6.** Explain how early stopping works in gradient boosting and why it is important.
 
@@ -57,7 +57,7 @@ d) Replacement of trees with neural networks
 
 <details><summary>Answer</summary>The learning rate (n) shrinks each tree's contribution to the ensemble. Lower n means each tree has less impact, requiring more trees (higher n_estimators) to achieve good performance. The relationship is approximately: optimal n_estimators * 1 / learning_rate. A common strategy: set learning_rate = 0.01-0.1 and use early stopping to determine n_estimators. Lower learning rates with more trees generally generalize better than higher learning rates with fewer trees.</details>
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **Q8.** Write a Python function `compare_boosting_vs_bagging(X, y)` that trains a GradientBoostingClassifier and a RandomForestClassifier (both with 100 estimators, max_depth=3) and returns a DataFrame comparing their train and test accuracies.
 

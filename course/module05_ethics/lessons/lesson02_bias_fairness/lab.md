@@ -4,11 +4,11 @@
 
 Conduct a complete fairness audit of a classification model. You will detect bias, compute multiple fairness metrics, and apply a mitigation strategy.
 
-## Duration
+## Duración
 
 60 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lesson 2: Bias and Fairness, Python (pandas, sklearn)
 
@@ -25,7 +25,7 @@ We provide a synthetic dataset `credit_data.csv` with the following columns:
 
 The dataset contains 10,000 records.
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Data Exploration (10 minutes)
 
@@ -62,7 +62,7 @@ The dataset contains 10,000 records.
 
 Write a paragraph summarizing your findings. Which fairness definition is most appropriate for credit default prediction? What are the limitations of your mitigation approach?
 
-## Deliverables
+## Entregables
 
 Submit a Jupyter notebook (`.ipynb`) with:
 - All code and outputs
@@ -71,7 +71,7 @@ Submit a Jupyter notebook (`.ipynb`) with:
 
 ## Rubric
 
-| Criterion | Points | Excellent | Good | Satisfactory | Needs Improvement |
+| Criterion | Puntos | Excellent | Good | Satisfactory | Needs Improvement |
 |-----------|--------|-----------|------|--------------|-------------------|
 | Data exploration | 15 | Thorough with observations | Adequate | Minimal | Missing |
 | Fairness metrics | 30 | All computed and interpreted | Most computed | Some computed | Missing |

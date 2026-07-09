@@ -23,15 +23,15 @@ Quiz: data_storytelling_quiz.md
 
 # Lesson 10: Data Storytelling
 
-## Motivation
+## Motivación
 
 The best analysis in the world is worthless if nobody understands it. Data storytelling is the art of communicating data-driven insights effectively. In biotechnology, this means convincing clinicians to adopt a new diagnostic test. In SaaS, this means persuading product managers to prioritize features based on user data. A compelling data story combines narrative, visualization, and context to drive decision-making.
 
-## Big Picture
+## Panorama General
 
 This capstone lesson integrates all previous lessons (descriptive statistics, distributions, EDA, relationships, PCA, clustering, model evaluation). You will learn to communicate the results of any analysis effectively. These skills are directly applicable to the final project and to any data science career.
 
-## Theory
+## Teoría
 
 ### The Data Story Arc
 
@@ -82,7 +82,7 @@ This capstone lesson integrates all previous lessons (descriptive statistics, di
 - **Interactivity**: Allow users to filter and drill down (for web dashboards)
 - **Context**: Include benchmarks, targets, and historical comparisons
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import numpy as np
@@ -268,7 +268,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **3D charts**: Almost always distort perception. Avoid them.
 2. **Pie charts with too many slices**: Limit to 3-5 categories.
@@ -277,7 +277,7 @@ plt.show()
 5. **Cherry-picking data**: Presenting only data that supports your narrative.
 6. **Ignoring your audience**: Technical details for executives, high-level summaries for scientists.
 
-## Best Practices
+## Buenas Prácticas
 
 - Start with the conclusion, then show evidence
 - One chart = one message
@@ -286,7 +286,7 @@ plt.show()
 - Keep it simple; remove anything that doesn't add value
 - Tell a story: hook → context → conflict → analysis → resolution
 
-## Summary
+## Resumen
 
 - Data storytelling = narrative + visualization + context
 - Choose the right chart for your data and message
@@ -295,7 +295,7 @@ plt.show()
 - Design dashboards with hierarchy and consistency
 - Know your audience and tailor your message
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|------------|
@@ -307,12 +307,12 @@ plt.show()
 | NPS | Net Promoter Score — customer loyalty metric |
 | MRR | Monthly Recurring Revenue |
 
-## Exercises
+## Ejercicios
 
 **Level 1: Basic Understanding**
 
 1. What is the data-ink ratio and why is it important?
-2. List three visualization mistakes that can mislead the audience.
+2. Enumera tres visualization mistakes that can mislead the audience.
 
 **Level 2: Implementation**
 
@@ -324,7 +324,7 @@ plt.show()
 5. A pharmaceutical company's data scientist creates a visualization showing that patients on Drug A had 20% better outcomes than Drug B. When you examine the raw data, you notice the Drug A group was 10 years younger on average. How does this change the story? How should the visualization be updated?
 6. Critique a data visualization from a news article or scientific paper. What works well? What could be improved? Focus on the data-ink ratio, chart choice, color use, and clarity.
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a Python script that:
 1. Generates a synthetic dataset about a fictional SaaS startup (daily signups, revenue, churn, support tickets over 6 months)

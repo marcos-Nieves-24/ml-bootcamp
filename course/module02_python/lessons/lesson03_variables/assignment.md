@@ -1,13 +1,13 @@
 # Assignment: Variables in Practice
 
-## Objectives
+## Objetivos
 
 - Demonstrate variable assignment and reassignment
 - Use type conversion correctly
 - Implement a simple data pipeline using variables
 - Apply naming conventions
 
-## Instructions
+## Instrucciones
 
 Create a Python script `patient_analysis.py` that:
 
@@ -29,14 +29,14 @@ Create a Python script `patient_analysis.py` that:
 
 4. **Output**: Print a formatted patient summary report
 
-## Deliverables
+## Entregables
 
 - `patient_analysis.py` (well-commented, PEP 8 compliant)
 - Example output showing the results
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
 |----------|-------------------|--------------|-----------------------------|
 | Variable Usage | Clear, descriptive names, proper case | Acceptable names | Poor naming |
 | Type Conversion | Correct conversion of input() results | Mostly correct | Missing conversions |

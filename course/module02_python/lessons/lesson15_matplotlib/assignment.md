@@ -1,13 +1,13 @@
 # Assignment: Exploratory Visualization Dashboard
 
-## Objectives
+## Objetivos
 
 - Create a variety of plot types for data exploration
 - Customize figures with professional styling
 - Use subplots to create multi-panel dashboards
 - Save figures for reports
 
-## Instructions
+## Instrucciones
 
 Create a Python script `viz_dashboard.py` that generates a multi-panel dashboard figure for a synthetic dataset:
 
@@ -35,7 +35,7 @@ Create a Python script `viz_dashboard.py` that generates a multi-panel dashboard
 
 4. **Save** the dashboard as both PNG and SVG
 
-## Deliverables
+## Entregables
 
 - `viz_dashboard.py`
 - `dashboard.png` and `dashboard.svg`
@@ -43,7 +43,7 @@ Create a Python script `viz_dashboard.py` that generates a multi-panel dashboard
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
 |----------|-------------------|--------------|-----------------------------|
 | Plot Types | 6 different plot types used correctly | 4-5 plot types | < 4 plot types |
 | Customization | Professional styling, all labels | Adequate styling | Minimal customization |

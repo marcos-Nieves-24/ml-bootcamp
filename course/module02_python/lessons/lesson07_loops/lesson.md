@@ -164,7 +164,7 @@ for i in range(1, 4):
 
 ## Biotechnology Example
 
-**Scenario**: Processing a list of DNA sequences to find those with high GC content.
+**Escenario**: Processing a list of DNA sequences to find those with high GC content.
 
 ```python
 sequences = [
@@ -198,7 +198,7 @@ else:
 
 ## SaaS Example
 
-**Scenario**: Processing monthly transaction data for churn analysis.
+**Escenario**: Processing monthly transaction data for churn analysis.
 
 ```python
 # Simulated monthly user activity

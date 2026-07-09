@@ -1,6 +1,6 @@
 # Lab 9: Model Interpretation
 
-## Objectives
+## Objetivos
 
 - Compute and interpret permutation importance
 - Generate and interpret partial dependence plots
@@ -43,7 +43,7 @@ Train RF on California Housing. Create PDPs for MedInc, AveOccup, and Latitude.
 
 If SHAP is installed: pick one test sample and create a SHAP waterfall plot. If not, explain what you would expect to see.
 
-## Deliverables
+## Entregables
 
 - Notebook with all 5 parts
 - Importance comparison bar plot (Part 1)

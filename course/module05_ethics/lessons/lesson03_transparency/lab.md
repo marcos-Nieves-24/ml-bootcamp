@@ -4,11 +4,11 @@
 
 Use LIME and SHAP to explain predictions from a black box model. Compare explanations and evaluate their reliability.
 
-## Duration
+## Duración
 
 60 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lesson 3, Python (pandas, sklearn, lime, shap)
 
@@ -16,7 +16,7 @@ Lesson 3, Python (pandas, sklearn, lime, shap)
 
 We use the UCI Wine dataset (built into sklearn) for a multi-class classification task.
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Data Preparation and Model Training (10 minutes)
 
@@ -51,7 +51,7 @@ We use the UCI Wine dataset (built into sklearn) for a multi-class classificatio
 3. Is LIME stable? What is the variance in feature importance?
 4. Repeat with SHAP. Is SHAP more stable?
 
-## Deliverables
+## Entregables
 
 Submit a Jupyter notebook with:
 - All code and visualizations
@@ -60,7 +60,7 @@ Submit a Jupyter notebook with:
 
 ## Rubric
 
-| Criterion | Points | Excellent | Good | Satisfactory | Needs Improvement |
+| Criterion | Puntos | Excellent | Good | Satisfactory | Needs Improvement |
 |-----------|--------|-----------|------|--------------|-------------------|
 | Model training and evaluation | 15 | Correct with analysis | Correct | Minor errors | Not working |
 | Global explanations | 20 | Both methods, compared | Both methods | One method | Missing |

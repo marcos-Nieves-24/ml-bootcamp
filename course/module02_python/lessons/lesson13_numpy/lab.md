@@ -4,15 +4,15 @@
 
 Practice creating arrays, indexing, slicing, broadcasting, and universal functions.
 
-## Duration
+## Duración
 
 90 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lessons 9-12 (Lists, Tuples, Dicts, Sets)
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Array Creation
 
@@ -87,6 +87,6 @@ centered = data - data.mean(axis=0)
 print(f"Centered mean (~0): {centered.mean(axis=0)}")
 ```
 
-## Deliverables
+## Entregables
 
 Jupyter notebook `numpy_lab.ipynb` with all exercises.

@@ -1,6 +1,6 @@
 # Quiz: Classification
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **Q1.** What does the sigmoid function do in logistic regression?
 
@@ -47,7 +47,7 @@ d) The sum of precision and recall
 
 <details><summary>Answer</summary>b) The harmonic mean of precision and recall</details>
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **Q6.** Explain why accuracy is a poor metric for imbalanced classification problems. Give a concrete example.
 
@@ -57,7 +57,7 @@ d) The sum of precision and recall
 
 <details><summary>Answer</summary>The coefficients are in log-odds units. A one-unit increase in feature A multiplies the odds of being positive by exp(2.5) ≈ 12.2 (strong positive effect). A one-unit increase in feature B multiplies the odds by exp(-0.8) ≈ 0.45 (negative effect). Since they are in log-odds, not probability, the magnitude is not directly interpretable as probability change.</details>
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **Q8.** Write a Python function `plot_precision_recall_vs_threshold(model, X_val, y_val)` that plots precision and recall curves as functions of the decision threshold (0.0 to 1.0). The plot should show both curves on the same axes with a legend.
 

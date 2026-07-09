@@ -33,7 +33,7 @@ By the end of this lesson, students will be able to:
 4. **Analyze** the COMPAS recidivism case and identify sources of bias
 5. **Apply** at least one pre-processing bias mitigation strategy
 
-## Motivation
+## Motivación
 
 In 2016, ProPublica published an investigation of COMPAS, a commercial algorithm used by US courts to predict recidivism risk. The algorithm assigned risk scores to defendants. ProPublica found that:
 
@@ -48,13 +48,13 @@ The answer depends on which definition of fairness you use. And that is the cent
 
 Understanding these definitions — and their limitations — is essential for anyone building or deploying ML systems that affect people's lives.
 
-## Big Picture
+## Panorama General
 
 | Previous Lesson | Current Lesson | Next Lesson |
 |---|---|---|
 | L1: Intro to Ethics (principles) | L2: Bias and Fairness (types, metrics, case studies) | L3: Transparency and Explainability (XAI, SHAP, LIME) |
 
-## Theory
+## Teoría
 
 ### The Three Types of Bias
 
@@ -237,7 +237,7 @@ A SaaS recruiting platform offers an AI screening tool. The model is trained on 
 3. Regular auditing of deployed model performance by demographic group
 4. Transparency reports for clients on model demographics
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Assuming fairness through unawareness.** Simply removing the protected attribute from the model does not eliminate bias because other features (zip code, education) can act as proxies.
 2. **Ignoring intersectionality.** Bias may be concentrated at the intersection of multiple attributes (e.g., women of color) rather than single dimensions.
@@ -245,7 +245,7 @@ A SaaS recruiting platform offers an AI screening tool. The model is trained on 
 4. **Confusing group fairness with individual fairness.** Two individuals who are similar should receive similar predictions (individual fairness), which differs from group-level parity.
 5. **Assuming fairness is a one-time fix.** Bias can emerge or change over time as data distributions shift.
 
-## Best Practices
+## Buenas Prácticas
 
 1. **Audit your data before training.** Examine demographic composition, label balance, and feature distributions across groups.
 2. **Test multiple fairness metrics.** No single metric captures everything.
@@ -253,7 +253,7 @@ A SaaS recruiting platform offers an AI screening tool. The model is trained on 
 4. **Involve domain experts.** Understanding why bias exists requires domain knowledge.
 5. **Plan for ongoing monitoring.** Fairness is not a one-time check.
 
-## Summary
+## Resumen
 
 - Three types of bias: data, algorithmic, societal
 - Key fairness definitions: demographic parity, equal opportunity, equalized odds
@@ -262,7 +262,7 @@ A SaaS recruiting platform offers an AI screening tool. The model is trained on 
 - Mitigation strategies exist at each stage of the ML pipeline
 - Removing protected attributes is insufficient (proxy problem)
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|------------|
@@ -277,28 +277,28 @@ A SaaS recruiting platform offers an AI screening tool. The model is trained on 
 | Proxy | A non-protected feature that correlates with a protected attribute |
 | Intersectionality | The compounding effect of multiple protected attributes |
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic Understanding
+### Nivel 1: Comprensión Básica
 
 1. Define the three types of bias in AI. Give a concrete example of each.
 2. What is the difference between demographic parity and equal opportunity? Which one would you use for a credit approval model? Why?
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
 3. Using the synthetic loan dataset from the walkthrough, compute the disparate impact ratio for the model's predictions. Disparate impact is defined as the ratio of positive prediction rates between the protected group and the reference group.
 4. Train a Random Forest classifier on the same data and compare the fairness metrics. Does the model class affect fairness?
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 5. Imagine you are building a model to predict which patients need follow-up care. The base rate of the condition is 2x higher in one demographic group. Discuss whether demographic parity is an appropriate fairness criterion for this scenario. What would you recommend instead?
 6. Read ProPublica's COMPAS analysis and Northpointe's response. Both used rigorous statistics but reached opposite conclusions. Explain how they could both be "correct" by using different fairness definitions.
 
-## Coding Challenge
+## Desafío de Programación
 
 Generate a synthetic dataset with two demographic groups where one group has a higher base rate of the positive class. Train a classifier. Compute demographic parity, equal opportunity, and equalized odds. Implement a simple reweighing pre-processing technique (assign higher sample weights to underrepresented groups) and compare the fairness metrics before and after.
 
-## References
+## Referencias
 
 Angwin, J., Larson, J., Mattu, S., & Kirchner, L. (2016). Machine bias. *ProPublica*. https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
 

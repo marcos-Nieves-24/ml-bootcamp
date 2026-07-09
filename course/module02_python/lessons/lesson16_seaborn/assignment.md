@@ -1,13 +1,13 @@
 # Assignment: Customer Segmentation Visualization
 
-## Objectives
+## Objetivos
 
 - Use Seaborn to create statistical visualizations
 - Explore multi-variable relationships with pairplots and heatmaps
 - Customize Seaborn themes and palettes
 - Create a comprehensive EDA report
 
-## Instructions
+## Instrucciones
 
 Create a Python script `customer_segmentation_viz.py` that:
 
@@ -37,14 +37,14 @@ Create a Python script `customer_segmentation_viz.py` that:
 
 5. **Save** the combined figure as `segmentation_analysis.png`
 
-## Deliverables
+## Entregables
 
 - `customer_segmentation_viz.py`
 - `segmentation_analysis.png`
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
 |----------|-------------------|--------------|-----------------------------|
 | Plot Types | 6+ different Seaborn plots | 4-5 plots | < 4 plots |
 | Data Generation | Realistic, well-structured data | Basic data | Poor data |

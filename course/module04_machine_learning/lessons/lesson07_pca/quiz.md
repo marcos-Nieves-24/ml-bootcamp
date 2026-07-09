@@ -1,6 +1,6 @@
 # Quiz: PCA
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **Q1.** What is the primary goal of PCA?
 
@@ -47,7 +47,7 @@ d) The first component always separates classes
 
 <details><summary>Answer</summary>b) They are orthogonal (uncorrelated). PCA rotates the data so components have zero correlation.</details>
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **Q6.** Explain the relationship between eigenvalues and explained variance in PCA.
 
@@ -57,7 +57,7 @@ d) The first component always separates classes
 
 <details><summary>Answer</summary>This suggests there is no dominant low-dimensional structure in the data — variance is spread evenly across all dimensions. This could mean the data is approximately spherical (isotropic) with no strong correlations between features. PCA may not be helpful for dimensionality reduction in this case. Possible causes: poorly chosen features, data already uncorrelated, or random noise dominating.</details>
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **Q8.** Write a Python function `pca_scree_plot(X, n_components=10)` that:
 1. Scales the data

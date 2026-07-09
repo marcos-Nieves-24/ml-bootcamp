@@ -31,7 +31,7 @@ In the previous lesson, you learned Matplotlib — the foundation for Python vis
 
 ## Teoría
 
-### What is Seaborn?
+### ¿Qué es Seaborn?
 
 Seaborn provides:
 - **Statistical plot types**: box, violin, swarm, pair, heatmap
@@ -178,7 +178,7 @@ plt.show()
 
 ## Biotechnology Example
 
-**Scenario**: Visualizing gene expression data from an experiment.
+**Escenario**: Visualizing gene expression data from an experiment.
 
 ```python
 import seaborn as sns
@@ -221,7 +221,7 @@ plt.show()
 
 ## SaaS Example
 
-**Scenario**: Analyzing customer engagement metrics.
+**Escenario**: Analyzing customer engagement metrics.
 
 ```python
 import seaborn as sns

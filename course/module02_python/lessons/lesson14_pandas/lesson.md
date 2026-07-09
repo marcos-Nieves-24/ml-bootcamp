@@ -32,7 +32,7 @@ In the previous lesson, you learned NumPy for numerical computing. Pandas is bui
 
 ## Teoría
 
-### What is Pandas?
+### ¿Qué es Pandas?
 
 Pandas provides two main data structures:
 
@@ -215,7 +215,7 @@ print(df)
 
 ## Biotechnology Example
 
-**Scenario**: Analyzing clinical trial data.
+**Escenario**: Analyzing clinical trial data.
 
 ```python
 import pandas as pd
@@ -258,7 +258,7 @@ print(clinical.groupby("Age_Group")["Survival_Months"].agg(["mean", "std", "coun
 
 ## SaaS Example
 
-**Scenario**: Analyzing customer churn data.
+**Escenario**: Analyzing customer churn data.
 
 ```python
 import pandas as pd
@@ -345,7 +345,7 @@ print(f"\nHigh-risk customers: {len(high_risk)}")
 
 ### Nivel 3: Pensamiento Crítico
 
-6. Compare and contrast the performance of `apply()` vs vectorized operations in Pandas. When would you need to use `apply()`?
+6. Compara y contrasta the performance of `apply()` vs vectorized operations in Pandas. When would you need to use `apply()`?
 7. How would you handle missing values in a dataset? Compare `dropna()`, `fillna()`, and interpolation methods.
 
 ## Desafío de Programación

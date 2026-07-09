@@ -1,6 +1,6 @@
 # Lab 6: K-Means Clustering
 
-## Objectives
+## Objetivos
 
 - Implement K-Means with scikit-learn
 - Determine optimal K using elbow and silhouette
@@ -49,7 +49,7 @@ from sklearn.decomposition import PCA
 
 **Question:** Does K-Means still work well in 50 dimensions?
 
-## Deliverables
+## Entregables
 
 - Notebook with all 5 parts
 - Elbow + silhouette plots (Part 1)

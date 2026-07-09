@@ -4,15 +4,15 @@
 
 Conduct a social impact analysis of a real or proposed AI system. Evaluate its effects on employment, environment, safety, and the information ecosystem.
 
-## Duration
+## Duración
 
 45 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lesson 5
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Select a System (5 minutes)
 
@@ -64,13 +64,13 @@ Draw a stakeholder map (or write a list) identifying at least 5 groups affected 
 
 Write one specific, actionable recommendation for the developers or deployers of the system to address the most significant social impact you identified.
 
-## Deliverables
+## Entregables
 
 Submit your analysis (Parts 2–4) as a document (PDF or text).
 
 ## Rubric
 
-| Criterion | Points | Excellent | Good | Satisfactory | Needs Improvement |
+| Criterion | Puntos | Excellent | Good | Satisfactory | Needs Improvement |
 |-----------|--------|-----------|------|--------------|-------------------|
 | Employment analysis | 15 | Nuanced, specific | Good | Basic | Missing |
 | Environmental analysis | 15 | Specific estimate, mitigation ideas | Good | Basic | Missing |

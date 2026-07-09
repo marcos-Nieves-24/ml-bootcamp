@@ -23,17 +23,17 @@ Quiz: quiz.md
 
 # Interpretación de Modelos
 
-## Motivation
+## Motivación
 
 A black-box ML model predicts that a patient has cancer — but why? Which biomarkers drove this decision? In regulated industries (healthcare, finance), you can't deploy a model unless you can explain its predictions. Model interpretation answers "why?" — it builds trust, enables debugging, and provides scientific insight. In biotech, it identifies which genes drive disease. In SaaS, it reveals which features drive customer churn.
 
-## Big Picture
+## Panorama General
 
 **Previous:** You've learned many models (LR, RF, GB). **This lesson:** How to understand what these models learned. **Next:** Applications — putting everything together.
 
-## Theory
+## Teoría
 
-### Why Interpretability Matters
+### Por qué Interpretability Matters
 
 1. **Trust:** Stakeholders need to trust the model
 2. **Debugging:** Find data leaks, spurious correlations
@@ -102,7 +102,7 @@ A black-box ML model predicts that a patient has cancer — but why? Which bioma
 4. Fit an interpretable model (linear regression) on weighted samples
 5. Coefficients = local explanation
 
-## Visual Explanation
+## Explicación Visual
 
 ```python
 import numpy as np
@@ -144,7 +144,7 @@ plt.savefig('figures/partial_dependence.png', dpi=150)
 plt.show()
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import pandas as pd
@@ -232,7 +232,7 @@ for g in top_genes:
 
 **Interpretation:** Permutation importance correctly identifies genes 0, 15, and 42 as the actual predictive features — even among 100 genes.
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Confusing correlation with causation** — a feature can be "important" without causing the outcome
 2. **Impurity bias** — impurity-based importance favors high-cardinality features
@@ -240,7 +240,7 @@ for g in top_genes:
 4. **Ignoring feature correlations** — correlated features share importance
 5. **Over-interpreting small effects** — permutation importance can be noisy
 
-## Best Practices
+## Buenas Prácticas
 
 - Always use permutation importance (not just impurity)
 - Compare built-in importance with permutation importance
@@ -249,7 +249,7 @@ for g in top_genes:
 - For local explanations, consider SHAP (if installable) or LIME
 - Domain expertise is essential for correct interpretation
 
-## Summary
+## Resumen
 
 - Permutation importance measures feature importance by shuffling
 - Partial dependence plots show marginal effects
@@ -258,7 +258,7 @@ for g in top_genes:
 - Always combine ML interpretation with domain knowledge
 - Interpretability is essential for trust, debugging, and discovery
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|-----------|
@@ -269,7 +269,7 @@ for g in top_genes:
 | SHAP | Game-theoretic feature attribution |
 | LIME | Local surrogate model approximation |
 
-## Exercises
+## Ejercicios
 
 **Level 1 — Basic:** Why is permutation importance considered more reliable than impurity-based importance?
 
@@ -277,6 +277,6 @@ for g in top_genes:
 
 **Level 3 — Critical Thinking:** Features A and B are highly correlated (r = 0.95). Permutation importance gives both low scores. If you remove feature A, importance of B becomes high. What is happening?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a function `compare_importances(model, X_val, y_val, feature_names)` that returns a DataFrame comparing impurity-based and permutation-based feature importances, sorted by permutation importance.

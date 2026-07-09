@@ -1,6 +1,6 @@
 # Assignment 9: Model Interpretation
 
-## Objectives
+## Objetivos
 
 - Interpret a complex model using multiple methods
 - Communicate findings to a non-technical audience
@@ -14,7 +14,7 @@ Use the **Breast Cancer** dataset. Train a `RandomForestClassifier`.
 
 You are a data scientist at a hospital. You've built a cancer diagnosis model with >95% accuracy. The clinical team wants to understand the model before deploying it.
 
-## Instructions
+## Instrucciones
 
 1. **Train** a Random Forest (tune briefly)
 2. **Global interpretation:**
@@ -34,7 +34,7 @@ You are a data scientist at a hospital. You've built a cancer diagnosis model wi
    - What are the limitations?
    - Would you recommend deployment?
 
-## Deliverables
+## Entregables
 
 - Notebook with all analyses
 - Permutation importance plot
@@ -44,7 +44,7 @@ You are a data scientist at a hospital. You've built a cancer diagnosis model wi
 
 ## Rubric
 
-| Criteria | Excellent (4) | Good (3) | Adequate (2) | Needs Work (1) |
+| Criterio | Excelente (4) | Bueno (3) | Adecuado (2) | Needs Work (1) |
 |----------|--------------|----------|-------------|----------------|
 | Global interpretation | Clear, thorough | Mostly clear | Basic | Missing |
 | Local interpretation | Detailed, insightful | Clear | Basic | Missing |

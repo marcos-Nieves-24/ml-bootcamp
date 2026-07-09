@@ -1,6 +1,6 @@
 # Quiz: Privacy and Data Protection
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **Q1.** Which GDPR article grants individuals the right not to be subject to decisions based solely on automated processing?
 
@@ -37,13 +37,13 @@ B. Obtaining a business associate agreement with cloud providers
 C. Publishing the trained model as open-source
 D. Expert determination that re-identification risk is small
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **Q6.** What is a membership inference attack? How does differential privacy help defend against it?
 
 **Q7.** Explain the "data minimization" principle. Give an example of how an ML project might violate this principle, and how to fix it.
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **Q8.** Write a Python function `differentially_private_histogram(data, bins, epsilon)` that:
 - Takes an array of values, bin edges, and a privacy budget epsilon
@@ -53,7 +53,7 @@ D. Expert determination that re-identification risk is small
 
 ---
 
-## Answer Key
+## Clave de Respuestas
 
 **Q1.** C — Article 22: Automated individual decision-making, including profiling.
 

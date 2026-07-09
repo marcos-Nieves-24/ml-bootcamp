@@ -1,13 +1,13 @@
 # Assignment: NumPy Matrix Operations
 
-## Objectives
+## Objetivos
 
 - Create and manipulate NumPy arrays
 - Perform matrix operations using vectorized code
 - Implement data normalization and transformation
 - Apply broadcasting rules correctly
 
-## Instructions
+## Instrucciones
 
 Create a Python script `numpy_ops.py` that implements the following functions **using only NumPy** (no explicit Python loops):
 
@@ -31,7 +31,7 @@ X = np.random.randn(100, 5)
 y = X @ np.array([1.5, -2.0, 0.5, 3.0, -1.0]) + np.random.randn(100) * 0.1
 ```
 
-## Deliverables
+## Entregables
 
 - `numpy_ops.py` with all functions
 - Demonstration script showing each function works correctly
@@ -39,7 +39,7 @@ y = X @ np.array([1.5, -2.0, 0.5, 3.0, -1.0]) + np.random.randn(100) * 0.1
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
 |----------|-------------------|--------------|-----------------------------|
 | Vectorization | All functions vectorized (no Python loops) | Most functions vectorized | Loop-based |
 | Array Operations | Correct broadcasting, indexing, reshaping | Mostly correct | Errors |

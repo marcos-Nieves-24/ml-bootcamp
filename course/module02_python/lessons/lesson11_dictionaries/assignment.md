@@ -1,13 +1,13 @@
 # Assignment: Data Aggregation with Dictionaries
 
-## Objectives
+## Objetivos
 
 - Use dictionaries for data organization and lookup
 - Implement dictionary comprehensions
 - Use defaultdict and Counter for specialized tasks
 - Nest dictionaries for structured data
 
-## Instructions
+## Instrucciones
 
 Create a Python script `sales_analyzer.py` that:
 
@@ -33,14 +33,14 @@ sales_data = {
 }
 ```
 
-## Deliverables
+## Entregables
 
 - `sales_analyzer.py`
 - Formatted output of all analysis results
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
 |----------|-------------------|--------------|-----------------------------|
 | Dictionary Usage | Effective, appropriate usage | Mostly appropriate | Poor usage |
 | Functions | All functions correct, reusable | Most correct | Missing functions |

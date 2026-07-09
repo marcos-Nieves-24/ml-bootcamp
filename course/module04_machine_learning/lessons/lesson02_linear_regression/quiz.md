@@ -1,6 +1,6 @@
 # Quiz: Linear Regression
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **Q1.** In simple linear regression, what does the coefficient $\beta_1$ represent?
 
@@ -47,7 +47,7 @@ d) The coefficients are negative
 
 <details><summary>Answer</summary>b) The model performs worse than predicting the mean</details>
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **Q6.** A colleague fits a linear regression and gets R² = 0.92 on training data and R² = 0.15 on test data. What is happening and how would you fix it?
 
@@ -57,7 +57,7 @@ d) The coefficients are negative
 
 <details><summary>Answer</summary>When $\mathbf{X}^\top\mathbf{X}$ is singular (determinant = 0), it has no inverse. This occurs when features are perfectly multicollinear (one feature is a linear combination of others) or when there are fewer samples than features (n < p). Solutions include removing correlated features, using pseudoinverse, or applying regularization (Ridge adds $\lambda I$ making the matrix invertible).</details>
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **Q8.** Write a Python function `ridge_regression_scratch(X, y, lambda_val)` that implements Ridge regression (OLS with L2 penalty) using the closed-form solution: $\boldsymbol{\beta} = (\mathbf{X}^\top\mathbf{X} + \lambda\mathbf{I})^{-1}\mathbf{X}^\top\mathbf{y}$. Test it against `sklearn.linear_model.Ridge`.
 

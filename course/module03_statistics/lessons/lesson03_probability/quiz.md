@@ -1,6 +1,6 @@
 # Quiz: Probability Fundamentals
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **1. Which of Kolmogorov's axioms states that the probability of the entire sample space is 1?**
 
@@ -37,13 +37,13 @@ b) P(A∪B) = P(A) + P(B)
 c) P(A|B) = P(A)
 d) P(A) + P(B) = 1
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **6.** A test for a rare disease (prevalence 0.1%) has 99% sensitivity and 95% specificity. If a patient tests positive, what is the probability they actually have the disease? Show the calculation.
 
 **7.** Explain the "base rate fallacy" and give an example from biotechnology.
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **8.** Write Python code using numpy to simulate 50,000 patients where:
 - Disease prevalence is 2%

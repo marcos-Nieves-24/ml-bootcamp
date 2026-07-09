@@ -1,6 +1,6 @@
 # Quiz: Relationships Between Variables
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **1. Pearson correlation measures:**
 
@@ -37,13 +37,13 @@ b) Features are multicollinear
 c) Features have zero variance
 d) The data is normally distributed
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **6.** Explain the difference between a linear and a monotonic relationship. Give an example of each.
 
 **7.** Why is it important to check for multicollinearity before building a linear regression model?
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **8.** Write Python code that:
 - Creates two arrays: x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] and y = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]

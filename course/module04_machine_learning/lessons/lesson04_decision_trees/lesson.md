@@ -23,15 +23,15 @@ Quiz: quiz.md
 
 # Árboles de Decisión
 
-## Motivation
+## Motivación
 
 A doctor diagnoses patients by asking a series of questions: "Is the tumor larger than 2 cm?" → "Are lymph nodes involved?" → "Is the patient over 50?" This is exactly how decision trees work. They are intuitive — you can explain them to a non-technical stakeholder — and they handle non-linear relationships naturally. In biotech, they are used for patient stratification. In SaaS, for lead scoring.
 
-## Big Picture
+## Panorama General
 
 **Previous:** Logistic Regression gave us linear decision boundaries. **This lesson:** Decision Trees capture non-linear patterns without feature engineering. **Next:** Random Forests combine many trees for even better performance.
 
-## Theory
+## Teoría
 
 ### Tree Structure
 
@@ -41,7 +41,7 @@ A decision tree consists of:
 - **Leaf nodes:** predictions (class label or value)
 - **Branches:** outcomes of decisions
 
-### How Predictions Flow
+### Cómo Predictions Flow
 
 A sample starts at the root and traverses down based on feature comparisons until it reaches a leaf. The leaf's majority class (classification) or mean value (regression) is the prediction.
 
@@ -90,7 +90,7 @@ For a numerical feature, the algorithm:
 
 A tree with depth 1 (stump) is high-bias. A tree with depth 20 is extremely high-variance. The optimal depth is found via cross-validation.
 
-## Visual Explanation
+## Explicación Visual
 
 ```python
 import numpy as np
@@ -111,7 +111,7 @@ plt.savefig('figures/decision_tree_iris.png', dpi=150)
 plt.show()
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import pandas as pd
@@ -230,14 +230,14 @@ print(f"Importance: {dict(zip(X_lead.columns, tree.feature_importances_))}")
 
 **Interpretation:** Demo requests are the strongest signal of conversion intent.
 
-## Common Mistakes
+## Errores Comunes
 
 1. **No depth limit** — trees grow until pure, causing severe overfitting.
 2. **Ignoring feature importance** — trees provide built-in importance scores.
 3. **Unbalanced trees** — one branch much deeper than others.
 4. **Not checking for instability** — small data changes can produce very different trees.
 
-## Best Practices
+## Buenas Prácticas
 
 - Always limit tree depth (max_depth, min_samples_leaf)
 - Use cross-validation to find optimal depth
@@ -245,7 +245,7 @@ print(f"Importance: {dict(zip(X_lead.columns, tree.feature_importances_))}")
 - Visualize the tree for communication
 - Use feature importance to identify key drivers
 
-## Summary
+## Resumen
 
 - Decision trees split data recursively based on feature values
 - Gini impurity and entropy measure node purity
@@ -254,7 +254,7 @@ print(f"Importance: {dict(zip(X_lead.columns, tree.feature_importances_))}")
 - Trees are interpretable but unstable
 - Feature importance is a key output
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|-----------|
@@ -266,7 +266,7 @@ print(f"Importance: {dict(zip(X_lead.columns, tree.feature_importances_))}")
 | Pruning | Reducing tree depth to prevent overfitting |
 | Decision boundary | Axis-aligned splits in feature space |
 
-## Exercises
+## Ejercicios
 
 **Level 1 — Basic:** What is the difference between Gini impurity and entropy? When would they give different splits?
 
@@ -274,6 +274,6 @@ print(f"Importance: {dict(zip(X_lead.columns, tree.feature_importances_))}")
 
 **Level 3 — Critical Thinking:** A decision tree with max_depth = None achieves 100% accuracy on training data but 60% on test data. What three strategies would you use to improve test performance?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a function `tree_depth_tuner(X_train, X_val, y_train, y_val, max_depths)` that trains decision trees for each depth in max_depths, evaluates validation accuracy, and returns the optimal depth and the trained tree.

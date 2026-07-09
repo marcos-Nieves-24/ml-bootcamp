@@ -9,7 +9,7 @@ Topics: AI Fundamentals, Python Programming, Statistics for ML
 
 # Midterm Exam — Machine Learning for Data Analysis and SaaS
 
-## Instructions
+## Instrucciones
 
 - Answer all questions.
 - Duration: 120 minutes.
@@ -92,7 +92,7 @@ Answer in 3-5 sentences.
 
 11. Explain the Turing Test. What are its limitations?
 
-12. What is the difference between a list and a tuple in Python? Give an example use case for each.
+12. What is the difference between a list and a tuple in Python? Da un ejemplo use case for each.
 
 13. Explain Bayes' Theorem in your own words. Why is it important in machine learning?
 
@@ -121,12 +121,12 @@ Answer in 3-5 sentences.
 
 ## Section 4: Interpretation (20 points)
 
-18. (10 points) A binary classification model achieves 95% accuracy on a dataset where 95% of samples belong to class A. Is this model useful? Explain why or why not, and suggest a better metric.
+18. (10 points) A binary classification model achieves 95% accuracy on a dataset where 95% of samples belong to class A. Is this model useful? Explica por qué or why not, and suggest a better metric.
 
 19. (10 points) You perform PCA on a dataset with 50 features. The first two principal components explain 15% and 10% of the variance respectively. What does this tell you about the data? Should you keep all 50 features or reduce dimensionality? Explain your reasoning.
 
 ---
 
-## Answer Key
+## Clave de Respuestas
 
 *(Provided separately to instructors)*

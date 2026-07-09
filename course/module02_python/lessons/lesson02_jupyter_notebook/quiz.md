@@ -1,67 +1,67 @@
 # Quiz: Jupyter Notebook
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
-**Q1:** What file extension do Jupyter notebooks use?
+**P1:** What file extension do Jupyter notebooks use?
 - A) `.py`
 - B) `.json`
 - C) `.ipynb`
 - D) `.nb`
 
-**Q2:** What does the kernel in Jupyter do?
+**P2:** What does the kernel in Jupyter do?
 - A) Manages file storage
 - B) Executes Python code
 - C) Renders markdown
 - D) Connects to the internet
 
-**Q3:** Which keyboard shortcut runs a cell and selects the next cell?
+**P3:** Which keyboard shortcut runs a cell and selects the next cell?
 - A) Ctrl+Enter
 - B) Alt+Enter
 - C) Shift+Enter
 - D) Tab+Enter
 
-**Q4:** How do you change a cell to markdown type in command mode?
+**P4:** How do you change a cell to markdown type in command mode?
 - A) Press M
 - B) Press Y
 - C) Press D
 - D) Press A
 
-**Q5:** What command launches Jupyter Notebook from the terminal?
+**P5:** What command launches Jupyter Notebook from the terminal?
 - A) `jupyter start`
 - B) `jupyter notebook`
 - C) `jupyter launch`
 - D) `python jupyter`
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
-**Q6:** Explain the difference between command mode and edit mode in Jupyter.
+**P6:** Explain the difference between command mode and edit mode in Jupyter.
 
-**Q7:** Why should you restart the kernel and run all cells before sharing a notebook?
+**P7:** Why should you restart the kernel and run all cells before sharing a notebook?
 
-## Coding Question
+## Pregunta de Programación
 
-**Q8:** Write a markdown cell that displays:
+**P8:** Write a markdown cell that displays:
 - A level-2 heading reading "Results"
 - A bullet list with three items
 - The text "p-value < 0.05" formatted as inline code
 
-## Answer Key
+## Clave de Respuestas
 
-**Q1:** C) `.ipynb`
+**P1:** C) `.ipynb`
 
-**Q2:** B) Executes Python code
+**P2:** B) Executes Python code
 
-**Q3:** C) Shift+Enter
+**P3:** C) Shift+Enter
 
-**Q4:** A) Press M
+**P4:** A) Press M
 
-**Q5:** B) `jupyter notebook`
+**P5:** B) `jupyter notebook`
 
-**Q6:** Command mode (blue border) allows notebook-level actions like adding/deleting cells and changing cell types. Edit mode (green border) allows typing and editing the content of the current cell.
+**P6:** Command mode (blue border) allows notebook-level actions like adding/deleting cells and changing cell types. Edit mode (green border) allows typing and editing the content of the current cell.
 
-**Q7:** Restarting and running all ensures the notebook executes in the correct order from a clean state, revealing any hidden errors caused by running cells out of order or using stale variables.
+**P7:** Restarting and running all ensures the notebook executes in the correct order from a clean state, revealing any hidden errors caused by running cells out of order or using stale variables.
 
-**Q8:**
+**P8:**
 ```markdown
 ## Results
 

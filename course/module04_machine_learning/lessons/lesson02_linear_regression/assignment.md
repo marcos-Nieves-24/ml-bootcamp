@@ -1,6 +1,6 @@
 # Assignment 2: Linear Regression
 
-## Objectives
+## Objetivos
 
 - Apply linear regression to a real problem
 - Compare multiple feature subsets
@@ -11,7 +11,7 @@
 
 **Boston Housing** alternative: Use `fetch_california_housing` from scikit-learn.
 
-## Instructions
+## Instrucciones
 
 1. **Split** the data into train (70%), validation (15%), test (15%)
 2. **Train three models:**
@@ -22,7 +22,7 @@
 4. **Analyze residuals** for the best model
 5. **Select the best model** and evaluate on test set
 
-## Deliverables
+## Entregables
 
 - Python script or notebook
 - Table comparing the three models (training and validation R², RMSE)
@@ -35,7 +35,7 @@
 
 ## Rubric
 
-| Criteria | Excellent (4) | Good (3) | Adequate (2) | Needs Work (1) |
+| Criterio | Excelente (4) | Bueno (3) | Adecuado (2) | Needs Work (1) |
 |----------|--------------|----------|-------------|----------------|
 | Multiple models | 3 models with interaction | 2 models | 1 model | Missing |
 | Evaluation | R² + RMSE for train/val | Both metrics | One metric | Missing |

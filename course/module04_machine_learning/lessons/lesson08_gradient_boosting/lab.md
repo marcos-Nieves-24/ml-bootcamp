@@ -1,6 +1,6 @@
 # Lab 8: Gradient Boosting
 
-## Objectives
+## Objetivos
 
 - Train gradient boosting models and understand the effect of learning rate
 - Use staged predictions to monitor training
@@ -37,7 +37,7 @@ Train GB with subsample = [0.5, 0.8, 1.0] (learning_rate=0.1, n_estimators=100, 
 
 **Question:** Does stochasticity help generalization?
 
-## Deliverables
+## Entregables
 
 - Notebook with all 5 parts
 - Learning rate plot (Part 1)

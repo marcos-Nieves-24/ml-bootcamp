@@ -23,17 +23,17 @@ Quiz: descriptive_statistics_quiz.md
 
 # Lesson 1: Descriptive Statistics
 
-## Motivation
+## Motivación
 
 Imagine you have just sequenced 10,000 genes from a patient sample. You need to communicate which genes are consistently expressed and which vary wildly between patients. Without descriptive statistics, you would have to read 10,000 numbers one by one. Descriptive statistics condense entire datasets into a handful of meaningful numbers, enabling scientists and data analysts to understand data at a glance.
 
 In biotechnology, descriptive statistics help answer questions like: What is the average expression level of a gene across a population? How variable is the response to a drug? In SaaS, descriptive statistics summarize user engagement metrics like daily active users or session duration.
 
-## Big Picture
+## Panorama General
 
 In the previous module, you learned to manipulate data using Python, NumPy, and Pandas. Now you will learn to describe data numerically. This lesson builds the foundation for all subsequent statistics lessons. In Lesson 2, you will visualize these same descriptive concepts using histograms and density plots.
 
-## Theory
+## Teoría
 
 ### Measures of Central Tendency
 
@@ -95,7 +95,7 @@ Intuition: The IQR contains the middle 50% of the data. It is robust to outliers
 
 A common rule: any point below \(Q_1 - 1.5 \times \text{IQR}\) or above \(Q_3 + 1.5 \times \text{IQR}\) is considered an outlier.
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import numpy as np
@@ -216,14 +216,14 @@ plt.tight_layout()
 plt.show()
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Using the mean for skewed data**: The mean is sensitive to outliers. Use median for income, gene expression with outliers, or any skewed distribution.
 2. **Confusing sample and population variance**: `np.var(x)` computes population variance (ddof=0). For sample variance, use `np.var(x, ddof=1)`.
 3. **Interpreting standard deviation without context**: A standard deviation of 10 might be large or small depending on the scale of the data.
 4. **Assuming mode is unique**: In continuous data, every value may appear once. Use binning or rounding to find meaningful modes.
 
-## Best Practices
+## Buenas Prácticas
 
 - Always compute both central tendency and dispersion measures together
 - Report median and IQR for skewed distributions
@@ -231,7 +231,7 @@ plt.show()
 - Visualize data with a boxplot alongside numerical summaries
 - Use `df.describe()` for a quick overview in pandas
 
-## Summary
+## Resumen
 
 - Descriptive statistics summarize data with a few key numbers
 - Central tendency: mean (balance point), median (middle value), mode (most common)
@@ -239,7 +239,7 @@ plt.show()
 - IQR rule identifies outliers as points beyond 1.5×IQR from the quartiles
 - Choose mean + std for symmetric data, median + IQR for skewed data
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|------------|
@@ -252,7 +252,7 @@ plt.show()
 | Interquartile Range | Difference between 75th and 25th percentiles |
 | Outlier | Data point that differs significantly from the rest |
 
-## Exercises
+## Ejercicios
 
 **Level 1: Basic Understanding**
 
@@ -269,7 +269,7 @@ plt.show()
 5. A pharmaceutical company reports the mean effectiveness of a drug as 85%. However, 40% of patients showed no response. Explain how this contradiction is possible and suggest better summary statistics.
 6. Why might a SaaS company track median session duration instead of mean session duration?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a Python script that:
 1. Generates a synthetic dataset of 200 values from a normal distribution with mean=50 and std=15

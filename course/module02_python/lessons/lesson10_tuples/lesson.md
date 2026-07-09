@@ -79,7 +79,7 @@ t.count(1)    # 3
 t.index(2)    # 1 (first occurrence)
 ```
 
-### When to Use Tuples
+### Cuándo Usar Tuples
 
 - **Fixed data**: Coordinates, RGB values, database records
 - **Multiple return values**: Functions return tuples by default
@@ -160,7 +160,7 @@ print(f"Row 1, Col 2: {matrix[0][1]}")
 
 ## Biotechnology Example
 
-**Scenario**: Representing genetic data as immutable records.
+**Escenario**: Representing genetic data as immutable records.
 
 ```python
 # Each variant is a tuple: (chromosome, position, ref_base, alt_base, quality)
@@ -200,7 +200,7 @@ print(f"ATG → {aa} ({note})")
 
 ## SaaS Example
 
-**Scenario**: Storing event log entries as immutable records.
+**Escenario**: Storing event log entries as immutable records.
 
 ```python
 # Each event: (timestamp, user_id, event_type, metadata_tuple)

@@ -1,6 +1,6 @@
 # Assignment 4: Decision Trees
 
-## Objectives
+## Objetivos
 
 - Build an interpretable decision tree for a medical diagnosis problem
 - Tune hyperparameters to prevent overfitting
@@ -17,7 +17,7 @@ You are building a clinical decision support tool. The tool must:
 2. Be as small as possible (max 5 levels deep for readability)
 3. Achieve at least 90% test accuracy
 
-## Instructions
+## Instrucciones
 
 1. **Split** train (70%), validation (15%), test (15%)
 2. **Tune hyperparameters** using validation set:
@@ -29,7 +29,7 @@ You are building a clinical decision support tool. The tool must:
 5. **Extract decision rules** from the tree (e.g., "If worst radius > 15 and worst concave points > 0.1 → malignant")
 6. **Evaluate** on test set
 
-## Deliverables
+## Entregables
 
 - Notebook with code
 - Visualized decision tree (export as PNG)
@@ -41,7 +41,7 @@ You are building a clinical decision support tool. The tool must:
 
 ## Rubric
 
-| Criteria | Excellent (4) | Good (3) | Adequate (2) | Needs Work (1) |
+| Criterio | Excelente (4) | Bueno (3) | Adecuado (2) | Needs Work (1) |
 |----------|--------------|----------|-------------|----------------|
 | Hyperparameter tuning | Systematic search, justified | Basic search | Minimal | Missing |
 | Tree visualization | Clear, labeled, exported | Visible | Poor quality | Missing |

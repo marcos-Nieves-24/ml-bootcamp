@@ -33,7 +33,7 @@ By the end of this lesson, students will be able to:
 4. **Implement** the Laplace mechanism for differential privacy
 5. **Evaluate** privacy risks including membership inference and model inversion
 
-## Motivation
+## Motivación
 
 In 2018, a study demonstrated that it was possible to extract individual training examples from a generative language model trained on private text data (Carlini et al., 2018). The model had been trained on confidential emails. By querying the model, researchers could reconstruct verbatim passages from the training data.
 
@@ -43,13 +43,13 @@ This is not a theoretical risk. Hospitals train diagnostic models on patient dat
 
 Privacy is not just about keeping data secure during collection. It is about ensuring that the ML models trained on that data do not leak private information, even after deployment.
 
-## Big Picture
+## Panorama General
 
 | Previous Lesson | Current Lesson | Next Lesson |
 |---|---|---|
 | L3: Transparency (explaining models) | L4: Privacy and Data Protection (protecting data) | L5: Social Impact of AI (broader societal effects) |
 
-## Theory
+## Teoría
 
 ### Data Privacy Principles
 
@@ -191,7 +191,7 @@ GDPR requires that EU user data be processed lawfully. The platform must provide
 - Data export and deletion capabilities
 - Data Processing Agreement (DPA) with customers
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Anonymization is not just removing names.** High-dimensional data can be re-identified with auxiliary information.
 2. **Differential privacy is not a silver bullet.** It does not prevent all privacy attacks; it bounds the information leakage.
@@ -199,7 +199,7 @@ GDPR requires that EU user data be processed lawfully. The platform must provide
 4. **Privacy is not security.** Encryption protects data during transit/storage but does not prevent the model from leaking information.
 5. **Ignoring privacy during model deployment.** Privacy risks exist after deployment (membership inference attacks on APIs).
 
-## Best Practices
+## Buenas Prácticas
 
 1. **Minimize data collection.** Only collect features you need.
 2. **Use differential privacy** for releasing model parameters or summary statistics.
@@ -207,7 +207,7 @@ GDPR requires that EU user data be processed lawfully. The platform must provide
 4. **Conduct privacy impact assessments** before training models on sensitive data.
 5. **Plan for data deletion.** If a user requests erasure, can you retrain without their data?
 
-## Summary
+## Resumen
 
 - Data privacy is governed by principles of lawfulness, minimization, and accountability.
 - GDPR provides a comprehensive framework with specific implications for ML.
@@ -216,7 +216,7 @@ GDPR requires that EU user data be processed lawfully. The platform must provide
 - Privacy attacks (membership inference, model inversion) target trained models.
 - Privacy must be considered throughout the ML lifecycle.
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|------------|
@@ -231,24 +231,24 @@ GDPR requires that EU user data be processed lawfully. The platform must provide
 | Model inversion | Attack to reconstruct training data from model parameters |
 | k-anonymity | Property that each record is indistinguishable from at least k-1 others |
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic Understanding
+### Nivel 1: Comprensión Básica
 
 1. List the seven data privacy principles. Which three are most relevant to ML? Why?
-2. What is the difference between anonymization and pseudonymization? Give an example of each.
+2. What is the difference between anonymization and pseudonymization? Da un ejemplo of each.
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
 3. Implement the Laplace mechanism for releasing the median of a dataset. Compare the noise needed for the median vs. the mean (median has lower sensitivity).
 4. Simulate a membership inference attack: train two models (one with and one without a specific record), compute the model's confidence on that record, and show the difference.
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 5. A hospital wants to share patient data for ML research. They remove names, SSNs, and dates. Is this sufficient? What other re-identification risks exist?
 6. The "right to erasure" (GDPR Art. 17) conflicts with ML models that have already learned from a person's data. Is it sufficient to delete the raw data? If not, what should happen to the model? Discuss the practical challenges.
 
-## Coding Challenge
+## Desafío de Programación
 
 Implement a differentially private mean release function. Write a script that:
 1. Generates a synthetic dataset of salaries
@@ -259,7 +259,7 @@ Implement a differentially private mean release function. Write a script that:
 6. Reports the mean absolute error for each epsilon
 7. Also plots the privacy-utility trade-off curve
 
-## References
+## Referencias
 
 Dwork, C., & Roth, A. (2014). The algorithmic foundations of differential privacy. *Foundations and Trends in Theoretical Computer Science*, 9(3–4), 211–407. https://doi.org/10.1561/0400000042
 

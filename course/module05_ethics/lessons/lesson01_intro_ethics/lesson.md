@@ -33,7 +33,7 @@ By the end of this lesson, students will be able to:
 4. **Analyze** a real-world case of algorithmic harm using ethical principles
 5. **Evaluate** ethical trade-offs in a concrete system design scenario
 
-## Motivation
+## Motivación
 
 Imagine you build a machine learning model that predicts which patients will develop diabetes. Your model achieves 94% accuracy on your test set. You deploy it in a hospital. Months later, you discover the model systematically underdiagnoses diabetes in women of color — precisely the population that needs early detection the most.
 
@@ -45,7 +45,7 @@ AI ethics is not an abstract philosophical exercise. It is an engineering discip
 
 If you work in biotechnology, healthcare, or SaaS, you will almost certainly deploy models that affect real people. Understanding ethics is as essential as understanding gradient descent.
 
-## Big Picture
+## Panorama General
 
 | Previous Module | Current Lesson | Next Lesson |
 |---|---|---|
@@ -53,9 +53,9 @@ If you work in biotechnology, healthcare, or SaaS, you will almost certainly dep
 
 This lesson lays the philosophical and practical foundation. Every subsequent lesson — bias, transparency, privacy, social impact, regulation, case studies — builds on these five principles.
 
-## Theory
+## Teoría
 
-### What is Ethics in AI?
+### ¿Qué es Ethics in AI?
 
 Ethics is the branch of philosophy concerned with moral principles — what is right and wrong, good and bad. AI ethics applies these principles to the design, development, deployment, and governance of artificial intelligence systems.
 
@@ -68,7 +68,7 @@ AI ethics asks questions like:
 
 These are not questions we can answer with a loss function. They require values, deliberation, and trade-offs.
 
-### Why It Matters
+### Por qué It Matters
 
 There are four compelling reasons to care about AI ethics:
 
@@ -200,7 +200,7 @@ A SaaS lending platform uses ML to approve or deny small business loans. The mod
 
 **Lesson:** Features that are predictive are not always ethically acceptable.
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Equating accuracy with ethical success.** A model can be accurate on average but systematically wrong for specific groups.
 2. **Ignoring data provenance.** The ethical properties of a dataset matter as much as its statistical properties.
@@ -208,7 +208,7 @@ A SaaS lending platform uses ML to approve or deny small business loans. The mod
 4. **Assuming neutrality.** ML systems are not value-neutral. Every design choice reflects values.
 5. **Forgetting the human.** Behind every data point is a person who may be affected by the system.
 
-## Best Practices
+## Buenas Prácticas
 
 1. **Start early.** Consider ethical implications during problem formulation, not after deployment.
 2. **Diverse teams.** Teams with diverse backgrounds identify more ethical risks.
@@ -216,7 +216,7 @@ A SaaS lending platform uses ML to approve or deny small business loans. The mod
 4. **Document decisions.** Write down why you chose certain features, datasets, and thresholds.
 5. **Assume responsibility.** If your system causes harm, own it and fix it.
 
-## Summary
+## Resumen
 
 - AI ethics applies moral principles to the design, development, and deployment of AI systems.
 - There are five key principles: beneficence, non-maleficence, autonomy, justice, and explicability.
@@ -224,7 +224,7 @@ A SaaS lending platform uses ML to approve or deny small business loans. The mod
 - Dataset composition, feature selection, and model design are all ethical decisions.
 - Ethics is not optional — it is a core engineering responsibility.
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|------------|
@@ -236,28 +236,28 @@ A SaaS lending platform uses ML to approve or deny small business loans. The mod
 | AI ethics | The field concerned with moral principles in AI design and deployment |
 | Ethical trade-off | A situation where satisfying one ethical principle conflicts with another |
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic Understanding
+### Nivel 1: Comprensión Básica
 
 1. List the five ethical principles of AI according to Floridi and Cowls (2019). Provide a one-sentence definition for each.
-2. Explain why a model with 95% accuracy can still be ethically problematic.
+2. Explica por qué a model with 95% accuracy can still be ethically problematic.
 
 ### Level 2: Analysis
 
 3. Choose a real or hypothetical AI system. Analyze it using the five ethical principles. Identify at least one potential ethical violation.
-4. Give an example of an ethical trade-off between autonomy and non-maleficence in a healthcare AI context.
+4. Da un ejemplo of an ethical trade-off between autonomy and non-maleficence in a healthcare AI context.
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 5. An AI system predicts student performance to allocate educational resources. Write a short ethical analysis (200 words) covering all five principles. What trade-offs exist? How would you resolve them?
 6. Why might it be insufficient to rely solely on "fairness through unawareness" (excluding protected attributes from the model)? What ethical principle does this violate?
 
-## Coding Challenge
+## Desafío de Programación
 
 No coding challenge for this introductory lesson. Implementation exercises begin in Lesson 2.
 
-## References
+## Referencias
 
 Floridi, L., & Cowls, J. (2019). A unified framework of five principles for AI in society. *Harvard Data Science Review*, 1(1). https://doi.org/10.1162/99608f92.8cd550d1
 

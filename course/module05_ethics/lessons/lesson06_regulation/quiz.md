@@ -1,6 +1,6 @@
 # Quiz: Regulation and Governance of AI
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **Q1.** Under the EU AI Act, which risk level requires the most stringent compliance requirements (excluding prohibited systems)?
 
@@ -37,19 +37,19 @@ B. The US has comprehensive legislation; the EU has sectoral regulation
 C. Both have comprehensive legislation but different enforcement mechanisms
 D. Neither has enacted any AI-specific regulation
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **Q6.** Describe the four risk levels of the EU AI Act. For each level, give an example and state the key regulatory requirement.
 
 **Q7.** What are the components of a robust internal corporate AI governance framework? Why might a company's ethics board fail to prevent harm?
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **Q8.** (Conceptual — no coding) You are the head of AI governance at a company developing a high-risk AI system for medical diagnosis. Write a brief compliance checklist (150 words) covering the key requirements under the EU AI Act.
 
 ---
 
-## Answer Key
+## Clave de Respuestas
 
 **Q1.** C — High risk (e.g., medical devices, hiring, credit scoring) requires conformity assessment, risk management, human oversight, etc. General-purpose AI has additional but different requirements.
 

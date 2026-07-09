@@ -1,6 +1,6 @@
 # Quiz: Random Forest
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **Q1.** What is bagging?
 
@@ -47,7 +47,7 @@ d) Lower, higher
 
 <details><summary>Answer</summary>c) Similar bias, lower variance. Random Forest keeps the low bias of trees while reducing variance through averaging.</details>
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **Q6.** Explain the relationship between the number of trees (n_estimators) and Random Forest performance. Why do returns diminish?
 
@@ -57,7 +57,7 @@ d) Lower, higher
 
 <details><summary>Answer</summary>Impurity-based importance can be biased toward high-cardinality features (those with many unique values) and can be misleading when features are on different scales. Permutation importance directly measures the drop in performance when a feature's values are shuffled, making it more reliable. Use permutation importance for final feature selection, impurity importance for a quick overview.</details>
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **Q8.** Write a Python function `oob_vs_n_estimators(X, y, max_n=500)` that trains Random Forests with n_estimators from 1 to max_n (in steps of 10) and returns a list of OOB scores. Then plot OOB score vs. n_estimators.
 

@@ -23,15 +23,15 @@ Quiz: quiz.md
 
 # Random Forest
 
-## Motivation
+## Motivación
 
 A single decision tree overfits easily and is unstable — small data changes produce very different trees. But if you ask 100 doctors to diagnose a patient and take a vote, the collective diagnosis is more reliable than any single doctor. This is the core idea of Random Forest: build many trees and average their predictions. Random Forest is one of the most widely used algorithms in both biotech (genomics, drug discovery) and SaaS (fraud detection, churn prediction).
 
-## Big Picture
+## Panorama General
 
 **Previous:** Decision Trees were interpretable but unstable. **This lesson:** Random Forests solve instability by averaging many trees. **Next:** K-Means Clustering — moving from supervised to unsupervised learning.
 
-## Theory
+## Teoría
 
 ### Ensemble Learning
 
@@ -77,7 +77,7 @@ $$\text{Var}(\hat{f}_{\text{rf}}) = \rho\sigma^2 + \frac{1-\rho}{B}\sigma^2$$
 
 As $B \to \infty$, variance approaches $\rho\sigma^2$. Feature randomness reduces $\rho$, making the ensemble more effective.
 
-## Visual Explanation
+## Explicación Visual
 
 ```python
 import numpy as np
@@ -109,7 +109,7 @@ plt.savefig('figures/tree_vs_forest_boundary.png', dpi=150)
 plt.show()
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import pandas as pd
@@ -214,14 +214,14 @@ print(f"Recall: {recall_score(y_f, rf.predict(X_f)):.3f}")
 print(f"Precision: {precision_score(y_f, rf.predict(X_f)):.3f}")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Too few trees** — start with 100, increase until OOB error stabilizes.
 2. **No depth limit** — even in forests, very deep trees can overfit on small datasets.
 3. **Ignoring class_weight** — for imbalanced data, set `class_weight='balanced'`.
 4. **Using impurity importance blindly** — for high-cardinality features, permutation importance is more reliable.
 
-## Best Practices
+## Buenas Prácticas
 
 - Use OOB score as a free validation metric
 - Start with `n_estimators=100` and increase until OOB error plateaus
@@ -229,7 +229,7 @@ print(f"Precision: {precision_score(y_f, rf.predict(X_f)):.3f}")
 - Compare with a single tree to measure ensemble benefit
 - Use permutation importance for final feature selection
 
-## Summary
+## Resumen
 
 - Random Forest averages many trees to reduce variance
 - Bagging creates diverse trees via bootstrap sampling
@@ -238,7 +238,7 @@ print(f"Precision: {precision_score(y_f, rf.predict(X_f)):.3f}")
 - Feature importance identifies key predictors
 - RF is robust, accurate, and widely applicable
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|-----------|
@@ -249,14 +249,14 @@ print(f"Precision: {precision_score(y_f, rf.predict(X_f)):.3f}")
 | Feature importance | Measure of each feature's contribution |
 | n_estimators | Number of trees in the forest |
 
-## Exercises
+## Ejercicios
 
-**Level 1 — Basic:** Explain why bagging reduces variance compared to a single tree.
+**Level 1 — Basic:** Explica por qué bagging reduces variance compared to a single tree.
 
 **Level 2 — Implementation:** Train a Random Forest on the breast cancer dataset with `n_estimators=[10, 50, 100, 200]`. Plot OOB score vs. n_estimators. At what point do returns diminish?
 
 **Level 3 — Critical Thinking:** Your Random Forest achieves 99.5% training accuracy but 88% test accuracy. The single tree achieves 94% training and 90% test. What is happening and how would you fix the forest?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a function `tune_random_forest(X_train, y_train, X_val, y_val)` that performs a grid search over `n_estimators` (50, 100, 200) and `max_depth` (3, 5, 10, None) and returns the best model and its validation accuracy.

@@ -1,6 +1,6 @@
 # Quiz: Statistical Distributions
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **1. Which distribution models the number of successes in n independent trials?**
 
@@ -37,13 +37,13 @@ b) The sample mean approaches normality as sample size increases
 c) All distributions have the same mean
 d) Variance equals the mean for all distributions
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **6.** A call center receives an average of 20 calls per hour. What distribution models this? What is the probability of receiving exactly 15 calls in the next hour?
 
 **7.** What is standardization and why is it important in machine learning?
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **8.** Write Python code using scipy.stats to:
 - Create a Binomial distribution with n=15, p=0.4

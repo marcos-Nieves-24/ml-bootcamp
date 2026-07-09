@@ -23,15 +23,15 @@ Quiz: quiz.md
 
 # Gradient Boosting
 
-## Motivation
+## Motivación
 
 Random Forest builds many trees independently and averages them. Gradient Boosting builds trees *sequentially*, where each new tree focuses on the mistakes of the previous ones. Like a student who learns from errors, boosting creates a powerful ensemble from simple trees. Gradient Boosting and its optimized variants (XGBoost, LightGBM) dominate ML competitions and are widely used in biotech (drug discovery, genomics) and SaaS (click-through rate prediction, ranking).
 
-## Big Picture
+## Panorama General
 
 **Previous:** Random Forest (parallel ensemble — bagging). **This lesson:** Gradient Boosting (sequential ensemble — boosting). **Next:** Model Interpretation — understanding what your model learned.
 
-## Theory
+## Teoría
 
 ### Boosting Intuition
 
@@ -71,7 +71,7 @@ For MSE loss, the negative gradient is simply the residual: $y_i - F_{m-1}(x_i)$
 
 **subsample:** Fraction of data used per iteration (stochastic gradient boosting).
 
-## Visual Explanation
+## Explicación Visual
 
 ```python
 import numpy as np
@@ -105,7 +105,7 @@ plt.savefig('figures/boosting_sequential.png', dpi=150)
 plt.show()
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import pandas as pd
@@ -234,14 +234,14 @@ gb_ctr.fit(ctr_data.drop('clicked', axis=1), ctr_data['clicked'])
 print(f"Test AUC: {roc_auc_score(ctr_data['clicked'], gb_ctr.predict_proba(ctr_data.drop('clicked', axis=1))[:, 1]):.3f}")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Too many trees without enough learning rate** — overfitting
 2. **Deep trees in boosting** — boosting is designed for shallow trees (depth 2-5)
 3. **Ignoring early stopping** — use validation set to stop when performance plateaus
 4. **Using boosting on very small datasets** — prone to overfitting with <100 samples
 
-## Best Practices
+## Buenas Prácticas
 
 - Always use a validation set for early stopping
 - Start with learning_rate=0.1, n_estimators=100, max_depth=3
@@ -250,7 +250,7 @@ print(f"Test AUC: {roc_auc_score(ctr_data['clicked'], gb_ctr.predict_proba(ctr_d
 - Compare with Random Forest to decide which ensemble works better
 - For large data, use XGBoost or LightGBM
 
-## Summary
+## Resumen
 
 - Boosting builds trees sequentially, each correcting previous errors
 - Each tree fits the residuals (negative gradient) of the current ensemble
@@ -258,7 +258,7 @@ print(f"Test AUC: {roc_auc_score(ctr_data['clicked'], gb_ctr.predict_proba(ctr_d
 - Lower learning rate + more trees = better generalization
 - XGBoost and LightGBM are optimized, production-ready implementations
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|-----------|
@@ -269,7 +269,7 @@ print(f"Test AUC: {roc_auc_score(ctr_data['clicked'], gb_ctr.predict_proba(ctr_d
 | Additive model | Ensemble formed by adding models sequentially |
 | Early stopping | Stopping training when validation performance stops improving |
 
-## Exercises
+## Ejercicios
 
 **Level 1 — Basic:** Explain the key difference between bagging (Random Forest) and boosting (Gradient Boosting).
 
@@ -277,6 +277,6 @@ print(f"Test AUC: {roc_auc_score(ctr_data['clicked'], gb_ctr.predict_proba(ctr_d
 
 **Level 3 — Critical Thinking:** You have 50 samples with 200 features. Why might Gradient Boosting be a bad choice? What would you use instead?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a function `tune_gradient_boosting(X_train, y_train, X_val, y_val)` that performs a grid search over learning_rate (0.01, 0.05, 0.1) and max_depth (2, 3, 5) and returns the best model and its validation accuracy.

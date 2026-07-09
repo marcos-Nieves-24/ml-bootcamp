@@ -4,7 +4,7 @@
 
 Train and evaluate a regression model using multiple metrics and cross-validation.
 
-## Duration
+## Duración
 
 60 minutes
 
@@ -12,7 +12,7 @@ Train and evaluate a regression model using multiple metrics and cross-validatio
 
 California Housing from sklearn.
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Train/Test Split (10 min)
 1. Load California housing dataset
@@ -43,13 +43,13 @@ California Housing from sklearn.
 3. Which features are most influential?
 4. Interpret the top 2 features
 
-## Deliverables
+## Entregables
 
 - Jupyter notebook with code, plots, and interpretations
 
 ## Rubric
 
-| Criteria | Points |
+| Criterio | Puntos |
 |----------|--------|
 | Train/test split and metrics | 3 |
 | Cross-validation | 2 |

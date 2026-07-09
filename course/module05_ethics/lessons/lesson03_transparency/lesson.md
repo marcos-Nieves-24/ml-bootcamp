@@ -33,7 +33,7 @@ By the end of this lesson, students will be able to:
 4. **Implement** LIME to explain a Random Forest classifier prediction
 5. **Evaluate** the limitations and risks of post-hoc explanation methods
 
-## Motivation
+## Motivación
 
 Imagine you are a doctor using an AI system that recommends whether to start a patient on chemotherapy. The model is a gradient boosting machine with 500 trees. It says: "High risk of mortality within 5 years. Recommend chemotherapy."
 
@@ -45,13 +45,13 @@ This is the **black box problem**. Many of our most powerful models — deep neu
 
 **Explainable AI (XAI)** is the field that develops methods to open the black box. It is not just a nice-to-have. Under the EU AI Act, individuals have a right to an explanation for decisions made by AI systems. In healthcare, finance, criminal justice, and hiring, explainability is a legal and ethical requirement.
 
-## Big Picture
+## Panorama General
 
 | Previous Lesson | Current Lesson | Next Lesson |
 |---|---|---|
 | L2: Bias and Fairness (detecting disparities) | L3: Transparency and Explainability (explaining decisions) | L4: Privacy and Data Protection (protecting data) |
 
-## Theory
+## Teoría
 
 ### The Black Box Problem
 
@@ -210,7 +210,7 @@ A SaaS fintech platform uses Gradient Boosting to score loan applicants. Regulat
 - **Model auditor explanation:** Feature importance rank, partial dependence plots, SHAP summary plot.
 - **Compliance documentation:** Global explanation report for regulatory review.
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Equating interpretability with simplicity.** A decision tree with 200 nodes is not truly interpretable.
 2. **Trusting LIME/SHAP explanations as ground truth.** Post-hoc explanations approximate the model; they can be wrong.
@@ -218,7 +218,7 @@ A SaaS fintech platform uses Gradient Boosting to score loan applicants. Regulat
 4. **Over-relying on global feature importance.** Global importance masks local behavior.
 5. **Assuming explanations solve all trust problems.** An explanation can be correct but still mask harmful model behavior.
 
-## Best Practices
+## Buenas Prácticas
 
 1. **Prefer inherently interpretable models** when accuracy is comparable.
 2. **Use multiple explanation methods** and check for consistency.
@@ -226,7 +226,7 @@ A SaaS fintech platform uses Gradient Boosting to score loan applicants. Regulat
 4. **Document explanation limitations.** Users should know when an explanation might be unreliable.
 5. **Design explanations for the audience.** A patient, a doctor, and a regulator each need different levels of detail.
 
-## Summary
+## Resumen
 
 - Black box models achieve high accuracy but are opaque.
 - Interpretability is about understanding the model; explainability is about explaining individual predictions.
@@ -235,7 +235,7 @@ A SaaS fintech platform uses Gradient Boosting to score loan applicants. Regulat
 - Post-hoc explanations are approximations with known limitations.
 - In high-stakes domains (healthcare, finance), explainability is an ethical and legal requirement.
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|------------|
@@ -249,28 +249,28 @@ A SaaS fintech platform uses Gradient Boosting to score loan applicants. Regulat
 | Global explanation | An explanation of overall model behavior |
 | Local explanation | An explanation of a single prediction |
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic Understanding
+### Nivel 1: Comprensión Básica
 
 1. What is the black box problem? Give three domains where it is particularly concerning.
-2. Explain the difference between interpretability and explainability. Give an example of each.
+2. Explica la diferencia between interpretability and explainability. Da un ejemplo of each.
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
 3. Using the loan dataset from the walkthrough, use LIME to explain a denied application. Compare the explanation with an approved application. What features differ?
 4. Train a linear regression model on the same data and compare the LIME explanation for the same instance. Is LIME still useful for an inherently interpretable model?
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 5. A researcher uses SHAP to explain a diagnostic model. The explanation shows that the model relies heavily on a feature that the researcher knows is biologically irrelevant. However, the model is 97% accurate. What might be happening? What should the researcher do?
 6. Some critics argue that post-hoc explanations can be misleading because they approximate the model rather than revealing its true logic. Do you agree? Under what circumstances might an explanation be worse than no explanation?
 
-## Coding Challenge
+## Desafío de Programación
 
 Use LIME or SHAP to explain a gradient boosting model trained on a dataset of your choice. Create a summary plot showing the top features. Write a brief interpretation of what the model learned, and identify at least one potential concern about the model's behavior based on the explanations.
 
-## References
+## Referencias
 
 Lundberg, S. M., & Lee, S.-I. (2017). A unified approach to interpreting model predictions. *Advances in Neural Information Processing Systems*, 30, 4765–4774.
 

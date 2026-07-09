@@ -1,12 +1,12 @@
 # Assignment: Statistical Distributions in Practice
 
-## Objectives
+## Objetivos
 
 - Identify appropriate distributions for real scenarios
 - Compute probabilities using scipy.stats
 - Apply standardization and interpret Z-scores
 
-## Instructions
+## Instrucciones
 
 1. **Distribution Identification**: For each scenario, identify the distribution, parameters, and compute the probability:
    - A website has a 2% conversion rate. What's the probability of getting exactly 5 conversions out of 200 visitors?
@@ -29,13 +29,13 @@
    - Show how the distribution of sample means becomes normal as n increases from 2 to 5 to 30 to 100
    - Create a 2×2 grid showing this evolution
 
-## Deliverables
+## Entregables
 
 - Jupyter notebook with all computations, plots, and interpretations
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Adequate (2 pts) | Poor (1 pt) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Adequate (2 pts) | Poor (1 pt) |
 |----------|------------------|--------------|------------------|-------------|
 | Distribution identification | All correct | Minor errors | One correct | Missing |
 | Normal fit + Q-Q plot | Complete | Minor issues | Partial | Missing |
@@ -44,6 +44,6 @@
 
 **Total: 16 points**
 
-## Estimated Time
+## Tiempo Estimado
 
 2.5 hours

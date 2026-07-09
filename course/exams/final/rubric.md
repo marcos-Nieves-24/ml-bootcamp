@@ -1,6 +1,6 @@
 # Final Exam Rubric
 
-| Section | Questions | Points | Criteria |
+| Section | Questions | Puntos | Criterio |
 |---------|-----------|--------|----------|
 | Multiple Choice | 1-10 | 20 | 2 points each. No partial credit. |
 | Short Answer | 11-14 | 24 | 6 points: complete and accurate. 3-4 pts: partially correct. 1 pt: attempted. |

@@ -1,6 +1,6 @@
 # Quiz: Applications
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **Q1.** What is the main benefit of using a Pipeline in scikit-learn?
 
@@ -47,7 +47,7 @@ d) Feature selection
 
 <details><summary>Answer</summary>b) An exhaustive search over specified parameter values with cross-validation to find the best hyperparameters</details>
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **Q6.** Describe an end-to-end ML pipeline from raw data to deployment decision. Name at least 5 stages.
 
@@ -57,7 +57,7 @@ d) Feature selection
 
 <details><summary>Answer</summary>1) Build trust through interpretability: show feature importance and PDPs so the team understands the drivers. 2) Start with a pilot: run the model alongside existing processes without replacing them. 3) Involve domain experts in validating the features and predictions. 4) Communicate in business/process language, not ML jargon. 5) Document limitations clearly. 6) Demonstrate ROI with a concrete example (e.g., "if we had this model last month, we would have caught 3 quality issues earlier").</details>
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **Q8.** Write a Python function `regression_pipeline_comparison(X, y)` that creates a pipeline with StandardScaler for each of LinearRegression, RandomForestRegressor (n=100), and GradientBoostingRegressor (n=100). It returns a DataFrame comparing their RMSE and R² using 5-fold cross-validation.
 

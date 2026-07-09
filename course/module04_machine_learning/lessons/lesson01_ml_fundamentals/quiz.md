@@ -1,6 +1,6 @@
 # Quiz: ML Fundamentals
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **Q1.** What distinguishes Machine Learning from traditional programming?
 
@@ -47,7 +47,7 @@ d) Predicting whether a patient has a disease
 
 <details><summary>Answer</summary>b) Clustering customer purchase patterns without predefined categories</details>
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **Q6.** Explain the difference between training and prediction in Machine Learning.
 
@@ -57,7 +57,7 @@ d) Predicting whether a patient has a disease
 
 <details><summary>Answer</summary>A high training R² does not guarantee good generalization. The model could be overfitting — memorizing noise in the training data rather than learning true patterns. The test set R² is the reliable measure of performance. The colleague should evaluate on a held-out test set or use cross-validation.</details>
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **Q8.** Write a Python function `bias_variance_demo(degree)` that:
 1. Generates synthetic sinusoidal data with noise (20 points, `np.sin(2πx) + N(0, 0.2)`)

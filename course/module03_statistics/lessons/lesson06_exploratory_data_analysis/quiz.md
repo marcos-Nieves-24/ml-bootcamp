@@ -1,6 +1,6 @@
 # Quiz: Exploratory Data Analysis
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **1. What does MCAR stand for in missing data analysis?**
 
@@ -37,13 +37,13 @@ b) MAR
 c) MNAR
 d) All are equally problematic
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **6.** Explain the difference between MAR and MNAR missing data. Give an example of each from a clinical trial.
 
 **7.** Why should you keep the original data untouched during EDA and work on copies?
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **8.** Write Python code that loads the `titanic` dataset from seaborn and:
 - Prints the percentage of missing values per column

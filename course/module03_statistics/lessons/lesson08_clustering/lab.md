@@ -4,7 +4,7 @@
 
 Apply K-Means clustering to segment data and evaluate cluster quality.
 
-## Duration
+## Duración
 
 60 minutes
 
@@ -12,7 +12,7 @@ Apply K-Means clustering to segment data and evaluate cluster quality.
 
 Seaborn's `penguins` dataset.
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Data Preparation (10 min)
 1. Load penguins, drop missing values
@@ -36,13 +36,13 @@ Seaborn's `penguins` dataset.
 3. Compare cluster assignments with actual species (cross-tabulation)
 4. Write a 1-paragraph interpretation of each cluster's characteristics
 
-## Deliverables
+## Entregables
 
 - Jupyter notebook with code, plots, and interpretations
 
 ## Rubric
 
-| Criteria | Points |
+| Criterio | Puntos |
 |----------|--------|
 | Elbow + silhouette analysis | 3 |
 | K-Means application | 2 |

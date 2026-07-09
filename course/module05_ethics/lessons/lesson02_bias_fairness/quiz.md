@@ -1,6 +1,6 @@
 # Quiz: Bias and Fairness
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **Q1.** Which type of bias arises when the training data does not accurately represent the population the model will be applied to?
 
@@ -37,13 +37,13 @@ B. Not telling users how the model works
 C. Using unsupervised learning to avoid bias
 D. Blindly selecting features without domain knowledge
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **Q6.** Explain how a feature like "zip code" can act as a proxy for race even when race is removed from the model. What does this imply about "fairness through unawareness"?
 
 **Q7.** What is intersectionality in the context of algorithmic bias? Provide an example where bias might not be visible when analyzing groups on a single attribute.
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **Q8.** Write a Python function `compute_equalized_odds(y_true, y_pred, protected_attr)` that:
 - Takes three arrays: true labels, predicted labels, and a binary protected attribute
@@ -54,7 +54,7 @@ You may use `sklearn.metrics.confusion_matrix`.
 
 ---
 
-## Answer Key
+## Clave de Respuestas
 
 **Q1.** C — Data bias (also called representation or sample bias).
 

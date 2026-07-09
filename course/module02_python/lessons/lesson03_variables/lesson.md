@@ -31,7 +31,7 @@ In the previous lesson, you learned to execute Python code in Jupyter Notebook. 
 
 ## Teoría
 
-### What is a Variable?
+### ¿Qué es a Variable?
 
 A **variable** is a named location in memory that stores a value. Think of it as a labeled box where you can put data. The label is the variable name, and the contents are the value.
 
@@ -164,7 +164,7 @@ print(a, b)   # 10 5
 
 ## Biotechnology Example
 
-**Scenario**: Tracking patient vital signs in a clinical trial.
+**Escenario**: Tracking patient vital signs in a clinical trial.
 
 ```python
 patient_id = "P-0042"
@@ -180,7 +180,7 @@ print(f"Diagnosis: {diagnosis}")
 
 ## SaaS Example
 
-**Scenario**: Tracking SaaS business metrics.
+**Escenario**: Tracking SaaS business metrics.
 
 ```python
 company_name = "DataCloud Inc."

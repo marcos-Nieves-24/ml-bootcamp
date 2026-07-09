@@ -1,6 +1,6 @@
 # Quiz: Data Distribution
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **1. A distribution with skewness = -1.5 is:**
 
@@ -37,13 +37,13 @@ b) More outliers than normal
 c) No outliers
 d) The same number of outliers as normal
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **6.** Explain why log-transforming right-skewed gene expression data makes it approximately normal. What is the practical benefit?
 
 **7.** You plot a histogram and see two distinct peaks. What does this suggest about the data? What should you investigate next?
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **8.** Write Python code that:
 - Generates 1000 samples from an exponential distribution with scale=5

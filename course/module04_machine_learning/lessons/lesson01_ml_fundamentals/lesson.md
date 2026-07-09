@@ -23,17 +23,17 @@ Quiz: quiz.md
 
 # Fundamentos de ML
 
-## Motivation
+## Motivación
 
 Every day you use Machine Learning: Netflix recommends shows, Gmail filters spam, your phone recognizes faces. But how does it work? In traditional programming, you write rules. In ML, the computer learns rules from data. This shift — from programmed rules to learned rules — is the most important idea in modern software. In biotechnology, ML predicts which drug compounds are effective. In SaaS, ML predicts which customers will churn. This lesson builds the mental model you need for every algorithm in the course.
 
-## Big Picture
+## Panorama General
 
 **Previous:** Module 3 taught you how to describe and visualize data. **This lesson:** You learn how algorithms *learn from data*. **Next:** Linear Regression — your first real ML algorithm.
 
-## Theory
+## Teoría
 
-### What is Machine Learning?
+### ¿Qué es Machine Learning?
 
 Machine Learning is a field of artificial intelligence where computers learn patterns from data without being explicitly programmed for every scenario.
 
@@ -105,7 +105,7 @@ $$\text{Error} = \text{Bias}^2 + \text{Variance} + \text{Irreducible Error}$$
 
 **The tradeoff:** As model complexity increases, bias decreases but variance increases. The optimal model balances both.
 
-## Visual Explanation
+## Explicación Visual
 
 ```python
 import numpy as np
@@ -159,7 +159,7 @@ plt.show()
 - Degree 4 (good fit): Captures pattern, both errors low.
 - Degree 15 (overfitting): Wiggly, perfect on training but fails on test.
 
-## Python Implementation
+## Implementación en Python
 
 ### Train/Test Split
 
@@ -226,14 +226,14 @@ A SaaS company wants to predict which users will cancel their subscription.
 
 The model learns patterns: users who don't log in for 30+ days and have filed support tickets are high-risk.
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Training on all data before splitting** — causes data leakage, overestimates performance.
 2. **Using test set for hyperparameter tuning** — treats test set like training data.
 3. **Assuming high training accuracy means a good model** — could be overfitting.
 4. **Confusing correlation with causation** — ML finds patterns, not causes.
 
-## Best Practices
+## Buenas Prácticas
 
 - Always split data *before* any preprocessing
 - Keep a test set completely hidden until final evaluation
@@ -241,7 +241,7 @@ The model learns patterns: users who don't log in for 30+ days and have filed su
 - Start with simple models before trying complex ones
 - Plot learning curves to diagnose bias/variance
 
-## Summary
+## Resumen
 
 - ML learns patterns from data instead of following explicit rules
 - Features (X) are inputs; labels (y) are outputs
@@ -252,7 +252,7 @@ The model learns patterns: users who don't log in for 30+ days and have filed su
 - Bias-variance tradeoff: optimal model balances systematic error and sensitivity
 - Train/test split is essential for honest evaluation
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|-----------|
@@ -266,7 +266,7 @@ The model learns patterns: users who don't log in for 30+ days and have filed su
 | Bias | Error from simplifying assumptions |
 | Variance | Error from sensitivity to data fluctuations |
 
-## Exercises
+## Ejercicios
 
 **Level 1 — Basic:** Explain in your own words the difference between traditional programming and Machine Learning.
 
@@ -274,7 +274,7 @@ The model learns patterns: users who don't log in for 30+ days and have filed su
 
 **Level 3 — Critical Thinking:** You train a model and get train accuracy = 99% and test accuracy = 65%. What is likely happening? What three things would you try to fix it?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a function `diagnose_fit(model, X_train, X_test, y_train, y_test)` that:
 1. Computes train and test scores

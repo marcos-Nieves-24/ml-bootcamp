@@ -1,13 +1,13 @@
 # Assignment: AI Regulatory Compliance Report
 
-## Objectives
+## Objetivos
 
 - Conduct a detailed regulatory compliance analysis for a real AI system
 - Apply EU AI Act requirements to a concrete case
 - Develop a compliance roadmap
 - Communicate findings in a professional report
 
-## Instructions
+## Instrucciones
 
 Select a real AI system that would likely be classified as high-risk under the EU AI Act. Examples:
 
@@ -48,13 +48,13 @@ Propose a timeline and action plan for achieving compliance:
 - Long-term (18–36 months)
 - Estimated resources needed
 
-## Deliverables
+## Entregables
 
 A single PDF document.
 
 ## Rubric
 
-| Criterion | Points | Excellent | Good | Satisfactory | Needs Improvement |
+| Criterion | Puntos | Excellent | Good | Satisfactory | Needs Improvement |
 |-----------|--------|-----------|------|--------------|-------------------|
 | System description | 10 | Accurate, detailed | Adequate | Vague | Missing |
 | Classification | 20 | Correct, well-justified | Correct | Partially correct | Incorrect |
@@ -65,7 +65,7 @@ A single PDF document.
 
 **Total: 100 points**
 
-## Estimated Time
+## Tiempo Estimado
 
 6–8 hours
 

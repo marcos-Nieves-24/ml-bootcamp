@@ -23,15 +23,15 @@ Quiz: pca_quiz.md
 
 # Lesson 7: Dimensionality Reduction (PCA)
 
-## Motivation
+## Motivación
 
 Modern biology and SaaS generate datasets with hundreds, thousands, or even millions of features. A single RNA-seq experiment measures 20,000+ genes. A SaaS platform tracks hundreds of user metrics. Working with high-dimensional data is challenging: models overfit, computation slows down, and visualization becomes impossible. Principal Component Analysis (PCA) solves this by finding a lower-dimensional representation that preserves the most important structure in the data.
 
-## Big Picture
+## Panorama General
 
 This lesson builds on Lesson 5 (covariance and correlation). PCA is built directly on the covariance matrix. It connects to Lesson 8 (Clustering) — PCA is often used to visualize clusters. It also connects to Lesson 9 (Model Evaluation) — reducing dimensions can improve model performance.
 
-## Theory
+## Teoría
 
 ### PCA Intuition
 
@@ -60,7 +60,7 @@ Given a data matrix \(X\) (centered, \(n\) samples × \(p\) features):
 - **Cumulative explained variance**: Choose enough PCs to explain 70-95% of variance
 - **Kaiser criterion**: Keep components with eigenvalue > 1
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import numpy as np
@@ -227,7 +227,7 @@ plt.title('PCA of SaaS Customer Metrics')
 plt.show()
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Not standardizing data before PCA**: PCA is sensitive to variable scales. Always standardize.
 2. **Interpreting PCA directions as causal**: PCA finds correlational structure, not causal mechanisms.
@@ -235,7 +235,7 @@ plt.show()
 4. **Using PCA on categorical data**: PCA is designed for continuous variables.
 5. **Retaining too few components**: Can discard important signal.
 
-## Best Practices
+## Buenas Prácticas
 
 - Always standardize (Z-score) features before PCA
 - Use scree plot + cumulative variance to choose components
@@ -243,7 +243,7 @@ plt.show()
 - Consider domain knowledge when interpreting PCs
 - Remember: PCA is unsupervised — it doesn't use labels
 
-## Summary
+## Resumen
 
 - PCA finds orthogonal directions of maximum variance
 - Built on eigenvalue decomposition of the covariance matrix
@@ -251,7 +251,7 @@ plt.show()
 - Always standardize data before PCA
 - PCA is used for visualization, denoising, and preprocessing
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|------------|
@@ -262,7 +262,7 @@ plt.show()
 | Scree Plot | Plot of eigenvalues by component number |
 | Loading | Contribution of original feature to a PC |
 
-## Exercises
+## Ejercicios
 
 **Level 1: Basic Understanding**
 
@@ -279,7 +279,7 @@ plt.show()
 5. A bioinformatician applies PCA to RNA-seq data and finds PC1 separates batches (different sequencing runs) rather than biological conditions. What does this mean? How should they proceed?
 6. In a SaaS context, PC1 loads heavily on "session count" and "pages per session" with similar coefficients. How would you interpret this component?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a Python script that:
 1. Loads the breast cancer dataset from sklearn

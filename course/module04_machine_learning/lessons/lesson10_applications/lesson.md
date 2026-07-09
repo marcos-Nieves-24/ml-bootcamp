@@ -23,11 +23,11 @@ Quiz: quiz.md
 
 # Aplicaciones
 
-## Motivation
+## Motivación
 
 You've learned 9 different algorithms. Now it's time to apply them to real problems: predicting the quality of a biotech product and segmenting SaaS customers. This lesson integrates everything — from data preprocessing through model selection to business communication.
 
-## Big Picture
+## Panorama General
 
 **Previous:** 9 lessons of theory and practice. **This lesson:** Two complete end-to-end case studies. **Next:** You are ready for the final project.
 
@@ -237,7 +237,7 @@ print(f"Best params: {grid.best_params_}")
 print(f"Best CV R²: {grid.best_score_:.3f}")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Skipping EDA** — always understand data before modeling
 2. **Leaking future information** — time-based data needs chronological splits
@@ -245,7 +245,7 @@ print(f"Best CV R²: {grid.best_score_:.3f}")
 4. **Ignoring business constraints** — interpretability, speed, cost matter
 5. **Not communicating results** — a great model with no buy-in is useless
 
-## Best Practices
+## Buenas Prácticas
 
 - Always start with a simple baseline
 - Build pipelines for reproducibility
@@ -254,7 +254,7 @@ print(f"Best CV R²: {grid.best_score_:.3f}")
 - Communicate in business language, not ML jargon
 - Monitor model performance after deployment
 
-## Summary
+## Resumen
 
 - End-to-end ML pipeline: data → preprocessing → model → evaluation → business action
 - Biotech: quality prediction enables process optimization
@@ -262,7 +262,7 @@ print(f"Best CV R²: {grid.best_score_:.3f}")
 - Always consider the business context when choosing models and metrics
 - Communication is as important as technical accuracy
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|-----------|
@@ -272,7 +272,7 @@ print(f"Best CV R²: {grid.best_score_:.3f}")
 | GridSearchCV | Systematic hyperparameter search with cross-validation |
 | Business metric | KPI that matters to stakeholders (not just ML metrics) |
 
-## Exercises
+## Ejercicios
 
 **Level 1 — Basic:** What are the 5 key stages of an end-to-end ML pipeline?
 
@@ -280,6 +280,6 @@ print(f"Best CV R²: {grid.best_score_:.3f}")
 
 **Level 3 — Critical Thinking:** A model achieves R² = 0.92 on the test set, but the manufacturing team doesn't trust it. What would you do to build trust and enable adoption?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a function `build_ml_pipeline(X, y, model, param_grid)` that creates a pipeline with StandardScaler and the given model, performs GridSearchCV with 5-fold CV, and returns the best pipeline and the cross-validation results DataFrame.

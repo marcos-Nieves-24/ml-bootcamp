@@ -1,6 +1,6 @@
 # Assignment 7: PCA
 
-## Objectives
+## Objetivos
 
 - Apply PCA to a high-dimensional biological dataset
 - Determine optimal number of components
@@ -19,7 +19,7 @@ You are analyzing high-dimensional patient data. You need to:
 3. Understand what each component represents
 4. Test whether PCA improves classification performance
 
-## Instructions
+## Instrucciones
 
 1. **Scale data** with StandardScaler
 2. **Full PCA:** compute and plot explained variance; determine n for 80%, 90%, 95%, 99%
@@ -31,7 +31,7 @@ You are analyzing high-dimensional patient data. You need to:
    - Compare test accuracies
 5. **Final conclusion:** Does PCA improve or hurt classification? Why?
 
-## Deliverables
+## Entregables
 
 - Notebook with all steps
 - Scree plot with thresholds
@@ -44,7 +44,7 @@ You are analyzing high-dimensional patient data. You need to:
 
 ## Rubric
 
-| Criteria | Excellent (4) | Good (3) | Adequate (2) | Needs Work (1) |
+| Criterio | Excelente (4) | Bueno (3) | Adecuado (2) | Needs Work (1) |
 |----------|--------------|----------|-------------|----------------|
 | Variance analysis | Complete with multiple thresholds | Single threshold | Basic | Missing |
 | Component interpretation | Meaningful biological interpretation | Clear | Vague | Missing |

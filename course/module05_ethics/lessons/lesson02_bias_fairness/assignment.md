@@ -1,12 +1,12 @@
 # Assignment: Fairness Analysis of COMPAS
 
-## Objectives
+## Objetivos
 
 - Analyze a real-world algorithmic bias case using multiple fairness definitions
 - Implement fairness metrics and interpret results
 - Critically evaluate competing claims about algorithmic fairness
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Read and Summarize (500 words)
 
@@ -38,14 +38,14 @@ Write an analysis comparing the ProPublica and Northpointe positions:
 
 Propose at least three recommendations for how COMPAS (or similar risk assessment tools) should be improved. Consider technical, procedural, and policy changes.
 
-## Deliverables
+## Entregables
 
 - A Jupyter notebook with Part 2 (code and outputs)
 - A PDF report with Parts 1, 3, and 4
 
 ## Rubric
 
-| Criterion | Points | Excellent | Good | Satisfactory | Needs Improvement |
+| Criterion | Puntos | Excellent | Good | Satisfactory | Needs Improvement |
 |-----------|--------|-----------|------|--------------|-------------------|
 | Case summary | 15 | Accurate, thorough | Mostly accurate | Basic | Missing or incorrect |
 | Code implementation | 30 | Correct, clean, well-commented | Mostly correct | Partial | Not working |
@@ -55,7 +55,7 @@ Propose at least three recommendations for how COMPAS (or similar risk assessmen
 
 **Total: 100 points**
 
-## Estimated Time
+## Tiempo Estimado
 
 5–6 hours
 

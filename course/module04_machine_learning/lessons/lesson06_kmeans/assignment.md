@@ -1,6 +1,6 @@
 # Assignment 6: K-Means Clustering
 
-## Objectives
+## Objetivos
 
 - Cluster real biological data to discover novel subtypes
 - Determine optimal K using multiple metrics
@@ -21,7 +21,7 @@ X = data.data  # No labels during training!
 
 You are a researcher studying breast cancer heterogeneity. You believe there are molecular subtypes beyond the standard malignant/benign classification. Use K-Means to discover potential subtypes.
 
-## Instructions
+## Instrucciones
 
 1. **Scale features** with StandardScaler
 2. **Determine optimal K** using elbow, silhouette, and domain knowledge (K=2..10)
@@ -31,7 +31,7 @@ You are a researcher studying breast cancer heterogeneity. You believe there are
 6. **Compare with true labels** — create a cross-tabulation. Did K-Means recover the malignant/benign split? Or discover something different?
 7. **Interpret** — what distinguishes each cluster clinically?
 
-## Deliverables
+## Entregables
 
 - Notebook with all steps
 - Elbow + silhouette plots
@@ -45,7 +45,7 @@ You are a researcher studying breast cancer heterogeneity. You believe there are
 
 ## Rubric
 
-| Criteria | Excellent (4) | Good (3) | Adequate (2) | Needs Work (1) |
+| Criterio | Excelente (4) | Bueno (3) | Adecuado (2) | Needs Work (1) |
 |----------|--------------|----------|-------------|----------------|
 | K selection | Elbow + silhouette + justification | One method | No method | Missing |
 | Cluster profiling | Mean features + interpretation | Mean features | Basic | Missing |

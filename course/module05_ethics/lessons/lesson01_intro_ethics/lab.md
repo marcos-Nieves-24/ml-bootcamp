@@ -4,20 +4,20 @@
 
 Practice applying the five ethical principles of AI ethics to real-world systems. Develop the ability to identify ethical risks, trade-offs, and mitigation strategies.
 
-## Duration
+## Duración
 
 45 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lesson 1: Introduction to AI Ethics
 
-## Materials
+## Materiales
 
 - Pen and paper or a text editor
 - Access to news articles or case studies about AI systems (provided below)
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Ethical Analysis (20 minutes)
 
@@ -55,13 +55,13 @@ Share your analysis with a partner or in a small group. Discuss:
 - How did you resolve trade-offs between principles?
 - Are your proposed mitigations feasible? What barriers might exist?
 
-## Deliverables
+## Entregables
 
 Submit your written analysis (Part 1) and mitigation proposals (Part 2) as a PDF or text document.
 
 ## Rubric
 
-| Criteria | Excellent (4) | Good (3) | Satisfactory (2) | Needs Improvement (1) |
+| Criterio | Excelente (4) | Bueno (3) | Satisfactory (2) | Needs Improvement (1) |
 |----------|--------------|----------|-----------------|----------------------|
 | Principle identification | All five principles correctly identified and applied | Four principles correctly applied | Three principles correctly applied | Fewer than three |
 | Depth of analysis | Analysis shows nuanced understanding of trade-offs | Analysis identifies key issues | Surface-level analysis | Missing or incorrect |

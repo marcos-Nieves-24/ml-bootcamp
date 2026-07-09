@@ -1,6 +1,6 @@
 # Quiz: Model Interpretation
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **Q1.** Permutation importance measures:
 
@@ -47,7 +47,7 @@ d) Permutation importance handles correlation perfectly
 
 <details><summary>Answer</summary>b) Both features may show low importance because when one is shuffled, the model still uses the correlated counterpart to make predictions, so performance drops little</details>
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **Q6.** Explain the difference between global and local interpretability. When would you use each?
 
@@ -57,7 +57,7 @@ d) Permutation importance handles correlation perfectly
 
 <details><summary>Answer</summary>The PDP shows a non-linear marginal effect: salary is insensitive to experience in the first 2 years (entry-level jobs), increases rapidly between 2-15 years (career progression and skill accumulation), then plateaus after 15 years (senior roles with diminishing returns to additional experience). This suggests the relationship between experience and salary is non-linear and cannot be captured by a simple linear coefficient.</details>
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **Q8.** Write a function `plot_pdp_features(model, X_val, feature_names, features_to_plot)` that creates a 2x3 grid of partial dependence plots for 6 features using `PartialDependenceDisplay.from_estimator`.
 

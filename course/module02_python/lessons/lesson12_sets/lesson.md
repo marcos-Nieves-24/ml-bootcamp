@@ -182,7 +182,7 @@ print(f"Set is {list_time/set_time:.0f}x faster!")
 
 ## Biotechnology Example
 
-**Scenario**: Comparing gene sets across different experiments.
+**Escenario**: Comparing gene sets across different experiments.
 
 ```python
 # Gene sets from different experiments
@@ -208,7 +208,7 @@ print(f"Unique to experiment 1: {unique_to_1}")
 
 ## SaaS Example
 
-**Scenario**: Analyzing user feature adoption.
+**Escenario**: Analyzing user feature adoption.
 
 ```python
 # Features used by different customer segments

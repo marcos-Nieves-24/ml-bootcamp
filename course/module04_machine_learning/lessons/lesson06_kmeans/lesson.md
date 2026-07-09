@@ -23,17 +23,17 @@ Quiz: quiz.md
 
 # K-Means Clustering
 
-## Motivation
+## Motivación
 
 A biotech company has thousands of patient gene expression profiles and wants to discover new disease subtypes — without any labeled data. A SaaS company wants to group customers into segments for targeted marketing — without predefined categories. These are *clustering* problems, and K-Means is the most popular algorithm for solving them. Unlike previous lessons, there are no labels to predict; we discover hidden structure in the data.
 
-## Big Picture
+## Panorama General
 
 **Previous:** Random Forest (supervised — predicting labels). **This lesson:** K-Means (unsupervised — discovering groups). **Next:** PCA (unsupervised — reducing dimensions).
 
-## Theory
+## Teoría
 
-### What is Clustering?
+### ¿Qué es Clustering?
 
 Clustering groups similar samples together. It answers: "What natural groups exist in the data?"
 
@@ -81,7 +81,7 @@ This is an NP-hard problem (exponential in K and n). The iterative algorithm fin
 
 Random initialization can lead to different results. **K-Means++** (scikit-learn default) initializes centroids far apart to improve convergence.
 
-## Visual Explanation
+## Explicación Visual
 
 ```python
 import numpy as np
@@ -110,7 +110,7 @@ plt.savefig('figures/kmeans_different_k.png', dpi=150)
 plt.show()
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import numpy as np
@@ -230,7 +230,7 @@ print(segments.round(1))
 
 **Interpretation:** Segment 0 = high spenders with high frequency, Segment 1 = new customers, etc.
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Not scaling features** — features with larger units dominate distance calculations.
 2. **Assuming K is known** — always use elbow + silhouette to determine K.
@@ -238,7 +238,7 @@ print(segments.round(1))
 4. **Using K-Means on high dimensions** — Euclidean distance loses meaning in >50 dimensions.
 5. **Expecting equal-sized clusters** — K-Means tends to produce balanced clusters.
 
-## Best Practices
+## Buenas Prácticas
 
 - Always scale features (StandardScaler) before clustering
 - Use K-Means++ initialization (default in sklearn)
@@ -246,7 +246,7 @@ print(segments.round(1))
 - Use elbow + silhouette together to choose K
 - Try t-SNE or PCA for visualization of high-dimensional clusters
 
-## Summary
+## Resumen
 
 - K-Means groups data into K clusters by minimizing inertia
 - Algorithm: assign → update → repeat
@@ -255,7 +255,7 @@ print(segments.round(1))
 - Clustering discovers hidden structure without labels
 - Useful for patient stratification, customer segmentation
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|-----------|
@@ -266,14 +266,14 @@ print(segments.round(1))
 | K-Means++ | Smart centroid initialization |
 | WCSS | Within-cluster sum of squares (inertia) |
 
-## Exercises
+## Ejercicios
 
-**Level 1 — Basic:** What is the main difference between supervised and unsupervised learning? Give an example of each.
+**Level 1 — Basic:** What is the main difference between supervised and unsupervised learning? Da un ejemplo of each.
 
 **Level 2 — Implementation:** Generate synthetic data with `make_blobs(n_samples=500, centers=5)`. Apply K-Means with K=2..10, plot elbow and silhouette curves, and determine the optimal K.
 
 **Level 3 — Critical Thinking:** Your K-Means analysis on patient data produces 3 clusters. A doctor says cluster 2 is biologically meaningful. How would you validate whether the clusters represent real biology or just statistical artifacts?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a function `optimal_k(X, max_k=10)` that computes inertia and silhouette scores for K=2..max_k and returns the optimal K according to both methods (if they agree) or reports a conflict.

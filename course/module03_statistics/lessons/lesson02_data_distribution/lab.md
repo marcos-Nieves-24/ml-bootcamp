@@ -4,7 +4,7 @@
 
 Analyze the distribution of real-world data using histograms, density plots, and shape statistics.
 
-## Duration
+## Duración
 
 60 minutes
 
@@ -17,7 +17,7 @@ import seaborn as sns
 diamonds = sns.load_dataset('diamonds')
 ```
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Univariate Distribution (15 min)
 
@@ -47,14 +47,14 @@ Write a function `distribution_report(series)` that returns a dictionary with:
 - Skewness, kurtosis
 - Whether the distribution is approximately normal (|skewness| < 0.5 and |kurtosis| < 0.5)
 
-## Deliverables
+## Entregables
 
 - Jupyter notebook with all code, plots, and interpretations
 - A markdown section summarizing findings about price distribution
 
 ## Rubric
 
-| Criteria | Points |
+| Criterio | Puntos |
 |----------|--------|
 | Histograms and KDE plots | 3 |
 | Log-transformation analysis | 2 |

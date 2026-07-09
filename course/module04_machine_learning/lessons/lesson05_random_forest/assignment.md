@@ -1,6 +1,6 @@
 # Assignment 5: Random Forest
 
-## Objectives
+## Objetivos
 
 - Apply Random Forest to a high-dimensional biological dataset
 - Use feature importance for biomarker discovery
@@ -25,7 +25,7 @@ X, y = make_classification(n_samples=500, n_features=5000, n_informative=10,
 
 You are a bioinformatician analyzing gene expression data from a clinical trial. Your goal is to identify which genes predict drug response and build a classifier.
 
-## Instructions
+## Instrucciones
 
 1. **Split** into train (60%), validation (20%), test (20%)
 2. **Train baseline:** single decision tree (tune depth)
@@ -35,7 +35,7 @@ You are a bioinformatician analyzing gene expression data from a clinical trial.
 6. **Re-train** using only the top 10, 50, and 100 genes — does performance change?
 7. **Final evaluation** on test set
 
-## Deliverables
+## Entregables
 
 - Notebook with all code
 - Table comparing all models (train/val/test accuracy)
@@ -48,7 +48,7 @@ You are a bioinformatician analyzing gene expression data from a clinical trial.
 
 ## Rubric
 
-| Criteria | Excellent (4) | Good (3) | Adequate (2) | Needs Work (1) |
+| Criterio | Excelente (4) | Bueno (3) | Adecuado (2) | Needs Work (1) |
 |----------|--------------|----------|-------------|----------------|
 | Pipeline | Complete with all steps | Minor missing | Several steps missing | Incomplete |
 | Hyperparameter tuning | Systematic grid search | Partial | Minimal | Missing |

@@ -1,12 +1,12 @@
 # Assignment: Descriptive Statistics
 
-## Objectives
+## Objetivos
 
 - Compute descriptive statistics using numpy and pandas
 - Identify outliers using the IQR method
 - Interpret statistical summaries in biological and business contexts
 
-## Instructions
+## Instrucciones
 
 1. Load the California housing dataset from sklearn:
 ```python
@@ -28,13 +28,13 @@ df = housing.data
    - Which feature has the most outliers? Why might this be?
    - Should we remove these outliers? Justify your answer.
 
-## Deliverables
+## Entregables
 
 - A Jupyter notebook (`.ipynb`) with all code, outputs, and written answers
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Adequate (2 pts) | Poor (1 pt) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Adequate (2 pts) | Poor (1 pt) |
 |----------|------------------|--------------|------------------|-------------|
 | Descriptive statistics | All computed correctly | Minor errors | Missing 1-2 stats | Missing >2 stats |
 | Outlier detection | Correct IQR method | Correct but incomplete | Partially implemented | Not implemented |
@@ -43,6 +43,6 @@ df = housing.data
 
 **Total: 16 points**
 
-## Estimated Time
+## Tiempo Estimado
 
 2 hours

@@ -1,6 +1,6 @@
 # Lab 10: Applications — End-to-End Pipelines
 
-## Objectives
+## Objetivos
 
 - Build complete ML pipelines for regression and classification
 - Work with mixed data types (numeric + categorical)
@@ -39,7 +39,7 @@ Add a categorical feature `batch_type` to the biotech data. Create a ColumnTrans
 
 Write a reusable function that takes X, y, a model, and a param_grid, and returns the best pipeline after GridSearchCV with 5-fold CV.
 
-## Deliverables
+## Entregables
 
 - Notebook with all 5 parts
 - Pipeline with GridSearchCV results (Part 1)

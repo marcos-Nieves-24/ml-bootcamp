@@ -4,7 +4,7 @@
 
 Create effective visualizations and a data story from a real dataset.
 
-## Duration
+## Duración
 
 60 minutes
 
@@ -12,7 +12,7 @@ Create effective visualizations and a data story from a real dataset.
 
 Seaborn's `tips` dataset.
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Critique a Visualization (10 min)
 ```python
@@ -47,13 +47,13 @@ Create a 2×2 dashboard layout with:
 
 Use consistent colors, clear titles, and a figure-level suptitle.
 
-## Deliverables
+## Entregables
 
 - Jupyter notebook with bad/good visualizations, story, and dashboard
 
 ## Rubric
 
-| Criteria | Points |
+| Criterio | Puntos |
 |----------|--------|
 | Critique and redesign | 3 |
 | Story-driven analysis | 3 |

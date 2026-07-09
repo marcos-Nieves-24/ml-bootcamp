@@ -188,7 +188,7 @@ print(dict(by_status))
 
 ## Biotechnology Example
 
-**Scenario**: Mapping genetic codons to amino acids for protein translation.
+**Escenario**: Mapping genetic codons to amino acids for protein translation.
 
 ```python
 # Codon table (partial)
@@ -219,7 +219,7 @@ print(f"Protein: {protein}")
 
 ## SaaS Example
 
-**Scenario**: Aggregating user activity data.
+**Escenario**: Aggregating user activity data.
 
 ```python
 # User activity log

@@ -1,13 +1,13 @@
 # Assignment: Scientific Calculator
 
-## Objectives
+## Objetivos
 
 - Implement arithmetic operations correctly
 - Use comparison and logical operators
 - Apply assignment operators
 - Handle operator precedence correctly
 
-## Instructions
+## Instrucciones
 
 Create a Python script `lab_calculator.py` that implements a simple laboratory calculator:
 
@@ -21,14 +21,14 @@ Create a Python script `lab_calculator.py` that implements a simple laboratory c
 
 5. **Budget check**: Given a total cost and budget, determine if the purchase is within budget. Apply an assignment operator.
 
-## Deliverables
+## Entregables
 
 - `lab_calculator.py` with all functions
 - Documented output showing each calculation
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
 |----------|-------------------|--------------|-----------------------------|
 | Arithmetic | All calculations correct | Minor errors | Major errors |
 | Operators | Uses all operator types appropriately | Most types used | Few types used |

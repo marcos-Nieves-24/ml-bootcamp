@@ -212,7 +212,7 @@ print(describe_mutation("missense"))
 
 ## Biotechnology Example
 
-**Scenario**: Clinical decision support for patient diagnosis.
+**Escenario**: Clinical decision support for patient diagnosis.
 
 ```python
 def assess_patient(systolic_bp, diastolic_bp, heart_rate, glucose):
@@ -267,7 +267,7 @@ print(f"Emergency: {emergency}")
 
 ## SaaS Example
 
-**Scenario**: Customer tier assignment and discount calculation.
+**Escenario**: Customer tier assignment and discount calculation.
 
 ```python
 def calculate_discount(customer_tier, annual_spend, years_active):
@@ -362,7 +362,7 @@ print(f"Discount: {discount:.0%}")
 ### Nivel 3: Pensamiento Crítico
 
 6. Why is `if x == True:` considered bad style? What is the Pythonic alternative?
-7. Compare and contrast if/elif/else chains with match statements. When would you use each?
+7. Compara y contrasta if/elif/else chains with match statements. When would you use each?
 
 ## Desafío de Programación
 

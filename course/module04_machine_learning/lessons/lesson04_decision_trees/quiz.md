@@ -1,6 +1,6 @@
 # Quiz: Decision Trees
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **Q1.** Gini impurity measures:
 
@@ -47,7 +47,7 @@ d) Pruning the tree after training
 
 <details><summary>Answer</summary>c) Increasing the number of features (more features can actually increase overfitting risk)</details>
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **Q6.** Explain why decision trees are considered "unstable" classifiers. What does this mean in practice?
 
@@ -57,7 +57,7 @@ d) Pruning the tree after training
 
 <details><summary>Answer</summary>Both measure node impurity and produce similar trees in practice. Gini ranges from 0 to 0.5 (binary), entropy from 0 to 1. Gini is slightly faster to compute (no log). Entropy is more sensitive to changes in probability near 0.5. scikit-learn uses Gini by default. The practical difference is minimal — both will find the same splits in most cases.</details>
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **Q8.** Write a Python function `compute_gini(y)` that computes Gini impurity from an array of class labels. Then, write `find_best_split(X, y, feature_idx)` that finds the best threshold for a given feature (maximizing information gain using Gini).
 

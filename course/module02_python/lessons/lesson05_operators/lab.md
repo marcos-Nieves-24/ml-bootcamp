@@ -4,15 +4,15 @@
 
 Practice using arithmetic, comparison, logical, and assignment operators.
 
-## Duration
+## Duración
 
 45 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lesson 4: Data Types
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Arithmetic Operators
 
@@ -86,6 +86,6 @@ print(f"Uncomfortable: {is_uncomfortable}")
 print(f"Pleasant: {is_pleasant}")
 ```
 
-## Deliverables
+## Entregables
 
 Jupyter notebook `operators_lab.ipynb` with all results visible.

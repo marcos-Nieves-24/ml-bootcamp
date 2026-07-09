@@ -1,6 +1,6 @@
 # Lab 2: Linear Regression
 
-## Objectives
+## Objetivos
 
 - Implement simple and multiple linear regression
 - Interpret coefficients and evaluate model performance
@@ -43,7 +43,7 @@ Compute the correlation matrix of the 8 features. Are any pairs highly correlate
 
 Implement the closed-form solution and verify coefficients match sklearn.
 
-## Deliverables
+## Entregables
 
 - Notebook or script with all 5 parts
 - 3 plots (regression line, residuals vs. fitted, residual histogram)

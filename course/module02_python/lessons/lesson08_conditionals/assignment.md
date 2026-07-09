@@ -1,13 +1,13 @@
 # Assignment: Clinical Decision Support System
 
-## Objectives
+## Objetivos
 
 - Write complex conditional logic for real-world scenarios
 - Use if/elif/else with boolean expressions
 - Apply truthy/falsy concepts
 - Use ternary expressions and match statements
 
-## Instructions
+## Instrucciones
 
 Create a Python script `clinical_triage.py` that implements a clinical triage system:
 
@@ -39,14 +39,14 @@ def get_recommendation(triage_level):
     """Returns recommendation based on triage level."""
 ```
 
-## Deliverables
+## Entregables
 
 - `clinical_triage.py` with all functions and demonstration
 - Test the system with at least 3 patient scenarios
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
 |----------|-------------------|--------------|-----------------------------|
 | Conditional Logic | Correct, comprehensive | Mostly correct | Logical errors |
 | Triage Rules | All levels correctly implemented | Most levels | Missing levels |

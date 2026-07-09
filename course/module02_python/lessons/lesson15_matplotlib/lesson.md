@@ -209,7 +209,7 @@ plt.show()
 
 ## Biotechnology Example
 
-**Scenario**: Visualizing gene expression data across conditions.
+**Escenario**: Visualizing gene expression data across conditions.
 
 ```python
 import matplotlib.pyplot as plt
@@ -244,7 +244,7 @@ plt.show()
 
 ## SaaS Example
 
-**Scenario**: Visualizing SaaS metrics dashboard.
+**Escenario**: Visualizing SaaS metrics dashboard.
 
 ```python
 import matplotlib.pyplot as plt

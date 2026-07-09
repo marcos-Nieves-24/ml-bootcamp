@@ -17,6 +17,6 @@
 - Deploy a trained model as a simple API
 - Track experiments and compare model versions
 
-## Prerequisites
+## Prerrequisitos
 
 Completion of subunits 1 and 2.

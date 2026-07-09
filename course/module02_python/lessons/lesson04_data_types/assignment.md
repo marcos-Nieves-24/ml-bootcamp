@@ -1,13 +1,13 @@
 # Assignment: Type-Error Proofing
 
-## Objectives
+## Objetivos
 
 - Demonstrate understanding of Python data types
 - Handle type conversion correctly
 - Debug common type errors
 - Write type-safe code
 
-## Instructions
+## Instrucciones
 
 Create a Python script called `grade_calculator.py` that:
 
@@ -19,14 +19,14 @@ Create a Python script called `grade_calculator.py` that:
 
 Also include a function `safe_divide(a, b)` that safely handles division by returning `None` if `b` is zero.
 
-## Deliverables
+## Entregables
 
 - `grade_calculator.py`
 - Example output showing at least two student grade calculations
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
 |----------|-------------------|--------------|-----------------------------|
 | Type Conversion | All input correctly converted | Most conversions correct | Missing conversions |
 | Calculations | Accurate and correct | Minor errors | Major errors |

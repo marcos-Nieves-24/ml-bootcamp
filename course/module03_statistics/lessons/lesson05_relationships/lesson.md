@@ -23,18 +23,18 @@ Quiz: relationships_quiz.md
 
 # Lesson 5: Relationships Between Variables
 
-## Motivation
+## Motivación
 
 In machine learning, we rarely work with isolated variables. The relationship between features — and between features and the target — determines which algorithms will work well. Two genes may be co-expressed (correlated expression levels). Customer age and subscription duration may be correlated. Understanding these relationships helps you select features, detect multicollinearity, and gain insight into the underlying system.
 
-## Big Picture
+## Panorama General
 
 You already know how to describe single variables (Lessons 1-2). Now you will learn to quantify relationships between pairs of variables. This is essential preparation for:
 - Lesson 6 (EDA): relationships are a key part of exploration
 - Lesson 7 (PCA): PCA is built on the covariance matrix
 - All of Módulo 4: correlation informs feature selection and model choice
 
-## Theory
+## Teoría
 
 ### Covariance
 
@@ -78,7 +78,7 @@ A square matrix showing pairwise correlations between all variables.
 
 $$R = \begin{bmatrix} 1 & \rho_{12} & \cdots & \rho_{1p} \\ \rho_{21} & 1 & \cdots & \rho_{2p} \\ \vdots & \vdots & \ddots & \vdots \\ \rho_{p1} & \rho_{p2} & \cdots & 1 \end{bmatrix}$$
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import numpy as np
@@ -221,14 +221,14 @@ plt.tight_layout()
 plt.show()
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Correlation ≠ causation**: High correlation does not imply one variable causes the other. Ice cream sales and drowning are correlated (both increase in summer) but not causally related.
 2. **Only checking linear correlation**: Two variables can have a perfect nonlinear relationship (e.g., circle) with zero Pearson correlation.
 3. **Ignoring outliers**: A single outlier can dramatically inflate or deflate Pearson correlation.
 4. **Over-interpreting small correlations**: With large samples, even r = 0.05 can be statistically significant but practically meaningless.
 
-## Best Practices
+## Buenas Prácticas
 
 - Always visualize relationships with scatter plots alongside correlation coefficients
 - Use Spearman for non-linear monotonic relationships
@@ -236,7 +236,7 @@ plt.show()
 - Report both r and p-value when discussing statistical significance
 - Use correlation matrices before building ML models to detect multicollinearity
 
-## Summary
+## Resumen
 
 - Covariance measures joint variability but depends on scale
 - Pearson correlation: linear relationship, [-1, 1], assumes normality
@@ -245,7 +245,7 @@ plt.show()
 - Correlation ≠ causation
 - Visualize relationships with scatter plots and heatmaps
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|------------|
@@ -256,7 +256,7 @@ plt.show()
 | Heatmap | Visual representation of a matrix |
 | Monotonic | Consistently increasing or decreasing |
 
-## Exercises
+## Ejercicios
 
 **Level 1: Basic Understanding**
 
@@ -273,7 +273,7 @@ plt.show()
 5. In a gene expression study, you find two genes with a Pearson correlation of 0.95. What are three possible explanations? Which one is most plausible biologically?
 6. A SaaS company finds that the number of support tickets and customer churn are correlated (r = 0.6). Should they conclude that support tickets cause churn? What alternative explanations exist?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a Python script that:
 1. Generates 5 different synthetic datasets: linear positive, linear negative, quadratic (U-shaped), exponential, and a circle

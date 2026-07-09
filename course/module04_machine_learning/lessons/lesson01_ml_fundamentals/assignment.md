@@ -1,6 +1,6 @@
 # Assignment 1: ML Fundamentals
 
-## Objectives
+## Objetivos
 
 - Apply the ML workflow to a real-world dataset
 - Diagnose and fix overfitting and underfitting
@@ -17,7 +17,7 @@ data = fetch_california_housing()
 
 This dataset contains 20,640 samples with 8 features (MedInc, HouseAge, AveRooms, AveBedrms, Population, AveOccup, Latitude, Longitude) and targets are median house values.
 
-## Instructions
+## Instrucciones
 
 1. **Load and explore** the dataset (shape, feature names, target distribution)
 2. **Split** into train (70%), validation (15%), and test (15%)
@@ -30,7 +30,7 @@ This dataset contains 20,640 samples with 8 features (MedInc, HouseAge, AveRooms
 6. **Select the best model** based on validation performance
 7. **Final evaluation** on test set
 
-## Deliverables
+## Entregables
 
 - Python script or notebook with all code
 - A plot showing train vs validation R² vs model complexity
@@ -41,7 +41,7 @@ This dataset contains 20,640 samples with 8 features (MedInc, HouseAge, AveRooms
 
 ## Rubric
 
-| Criteria | Excellent (4) | Good (3) | Adequate (2) | Needs Work (1) |
+| Criterio | Excelente (4) | Bueno (3) | Adecuado (2) | Needs Work (1) |
 |----------|--------------|----------|-------------|----------------|
 | Code correctness | All code runs, no errors | Minor issues | Some errors | Does not run |
 | Train/test split | Correct with validation split | Train/test only | Split incorrect | No split |

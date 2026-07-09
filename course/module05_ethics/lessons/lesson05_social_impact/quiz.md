@@ -1,6 +1,6 @@
 # Quiz: Social Impact of AI
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **Q1.** According to the lesson, which type of employment has the highest automation risk?
 
@@ -37,19 +37,19 @@ B. Whether AI will cause net job loss or create new jobs to replace automated on
 C. Whether AI will displace workers in developed or developing countries
 D. Whether AI automation is inevitable or preventable
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **Q6.** Explain the concept of "alignment" in AI safety. Give a concrete example of a misaligned AI system.
 
 **Q7.** How does AI contribute to the spread of misinformation? Describe at least two distinct mechanisms and propose one mitigation strategy for each.
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **Q8.** (Conceptual — no coding) You are advising a government agency on AI regulation. Write a brief (150 words) explaining which social impact of AI you consider most urgent and why, and propose one specific policy intervention.
 
 ---
 
-## Answer Key
+## Clave de Respuestas
 
 **Q1.** C — Routine cognitive tasks have the highest automation risk because they are predictable and rule-based.
 

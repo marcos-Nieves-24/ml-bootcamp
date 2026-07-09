@@ -1,6 +1,6 @@
 # Assignment: E-commerce Data Analysis with Pandas
 
-## Objectives
+## Objetivos
 
 - Load and explore data with Pandas
 - Perform data cleaning and transformation
@@ -8,7 +8,7 @@
 - Merge multiple DataFrames
 - Generate a summary report
 
-## Instructions
+## Instrucciones
 
 Create a Python script `ecommerce_analysis.py` that:
 
@@ -44,14 +44,14 @@ import numpy as np
 np.random.seed(42)
 ```
 
-## Deliverables
+## Entregables
 
 - `ecommerce_analysis.py`
 - Printed summary report with all findings
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
 |----------|-------------------|--------------|-----------------------------|
 | Data Creation | All 3 DataFrames with realistic data | 2 DataFrames | 1 or missing |
 | Data Cleaning | Handles all issues correctly | Partial cleaning | No cleaning |

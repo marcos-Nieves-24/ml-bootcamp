@@ -1,13 +1,13 @@
 # Assignment: Comprehensive Ethical Audit
 
-## Objectives
+## Objetivos
 
 - Conduct a full ethical audit of a real AI system
 - Apply all concepts from Module 5
 - Produce a professional audit report
 - Develop actionable recommendations
 
-## Instructions
+## Instrucciones
 
 Select a real, deployed AI system with publicly available information about its design and impact. You may not use a system analyzed in class. Some suggestions:
 
@@ -68,16 +68,16 @@ Analyze the system using beneficence, non-maleficence, autonomy, justice, and ex
 #### Section 8: Recommendations (200 words)
 Three specific, actionable recommendations with timelines.
 
-### References
+### Referencias
 Use APA 7 format.
 
-## Deliverables
+## Entregables
 
 A single PDF document (3000–4000 words).
 
 ## Rubric
 
-| Criterion | Points | Excellent | Good | Satisfactory | Needs Improvement |
+| Criterion | Puntos | Excellent | Good | Satisfactory | Needs Improvement |
 |-----------|--------|-----------|------|--------------|-------------------|
 | Executive summary | 5 | Clear, comprehensive | Good | Basic | Missing |
 | System description | 10 | Detailed, accurate | Adequate | Vague | Missing |
@@ -92,7 +92,7 @@ A single PDF document (3000–4000 words).
 
 **Total: 100 points**
 
-## Estimated Time
+## Tiempo Estimado
 
 8–10 hours
 

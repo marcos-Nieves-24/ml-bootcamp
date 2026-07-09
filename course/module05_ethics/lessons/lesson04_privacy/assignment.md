@@ -1,13 +1,13 @@
 # Assignment: Privacy Impact Assessment for an ML System
 
-## Objectives
+## Objetivos
 
 - Conduct a privacy impact assessment for a real or hypothetical ML system
 - Identify privacy risks at each stage of the ML lifecycle
 - Propose privacy-preserving mitigations
 - Analyze the privacy-utility trade-off
 
-## Instructions
+## Instrucciones
 
 ### Part 1: System Description (300 words)
 
@@ -50,13 +50,13 @@ Propose a privacy-preserving redesign of your system. Include:
 
 Implement a differentially private version of a key statistic or model output from your system. Show the privacy-utility trade-off.
 
-## Deliverables
+## Entregables
 
 A single PDF report with Parts 1–4 (and optionally Part 5 as a notebook).
 
 ## Rubric
 
-| Criterion | Points | Excellent | Good | Satisfactory | Needs Improvement |
+| Criterion | Puntos | Excellent | Good | Satisfactory | Needs Improvement |
 |-----------|--------|-----------|------|--------------|-------------------|
 | System description | 10 | Clear, detailed | Adequate | Vague | Missing |
 | Risk identification | 25 | All stages, specific risks | Most stages | Some stages | Missing |
@@ -66,7 +66,7 @@ A single PDF report with Parts 1–4 (and optionally Part 5 as a notebook).
 
 **Total: 100 points**
 
-## Estimated Time
+## Tiempo Estimado
 
 5–7 hours
 

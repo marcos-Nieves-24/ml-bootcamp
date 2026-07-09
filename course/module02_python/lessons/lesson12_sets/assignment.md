@@ -1,13 +1,13 @@
 # Assignment: Gene Set Analysis
 
-## Objectives
+## Objetivos
 
 - Use sets for biological data analysis
 - Implement set operations (union, intersection, difference)
 - Apply Jaccard similarity for comparing sets
 - Use sets for efficient membership testing
 
-## Instructions
+## Instrucciones
 
 Create a Python script `gene_set_analysis.py` that:
 
@@ -31,7 +31,7 @@ kidney = {"TP53", "EGFR", "KRAS", "GATA2", "FOXA1", "HNF4A", "UMOD"}
 lung = {"BRCA1", "TP53", "EGFR", "KRAS", "ALK", "MYC", "NKX2-1"}
 ```
 
-## Deliverables
+## Entregables
 
 - `gene_set_analysis.py` with all functions
 - Output showing:
@@ -42,7 +42,7 @@ lung = {"BRCA1", "TP53", "EGFR", "KRAS", "ALK", "MYC", "NKX2-1"}
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
 |----------|-------------------|--------------|-----------------------------|
 | Set Operations | All correct | Most correct | Errors |
 | Functions | Well-designed, all implemented | Most implemented | Missing functions |

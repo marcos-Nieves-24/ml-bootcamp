@@ -23,15 +23,15 @@ Quiz: quiz.md
 
 # Clasificación
 
-## Motivation
+## Motivación
 
 Is this email spam or not? Does this patient have cancer? Will this customer churn? These are *classification* problems — predicting a discrete category. Classification is the most common type of ML application in both biotechnology (disease diagnosis, drug response) and SaaS (churn prediction, lead scoring).
 
-## Big Picture
+## Panorama General
 
 **Previous:** Linear Regression predicted continuous numbers. **This lesson:** Logistic Regression predicts categories. **Next:** Decision Trees — a non-linear approach to classification.
 
-## Theory
+## Teoría
 
 ### Binary Classification
 
@@ -96,7 +96,7 @@ ROC (Receiver Operating Characteristic) plots TPR (recall) vs. FPR (1 - specific
 
 **AUC (Area Under the Curve):** Probability that a randomly chosen positive is ranked higher than a randomly chosen negative. AUC = 1 is perfect, AUC = 0.5 is random.
 
-## Visual Explanation
+## Explicación Visual
 
 ```python
 import numpy as np
@@ -127,7 +127,7 @@ plt.savefig('figures/decision_boundary.png', dpi=150)
 plt.show()
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import numpy as np
@@ -254,14 +254,14 @@ for col, coef in zip(X_s.columns, model_s.coef_[0]):
 print(f"\nAUC: {roc_auc_score(y_s, model_s.predict_proba(X_s)[:, 1]):.3f}")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Using accuracy on imbalanced data** — if 95% of samples are negative, a model predicting "negative" always gets 95% accuracy but is useless.
 2. **Setting threshold at 0.5 by default** — adjust based on business needs (higher threshold if false positives are costly).
 3. **Confusing precision and recall** — precision = accuracy of positive predictions; recall = fraction of positives found.
 4. **Interpreting coefficients directly** — coefficients are in log-odds units, not probability units.
 
-## Best Practices
+## Buenas Prácticas
 
 - Always check class balance before choosing metrics
 - Use AUC for model comparison, precision/recall for business decisions
@@ -269,7 +269,7 @@ print(f"\nAUC: {roc_auc_score(y_s, model_s.predict_proba(X_s)[:, 1]):.3f}")
 - Scale features for logistic regression (it uses gradient descent)
 - Use stratified train/test split to preserve class proportions
 
-## Summary
+## Resumen
 
 - Logistic regression predicts class probabilities via the sigmoid function
 - Decision boundary separates classes in feature space
@@ -278,7 +278,7 @@ print(f"\nAUC: {roc_auc_score(y_s, model_s.predict_proba(X_s)[:, 1]):.3f}")
 - ROC AUC measures ranking quality across thresholds
 - Threshold selection depends on business context
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|-----------|
@@ -291,14 +291,14 @@ print(f"\nAUC: {roc_auc_score(y_s, model_s.predict_proba(X_s)[:, 1]):.3f}")
 | ROC Curve | TPR vs. FPR at various thresholds |
 | AUC | Area under ROC, measures ranking quality |
 
-## Exercises
+## Ejercicios
 
 **Level 1 — Basic:** If a spam filter has precision = 0.95 and recall = 0.60, what does each number mean? Which is more important for a spam filter?
 
 **Level 2 — Implementation:** Load the `breast_cancer` dataset, train a logistic regression model, and plot the ROC curve with AUC displayed on the plot.
 
-**Level 3 — Critical Thinking:** A medical test for a rare disease (1% prevalence) achieves 99% accuracy. Is this a good test? Explain why accuracy is misleading here.
+**Level 3 — Critical Thinking:** A medical test for a rare disease (1% prevalence) achieves 99% accuracy. Is this a good test? Explica por qué accuracy is misleading here.
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a function `find_optimal_threshold(model, X_val, y_val)` that finds the decision threshold (0.0 to 1.0) that maximizes F1 score on validation data. Use 100 evenly spaced thresholds.

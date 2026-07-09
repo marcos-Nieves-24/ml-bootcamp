@@ -4,15 +4,15 @@
 
 Practice if/elif/else, truthy/falsy, ternary expressions, and match statements.
 
-## Duration
+## Duración
 
 45 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lesson 6: Functions
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Basic if/else
 
@@ -91,6 +91,6 @@ else:
     print("Unknown user")
 ```
 
-## Deliverables
+## Entregables
 
 Jupyter notebook `conditionals_lab.ipynb` with all exercises.

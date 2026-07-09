@@ -4,15 +4,15 @@
 
 Practice defining functions, working with parameters, return values, and scope.
 
-## Duration
+## Duración
 
 60 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lesson 5: Operators
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Basic Function
 
@@ -95,6 +95,6 @@ modify_global()
 print(f"After modification: {x}")
 ```
 
-## Deliverables
+## Entregables
 
 Jupyter notebook `functions_lab.ipynb` with all exercises completed.

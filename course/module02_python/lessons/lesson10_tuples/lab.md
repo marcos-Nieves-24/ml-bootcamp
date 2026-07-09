@@ -4,15 +4,15 @@
 
 Practice creating tuples, unpacking, and understanding immutability.
 
-## Duration
+## Duración
 
 30 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lesson 9: Lists
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Creating and Accessing Tuples
 
@@ -100,6 +100,6 @@ print(f"Data: {data}")
 print(f"Min: {minimum}, Max: {maximum}, Mean: {mean:.2f}, Count: {count}")
 ```
 
-## Deliverables
+## Entregables
 
 Jupyter notebook `tuples_lab.ipynb` with all exercises.

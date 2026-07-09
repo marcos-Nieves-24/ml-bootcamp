@@ -4,15 +4,15 @@
 
 Practice variable assignment, naming conventions, dynamic typing, and basic I/O.
 
-## Duration
+## Duración
 
 45 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lesson 2: Jupyter Notebook
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Basic Assignment
 
@@ -62,6 +62,6 @@ gc_percent = (gc_count / len(sequence)) * 100
 print(f"{sequence_id}: GC content = {gc_percent:.1f}%")
 ```
 
-## Deliverables
+## Entregables
 
 A Jupyter notebook (`variables_lab.ipynb`) with all cells executed and outputs visible.

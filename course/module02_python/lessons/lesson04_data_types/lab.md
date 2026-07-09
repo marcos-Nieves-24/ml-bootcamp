@@ -4,15 +4,15 @@
 
 Practice identifying, converting, and working with Python's primitive data types.
 
-## Duration
+## Duración
 
 60 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lesson 3: Variables
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Type Identification
 
@@ -81,6 +81,6 @@ print(0.1 + 0.2 == 0.3)       # False
 print(abs((0.1 + 0.2) - 0.3) < 1e-10)  # True (safe comparison)
 ```
 
-## Deliverables
+## Entregables
 
 Jupyter notebook `data_types_lab.ipynb` with all executed cells.

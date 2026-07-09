@@ -33,7 +33,7 @@ By the end of this lesson, students will be able to:
 4. **Apply** bias detection techniques to synthetic healthcare and credit datasets
 5. **Synthesize** all Module 5 concepts in comprehensive case analysis
 
-## Motivation
+## Motivación
 
 This lesson brings together everything you have learned in Module 5. We will examine two real-world domains where AI ethics failures have caused documented harm: healthcare and financial services. These are not academic exercises. In 2019, Obermeyer et al. published a study showing that a healthcare algorithm used by hospitals serving 100+ million patients was systematically biased against Black patients. The algorithm did not use race explicitly. It used health costs as a proxy for health needs — and because Black patients had less access to healthcare (and therefore lower costs), the algorithm labeled them as healthier than equally sick white patients. The harm was not malicious. It was structural. And it was entirely preventable with the right ethical analysis.
 
@@ -41,13 +41,13 @@ In the SaaS domain, AI-powered credit scoring and lending platforms make automat
 
 By the end of this lesson, you should be able to conduct a comprehensive ethical analysis of any ML system you encounter — identifying risks, proposing mitigations, and evaluating trade-offs between competing values.
 
-## Big Picture
+## Panorama General
 
 | Previous Lessons | Current Lesson | Next |
 |---|---|---|
 | L1–L6 (Principles, Bias, Explainability, Privacy, Social Impact, Regulation) | L7: Case Studies (synthesis and application) | End of Module 5 |
 
-## Theory
+## Teoría
 
 ### Case Study 1: Racial Bias in Healthcare Algorithms
 
@@ -233,7 +233,7 @@ The company plans to offer retention discounts only to the high-churn segment. B
 3. Opt-out: allow customers to exclude their data from churn modeling
 4. Auditing: monitor whether the model disadvantage any customer segment
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Assuming a well-intentioned model causes no harm.** The Obermeyer algorithm was not malicious; it caused harm through a design flaw.
 2. **Ignoring the proxy problem.** Features that correlate with the target may still be biased.
@@ -241,7 +241,7 @@ The company plans to offer retention discounts only to the high-churn segment. B
 4. **Assuming one fairness definition fits all contexts.** Credit scoring and healthcare need different fairness criteria.
 5. **Forgetting that fairness is not the only ethical concern.** Privacy, transparency, and accountability also matter.
 
-## Best Practices
+## Buenas Prácticas
 
 1. **Always test models across demographic subgroups before deployment.**
 2. **Choose fairness metrics that match the domain context.**
@@ -250,7 +250,7 @@ The company plans to offer retention discounts only to the high-churn segment. B
 5. **Involve domain experts and affected communities in system design.**
 6. **Build in transparency from the start.**
 
-## Summary
+## Resumen
 
 - Obermeyer et al. (2019): healthcare algorithm used cost as a proxy for need, causing racial bias.
 - Credit scoring requires careful feature selection, fairness monitoring, and regulatory compliance.
@@ -259,7 +259,7 @@ The company plans to offer retention discounts only to the high-churn segment. B
 - Mitigation requires changes to data, model, or deployment strategy.
 - There is no single correct solution — each case requires context-specific ethical reasoning.
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|------------|
@@ -271,25 +271,25 @@ The company plans to offer retention discounts only to the high-churn segment. B
 | Churn prediction | Model predicting which customers will cancel a service |
 | Privacy by design | Embedding privacy protections into system architecture from the start |
 
-## Exercises
+## Ejercicios
 
-### Level 1: Basic Understanding
+### Nivel 1: Comprensión Básica
 
 1. In the Obermeyer healthcare algorithm, what was the proxy variable? Why was it biased?
-2. List three ethical principles from Lesson 1 and explain how they apply to credit scoring.
+2. Enumera tres ethical principles from Lesson 1 and explain how they apply to credit scoring.
 
-### Level 2: Implementation
+### Nivel 2: Implementación
 
 3. Using the synthetic credit dataset from the walkthrough, compute the demographic parity difference and equal opportunity difference. Does the model exhibit bias?
 4. Retrain the model without the problematic features. Do fairness metrics improve? At what cost to accuracy?
 
-### Level 3: Critical Thinking
+### Nivel 3: Pensamiento Crítico
 
 5. A SaaS company uses AI to predict customer churn and offers retention discounts to the highest-risk customers. This leads to enterprise customers receiving fewer discounts than small businesses. Is this ethical? Defend your position.
 6. Design a responsible AI review process for a company that builds AI credit scoring systems. What stages should the review have? Who should be on the review board? What criteria should they use to approve or reject a model?
 7. The Obermeyer algorithm could be fixed by changing the target variable from cost to number of chronic conditions. Are there cases where no target variable is unbiased? What should developers do in that case?
 
-## Coding Challenge
+## Desafío de Programación
 
 Using the synthetic healthcare dataset from the notebook:
 1. Train a model to predict healthcare need
@@ -299,7 +299,7 @@ Using the synthetic healthcare dataset from the notebook:
 5. Compare fairness metrics before and after
 6. Visualize the improvement
 
-## References
+## Referencias
 
 Obermeyer, Z., Powers, B., Vogeli, C., & Mullainathan, S. (2019). Dissecting racial bias in an algorithm used to manage the health of populations. *Science*, 366(6464), 447–453. https://doi.org/10.1126/science.aax2342
 

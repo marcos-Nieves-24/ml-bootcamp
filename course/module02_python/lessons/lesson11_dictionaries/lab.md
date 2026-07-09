@@ -4,15 +4,15 @@
 
 Practice creating, accessing, and manipulating dictionaries.
 
-## Duration
+## Duración
 
 60 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lesson 9: Lists
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Creating and Accessing Dictionaries
 
@@ -89,6 +89,6 @@ for quarter, products in sales.items():
 print(f"Product totals: {dict(product_totals)}")
 ```
 
-## Deliverables
+## Entregables
 
 Jupyter notebook `dicts_lab.ipynb` with all exercises.

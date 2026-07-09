@@ -1,13 +1,13 @@
 # Lab 1: ML Fundamentals — Diagnosing Model Fit
 
-## Objectives
+## Objetivos
 
 - Implement train/test split with scikit-learn
 - Train a linear regression model and evaluate performance
 - Diagnose overfitting and underfitting using learning curves
 - Visualize the bias-variance tradeoff
 
-## Setup
+## Configuración
 
 ```python
 import numpy as np
@@ -62,7 +62,7 @@ scores = cross_val_score(LinearRegression(), X, y, cv=5)
 print(f"CV R²: {scores.mean():.3f} ± {scores.std():.3f}")
 ```
 
-## Deliverables
+## Entregables
 
 - A single notebook or Python script with all parts completed
 - Clearly labeled plots

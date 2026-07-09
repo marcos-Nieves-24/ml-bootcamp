@@ -4,15 +4,15 @@
 
 Practice creating Seaborn visualizations: box plots, violin plots, pairplots, heatmaps, and distribution plots.
 
-## Duration
+## Duración
 
 60 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lesson 15: Matplotlib
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Getting Started
 
@@ -82,6 +82,6 @@ plt.title("Tips Analysis with Custom Theme")
 plt.show()
 ```
 
-## Deliverables
+## Entregables
 
 Jupyter notebook `seaborn_lab.ipynb` with all plots.

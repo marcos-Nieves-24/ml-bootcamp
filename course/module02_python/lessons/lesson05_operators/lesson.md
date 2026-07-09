@@ -158,7 +158,7 @@ print(f"Final count: {count}")
 
 ## Biotechnology Example
 
-**Scenario**: Analyzing drug dose-response data.
+**Escenario**: Analyzing drug dose-response data.
 
 ```python
 # Drug dose-response calculation
@@ -183,7 +183,7 @@ print(f"In therapeutic range: {in_range}")
 
 ## SaaS Example
 
-**Scenario**: Evaluating customer churn risk.
+**Escenario**: Evaluating customer churn risk.
 
 ```python
 # Customer churn risk assessment

@@ -23,23 +23,23 @@ Quiz: data_distribution_quiz.md
 
 # Lesson 2: Data Distribution
 
-## Motivation
+## Motivación
 
 In Lesson 1, you learned to summarize data with a handful of numbers. But two very different datasets can have identical means and standard deviations. Visualizing the distribution reveals patterns that summary statistics miss: multimodality, gaps, clusters, and extreme values. Understanding data distribution is critical before applying any machine learning model, as many algorithms assume normally distributed features.
 
 In biotechnology, distribution shapes reveal whether gene expression follows a normal or log-normal pattern. In SaaS, user activity data often follows a power-law distribution, affecting how we compute averages and detect anomalies.
 
-## Big Picture
+## Panorama General
 
 Lesson 1 taught numerical summaries; this lesson teaches visual summaries. You will learn to see the shape of your data. This prepares you for Lesson 3 (Probability), where distributions become formal mathematical objects, and for Lesson 4 (Statistical Distributions), where you will encounter named distributions like the normal and binomial.
 
-## Theory
+## Teoría
 
 ### Histograms
 
 A histogram partitions data into bins and counts how many observations fall into each bin.
 
-**Intuition**: The histogram approximates the underlying probability distribution of the data. The area of each bar represents the proportion of data in that bin.
+**Intuición**: The histogram approximates the underlying probability distribution of the data. The area of each bar represents the proportion of data in that bin.
 
 **Choosing Bin Width**: The number of bins dramatically affects interpretation. Too few bins hide detail; too many create noise.
 
@@ -81,7 +81,7 @@ $$\text{Kurtosis} = \frac{1}{n} \sum_{i=1}^{n} \left(\frac{x_i - \bar{x}}{\sigma
 
 Intuition: High kurtosis means extreme values are more likely than in a normal distribution. This matters for risk assessment in finance and outlier detection in genomics.
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import numpy as np
@@ -197,14 +197,14 @@ plt.legend()
 plt.show()
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Using too few bins**: Hides the shape of the distribution.
 2. **Ignoring multimodality**: Multiple peaks suggest subgroups (e.g., different species, user types).
 3. **Assuming normality**: Many real-world datasets are skewed.
 4. **Confusing skewness direction**: Right-skewed = tail on the right, mean > median.
 
-## Best Practices
+## Buenas Prácticas
 
 - Always visualize your data before computing statistics
 - Try multiple bin widths to see different levels of detail
@@ -212,7 +212,7 @@ plt.show()
 - Report skewness and kurtosis alongside mean and std for non-normal data
 - Log-transform right-skewed data when needed for ML models
 
-## Summary
+## Resumen
 
 - Histograms show the frequency distribution of data
 - Density plots provide a smooth estimate of the distribution
@@ -220,7 +220,7 @@ plt.show()
 - Kurtosis measures tail heaviness (0 = normal-like)
 - Distribution shape guides choice of summary statistics and preprocessing
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|------------|
@@ -232,7 +232,7 @@ plt.show()
 | Platykurtic | Light-tailed distribution |
 | Multimodal | Distribution with multiple peaks |
 
-## Exercises
+## Ejercicios
 
 **Level 1: Basic Understanding**
 
@@ -249,7 +249,7 @@ plt.show()
 5. A researcher finds that gene expression data has high kurtosis. What does this imply about the biology? How might this affect downstream analysis?
 6. Why might a SaaS company prefer median over mean when reporting customer lifetime value (LTV)?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a script that:
 1. Generates data from four distributions: normal, exponential, uniform, and binomial (n=10, p=0.5)

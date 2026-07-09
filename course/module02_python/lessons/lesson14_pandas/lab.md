@@ -4,15 +4,15 @@
 
 Practice creating DataFrames, filtering, grouping, merging, and applying functions.
 
-## Duration
+## Duración
 
 90 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lesson 13: NumPy
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Creating DataFrames
 
@@ -109,6 +109,6 @@ df["Score_Group"] = df["Score"].apply(
 print(df.head(10))
 ```
 
-## Deliverables
+## Entregables
 
 Jupyter notebook `pandas_lab.ipynb` with all exercises.

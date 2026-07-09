@@ -1,6 +1,6 @@
 # Quiz: Dimensionality Reduction (PCA)
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **1. PCA finds directions that maximize:**
 
@@ -37,13 +37,13 @@ b) The contribution of each original feature to a PC
 c) The eigenvalues of the covariance matrix
 d) The residuals after transformation
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **6.** Explain why PCA is considered an unsupervised technique.
 
 **7.** A dataset with 100 features is reduced to 3 PCs that explain 85% of the variance. Interpret this result and discuss the trade-off.
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **8.** Write Python code using sklearn that:
 - Loads the iris dataset

@@ -193,7 +193,7 @@ print(f"Transpose: {transpose}")
 
 ## Biotechnology Example
 
-**Scenario**: Processing gene expression data with lists.
+**Escenario**: Processing gene expression data with lists.
 
 ```python
 # Gene expression data (fold changes)
@@ -226,7 +226,7 @@ print(f"Significant (comprehension): {significant}")
 
 ## SaaS Example
 
-**Scenario**: Processing customer transaction data.
+**Escenario**: Processing customer transaction data.
 
 ```python
 # Monthly transaction values

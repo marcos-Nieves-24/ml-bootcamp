@@ -4,7 +4,7 @@
 
 Apply PCA to real and synthetic high-dimensional data and interpret the results.
 
-## Duration
+## Duración
 
 60 minutes
 
@@ -12,7 +12,7 @@ Apply PCA to real and synthetic high-dimensional data and interpret the results.
 
 Wine dataset from sklearn.
 
-## Instructions
+## Instrucciones
 
 ### Part 1: PCA on Wine Dataset (20 min)
 1. Load wine dataset
@@ -37,13 +37,13 @@ Wine dataset from sklearn.
 2. Compute reconstruction error (MSE between original and reconstructed)
 3. Discuss: how much information is lost?
 
-## Deliverables
+## Entregables
 
 - Jupyter notebook with all analyses and interpretations
 
 ## Rubric
 
-| Criteria | Points |
+| Criterio | Puntos |
 |----------|--------|
 | PCA application and scree plot | 3 |
 | 2D visualization with interpretation | 2 |

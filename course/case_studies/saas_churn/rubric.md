@@ -4,7 +4,7 @@
 
 ## Task 1: Data Loading and Initial Exploration (10 points)
 
-| Criteria | Excellent (10) | Good (7) | Adequate (4) | Poor (1) |
+| Criterio | Excellent (10) | Good (7) | Adequate (4) | Insuficiente (1) |
 |----------|----------------|----------|--------------|----------|
 | Data loading | Loaded correctly with error handling | Loaded correctly | Loaded with minor issues | Not loaded |
 | Initial inspection | Displayed head, info, describe, shape, churn rate | Displayed most inspections | Basic inspection | Missing key items |
@@ -12,7 +12,7 @@
 
 ## Task 2: Exploratory Data Analysis (20 points)
 
-| Criteria | Excellent (20) | Good (15) | Adequate (10) | Poor (5) |
+| Criterio | Excellent (20) | Good (15) | Adequate (10) | Poor (5) |
 |----------|----------------|-----------|---------------|----------|
 | Churn distribution | Clear visualization with percentages | Good plot | Basic plot | Missing |
 | Feature distributions | KDE/hist for all numerical features with hue | Most features | Some features | Missing |
@@ -22,7 +22,7 @@
 
 ## Task 3: Data Preprocessing (15 points)
 
-| Criteria | Excellent (15) | Good (11) | Adequate (7) | Poor (3) |
+| Criterio | Excellent (15) | Good (11) | Adequate (7) | Poor (3) |
 |----------|----------------|-----------|--------------|----------|
 | Encoding | Correct one-hot encoding of all categorical features | Correct encoding | Partial encoding | Missing |
 | Train/test split | Stratified split, correct proportions | Correct split | Basic split | Missing |
@@ -30,7 +30,7 @@
 
 ## Task 4: Model Training (25 points)
 
-| Criteria | Excellent (25) | Good (19) | Adequate (13) | Poor (6) |
+| Criterio | Excellent (25) | Good (19) | Adequate (13) | Poor (6) |
 |----------|----------------|-----------|---------------|----------|
 | Logistic Regression | Trained correctly, printed metrics | Trained | Partial | Not trained |
 | Random Forest | Trained correctly, printed metrics | Trained | Partial | Not trained |
@@ -39,7 +39,7 @@
 
 ## Task 5: Model Evaluation (15 points)
 
-| Criteria | Excellent (15) | Good (11) | Adequate (7) | Poor (3) |
+| Criterio | Excellent (15) | Good (11) | Adequate (7) | Poor (3) |
 |----------|----------------|-----------|--------------|----------|
 | Confusion matrices | All 3 models, heatmaps | All 3 models | One model | Missing |
 | Classification reports | All 3 models, formatted | All 3 models | One model | Missing |
@@ -48,7 +48,7 @@
 
 ## Task 6: Feature Importance (10 points)
 
-| Criteria | Excellent (10) | Good (7) | Adequate (5) | Poor (2) |
+| Criterio | Excellent (10) | Good (7) | Adequate (5) | Poor (2) |
 |----------|----------------|----------|--------------|----------|
 | RF Importance | Extracted, top 10 plotted | Extracted and plotted | Extracted | Not done |
 | GBT Importance | Extracted, top 10 plotted | Extracted and plotted | Extracted | Not done |
@@ -56,14 +56,14 @@
 
 ## Task 7: Business Recommendations (5 points)
 
-| Criteria | Excellent (5) | Good (4) | Adequate (3) | Poor (1) |
+| Criterio | Excellent (5) | Good (4) | Adequate (3) | Insuficiente (1) |
 |----------|---------------|----------|--------------|----------|
 | Recommendations | 3 actionable, data-driven recommendations | 2 recommendations | 1 recommendation | Missing |
 | Cost-benefit | Complete analysis with calculations and conclusion | Partial analysis | Basic calculation | Missing |
 
 ## Code Quality and Presentation
 
-| Criteria | Points |
+| Criterio | Puntos |
 |----------|--------|
 | Code executes without errors | −5 if errors present |
 | All visualizations have titles, axis labels, legends | −2 per missing element |

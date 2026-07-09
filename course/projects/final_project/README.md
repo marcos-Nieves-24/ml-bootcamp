@@ -75,7 +75,7 @@ Choose ONE of the following datasets from `datasets/synthetic/`:
 - Visualizations with interpretations
 - Final recommendations
 
-## Deliverables
+## Entregables
 
 1. **Jupyter Notebook** (`project.ipynb`) — Complete analysis with code, visualizations, and markdown
 2. **Presentation** (`presentation.md`) — 5-7 slide summary for stakeholders
@@ -92,7 +92,7 @@ Choose ONE of the following datasets from `datasets/synthetic/`:
 
 ## Grading Rubric
 
-| Criteria | Points |
+| Criterio | Puntos |
 |----------|--------|
 | Problem definition & business context | 5 |
 | Data exploration & visualization | 15 |

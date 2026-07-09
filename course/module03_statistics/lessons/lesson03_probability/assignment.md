@@ -1,12 +1,12 @@
 # Assignment: Probability Applications
 
-## Objectives
+## Objetivos
 
 - Apply Bayes' theorem to diagnostic testing
 - Simulate probability experiments in Python
 - Interpret probabilistic results in context
 
-## Instructions
+## Instrucciones
 
 1. **Medical Screening**: A hospital implements a screening program for a disease with:
    - Prevalence: 0.5%
@@ -30,14 +30,14 @@
 
 4. **Write a short report** (1 page) interpreting these results for a non-technical audience.
 
-## Deliverables
+## Entregables
 
 - Jupyter notebook with code, simulations, and plots
 - A markdown report section
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Adequate (2 pts) | Poor (1 pt) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Adequate (2 pts) | Poor (1 pt) |
 |----------|------------------|--------------|------------------|-------------|
 | Bayes calculations | All correct | Minor errors | One correct | Missing |
 | Simulation | Verified analytically | Works but limited | Partially works | Missing |
@@ -46,6 +46,6 @@
 
 **Total: 16 points**
 
-## Estimated Time
+## Tiempo Estimado
 
 2.5 hours

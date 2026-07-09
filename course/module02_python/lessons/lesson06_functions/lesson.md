@@ -31,7 +31,7 @@ In previous lessons, you learned variables, data types, and operators. Functions
 
 ## Teoría
 
-### What is a Function?
+### ¿Qué es a Function?
 
 A function is a named block of code that takes inputs (parameters), performs a computation, and returns an output. Functions promote the DRY (Don't Repeat Yourself) principle.
 
@@ -208,7 +208,7 @@ print(sorted_by_gc)
 
 ## Biotechnology Example
 
-**Scenario**: A bioinformatics pipeline for quality-checking DNA sequences.
+**Escenario**: A bioinformatics pipeline for quality-checking DNA sequences.
 
 ```python
 def reverse_complement(sequence):
@@ -232,7 +232,7 @@ print(f"Contains EcoRI site (GAATTC): {has_site}")
 
 ## SaaS Example
 
-**Scenario**: Customer metrics calculation for a SaaS dashboard.
+**Escenario**: Customer metrics calculation for a SaaS dashboard.
 
 ```python
 def calculate_arpu(revenue, active_users):
@@ -317,7 +317,7 @@ print(f"Health Score: {health}/100")
 ### Nivel 3: Pensamiento Crítico
 
 6. Why are mutable default arguments (like `def f(x=[])`) dangerous? What is the recommended alternative?
-7. Compare and contrast functions in Python with functions in mathematics. How are they similar? How are they different?
+7. Compara y contrasta functions in Python with functions in mathematics. How are they similar? How are they different?
 
 ## Desafío de Programación
 

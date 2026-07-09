@@ -4,15 +4,15 @@
 
 Conduct a full ethical analysis of a real or hypothetical AI system, applying all concepts from Module 5 (principles, bias, fairness, transparency, privacy, social impact, regulation).
 
-## Duration
+## Duración
 
 75 minutes
 
-## Prerequisites
+## Prerrequisitos
 
 Lessons 1–7
 
-## Instructions
+## Instrucciones
 
 ### Part 1: Case Selection and Description (10 minutes)
 
@@ -76,13 +76,13 @@ Share your analysis with a partner or small group. Discuss:
 - Are your recommendations feasible?
 - What would you prioritize?
 
-## Deliverables
+## Entregables
 
 Submit your structured analysis (Part 2) and recommendations (Part 3).
 
 ## Rubric
 
-| Criterion | Points | Excellent | Good | Satisfactory | Needs Improvement |
+| Criterion | Puntos | Excellent | Good | Satisfactory | Needs Improvement |
 |-----------|--------|-----------|------|--------------|-------------------|
 | Five principles | 20 | All correctly applied with nuance | Four correct | Three correct | < 3 or incorrect |
 | Bias and fairness | 15 | Types, metrics, mitigations all addressed | Good | Basic | Missing |

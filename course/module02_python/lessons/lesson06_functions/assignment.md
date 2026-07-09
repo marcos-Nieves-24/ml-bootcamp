@@ -1,13 +1,13 @@
 # Assignment: Sequence Analysis Toolkit
 
-## Objectives
+## Objetivos
 
 - Write well-structured functions with docstrings
 - Implement domain-specific functions for biotechnology
 - Use lambda functions appropriately
 - Demonstrate understanding of scope
 
-## Instructions
+## Instrucciones
 
 Create a Python module `sequence_tools.py` with the following functions:
 
@@ -23,14 +23,14 @@ Include:
 - Type hints for all functions
 - A demonstration in `if __name__ == "__main__":` block
 
-## Deliverables
+## Entregables
 
 - `sequence_tools.py`
 - Example output from the demonstration block
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
 |----------|-------------------|--------------|-----------------------------|
 | Function Design | Clear, single-purpose functions | Mostly clear | Unclear purpose |
 | Parameters/Return | Appropriate I/O for each function | Mostly appropriate | Poor design |

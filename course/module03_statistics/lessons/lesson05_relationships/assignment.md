@@ -1,12 +1,12 @@
 # Assignment: Correlation Analysis
 
-## Objectives
+## Objetivos
 
 - Compute and interpret Pearson and Spearman correlations
 - Create correlation matrix visualizations
 - Detect multicollinearity and spurious correlations
 
-## Instructions
+## Instrucciones
 
 1. **Correlation Comparison**: Load the `mpg` dataset.
    - Compute Pearson and Spearman correlations between all numeric pairs
@@ -27,13 +27,13 @@
 
 4. **Spurious Correlations**: Find an example of two variables from the datasets that are correlated but have no plausible causal relationship. Explain why the correlation exists despite no causation.
 
-## Deliverables
+## Entregables
 
 - Jupyter notebook with code, visualizations, and written interpretations
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Adequate (2 pts) | Poor (1 pt) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Adequate (2 pts) | Poor (1 pt) |
 |----------|------------------|--------------|------------------|-------------|
 | Pearson vs Spearman | Correct comparison | Minor issues | Partial | Missing |
 | Correlation matrix | Clear, informative | Good but basic | Missing elements | Poor quality |
@@ -42,6 +42,6 @@
 
 **Total: 16 points**
 
-## Estimated Time
+## Tiempo Estimado
 
 2 hours

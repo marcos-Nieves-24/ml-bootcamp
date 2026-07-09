@@ -22,17 +22,17 @@ Quiz: statistical_distributions_quiz.md
 
 # Lesson 4: Statistical Distributions
 
-## Motivation
+## Motivación
 
 Every data generating process in nature and business follows some probability distribution. Gene expression follows a log-normal distribution. Customer arrivals follow a Poisson distribution. Binary outcomes like disease/no-disease follow a Bernoulli distribution. Understanding these named distributions allows you to model data realistically, make probabilistic predictions, and choose appropriate statistical tests.
 
 In Lesson 3, you learned the general language of probability. Now you will meet the specific distributions that appear most frequently in machine learning and data science.
 
-## Big Picture
+## Panorama General
 
 This lesson bridges probability theory (Lesson 3) and practical data analysis. You will learn to work with four essential distributions using scipy.stats. These distributions appear throughout the rest of the course — in EDA (Lesson 6), model evaluation (Lesson 9), and all of Module 4 (Machine Learning).
 
-## Theory
+## Teoría
 
 ### Bernoulli Distribution
 
@@ -88,7 +88,7 @@ The sum (or average) of \(n\) independent random variables converges to a normal
 
 Intuition: Even if individual data points are not normal, the average of many samples will be approximately normal. This is why the normal distribution is so ubiquitous.
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import numpy as np
@@ -232,14 +232,14 @@ expected_days = p_more_than_30 * 365
 print(f"Expected days with >30 sign-ups: {expected_days:.1f}")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Using Binomial when trials are not independent**: The Binomial assumes independence. In reality, patients in the same hospital may have correlated outcomes.
 2. **Using Poisson when variance ≠ mean**: The Poisson assumes variance = mean. If variance is much larger (overdispersion), use Negative Binomial instead.
 3. **Assuming data is normal without checking**: Always visualize and test for normality before using methods that assume it.
 4. **Interpreting the CLT too broadly**: The CLT applies to the sample mean, not to individual observations.
 
-## Best Practices
+## Buenas Prácticas
 
 - Visualize your data before choosing a distribution
 - Use Q-Q plots to check normality
@@ -247,7 +247,7 @@ print(f"Expected days with >30 sign-ups: {expected_days:.1f}")
 - Remember the 68-95-99.7 rule for quick normal approximations
 - Use scipy.stats for all distribution computations
 
-## Summary
+## Resumen
 
 - **Bernoulli**: Single binary outcome (p)
 - **Binomial**: Count of successes in n trials (n, p)
@@ -256,7 +256,7 @@ print(f"Expected days with >30 sign-ups: {expected_days:.1f}")
 - **Standardization**: Z = (X - μ) / σ creates standard normal
 - Central Limit Theorem: sample means approach normality as sample size grows
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|------------|
@@ -271,7 +271,7 @@ print(f"Expected days with >30 sign-ups: {expected_days:.1f}")
 | PDF | Probability density function (continuous) |
 | CDF | Cumulative distribution function |
 
-## Exercises
+## Ejercicios
 
 **Level 1: Basic Understanding**
 
@@ -288,7 +288,7 @@ print(f"Expected days with >30 sign-ups: {expected_days:.1f}")
 5. In RNA-seq data, gene counts are often modeled with a Negative Binomial rather than Poisson distribution. Why? What property of RNA-seq data violates the Poisson assumption?
 6. A SaaS company's daily revenue is right-skewed. Why might the Central Limit Theorem still allow them to use normal-based confidence intervals for monthly average revenue?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a Python script that:
 1. Generates data from 4 different distributions (Bernoulli, Binomial, Poisson, Normal)

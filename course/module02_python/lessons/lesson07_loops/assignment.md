@@ -1,13 +1,13 @@
 # Assignment: Data Processing with Loops
 
-## Objectives
+## Objetivos
 
 - Apply for and while loops to real-world data
 - Use break and continue for flow control
 - Implement nested loops for multi-dimensional processing
 - Use enumerate() and zip() for Pythonic iteration
 
-## Instructions
+## Instrucciones
 
 Create a Python script `data_processor.py` that:
 
@@ -31,14 +31,14 @@ matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 monthly_revenue = [12000, 13500, 12800, 14200, 15100, 14800]
 ```
 
-## Deliverables
+## Entregables
 
 - `data_processor.py` with all 5 tasks implemented
 - Output showing the results of each task
 
 ## Evaluation Rubric
 
-| Criteria | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
+| Criterio | Excellent (4 pts) | Good (3 pts) | Needs Improvement (1-2 pts) |
 |----------|-------------------|--------------|-----------------------------|
 | For Loops | Correct iteration and accumulation | Minor issues | Major errors |
 | While Loops | Proper condition and termination | Runs but imperfect | Infinite loop or wrong logic |

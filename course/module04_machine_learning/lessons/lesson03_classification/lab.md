@@ -1,6 +1,6 @@
 # Lab 3: Classification
 
-## Objectives
+## Objetivos
 
 - Train logistic regression models with scikit-learn
 - Evaluate using confusion matrix, precision, recall, F1, ROC AUC
@@ -42,7 +42,7 @@ X_imb, y_imb = make_classification(n_samples=1000, weights=[0.95, 0.05],
 
 Train logistic regression. Report accuracy, precision, recall, F1. Why is accuracy misleading here?
 
-## Deliverables
+## Entregables
 
 - Notebook with all 4 parts
 - Decision boundary plot (Part 1)

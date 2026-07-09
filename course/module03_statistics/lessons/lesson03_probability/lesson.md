@@ -23,17 +23,17 @@ Quiz: probability_quiz.md
 
 # Lesson 3: Probability Fundamentals
 
-## Motivation
+## Motivación
 
 Every machine learning model makes predictions under uncertainty. A classifier never knows with 100% certainty which class an example belongs to. A regression model never predicts the exact value without error. Probability provides the mathematical language to express and quantify this uncertainty. Without probability, you cannot understand model confidence, interpret p-values, or evaluate Bayesian methods.
 
 In biotechnology, probability quantifies diagnostic test accuracy: "If a patient tests positive for a disease, what is the probability they actually have it?" In SaaS, probability models predict customer churn: "What is the probability this user will cancel their subscription in the next 30 days?"
 
-## Big Picture
+## Panorama General
 
 You already understand descriptive statistics (Lesson 1) and data distributions (Lesson 2). Now you will learn the mathematical foundation of randomness and uncertainty. This directly prepares you for Lesson 4 (Statistical Distributions), where random variables follow specific probability laws, and for all subsequent ML lessons that rely on probabilistic reasoning.
 
-## Theory
+## Teoría
 
 ### Kolmogorov Axioms
 
@@ -90,7 +90,7 @@ A random variable is a function that assigns a real number to each outcome in th
 
 **Variance**: \(\text{Var}(X) = E[(X - E[X])^2] = E[X^2] - E[X]^2\)
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import numpy as np
@@ -208,21 +208,21 @@ p_churn_given_pred = (p_pred_churn_given_churn * p_churn) / (
 print(f"P(churn | predicted churn) = {p_churn_given_pred:.3f}")
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Confusing P(A|B) with P(B|A)**: The probability of having a disease given a positive test is not the same as the probability of a positive test given having the disease. This is called the "prosecutor's fallacy."
 2. **Ignoring the base rate**: Bayes' theorem shows that rare events remain rare even after positive evidence (the base rate fallacy).
 3. **Assuming independence**: Events are rarely independent in real data. Always check before multiplying probabilities.
 4. **Misinterpreting p-values**: A p-value is NOT the probability that the null hypothesis is true.
 
-## Best Practices
+## Buenas Prácticas
 
 - Always write down the prior before updating with evidence
 - Use simulation to verify probability calculations
 - Visualize probability distributions when possible
 - Remember that probability quantifies uncertainty; it does not eliminate it
 
-## Summary
+## Resumen
 
 - Kolmogorov axioms: non-negativity, normalization, additivity
 - Conditional probability: P(A|B) = P(A∩B) / P(B)
@@ -231,7 +231,7 @@ print(f"P(churn | predicted churn) = {p_churn_given_pred:.3f}")
 - Random variables: functions from sample space to real numbers
 - Expected value: long-run average of a random variable
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|------------|
@@ -244,7 +244,7 @@ print(f"P(churn | predicted churn) = {p_churn_given_pred:.3f}")
 | Random Variable | Variable whose value is determined by a random process |
 | Expected Value | Long-run average of a random variable |
 
-## Exercises
+## Ejercicios
 
 **Level 1: Basic Understanding**
 
@@ -261,7 +261,7 @@ print(f"P(churn | predicted churn) = {p_churn_given_pred:.3f}")
 5. In genome-wide association studies (GWAS), millions of statistical tests are performed simultaneously. Explain how the law of total probability and Bayes' theorem relate to multiple testing correction methods like Bonferroni correction.
 6. Why is understanding conditional probability essential for interpreting machine learning model outputs like confidence scores or predicted probabilities?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a Python script that:
 1. Simulates a diagnostic test for a disease with configurable prevalence, sensitivity, and specificity

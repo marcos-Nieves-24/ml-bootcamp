@@ -1,6 +1,6 @@
 # Lab 7: PCA
 
-## Objectives
+## Objetivos
 
 - Apply PCA for dimensionality reduction
 - Interpret explained variance and component loadings
@@ -44,7 +44,7 @@ Apply PCA to reduce breast cancer to 2 components, then run K-Means (K=2) on the
 
 **Question:** Does K-Means on PCA space recover the malignant/benign split?
 
-## Deliverables
+## Entregables
 
 - Notebook with all 5 parts
 - Iris PCA plot (Part 1)

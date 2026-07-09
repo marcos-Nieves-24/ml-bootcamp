@@ -1,6 +1,6 @@
 # Quiz: Model Evaluation
 
-## Multiple Choice (5 questions)
+## Opción Múltiple (5 questions)
 
 **1. What does RMSE stand for?**
 
@@ -37,13 +37,13 @@ b) Information from outside the training set is used during training
 c) The model is too complex
 d) Cross-validation is not used
 
-## Short Answer (2 questions)
+## Respuesta Corta (2 questions)
 
 **6.** Explain why it is a mistake to evaluate a model on the same data it was trained on.
 
 **7.** A regression model has MAE = $5,000 and RMSE = $12,000 for house price prediction. What does the difference between MAE and RMSE tell you?
 
-## Coding Question (1 question)
+## Pregunta de Programación (1 question)
 
 **8.** Write Python code using sklearn that:
 - Splits the diabetes dataset into train (80%) and test (20%)

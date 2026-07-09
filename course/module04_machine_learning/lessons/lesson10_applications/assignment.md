@@ -1,6 +1,6 @@
 # Assignment 10: Applications — Final Integration
 
-## Objectives
+## Objetivos
 
 - Build a complete end-to-end ML application
 - Choose appropriate models and metrics for the business context
@@ -70,7 +70,7 @@ saas['health_score'] = health.clip(0, 100)
 saas['churned_3m'] = (saas['health_score'] < 30).astype(int)
 ```
 
-## Instructions (applies to both options)
+## Instrucciones (applies to both options)
 
 1. **EDA:** Explore the data (distributions, correlations, missing values)
 2. **Preprocessing:** Scale numeric features, encode categorical, split
@@ -79,7 +79,7 @@ saas['churned_3m'] = (saas['health_score'] < 30).astype(int)
 5. **Interpretation:** Feature importance, PDPs for top features
 6. **Business recommendation:** Write a report (max 500 words)
 
-## Deliverables
+## Entregables
 
 - Notebook with complete analysis
 - Model comparison table
@@ -93,7 +93,7 @@ saas['churned_3m'] = (saas['health_score'] < 30).astype(int)
 
 ## Rubric
 
-| Criteria | Excellent (4) | Good (3) | Adequate (2) | Needs Work (1) |
+| Criterio | Excelente (4) | Bueno (3) | Adecuado (2) | Needs Work (1) |
 |----------|--------------|----------|-------------|----------------|
 | EDA | Thorough, with visualizations | Good | Basic | Missing |
 | Preprocessing | Correct scaling + encoding + split | Complete | Partial | Missing |

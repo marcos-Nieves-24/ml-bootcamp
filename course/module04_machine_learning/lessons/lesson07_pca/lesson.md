@@ -23,15 +23,15 @@ Quiz: quiz.md
 
 # Principal Component Analysis (PCA)
 
-## Motivation
+## Motivación
 
 A flow cytometer measures 50+ markers per cell. A microarray measures 20,000+ gene expression levels. High-dimensional data is everywhere in biotechnology, but humans can only visualize 2-3 dimensions. PCA reduces hundreds of dimensions to a handful while preserving the most important patterns. In SaaS, PCA helps visualize customer segments and identify hidden factors driving user behavior.
 
-## Big Picture
+## Panorama General
 
 **Previous:** K-Means (unsupervised — grouping). **This lesson:** PCA (unsupervised — dimensionality reduction). **Next:** Gradient Boosting (back to supervised, but with a new paradigm).
 
-## Theory
+## Teoría
 
 ### The Curse of Dimensionality
 
@@ -69,7 +69,7 @@ $$\text{Explained Variance Ratio}_k = \frac{\lambda_k}{\sum_{j=1}^{p}\lambda_j}$
 
 This tells us what fraction of total variance each component captures.
 
-## Visual Explanation
+## Explicación Visual
 
 ```python
 import numpy as np
@@ -96,7 +96,7 @@ print(f"Explained variance ratio: {pca.explained_variance_ratio_}")
 print(f"Cumulative: {np.cumsum(pca.explained_variance_ratio_)}")
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import pandas as pd
@@ -216,7 +216,7 @@ print(f"\nExplained variance: {pca.explained_variance_ratio_.cumsum()}")
 
 **Interpretation:** PC1 might represent "engagement" (pages, duration, features), PC2 "support needs" (tickets), PC3 "growth" (referrals, days active).
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Not scaling data** — features with larger variance dominate the first PC
 2. **Interpreting PCA directions as causal** — components are mathematical, not biological
@@ -224,7 +224,7 @@ print(f"\nExplained variance: {pca.explained_variance_ratio_.cumsum()}")
 4. **Assuming PCA always helps** — if signal is in low-variance directions, PCA might discard it
 5. **Ignoring loadings** — always check which original features contribute to each component
 
-## Best Practices
+## Buenas Prácticas
 
 - Always scale data before PCA (StandardScaler)
 - Use cumulative explained variance plot to choose number of components
@@ -233,7 +233,7 @@ print(f"\nExplained variance: {pca.explained_variance_ratio_.cumsum()}")
 - Examine component loadings to interpret what each PC represents
 - Consider t-SNE or UMAP for non-linear visualization if PCA fails
 
-## Summary
+## Resumen
 
 - PCA finds orthogonal directions of maximum variance
 - Eigenvectors = principal components; eigenvalues = variance explained
@@ -242,7 +242,7 @@ print(f"\nExplained variance: {pca.explained_variance_ratio_.cumsum()}")
 - Use explained variance ratio to choose number of components
 - PCA is essential for visualizing high-dimensional data
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|-----------|
@@ -253,7 +253,7 @@ print(f"\nExplained variance: {pca.explained_variance_ratio_.cumsum()}")
 | Loadings | Contribution of original features to each PC |
 | Dimensionality reduction | Reducing number of features while preserving information |
 
-## Exercises
+## Ejercicios
 
 **Level 1 — Basic:** If 95% of variance is captured by 3 components out of 30 original features, what does this mean?
 
@@ -261,7 +261,7 @@ print(f"\nExplained variance: {pca.explained_variance_ratio_.cumsum()}")
 
 **Level 3 — Critical Thinking:** You apply PCA to gene expression data and PC1 separates patients by age instead of disease status. What happened? How would you fix it?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a function `pca_analysis(X, n_components)` that:
 1. Scales the data

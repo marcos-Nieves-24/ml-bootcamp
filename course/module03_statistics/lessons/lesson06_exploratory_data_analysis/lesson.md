@@ -23,17 +23,17 @@ Quiz: eda_quiz.md
 
 # Lesson 6: Exploratory Data Analysis (EDA)
 
-## Motivation
+## Motivación
 
 Before building any machine learning model, you must understand your data. EDA is the systematic process of examining data to detect problems, discover patterns, and generate hypotheses. Half the time in any real ML project is spent on EDA and data cleaning. Skipping EDA leads to garbage-in-garbage-out models, biased conclusions, and embarrassing mistakes.
 
 In biotechnology, EDA reveals batch effects, missing genetic data, and sample contamination. In SaaS, EDA uncovers tracking errors, anomalous user behavior, and seasonal patterns.
 
-## Big Picture
+## Panorama General
 
 This lesson integrates everything you learned in Lessons 1-5: descriptive statistics, distributions, and relationships. You will apply all of them systematically to explore a new dataset. This prepares you for the remaining lessons (PCA, clustering, model evaluation) and for all of Module 4.
 
-## Theory
+## Teoría
 
 ### The EDA Workflow
 
@@ -74,7 +74,7 @@ Handling strategies:
 # profile.to_file("eda_report.html")
 ```
 
-## Python Implementation
+## Implementación en Python
 
 ```python
 import numpy as np
@@ -269,7 +269,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-## Common Mistakes
+## Errores Comunes
 
 1. **Skipping EDA entirely**: The most common and costly mistake. Always explore first.
 2. **Failing to visualize**: Summary statistics alone cannot reveal multimodal distributions or unusual patterns.
@@ -277,7 +277,7 @@ plt.show()
 4. **Removing all outliers without investigation**: Outliers may be the most interesting data points.
 5. **Data leakage**: Cleaning data using information from the full dataset before splitting.
 
-## Best Practices
+## Buenas Prácticas
 
 - Always set a random seed for reproducibility
 - Document every cleaning decision
@@ -286,7 +286,7 @@ plt.show()
 - Investigate missing values before deciding how to handle them
 - Keep the original data untouched; work on copies
 
-## Summary
+## Resumen
 
 - EDA is the systematic exploration of data before modeling
 - Missing value analysis: identify, visualize, handle
@@ -294,7 +294,7 @@ plt.show()
 - Automated profiling: pandas-profiling for quick reports
 - Always combine numerical summaries with visualizations
 
-## Key Terms
+## Términos Clave
 
 | Term | Definition |
 |------|------------|
@@ -306,11 +306,11 @@ plt.show()
 | Isolation Forest | ML algorithm for outlier detection |
 | Batch Effect | Systematic technical variation between experimental batches |
 
-## Exercises
+## Ejercicios
 
 **Level 1: Basic Understanding**
 
-1. What are the three types of missing data? Give an example of each in a clinical trial context.
+1. What are the three types of missing data? Da un ejemplo of each in a clinical trial context.
 2. Why should we not remove all outliers without investigation?
 
 **Level 2: Implementation**
@@ -323,7 +323,7 @@ plt.show()
 5. In a gene expression dataset, you notice that 15% of values are missing in the treatment group but only 2% in the control group. What type of missing data is this? How would you handle it?
 6. A SaaS company's EDA reveals that users who churn have shorter session durations. Can we conclude that short sessions cause churn? What other explanations exist?
 
-## Coding Challenge
+## Desafío de Programación
 
 Write a Python script that performs a complete EDA on the `mpg` dataset from seaborn:
 1. Print shape, column types, missing values

@@ -1,16 +1,16 @@
 # Tuples — Slide Outline
 
-## Slide 1: Title Slide
+## Diapositiva 1: Title Slide
 - Tuples in Python
-- Module 2: Python Programming Fundamentals
+- Módulo 2: Python Programming Fundamentals
 
-## Slide 2: Why Tuples?
+## Diapositiva 2: Why Tuples?
 - Immutable sequences
 - Safe for fixed data
 - Hashable → can be dict keys
 - Multiple return values from functions
 
-## Slide 3: Creating Tuples
+## Diapositiva 3: Creating Tuples
 ```python
 empty = ()
 single = (42,)   # comma required!
@@ -19,7 +19,7 @@ triple = 1, 2, 3  # parentheses optional
 nested = ((1, 2), (3, 4))
 ```
 
-## Slide 4: Immutability
+## Diapositiva 4: Immutability
 ```python
 t = (1, 2, 3)
 t[0] = 99  # TypeError!
@@ -28,7 +28,7 @@ t[0] = 99  # TypeError!
 - This is a feature, not a limitation!
 - Protects data integrity
 
-## Slide 5: Tuple Unpacking
+## Diapositiva 5: Tuple Unpacking
 ```python
 point = (3, 4)
 x, y = point      # x=3, y=4
@@ -39,7 +39,7 @@ first, *rest = (1, 2, 3, 4)
 # first=1, rest=[2, 3, 4]
 ```
 
-## Slide 6: Tuple Methods
+## Diapositiva 6: Tuple Methods
 - Only 2 methods:
 ```python
 t = (1, 2, 3, 1, 2)
@@ -48,7 +48,7 @@ t.index(2)  # 1 (first occurrence)
 ```
 - Much simpler than lists (by design)
 
-## Slide 7: Tuples as Dictionary Keys
+## Diapositiva 7: Tuples as Dictionary Keys
 ```python
 locations = {
     (47.6, -122.3): "Seattle",
@@ -59,7 +59,7 @@ locations = {
 - Tuples are hashable
 - Great for compound keys
 
-## Slide 8: Multiple Return Values
+## Diapositiva 8: Multiple Return Values
 ```python
 def min_max(numbers):
     return min(numbers), max(numbers)
@@ -70,7 +70,7 @@ mn, mx = result  # unpacking
 - Functions return tuples by default
 - Clean, readable pattern
 
-## Slide 9: Tuple vs List
+## Diapositiva 9: Tuple vs List
 | Feature | Tuple | List |
 |---------|-------|------|
 | Mutable | No | Yes |
@@ -79,26 +79,26 @@ mn, mx = result  # unpacking
 | Syntax | `()` | `[]` |
 | Use | Fixed data | Variable data |
 
-## Slide 10: Biotech Example
+## Diapositiva 10: Biotech Example
 - Genetic variant records as tuples
 - Immutable patient data
 - (chrom, pos, ref, alt, qual)
 - Ensures data integrity
 
-## Slide 11: Common Mistakes
+## Diapositiva 11: Common Mistakes
 - `(5)` is an int, not a tuple
 - Trying to modify a tuple
 - Unpacking with wrong number of variables
 - Mutable elements inside tuple
 
-## Slide 12: Best Practices
+## Diapositiva 12: Best Practices
 - Use tuples for fixed data records
 - Use unpacking for cleaner code
 - Use tuples for dict keys
 - Use tuples for function returns
 - Prefer tuples when data shouldn't change
 
-## Slide 13: Summary
+## Diapositiva 13: Summary
 - Tuples: ordered, immutable
 - Created with `()` or without
 - Unpacking: elegant multiple assignment
