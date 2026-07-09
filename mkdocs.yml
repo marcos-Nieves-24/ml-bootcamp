@@ -7,6 +7,7 @@ edit_uri: "edit/main/docs/"
 
 theme:
   name: material
+  custom_dir: overrides
   language: es
   favicon: assets/favicon.png
   icon:
@@ -71,6 +72,8 @@ markdown_extensions:
   - md_in_html
 
 extra:
+  analytics:
+    provider: custom
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/marcos-Nieves-24/ml-bootcamp
