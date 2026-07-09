@@ -1,4 +1,4 @@
-# Quiz: Functions
+# Cuestionario: Funciones
 
 ## Opción Múltiple (5 questions)
 

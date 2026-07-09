@@ -1,4 +1,4 @@
-# Quiz: Operators
+# Cuestionario: Operadores
 
 ## Opción Múltiple (5 questions)
 

@@ -1,6 +1,6 @@
-# Lab: Writing Functions
+# Laboratorio: Escribiendo Funciones
 
-## Objective
+## Objetivo
 
 Practice defining functions, working with parameters, return values, and scope.
 

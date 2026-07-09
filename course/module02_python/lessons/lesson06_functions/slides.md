@@ -1,4 +1,4 @@
-# Functions — Slide Outline
+# Funciones — Guión de Diapositivas
 
 ## Diapositiva 1: Title Slide
 - Functions in Python

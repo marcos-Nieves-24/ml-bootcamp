@@ -1,8 +1,8 @@
 # Lab: Operators in Action
 
-## Objective
+## Objetivo
 
-Practice using arithmetic, comparison, logical, and assignment operators.
+Practicar el uso de operadores aritméticos, de comparación, lógicos y de asignación.
 
 ## Duración
 

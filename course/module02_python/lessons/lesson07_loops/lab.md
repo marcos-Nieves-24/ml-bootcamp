@@ -1,6 +1,6 @@
 # Lab: Loops and Iteration
 
-## Objective
+## Objetivo
 
 Practice for loops, while loops, range(), break/continue, and nested loops.
 

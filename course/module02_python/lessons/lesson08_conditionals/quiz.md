@@ -1,4 +1,4 @@
-# Quiz: Conditionals
+# Cuestionario: Condicionales
 
 ## Opción Múltiple (5 questions)
 

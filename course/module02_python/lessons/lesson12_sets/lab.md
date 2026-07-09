@@ -1,6 +1,6 @@
 # Lab: Sets and Set Operations
 
-## Objective
+## Objetivo
 
 Practice creating sets, performing set operations, and using sets for data analysis.
 

@@ -1,6 +1,6 @@
 # Lab: Data Visualization with Matplotlib
 
-## Objective
+## Objetivo
 
 Practice creating various plot types, customizing figures, and using subplots.
 

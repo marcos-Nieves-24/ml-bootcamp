@@ -1,6 +1,6 @@
 # Lab: Pandas Data Manipulation
 
-## Objective
+## Objetivo
 
 Practice creating DataFrames, filtering, grouping, merging, and applying functions.
 

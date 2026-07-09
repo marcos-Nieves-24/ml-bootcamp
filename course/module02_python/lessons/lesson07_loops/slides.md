@@ -1,4 +1,4 @@
-# Loops — Slide Outline
+# Bucles — Guión de Diapositivas
 
 ## Diapositiva 1: Title Slide
 - Loops in Python

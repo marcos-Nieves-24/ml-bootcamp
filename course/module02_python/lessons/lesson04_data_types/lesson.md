@@ -23,36 +23,36 @@ Quiz: quiz.md
 
 ## Motivación
 
-Every piece of data in Python has a type that determines what operations are possible. Adding two numbers is arithmetic; adding two strings is concatenation. Understanding types is crucial because type errors are among the most common bugs in Python programs. In biotechnology, you need to distinguish between integer counts (number of cells), float measurements (gene expression ratios), strings (DNA sequences), and booleans (mutation present/absent). In SaaS, you work with integer user counts, float revenue, string customer names, and boolean subscription status.
+Cada pieza de datos en Python tiene un tipo que determina qué operaciones son posibles. Sumar dos números es aritmética; sumar dos strings es concatenación. Entender los tipos es crucial porque los errores de tipo están entre los bugs más comunes en programas Python. En biotecnología, necesitas distinguir entre conteos enteros (número de células), mediciones float (ratios de expresión génica), strings (secuencias de ADN) y booleanos (mutación presente/ausente). En SaaS, trabajas con conteos enteros de usuarios, ingresos float, nombres de clientes string y estado de suscripción booleano.
 
 ## Panorama General
 
-En la lección anterior, aprendiste to store values in variables. Now you will understand the different kinds of values variables can hold. This prepares you for the next lesson on operators, where each data type supports different operations.
+En la lección anterior, aprendiste a almacenar valores en variables. Ahora entenderás los diferentes tipos de valores que las variables pueden contener. Esto te prepara para la próxima lección sobre operadores, donde cada tipo de dato soporta diferentes operaciones.
 
 ## Teoría
 
-### The Four Basic Data Types
+### Los Cuatro Tipos de Datos Básicos
 
-Python has four primitive data types:
+Python tiene cuatro tipos de datos primitivos:
 
-1. **int** (integer): Whole numbers without a decimal point
-   - Examples: `42`, `-7`, `0`, `1_000_000`
-   - Arbitrary precision (no overflow)
+1. **int** (entero): Números enteros sin punto decimal
+   - Ejemplos: `42`, `-7`, `0`, `1_000_000`
+   - Precisión arbitraria (sin desbordamiento)
 
-2. **float** (floating-point): Numbers with a decimal point
-   - Examples: `3.14`, `-0.001`, `1.5e10`
-   - Follows IEEE 754 double-precision standard
-   - Limited precision (~15-17 decimal digits)
+2. **float** (punto flotante): Números con punto decimal
+   - Ejemplos: `3.14`, `-0.001`, `1.5e10`
+   - Sigue el estándar IEEE 754 de doble precisión
+   - Precisión limitada (~15-17 dígitos decimales)
 
-3. **str** (string): Sequence of characters enclosed in quotes
-   - Examples: `"Hello"`, `'DNA'`, `"ATGCTGA"`, `""` (empty string)
-   - Can use single quotes, double quotes, or triple quotes for multiline
+3. **str** (string/cadena): Secuencia de caracteres entre comillas
+   - Ejemplos: `"Hello"`, `'DNA'`, `"ATGCTGA"`, `""` (cadena vacía)
+   - Puede usar comillas simples, dobles o triples para multilínea
 
-4. **bool** (boolean): Logical values
-   - Only two values: `True` and `False`
-   - Internally, `True` = 1 and `False` = 0
+4. **bool** (booleano): Valores lógicos
+   - Solo dos valores: `True` y `False`
+   - Internamente, `True` = 1 y `False` = 0
 
-### Type Checking with type()
+### Verificación de Tipo con type()
 
 ```python
 x = 42
@@ -68,9 +68,9 @@ w = True
 print(type(w))       # <class 'bool'>
 ```
 
-### Type Conversion (Casting)
+### Conversión de Tipo (Casting)
 
-You can explicitly convert between types:
+Puedes convertir explícitamente entre tipos:
 
 ```python
 # int to float
@@ -93,21 +93,21 @@ bool("")             # False (empty string)
 bool("hello")        # True (non-empty string)
 ```
 
-### Mutable vs Immutable Types
+### Tipos Mutables vs Inmutables
 
-- **Immutable**: int, float, bool, str — cannot be changed after creation
-- **Mutable**: list, dict, set — can be modified (covered in later lessons)
+- **Inmutable**: int, float, bool, str — no pueden cambiarse después de su creación
+- **Mutable**: list, dict, set — pueden modificarse (cubiertos en lecciones posteriores)
 
 ```python
 name = "BRCA1"
 name[0] = "A"  # TypeError: 'str' object does not support item assignment
 ```
 
-### Special Values
+### Valores Especiales
 
-- **None**: Represents the absence of a value
-- **inf**: Infinity (float)
-- **nan**: Not a Number (float)
+- **None**: Representa la ausencia de un valor
+- **inf**: Infinito (float)
+- **nan**: No es un Número (float)
 
 ```python
 result = None
@@ -226,64 +226,64 @@ print(f"After discount: ${discounted_revenue:,.2f}")
 
 ## Errores Comunes
 
-1. **String concatenation with non-strings**: `"count: " + 5` raises TypeError
-2. **Losing precision with float**: `0.1 + 0.2 != 0.3` exactly (floating-point arithmetic)
-3. **Integer division in Python 3**: `5 / 2 = 2.5` (float), but `5 // 2 = 2` (integer)
-4. **Confusing `=` and `==`**: Assignment vs equality comparison
-5. **Forgetting that `input()` returns a string**: Always convert numeric input
+1. **Concatenación de strings con no-strings**: `"count: " + 5` genera TypeError
+2. **Pérdida de precisión con float**: `0.1 + 0.2 != 0.3` exactamente (aritmética de punto flotante)
+3. **División de enteros en Python 3**: `5 / 2 = 2.5` (float), pero `5 // 2 = 2` (entero)
+4. **Confundir `=` y `==`**: Asignación vs comparación de igualdad
+5. **Olvidar que `input()` devuelve un string**: Siempre convierte la entrada numérica
 
 ## Buenas Prácticas
 
-- Use `isinstance()` for type checking rather than `type() ==`
-- Convert types explicitly rather than relying on implicit conversion
-- Use `//` for integer division, `/` for float division
-- Use underscores in large numbers: `1_000_000` instead of `1000000`
-- Be aware of floating-point precision limitations
+- Usa `isinstance()` para verificar tipos en lugar de `type() ==`
+- Convierte tipos explícitamente en lugar de depender de la conversión implícita
+- Usa `//` para división entera, `/` para división float
+- Usa guiones bajos en números grandes: `1_000_000` en lugar de `1000000`
+- Ten en cuenta las limitaciones de precisión de punto flotante
 
 ## Resumen
 
-- Python has four primitive types: int, float, str, bool
-- Use `type()` to check a value's type
-- Type conversion uses functions named after the type: `int()`, `float()`, `str()`, `bool()`
-- Strings are immutable — they cannot be modified in place
-- `None` represents the absence of a value
-- Type errors are common and usually involve mixing strings with numbers
+- Python tiene cuatro tipos primitivos: int, float, str, bool
+- Usa `type()` para verificar el tipo de un valor
+- La conversión de tipo usa funciones nombradas según el tipo: `int()`, `float()`, `str()`, `bool()`
+- Los strings son inmutables — no pueden modificarse en el lugar
+- `None` representa la ausencia de un valor
+- Los errores de tipo son comunes y generalmente involucran mezclar strings con números
 
 ## Términos Clave
 
-- **int**: Integer type for whole numbers
-- **float**: Floating-point type for decimal numbers
-- **str**: String type for text
-- **bool**: Boolean type for True/False values
-- **Type conversion**: Changing a value from one type to another
-- **Immutable**: Cannot be changed after creation
-- **None**: Python's null value
-- **TypeError**: Exception raised when operating on incompatible types
+- **int**: Tipo entero para números enteros
+- **float**: Tipo de punto flotante para números decimales
+- **str**: Tipo cadena para texto
+- **bool**: Tipo booleano para valores True/False
+- **Conversión de tipo**: Cambiar un valor de un tipo a otro
+- **Inmutable**: No se puede cambiar después de la creación
+- **None**: Valor nulo de Python
+- **TypeError**: Excepción lanzada al operar con tipos incompatibles
 
 ## Ejercicios
 
 ### Nivel 1: Básico
 
-1. What type does `type(3.0)` return?
-2. What is the result of `int(7.9)` and why?
-3. What values convert to `False` when passed to `bool()`?
+1. ¿Qué tipo devuelve `type(3.0)`?
+2. ¿Cuál es el resultado de `int(7.9)` y por qué?
+3. ¿Qué valores se convierten a `False` cuando se pasan a `bool()`?
 
 ### Nivel 2: Implementación
 
-4. Write a function that takes a string like "3.14" and returns both the float and the integer part.
-5. Ask the user for two numbers, add them, and print the result. Handle the type conversion correctly.
+4. Escribe una función que reciba un string como "3.14" y devuelva tanto la parte float como la entera.
+5. Pide al usuario dos números, súmalos e imprime el resultado. Maneja la conversión de tipo correctamente.
 
 ### Nivel 3: Pensamiento Crítico
 
-6. Why does `0.1 + 0.2` not equal `0.3` in floating-point arithmetic? How would you compare floating-point numbers safely?
-7. When would you explicitly use `bool()` instead of relying on truthy/falsy values?
+6. ¿Por qué `0.1 + 0.2` no es igual a `0.3` en aritmética de punto flotante? ¿Cómo compararías números de punto flotante de forma segura?
+7. ¿Cuándo usarías explícitamente `bool()` en lugar de confiar en valores truthy/falsy?
 
 ## Desafío de Programación
 
 Escribe un programa que:
-1. Asks for the user's name (string), age (int), and salary (float)
-2. Asks if they are a student (convert answer to bool: "yes"/"no")
-3. Stores each value with the correct type
-4. Prints a summary: "[Name] is [age] years old, earns $[salary], student: [True/False]"
-5. Calculates and prints: "Salary after 10% raise: $[amount]"
-6. Handles type conversion errors gracefully
+1. Pida el nombre del usuario (string), edad (int) y salario (float)
+2. Pregunte si es estudiante (convierte la respuesta a bool: "sí"/"no")
+3. Almacene cada valor con el tipo correcto
+4. Imprima un resumen: "[Nombre] tiene [edad] años, gana $[salario], estudiante: [True/False]"
+5. Calcule e imprima: "Salario después de aumento del 10%: $[cantidad]"
+6. Maneje los errores de conversión de tipo adecuadamente

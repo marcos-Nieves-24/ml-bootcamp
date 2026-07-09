@@ -1,4 +1,4 @@
-# Data Types — Slide Outline
+# Tipos de Datos — Guión de Diapositivas
 
 ## Diapositiva 1: Title Slide
 - Data Types in Python

@@ -1,6 +1,6 @@
 # Lab: NumPy Fundamentals
 
-## Objective
+## Objetivo
 
 Practice creating arrays, indexing, slicing, broadcasting, and universal functions.
 

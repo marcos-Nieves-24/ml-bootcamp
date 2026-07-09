@@ -1,6 +1,6 @@
 # Lab: Getting Started with Jupyter Notebook
 
-## Objective
+## Objetivo
 
 Launch Jupyter, create a notebook with code and markdown cells, and practice keyboard shortcuts.
 

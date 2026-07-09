@@ -1,4 +1,4 @@
-# Assignment: Clinical Decision Support System
+# Tarea: Soporte de Decisiones Clínicas System
 
 ## Objetivos
 

@@ -1,8 +1,8 @@
-# Lab: Data Types in Practice
+# Laboratorio: Tipos de Datos en la Práctica
 
-## Objective
+## Objetivo
 
-Practice identifying, converting, and working with Python's primitive data types.
+Practicar la identificación, conversión y trabajo con los tipos de datos primitivos de Python.
 
 ## Duración
 

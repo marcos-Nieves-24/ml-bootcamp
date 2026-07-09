@@ -1,6 +1,6 @@
 # Lab: Dictionaries in Practice
 
-## Objective
+## Objetivo
 
 Practice creating, accessing, and manipulating dictionaries.
 

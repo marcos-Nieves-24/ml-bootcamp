@@ -1,6 +1,6 @@
 # Lab: Working with Lists
 
-## Objective
+## Objetivo
 
 Practice creating, accessing, modifying, and comprehending lists.
 

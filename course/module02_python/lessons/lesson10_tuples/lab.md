@@ -1,6 +1,6 @@
 # Lab: Working with Tuples
 
-## Objective
+## Objetivo
 
 Practice creating tuples, unpacking, and understanding immutability.
 

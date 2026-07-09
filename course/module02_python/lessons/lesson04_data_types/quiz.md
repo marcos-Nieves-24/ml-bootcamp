@@ -1,4 +1,4 @@
-# Quiz: Data Types
+# Cuestionario: Tipos de Datos
 
 ## Opción Múltiple (5 questions)
 

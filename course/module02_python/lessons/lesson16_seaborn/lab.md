@@ -1,6 +1,6 @@
 # Lab: Statistical Visualization with Seaborn
 
-## Objective
+## Objetivo
 
 Practice creating Seaborn visualizations: box plots, violin plots, pairplots, heatmaps, and distribution plots.
 

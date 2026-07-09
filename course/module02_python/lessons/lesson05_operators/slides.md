@@ -1,4 +1,4 @@
-# Operators — Slide Outline
+# Operadores — Guión de Diapositivas
 
 ## Diapositiva 1: Title Slide
 - Operators in Python

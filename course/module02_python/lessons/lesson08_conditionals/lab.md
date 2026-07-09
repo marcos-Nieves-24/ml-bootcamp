@@ -1,6 +1,6 @@
 # Lab: Conditionals and Decision Making
 
-## Objective
+## Objetivo
 
 Practice if/elif/else, truthy/falsy, ternary expressions, and match statements.
 

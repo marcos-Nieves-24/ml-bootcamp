@@ -1,4 +1,4 @@
-# Conditionals — Slide Outline
+# Condicionales — Guión de Diapositivas
 
 ## Diapositiva 1: Title Slide
 - Conditionals in Python

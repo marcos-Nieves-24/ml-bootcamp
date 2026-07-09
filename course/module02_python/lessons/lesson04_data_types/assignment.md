@@ -1,4 +1,4 @@
-# Assignment: Type-Error Proofing
+# Tarea: Prevención de Errores de Tipo
 
 ## Objetivos
 

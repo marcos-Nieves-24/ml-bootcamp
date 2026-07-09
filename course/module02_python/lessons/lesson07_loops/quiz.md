@@ -1,4 +1,4 @@
-# Quiz: Loops
+# Cuestionario: Bucles
 
 ## Opción Múltiple (5 questions)
 
