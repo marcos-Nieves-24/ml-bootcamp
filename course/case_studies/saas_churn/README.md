@@ -1,53 +1,53 @@
-# Case Study 2: SaaS Customer Churn Prediction
+# Caso de Estudio 2: Predicción de Cancelación de Clientes SaaS
 
-## Overview
+## Descripción General
 
-Build a machine learning model to predict customer churn for a SaaS company. This end-to-end case study covers the complete ML pipeline from data loading to business recommendations, including a cost-benefit analysis of retention strategies.
+Construir un modelo de machine learning para predecir la cancelación de clientes (churn) de una empresa SaaS. Este caso de estudio integral cubre el pipeline completo de ML, desde la carga de datos hasta recomendaciones de negocio, incluyendo un análisis de costo-beneficio de estrategias de retención.
 
-## Learning Objectives
+## Objetivos de Aprendizaje
 
-By completing this case study, students will be able to:
+Al completar este caso de estudio, los estudiantes podrán:
 
-- Load and explore customer data from a SaaS business
-- Perform EDA to understand churn patterns and feature relationships
-- Preprocess categorical and numerical features for ML
-- Train and compare Logistic Regression, Random Forest, and Gradient Boosting classifiers
-- Evaluate models using accuracy, precision, recall, F1, and ROC AUC
-- Analyze feature importance for business insights
-- Translate model findings into actionable business recommendations
-- Perform a simple cost-benefit analysis for customer retention
+- Cargar y explorar datos de clientes de un negocio SaaS
+- Realizar EDA para comprender patrones de cancelación y relaciones entre características
+- Preprocesar características categóricas y numéricas para ML
+- Entrenar y comparar clasificadores de Regresión Logística, Random Forest y Gradient Boosting
+- Evaluar modelos usando exactitud, precisión, sensibilidad, F1 y ROC AUC
+- Analizar la importancia de características para obtener insights de negocio
+- Traducir hallazgos del modelo en recomendaciones de negocio accionables
+- Realizar un análisis simple de costo-beneficio para retención de clientes
 
-## Prerequisites
+## Prerrequisitos
 
-- Module 2: Python Fundamentals (pandas, numpy, matplotlib, seaborn)
-- Module 3: Statistics (descriptive statistics, distributions, correlation)
-- Module 4: Machine Learning (classification, ensemble methods, model evaluation)
+- Módulo 2: Fundamentos de Python (pandas, numpy, matplotlib, seaborn)
+- Módulo 3: Estadística (estadística descriptiva, distribuciones, correlación)
+- Módulo 4: Machine Learning (clasificación, métodos ensemble, evaluación de modelos)
 
-## Domain
+## Dominio
 
-**SaaS / Business Analytics** — Customer churn prediction for a subscription-based software company.
+**SaaS / Analítica de Negocios** — Predicción de cancelación de clientes para una empresa de software por suscripción.
 
 ## Dataset
 
-Synthetic dataset of 1,000 customers with features including tenure, monthly charges, contract type, usage statistics, support tickets, and churn status.
+Dataset sintético de 1,000 clientes con características que incluyen antigüedad, cargos mensuales, tipo de contrato, estadísticas de uso, tickets de soporte y estado de cancelación.
 
-## Key Concepts
+## Conceptos Clave
 
-- Customer churn modeling
-- Categorical feature encoding
-- Feature scaling
-- Ensemble methods (Random Forest, Gradient Boosting)
-- Model comparison and selection
-- Business ROI analysis
-- Data-driven decision making
+- Modelado de cancelación de clientes
+- Codificación de características categóricas
+- Escalado de características
+- Métodos ensemble (Random Forest, Gradient Boosting)
+- Comparación y selección de modelos
+- Análisis de ROI de negocio
+- Toma de decisiones basada en datos
 
-## Estimated Duration
+## Duración Estimada
 
-3–4 hours
+3–4 horas
 
-## Deliverables
+## Entregables
 
-1. Completed starter notebook
-2. Trained models with evaluation metrics
-3. Feature importance analysis
-4. Business recommendations report with cost-benefit analysis
+1. Notebook inicial completado
+2. Modelos entrenados con métricas de evaluación
+3. Análisis de importancia de características
+4. Informe de recomendaciones de negocio con análisis de costo-beneficio

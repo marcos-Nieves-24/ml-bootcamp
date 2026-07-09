@@ -1,6 +1,6 @@
 # Módulo 1: Introducción a la Inteligencia Artificial
 
-## Learning Goal
+## Objetivo de Aprendizaje
 
 Introducir la Inteligencia Artificial, su historia, paradigmas y aplicaciones.
 

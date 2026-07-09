@@ -1,10 +1,10 @@
 # biotech_diagnosis
 
-## Description
-Synthetic biotech diagnosis dataset for case studies. Gene expression profiles with binary disease diagnosis labels.
+## Descripción
+Dataset sintético de diagnóstico biotech para casos de estudio. Perfiles de expresión génica con etiquetas binarias de diagnóstico de enfermedades.
 
-## Source
-Generated synthetically for educational purposes.
+## Fuente
+Generado sintéticamente con fines educativos.
 
 ## Variables
 
@@ -26,5 +26,5 @@ Generated synthetically for educational purposes.
 - `gene_14` (float64)
 - `gene_15` (float64)
 
-## License
+## Licencia
 CC0-1.0

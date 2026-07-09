@@ -1,10 +1,10 @@
 # customer_churn
 
-## Description
-Synthetic customer churn dataset for SaaS analytics. Contains customer demographics, account information, and churn labels.
+## Descripción
+Dataset sintético de cancelación de clientes para analítica SaaS. Contiene datos demográficos de clientes, información de cuentas y etiquetas de cancelación.
 
-## Source
-Generated synthetically for educational purposes.
+## Fuente
+Generado sintéticamente con fines educativos.
 
 ## Variables
 
@@ -22,5 +22,5 @@ Generated synthetically for educational purposes.
 - `num_admin_tickets` (int64)
 - `churn` (int64)
 
-## License
+## Licencia
 CC0-1.0

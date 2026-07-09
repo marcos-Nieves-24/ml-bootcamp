@@ -1,10 +1,10 @@
 # clinical_trial
 
-## Description
-Synthetic clinical trial dataset for data analysis exercises. Patient demographics, treatment assignment, and outcomes.
+## Descripción
+Dataset sintético de ensayos clínicos para ejercicios de análisis de datos. Datos demográficos de pacientes, asignación de tratamientos y resultados.
 
-## Source
-Generated synthetically for educational purposes.
+## Fuente
+Generado sintéticamente con fines educativos.
 
 ## Variables
 
@@ -19,5 +19,5 @@ Generated synthetically for educational purposes.
 - `outcome_improvement` (float64)
 - `responder` (int64)
 
-## License
+## Licencia
 CC0-1.0

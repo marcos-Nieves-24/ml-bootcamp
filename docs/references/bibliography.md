@@ -1,6 +1,6 @@
-# Course Bibliography
+# Bibliografía del Curso
 
-## Core Textbooks
+## Libros de Texto Principales
 
 1. Russell, S., & Norvig, P. (2020). *Artificial Intelligence: A Modern Approach* (4th ed.). Pearson.
 
@@ -10,7 +10,7 @@
 
 4. VanderPlas, J. (2016). *Python Data Science Handbook*. O'Reilly Media.
 
-## Statistics
+## Estadística
 
 5. Wasserman, L. (2004). *All of Statistics: A Concise Course in Statistical Inference*. Springer.
 
@@ -24,7 +24,7 @@
 
 9. Bishop, C. M. (2006). *Pattern Recognition and Machine Learning*. Springer.
 
-## AI Ethics
+## Ética en IA
 
 10. O'Neil, C. (2016). *Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy*. Crown.
 
@@ -32,13 +32,13 @@
 
 12. Floridi, L., & Cowls, J. (2019). A Unified Framework of Five Principles for AI in Society. *Harvard Data Science Review*, 1(1).
 
-## Python & Data Science
+## Python y Ciencia de Datos
 
 13. McKinney, W. (2017). *Python for Data Analysis* (2nd ed.). O'Reilly Media.
 
 14. Downey, A. B. (2015). *Think Python* (2nd ed.). O'Reilly Media.
 
-## Papers and Articles
+## Artículos y Publicaciones
 
 15. LeCun, Y., Bengio, Y., & Hinton, G. (2015). Deep learning. *Nature*, 521(7553), 436-444.
 

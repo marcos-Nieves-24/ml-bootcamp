@@ -1,10 +1,10 @@
 # protein_solubility
 
-## Description
-Synthetic protein solubility dataset. Molecular descriptors and experimental solubility scores for protein engineering exercises.
+## Descripción
+Dataset sintético de solubilidad de proteínas. Descriptores moleculares y puntuaciones experimentales de solubilidad para ejercicios de ingeniería de proteínas.
 
-## Source
-Generated synthetically for educational purposes.
+## Fuente
+Generado sintéticamente con fines educativos.
 
 ## Variables
 
@@ -18,5 +18,5 @@ Generated synthetically for educational purposes.
 - `length` (int64)
 - `solubility` (float64)
 
-## License
+## Licencia
 CC0-1.0

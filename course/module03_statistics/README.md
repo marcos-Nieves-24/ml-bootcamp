@@ -1,39 +1,39 @@
 # Módulo 3: Estadística para Machine Learning
 
-## Learning Goal
+## Objetivo de Aprendizaje
 
 Desarrollar intuición estadística para Machine Learning.
 
 ## Lecciones
 
-### Descriptive Statistics
-- Mean, Median, Mode, Variance, Standard Deviation, Range, IQR
+### Estadística Descriptiva
+- Media, Mediana, Moda, Varianza, Desviación Estándar, Rango, RIQ
 
-### Data Distribution
-- Histograms, Density, Skewness, Kurtosis
+### Distribución de Datos
+- Histogramas, Densidad, Asimetría, Curtosis
 
-### Probability
-- Probability Fundamentals, Bayes Theorem, Random Variables
+### Probabilidad
+- Fundamentos de Probabilidad, Teorema de Bayes, Variables Aleatorias
 
-### Statistical Distributions
-- Bernoulli, Binomial, Poisson, Normal Distribution
+### Distribuciones Estadísticas
+- Bernoulli, Binomial, Poisson, Distribución Normal
 
-### Relationships
-- Covariance, Pearson Correlation, Spearman Correlation
+### Relaciones
+- Covarianza, Correlación de Pearson, Correlación de Spearman
 
-### Exploratory Data Analysis
-- Missing Values, Outliers, Visualization, Feature Exploration
+### Análisis Exploratorio de Datos
+- Valores Faltantes, Valores Atípicos, Visualización, Exploración de Características
 
-### Dimensionality Reduction
-- PCA, Explained Variance
+### Reducción de Dimensionalidad
+- PCA, Varianza Explicada
 
 ### Clustering
-- K-Means, Elbow Method, Silhouette Score
+- K-Means, Método del Codo, Puntuación de Silueta
 
-### Model Evaluation
-- Train/Test Split, Cross Validation, MAE, MSE, RMSE, R²
+### Evaluación de Modelos
+- División Train/Test, Validación Cruzada, MAE, MSE, RMSE, R²
 
-### Data Storytelling
+### Narración de Datos
 
 ## Prerrequisitos
 

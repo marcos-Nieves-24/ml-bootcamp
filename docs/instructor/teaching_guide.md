@@ -1,63 +1,63 @@
-# Instructor Teaching Guide
+# Guía de Enseñanza para Instructores
 
-## Course Overview
+## Descripción General del Curso
 
-This guide provides teaching notes for instructors delivering the "Machine Learning for Data Analysis and SaaS" course.
+Esta guía proporciona notas de enseñanza para instructores que imparten el curso "Machine Learning para Análisis de Datos y SaaS".
 
-## Weekly Schedule
+## Cronograma Semanal
 
-| Week | Module | Topic | Assignments |
-|------|--------|-------|-------------|
-| 1 | M1 | What is AI? History of AI | |
-| 2 | M1 | Types of AI, Paradigms, Applications | Quiz 1 |
-| 3 | M2 | Python Setup, Jupyter, Variables | Lab 1 |
-| 4 | M2 | Data Types, Functions, Loops | Assignment 1 |
-| 5 | M2 | Lists, Dicts, NumPy, Pandas | Quiz 2 |
-| 6 | M3 | Descriptive Stats, Distributions | Lab 2 |
-| 7 | M3 | Probability, Relationships, EDA | Assignment 2 |
-| 8 | M3 | PCA, Clustering, Model Eval | Midterm Exam |
-| 9 | M4 | ML Fundamentals, Regression | |
-| 10 | M4 | Classification, Decision Trees | Lab 3 |
-| 11 | M4 | Random Forest, Gradient Boosting | Assignment 3 |
-| 12 | M4 | K-Means, PCA, Model Interpretation | Quiz 3 |
-| 13 | M4 | Applications | Lab 4 |
-| 14 | M5 | Ethics, Bias, Privacy, Regulation | Quiz 4 |
-| 15 | — | Project Work | Project Check-in |
-| 16 | — | Final Exam, Project Presentations | Final Exam |
+| Semana | Módulo | Tema | Tareas |
+|--------|--------|------|--------|
+| 1 | M1 | ¿Qué es la IA? Historia de la IA | |
+| 2 | M1 | Tipos de IA, Paradigmas, Aplicaciones | Cuestionario 1 |
+| 3 | M2 | Configuración de Python, Jupyter, Variables | Laboratorio 1 |
+| 4 | M2 | Tipos de Datos, Funciones, Bucles | Tarea 1 |
+| 5 | M2 | Listas, Diccionarios, NumPy, Pandas | Cuestionario 2 |
+| 6 | M3 | Estadística Descriptiva, Distribuciones | Laboratorio 2 |
+| 7 | M3 | Probabilidad, Relaciones, EDA | Tarea 2 |
+| 8 | M3 | PCA, Clustering, Evaluación de Modelos | Examen Parcial |
+| 9 | M4 | Fundamentos de ML, Regresión | |
+| 10 | M4 | Clasificación, Árboles de Decisión | Laboratorio 3 |
+| 11 | M4 | Random Forest, Gradient Boosting | Tarea 3 |
+| 12 | M4 | K-Means, PCA, Interpretación de Modelos | Cuestionario 3 |
+| 13 | M4 | Aplicaciones | Laboratorio 4 |
+| 14 | M5 | Ética, Sesgo, Privacidad, Regulación | Cuestionario 4 |
+| 15 | — | Trabajo de Proyecto | Seguimiento de Proyecto |
+| 16 | — | Examen Final, Presentaciones de Proyectos | Examen Final |
 
-## Teaching Tips
+## Consejos de Enseñanza
 
-### Module 1 — AI Introduction
-- Use the AI timeline figure to show progression
-- Emphasize the "acting rationally" approach as the course focus
-- Discuss current AI applications students interact with daily
+### Módulo 1 — Introducción a la IA
+- Usa la línea de tiempo de IA para mostrar la progresión
+- Enfatiza el enfoque de "actuar racionalmente" como el eje del curso
+- Discute aplicaciones actuales de IA que los estudiantes usan a diario
 
-### Module 2 — Python
-- Students without programming experience need extra support in weeks 3-4
-- Use the Jupyter notebooks for live coding during class
-- Pair programming recommended for labs
+### Módulo 2 — Python
+- Los estudiantes sin experiencia en programación necesitan apoyo adicional en las semanas 3-4
+- Usa los notebooks de Jupyter para codificar en vivo durante la clase
+- Se recomienda programación en pareja para los laboratorios
 
-### Module 3 — Statistics
-- Focus on intuition before formulas
-- Use real datasets for EDA demonstrations
-- Connect statistical concepts to ML applications
+### Módulo 3 — Estadística
+- Enfócate en la intuición antes que en las fórmulas
+- Usa datasets reales para demostraciones de EDA
+- Conecta los conceptos estadísticos con aplicaciones de ML
 
-### Module 4 — Machine Learning
-- Each algorithm should follow: intuition → math → implementation
-- Use visualization to explain model decisions
-- Compare algorithms on the same dataset
+### Módulo 4 — Machine Learning
+- Cada algoritmo debe seguir: intuición → matemática → implementación
+- Usa visualizaciones para explicar las decisiones del modelo
+- Compara algoritmos sobre el mismo dataset
 
-### Module 5 — Ethics
-- Use case studies to drive discussion
-- Encourage debate on ethical frameworks
-- Connect to current events in AI
+### Módulo 5 — Ética
+- Usa casos de estudio para impulsar la discusión
+- Fomenta el debate sobre marcos éticos
+- Conecta con eventos actuales en IA
 
-## Assessment Schedule
+## Cronograma de Evaluación
 
-See `../grading/policies.md` for detailed assessment criteria.
+Ver `../grading/policies.md` para los criterios detallados de evaluación.
 
-## Resources
+## Recursos
 
-- All lesson materials in `course/module*/lessons/`
-- Datasets in `datasets/synthetic/`
-- Solution notebooks available upon request
+- Todos los materiales de las lecciones en `course/module*/lessons/`
+- Datasets en `datasets/synthetic/`
+- Notebooks con soluciones disponibles bajo petición

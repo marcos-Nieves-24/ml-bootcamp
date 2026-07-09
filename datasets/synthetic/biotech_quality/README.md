@@ -1,10 +1,10 @@
 # biotech_quality
 
-## Description
-Synthetic biotech manufacturing quality control dataset. Process parameters and quality outcomes for batch production.
+## Descripción
+Dataset sintético de control de calidad en manufactura biotech. Parámetros de proceso y resultados de calidad para producción por lotes.
 
-## Source
-Generated synthetically for educational purposes.
+## Fuente
+Generado sintéticamente con fines educativos.
 
 ## Variables
 
@@ -19,5 +19,5 @@ Generated synthetically for educational purposes.
 - `quality_score` (float64)
 - `pass_quality` (int64)
 
-## License
+## Licencia
 CC0-1.0

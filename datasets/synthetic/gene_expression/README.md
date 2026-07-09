@@ -1,10 +1,10 @@
 # gene_expression
 
-## Description
-Synthetic gene expression dataset for ML exercises. 200 patients, 20 genes, binary condition (control/treatment).
+## Descripción
+Dataset sintético de expresión génica para ejercicios de ML. 200 pacientes, 20 genes, condición binaria (control/tratamiento).
 
-## Source
-Generated synthetically for educational purposes. Modeled after typical differential expression analysis datasets.
+## Fuente
+Generado sintéticamente con fines educativos. Modelado a partir de datasets típicos de análisis de expresión diferencial.
 
 ## Variables
 
@@ -31,5 +31,5 @@ Generated synthetically for educational purposes. Modeled after typical differen
 - `gene_19` (float64)
 - `gene_20` (float64)
 
-## License
+## Licencia
 CC0-1.0

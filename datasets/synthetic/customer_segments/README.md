@@ -1,10 +1,10 @@
 # customer_segments
 
-## Description
-Synthetic customer segmentation dataset for clustering exercises. Contains demographic and spending features.
+## Descripción
+Dataset sintético de segmentación de clientes para ejercicios de clustering. Contiene características demográficas y de gasto.
 
-## Source
-Generated synthetically for educational purposes.
+## Fuente
+Generado sintéticamente con fines educativos.
 
 ## Variables
 
@@ -14,5 +14,5 @@ Generated synthetically for educational purposes.
 - `membership_years` (float64)
 - `num_purchases` (int64)
 
-## License
+## Licencia
 CC0-1.0

@@ -1,12 +1,12 @@
 ---
-title: Machine Learning for Data Analysis and SaaS
+title: Machine Learning para Análisis de Datos y SaaS
 institution: Universidad
 semester: 2026-2
 credits: 4
 duration: 16 semanas
 ---
 
-# Syllabus
+# Programa del Curso
 
 ## Descripción del Curso
 
@@ -51,7 +51,7 @@ Al finalizar el curso, los estudiantes podrán:
 |------------|------|
 | Quizzes (5) | 15% |
 | Laboratorios (5) | 20% |
-| Assignments (3) | 20% |
+| Tareas (3) | 20% |
 | Examen Parcial | 15% |
 | Examen Final | 15% |
 | Proyecto Final | 15% |

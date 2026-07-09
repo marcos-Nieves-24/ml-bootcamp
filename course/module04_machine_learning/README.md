@@ -1,56 +1,56 @@
-# Module 4: Introduction to Machine Learning
+# Módulo 4: Introducción al Machine Learning
 
-## Learning Goal
+## Objetivo de Aprendizaje
 
-Teach the complete Machine Learning workflow — from data preparation through model evaluation and interpretation — with applications in biotechnology and SaaS.
+Enseñar el flujo de trabajo completo de Machine Learning — desde la preparación de datos hasta la evaluación e interpretación de modelos — con aplicaciones en biotecnología y SaaS.
 
-## Subunits
+## Subunidades
 
-| Subunit | Lessons | Topics |
-|---------|---------|--------|
-| 01 Supervised Learning | L1–L5 | ML Fundamentals, Linear Regression, Classification, Decision Trees, Random Forest |
-| 02 Unsupervised Learning | L6–L7 | K-Means Clustering, PCA |
-| 03 Advanced Topics | L8–L9 | Gradient Boosting, Model Interpretation |
-| 04 Applications | L10 | End-to-end pipelines in Biotech and SaaS |
+| Subunidad | Lecciones | Temas |
+|-----------|-----------|-------|
+| 01 Aprendizaje Supervisado | L1–L5 | Fundamentos de ML, Regresión Lineal, Clasificación, Árboles de Decisión, Random Forest |
+| 02 Aprendizaje No Supervisado | L6–L7 | Clustering K-Means, PCA |
+| 03 Temas Avanzados | L8–L9 | Gradient Boosting, Interpretación de Modelos |
+| 04 Aplicaciones | L10 | Pipelines completos en Biotecnología y SaaS |
 
-## Prerequisites
+## Prerrequisitos
 
-- Module 3: Statistics for Machine Learning
-- Python programming (NumPy, Pandas, Matplotlib)
+- Módulo 3: Estadística para Machine Learning
+- Programación en Python (NumPy, Pandas, Matplotlib)
 
-## Lessons
+## Lecciones
 
-| # | Lesson | Duration | Contents |
-|---|--------|----------|----------|
-| L1 | ML Fundamentals | 75 min | Features, labels, training, prediction, generalization, overfitting, bias-variance tradeoff |
-| L2 | Linear Regression | 90 min | OLS, gradient descent, MSE, R², sklearn |
-| L3 | Classification | 90 min | Logistic regression, confusion matrix, precision/recall, ROC AUC |
-| L4 | Decision Trees | 75 min | Gini, entropy, pruning, tree visualization |
-| L5 | Random Forest | 75 min | Bagging, ensemble, feature importance |
-| L6 | K-Means Clustering | 75 min | Elbow method, silhouette score |
-| L7 | PCA | 75 min | Eigenvalues, explained variance, 2D visualization |
-| L8 | Gradient Boosting | 90 min | Boosting, XGBoost/LightGBM intro |
-| L9 | Model Interpretation | 75 min | Permutation importance, partial dependence, SHAP/LIME |
-| L10 | Applications | 90 min | Biotech quality prediction, SaaS segmentation |
+| # | Lección | Duración | Contenido |
+|---|---------|----------|-----------|
+| L1 | Fundamentos de ML | 75 min | Características, etiquetas, entrenamiento, predicción, generalización, overfitting, equilibrio sesgo-varianza |
+| L2 | Regresión Lineal | 90 min | OLS, descenso por gradiente, MSE, R², sklearn |
+| L3 | Clasificación | 90 min | Regresión logística, matriz de confusión, precisión/recall, ROC AUC |
+| L4 | Árboles de Decisión | 75 min | Gini, entropía, poda, visualización de árboles |
+| L5 | Random Forest | 75 min | Bagging, ensemble, importancia de características |
+| L6 | Clustering K-Means | 75 min | Método del codo, puntuación de silueta |
+| L7 | PCA | 75 min | Valores propios, varianza explicada, visualización 2D |
+| L8 | Gradient Boosting | 90 min | Boosting, introducción a XGBoost/LightGBM |
+| L9 | Interpretación de Modelos | 75 min | Importancia por permutación, dependencia parcial, SHAP/LIME |
+| L10 | Aplicaciones | 90 min | Predicción de calidad en Biotecnología, segmentación SaaS |
 
-## Deliverables per lesson
+## Entregables por lección
 
-- `lesson.md` — Full lecture
-- `notebook.ipynb` — Jupyter notebook
-- `quiz.md` — 5 MC + 2 short-answer + 1 coding question
-- `lab.md` — Practical lab activity
-- `assignment.md` — Homework with rubric
-- `slides.md` — Slide outline
-- `references.bib` — APA 7 bibliography
+- `lesson.md` — Clase completa
+- `notebook.ipynb` — Notebook de Jupyter
+- `quiz.md` — 5 preguntas de opción múltiple + 2 de respuesta breve + 1 de código
+- `lab.md` — Actividad práctica de laboratorio
+- `assignment.md` — Tarea con rúbrica
+- `slides.md` — Esquema de diapositivas
+- `references.bib` — Bibliografía APA 7
 
-## Software requirements
+## Requisitos de software
 
 - Python 3.12+
 - numpy, pandas, matplotlib, seaborn, scikit-learn
-- (Optional for L8) xgboost, lightgbm
-- (Optional for L9) shap, lime
+- (Opcional para L8) xgboost, lightgbm
+- (Opcional para L9) shap, lime
 
-## Core references
+## Referencias principales
 
 - Géron (2019). *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow*. O'Reilly.
 - James et al. (2021). *An Introduction to Statistical Learning*. Springer.

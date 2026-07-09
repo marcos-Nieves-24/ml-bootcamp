@@ -1,43 +1,43 @@
-# Module 5: Ethics in Artificial Intelligence
+# Módulo 5: Ética en Inteligencia Artificial
 
-## Learning Goal
+## Objetivo de Aprendizaje
 
-Understand the ethical challenges, risks, and responsibilities in the development and deployment of AI systems. Analyze real-world cases of algorithmic bias, privacy violations, and regulatory frameworks.
+Comprender los desafíos éticos, riesgos y responsabilidades en el desarrollo e implementación de sistemas de IA. Analizar casos reales de sesgo algorítmico, violaciones de privacidad y marcos regulatorios.
 
-## Lessons
+## Lecciones
 
-| # | Lesson | Duration | Prerequisites |
-|---|--------|----------|--------------|
-| 1 | Introduction to AI Ethics | 60 min | Module 4 |
-| 2 | Bias and Fairness | 75 min | L1 |
-| 3 | Transparency and Explainability | 60 min | L1 |
-| 4 | Privacy and Data Protection | 60 min | L1 |
-| 5 | Social Impact of AI | 60 min | L1 |
-| 6 | Regulation and Governance | 60 min | L1 |
-| 7 | Case Studies in Health and SaaS | 75 min | L1–L6 |
+| # | Lección | Duración | Prerrequisitos |
+|---|---------|----------|----------------|
+| 1 | Introducción a la Ética en IA | 60 min | Módulo 4 |
+| 2 | Sesgo y Equidad | 75 min | L1 |
+| 3 | Transparencia y Explicabilidad | 60 min | L1 |
+| 4 | Privacidad y Protección de Datos | 60 min | L1 |
+| 5 | Impacto Social de la IA | 60 min | L1 |
+| 6 | Regulación y Gobernanza | 60 min | L1 |
+| 7 | Casos de Estudio en Salud y SaaS | 75 min | L1–L6 |
 
-## Prerequisites
+## Prerrequisitos
 
-- Module 4: Introduction to Machine Learning
-- Basic Python programming (pandas, sklearn)
+- Módulo 4: Introducción al Machine Learning
+- Programación básica en Python (pandas, sklearn)
 
-## Key Topics
+## Temas Clave
 
-- Ethical principles (beneficence, non-maleficence, autonomy, justice, explicability)
-- Algorithmic bias and fairness metrics
-- Transparency, explainability, and interpretability
-- Data privacy, GDPR, and differential privacy
-- Social impact, job displacement, and AI safety
-- Regulatory frameworks (EU AI Act)
-- Real-world case studies in healthcare and SaaS
+- Principios éticos (beneficencia, no maleficencia, autonomía, justicia, explicabilidad)
+- Sesgo algorítmico y métricas de equidad
+- Transparencia, explicabilidad e interpretabilidad
+- Privacidad de datos, GDPR y privacidad diferencial
+- Impacto social, desplazamiento laboral y seguridad de la IA
+- Marcos regulatorios (EU AI Act)
+- Casos de estudio del mundo real en salud y SaaS
 
-## Deliverables
+## Entregables
 
-- 7 lesson documents
+- 7 documentos de lecciones
 - 7 notebooks
-- 7 quizzes
-- 7 labs
-- 7 assignments
-- 7 slide decks
-- 7 reference files
-- 1 module-level notebook
+- 7 cuestionarios
+- 7 laboratorios
+- 7 tareas
+- 7 presentaciones de diapositivas
+- 7 archivos de referencia
+- 1 notebook a nivel de módulo

@@ -1,51 +1,51 @@
-# Case Study 1: Disease Diagnosis from Gene Expression Data
+# Caso de Estudio 1: Diagnóstico de Enfermedades a partir de Datos de Expresión Génica
 
-## Overview
+## Descripción General
 
-Build a machine learning model to diagnose a genetic disease using synthetic gene expression data. This end-to-end case study covers the complete ML pipeline from data loading to biological interpretation.
+Construir un modelo de machine learning para diagnosticar una enfermedad genética utilizando datos sintéticos de expresión génica. Este caso de estudio integral cubre el pipeline completo de ML, desde la carga de datos hasta la interpretación biológica.
 
-## Learning Objectives
+## Objetivos de Aprendizaje
 
-By completing this case study, students will be able to:
+Al completar este caso de estudio, los estudiantes podrán:
 
-- Load and explore gene expression data using pandas
-- Perform exploratory data analysis with visualizations
-- Select informative genes based on variance
-- Train and evaluate Logistic Regression and Random Forest classifiers
-- Compare models using accuracy, precision, recall, F1-score, and ROC AUC
-- Interpret feature importance in a biological context
-- Communicate findings in a structured report
+- Cargar y explorar datos de expresión génica usando pandas
+- Realizar análisis exploratorio de datos con visualizaciones
+- Seleccionar genes informativos basados en varianza
+- Entrenar y evaluar clasificadores de Regresión Logística y Random Forest
+- Comparar modelos usando exactitud, precisión, sensibilidad, puntuación F1 y ROC AUC
+- Interpretar la importancia de características en un contexto biológico
+- Comunicar hallazgos en un informe estructurado
 
-## Prerequisites
+## Prerrequisitos
 
-- Module 2: Python Fundamentals (pandas, numpy, matplotlib)
-- Module 3: Statistics (descriptive statistics, distributions, correlation)
-- Module 4: Machine Learning (classification, model evaluation)
+- Módulo 2: Fundamentos de Python (pandas, numpy, matplotlib)
+- Módulo 3: Estadística (estadística descriptiva, distribuciones, correlación)
+- Módulo 4: Machine Learning (clasificación, evaluación de modelos)
 
-## Domain
+## Dominio
 
-**Biotechnology / Bioinformatics** — Gene expression analysis for disease diagnosis.
+**Biotecnología / Bioinformática** — Análisis de expresión génica para diagnóstico de enfermedades.
 
 ## Dataset
 
-Synthetic gene expression data for 100 patients (50 healthy, 50 diseased) across 20 genes. The dataset simulates real microarray expression data with technical noise and biologically meaningful differential expression.
+Datos sintéticos de expresión génica para 100 pacientes (50 sanos, 50 enfermos) en 20 genes. El dataset simula datos reales de expresión de microarrays con ruido técnico y expresión diferencial biológicamente significativa.
 
-## Key Concepts
+## Conceptos Clave
 
-- Gene expression profiling
-- Dimensionality reduction for feature selection
-- Binary classification
-- ROC curve analysis
-- Feature importance in biological models
-- Model interpretation for clinical decision support
+- Perfil de expresión génica
+- Reducción de dimensionalidad para selección de características
+- Clasificación binaria
+- Análisis de curva ROC
+- Importancia de características en modelos biológicos
+- Interpretación de modelos para apoyo a decisiones clínicas
 
-## Estimated Duration
+## Duración Estimada
 
-3–4 hours
+3–4 horas
 
-## Deliverables
+## Entregables
 
-1. Completed starter notebook
-2. Trained models with evaluation metrics
-3. Feature importance analysis
-4. Biological interpretation report
+1. Notebook inicial completado
+2. Modelos entrenados con métricas de evaluación
+3. Análisis de importancia de características
+4. Informe de interpretación biológica

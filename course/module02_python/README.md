@@ -1,6 +1,6 @@
 # Módulo 2: Fundamentos de Programación en Python
 
-## Learning Goal
+## Objetivo de Aprendizaje
 
 Enseñar la programación en Python requerida para Machine Learning.
 
@@ -23,13 +23,13 @@ Enseñar la programación en Python requerida para Machine Learning.
 15. Matplotlib
 16. Seaborn
 
-## Deliverables
+## Entregables
 
-- Notebook-first lessons
-- Coding exercises
-- Mini-projects
-- Labs
-- Quizzes
+- Lecciones basadas en notebooks
+- Ejercicios de programación
+- Mini-proyectos
+- Laboratorios
+- Cuestionarios
 
 ## Prerrequisitos
 

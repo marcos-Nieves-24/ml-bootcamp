@@ -1,10 +1,10 @@
 # saas_metrics
 
-## Description
-Synthetic SaaS metrics dataset for time series analysis and data storytelling. Monthly KPIs for a fictional SaaS company.
+## Descripción
+Dataset sintético de métricas SaaS para análisis de series temporales y narración de datos. KPIs mensuales de una empresa SaaS ficticia.
 
-## Source
-Generated synthetically for educational purposes.
+## Fuente
+Generado sintéticamente con fines educativos.
 
 ## Variables
 
@@ -19,5 +19,5 @@ Generated synthetically for educational purposes.
 - `churn_rate_pct` (float64)
 - `net_new_users` (int64)
 
-## License
+## Licencia
 CC0-1.0

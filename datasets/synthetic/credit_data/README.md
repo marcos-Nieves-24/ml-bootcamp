@@ -1,10 +1,10 @@
 # credit_data
 
-## Description
-Synthetic credit application dataset for ethics and fairness analysis. Includes demographic attributes for bias detection exercises.
+## Descripción
+Dataset sintético de solicitudes de crédito para análisis de ética y equidad. Incluye atributos demográficos para ejercicios de detección de sesgos.
 
-## Source
-Generated synthetically for educational purposes. Inspired by UCI Credit Approval dataset structure.
+## Fuente
+Generado sintéticamente con fines educativos. Inspirado en la estructura del dataset UCI Credit Approval.
 
 ## Variables
 
@@ -22,5 +22,5 @@ Generated synthetically for educational purposes. Inspired by UCI Credit Approva
 - `gender` (str)
 - `default` (int64)
 
-## License
+## Licencia
 CC0-1.0
