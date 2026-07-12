@@ -1,29 +1,12 @@
-export default function DashboardPage() {
-  const mockCards = [
-    {
-      title: "Experiencia Actual",
-      description: "Has completado 3 de 8 módulos del plan de aprendizaje",
-      metric: "37.5%",
-      icon: "📈",
-      color: "from-blue-500 to-cyan-500"
-    },
-    {
-      title: "Misión Actual",
-      description: "Completar módulo 'Introducción al Machine Learning' y realizar laboratorio",
-      progress: 70,
-      icon: "🎯",
-      color: "from-purple-500 to-pink-500"
-    },
-    {
-      title: "Nivel XP",
-      description: "Nivel 2 - Aprendiz Activo. 1500 puntos XP ganados",
-      points: 1500,
-      level: 2,
-      icon: "⭐",
-      color: "from-orange-500 to-red-500"
-    }
-  ]
+import type { Metadata } from "next"
+import { dashboardCards } from "@/lib/data"
 
+export const metadata: Metadata = {
+  title: "Dashboard",
+  description: "Panel de control con métricas de aprendizaje y progreso en ML Bootcamp.",
+}
+
+export default function DashboardPage() {
   return (
     <div className="space-y-8">
       {/* Header */}
@@ -33,23 +16,23 @@ export default function DashboardPage() {
       </div>
 
       {/* Mock Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {mockCards.map((card, index) => (
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6" role="list">
+        {dashboardCards.map((card, index) => (
           <div
             key={index}
             className="bg-gray-800 rounded-lg border border-gray-700 p-6 hover:border-gray-600 transition-all"
+            role="listitem"
           >
-            <div className={`w-12 h-12 rounded-lg bg-gradient-to-r ${card.color} mb-4 flex items-center justify-center text-white text-xl`}
->
+            <div className={`w-12 h-12 rounded-lg bg-gradient-to-r ${card.color} mb-4 flex items-center justify-center text-white text-xl`} aria-hidden="true">
               {card.icon}
             </div>
-            <h3 className="text-lg font-semibold mb-2">{card.title}</h3>
+            <h2 className="text-lg font-semibold mb-2">{card.title}</h2>
             <p className="text-gray-300 text-sm mb-3">{card.description}</p>
             {card.metric && (
-              <div className="text-2xl font-bold text-blue-400">{card.metric}</div>
+              <div className="text-2xl font-bold text-blue-400" aria-label={`Métrica: ${card.metric}`}>{card.metric}</div>
             )}
-            {card.progress && (
-              <div className="mt-3">
+            {card.progress !== undefined && (
+              <div className="mt-3" role="progressbar" aria-valuenow={card.progress} aria-valuemin={0} aria-valuemax={100} aria-label={`${card.title}: ${card.progress}% completado`}>
                 <div className="flex justify-between text-sm mb-1">
                   <span className="text-gray-400">Progreso</span>
                   <span className="text-blue-400">{card.progress}%</span>
@@ -62,7 +45,7 @@ export default function DashboardPage() {
                 </div>
               </div>
             )}
-            {card.points && (
+            {card.points !== undefined && (
               <div className="mt-2 text-sm text-gray-400">
                 <span className="text-yellow-400">📍 Nivel {card.level}</span> • {card.points} XP
               </div>

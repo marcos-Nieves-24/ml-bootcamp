@@ -1,3 +1,22 @@
+import type { Metadata } from "next"
+
+const siteName = "ML Bootcamp Platform"
+const siteDescription = "Transformando aprendizaje estático en experiencia interactiva. Cursos de Machine Learning y Data Science."
+
+export const metadata: Metadata = {
+  title: {
+    default: siteName,
+    template: `%s · ${siteName}`,
+  },
+  description: siteDescription,
+  openGraph: {
+    siteName,
+    title: siteName,
+    description: siteDescription,
+    type: "website",
+  },
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -7,7 +26,7 @@ export default function RootLayout({
     <html lang="es">
       <body className="min-h-screen bg-gray-900 text-white">
         {/* Navigation Bar */}
-        <nav className="bg-black/80 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+        <nav className="bg-black/80 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50" aria-label="Navegación principal">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
               <div className="flex items-center">
@@ -16,10 +35,10 @@ export default function RootLayout({
                 </h1>
               </div>
               <div className="flex items-center space-x-8">
-                <a href="/dashboard" className="text-gray-300 hover:text-white transition-colors">Dashboard</a>
-                <a href="/instituto" className="text-gray-300 hover:text-white transition-colors">Instituto</a>
-                <a href="/laboratorio" className="text-gray-300 hover:text-white transition-colors">Laboratorio</a>
-                <a href="/taller" className="text-gray-300 hover:text-white transition-colors">Taller</a>
+                <a href="/dashboard" className="text-gray-300 hover:text-white transition-colors" aria-label="Ir al Dashboard">Dashboard</a>
+                <a href="/instituto" className="text-gray-300 hover:text-white transition-colors" aria-label="Ir al Instituto">Instituto</a>
+                <a href="/laboratorio" className="text-gray-300 hover:text-white transition-colors" aria-label="Ir al Laboratorio">Laboratorio</a>
+                <a href="/taller" className="text-gray-300 hover:text-white transition-colors" aria-label="Ir al Taller">Taller</a>
               </div>
             </div>
           </div>

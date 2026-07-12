@@ -1,32 +1,26 @@
 FROM node:20-alpine AS base
+WORKDIR /app
+
+# Copy only package files first to leverage Docker layer caching
+COPY package*.json ./
+COPY tsconfig.json ./
+COPY next.config.ts ./
 
 # Development stage
 FROM base AS development
-WORKDIR /app
-
-# Install dependencies
 RUN --mount=type=cache,target=/root/.npm \
     npm ci
 
-# Copy application source
+# Copy the rest of the source
 COPY . .
-
-# Global node_modules not needed for alpine
-RUN rm -rf node_modules/.bin
-
-# Build application
-RUN npm run build
-
-# Development command
 CMD ["npm", "run", "dev"]
 
 # Production stage
 FROM base AS production
-WORKDIR /app
-
 RUN --mount=type=cache,target=/root/.npm \
     npm ci --omit=dev
 
+# Copy the rest of the source
 COPY . .
 RUN npm run build
 
