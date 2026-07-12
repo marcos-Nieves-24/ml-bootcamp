@@ -45,11 +45,11 @@ jobs:
               <h1>Machine Learning for Data Analysis and SaaS</h1>
               <p>Course documentation site. Content coming soon.</p>
               <ul>
-                <li><a href="course/module01_ai/">Module 1: Introduction to AI</a></li>
-                <li><a href="course/module02_python/">Module 2: Python Programming Fundamentals</a></li>
-                <li><a href="course/module03_statistics/">Module 3: Statistics for Machine Learning</a></li>
-                <li><a href="course/module04_machine_learning/">Module 4: Introduction to Machine Learning</a></li>
-                <li><a href="course/module05_ethics/">Module 5: Ethics in Artificial Intelligence</a></li>
+                <li><a href="content/module01_ai/">Module 1: Introduction to AI</a></li>
+                <li><a href="content/module02_python/">Module 2: Python Programming Fundamentals</a></li>
+                <li><a href="content/module03_statistics/">Module 3: Statistics for Machine Learning</a></li>
+                <li><a href="content/module04_machine_learning/">Module 4: Introduction to Machine Learning</a></li>
+                <li><a href="content/module05_ethics/">Module 5: Ethics in Artificial Intelligence</a></li>
               </ul>
             </body>
             </html>

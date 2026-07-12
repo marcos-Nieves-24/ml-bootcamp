@@ -5,7 +5,7 @@ import nbformat
 import subprocess
 import sys
 
-COURSE_DIR = Path(__file__).resolve().parent.parent / "course"
+CONTENT_DIR = Path(__file__).resolve().parent.parent / "content"
 NOTEBOOK_SUBDIRS = ["notebooks", "labs", "assignments"]
 
 
@@ -18,7 +18,7 @@ def _read_notebook(nb_path):
 
 def _get_notebooks():
     notebooks = []
-    for module_dir in sorted(COURSE_DIR.glob("module*")):
+    for module_dir in sorted(CONTENT_DIR.glob("module*")):
         if not module_dir.is_dir():
             continue
         for subdir in NOTEBOOK_SUBDIRS:
@@ -45,7 +45,7 @@ def test_notebook_files_exist():
 
 
 def test_each_lesson_has_notebook():
-    for module_dir in sorted(COURSE_DIR.glob("module*")):
+    for module_dir in sorted(CONTENT_DIR.glob("module*")):
         if not module_dir.is_dir():
             continue
         lessons_dir = module_dir / "lessons"
@@ -65,7 +65,7 @@ def test_notebooks_are_valid_json():
             with open(nb_path, encoding="utf-8") as f:
                 json.load(f)
         except (json.JSONDecodeError, UnicodeDecodeError) as e:
-            errors.append(f"{nb_path.relative_to(COURSE_DIR.parent)}: {e}")
+            errors.append(f"{nb_path.relative_to(CONTENT_DIR.parent)}: {e}")
     if errors:
         pytest.fail(f"Invalid JSON in {len(errors)} notebooks:\n" + "\n".join(errors))
 
@@ -76,7 +76,7 @@ def test_notebooks_are_valid_nbformat():
         try:
             _read_notebook(nb_path)
         except Exception as e:
-            errors.append(f"{nb_path.relative_to(COURSE_DIR.parent)}: {e}")
+            errors.append(f"{nb_path.relative_to(CONTENT_DIR.parent)}: {e}")
     if errors:
         pytest.fail(f"Invalid notebook format in {len(errors)} notebooks:\n" + "\n".join(errors))
 
@@ -88,7 +88,7 @@ def test_notebook_has_markdown_cells():
             nb = _read_notebook(nb_path)
             md_cells = [c for c in nb.cells if c.cell_type == "markdown"]
             if len(md_cells) < 1:
-                errors.append(str(nb_path.relative_to(COURSE_DIR.parent)))
+                errors.append(str(nb_path.relative_to(CONTENT_DIR.parent)))
         except Exception:
             continue
     if errors:
@@ -104,7 +104,7 @@ def test_lesson_notebooks_have_code_cells():
             nb = _read_notebook(nb_path)
             code_cells = [c for c in nb.cells if c.cell_type == "code"]
             if len(code_cells) < 1:
-                errors.append(str(nb_path.relative_to(COURSE_DIR.parent)))
+                errors.append(str(nb_path.relative_to(CONTENT_DIR.parent)))
         except Exception:
             continue
     if errors:
@@ -117,7 +117,7 @@ def test_notebook_starts_with_markdown():
         try:
             nb = _read_notebook(nb_path)
             if nb.cells[0].cell_type != "markdown":
-                errors.append(str(nb_path.relative_to(COURSE_DIR.parent)))
+                errors.append(str(nb_path.relative_to(CONTENT_DIR.parent)))
         except Exception:
             continue
     if errors:
@@ -138,7 +138,7 @@ def test_lesson_notebooks_have_imports():
         )
         has_import = "import " in code_text or "from " in code_text
         if not has_import:
-            errors.append(str(nb_path.relative_to(COURSE_DIR.parent)))
+            errors.append(str(nb_path.relative_to(CONTENT_DIR.parent)))
     if errors:
         pytest.fail(f"Lesson notebooks without imports:\n" + "\n".join(errors))
 
@@ -155,7 +155,7 @@ def test_lesson_notebooks_have_exercises():
             continue
         text = " ".join(c.source.lower() for c in nb.cells)
         if not any(kw in text for kw in exercise_keywords):
-            errors.append(str(nb_path.relative_to(COURSE_DIR.parent)))
+            errors.append(str(nb_path.relative_to(CONTENT_DIR.parent)))
     if errors:
         pytest.fail(f"Lesson notebooks without exercise sections:\n" + "\n".join(errors))
 
@@ -177,6 +177,6 @@ def test_notebook_execution_with_pytest_notebook():
             capture_output=True, text=True, timeout=120,
         )
         if result.returncode != 0:
-            errors.append(f"{nb_path.relative_to(COURSE_DIR.parent)}: {result.stderr[:200]}")
+            errors.append(f"{nb_path.relative_to(CONTENT_DIR.parent)}: {result.stderr[:200]}")
     if errors:
         pytest.fail(f"Notebook execution errors:\n" + "\n".join(errors[:10]))

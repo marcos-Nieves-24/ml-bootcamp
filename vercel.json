@@ -1,8 +1,13 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "uv venv && uv pip install mkdocs mkdocs-material mkdocs-jupyter nbformat && uv run mkdocs build",
-  "outputDirectory": "site",
-  "framework": null,
+  "builds": [
+    {
+      "src": "platform/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "buildCommand": "cd platform && npm install && npm run build",
+  "outputDirectory": "platform/.next",
+  "framework": "nextjs",
   "cleanUrls": true,
   "trailingSlash": true
 }

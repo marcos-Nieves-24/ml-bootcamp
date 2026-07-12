@@ -3,12 +3,12 @@ import re
 from pathlib import Path
 
 REPO_DIR = Path(__file__).resolve().parent.parent
-COURSE_DIR = REPO_DIR / "course"
+CONTENT_DIR = REPO_DIR / "content"
 FIGURES_DIR = REPO_DIR / "figures"
 
 
 def _get_all_lesson_md_files():
-    return list(COURSE_DIR.rglob("lessons/**/lesson.md"))
+    return list(CONTENT_DIR.rglob("lessons/**/lesson.md"))
 
 
 def _get_figure_files():

@@ -3,8 +3,8 @@ import ast
 from pathlib import Path
 import re
 
-COURSE_DIR = Path(__file__).resolve().parent.parent / "course"
-LESSON_DIRS = list(COURSE_DIR.rglob("lesson*/lesson.md"))
+CONTENT_DIR = Path(__file__).resolve().parent.parent / "content"
+LESSON_DIRS = list(CONTENT_DIR.rglob("lesson*/lesson.md"))
 
 
 def _extract_python_code_blocks(markdown_text):
@@ -36,7 +36,7 @@ def test_python_blocks_have_valid_syntax():
         text = lesson_path.read_text(encoding="utf-8")
         for i, code in enumerate(_extract_python_code_blocks(text), 1):
             if not _has_valid_syntax(code):
-                rel = lesson_path.relative_to(COURSE_DIR.parent)
+                rel = lesson_path.relative_to(CONTENT_DIR.parent)
                 errors.append(f"{rel} block {i}")
     if errors:
         msg = "\n".join(errors[:20])
@@ -55,10 +55,10 @@ def test_function_definitions_are_well_formed():
             for node in ast.walk(tree):
                 if isinstance(node, ast.FunctionDef):
                     if not node.body:
-                        rel = lesson_path.relative_to(COURSE_DIR.parent)
+                        rel = lesson_path.relative_to(CONTENT_DIR.parent)
                         issues.append(f"{rel} block {i}: empty function '{node.name}'")
                     elif len(node.body) == 1 and _is_constant_str(node.body[0]):
-                        rel = lesson_path.relative_to(COURSE_DIR.parent)
+                        rel = lesson_path.relative_to(CONTENT_DIR.parent)
                         issues.append(f"{rel} block {i}: function '{node.name}' only has a docstring")
     if issues:
         pytest.fail("\n".join(issues[:10]))
@@ -82,7 +82,7 @@ def test_common_imports_available():
 
 
 def test_assignments_have_syntax_valid_python():
-    assignment_files = list(COURSE_DIR.rglob("assignment.md"))
+    assignment_files = list(CONTENT_DIR.rglob("assignment.md"))
     if not assignment_files:
         pytest.skip("No assignment.md files found")
     errors = []
@@ -90,7 +90,7 @@ def test_assignments_have_syntax_valid_python():
         text = apath.read_text(encoding="utf-8")
         for i, code in enumerate(_extract_python_code_blocks(text), 1):
             if not _has_valid_syntax(code):
-                rel = apath.relative_to(COURSE_DIR.parent)
+                rel = apath.relative_to(CONTENT_DIR.parent)
                 errors.append(f"{rel} block {i}")
     if errors:
         pytest.fail(f"Syntax errors in assignment blocks: {errors[:15]}")

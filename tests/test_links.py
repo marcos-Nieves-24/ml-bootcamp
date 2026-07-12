@@ -3,7 +3,7 @@ import re
 from pathlib import Path
 
 REPO_DIR = Path(__file__).resolve().parent.parent
-COURSE_DIR = REPO_DIR / "course"
+CONTENT_DIR = REPO_DIR / "content"
 
 
 def _get_markdown_files():
@@ -76,7 +76,7 @@ def test_cross_module_references_point_to_existing_lessons():
         text = mdf.read_text(encoding="utf-8")
         for match in re.finditer(r"module\d{2}_[a-z_]+", text):
             mod_name = match.group()
-            mod_dir = COURSE_DIR / mod_name
+            mod_dir = CONTENT_DIR / mod_name
             if not mod_dir.exists():
                 lesson_link = mdf.relative_to(REPO_DIR)
                 broken.append(f"{lesson_link} references non-existent module {mod_name}")

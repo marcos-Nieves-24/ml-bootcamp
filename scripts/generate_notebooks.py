@@ -6,13 +6,13 @@ import sys
 import time
 from pathlib import Path
 
-COURSE_DIR = Path(__file__).resolve().parent.parent / "course"
+CONTENT_DIR = Path(__file__).resolve().parent.parent / "course"
 SKIP_PATTERNS = ["lesson02_history_of_ai", ".ipynb_checkpoints"]
 TIMEOUT = 300
 
 
 def _should_skip(nb_path):
-    rel = str(nb_path.relative_to(COURSE_DIR.parent))
+    rel = str(nb_path.relative_to(CONTENT_DIR.parent))
     for pattern in SKIP_PATTERNS:
         if pattern in rel:
             return True, f"Skipping {rel} (in skip list)"
@@ -20,7 +20,7 @@ def _should_skip(nb_path):
 
 
 def _run_notebook(nb_path):
-    rel = str(nb_path.relative_to(COURSE_DIR.parent))
+    rel = str(nb_path.relative_to(CONTENT_DIR.parent))
     print(f"  Executing: {rel} ...", end=" ", flush=True)
     start = time.time()
     result = subprocess.run(
@@ -42,7 +42,7 @@ def _run_notebook(nb_path):
 
 def _find_notebooks():
     notebooks = []
-    for ipynb in COURSE_DIR.rglob("*.ipynb"):
+    for ipynb in CONTENT_DIR.rglob("*.ipynb"):
         skip, _ = _should_skip(ipynb)
         if skip:
             continue
