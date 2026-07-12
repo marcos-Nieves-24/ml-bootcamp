@@ -6,7 +6,7 @@ import sys
 import time
 from pathlib import Path
 
-CONTENT_DIR = Path(__file__).resolve().parent.parent / "course"
+CONTENT_DIR = Path(__file__).resolve().parent.parent / "content"
 SKIP_PATTERNS = ["lesson02_history_of_ai", ".ipynb_checkpoints"]
 TIMEOUT = 300
 

@@ -42,5 +42,5 @@ Cada lección incluye:
 - **Ejemplos** de Biotecnología y SaaS
 - **Quizzes** y **laboratorios** para evaluación
 
-Comenzá por el [Módulo 1](course/module01_ai/README.md) si no tenés experiencia previa,
+Comenzá por el [Módulo 1](content/module01_ai/README.md) si no tenés experiencia previa,
 o explorá los módulos desde el menú de navegación.

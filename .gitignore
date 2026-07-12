@@ -42,5 +42,12 @@ datasets/raw/large_*
 # MkDocs build output
 site/
 
+# MkDocs Jupyter cache
+.cache/
+
 # Vercel output
 .vercel
+
+# Node.js
+node_modules/
+.next/

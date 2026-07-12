@@ -20,7 +20,7 @@
 
 ### Case Studies
 
-See `course/case_studies/` for complete walkthroughs:
+See `content/case_studies/` for complete walkthroughs:
 - Biotech Diagnosis
 - SaaS Churn Prediction
 - Clinical Trial Outcome Prediction

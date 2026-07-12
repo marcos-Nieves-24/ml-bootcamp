@@ -27,8 +27,10 @@ body {
 }
 
 /* Custom scrollbar */
-scrollbar-width: thin;
-scrollbar-color: rgb(var(--color-border)) transparent;
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--color-border)) transparent;
+}
 
 ::-webkit-scrollbar {
   width: 8px;
