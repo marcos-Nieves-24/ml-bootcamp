@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a university-level Machine Learning course repository: **Machine Learning for Data Analysis and SaaS**. The course targets undergraduate students in Biotechnology, Bioinformatics, Biological Sciences, Data Analysis, and Engineering.
+ML Bootcamp is an interactive learning platform where students master Machine Learning through active learning, simulations, guided coding, projects and gamification.
 
 ## Repository Structure
 

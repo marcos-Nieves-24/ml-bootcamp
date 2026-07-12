@@ -1,0 +1,18 @@
+.dockerignore
+node_modules
+.next
+build
+coverage
+logs
+.env.local
+.env.production
+.git
+.github
+.vercel
+.vercel deployed Projects
+.vscode
+.idea
+*.log
+.DS_Store
+.env*
+!{.env.example}
