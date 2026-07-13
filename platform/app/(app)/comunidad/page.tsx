@@ -1,26 +1,27 @@
 "use client"
 
 import React from "react"
-import GlassCard from "@/app/components/GlassCard"
+import StitchCard from "@/app/components/StitchCard"
 import Badge from "@/app/components/Badge"
 import ProgressRing from "@/app/components/ProgressRing"
-import GradientBtn from "@/app/components/GradientBtn"
+import StitchBtn from "@/app/components/StitchBtn"
 
 export default function ComunidadPage() {
   return (
     <div className="space-y-8">
       {/* Header Section */}
-      <section className="relative overflow-hidden rounded-3xl p-12 glass-card">
+      <StitchCard className="relative overflow-hidden rounded-3xl p-12" hover={false}>
+        <div className="absolute inset-0 bg-white/50 backdrop-blur-sm z-0"></div>
         <div className="relative z-10 max-w-2xl">
-          <h1 className="font-display-hero text-headline-lg text-deep-navy mb-4">Comunidad de Investigadores</h1>
+          <h1 className="font-display-hero text-headline-lg text-on-surface mb-4">Comunidad de Investigadores</h1>
           <p className="font-body-lg text-on-surface-variant leading-relaxed">
             Colabora con mentes brillantes de todo el mundo. Resuelve dudas complejas, participa en desafíos globales y forma equipos de élite para acelerar tu crecimiento en Machine Learning.
           </p>
           <div className="mt-8 flex gap-4">
-            <GradientBtn>
+            <StitchBtn>
               <span className="material-symbols-outlined">campaign</span>
               Ver Anuncios
-            </GradientBtn>
+            </StitchBtn>
             <button className="px-8 py-3 rounded-full border border-primary/20 text-primary font-label-lg hover:bg-primary/5 transition-colors">
               Explorar Guías
             </button>
@@ -30,7 +31,7 @@ export default function ComunidadPage() {
         <div className="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
           <span className="material-symbols-outlined text-[240px] text-primary rotate-12">groups</span>
         </div>
-      </section>
+      </StitchCard>
 
       <div className="grid grid-cols-12 gap-gutter">
         {/* Left Column: Primary Content */}
@@ -46,7 +47,7 @@ export default function ComunidadPage() {
             </div>
             <div className="grid grid-cols-2 gap-base">
               {/* Challenge Card 1 */}
-              <GlassCard className="rounded-2xl p-6 border-l-4 border-l-xp-blue hover:bg-white/85 transition-all">
+              <StitchCard className="rounded-2xl p-6 border-l-4 border-l-xp-blue hover:bg-white/85 transition-all">
                 <div className="flex justify-between items-start mb-4">
                   <span className="bg-xp-blue/10 text-xp-blue px-3 py-1 rounded-full text-label-md font-bold">ACTIVO</span>
                   <div className="text-right">
@@ -54,7 +55,7 @@ export default function ComunidadPage() {
                     <p className="font-code-sm text-primary font-bold">14:22:05</p>
                   </div>
                 </div>
-                <h3 className="font-headline-sm text-deep-navy mb-2">Nexus Biotech AI Hack</h3>
+                        <h3 className="font-headline-sm text-on-surface mb-2">Nexus Biotech AI Hack</h3>
                 <p className="font-body-md text-on-surface-variant mb-4 line-clamp-2">Optimización de diagnósticos mediante redes neuronales convolucionales.</p>
                 <div className="flex items-center gap-4 mb-6">
                   <div className="flex items-center gap-1 text-tertiary">
@@ -66,13 +67,13 @@ export default function ComunidadPage() {
                     <span className="text-label-md">+5,000 XP</span>
                   </div>
                 </div>
-                <GradientBtn className="w-full">
+                <StitchBtn className="w-full">
                   Participar
-                </GradientBtn>
-              </GlassCard>
+                </StitchBtn>
+              </StitchCard>
 
               {/* Challenge Card 2 */}
-              <GlassCard className="rounded-2xl p-6 border-l-4 border-l-success-green hover:bg-white/85 transition-all">
+              <StitchCard className="rounded-2xl p-6 border-l-4 border-l-success-green hover:bg-white/85 transition-all">
                 <div className="flex justify-between items-start mb-4">
                   <span className="bg-success-green/10 text-success-green px-3 py-1 rounded-full text-label-md font-bold">PRÓXIMO</span>
                   <div className="text-right">
@@ -80,7 +81,7 @@ export default function ComunidadPage() {
                     <p className="font-code-sm text-on-surface-variant">2d 04h</p>
                   </div>
                 </div>
-                <h3 className="font-headline-sm text-deep-navy mb-2">Predictive Finance Summit</h3>
+                        <h3 className="font-headline-sm text-on-surface mb-2">Predictive Finance Summit</h3>
                 <p className="font-body-md text-on-surface-variant mb-4 line-clamp-2">Modelado de series temporales para predicción de mercados emergentes.</p>
                 <div className="flex items-center gap-4 mb-6">
                   <div className="flex items-center gap-1 text-tertiary">
@@ -95,7 +96,7 @@ export default function ComunidadPage() {
                 <button className="w-full py-3 rounded-xl border border-outline-variant text-on-surface-variant font-label-lg cursor-not-allowed" disabled>
                   Inscribirse
                 </button>
-              </GlassCard>
+              </StitchCard>
             </div>
           </section>
 
@@ -112,7 +113,7 @@ export default function ComunidadPage() {
             </div>
             <div className="flex flex-col gap-base">
               {/* Question Card 1 */}
-              <GlassCard className="p-6 rounded-2xl flex gap-6 items-start hover:bg-white/85 transition-all">
+              <StitchCard className="p-6 rounded-2xl flex gap-6 items-start hover:bg-white/85 transition-all">
                 <div className="flex flex-col items-center gap-1 px-3 py-2 bg-surface-container-low rounded-xl min-w-[64px]">
                   <span className="material-symbols-outlined text-primary">expand_less</span>
                   <span className="font-bold text-deep-navy">24</span>
@@ -138,10 +139,10 @@ export default function ComunidadPage() {
                     </span>
                   </div>
                 </div>
-              </GlassCard>
+              </StitchCard>
 
               {/* Question Card 2 */}
-              <GlassCard className="p-6 rounded-2xl flex gap-6 items-start opacity-80 hover:opacity-100 transition-all">
+              <StitchCard className="p-6 rounded-2xl flex gap-6 items-start opacity-80 hover:opacity-100 transition-all">
                 <div className="flex flex-col items-center gap-1 px-3 py-2 bg-surface-container-low rounded-xl min-w-[64px]">
                   <span className="material-symbols-outlined text-primary">expand_less</span>
                   <span className="font-bold text-deep-navy">8</span>
@@ -166,7 +167,7 @@ export default function ComunidadPage() {
                     </span>
                   </div>
                 </div>
-              </GlassCard>
+              </StitchCard>
             </div>
           </section>
 
@@ -180,7 +181,7 @@ export default function ComunidadPage() {
             </div>
             <div className="grid grid-cols-2 gap-gutter">
               {/* Team Card 1 */}
-              <GlassCard className="rounded-2xl p-6 relative group hover:bg-white/85 transition-all">
+              <StitchCard className="rounded-2xl p-6 relative group hover:bg-white/85 transition-all">
                 <div className="absolute top-4 right-4 text-primary opacity-30 group-hover:opacity-100 transition-opacity">
                   <span className="material-symbols-outlined text-[32px]">science</span>
                 </div>
@@ -201,10 +202,10 @@ export default function ComunidadPage() {
                   </div>
                   <button className="px-4 py-2 rounded-lg bg-surface-container text-deep-navy font-label-lg hover:bg-primary hover:text-white transition-all">Unirse</button>
                 </div>
-              </GlassCard>
+              </StitchCard>
 
               {/* Team Card 2 */}
-              <GlassCard className="rounded-2xl p-6 relative group hover:bg-white/85 transition-all">
+              <StitchCard className="rounded-2xl p-6 relative group hover:bg-white/85 transition-all">
                 <div className="absolute top-4 right-4 text-secondary opacity-30 group-hover:opacity-100 transition-opacity">
                   <span className="material-symbols-outlined text-[32px]">dataset</span>
                 </div>
@@ -225,7 +226,7 @@ export default function ComunidadPage() {
                   </div>
                   <button className="px-4 py-2 rounded-lg bg-surface-container text-deep-navy font-label-lg hover:bg-secondary hover:text-white transition-all">Unirse</button>
                 </div>
-              </GlassCard>
+              </StitchCard>
             </div>
           </section>
         </div>

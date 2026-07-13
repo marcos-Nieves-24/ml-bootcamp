@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import GlassCard from "@/app/components/GlassCard"
+import StitchCard from "@/app/components/StitchCard"
 import ProgressRing from "@/app/components/ProgressRing"
 import Badge from "@/app/components/Badge"
 import { MOCK_RANKS, MOCK_USERS } from "@/lib/data"
@@ -29,7 +29,7 @@ export default function NivelesPage() {
           <p className="font-body-md text-on-surface-variant mt-2">Tu progreso como investigador en Nexus Institute</p>
         </div>
         
-        <GlassCard className="p-6 rounded-2xl flex items-center gap-6 pr-8 shadow-sm">
+        <StitchCard className="p-6 rounded-2xl flex items-center gap-6 pr-8 shadow-sm">
           <div className="relative w-16 h-16 flex items-center justify-center">
             <ProgressRing value={XPProgress} size={64} strokeWidth={4} label={currentLevel.toString()} />
           </div>
@@ -43,7 +43,7 @@ export default function NivelesPage() {
               </div>
             </div>
           </div>
-        </GlassCard>
+        </StitchCard>
       </div>
       
       <div className="relative">
@@ -54,7 +54,7 @@ export default function NivelesPage() {
             const isCurrent = status === "actual"
             
             return (
-              <GlassCard 
+              <StitchCard 
                 key={rank.id}
                 className={`rounded-2xl p-6 text-center border-success-green/20 ${isCurrent ? 'ring-2 ring-primary border-primary active-level-glow relative shadow-lg' : ''} ${status === 'locked' ? 'opacity-60' : ''}`}
                 hover={status !== 'locked'}
@@ -80,7 +80,7 @@ export default function NivelesPage() {
                     <span className="text-[12px]">Bloqueado</span>
                   </div>
                 )}
-              </GlassCard>
+              </StitchCard>
             )
           })}
         </div>

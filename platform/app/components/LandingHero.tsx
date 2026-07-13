@@ -1,5 +1,6 @@
 "use client"
 import React, { useRef, useEffect } from 'react'
+import StitchBtn from "@/app/components/StitchBtn"
 
 export default function LandingHero() {
   const canvasRef = useRef<HTMLCanvasElement>(null)

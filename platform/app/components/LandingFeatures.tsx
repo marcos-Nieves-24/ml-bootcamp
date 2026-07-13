@@ -1,3 +1,5 @@
+import StitchCard from "@/app/components/StitchCard"
+
 export default function LandingFeatures() {
   const features = [
     {
