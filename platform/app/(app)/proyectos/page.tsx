@@ -67,7 +67,10 @@ export default function ProyectosPage() {
                 </div>
                 <XPBar value={project.progress} className="mb-4" />
 
-                <StitchBtn className="w-full text-sm py-2.5">
+                <StitchBtn
+                  href={isLocked ? "#" : `/proyectos/${project.id}`}
+                  className="w-full text-sm py-2.5"
+                >
                   {project.status === "Completado" ? "Ver detalles" :
                    project.status === "En Progreso" ? "Continuar" :
                    isLocked ? "🔒 Bloqueado" : "Comenzar Misión"}

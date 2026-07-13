@@ -18,11 +18,11 @@ export default function ComunidadPage() {
             Colabora con mentes brillantes de todo el mundo. Resuelve dudas complejas, participa en desafíos globales y forma equipos de élite para acelerar tu crecimiento en Machine Learning.
           </p>
           <div className="mt-8 flex gap-4">
-            <StitchBtn>
+            <StitchBtn href="/comunidad#anuncios">
               <span className="material-symbols-outlined">campaign</span>
               Ver Anuncios
             </StitchBtn>
-            <button className="px-8 py-3 rounded-full border border-primary/20 text-primary font-label-lg hover:bg-primary/5 transition-colors">
+            <button onClick={() => alert("Guías próximamente")} className="px-8 py-3 rounded-full border border-primary/20 text-primary font-label-lg hover:bg-primary/5 transition-colors">
               Explorar Guías
             </button>
           </div>
@@ -43,7 +43,7 @@ export default function ComunidadPage() {
                 <span className="material-symbols-outlined text-primary">emoji_events</span>
                 Desafíos Globales
               </h2>
-              <a className="text-primary font-label-lg hover:underline" href="#">Ver todos</a>
+               <a className="text-primary font-label-lg hover:underline" href="/laboratorios">Ver todos</a>
             </div>
             <div className="grid grid-cols-2 gap-base">
               {/* Challenge Card 1 */}
@@ -67,7 +67,7 @@ export default function ComunidadPage() {
                     <span className="text-label-md">+5,000 XP</span>
                   </div>
                 </div>
-                <StitchBtn className="w-full">
+                <StitchBtn href="/laboratorios" className="w-full">
                   Participar
                 </StitchBtn>
               </StitchCard>
@@ -107,7 +107,7 @@ export default function ComunidadPage() {
                 <span className="material-symbols-outlined text-primary">forum</span>
                 Foro de Consultas
               </h2>
-              <button className="bg-primary px-6 py-2 rounded-full text-white font-label-lg flex items-center gap-2 hover:shadow-md transition-shadow">
+              <button onClick={() => alert("Foro disponible próximamente")} className="bg-primary px-6 py-2 rounded-full text-white font-label-lg flex items-center gap-2 hover:shadow-md transition-shadow">
                 <span className="material-symbols-outlined">add</span> Preguntar
               </button>
             </div>
@@ -200,7 +200,7 @@ export default function ComunidadPage() {
                     <img className="w-8 h-8 rounded-full border-2 border-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4WE6rcbeV8TZdBKurj6i0uqg5JMC0LPu8Wi_1kV2CLybIcUCeF0fEx5C1ew0JnDW1tlZ1mfqei1dwM8X8BYA7fG-URli0C02hNlOWQSr9h2NbX7mqMAFKJWGUzN30mOpCOweRDipqIaAjoteLseFWo-bD3xXRcU_DQtrBJsBINI8OAjTUkMlZFrTkFuUFjGJzuZq3dnZjJBGmE7h1oKqfCpk49Fo5VQSnNJVIAJOaRtvspSq6HkTQ" alt="Avatar 2" />
                     <div className="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-[10px] font-bold border-2 border-white">+3</div>
                   </div>
-                  <button className="px-4 py-2 rounded-lg bg-surface-container text-deep-navy font-label-lg hover:bg-primary hover:text-white transition-all">Unirse</button>
+                  <button onClick={() => alert("Funcionalidad de equipos próximamente")} className="px-4 py-2 rounded-lg bg-surface-container text-deep-navy font-label-lg hover:bg-primary hover:text-white transition-all">Unirse</button>
                 </div>
               </StitchCard>
 
@@ -224,7 +224,7 @@ export default function ComunidadPage() {
                     <img className="w-8 h-8 rounded-full border-2 border-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBudJBy3CioX8VmiMXb5OTiI8SrP6AJ3BoPyJjOxy-3zLnViURgVKX5on0Wyu9TXvXeuRoklS4F-W756GYk4MCpliGe8tgO4ujRgQcOugHi4E2UwZxTBJg_VABFdExUbGbAV0GTL2QWPnNOz8EYBwMiN-Rqc3YlVsNm-m6k4ykCSyYSkcjic5SCj1ov911NCFwwmO97H-u2go6-Cj_ahAdrw26pCjg0KOfjfUmzoPA0ck78l_jJ8I3D" alt="Avatar 4" />
                     <div className="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-[10px] font-bold border-2 border-white">+1</div>
                   </div>
-                  <button className="px-4 py-2 rounded-lg bg-surface-container text-deep-navy font-label-lg hover:bg-secondary hover:text-white transition-all">Unirse</button>
+                  <button onClick={() => alert("Funcionalidad de equipos próximamente")} className="px-4 py-2 rounded-lg bg-surface-container text-deep-navy font-label-lg hover:bg-secondary hover:text-white transition-all">Unirse</button>
                 </div>
               </StitchCard>
             </div>
@@ -310,7 +310,7 @@ export default function ComunidadPage() {
                 </div>
               </div>
             </div>
-            <button className="w-full mt-6 py-3 rounded-xl border-2 border-dashed border-outline-variant text-on-surface-variant font-label-lg hover:border-primary hover:text-primary transition-all">
+            <button onClick={() => alert("Calendario próximamente")} className="w-full mt-6 py-3 rounded-xl border-2 border-dashed border-outline-variant text-on-surface-variant font-label-lg hover:border-primary hover:text-primary transition-all">
               + Añadir a mi calendario
             </button>
           </aside>

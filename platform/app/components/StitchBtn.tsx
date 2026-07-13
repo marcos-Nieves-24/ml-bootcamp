@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 interface StitchBtnProps {
   children: React.ReactNode;
@@ -7,6 +8,7 @@ interface StitchBtnProps {
   className?: string;
   onClick?: () => void;
   type?: 'button' | 'submit';
+  href?: string;
 }
 
 export default function StitchBtn({ 
@@ -15,7 +17,8 @@ export default function StitchBtn({
   size = 'md', 
   className = '', 
   onClick, 
-  type = 'button' 
+  type = 'button',
+  href
 }: StitchBtnProps) {
   const variantClasses = {
     primary: 'bg-primary text-on-primary hover:bg-[#3525cd]',
@@ -28,12 +31,22 @@ export default function StitchBtn({
     md: 'px-6 py-3 text-base',
     lg: 'px-8 py-4 text-lg'
   };
+
+  const classes = `inline-flex items-center justify-center font-bold rounded-xl transition-all active:scale-95 ${variantClasses[variant]} ${sizeClasses[size]} ${className}`;
+
+  if (href) {
+    return (
+      <Link href={href} className={classes}>
+        {children}
+      </Link>
+    );
+  }
   
   return (
     <button 
       type={type}
       onClick={onClick}
-      className={`font-bold rounded-xl transition-all active:scale-95 ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
+      className={classes}
     >
       {children}
     </button>

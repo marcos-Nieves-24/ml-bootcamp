@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Providers from "./providers"
 
 const siteName = "ML Bootcamp Platform"
 const siteDescription = "Transformando aprendizaje estático en experiencia interactiva. Cursos de Machine Learning y Data Science."
@@ -37,7 +38,9 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-surface text-on-surface font-body-md min-h-screen">
-        {children}
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   )

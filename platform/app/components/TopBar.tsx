@@ -1,6 +1,12 @@
 'use client'
 
+import { useSession } from "next-auth/react"
+
 export default function TopBar() {
+  const { data: session } = useSession()
+  const userName = session?.user?.name || "Investigador"
+  const initials = userName.split(" ").map(w => w[0]).join("").toUpperCase().slice(0, 2)
+
   return (
     <header className="sticky top-0 z-40 bg-surface-container-lowest/80 backdrop-blur-md border-b border-border-muted">
       <div className="flex items-center justify-between px-6 py-3 max-w-[1440px] mx-auto">
@@ -46,8 +52,8 @@ export default function TopBar() {
           </button>
 
           {/* Avatar */}
-          <button className="w-8 h-8 rounded-lg bg-gray-200 flex items-center justify-center text-gray-500 text-sm font-bold" aria-label="Perfil">
-            N
+          <button className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary text-sm font-bold" aria-label="Perfil" title={userName}>
+            {initials}
           </button>
         </div>
       </div>

@@ -2,16 +2,16 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { signOut } from "next-auth/react"
 
 const navItems = [
   { href: "/dashboard", label: "Inicio", icon: "home" },
   { href: "/expediciones", label: "Expediciones", icon: "explore" },
   { href: "/laboratorios", label: "Laboratorios", icon: "biotech" },
   { href: "/proyectos", label: "Proyectos", icon: "architecture" },
-  { href: "/misiones", label: "Misiones", icon: "assignment" },
-  { href: "/dashboard", label: "Dashboard", icon: "dashboard" },
   { href: "/logros", label: "Logros", icon: "military_tech" },
   { href: "/comunidad", label: "Comunidad", icon: "groups" },
+  { href: "/metricas", label: "Métricas", icon: "bar_chart" },
 ]
 
 export default function Sidebar() {
@@ -91,10 +91,13 @@ export default function Sidebar() {
 
       {/* Ajustes y Cerrar sesión */}
       <div className="mt-2 space-y-2">
-        <button className="w-full text-left px-4 py-2 text-sm text-on-surface-variant hover:text-on-surface transition-colors">
+        <Link href="/metricas" className="block w-full text-left px-4 py-2 text-sm text-on-surface-variant hover:text-on-surface transition-colors">
           Ajustes
-        </button>
-        <button className="w-full text-left px-4 py-2 text-sm text-on-surface-variant hover:text-on-surface transition-colors">
+        </Link>
+        <button
+          onClick={() => signOut({ callbackUrl: "/" })}
+          className="w-full text-left px-4 py-2 text-sm text-on-surface-variant hover:text-on-surface transition-colors"
+        >
           Cerrar sesión
         </button>
       </div>

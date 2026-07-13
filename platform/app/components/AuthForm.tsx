@@ -40,6 +40,23 @@ export default function AuthForm({ mode }: AuthFormProps) {
     setError("")
 
     try {
+      if (mode === 'register') {
+        // Check if user already exists
+        const existing = localStorage.getItem(`user:${data.email}`)
+        if (existing) {
+          setError("Este email ya está registrado")
+          setIsLoading(false)
+          return
+        }
+        // Store user in localStorage
+        localStorage.setItem(`user:${data.email}`, JSON.stringify({
+          email: data.email,
+          password: data.password,
+          name: data.email.split('@')[0],
+          createdAt: new Date().toISOString()
+        }))
+      }
+
       const result = await signIn("credentials", {
         email: data.email,
         password: data.password,
@@ -47,7 +64,13 @@ export default function AuthForm({ mode }: AuthFormProps) {
       })
 
       if (result?.error) {
-        setError("Email o contraseña inválidos")
+        // Check if stored user exists but password doesn't match
+        const stored = localStorage.getItem(`user:${data.email}`)
+        if (stored) {
+          setError("Contraseña incorrecta")
+        } else {
+          setError("Email o contraseña inválidos")
+        }
       } else {
         router.push("/dashboard")
         router.refresh()

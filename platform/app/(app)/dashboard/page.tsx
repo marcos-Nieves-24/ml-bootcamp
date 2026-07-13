@@ -4,6 +4,7 @@ import StitchBtn from "@/app/components/StitchBtn"
 import XPBar from "@/app/components/XPBar"
 import ProgressRing from "@/app/components/ProgressRing"
 import StreakIndicator from "@/app/components/StreakIndicator"
+import Link from "next/link"
 import {
   MOCK_PROJECTS,
   MOCK_LABS,
@@ -89,7 +90,7 @@ export default function DashboardPage() {
                 <span className="font-bold text-[#3B82F6]">{project.progress}%</span>
               </div>
               <XPBar value={project.progress} className="mb-4" />
-               <StitchBtn>Continuar proyecto</StitchBtn>
+               <StitchBtn href={`/proyectos`}>Continuar proyecto</StitchBtn>
              </StitchCard>
           ))}
 
@@ -98,7 +99,8 @@ export default function DashboardPage() {
             <h2 className="font-bold text-lg text-on-surface mb-3">Laboratorios</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {MOCK_LABS.map(lab => (
-                <StitchCard key={lab.id} hover={!lab.locked} className="p-4 flex flex-col items-center text-center">
+                <Link key={lab.id} href={lab.locked ? "#" : `/laboratorios`} className="block">
+                <StitchCard hover={!lab.locked} className="p-4 flex flex-col items-center text-center">
                   <span className={`material-symbols-outlined text-3xl mb-2 ${lab.locked ? 'text-gray-400' : 'text-[#4f46e5]'}`}>
                     {lab.locked ? 'lock' : (lab.icon || 'science')}
                   </span>
@@ -117,6 +119,7 @@ export default function DashboardPage() {
                     </div>
                   )}
             </StitchCard>
+            </Link>
               ))}
             </div>
           </div>

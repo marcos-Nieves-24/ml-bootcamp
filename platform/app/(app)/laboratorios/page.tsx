@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import StitchCard from "@/app/components/StitchCard"
 import XPBar from "@/app/components/XPBar"
 import ProgressRing from "@/app/components/ProgressRing"
@@ -68,7 +69,7 @@ export default function LaboratoriosPage() {
                     <span className="text-primary font-bold">{lab.progress}%</span>
                   </div>
                   <XPBar value={lab.progress} className="mb-3" />
-                  <StitchBtn className="w-full text-sm py-2.5">
+                  <StitchBtn href={`/laboratorios/${lab.id}`} className="w-full text-sm py-2.5">
                     Entrar al Lab
                   </StitchBtn>
                 </div>

@@ -126,7 +126,7 @@ export default function LandingHero() {
         <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
           Tu viaje hacia la maestría en Machine Learning comienza aquí
         </p>
-        <StitchBtn size="lg" className="bg-white text-primary hover:bg-gray-50">
+        <StitchBtn href="/login" size="lg" className="bg-white text-primary hover:bg-gray-50">
           Comenzar ahora
         </StitchBtn>
       </div>
