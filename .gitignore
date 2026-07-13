@@ -51,3 +51,6 @@ site/
 # Node.js
 node_modules/
 .next/
+
+# Windows Zone Identifier
+*:Zone.Identifier

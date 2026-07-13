@@ -24,40 +24,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className="min-h-screen bg-gray-900 text-white">
-        {/* Navigation Bar */}
-        <nav className="bg-black/80 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50" aria-label="Navegación principal">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between h-16">
-              <div className="flex items-center">
-                <h1 className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-                  ML Bootcamp Platform
-                </h1>
-              </div>
-              <div className="flex items-center space-x-8">
-                <a href="/dashboard" className="text-gray-300 hover:text-white transition-colors" aria-label="Ir al Dashboard">Dashboard</a>
-                <a href="/instituto" className="text-gray-300 hover:text-white transition-colors" aria-label="Ir al Instituto">Instituto</a>
-                <a href="/laboratorio" className="text-gray-300 hover:text-white transition-colors" aria-label="Ir al Laboratorio">Laboratorio</a>
-                <a href="/taller" className="text-gray-300 hover:text-white transition-colors" aria-label="Ir al Taller">Taller</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-
-        {/* Main Content */}
-        <main className="flex-1">
-          {children}
-        </main>
-
-        {/* Footer */}
-        <footer className="bg-black/80 backdrop-blur-md border-t border-gray-800">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <div className="text-center text-gray-400">
-              <p>&copy; 2026 ML Bootcamp Platform — Semilla Phase 1</p>
-              <p className="text-sm mt-1">Transformando aprendizaje estático en experiencia interactiva</p>
-            </div>
-          </div>
-        </footer>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="bg-surface text-on-surface font-body-md min-h-screen">
+        {children}
       </body>
     </html>
   )

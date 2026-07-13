@@ -1,0 +1,474 @@
+<!DOCTYPE html><html class="light" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Proyectos | ML Expedition</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#ffb95f",
+                        "surface-tint": "#4d44e3",
+                        "on-tertiary-container": "#ffd4a4",
+                        "secondary": "#006591",
+                        "xp-blue": "#3B82F6",
+                        "on-error": "#ffffff",
+                        "success-green": "#10B981",
+                        "on-secondary": "#ffffff",
+                        "outline": "#777587",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-variant": "#e0e3e5",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#684000",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#3323cc",
+                        "deep-navy": "#0F172A",
+                        "on-background": "#191c1e",
+                        "on-secondary-fixed": "#001e2f",
+                        "glass-fill": "rgba(255, 255, 255, 0.7)",
+                        "on-surface-variant": "#464555",
+                        "surface-container": "#eceef0",
+                        "secondary-fixed": "#c9e6ff",
+                        "surface-bright": "#f7f9fb",
+                        "primary-fixed": "#e2dfff",
+                        "outline-variant": "#c7c4d8",
+                        "on-tertiary-fixed-variant": "#653e00",
+                        "background": "#f7f9fb",
+                        "on-tertiary-fixed": "#2a1700",
+                        "error": "#ba1a1a",
+                        "on-surface": "#191c1e",
+                        "primary-fixed-dim": "#c3c0ff",
+                        "secondary-container": "#39b8fd",
+                        "primary-container": "#4f46e5",
+                        "glass-stroke": "rgba(255, 255, 255, 0.4)",
+                        "primary": "#3525cd",
+                        "on-primary-container": "#dad7ff",
+                        "surface-container-low": "#f2f4f6",
+                        "on-secondary-container": "#004666",
+                        "inverse-surface": "#2d3133",
+                        "on-primary-fixed": "#0f0069",
+                        "tertiary-fixed": "#ffddb8",
+                        "surface": "#f7f9fb",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e0e3e5",
+                        "inverse-primary": "#c3c0ff",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#d8dadc",
+                        "secondary-fixed-dim": "#89ceff",
+                        "on-secondary-fixed-variant": "#004c6e",
+                        "tertiary-container": "#885500",
+                        "inverse-on-surface": "#eff1f3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "card-padding": "24px",
+                        "section-gap": "64px",
+                        "base": "8px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Plus Jakarta Sans"],
+                        "code-sm": ["jetbrainsMono"],
+                        "display-hero": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "label-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "code-sm": ["13px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "display-hero": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "label-md": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "label-lg": ["14px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #f7f9fb;
+            background-image: radial-gradient(at 0% 0%, rgba(79, 70, 229, 0.05) 0px, transparent 50%),
+                              radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.05) 0px, transparent 50%);
+            min-height: 100vh;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #e2dfff;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-0 h-full w-[280px] bg-glass-fill backdrop-blur-xl border-r border-glass-stroke flex flex-col p-6 z-50 hidden lg:flex">
+<div class="mb-10 flex items-center gap-3">
+<div class="w-10 h-10 bg-primary-container rounded-xl flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">rocket_launch</span>
+</div>
+<h1 class="font-headline-sm text-headline-sm font-bold text-primary">ML Expedition</h1>
+</div>
+<nav class="flex-1 space-y-2">
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:text-primary hover:bg-surface-container-high/40 rounded-xl transition-all duration-300" href="#">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKN-TWGJ9KXBLbE-iPd-gS31MhQ-2vaU26NBlTTQcM4SdJjH8Iaq30hXxsMMPXIcV_bfsKyIcfiPh1bHZDww3_0RmOzjmrEj7QKOP40OXZ0ppnpDzub6tBz-CiGCJWe6TzxE4E1iTPrx8ag7lOX8cXNMFZocck5QyfoXfBv43IJNkjPtpH1b2bv4tJjnpTdVt3UVIu9xoZJhfOCTo2f_rETMwvrraJBQDCOQEJtCdf_Drzt6ybrZmp" alt="Nexus Home Icon" class="w-6 h-6 object-contain">
+<span class="font-label-lg text-label-lg">Inicio</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:text-primary hover:bg-surface-container-high/40 rounded-xl transition-all duration-300" href="#"><span class="material-symbols-outlined">school</span><span class="font-label-lg text-label-lg">Niveles</span></a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:text-primary hover:bg-surface-container-high/40 rounded-xl transition-all duration-300" href="#">
+<span class="material-symbols-outlined">biotech</span>
+<span class="font-label-lg text-label-lg">Laboratorios</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 bg-primary-container text-on-primary rounded-xl font-bold shadow-md shadow-primary/20" href="#">
+<span class="material-symbols-outlined">rocket_launch</span>
+<span class="font-label-lg text-label-lg">Proyectos</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:text-primary hover:bg-surface-container-high/40 rounded-xl transition-all duration-300" href="#">
+<span class="material-symbols-outlined">military_tech</span>
+<span class="font-label-lg text-label-lg">Logros</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:text-primary hover:bg-surface-container-high/40 rounded-xl transition-all duration-300" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-label-lg text-label-lg">Dashboard</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:text-primary hover:bg-surface-container-high/40 rounded-xl transition-all duration-300" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="font-label-lg text-label-lg">Comunidad</span>
+</a>
+</nav>
+<div class="mt-auto pt-6 border-t border-glass-stroke space-y-4">
+<div class="glass-card p-4 rounded-xl flex items-center gap-3">
+<img class="w-10 h-10 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVf21JqG8MOVG7Bw-tlRr3F7S_np7B6dP_rI4XHdzpJK3233R9Cfp7tOcXGuMU-bHEu2rrPAktt7uXXx2eJgKVAGODY4v0jlV67aJvl7G3kGItGqxPICnogVeFh-Kl5QCYXuGfRraSDBcr0pkhk70C988LODqd1EFQGTmfbPTy6bDXBJHZ0hUUXNeCn6DPI_h8eR0uBtEnKF_UDav_GGScpko3A_bL9HjEd_TyPgEfHevLexEwKyzW">
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Investigador Nexus</p>
+<p class="text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-full inline-block font-bold">Nivel 12</p>
+</div>
+</div>
+<a class="flex items-center gap-4 px-4 py-2 text-on-surface-variant hover:text-error transition-colors" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span class="font-label-lg text-label-lg">Cerrar Sesión</span>
+</a>
+</div>
+</aside>
+<!-- TopAppBar -->
+<header class="sticky top-0 z-40 flex items-center justify-between px-gutter py-4 bg-glass-fill backdrop-blur-xl border-b border-glass-stroke shadow-sm w-full">
+<div class="flex items-center gap-4 flex-1 max-w-xl">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container-low border-none rounded-xl pl-10 pr-12 py-2.5 focus:ring-2 focus:ring-primary/20 font-label-md text-label-md transition-all" placeholder="Buscar misiones, laboratorios, conceptos..." type="text">
+<span class="absolute right-3 top-1/2 -translate-y-1/2 text-[10px] font-bold text-on-surface-variant/50 border border-on-surface-variant/20 px-1.5 py-0.5 rounded-md">⌘K</span>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-4 hidden md:flex">
+<div class="flex items-center gap-1 text-xp-blue font-bold">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">diamond</span>
+<span class="font-label-lg text-label-lg">1,260 XP</span>
+</div>
+<div class="flex items-center gap-1 text-orange-500 font-bold">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">local_fire_department</span>
+<span class="font-label-lg text-label-lg">12 días</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-10 h-10 rounded-xl flex items-center justify-center hover:bg-surface-bright transition-colors relative">
+<span class="material-symbols-outlined text-on-surface-variant">notifications</span>
+<span class="absolute top-2.5 right-2.5 w-2 h-2 bg-error rounded-full"></span>
+</button>
+<button class="w-10 h-10 rounded-xl flex items-center justify-center hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant">settings</span>
+</button>
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden border-2 border-white shadow-sm cursor-pointer ml-2">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEtRKdqmuCxDfBhO8oZPG8MstyY7BzdNV4jRkrOJ9UOvmlb4-wWRv-1ujccrs56fdPStAAEUMKNm7cKEnAv7Jug8Jrc_PBkzd80wD2V2p_SDa7-lKQDx4N2vTov8JHa9x8P_dadtgwg_KNoAmg49Fo_BRaI7brHzQTFJ8DbWhBGi9u2yhOb3U0Znw8Et_i2mtsgCjPWPcfJ6GjiWRSoVxLG_A1FAx8qebQMIn9gX4e7-gWmKcc7Bqd">
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Layout -->
+<main class="pl-[280px] pt-16 min-h-screen">
+<div class="max-w-[container-max] mx-auto p-gutter flex gap-gutter">
+<!-- Left Side: Project Gallery -->
+<div class="flex-grow">
+<section class="mb-10">
+<h2 class="font-headline-lg text-headline-lg text-deep-navy">Proyectos</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2 max-w-2xl">
+                        Aplica tus conocimientos en casos de estudio reales de Biotecnología y SaaS. Supera desafíos para ascender en el rango de investigador.
+                    </p>
+</section>
+<!-- Project Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-2 gap-gutter">
+<!-- Card 1: SaaS -->
+<div class="glass-card rounded-3xl p-card-padding flex flex-col hover:bg-white/85 transition-all duration-300 group" style="transform: translateY(0px);">
+<div class="flex justify-between items-start mb-6">
+<span class="px-3 py-1 bg-secondary-container/20 text-on-secondary-container text-label-md font-label-md rounded-full">SaaS</span>
+<span class="px-3 py-1 bg-xp-blue/10 text-xp-blue text-label-md font-label-md rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">autorenew</span>
+                                En progreso
+                            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">SaaS Churn Prediction</h3>
+<p class="text-on-surface-variant font-body-md text-sm mb-6">
+                            Utiliza algoritmos de clasificación para predecir qué usuarios cancelarán su suscripción basándote en su comportamiento de uso y métricas de engagement.
+                        </p>
+<div class="mt-auto">
+<div class="flex justify-between items-end mb-2">
+<div class="flex gap-0.5">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-outline-variant text-lg">star</span>
+<span class="material-symbols-outlined text-outline-variant text-lg">star</span>
+</div>
+<span class="text-label-md font-bold text-primary">65%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden mb-6">
+<div class="h-full bg-primary shadow-[0_0_8px_rgba(53,37,205,0.4)] transition-all duration-1000" style="width: 65%"></div>
+</div>
+<button class="w-full py-3 bg-surface-container-high text-primary font-bold rounded-xl group-hover:bg-primary group-hover:text-white transition-all">
+                                Continuar
+                            </button>
+</div>
+</div>
+<!-- Card 2: BioTech -->
+<div class="glass-card rounded-3xl p-card-padding flex flex-col hover:bg-white/85 transition-all duration-300 group" style="transform: translateY(0px);">
+<div class="flex justify-between items-start mb-6">
+<span class="px-3 py-1 bg-tertiary-fixed/30 text-on-tertiary-fixed-variant text-label-md font-label-md rounded-full">Biotecnología</span>
+<span class="px-3 py-1 bg-success-green/10 text-success-green text-label-md font-label-md rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+                                Completado
+                            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Protein Solubility Analysis</h3>
+<p class="text-on-surface-variant font-body-md text-sm mb-6">
+                            Análisis de secuencias de aminoácidos para predecir la solubilidad de proteínas en diferentes solventes. Un reto crítico para la farmacología moderna.
+                        </p>
+<div class="mt-auto">
+<div class="flex justify-between items-end mb-2">
+<div class="flex gap-0.5">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-outline-variant text-lg">star</span>
+</div>
+<span class="text-label-md font-bold text-success-green">100%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden mb-6">
+<div class="h-full bg-success-green" style="width: 100%"></div>
+</div>
+<button class="w-full py-3 bg-surface-container-high text-on-surface-variant font-bold rounded-xl hover:bg-surface-container-highest transition-all">
+                                Ver detalles
+                            </button>
+</div>
+</div>
+<!-- Card 3: SaaS Advanced -->
+<div class="glass-card rounded-3xl p-card-padding flex flex-col hover:bg-white/85 transition-all duration-300 group">
+<div class="flex justify-between items-start mb-6">
+<span class="px-3 py-1 bg-secondary-container/20 text-on-secondary-container text-label-md font-label-md rounded-full">SaaS</span>
+<span class="px-3 py-1 bg-on-surface-variant/10 text-on-surface-variant text-label-md font-label-md rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">lock</span>
+                                Bloqueado
+                            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Customer Lifetime Value</h3>
+<p class="text-on-surface-variant font-body-md text-sm mb-6">
+                            Predicción del valor a largo plazo de un cliente mediante modelos de regresión avanzados. Requiere Nivel 15 para desbloquear.
+                        </p>
+<div class="mt-auto opacity-50">
+<div class="flex justify-between items-end mb-2">
+<div class="flex gap-0.5">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-label-md font-bold">0%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden mb-6">
+<div class="h-full bg-outline-variant" style="width: 0%"></div>
+</div>
+<button class="w-full py-3 bg-surface-container text-outline font-bold rounded-xl cursor-not-allowed" disabled="">
+                                Bloqueado
+                            </button>
+</div>
+</div>
+<!-- Card 4: BioTech Regression -->
+<div class="glass-card rounded-3xl p-card-padding flex flex-col hover:bg-white/85 transition-all duration-300 group">
+<div class="flex justify-between items-start mb-6">
+<span class="px-3 py-1 bg-tertiary-fixed/30 text-on-tertiary-fixed-variant text-label-md font-label-md rounded-full">Biotecnología</span>
+<span class="px-3 py-1 bg-surface-container-highest text-on-surface-variant text-label-md font-label-md rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">not_started</span>
+                                No iniciado
+                            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Wine Quality Analysis</h3>
+<p class="text-on-surface-variant font-body-md text-sm mb-6">
+                            Utiliza parámetros químicos para predecir la calidad sensorial de diferentes vinos. Un ejercicio clásico de regresión multivariante.
+                        </p>
+<div class="mt-auto">
+<div class="flex justify-between items-end mb-2">
+<div class="flex gap-0.5">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-outline-variant text-lg">star</span>
+<span class="material-symbols-outlined text-outline-variant text-lg">star</span>
+<span class="material-symbols-outlined text-outline-variant text-lg">star</span>
+<span class="material-symbols-outlined text-outline-variant text-lg">star</span>
+</div>
+<span class="text-label-md font-bold text-primary">0%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden mb-6">
+<div class="h-full bg-primary/20" style="width: 0%"></div>
+</div>
+<button class="w-full py-3 bg-primary text-white font-bold rounded-xl hover:opacity-90 transition-all">
+                                Comenzar Misión
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Sidebar Panel -->
+<aside class="w-[320px] flex flex-col gap-gutter">
+<!-- Estadísticas Section -->
+<div class="glass-card rounded-3xl p-card-padding" style="transform: translateY(0px);">
+<h4 class="font-headline-sm text-headline-sm text-on-surface-variant mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">analytics</span>
+                        Estadísticas
+                    </h4>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-success-green/10 flex items-center justify-center text-success-green">
+<span class="material-symbols-outlined">task_alt</span>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-wider text-outline font-bold">Completados</p>
+<p class="text-headline-sm font-bold text-deep-navy">08</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-xp-blue/10 flex items-center justify-center text-xp-blue">
+<span class="material-symbols-outlined">target</span>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-wider text-outline font-bold">Precisión Media</p>
+<p class="text-headline-sm font-bold text-deep-navy">94.2%</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-tertiary-fixed/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-wider text-outline font-bold">Total XP Ganada</p>
+<p class="text-headline-sm font-bold text-deep-navy">12,450</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Siguiente Hito -->
+<div class="glass-card rounded-3xl overflow-hidden relative border-primary/20 shadow-xl shadow-primary/5">
+<div class="p-card-padding relative z-10">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<h4 class="font-label-lg text-label-lg text-primary uppercase tracking-widest">Siguiente Hito</h4>
+</div>
+<h5 class="font-headline-sm text-headline-sm text-deep-navy mb-2">Neural Cell Classifier</h5>
+<p class="text-xs text-on-surface-variant mb-6 leading-relaxed">
+                            El reto definitivo de Biotecnología. Clasifica 50,000 células en tiempo real con una precisión superior al 98%.
+                        </p>
+<div class="bg-white/40 rounded-2xl p-4 mb-6 border border-white/60">
+<div class="flex justify-between items-center text-xs font-bold text-on-surface mb-2">
+<span class="">Recompensa</span>
+<span class="text-primary">+5,000 XP</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed/50 flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px] text-tertiary" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<span class="text-[11px] font-medium">Insignia "Bio-Architect"</span>
+</div>
+</div>
+<button class="w-full py-3 bg-deep-navy text-white font-bold rounded-xl hover:bg-black transition-all flex items-center justify-center gap-2">
+                            Explorar Reto
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Decorative background glow for the milestone -->
+<div class="absolute -bottom-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
+</div>
+<!-- Learning Progress Ring (Quick View) -->
+<div class="glass-card rounded-3xl p-card-padding flex flex-col items-center">
+<div class="relative w-32 h-32 mb-4">
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container" cx="64" cy="64" fill="transparent" r="58" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-primary transition-all duration-1000" cx="64" cy="64" fill="transparent" r="58" stroke="currentColor" stroke-dasharray="364.4" stroke-dashoffset="109.3" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="text-headline-md font-extrabold text-deep-navy">12</span>
+<span class="text-[10px] font-bold text-on-surface-variant uppercase">Nivel</span>
+</div>
+</div>
+<p class="text-label-md font-medium text-on-surface-variant">Próximo nivel en 450 XP</p>
+</div>
+</aside>
+</div>
+</main>
+<!-- Micro-interaction Scripts -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Simple hover scaling effect for cards
+            const cards = document.querySelectorAll('.glass-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateY(-4px)';
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'translateY(0)';
+                });
+            });
+
+            // Handle search bar focus
+            const searchInput = document.querySelector('input[type="text"]');
+            window.addEventListener('keydown', (e) => {
+                if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+                    e.preventDefault();
+                    searchInput.focus();
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+</body></html>

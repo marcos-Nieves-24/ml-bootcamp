@@ -1,0 +1,461 @@
+<!DOCTYPE html><html class="light" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Niveles | ML Expedition</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e0e3e5",
+                        "background": "#f7f9fb",
+                        "secondary": "#006591",
+                        "xp-blue": "#3B82F6",
+                        "on-tertiary-container": "#ffd4a4",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-container": "#eceef0",
+                        "primary-container": "#4f46e5",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#e0e3e5",
+                        "inverse-primary": "#c3c0ff",
+                        "secondary-fixed-dim": "#89ceff",
+                        "tertiary": "#684000",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#dad7ff",
+                        "on-secondary-container": "#004666",
+                        "tertiary-fixed-dim": "#ffb95f",
+                        "surface-container-low": "#f2f4f6",
+                        "tertiary-container": "#885500",
+                        "secondary-container": "#39b8fd",
+                        "on-secondary-fixed": "#001e2f",
+                        "outline-variant": "#c7c4d8",
+                        "success-green": "#10B981",
+                        "on-secondary-fixed-variant": "#004c6e",
+                        "on-error-container": "#93000a",
+                        "deep-navy": "#0F172A",
+                        "on-tertiary-fixed": "#2a1700",
+                        "surface-bright": "#f7f9fb",
+                        "on-primary-fixed": "#0f0069",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#eff1f3",
+                        "glass-fill": "rgba(255, 255, 255, 0.7)",
+                        "on-surface-variant": "#464555",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#e2dfff",
+                        "on-background": "#191c1e",
+                        "glass-stroke": "rgba(255, 255, 255, 0.4)",
+                        "secondary-fixed": "#c9e6ff",
+                        "on-surface": "#191c1e",
+                        "on-tertiary-fixed-variant": "#653e00",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#3323cc",
+                        "surface": "#f7f9fb",
+                        "surface-tint": "#4d44e3",
+                        "surface-dim": "#d8dadc",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#c3c0ff",
+                        "inverse-surface": "#2d3133",
+                        "outline": "#777587",
+                        "primary": "#3525cd",
+                        "tertiary-fixed": "#ffddb8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "card-padding": "24px",
+                        "base": "8px",
+                        "container-max": "1280px",
+                        "section-gap": "64px"
+                    },
+                    "fontFamily": {
+                        "label-lg": ["Plus Jakarta Sans"],
+                        "display-hero": ["Plus Jakarta Sans"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-md": ["Inter"],
+                        "code-sm": ["jetbrainsMono"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-sm": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "label-lg": ["14px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "display-hero": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "code-sm": ["13px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "label-md": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "headline-sm": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.85);
+        }
+        .active-level-glow {
+            box-shadow: 0 0 20px rgba(79, 70, 229, 0.2);
+        }
+        .timeline-line {
+            height: 2px;
+            background: linear-gradient(90deg, #10B981 0%, #10B981 40%, #4f46e5 45%, #e0e3e5 50%, #e0e3e5 100%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen overflow-x-hidden">
+<!-- SideNavBar (Authority: JSON & Context) -->
+<aside class="fixed left-0 top-0 h-full w-[280px] bg-glass-fill backdrop-blur-xl border-r border-glass-stroke flex flex-col p-6 z-50 hidden lg:flex">
+<div class="mb-10 flex items-center gap-3">
+<div class="w-10 h-10 bg-primary-container rounded-xl flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">rocket_launch</span>
+</div>
+<h1 class="font-headline-sm text-headline-sm font-bold text-primary">ML Expedition</h1>
+</div>
+<nav class="flex-1 space-y-2">
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:text-primary hover:bg-surface-container-high/40 rounded-xl transition-all duration-300" href="#">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKN-TWGJ9KXBLbE-iPd-gS31MhQ-2vaU26NBlTTQcM4SdJjH8Iaq30hXxsMMPXIcV_bfsKyIcfiPh1bHZDww3_0RmOzjmrEj7QKOP40OXZ0ppnpDzub6tBz-CiGCJWe6TzxE4E1iTPrx8ag7lOX8cXNMFZocck5QyfoXfBv43IJNkjPtpH1b2bv4tJjnpTdVt3UVIu9xoZJhfOCTo2f_rETMwvrraJBQDCOQEJtCdf_Drzt6ybrZmp" alt="Nexus Home Icon" class="w-6 h-6 object-contain">
+<span class="font-label-lg text-label-lg">Inicio</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 bg-primary-container text-on-primary rounded-xl font-bold shadow-md shadow-primary/20" href="#"><span class="material-symbols-outlined">school</span><span class="font-label-lg text-label-lg">Niveles</span></a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:text-primary hover:bg-surface-container-high/40 rounded-xl transition-all duration-300" href="#">
+<span class="material-symbols-outlined">biotech</span>
+<span class="font-label-lg text-label-lg">Laboratorios</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:text-primary hover:bg-surface-container-high/40 rounded-xl transition-all duration-300" href="#">
+<span class="material-symbols-outlined">rocket_launch</span>
+<span class="font-label-lg text-label-lg">Proyectos</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:text-primary hover:bg-surface-container-high/40 rounded-xl transition-all duration-300" href="#">
+<span class="material-symbols-outlined">military_tech</span>
+<span class="font-label-lg text-label-lg">Logros</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:text-primary hover:bg-surface-container-high/40 rounded-xl transition-all duration-300" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-label-lg text-label-lg">Dashboard</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:text-primary hover:bg-surface-container-high/40 rounded-xl transition-all duration-300" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="font-label-lg text-label-lg">Comunidad</span>
+</a>
+</nav>
+<div class="mt-auto pt-6 border-t border-glass-stroke space-y-4">
+<div class="glass-card p-4 rounded-xl flex items-center gap-3">
+<img class="w-10 h-10 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVf21JqG8MOVG7Bw-tlRr3F7S_np7B6dP_rI4XHdzpJK3233R9Cfp7tOcXGuMU-bHEu2rrPAktt7uXXx2eJgKVAGODY4v0jlV67aJvl7G3kGItGqxPICnogVeFh-Kl5QCYXuGfRraSDBcr0pkhk70C988LODqd1EFQGTmfbPTy6bDXBJHZ0hUUXNeCn6DPI_h8eR0uBtEnKF_UDav_GGScpko3A_bL9HjEd_TyPgEfHevLexEwKyzW">
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Investigador Nexus</p>
+<p class="text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-full inline-block font-bold">Nivel 4</p>
+</div>
+</div>
+<a class="flex items-center gap-4 px-4 py-2 text-on-surface-variant hover:text-error transition-colors" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span class="font-label-lg text-label-lg">Cerrar Sesión</span>
+</a>
+</div>
+</aside>
+<!-- TopNavBar (Authority: JSON) -->
+<header class="sticky top-0 z-40 flex items-center justify-between px-gutter py-4 bg-glass-fill backdrop-blur-xl border-b border-glass-stroke shadow-sm w-full lg:ml-[280px]"><div class="flex items-center gap-4 flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span><input class="w-full bg-surface-container-low border-none rounded-xl pl-10 pr-12 py-2.5 focus:ring-2 focus:ring-primary/20 font-label-md text-label-md transition-all" placeholder="Buscar misiones, laboratorios, conceptos..." type="text"><span class="absolute right-3 top-1/2 -translate-y-1/2 text-[10px] font-bold text-on-surface-variant/50 border border-on-surface-variant/20 px-1.5 py-0.5 rounded-md">⌘K</span></div></div><div class="flex items-center gap-6"><div class="flex items-center gap-4 hidden md:flex"><div class="flex items-center gap-1 text-xp-blue font-bold"><span class="material-symbols-outlined text-[20px] fill-icon">diamond</span><span class="font-label-lg text-label-lg">1,260 XP</span></div><div class="flex items-center gap-1 text-orange-500 font-bold"><span class="material-symbols-outlined text-[20px] fill-icon">local_fire_department</span><span class="font-label-lg text-label-lg">12 días</span></div></div><div class="flex items-center gap-2"><button class="w-10 h-10 rounded-xl flex items-center justify-center hover:bg-surface-bright transition-colors relative"><span class="material-symbols-outlined text-on-surface-variant">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 bg-error rounded-full"></span></button><button class="w-10 h-10 rounded-xl flex items-center justify-center hover:bg-surface-bright transition-colors"><span class="material-symbols-outlined text-on-surface-variant">settings</span></button><div class="flex items-center gap-3 pl-4 border-l border-glass-stroke"><div class="text-right hidden sm:block"><p class="font-label-lg text-label-lg text-on-surface">Investigador Nexus</p><p class="text-[10px] font-bold text-primary uppercase tracking-wider">INVESTIGADOR NIVEL 4</p></div><div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden border-2 border-white shadow-sm cursor-pointer"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaMNLuM6992s7rFEZLaOvFAzpnSU-3iW2DV-ujme06ZcqWKxjUKQCX2MmaMAgzOY1ywLTz5OivJ8tp6kg00pFe3n14WzpoyPa_uk2AldoEO9ZjOOdcinJV9kXMP9We9WB8A7C1VfPL1Ft_7PzmJH5yHxuqkct5VJmRfT8PCJKposwXMM8MsP6A35r1OWO6t3U02V32XZXDJgU8Bp2xjVDeAj8PmuHbbYC3TTi7fzES7Wzj-uLPq8t5"></div></div></div></div></header>
+<!-- Main Content -->
+<main class="lg:ml-[280px] p-8 max-w-container-max mx-auto space-y-12 pb-20">
+<!-- Header Section -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-deep-navy">Niveles</h1>
+<p class="font-body-md text-on-surface-variant mt-2">Tu progreso como investigador en Nexus Institute</p>
+</div>
+<div class="glass-card p-4 rounded-2xl flex items-center gap-6 pr-8 shadow-sm">
+<div class="relative w-16 h-16 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90">
+<circle class="text-surface-container-highest" cx="32" cy="32" fill="none" r="28" stroke="currentColor" stroke-width="4"></circle>
+<circle class="text-primary-container transition-all duration-1000" cx="32" cy="32" fill="none" r="28" stroke="currentColor" stroke-dasharray="175.9" stroke-dashoffset="65" stroke-width="4" style="stroke-dashoffset: 65; transition: stroke-dashoffset 1.5s ease-out;"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-container fill-icon" style="font-variation-settings: &quot;FILL&quot; 1;">military_tech</span>
+</div>
+</div>
+<div>
+<span class="text-xs uppercase font-bold text-on-surface-variant tracking-wider">Nivel Actual</span>
+<h3 class="font-headline-sm text-headline-sm">Investigador</h3>
+<div class="flex items-center gap-2 mt-1">
+<span class="text-label-md font-bold text-primary">1,260 / 2,000 XP</span>
+<div class="w-24 h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="w-[63%] h-full bg-primary-container"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Levels Timeline Section -->
+<section class="relative">
+<div class="absolute left-0 right-0 top-1/2 -translate-y-1/2 timeline-line z-0"></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-4 relative z-10">
+<!-- Level 01: Novato -->
+<div class="glass-card rounded-2xl p-6 text-center border-success-green/20">
+<span class="block text-success-green font-bold text-headline-sm mb-4">01</span>
+<div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center bg-success-green/10 rounded-full">
+<span class="material-symbols-outlined text-4xl text-success-green">eco</span>
+</div>
+<h4 class="font-bold text-headline-sm mb-2">Novato</h4>
+<p class="text-label-md text-on-surface-variant leading-relaxed">Comienza tu viaje en el mundo de los datos.</p>
+<div class="mt-6 flex items-center justify-center gap-2 text-success-green font-bold">
+<span class="material-symbols-outlined text-sm fill-icon" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="text-[12px]">Completado</span>
+</div>
+</div>
+<!-- Level 02: Analista -->
+<div class="glass-card rounded-2xl p-6 text-center border-success-green/20">
+<span class="block text-success-green font-bold text-headline-sm mb-4">02</span>
+<div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center bg-success-green/10 rounded-full">
+<span class="material-symbols-outlined text-4xl text-success-green">query_stats</span>
+</div>
+<h4 class="font-bold text-headline-sm mb-2">Analista</h4>
+<p class="text-label-md text-on-surface-variant leading-relaxed">Aprendes a explorar y entender los datos.</p>
+<div class="mt-6 flex items-center justify-center gap-2 text-success-green font-bold">
+<span class="material-symbols-outlined text-sm fill-icon" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="text-[12px]">Completado</span>
+</div>
+</div>
+<!-- Level 03: Investigador Junior -->
+<div class="glass-card rounded-2xl p-6 text-center border-success-green/20">
+<span class="block text-success-green font-bold text-headline-sm mb-4">03</span>
+<div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center bg-success-green/10 rounded-full">
+<span class="material-symbols-outlined text-4xl text-success-green">science</span>
+</div>
+<h4 class="font-bold text-headline-sm mb-2 leading-tight">Investigador Junior</h4>
+<p class="text-label-md text-on-surface-variant leading-relaxed">Aplicas estadística y herramientas avanzadas.</p>
+<div class="mt-6 flex items-center justify-center gap-2 text-success-green font-bold">
+<span class="material-symbols-outlined text-sm fill-icon" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="text-[12px]">Completado</span>
+</div>
+</div>
+<!-- Level 04: Investigador (CURRENT) -->
+<div class="glass-card rounded-2xl p-6 text-center ring-2 ring-primary border-primary active-level-glow relative shadow-lg">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-primary text-on-primary text-[10px] font-bold rounded-full uppercase tracking-widest">Actual</div>
+<span class="block text-primary font-bold text-headline-sm mb-4">04</span>
+<div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center bg-primary/10 rounded-full animate-pulse">
+<span class="material-symbols-outlined text-5xl text-primary fill-icon" style="font-variation-settings: &quot;FILL&quot; 1;">hub</span>
+</div>
+<h4 class="font-bold text-headline-sm mb-2">Investigador</h4>
+<p class="text-label-md text-on-surface-variant leading-relaxed">Construyes modelos de ML y resuelves problemas reales.</p>
+<div class="mt-4 space-y-1">
+<div class="flex justify-between text-[10px] font-bold text-primary">
+<span class="">1,260</span>
+<span class="">2,000 XP</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="w-[63%] h-full bg-primary"></div>
+</div>
+</div>
+</div>
+<!-- Level 05: Especialista -->
+<div class="glass-card rounded-2xl p-6 text-center opacity-60">
+<span class="block text-on-surface-variant font-bold text-headline-sm mb-4">05</span>
+<div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center bg-surface-container rounded-full">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant">model_training</span>
+</div>
+<h4 class="font-bold text-headline-sm mb-2">Especialista</h4>
+<p class="text-label-md text-on-surface-variant leading-relaxed">Dominas algoritmos avanzados y técnicas de optimización.</p>
+<div class="mt-6 flex items-center justify-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span class="text-[12px]">Bloqueado</span>
+</div>
+</div>
+<!-- Level 06: ML Engineer -->
+<div class="glass-card rounded-2xl p-6 text-center opacity-60">
+<span class="block text-on-surface-variant font-bold text-headline-sm mb-4">06</span>
+<div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center bg-surface-container rounded-full">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant">architecture</span>
+</div>
+<h4 class="font-bold text-headline-sm mb-2 leading-tight">ML Engineer</h4>
+<p class="text-label-md text-on-surface-variant leading-relaxed">Diseñas sistemas inteligentes escalables.</p>
+<div class="mt-6 flex items-center justify-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span class="text-[12px]">Bloqueado</span>
+</div>
+</div>
+<!-- Level 07: Nexus Researcher -->
+<div class="glass-card rounded-2xl p-6 text-center opacity-60">
+<span class="block text-on-surface-variant font-bold text-headline-sm mb-4">07</span>
+<div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center bg-surface-container rounded-full">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant">psychology</span>
+</div>
+<h4 class="font-bold text-headline-sm mb-2 leading-tight">Nexus Researcher</h4>
+<p class="text-label-md text-on-surface-variant leading-relaxed">Alcanza el máximo nivel y lidera investigaciones innovadoras.</p>
+<div class="mt-6 flex items-center justify-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span class="text-[12px]">Bloqueado</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Details Grid Section -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Current Level Details -->
+<div class="lg:col-span-2 glass-card rounded-3xl p-card-padding">
+<div class="flex items-center gap-6 mb-8">
+<div class="w-24 h-24 rounded-3xl bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-primary">hub</span>
+</div>
+<div>
+<span class="text-label-md font-bold text-primary uppercase tracking-widest">Nivel 4</span>
+<h2 class="font-headline-lg text-headline-lg">Investigador</h2>
+<p class="font-body-md text-on-surface-variant mt-2 max-w-xl">
+                            Estás desarrollando habilidades para crear modelos predictivos, evaluar su rendimiento y aplicarlos a problemas complejos del mundo real.
+                        </p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div>
+<h4 class="font-bold text-headline-sm mb-4">Habilidades en desarrollo</h4>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container rounded-full text-label-md text-on-surface-variant border border-outline-variant/30">Regresión</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-label-md text-on-surface-variant border border-outline-variant/30">Clasificación</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-label-md text-on-surface-variant border border-outline-variant/30">Árboles de decisión</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-label-md text-on-surface-variant border border-outline-variant/30">Validación de modelos</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-label-md text-on-surface-variant border border-outline-variant/30">Métricas de evaluación</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-label-md text-on-surface-variant border border-outline-variant/30">Feature Engineering</span>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center p-6 bg-surface-container-low rounded-2xl border border-glass-stroke">
+<div class="relative w-32 h-32 flex items-center justify-center mb-4">
+<svg class="w-full h-full -rotate-90">
+<circle class="text-surface-container-highest" cx="64" cy="64" fill="none" r="58" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-primary transition-all duration-1000" cx="64" cy="64" fill="none" r="58" stroke="currentColor" stroke-dasharray="364.4" stroke-dashoffset="134.8" stroke-width="8" style="stroke-dashoffset: 134.8; transition: stroke-dashoffset 1.5s ease-out;"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-display-hero text-headline-lg">63%</span>
+<span class="text-[10px] font-bold text-on-surface-variant uppercase">Completado</span>
+</div>
+</div>
+<div class="w-full space-y-3">
+<div class="flex justify-between items-center text-label-md">
+<span class="text-on-surface-variant">XP Actual</span>
+<span class="font-bold text-primary">1,260 XP</span>
+</div>
+<div class="flex justify-between items-center text-label-md">
+<span class="text-on-surface-variant">XP para siguiente nivel</span>
+<span class="font-bold text-on-surface">740 XP</span>
+</div>
+<div class="flex justify-between items-center text-label-md">
+<span class="text-on-surface-variant">Misiones completadas</span>
+<span class="font-bold text-on-surface">12 / 20</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Rewards Section -->
+<div class="glass-card rounded-3xl p-card-padding">
+<h4 class="font-bold text-headline-sm mb-6">Recompensas por alcanzar este nivel</h4>
+<div class="space-y-6">
+<!-- Reward 1 -->
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary-container/10 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">biotech</span>
+</div>
+<div class="flex-1">
+<h5 class="font-bold text-label-lg">Nuevo Laboratorio</h5>
+<p class="text-[12px] text-on-surface-variant">Acceso al Laboratorio de Deep Learning</p>
+</div>
+<span class="material-symbols-outlined text-success-green fill-icon" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+</div>
+<!-- Reward 2 -->
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-xp-blue/10 flex items-center justify-center text-xp-blue">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<div class="flex-1">
+<h5 class="font-bold text-label-lg">Proyecto Avanzado</h5>
+<p class="text-[12px] text-on-surface-variant">Desbloquea proyectos más complejos</p>
+</div>
+<span class="material-symbols-outlined text-success-green fill-icon" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+</div>
+<!-- Reward 3 -->
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed-dim/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">palette</span>
+</div>
+<div class="flex-1">
+<h5 class="font-bold text-label-lg">Personalización</h5>
+<p class="text-[12px] text-on-surface-variant">Nuevos temas y personalizaciones</p>
+</div>
+<span class="material-symbols-outlined text-success-green fill-icon" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+</div>
+<!-- Reward 4 (Locked) -->
+<div class="flex items-center gap-4 opacity-50">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<div class="flex-1">
+<h5 class="font-bold text-label-lg">Título</h5>
+<p class="text-[12px] text-on-surface-variant">Especialista en Machine Learning</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">lock</span>
+</div>
+</div>
+<div class="mt-10 p-5 bg-primary/5 rounded-2xl border border-primary/10">
+<h5 class="font-bold text-label-lg mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+                        Próximo Hito
+                    </h5>
+<p class="text-label-md text-on-surface-variant">Completa 8 misiones más para desbloquear el nivel Especialista y el Laboratorio de Visión Artificial.</p>
+<button class="w-full mt-4 py-2.5 bg-primary text-on-primary rounded-xl font-bold transition-transform active:scale-95 shadow-lg shadow-primary/20">Ver Misiones</button>
+</div>
+</div>
+</div>
+</main>
+<script>
+        // Simple micro-interaction for circular progress
+        document.addEventListener('DOMContentLoaded', () => {
+            const circles = document.querySelectorAll('circle[stroke-dashoffset]');
+            circles.forEach(circle => {
+                const target = circle.getAttribute('stroke-dashoffset');
+                circle.style.strokeDashoffset = '175.9'; // Full circle
+                setTimeout(() => {
+                    circle.style.transition = 'stroke-dashoffset 1.5s ease-out';
+                    circle.style.strokeDashoffset = target;
+                }, 100);
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

@@ -1,87 +1,152 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* Base design tokens for the platform */
-:root {
-  --color-primary: 59 130 246; /* blue-500 */
-  --color-primary-dark: 29 78 216; /* blue-700 */
-  --color-secondary: 168 85 247; /* purple-500 */
-  --color-accent: 16 185 129; /* green-500 */
-  --color-bg-dark: 10 10 10; /* gray-900 */
-  --color-bg-card: 23 23 23; /* gray-800 */
-  --color-text-primary: 243 244 246; /* gray-100 */
-  --color-text-secondary: 156 163 175; /* gray-400 */
-  --color-border: 55 65 81; /* gray-700 */
-  --color-overlay: 0 0 0; /* black */
-  --color-overlay-light: rgba(0, 0, 0, 0.5);
+@theme {
+  /* Colors from DESIGN.md */
+  --color-surface: #f7f9fb;
+  --color-on-surface: #191c1e;
+  --color-on-surface-variant: #464555;
+  --color-glass-fill: rgba(255, 255, 255, 0.7);
+  --color-glass-stroke: rgba(255, 255, 255, 0.4);
+  --color-primary: #3525cd;
+  --color-primary-container: #4f46e5;
+  --color-secondary: #006591;
+  --color-tertiary: #684000;
+  --color-xp-blue: #3B82F6;
+  --color-success-green: #10B981;
+  --color-deep-navy: #0F172A;
+
+  /* Typography from DESIGN.md */
+  --font-family-plus-jakarta-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-family-inter: "Inter", system-ui, -apple-system, sans-serif;
+  --font-family-jetbrains-mono: "JetBrains Mono", monospace;
+
+  --font-size-display-hero: 48px;
+  --font-size-display-hero-mobile: 32px;
+  --font-size-headline-lg: 32px;
+  --font-size-headline-lg-mobile: 24px;
+  --font-size-headline-md: 24px;
+  --font-size-headline-sm: 20px;
+  --font-size-body-lg: 18px;
+  --font-size-body-md: 16px;
+  --font-size-label-lg: 14px;
+  --font-size-label-md: 12px;
+  --font-size-code-sm: 13px;
+
+  /* Spacing from DESIGN.md */
+  --spacing-base: 8px;
+  --spacing-section-gap: 64px;
+  --spacing-card-padding: 24px;
+  --spacing-gutter: 24px;
+  --spacing-container-max: 1280px;
+
+  /* Border radius from DESIGN.md */
+  --border-radius-sm: 0.25rem;
+  --border-radius-default: 0.5rem;
+  --border-radius-md: 0.75rem;
+  --border-radius-lg: 1rem;
+  --border-radius-xl: 1.5rem;
+  --border-radius-full: 9999px;
 }
 
-body {
-  background-color: rgb(var(--color-bg-dark));
-  color: rgb(var(--color-text-primary));
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Base styles */
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    font-family: var(--font-family-plus-jakarta-sans);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+  }
+
+  /* Font families for typography */
+  .font-display-hero { font-family: var(--font-family-plus-jakarta-sans); }
+  .font-headline-lg { font-family: var(--font-family-plus-jakarta-sans); }
+  .font-headline-md { font-family: var(--font-family-plus-jakarta-sans); }
+  .font-headline-sm { font-family: var(--font-family-plus-jakarta-sans); }
+  .font-body-lg { font-family: var(--font-family-inter); }
+  .font-body-md { font-family: var(--font-family-inter); }
+  .font-label-lg { font-family: var(--font-family-plus-jakarta-sans); }
+  .font-label-md { font-family: var(--font-family-plus-jakarta-sans); }
+  .font-code-sm { font-family: var(--font-family-jetbrains-mono); }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }
 
-/* Custom scrollbar */
-html {
-  scrollbar-width: thin;
-  scrollbar-color: rgb(var(--color-border)) transparent;
-}
+/* Glassmorphism utilities */
+@layer utilities {
+  /* Glass card base class */
+  .glass-card {
+    background: var(--color-glass-fill);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--color-glass-stroke);
+    border-radius: var(--border-radius-lg);
+    transition: opacity 0.3s ease;
+  }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
+  .glass-card:hover:not([data-reduced-motion]) {
+    opacity: 0.85;
+  }
 
-::-webkit-scrollbar-track {
-  background: transparent;
-}
+  /* Glass fill background */
+  .glass-fill {
+    background: var(--color-glass-fill);
+  }
 
-::-webkit-scrollbar-thumb {
-  background-color: rgb(var(--color-border));
-  border-radius: 4px;
-}
+  /* Glass stroke border */
+  .glass-stroke {
+    border: 1px solid var(--color-glass-stroke);
+  }
 
-::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(var(--color-text-secondary));
-}
+  /* Primary and secondary colors for text */
+  .text-primary { color: var(--color-primary); }
+  .text-primary-container { color: var(--color-primary-container); }
+  .text-secondary { color: var(--color-secondary); }
+  .text-tertiary { color: var(--color-tertiary); }
+  .text-xp-blue { color: var(--color-xp-blue); }
+  .text-success-green { color: var(--color-success-green); }
+  .text-on-surface { color: var(--color-on-surface); }
+  .text-on-surface-variant { color: var(--color-on-surface-variant); }
 
-/* Focus styles for accessibility */
-:focus-visible {
-  outline: 2px solid rgb(var(--color-primary));
-  outline-offset: 2px;
-}
+  /* Background colors */
+  .bg-surface { background-color: var(--color-surface); }
+  .bg-surface-container { background-color: #eceef0; }
+  .bg-surface-container-low { background-color: #f2f4f6; }
+  .bg-surface-container-lowest { background-color: #ffffff; }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
+  /* Primary colors */
+  .bg-primary { background-color: var(--color-primary); }
+  .bg-primary-container { background-color: var(--color-primary-container); }
 
-/* Selection styles */
-::selection {
-  background-color: rgb(var(--color-primary));
-  color: white;
-}
+  /* Selection styles */
+  ::selection {
+    background-color: var(--color-primary);
+    color: white;
+  }
 
-/* Animation utilities */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+  /* Focus styles for accessibility */
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
 
-.animate-fade-in {
-  animation: fadeIn 0.3s ease-out;
-}
-
-/* Hover lift effect */
-.hover-lift {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.hover-lift:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+  /* Gradient button */
+  .gradient-btn {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-container));
+    color: white;
+  }
 }

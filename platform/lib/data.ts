@@ -1,198 +1,367 @@
-/* ------------------------------------------------------------------ */
-/*  Data Layer — mock/placeholder data for the ML Bootcamp Platform   */
-/*  Replace these with real API/database calls as the platform grows.  */
-/* ------------------------------------------------------------------ */
+/**
+ * Data Layer — mock/placeholder data for the ML Bootcamp Platform
+ * Replace these with real API/database calls as the platform grows.
+ */
 
-export interface LearningSpace {
-  title: string
-  description: string
-  href: string
-  color: string
+// Types defined in spec
+export interface UserProfile {
+  id: string;
+  name: string;
+  avatar: string;
+  level: number;
+  xp: number;
+  xpToNextLevel: number;
+  streakDays: number;
+  rank: Rank;
 }
 
-export const learningSpaces: LearningSpace[] = [
-  {
-    title: "Dashboard",
-    description: "Panel de control con métricas de aprendizaje y progreso",
-    href: "/dashboard",
-    color: "from-blue-500 to-cyan-500",
-  },
-  {
-    title: "Instituto",
-    description: "Explora la arquitectura del conocimiento ML y patrones fundamentales",
-    href: "/instituto",
-    color: "from-purple-500 to-pink-500",
-  },
-  {
-    title: "Laboratorio",
-    description: "Experimenta con notebooks interactivos y código ejecutable",
-    href: "/laboratorio",
-    color: "from-green-500 to-teal-500",
-  },
-  {
-    title: "Taller",
-    description: "Proyectos prácticos guiados para aplicar conceptos en contexto real",
-    href: "/taller",
-    color: "from-orange-500 to-red-500",
-  },
-]
-
-/* Dashboard */
-
-export interface DashboardCard {
-  title: string
-  description: string
-  icon: string
-  color: string
-  metric?: string
-  progress?: number
-  points?: number
-  level?: number
+export interface Module {
+  id: string;
+  title: string;
+  description: string;
+  progress: number;
+  xpReward: number;
+  difficulty: 1 | 2 | 3 | 4;
 }
 
-export const dashboardCards: DashboardCard[] = [
-  {
-    title: "Experiencia Actual",
-    description: "Has completado 3 de 8 módulos del plan de aprendizaje",
-    metric: "37.5%",
-    icon: "📈",
-    color: "from-blue-500 to-cyan-500",
-  },
-  {
-    title: "Misión Actual",
-    description: "Completar módulo 'Introducción al Machine Learning' y realizar laboratorio",
-    progress: 70,
-    icon: "🎯",
-    color: "from-purple-500 to-pink-500",
-  },
-  {
-    title: "Nivel XP",
-    description: "Nivel 2 - Aprendiz Activo. 1500 puntos XP ganados",
-    points: 1500,
-    level: 2,
-    icon: "⭐",
-    color: "from-orange-500 to-red-500",
-  },
-]
-
-/* Instituto (Knowledge Map) */
-
-export interface KnowledgeArea {
-  title: string
-  description: string
-  status: "Completado" | "En Progreso" | "Pendiente"
-  progress: number
-  color: string
+export interface Lab {
+  id: string;
+  name: string;
+  icon: string;
+  level: number;
+  progress: number;
+  locked: boolean;
+  requirement?: string;
 }
 
-export const knowledgeMap: KnowledgeArea[] = [
+export interface Achievement {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+  xpReward: number;
+  unlockedAt?: Date;
+}
+
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  progress: number;
+  techTags: string[];
+  difficultyBadge: string;
+  category: "SaaS" | "Biotecnología";
+  status: "En Progreso" | "Completado" | "Bloqueado" | "No iniciado";
+}
+
+export interface Rank {
+  id: string;
+  name: string;
+  order: number;
+  xpRequired: number;
+  icon: string;
+}
+
+export interface Activity {
+  id: string;
+  type: string;
+  message: string;
+  user?: string;
+  timestamp: Date;
+}
+
+export interface MetricPoint {
+  date: string;
+  value: number;
+}
+
+// Mock data arrays
+
+export const MOCK_USERS: UserProfile[] = [
   {
-    title: "Fundamentos de ML",
-    description: "Conceptos básicos: algoritmos, pipeline, estrategias de entrenamiento",
-    status: "Completado",
-    progress: 100,
-    color: "from-blue-500 to-cyan-500",
+    id: "investigador-nexus-001",
+    name: "Investigador Nexus",
+    avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuDVf21JqG8MOVG7Bw-tlRr3F7S_np7B6dP_rI4XHdzpJK3233R9Cfp7tOcXGuMU-bHEu2rrPAktt7uXXx2eJgKVAGODY4v0jlV67aJvl7G3kGItGqxPICnogVeFh-Kl5QCYXuGfRraSDBcr0pkhk70C988LODqd1EFQGTmfbPTy6bDXBJHZ0hUUXNeCn6DPI_h8eR0uBtEnKF_UDav_GGScpko3A_bL9HjEd_TyPgEfHevLexEwKyzW",
+    level: 4,
+    xp: 1260,
+    xpToNextLevel: 740,
+    streakDays: 12,
+    rank: {
+      id: "investigator",
+      name: "Investigador",
+      order: 4,
+      xpRequired: 600,
+      icon: "military_tech"
+    }
+  }
+];
+
+export const MOCK_MODULES: Module[] = [
+  {
+    id: "intro-ml",
+    title: "Introduction to Machine Learning",
+    description: "Foundation concepts and terminology in ML",
+    progress: 80,
+    xpReward: 500,
+    difficulty: 1
   },
   {
-    title: "Modelos y Algoritmos",
-    description: "Aprendizaje supervisado, no supervisado, reforzamiento y híbrido",
-    status: "En Progreso",
+    id: "ml-algorithms",
+    title: "Machine Learning Algorithms",
+    description: "Supervised, unsupervised, and reinforcement learning",
     progress: 45,
-    color: "from-purple-500 to-pink-500",
+    xpReward: 700,
+    difficulty: 2
   },
   {
-    title: "Ingeniería de Datos",
-    description: "Preprocesamiento, feature engineering, manejo de datos a gran escala",
-    status: "Pendiente",
+    id: "data-engineering",
+    title: "Machine Learning Data Engineering",
+    description: "Data preprocessing and feature engineering",
     progress: 0,
-    color: "from-green-500 to-teal-500",
+    xpReward: 900,
+    difficulty: 3
   },
   {
-    title: "Ética y Responsabilidad",
-    description: "Principios de ML ético, sesgos, privacidad y seguridad",
-    status: "Pendiente",
+    id: "ethical-ml",
+    title: "Ethical ML & Responsible AI",
+    description: "Bias detection, fairness, and responsible development",
     progress: 0,
-    color: "from-orange-500 to-red-500",
+    xpReward: 600,
+    difficulty: 4
   },
-]
+  {
+    id: "model-deployment",
+    title: "Model Deployment & Monitoring",
+    description: "Production ML systems and MLOps",
+    progress: 0,
+    xpReward: 1200,
+    difficulty: 2
+  }
+];
 
-/* Taller (Workshops) */
+export const MOCK_LABS: Lab[] = [
+  {
+    id: "python-lab",
+    name: "Python Lab",
+    icon: "code",
+    level: 3,
+    progress: 75,
+    locked: false
+  },
+  {
+    id: "data-lab",
+    name: "Data Lab",
+    icon: "bar_chart",
+    level: 2,
+    progress: 40,
+    locked: false
+  },
+  {
+    id: "stats-lab",
+    name: "Estadística Lab",
+    icon: "query_stats",
+    level: 1,
+    progress: 20,
+    locked: false
+  },
+  {
+    id: "ml-lab",
+    name: "ML Lab",
+    icon: "account_tree",
+    level: 4,
+    progress: 0,
+    locked: true,
+    requirement: "Completar Python Lab Nivel 5"
+  },
+  {
+    id: "deep-learning-lab",
+    name: "Deep Learning Center",
+    icon: "neurology",
+    level: 5,
+    progress: 0,
+    locked: true,
+    requirement: "Completar Estadística Lab Nivel 3"
+  },
+  {
+    id: "ethics-lab",
+    name: "Ethics in AI",
+    icon: "gavel",
+    level: 6,
+    progress: 0,
+    locked: true,
+    requirement: "Alcanzar Nivel 15"
+  }
+];
 
-export interface Workshop {
-  title: string
-  description: string
-  duration: string
-  difficulty: "Principiante" | "Intermedio" | "Avanzado"
-  students: number
-  color: string
-  icon: string
-}
+export const MOCK_ACHIEVEMENTS: Achievement[] = [
+  {
+    id: "explorer",
+    title: "Explorer de Datos",
+    description: "Completaste tu primer análisis exploratorio",
+    icon: "explore",
+    xpReward: 20,
+    unlockedAt: new Date("2026-06-15")
+  },
+  {
+    id: "python-master",
+    title: "Maestro de Python",
+    description: "Completaste 20 ejercicios de Python",
+    icon: "code",
+    xpReward: 30,
+    unlockedAt: new Date("2026-06-20")
+  },
+  {
+    id: "outlier-detective",
+    title: "Detective de Outliers",
+    description: "Identificaste outliers en tus datos",
+    icon: "troubleshoot",
+    xpReward: 25,
+    unlockedAt: new Date("2026-06-25")
+  },
+  {
+    id: "quick-learner",
+    title: "Aprendiz Rápido",
+    description: "Completaste 5 laboratorios en una semana",
+    icon: "speed",
+    xpReward: 50
+  }
+];
 
-export const workshops: Workshop[] = [
+export const MOCK_PROJECTS: Project[] = [
   {
-    title: "Construcción de Pipeline de Datos ML",
-    description: "Construir un pipeline completo: recopilación → limpieza → feature engineering → entrenamiento",
-    duration: "4 semanas",
-    difficulty: "Intermedio",
-    students: 89,
-    color: "from-blue-500 to-cyan-500",
-    icon: "🔧",
+    id: "saas-churn",
+    title: "SaaS Churn Prediction",
+    description: "Predicción de abandono de clientes SaaS usando modelos de clasificación y análisis de cohortes.",
+    progress: 65,
+    techTags: ["Python", "Scikit-learn", "Pandas", "Classification"],
+    difficultyBadge: "Intermedio",
+    category: "SaaS",
+    status: "En Progreso"
   },
   {
-    title: "Implementación de Modelos de Deep Learning",
-    description: "Implementar, desplegar y optimizar redes neuronales profundas en producción",
-    duration: "6 semanas",
-    difficulty: "Avanzado",
-    students: 45,
-    color: "from-purple-500 to-pink-500",
-    icon: "🧠",
+    id: "protein-solubility",
+    title: "Protein Solubility Analysis",
+    description: "Análisis de solubilidad de proteínas con técnicas de bioinformática y ML estructural.",
+    progress: 100,
+    techTags: ["Python", "BioPython", "RDKit", "Deep Learning"],
+    difficultyBadge: "Avanzado",
+    category: "Biotecnología",
+    status: "Completado"
   },
   {
-    title: "Métricas y Evaluación ML",
-    description: "Dominar métricas de evaluación, validación cruzada y optimización de modelos",
-    duration: "3 semanas",
-    difficulty: "Principiante",
-    students: 156,
-    color: "from-green-500 to-teal-500",
-    icon: "📊",
+    id: "customer-ltv",
+    title: "Customer Lifetime Value",
+    description: "Modelado predictivo del valor de vida del cliente para optimizar retención y revenue.",
+    progress: 0,
+    techTags: ["Python", "Regression", "Time Series", "SQL"],
+    difficultyBadge: "Intermedio",
+    category: "SaaS",
+    status: "Bloqueado"
   },
   {
-    title: "ML en la Nube",
-    description: "Implementar modelos ML en la nube usando AWS, GCP y Azure",
-    duration: "5 semanas",
-    difficulty: "Intermedio",
-    students: 78,
-    color: "from-orange-500 to-red-500",
-    icon: "☁️",
-  },
-]
+    id: "wine-quality",
+    title: "Wine Quality Analysis",
+    description: "Analizando características químicas para predecir calidad de vinos con modelos ensemble.",
+    progress: 0,
+    techTags: ["Python", "Random Forest", "XGBoost", "EDA"],
+    difficultyBadge: "Principiante",
+    category: "Biotecnología",
+    status: "No iniciado"
+  }
+];
 
-/* Feature cards (home page) */
+export const MOCK_RANKS: Rank[] = [
+  {
+    id: "novato",
+    name: "Novato",
+    order: 1,
+    xpRequired: 0,
+    icon: "verified"
+  },
+  {
+    id: "analista",
+    name: "Analista",
+    order: 2,
+    xpRequired: 100,
+    icon: "analytics"
+  },
+  {
+    id: "investigador-junior",
+    name: "Investigador Junior",
+    order: 3,
+    xpRequired: 300,
+    icon: "military_tech"
+  },
+  {
+    id: "investigador",
+    name: "Investigador",
+    order: 4,
+    xpRequired: 600,
+    icon: "military_tech"
+  },
+  {
+    id: "especialista",
+    name: "Especialista",
+    order: 5,
+    xpRequired: 1000,
+    icon: "star"
+  },
+  {
+    id: "ml-engineer",
+    name: "ML Engineer",
+    order: 6,
+    xpRequired: 2000,
+    icon: "workspace_premium"
+  }
+];
 
-export interface FeatureCard {
-  title: string
-  description: string
-  color: string
-  icon: string
-}
+export const MOCK_ACTIVITIES: Activity[] = [
+  {
+    id: "activity-1",
+    type: "achievement",
+    message: "Completaste la misión 'Media y Mediana'",
+    timestamp: new Date("2026-07-11T14:00:00Z")
+  },
+  {
+    id: "activity-2",
+    type: "community",
+    message: "Elena V. comentó: 'Excelente enfoque en el Lab de Python...'",
+    user: "elena.v",
+    timestamp: new Date("2026-07-11T12:00:00Z")
+  },
+  {
+    id: "activity-3",
+    type: "level",
+    message: "Marco R. subió de nivel",
+    user: "marco.r",
+    timestamp: new Date("2026-07-11T10:00:00Z")
+  },
+  {
+    id: "activity-4",
+    type: "lab",
+    message: "Completaste el laboratorio 'Python Lab: Estructuras de Datos'",
+    timestamp: new Date("2026-07-11T09:00:00Z")
+  },
+  {
+    id: "activity-5",
+    type: "lab",
+    message: "Obtuviste 95% en 'Data Lab: Limpieza de Datos'",
+    timestamp: new Date("2026-07-10T16:00:00Z")
+  },
+  {
+    id: "activity-6",
+    type: "achievement",
+    message: "Desbloqueaste el logro 'Maestro de Datos'",
+    timestamp: new Date("2026-07-10T14:00:00Z")
+  }
+];
 
-export const featureCards: FeatureCard[] = [
-  {
-    title: "Aprendizaje Modular",
-    description: "Estructura organizada por módulos con progresiones claras.",
-    color: "from-green-500 to-teal-500",
-    icon: "📚",
-  },
-  {
-    title: "Laboratorio Interactivo",
-    description: "Ejecuta notebooks directamente en el navegador sin configuraciones.",
-    color: "from-orange-500 to-red-500",
-    icon: "🧪",
-  },
-  {
-    title: "Proyectos Prácticos",
-    description: "Talleres guiados para aplicar conceptos en proyectos realistas.",
-    color: "from-purple-500 to-pink-500",
-    icon: "🔧",
-  },
-]
+export const MOCK_METRIC_POINTS: MetricPoint[] = [
+  { date: "2026-06-01", value: 1200 },
+  { date: "2026-06-08", value: 1300 },
+  { date: "2026-06-15", value: 1400 },
+  { date: "2026-06-22", value: 1500 },
+  { date: "2026-06-29", value: 1600 },
+  { date: "2026-07-06", value: 1700 },
+  { date: "2026-07-11", value: 1260 }
+];
