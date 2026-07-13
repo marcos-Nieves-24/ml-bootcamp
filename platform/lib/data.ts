@@ -128,43 +128,43 @@ export const MOCK_USERS: UserProfile[] = [
 
 export const MOCK_MODULES: Module[] = [
   {
-    id: "intro-ml",
-    title: "Introduction to Machine Learning",
-    description: "Foundation concepts and terminology in ML",
+    id: "module01_ai",
+    title: "Introducción a la Inteligencia Artificial",
+    description: "Fundamentos de IA, historia, paradigmas y aplicaciones en biotecnología y SaaS.",
     progress: 80,
     xpReward: 500,
     difficulty: 1
   },
   {
-    id: "ml-algorithms",
-    title: "Machine Learning Algorithms",
-    description: "Supervised, unsupervised, and reinforcement learning",
+    id: "module02_python",
+    title: "Python Programming Fundamentals",
+    description: "Programación en Python para análisis de datos: numpy, pandas, matplotlib y seaborn.",
     progress: 45,
     xpReward: 700,
     difficulty: 2
   },
   {
-    id: "data-engineering",
-    title: "Machine Learning Data Engineering",
-    description: "Data preprocessing and feature engineering",
+    id: "module03_statistics",
+    title: "Estadística para Machine Learning",
+    description: "Estadística descriptiva, probabilidad, distribuciones, EDA y evaluación de modelos.",
     progress: 0,
     xpReward: 900,
     difficulty: 3
   },
   {
-    id: "ethical-ml",
-    title: "Ethical ML & Responsible AI",
-    description: "Bias detection, fairness, and responsible development",
+    id: "module04_machine_learning",
+    title: "Introducción al Machine Learning",
+    description: "Aprendizaje supervisado y no supervisado, árboles de decisión, random forest y gradient boosting.",
     progress: 0,
-    xpReward: 600,
+    xpReward: 1200,
     difficulty: 4
   },
   {
-    id: "model-deployment",
-    title: "Model Deployment & Monitoring",
-    description: "Production ML systems and MLOps",
+    id: "module05_ethics",
+    title: "Ética en Inteligencia Artificial",
+    description: "Sesgo algorítmico, fairness, transparencia y desarrollo responsable de IA.",
     progress: 0,
-    xpReward: 1200,
+    xpReward: 600,
     difficulty: 2
   }
 ];
