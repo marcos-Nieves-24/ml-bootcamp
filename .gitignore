@@ -54,3 +54,4 @@ node_modules/
 
 # Windows Zone Identifier
 *:Zone.Identifier
+.env*

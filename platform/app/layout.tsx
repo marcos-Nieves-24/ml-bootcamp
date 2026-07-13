@@ -5,13 +5,13 @@ const siteDescription = "Transformando aprendizaje estático en experiencia inte
 
 export const metadata: Metadata = {
   title: {
-    default: siteName,
-    template: `%s · ${siteName}`,
+    default: "ML Expedition",
+    template: `%s · ML Expedition`,
   },
   description: siteDescription,
   openGraph: {
     siteName,
-    title: siteName,
+    title: "ML Expedition",
     description: siteDescription,
     type: "website",
   },

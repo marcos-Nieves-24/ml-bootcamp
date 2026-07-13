@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
-import GlassCard from "@/app/components/GlassCard"
+import StitchCard from "@/app/components/StitchCard"
+import StitchBtn from "@/app/components/StitchBtn"
 import XPBar from "@/app/components/XPBar"
 import ProgressRing from "@/app/components/ProgressRing"
 import StreakIndicator from "@/app/components/StreakIndicator"
-import GradientBtn from "@/app/components/GradientBtn"
 import {
   MOCK_PROJECTS,
   MOCK_LABS,
@@ -13,7 +13,7 @@ import {
 } from "@/lib/data"
 
 export const metadata: Metadata = {
-  title: "Dashboard",
+  title: "Dashboard | ML Expedition",
   description: "Panel de control del investigador. Progreso, misiones y actividad en ML Expedition.",
 }
 
@@ -50,7 +50,7 @@ export default function DashboardPage() {
   return (
     <div className="space-y-8">
       {/* Hero Banner */}
-      <GlassCard className="p-6 md:p-8">
+      <StitchCard className="p-6 md:p-8">
         <div className="flex flex-col md:flex-row justify-between md:items-center gap-4">
           <div>
             <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-[#191c1e]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
@@ -69,7 +69,7 @@ export default function DashboardPage() {
             </div>
           </div>
         </div>
-      </GlassCard>
+      </StitchCard>
 
       {/* Main grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -77,7 +77,7 @@ export default function DashboardPage() {
         <div className="space-y-6 lg:col-span-2">
           {/* Current Project */}
           {MOCK_PROJECTS.filter(p => p.id === 'wine-quality').map(project => (
-            <GlassCard key={project.id} className="p-6">
+            <StitchCard key={project.id} className="p-6">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="font-bold text-lg text-[#191c1e]">Proyecto actual</h2>
                 <span className="text-xs font-bold text-[#684000] bg-[#684000]/10 px-3 py-1 rounded-full">{project.difficultyBadge}</span>
@@ -89,16 +89,16 @@ export default function DashboardPage() {
                 <span className="font-bold text-[#3B82F6]">{project.progress}%</span>
               </div>
               <XPBar value={project.progress} className="mb-4" />
-              <GradientBtn>Continuar proyecto</GradientBtn>
-            </GlassCard>
+               <StitchBtn>Continuar proyecto</StitchBtn>
+             </StitchCard>
           ))}
 
           {/* Lab Grid */}
           <div>
-            <h2 className="font-bold text-lg text-[#191c1e] mb-3">Laboratorios</h2>
+            <h2 className="font-bold text-lg text-on-surface mb-3">Laboratorios</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {MOCK_LABS.map(lab => (
-                <GlassCard key={lab.id} hover={!lab.locked} className="p-4 flex flex-col items-center text-center">
+                <StitchCard key={lab.id} hover={!lab.locked} className="p-4 flex flex-col items-center text-center">
                   <span className={`material-symbols-outlined text-3xl mb-2 ${lab.locked ? 'text-gray-400' : 'text-[#4f46e5]'}`}>
                     {lab.locked ? 'lock' : (lab.icon || 'science')}
                   </span>
@@ -116,7 +116,7 @@ export default function DashboardPage() {
                       </div>
                     </div>
                   )}
-                </GlassCard>
+            </StitchCard>
               ))}
             </div>
           </div>
@@ -125,43 +125,43 @@ export default function DashboardPage() {
         {/* Right sidebar */}
         <div className="space-y-6">
           {/* Progress / Ranks */}
-          <GlassCard className="p-6">
+          <StitchCard className="p-6">
             <RankLadder />
-          </GlassCard>
+          </StitchCard>
 
           {/* Recent Achievements */}
-          <GlassCard className="p-6">
-            <h2 className="font-bold text-[#191c1e] mb-3">Logros recientes</h2>
+          <StitchCard className="p-6">
+            <h2 className="font-bold text-on-surface mb-3">Logros recientes</h2>
             <div className="space-y-3">
               {MOCK_ACHIEVEMENTS.slice(0, 3).map(a => (
                 <div key={a.id} className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-2xl text-[#684000]">{a.icon}</span>
                   <div>
-                    <p className="text-sm font-bold text-[#191c1e]">{a.title}</p>
-                    <p className="text-xs text-gray-500">{a.description}</p>
+                    <p className="text-sm font-bold text-on-surface">{a.title}</p>
+                    <p className="text-xs text-on-surface-variant">{a.description}</p>
                   </div>
                 </div>
               ))}
             </div>
-          </GlassCard>
+          </StitchCard>
         </div>
       </div>
 
       {/* Activity Feed */}
-      <GlassCard className="p-6">
-        <h2 className="font-bold text-lg text-[#191c1e] mb-4">Actividad reciente</h2>
+      <StitchCard className="p-6">
+        <h2 className="font-bold text-lg text-on-surface mb-4">Actividad reciente</h2>
         <div className="space-y-3">
           {MOCK_ACTIVITIES.slice(0, 4).map(a => (
-            <div key={a.id} className="flex items-center gap-3 py-2 border-b border-gray-100 last:border-0">
-              <span className="material-symbols-outlined text-[#3B82F6]">
+            <div key={a.id} className="flex items-center gap-3 py-2 border-b border-border-muted last:border-0">
+              <span className="material-symbols-outlined text-primary">
                 {a.type === 'achievement' ? 'emoji_events' : a.type === 'community' ? 'forum' : 'trending_up'}
               </span>
-              <p className="text-sm text-[#464555]">{a.message}</p>
-              {a.user && <span className="text-xs text-gray-400 ml-auto">{a.user}</span>}
+              <p className="text-sm text-on-surface-variant">{a.message}</p>
+              {a.user && <span className="text-xs text-on-surface-variant ml-auto">{a.user}</span>}
             </div>
           ))}
         </div>
-      </GlassCard>
+      </StitchCard>
     </div>
   )
 }

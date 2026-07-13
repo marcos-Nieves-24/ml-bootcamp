@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import GlassCard from "@/app/components/GlassCard"
+import StitchCard from "@/app/components/StitchCard"
 import Badge from "@/app/components/Badge"
 import { MOCK_ACHIEVEMENTS, MOCK_USERS } from "@/lib/data"
 import ProgressCircle from "@/app/components/ProgressCircle"
@@ -48,7 +48,7 @@ export default function LogrosPage() {
       </header>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-12">
-        <GlassCard className="p-card-padding rounded-2xl flex items-center gap-4">
+        <StitchCard className="p-card-padding rounded-2xl flex items-center gap-4" hover={false}>
           <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
             <span className="material-symbols-outlined text-2xl">stars</span>
           </div>
@@ -56,9 +56,9 @@ export default function LogrosPage() {
             <p className="text-label-md text-on-surface-variant uppercase tracking-wider">Desbloqueados</p>
             <p className="font-headline-md text-headline-md text-on-surface">{unlockedAchievements.length} / {allAchievements.length}</p>
           </div>
-        </GlassCard>
+        </StitchCard>
         
-        <GlassCard className="p-card-padding rounded-2xl flex items-center gap-4">
+        <StitchCard className="p-card-padding rounded-2xl flex items-center gap-4" hover={false}>
           <div className="w-12 h-12 rounded-full bg-tertiary-fixed-dim/20 flex items-center justify-center text-tertiary">
             <span className="material-symbols-outlined text-2xl">workspace_premium</span>
           </div>
@@ -66,9 +66,9 @@ export default function LogrosPage() {
             <p className="text-label-md text-on-surface-variant uppercase tracking-wider">Más Raro</p>
             <p className="font-headline-md text-headline-md text-on-surface">Architect</p>
           </div>
-        </GlassCard>
+        </StitchCard>
         
-        <GlassCard className="p-card-padding rounded-2xl flex items-center gap-4">
+        <StitchCard className="p-card-padding rounded-2xl flex items-center gap-4" hover={false}>
           <div className="w-12 h-12 rounded-full bg-xp-blue/10 flex items-center justify-center text-xp-blue">
             <span className="material-symbols-outlined text-2xl">military_tech</span>
           </div>
@@ -76,7 +76,7 @@ export default function LogrosPage() {
             <p className="text-label-md text-on-surface-variant uppercase tracking-wider">Puntos Totales</p>
             <p className="font-headline-md text-headline-md text-on-surface">{unlockedAchievements.reduce((sum, a) => sum + (a.xpReward || 0), 0)} AP</p>
           </div>
-        </GlassCard>
+        </StitchCard>
       </div>
       
       <div className="space-y-12">
@@ -104,7 +104,7 @@ export default function LogrosPage() {
                   const isLocked = achievement.locked
                   
                   return (
-                    <GlassCard 
+                    <StitchCard 
                       key={achievement.id}
                       className={`p-6 rounded-2xl border-l-4 group ${isEarned ? 'border-success-green' : isLocked ? 'border-on-surface-variant opacity-60' : 'border-primary'} hover:bg-white/80 transition-all ${!isLocked ? 'cursor-pointer' : ''}`}
                     >
@@ -130,7 +130,7 @@ export default function LogrosPage() {
                           <span className={`text-xs font-bold ${isEarned ? 'text-success-green' : isLocked ? 'text-on-surface-variant' : 'text-primary'}`}>+{achievement.xpReward} XP</span>
                         </div>
                       )}
-                    </GlassCard>
+                    </StitchCard>
                   )
                 })}
               </div>
