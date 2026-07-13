@@ -1,51 +1,28 @@
 @import "tailwindcss";
 
 @theme {
-  /* Colors from DESIGN.md */
+  --color-primary: #4f46e5;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #e0e7ff;
+  --color-on-primary-container: #312e81;
+  --color-tertiary: #10b981;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #d1fae5;
   --color-surface: #f7f9fb;
-  --color-on-surface: #191c1e;
-  --color-on-surface-variant: #464555;
-  --color-glass-fill: rgba(255, 255, 255, 0.7);
-  --color-glass-stroke: rgba(255, 255, 255, 0.4);
-  --color-primary: #3525cd;
-  --color-primary-container: #4f46e5;
-  --color-secondary: #006591;
-  --color-tertiary: #684000;
-  --color-xp-blue: #3B82F6;
-  --color-success-green: #10B981;
-  --color-deep-navy: #0F172A;
-
-  /* Typography from DESIGN.md */
-  --font-family-plus-jakarta-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
-  --font-family-inter: "Inter", system-ui, -apple-system, sans-serif;
-  --font-family-jetbrains-mono: "JetBrains Mono", monospace;
-
-  --font-size-display-hero: 48px;
-  --font-size-display-hero-mobile: 32px;
-  --font-size-headline-lg: 32px;
-  --font-size-headline-lg-mobile: 24px;
-  --font-size-headline-md: 24px;
-  --font-size-headline-sm: 20px;
-  --font-size-body-lg: 18px;
-  --font-size-body-md: 16px;
-  --font-size-label-lg: 14px;
-  --font-size-label-md: 12px;
-  --font-size-code-sm: 13px;
-
-  /* Spacing from DESIGN.md */
-  --spacing-base: 8px;
-  --spacing-section-gap: 64px;
-  --spacing-card-padding: 24px;
-  --spacing-gutter: 24px;
-  --spacing-container-max: 1280px;
-
-  /* Border radius from DESIGN.md */
-  --border-radius-sm: 0.25rem;
-  --border-radius-default: 0.5rem;
-  --border-radius-md: 0.75rem;
-  --border-radius-lg: 1rem;
-  --border-radius-xl: 1.5rem;
-  --border-radius-full: 9999px;
+  --color-on-surface: #1e293b;
+  --color-on-surface-variant: #64748b;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f2f4f6;
+  --color-surface-container: #edf0f2;
+  --color-surface-container-high: #e7eaee;
+  --color-surface-main: #f7f9fb;
+  --color-border-muted: #e2e8f0;
+  --color-xp-gold: #f59e0b;
+  --color-streak-orange: #f97316;
+  --color-error: #ef4444;
+  --color-deep-navy: #0f172a;
+  --font-family-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+  --font-family-inter: "Inter", sans-serif;
 }
 
 /* Base styles */
@@ -87,66 +64,3 @@
   }
 }
 
-/* Glassmorphism utilities */
-@layer utilities {
-  /* Glass card base class */
-  .glass-card {
-    background: var(--color-glass-fill);
-    backdrop-filter: blur(12px);
-    border: 1px solid var(--color-glass-stroke);
-    border-radius: var(--border-radius-lg);
-    transition: opacity 0.3s ease;
-  }
-
-  .glass-card:hover:not([data-reduced-motion]) {
-    opacity: 0.85;
-  }
-
-  /* Glass fill background */
-  .glass-fill {
-    background: var(--color-glass-fill);
-  }
-
-  /* Glass stroke border */
-  .glass-stroke {
-    border: 1px solid var(--color-glass-stroke);
-  }
-
-  /* Primary and secondary colors for text */
-  .text-primary { color: var(--color-primary); }
-  .text-primary-container { color: var(--color-primary-container); }
-  .text-secondary { color: var(--color-secondary); }
-  .text-tertiary { color: var(--color-tertiary); }
-  .text-xp-blue { color: var(--color-xp-blue); }
-  .text-success-green { color: var(--color-success-green); }
-  .text-on-surface { color: var(--color-on-surface); }
-  .text-on-surface-variant { color: var(--color-on-surface-variant); }
-
-  /* Background colors */
-  .bg-surface { background-color: var(--color-surface); }
-  .bg-surface-container { background-color: #eceef0; }
-  .bg-surface-container-low { background-color: #f2f4f6; }
-  .bg-surface-container-lowest { background-color: #ffffff; }
-
-  /* Primary colors */
-  .bg-primary { background-color: var(--color-primary); }
-  .bg-primary-container { background-color: var(--color-primary-container); }
-
-  /* Selection styles */
-  ::selection {
-    background-color: var(--color-primary);
-    color: white;
-  }
-
-  /* Focus styles for accessibility */
-  :focus-visible {
-    outline: 2px solid var(--color-primary);
-    outline-offset: 2px;
-  }
-
-  /* Gradient button */
-  .gradient-btn {
-    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-container));
-    color: white;
-  }
-}
