@@ -6,6 +6,7 @@ import StitchCard from "@/app/components/StitchCard"
 import StitchBtn from "@/app/components/StitchBtn"
 import XPBar from "@/app/components/XPBar"
 import { MOCK_LABS, MOCK_ACHIEVEMENTS } from "@/lib/data"
+import { MOCK_LAB_STEPS } from "@/lib/content"
 
 const LAB_ICONS: Record<string, string> = {
   "python-lab": "code",
@@ -16,15 +17,8 @@ const LAB_ICONS: Record<string, string> = {
   "ethics-lab": "gavel",
 }
 
-const LAB_STEPS: Record<string, string[]> = {
-  "python-lab": ["Introducción a Python", "Variables y Tipos de Datos", "Estructuras de Control", "Funciones", "Librerías Científicas"],
-  "data-lab": ["Carga de Datos", "Limpieza de Datos", "Visualización", "Análisis Exploratorio"],
-  "stats-lab": ["Estadística Descriptiva", "Probabilidad", "Distribuciones", "Test de Hipótesis"],
-}
-
 export default function LabDetailPage() {
   const params = useParams()
-  const router = useRouter()
   const labId = params.id as string
   const lab = MOCK_LABS.find(l => l.id === labId)
 
@@ -54,7 +48,7 @@ export default function LabDetailPage() {
   }
 
   const icon = LAB_ICONS[lab.id] || "science"
-  const steps = LAB_STEPS[lab.id] || ["Paso 1", "Paso 2", "Paso 3"]
+  const steps = MOCK_LAB_STEPS.filter(s => s.labId === lab.id).sort((a, b) => a.id.localeCompare(b.id))
   const completedSteps = Math.round((lab.progress / 100) * steps.length)
 
   return (
@@ -92,49 +86,71 @@ export default function LabDetailPage() {
         <div className="lg:col-span-2 space-y-4">
           <StitchCard className="p-6" hover={false}>
             <h2 className="font-bold text-lg text-on-surface mb-4">Pasos del Laboratorio</h2>
-            <div className="space-y-3">
+            <div className="space-y-4">
               {steps.map((step, index) => {
                 const isCompleted = index < completedSteps
                 const isCurrent = index === completedSteps
                 return (
                   <div
-                    key={step}
-                    className={`flex items-center gap-4 p-4 rounded-xl border ${
+                    key={step.id}
+                    className={`rounded-xl border ${
                       isCurrent
-                        ? "border-primary bg-primary/5"
+                        ? "border-primary ring-1 ring-primary/20"
                         : isCompleted
-                        ? "border-success-green/30 bg-success-green/5"
+                        ? "border-success-green/30"
                         : "border-border-muted"
                     }`}
                   >
-                    <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold shrink-0 ${
-                      isCompleted
-                        ? "bg-success-green text-white"
-                        : isCurrent
-                        ? "bg-primary text-white"
-                        : "bg-surface-container text-on-surface-variant"
-                    }`}>
-                      {isCompleted ? (
-                        <span className="material-symbols-outlined text-sm">check</span>
-                      ) : (
-                        index + 1
-                      )}
-                    </div>
-                    <div className="flex-1">
-                      <p className={`font-bold text-sm ${isCompleted ? 'text-success-green' : isCurrent ? 'text-primary' : 'text-on-surface'}`}>
-                        {step}
-                      </p>
+                    {/* Header */}
+                    <div className={`flex items-center gap-4 p-4 ${isCurrent ? 'bg-primary/5' : isCompleted ? 'bg-success-green/5' : ''}`}>
+                      <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold shrink-0 ${
+                        isCompleted
+                          ? "bg-success-green text-white"
+                          : isCurrent
+                          ? "bg-primary text-white"
+                          : "bg-surface-container text-on-surface-variant"
+                      }`}>
+                        {isCompleted ? (
+                          <span className="material-symbols-outlined text-sm">check</span>
+                        ) : (
+                          index + 1
+                        )}
+                      </div>
+                      <div className="flex-1">
+                        <p className={`font-bold text-sm ${isCompleted ? 'text-success-green' : isCurrent ? 'text-primary' : 'text-on-surface'}`}>
+                          {step.title}
+                        </p>
+                        <p className="text-xs text-on-surface-variant mt-0.5">{step.description}</p>
+                      </div>
                       {isCurrent && (
-                        <p className="text-xs text-primary mt-0.5">En progreso — Continúa tu aprendizaje</p>
-                      )}
-                      {isCompleted && (
-                        <p className="text-xs text-success-green mt-0.5">Completado</p>
+                        <StitchBtn size="sm" onClick={() => alert("Entorno interactivo próximamente")}>
+                          Escribir código
+                        </StitchBtn>
                       )}
                     </div>
-                    {isCurrent && (
-                      <StitchBtn size="sm" onClick={() => alert("Modo interactivo próximamente")}>
-                        Continuar
-                      </StitchBtn>
+
+                    {/* Code snippet (expandable) */}
+                    {isCurrent && step.code && (
+                      <div className="border-t border-border-muted p-4 bg-surface-container-low">
+                        <p className="text-xs font-bold text-on-surface-variant mb-2 uppercase tracking-wider">Editor de código</p>
+                        <pre className="text-sm font-mono text-on-surface bg-surface p-4 rounded-lg overflow-x-auto border border-border-muted">
+                          <code>{step.code}</code>
+                        </pre>
+                        {step.expectedOutput && (
+                          <div className="mt-3">
+                            <p className="text-xs font-bold text-on-surface-variant mb-1 uppercase tracking-wider">Salida esperada</p>
+                            <p className="text-sm font-mono text-success-green bg-success-green/5 p-2 rounded border border-success-green/20">
+                              {step.expectedOutput}
+                            </p>
+                          </div>
+                        )}
+                        {step.hint && (
+                          <div className="mt-3 flex items-start gap-2 text-xs text-primary bg-primary/5 p-3 rounded-lg border border-primary/20">
+                            <span className="material-symbols-outlined text-sm shrink-0">lightbulb</span>
+                            <span>{step.hint}</span>
+                          </div>
+                        )}
+                      </div>
                     )}
                   </div>
                 )

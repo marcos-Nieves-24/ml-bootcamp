@@ -75,6 +75,36 @@ export interface MetricPoint {
   value: number;
 }
 
+export interface Lesson {
+  id: string;
+  moduleId: string;
+  title: string;
+  content: string;
+  duration: string;
+  order: number;
+  isCompleted?: boolean;
+}
+
+export interface LabStep {
+  id: string;
+  labId: string;
+  title: string;
+  description: string;
+  code?: string;
+  expectedOutput?: string;
+  hint?: string;
+  isCompleted?: boolean;
+}
+
+export interface Deliverable {
+  id: string;
+  projectId: string;
+  title: string;
+  description: string;
+  estimatedHours: number;
+  isCompleted?: boolean;
+}
+
 // Mock data arrays
 
 export const MOCK_USERS: UserProfile[] = [

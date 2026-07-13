@@ -6,6 +6,7 @@ import StitchCard from "@/app/components/StitchCard"
 import StitchBtn from "@/app/components/StitchBtn"
 import XPBar from "@/app/components/XPBar"
 import { MOCK_PROJECTS } from "@/lib/data"
+import { MOCK_DELIVERABLES } from "@/lib/content"
 
 const STATUS_ICONS: Record<string, string> = {
   "En Progreso": "autorenew",
@@ -103,26 +104,48 @@ export default function ProjectDetailPage() {
 
           {/* Objectives */}
           <StitchCard className="p-6" hover={false}>
-            <h2 className="font-bold text-lg text-on-surface mb-4">Objetivos del Proyecto</h2>
+            <h2 className="font-bold text-lg text-on-surface mb-4">Entregables del Proyecto</h2>
             <div className="space-y-3">
-              {[
-                "Analizar y comprender el problema de negocio",
-                "Realizar análisis exploratorio de datos",
-                "Implementar modelos de Machine Learning",
-                "Evaluar y optimizar el rendimiento",
-                "Documentar resultados y conclusiones",
-              ].map((objective, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <div className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 ${
-                    index < Math.floor(project.progress / 20) ? "bg-success-green text-white" : "bg-surface-container text-on-surface-variant"
-                  }`}>
-                    {index + 1}
+              {(() => {
+                const deliverables = MOCK_DELIVERABLES.filter(d => d.projectId === project.id)
+                const items = deliverables.length > 0 ? deliverables : [
+                  { id: "default-1", projectId: project.id, title: "Análisis y comprensión del problema", description: "Define el alcance y los objetivos del proyecto", estimatedHours: 2 },
+                  { id: "default-2", projectId: project.id, title: "Análisis exploratorio de datos", description: "Explora y visualiza los datos disponibles", estimatedHours: 3 },
+                  { id: "default-3", projectId: project.id, title: "Implementación de modelos", description: "Entrena y ajusta modelos de ML", estimatedHours: 5 },
+                  { id: "default-4", projectId: project.id, title: "Evaluación y optimización", description: "Mide y mejora el rendimiento", estimatedHours: 3 },
+                  { id: "default-5", projectId: project.id, title: "Documentación final", description: "Resultados y conclusiones", estimatedHours: 2 },
+                ]
+                const completedDeliverables = deliverables.filter(d => d.isCompleted).length
+                return (
+                  <div>
+                    <div className="flex items-center justify-between mb-4">
+                      <h2 className="font-bold text-lg text-on-surface">Entregables del Proyecto</h2>
+                      <span className="text-sm text-on-surface-variant">{completedDeliverables}/{deliverables.length}</span>
+                    </div>
+                    <div className="space-y-3">
+                      {deliverables.map((deliverable, index) => (
+                        <div key={deliverable.id} className="flex items-center gap-3 p-3 rounded-xl border border-border-muted">
+                          <div className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 ${
+                            deliverable.isCompleted ? "bg-success-green text-white" : "bg-surface-container text-on-surface-variant"
+                          }`}>
+                            {deliverable.isCompleted ? (
+                              <span className="material-symbols-outlined text-sm">check</span>
+                            ) : (
+                              index + 1
+                            )}
+                          </div>
+                          <div className="flex-1">
+                            <span className={`text-sm font-medium ${deliverable.isCompleted ? "text-success-green" : "text-on-surface"}`}>
+                              {deliverable.title}
+                            </span>
+                            <p className="text-xs text-on-surface-variant">{deliverable.description}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                  <span className={`text-sm ${index < Math.floor(project.progress / 20) ? "text-success-green" : "text-on-surface"}`}>
-                    {objective}
-                  </span>
-                </div>
-              ))}
+                )
+              })()}
             </div>
           </StitchCard>
         </div>
