@@ -81,7 +81,7 @@ export default async function ExpedicionesPage() {
       <div className="space-y-4">
         {modules.map((module, index) => (
           <Link key={module.id} href={`/expediciones/${module.id}`} className="block">
-            <StitchCard className="p-6 hover:border-primary/50 transition-colors cursor-pointer">
+            <StitchCard className="p-6 hover:border-primary/50 transition-colors cursor-pointer glass-card">
               <div className="flex flex-col md:flex-row md:items-center gap-4">
                 {/* Number */}
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary font-bold text-lg shrink-0">
