@@ -1,17 +1,18 @@
-"use client"
-
-import { useParams } from "next/navigation"
 import Link from "next/link"
 import StitchCard from "@/app/components/StitchCard"
 import StitchBtn from "@/app/components/StitchBtn"
-import { MOCK_MODULES } from "@/lib/data"
-import { MOCK_LESSONS } from "@/lib/content"
+import { getModules, getLessons, getModuleStats } from "@/lib/repositories"
+import { auth } from "@/lib/auth"
 
-export default function ModuleDetailPage() {
-  const params = useParams()
-  const moduleId = params.id as string
-  const mod = MOCK_MODULES.find(m => m.id === moduleId)
-  const lessons = MOCK_LESSONS.filter(l => l.moduleId === moduleId).sort((a, b) => a.order - b.order)
+export default async function Page({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const session = await auth()
+  const userId = session?.user?.id
+
+  const modules = await getModules()
+  const mod = modules.find(m => m.id === id)
+  const lessons = await getLessons(id, userId)
+  const stats = userId ? await getModuleStats(userId, id) : null
 
   if (!mod) {
     return (
@@ -25,6 +26,9 @@ export default function ModuleDetailPage() {
   }
 
   const completedLessons = lessons.filter(l => l.isCompleted).length
+  const progressPercent = stats?.progressPercent ?? 0
+
+  const firstIncompleteIndex = lessons.findIndex(l => !l.isCompleted)
 
   return (
     <div className="space-y-8">
@@ -44,7 +48,7 @@ export default function ModuleDetailPage() {
         <div className="flex items-center gap-4 shrink-0">
           <div className="text-right">
             <p className="text-xs text-on-surface-variant">Progreso</p>
-            <p className="text-xl font-bold text-primary">{mod.progress}%</p>
+            <p className="text-xl font-bold text-primary">{progressPercent}%</p>
           </div>
           <div className="text-right">
             <p className="text-xs text-on-surface-variant">Lecciones</p>
@@ -59,15 +63,25 @@ export default function ModuleDetailPage() {
 
       {/* Progress bar */}
       <div className="h-2 bg-surface-container rounded-full overflow-hidden">
-        <div className="h-full bg-primary rounded-full transition-all" style={{ width: `${mod.progress}%` }} />
+        <div className="h-full bg-primary rounded-full transition-all" style={{ width: `${progressPercent}%` }} />
       </div>
+
+      {/* Login prompt for unauthenticated users */}
+      {!userId && lessons.length > 0 && (
+        <div className="flex items-center gap-3 p-4 bg-primary/5 border border-primary/20 rounded-xl">
+          <span className="material-symbols-outlined text-primary">info</span>
+          <p className="text-sm text-on-surface-variant">
+            <Link href="/login" className="text-primary font-bold hover:underline">Inicia sesión</Link> para trackear tu progreso en las lecciones.
+          </p>
+        </div>
+      )}
 
       {/* Lesson list */}
       <div className="space-y-4">
         <h2 className="text-xl font-bold text-on-surface">Lecciones</h2>
         {lessons.map((lesson, index) => {
-          const isCompleted = lesson.isCompleted || index < Math.floor((mod.progress / 100) * lessons.length)
-          const isCurrent = index === Math.floor((mod.progress / 100) * lessons.length)
+          const isCompleted = lesson.isCompleted ?? false
+          const isCurrent = !isCompleted && firstIncompleteIndex === index
 
           return (
             <StitchCard key={lesson.id} className={`p-6 ${isCurrent ? 'border-primary ring-1 ring-primary/20' : ''}`}>
@@ -121,9 +135,9 @@ export default function ModuleDetailPage() {
                       <span className="material-symbols-outlined">check_circle</span>
                     </span>
                   ) : isCurrent ? (
-                    <StitchBtn size="sm" onClick={() => alert("Modo lectura próximamente")}>
+                    <Link href={`/expediciones/${mod.id}/${lesson.id}`} className="text-xs font-bold text-primary bg-primary/10 px-3 py-1.5 rounded-xl hover:bg-primary/20 transition-colors">
                       Leer
-                    </StitchBtn>
+                    </Link>
                   ) : (
                     <span className="material-symbols-outlined text-on-surface-variant">lock</span>
                   )}
@@ -139,9 +153,14 @@ export default function ModuleDetailPage() {
         <StitchBtn href="/expediciones" variant="secondary">
           Volver a Expediciones
         </StitchBtn>
-        {lessons.some(l => !l.isCompleted) && (
-          <StitchBtn onClick={() => alert("Modo lectura próximamente")}>
+        {userId && firstIncompleteIndex >= 0 && (
+          <StitchBtn href={`/expediciones/${mod.id}/${lessons[firstIncompleteIndex].id}`}>
             Continuar aprendizaje
+          </StitchBtn>
+        )}
+        {!userId && lessons.length > 0 && (
+          <StitchBtn href="/login">
+            Iniciar sesión
           </StitchBtn>
         )}
       </div>

@@ -2,31 +2,35 @@ import Link from "next/link"
 import type { Metadata } from "next"
 import StitchCard from "@/app/components/StitchCard"
 import XPBar from "@/app/components/XPBar"
-import { MOCK_MODULES } from "@/lib/data"
+import { getModules } from "@/lib/repositories"
+import { auth } from "@/lib/auth"
 
 export const metadata: Metadata = {
   title: "Expediciones · ML Expedition",
   description: "Ruta de aprendizaje de Machine Learning. Progreso, módulos y XP.",
 }
 
-const DIFFICULTY_LABELS: Record<number, string> = {
-  1: "Principiante",
-  2: "Intermedio",
-  3: "Avanzado",
-  4: "Experto",
+const DIFFICULTY_LABELS: Record<string, string> = {
+  beginner: "Principiante",
+  intermediate: "Intermedio",
+  advanced: "Avanzado",
+  expert: "Experto",
 }
 
-const DIFFICULTY_COLORS: Record<number, string> = {
-  1: "text-success-green bg-success-green/10",
-  2: "text-primary bg-primary/10",
-  3: "text-warning bg-warning/10",
-  4: "text-error bg-error/10",
+const DIFFICULTY_COLORS: Record<string, string> = {
+  beginner: "text-success-green bg-success-green/10",
+  intermediate: "text-primary bg-primary/10",
+  advanced: "text-warning bg-warning/10",
+  expert: "text-error bg-error/10",
 }
 
-export default function ExpedicionesPage() {
-  const completedModules = MOCK_MODULES.filter(m => m.progress === 100).length
-  const totalModules = MOCK_MODULES.length
-  const totalXP = MOCK_MODULES.reduce((sum, m) => sum + m.xpReward, 0)
+export default async function ExpedicionesPage() {
+  const session = await auth()
+  const userId = session?.user?.id
+  const modules = await getModules(userId)
+  const completedModules = modules.filter(m => m.progress === 100).length
+  const totalModules = modules.length
+  const totalXP = modules.reduce((sum, m) => sum + m.xpReward, 0)
 
   return (
     <div className="space-y-8">
@@ -75,7 +79,7 @@ export default function ExpedicionesPage() {
 
       {/* Module List */}
       <div className="space-y-4">
-        {MOCK_MODULES.map((module, index) => (
+        {modules.map((module, index) => (
           <Link key={module.id} href={`/expediciones/${module.id}`} className="block">
             <StitchCard className="p-6 hover:border-primary/50 transition-colors cursor-pointer">
               <div className="flex flex-col md:flex-row md:items-center gap-4">
@@ -97,9 +101,9 @@ export default function ExpedicionesPage() {
                   {/* Progress */}
                   <div className="flex items-center gap-4">
                     <div className="flex-1">
-                      <XPBar value={module.progress} />
+                      <XPBar value={module.progress ?? 0} />
                     </div>
-                    <span className="text-sm font-bold text-primary shrink-0">{module.progress}%</span>
+                    <span className="text-sm font-bold text-primary shrink-0">{module.progress ?? 0}%</span>
                     <span className="text-xs text-on-surface-variant shrink-0">+{module.xpReward} XP</span>
                   </div>
                 </div>
