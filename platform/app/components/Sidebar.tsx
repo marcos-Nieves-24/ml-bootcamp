@@ -3,7 +3,8 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { signOut } from "next-auth/react"
-import { Rocket, Home, GraduationCap, FlaskConical, Rocket as RocketIcon, Trophy, LayoutDashboard, Users, LogOut } from "lucide-react"
+import { Home, GraduationCap, FlaskConical, Rocket as RocketIcon, Trophy, LayoutDashboard, Users, LogOut } from "lucide-react"
+import Logo from "@/app/components/Logo"
 
 const navItems = [
   { href: "/dashboard", label: "Inicio", icon: Home },
@@ -20,13 +21,8 @@ export default function Sidebar() {
   return (
     <aside className="fixed left-0 top-0 h-full w-[280px] z-50 transition-transform duration-300 bg-white/80 backdrop-blur-md border-r border-white/40 flex flex-col p-6 hidden lg:flex">
       {/* Logo */}
-      <div className="mb-10 flex items-center gap-3">
-        <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: "rgba(53,37,205,0.12)" }}>
-          <Rocket className="w-5 h-5" style={{ color: "#3525cd" }} />
-        </div>
-        <h1 className="text-xl font-bold" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#3525cd" }}>
-          ML Expedition
-        </h1>
+      <div className="mb-10">
+        <Logo />
       </div>
 
       {/* Nav */}

@@ -31,7 +31,7 @@ export default function NotFoundPage() {
           </Link>
         </nav>
 
-        <p className="mt-6 text-xs text-gray-400">Error 404 • ML Expedition</p>
+        <p className="mt-6 text-xs text-gray-400">Error 404 • ML Bootcamp</p>
       </div>
     </div>
   )
