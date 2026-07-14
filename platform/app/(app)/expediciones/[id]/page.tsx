@@ -84,7 +84,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
           const isCurrent = !isCompleted && firstIncompleteIndex === index
 
           return (
-            <StitchCard key={lesson.id} className={`p-6 ${isCurrent ? 'border-primary ring-1 ring-primary/20' : ''}`}>
+            <StitchCard key={lesson.id} className={`p-6 ${isCurrent ? 'border-primary ring-1 ring-primary/20' : ''} glass-card`}>
               <div className="flex items-start gap-4">
                 {/* Status indicator */}
                 <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${

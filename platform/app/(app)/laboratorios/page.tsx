@@ -58,7 +58,7 @@ export default async function LaboratoriosPage() {
         {/* Lab Cards */}
         <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
           {labs.map((lab) => (
-            <StitchCard key={lab.id} hover={!lab.locked} className={`p-5 flex flex-col ${lab.locked ? 'opacity-60' : ''}`}>
+            <StitchCard key={lab.id} hover={!lab.locked} className={`p-5 flex flex-col ${lab.locked ? 'opacity-60' : ''} glass-card`}>
               {/* Header */}
               <div className="flex items-center justify-between mb-4">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">

@@ -66,7 +66,7 @@ export default async function LessonPage({
       </div>
 
       {/* Lesson content */}
-      <StitchCard className="p-6 md:p-8" hover={false}>
+      <StitchCard className="p-6 md:p-8 glass-card" hover={false}>
         <div className="prose prose-lg max-w-none prose-headings:text-on-surface prose-headings:font-bold prose-h1:text-2xl prose-h2:text-xl prose-h3:text-lg prose-p:text-on-surface-variant prose-p:leading-relaxed prose-strong:text-on-surface prose-code:text-primary prose-code:bg-surface-container prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-pre:bg-surface-container prose-pre:border prose-pre:border-border-muted prose-pre:rounded-xl prose-ul:text-on-surface-variant prose-ol:text-on-surface-variant prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl prose-blockquote:border-l-primary prose-blockquote:text-on-surface-variant">
           <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>{lesson.content}</Markdown>
         </div>
