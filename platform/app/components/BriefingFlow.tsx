@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useReducer, useEffect } from 'react'
+import { signIn } from 'next-auth/react'
 import ParticleBackground from '@/app/components/ParticleBackground'
 import StepCounter from '@/app/components/StepCounter'
 import Step1_Branding from '@/app/components/Step1_Branding'
@@ -105,7 +106,7 @@ export default function BriefingFlow({ onComplete }: BriefingFlowProps) {
             intentions={state.intentions}
             xpAwarded={state.xpAwarded}
             onRegister={onComplete}
-            onGoogleOAuth={() => {}}
+            onGoogleOAuth={() => signIn('google', { callbackUrl: '/dashboard' })}
             onLogin={() => dispatch({ type: 'EXIT' })}
           />
         )
