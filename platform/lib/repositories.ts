@@ -295,22 +295,69 @@ export async function getLessonProgress(userId: string, lessonId: string): Promi
   }
 }
 
-export async function markLessonComplete(userId: string, lessonId: string): Promise<void> {
+export interface LessonCompleteResult {
+  xpGained: number
+  leveledUp: boolean
+  newLevel: number
+  totalXp: number
+  xpToNext: number
+}
+
+const XP_PER_LESSON = 15
+
+/** Pure function to calculate XP, level, and level-up. Exported for testing. */
+export function calculateXpAfterAward(
+  currentXp: number,
+  currentLevel: number,
+  currentXpToNext: number,
+  xpGained: number,
+): { xp: number; level: number; xpToNextLevel: number; leveledUp: boolean } {
+  let newXp = currentXp + xpGained
+  let newLevel = currentLevel
+  let newXpToNext = currentXpToNext
+  let leveledUp = false
+
+  while (newXp >= newXpToNext) {
+    newXp -= newXpToNext
+    newLevel += 1
+    newXpToNext = Math.round(newXpToNext * 1.25)
+    leveledUp = true
+  }
+
+  return { xp: newXp, level: newLevel, xpToNextLevel: newXpToNext, leveledUp }
+}
+
+export async function markLessonComplete(userId: string, lessonId: string): Promise<LessonCompleteResult> {
   try {
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+      select: { level: true, xp: true, xpToNextLevel: true }
+    })
+    if (!user) throw new DatabaseError("User not found")
+
+    const { xp: newXp, level: newLevel, xpToNextLevel: newXpToNext, leveledUp } =
+      calculateXpAfterAward(user.xp, user.level, user.xpToNextLevel, XP_PER_LESSON)
+
     await prisma.$transaction([
       prisma.userProgress.upsert({
         where: { userId_lessonId: { userId, lessonId } },
         update: { completed: true, completedAt: new Date() },
         create: { userId, lessonId, completed: true, completedAt: new Date() }
       }),
+      prisma.user.update({
+        where: { id: userId },
+        data: { xp: newXp, level: newLevel, xpToNextLevel: newXpToNext }
+      }),
       prisma.activity.create({
         data: {
           userId,
           type: "lesson_complete",
-          metadata: JSON.stringify({ lessonId })
+          metadata: JSON.stringify({ lessonId, xpGained: XP_PER_LESSON, leveledUp })
         }
       })
     ])
+
+    return { xpGained: XP_PER_LESSON, leveledUp, newLevel, totalXp: newXp, xpToNext: newXpToNext }
   } catch (e) {
     throw new DatabaseError("Failed to mark lesson complete", e)
   }
