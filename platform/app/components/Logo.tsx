@@ -1,9 +1,10 @@
 interface LogoProps {
   size?: number
   showText?: boolean
+  label?: string
 }
 
-export default function Logo({ size = 40, showText = true }: LogoProps) {
+export default function Logo({ size = 40, showText = true, label = 'ML Expedition' }: LogoProps) {
   const gradientId = `logo-gradient-${size}`
   const glowId = `logo-glow-${size}`
 
@@ -101,7 +102,7 @@ export default function Logo({ size = 40, showText = true }: LogoProps) {
             backgroundClip: 'text',
           }}
         >
-          ML Expedition
+          {label}
         </span>
       )}
     </div>

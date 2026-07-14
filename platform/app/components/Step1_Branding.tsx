@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import { Landmark } from 'lucide-react'
+import Logo from '@/app/components/Logo'
 
 interface Step1BrandingProps {
   onStart: () => void     // clicks "Iniciar Briefing"
@@ -11,14 +11,22 @@ interface Step1BrandingProps {
 export default function Step1_Branding({ onStart, onLogin }: Step1BrandingProps) {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-gradient-to-b from-surface to-white">
-      {/* Logo with pulsing and glow animation */}
-      <div className="relative mb-8">
-        <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-glow animate-pulse">
-          <Landmark className="w-12 h-12 text-white" />
-        </div>
-        {/* Subtle glow effect */}
-        <div className="absolute inset-0 rounded-2xl bg-primary/20 blur-xl animate-pulse" />
+      {/* Logo */}
+      <div className="mb-6">
+        <Logo size={96} showText={false} />
       </div>
+      <h2
+        className="text-3xl font-bold mb-6"
+        style={{
+          fontFamily: "'Plus Jakarta Sans', sans-serif",
+          background: 'linear-gradient(135deg, #24E3F2, #8A2EFF)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+        }}
+      >
+        Nexus
+      </h2>
       
       {/* Main headline */}
       <h1 className="text-3xl font-bold text-on-surface text-center mb-4 headline-lg">
