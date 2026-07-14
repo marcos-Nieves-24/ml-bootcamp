@@ -2,9 +2,17 @@ import { NextRequest, NextResponse } from "next/server"
 import bcrypt from "bcryptjs"
 import { prisma } from "@/lib/prisma"
 
+interface RegisterBody {
+  name: string
+  email: string
+  password: string
+  xp?: number
+}
+
 export async function POST(request: NextRequest) {
   try {
-    const { email, password, name } = await request.json()
+    const body = await request.json() as RegisterBody
+    const { email, password, name, xp } = body
     
     if (!email || !password || password.length < 6) {
       return NextResponse.json(
@@ -27,7 +35,8 @@ export async function POST(request: NextRequest) {
         email, 
         name: name || email.split('@')[0], 
         passwordHash,
-        level: 1
+        level: 1,
+        ...(xp !== undefined ? { xp, xpToNextLevel: 1000 } : {})
       }
     })
     
