@@ -72,7 +72,8 @@ export default function Step3_Quiz({ onAnswer, onBack }: Step3QuizProps) {
               <div className="space-y-4">
                 {options.map((option, index) => {
                   const isSelected = selectedOption === index
-                  const showResult = state === 'ANSWERED'
+                  // Inside SELECTING branch, we never show result styling
+                  const showResult = false
                   
                   return (
                     <button
