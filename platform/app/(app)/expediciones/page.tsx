@@ -6,7 +6,7 @@ import { getModules } from "@/lib/repositories"
 import { auth } from "@/lib/auth"
 
 export const metadata: Metadata = {
-  title: "Expediciones · ML Expedition",
+  title: "Expediciones · Nexus",
   description: "Ruta de aprendizaje de Machine Learning. Progreso, módulos y XP.",
 }
 

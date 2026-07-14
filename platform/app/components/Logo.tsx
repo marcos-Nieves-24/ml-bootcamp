@@ -4,7 +4,7 @@ interface LogoProps {
   label?: string
 }
 
-export default function Logo({ size = 40, showText = true, label = 'ML Expedition' }: LogoProps) {
+export default function Logo({ size = 40, showText = true, label = 'Nexus' }: LogoProps) {
   const gradientId = `logo-gradient-${size}`
   const glowId = `logo-glow-${size}`
 

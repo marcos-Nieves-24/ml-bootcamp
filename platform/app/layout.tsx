@@ -2,18 +2,18 @@ import "@/app/globals.css"
 import type { Metadata } from "next"
 import Providers from "./providers"
 
-const siteName = "ML Bootcamp Platform"
+const siteName = "Nexus"
 const siteDescription = "Transformando aprendizaje estático en experiencia interactiva. Cursos de Machine Learning y Data Science."
 
 export const metadata: Metadata = {
   title: {
-    default: "ML Expedition",
-    template: `%s · ML Expedition`,
+    default: "Nexus",
+    template: `%s · Nexus`,
   },
   description: siteDescription,
   openGraph: {
     siteName,
-    title: "ML Expedition",
+    title: "Nexus",
     description: siteDescription,
     type: "website",
   },
