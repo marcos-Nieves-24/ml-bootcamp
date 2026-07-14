@@ -40,7 +40,7 @@ export default async function MetricasPage() {
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-        <StitchCard className="rounded-2xl p-card-padding flex flex-col items-center justify-center relative overflow-hidden group">
+        <StitchCard className="rounded-2xl p-card-padding flex flex-col items-center justify-center relative overflow-hidden group glass-card">
           <div className="relative w-32 h-32 mb-4">
             <ProgressCircle value={averageAccuracy} size={128} color="var(--color-success-green)" strokeWidth={8} />
           </div>
@@ -50,7 +50,7 @@ export default async function MetricasPage() {
           </div>
         </StitchCard>
         
-        <StitchCard className="rounded-2xl p-card-padding flex flex-col justify-between">
+        <StitchCard className="rounded-2xl p-card-padding flex flex-col justify-between glass-card">
           <div>
             <div className="flex justify-between items-start mb-4">
               <div className="w-12 h-12 rounded-xl bg-primary-container/10 flex items-center justify-center text-primary">
@@ -68,7 +68,7 @@ export default async function MetricasPage() {
           </div>
         </StitchCard>
         
-        <StitchCard className="rounded-2xl p-card-padding flex flex-col justify-between">
+        <StitchCard className="rounded-2xl p-card-padding flex flex-col justify-between glass-card">
           <div>
             <div className="flex justify-between items-start mb-4">
               <div className="w-12 h-12 rounded-xl bg-secondary-container/10 flex items-center justify-center text-secondary">
@@ -87,7 +87,7 @@ export default async function MetricasPage() {
           </div>
         </StitchCard>
         
-        <StitchCard className="rounded-2xl p-card-padding flex flex-col justify-between">
+        <StitchCard className="rounded-2xl p-card-padding flex flex-col justify-between glass-card">
           <div>
             <div className="flex justify-between items-start mb-4">
               <div className="w-12 h-12 rounded-xl bg-tertiary-container/10 flex items-center justify-center text-tertiary">
@@ -104,7 +104,7 @@ export default async function MetricasPage() {
       </div>
       
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 mb-12">
-        <StitchCard className="rounded-2xl p-card-padding lg:col-span-2">
+        <StitchCard className="rounded-2xl p-card-padding lg:col-span-2 glass-card">
           <div className="flex justify-between items-center mb-6">
             <h4 className="font-headline-sm text-headline-sm text-deep-navy">Evolución de Habilidades</h4>
             <button className="text-primary hover:bg-primary/5 p-2 rounded-full transition-colors">
@@ -134,7 +134,7 @@ export default async function MetricasPage() {
           </div>
         </StitchCard>
         
-        <StitchCard className="rounded-2xl p-card-padding lg:col-span-3">
+        <StitchCard className="rounded-2xl p-card-padding lg:col-span-3 glass-card">
           <div className="flex justify-between items-center mb-8">
             <h4 className="font-headline-sm text-headline-sm text-deep-navy">Actividad Semanal (XP)</h4>
             <div className="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-lg border border-outline-variant/30">
@@ -159,7 +159,7 @@ export default async function MetricasPage() {
         </StitchCard>
       </div>
       
-      <StitchCard className="rounded-2xl overflow-hidden mb-12">
+      <StitchCard className="rounded-2xl overflow-hidden mb-12 glass-card">
         <div className="px-card-padding py-6 border-b border-glass-stroke bg-surface-container/30 flex justify-between items-center">
           <h4 className="font-headline-sm text-headline-sm text-deep-navy">Rendimiento en Laboratorios</h4>
           <div className="flex items-center gap-4">
@@ -219,7 +219,7 @@ export default async function MetricasPage() {
         </div>
       </StitchCard>
       
-      <StitchCard className="rounded-2xl p-card-padding border border-primary/20 bg-gradient-to-br from-primary/5 to-transparent relative overflow-hidden">
+      <StitchCard className="rounded-2xl p-card-padding border border-primary/20 bg-gradient-to-br from-primary/5 to-transparent relative overflow-hidden glass-card">
         <div className="absolute -right-16 -top-16 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex items-center gap-6">

@@ -36,7 +36,7 @@ export default async function NivelesPage() {
           <p className="font-body-md text-on-surface-variant mt-2">Tu progreso como investigador en Nexus Institute</p>
         </div>
         
-        <StitchCard className="p-6 rounded-2xl flex items-center gap-6 pr-8 shadow-sm">
+        <StitchCard className="p-6 rounded-2xl flex items-center gap-6 pr-8 shadow-sm glass-card">
           <div className="relative w-16 h-16 flex items-center justify-center">
             <ProgressRing value={XPProgress} size={64} strokeWidth={4} label={currentLevel.toString()} />
           </div>
@@ -63,7 +63,7 @@ export default async function NivelesPage() {
             return (
               <StitchCard 
                 key={rank.id}
-                className={`rounded-2xl p-6 text-center border-success-green/20 ${isCurrent ? 'ring-2 ring-primary border-primary active-level-glow relative shadow-lg' : ''} ${status === 'locked' ? 'opacity-60' : ''}`}
+                className={`rounded-2xl p-6 text-center border-success-green/20 glass-card ${isCurrent ? 'ring-2 ring-primary border-primary active-level-glow relative shadow-lg' : ''} ${status === 'locked' ? 'opacity-60' : ''}`}
                 hover={status !== 'locked'}
               >
                 {isCurrent && (
@@ -94,7 +94,7 @@ export default async function NivelesPage() {
       </div>
       
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
-        <div className="lg:col-span-2 glass-card rounded-3xl p-card-padding">
+        <div className="lg:col-span-2 glass-card rounded-3xl p-card-padding glass-card">
           <div className="flex items-center gap-6 mb-8">
             <div className="w-24 h-24 rounded-3xl bg-primary/10 flex items-center justify-center">
               <span className="material-symbols-outlined text-6xl text-primary">hub</span>
@@ -143,7 +143,7 @@ export default async function NivelesPage() {
           </div>
         </div>
         
-        <div className="glass-card rounded-3xl p-card-padding">
+        <div className="glass-card rounded-3xl p-card-padding glass-card">
           <h4 className="font-bold text-headline-sm mb-6">Recompensas por alcanzar este nivel</h4>
           <div className="space-y-6">
             <div className="flex items-center gap-4">
