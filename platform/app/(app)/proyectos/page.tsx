@@ -40,7 +40,7 @@ export default async function ProyectosPage() {
           const isLocked = project.status === "Bloqueado"
 
           return (
-            <StitchCard key={project.id} className={`p-6 flex flex-col ${isLocked ? 'opacity-60' : ''}`} hover={!isLocked}>
+            <StitchCard key={project.id} className={`p-6 flex flex-col glass-card ${isLocked ? 'opacity-60' : ''}`} hover={!isLocked}>
               {/* Header: category + status */}
               <div className="flex items-center justify-between mb-4">
                 <span className={`text-xs font-bold px-2.5 py-1 rounded-full ${(project.category && CATEGORY_COLORS[project.category]) || "bg-surface-container-low text-on-surface-variant"}`}>

@@ -47,7 +47,7 @@ export default function ComunidadPage() {
             </div>
             <div className="grid grid-cols-2 gap-base">
               {/* Challenge Card 1 */}
-              <StitchCard className="rounded-2xl p-6 border-l-4 border-l-xp-blue hover:bg-white/85 transition-all">
+              <StitchCard className="rounded-2xl p-6 border-l-4 border-l-xp-blue hover:bg-white/85 transition-all glass-card">
                 <div className="flex justify-between items-start mb-4">
                   <span className="bg-xp-blue/10 text-xp-blue px-3 py-1 rounded-full text-label-md font-bold">ACTIVO</span>
                   <div className="text-right">
@@ -73,7 +73,7 @@ export default function ComunidadPage() {
               </StitchCard>
 
               {/* Challenge Card 2 */}
-              <StitchCard className="rounded-2xl p-6 border-l-4 border-l-success-green hover:bg-white/85 transition-all">
+              <StitchCard className="rounded-2xl p-6 border-l-4 border-l-success-green hover:bg-white/85 transition-all glass-card">
                 <div className="flex justify-between items-start mb-4">
                   <span className="bg-success-green/10 text-success-green px-3 py-1 rounded-full text-label-md font-bold">PRÓXIMO</span>
                   <div className="text-right">
@@ -113,7 +113,7 @@ export default function ComunidadPage() {
             </div>
             <div className="flex flex-col gap-base">
               {/* Question Card 1 */}
-              <StitchCard className="p-6 rounded-2xl flex gap-6 items-start hover:bg-white/85 transition-all">
+              <StitchCard className="p-6 rounded-2xl flex gap-6 items-start hover:bg-white/85 transition-all glass-card">
                 <div className="flex flex-col items-center gap-1 px-3 py-2 bg-surface-container-low rounded-xl min-w-[64px]">
                   <span className="material-symbols-outlined text-primary">expand_less</span>
                   <span className="font-bold text-deep-navy">24</span>
@@ -142,7 +142,7 @@ export default function ComunidadPage() {
               </StitchCard>
 
               {/* Question Card 2 */}
-              <StitchCard className="p-6 rounded-2xl flex gap-6 items-start opacity-80 hover:opacity-100 transition-all">
+              <StitchCard className="p-6 rounded-2xl flex gap-6 items-start opacity-80 hover:opacity-100 transition-all glass-card">
                 <div className="flex flex-col items-center gap-1 px-3 py-2 bg-surface-container-low rounded-xl min-w-[64px]">
                   <span className="material-symbols-outlined text-primary">expand_less</span>
                   <span className="font-bold text-deep-navy">8</span>
@@ -181,7 +181,7 @@ export default function ComunidadPage() {
             </div>
             <div className="grid grid-cols-2 gap-gutter">
               {/* Team Card 1 */}
-              <StitchCard className="rounded-2xl p-6 relative group hover:bg-white/85 transition-all">
+              <StitchCard className="rounded-2xl p-6 relative group hover:bg-white/85 transition-all glass-card">
                 <div className="absolute top-4 right-4 text-primary opacity-30 group-hover:opacity-100 transition-opacity">
                   <span className="material-symbols-outlined text-[32px]">science</span>
                 </div>
@@ -205,7 +205,7 @@ export default function ComunidadPage() {
               </StitchCard>
 
               {/* Team Card 2 */}
-              <StitchCard className="rounded-2xl p-6 relative group hover:bg-white/85 transition-all">
+              <StitchCard className="rounded-2xl p-6 relative group hover:bg-white/85 transition-all glass-card">
                 <div className="absolute top-4 right-4 text-secondary opacity-30 group-hover:opacity-100 transition-opacity">
                   <span className="material-symbols-outlined text-[32px]">dataset</span>
                 </div>
@@ -234,7 +234,7 @@ export default function ComunidadPage() {
         {/* Right Column: Sidebar Panels */}
         <div className="col-span-4 flex flex-col gap-gutter">
           {/* Weekly Ranking Panel */}
-          <aside className="glass-card rounded-3xl p-6">
+          <aside className="glass-card rounded-3xl p-6 glass-card">
             <h3 className="font-headline-sm text-deep-navy mb-6 flex items-center gap-2">
               <span className="material-symbols-outlined text-primary">trophy</span>
               Ranking de la Semana
@@ -276,7 +276,7 @@ export default function ComunidadPage() {
           </aside>
 
           {/* Upcoming Events Calendar */}
-          <aside className="glass-card rounded-3xl p-6">
+          <aside className="glass-card rounded-3xl p-6 glass-card">
             <h3 className="font-headline-sm text-deep-navy mb-6 flex items-center gap-2">
               <span className="material-symbols-outlined text-primary">calendar_month</span>
               Eventos Próximos

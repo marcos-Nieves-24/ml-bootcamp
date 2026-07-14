@@ -72,10 +72,10 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
 
       {/* Content Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Main */}
+      {/* Main */}
         <div className="lg:col-span-2 space-y-6">
           {/* Progress */}
-          <StitchCard className="p-6" hover={false}>
+          <StitchCard className="p-6 glass-card" hover={false}>
             <h2 className="font-bold text-lg text-on-surface mb-4">Progreso</h2>
             <div className="flex items-center gap-4 mb-2">
               <XPBar value={project.progress ?? 0} className="flex-1" />
@@ -96,7 +96,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
           </StitchCard>
 
           {/* Tech Stack */}
-          <StitchCard className="p-6" hover={false}>
+          <StitchCard className="p-6 glass-card" hover={false}>
             <h2 className="font-bold text-lg text-on-surface mb-4">Stack Tecnológico</h2>
             <div className="flex flex-wrap gap-2">
               {(project.techTags ?? []).map(tag => (
@@ -108,7 +108,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
           </StitchCard>
 
           {/* Objectives */}
-          <StitchCard className="p-6" hover={false}>
+          <StitchCard className="p-6 glass-card" hover={false}>
             <h2 className="font-bold text-lg text-on-surface mb-4">Entregables del Proyecto</h2>
             <div className="space-y-3">
               {(() => {
@@ -156,7 +156,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
 
         {/* Sidebar */}
         <div className="space-y-4">
-          <StitchCard className="p-5" hover={false}>
+          <StitchCard className="p-5 glass-card" hover={false}>
             <h3 className="font-bold text-on-surface mb-4">Detalles</h3>
             <div className="space-y-3 text-sm">
               <div className="flex justify-between">

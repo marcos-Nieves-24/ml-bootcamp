@@ -42,7 +42,7 @@ export default async function LogrosPage() {
       </header>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-12">
-        <StitchCard className="p-card-padding rounded-2xl flex items-center gap-4" hover={false}>
+        <StitchCard className="p-card-padding rounded-2xl flex items-center gap-4 glass-card" hover={false}>
           <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
             <span className="material-symbols-outlined text-2xl">stars</span>
           </div>
@@ -52,7 +52,7 @@ export default async function LogrosPage() {
           </div>
         </StitchCard>
         
-        <StitchCard className="p-card-padding rounded-2xl flex items-center gap-4" hover={false}>
+        <StitchCard className="p-card-padding rounded-2xl flex items-center gap-4 glass-card" hover={false}>
           <div className="w-12 h-12 rounded-full bg-tertiary-fixed-dim/20 flex items-center justify-center text-tertiary">
             <span className="material-symbols-outlined text-2xl">workspace_premium</span>
           </div>
@@ -62,7 +62,7 @@ export default async function LogrosPage() {
           </div>
         </StitchCard>
         
-        <StitchCard className="p-card-padding rounded-2xl flex items-center gap-4" hover={false}>
+        <StitchCard className="p-card-padding rounded-2xl flex items-center gap-4 glass-card" hover={false}>
           <div className="w-12 h-12 rounded-full bg-xp-blue/10 flex items-center justify-center text-xp-blue">
             <span className="material-symbols-outlined text-2xl">military_tech</span>
           </div>
@@ -100,7 +100,7 @@ export default async function LogrosPage() {
                   return (
                     <StitchCard 
                       key={achievement.id}
-                      className={`p-6 rounded-2xl border-l-4 group ${isEarned ? 'border-success-green' : isLocked ? 'border-on-surface-variant opacity-60' : 'border-primary'} hover:bg-white/80 transition-all ${!isLocked ? 'cursor-pointer' : ''}`}
+                      className={`p-6 rounded-2xl border-l-4 group glass-card ${isEarned ? 'border-success-green' : isLocked ? 'border-on-surface-variant opacity-60' : 'border-primary'} hover:bg-white/80 transition-all ${!isLocked ? 'cursor-pointer' : ''}`}
                     >
                       <div className="flex items-start justify-between mb-4">
                         <div className={`w-14 h-14 rounded-xl ${isEarned ? 'bg-gradient-to-br from-primary to-secondary p-[2px]' : isLocked ? 'bg-surface-container' : 'bg-gradient-to-br from-primary to-secondary p-[2px]'}`}>
