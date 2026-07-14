@@ -18,6 +18,9 @@ envs/
 # IDE
 .vscode/
 .idea/
+
+# OpenCode / Agent cache
+.atl/.skill-registry.cache.json
 *.swp
 *.swo
 

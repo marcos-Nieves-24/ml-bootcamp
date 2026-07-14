@@ -76,7 +76,7 @@ export default async function DashboardPage() {
   ])
 
   const totalModules = modules.length
-  const completedModules = modules.filter(m => m.progress === 100).length
+  const completedModules = modules.filter(m => m.progress != null && m.progress === 100).length
   const globalProgress = totalModules > 0 ? Math.round((completedModules / totalModules) * 100) : 0
   const displayName = user?.name || "Investigador Nexus"
   const displayLevel = user?.level ?? 1
@@ -106,7 +106,7 @@ export default async function DashboardPage() {
     xpColor: "#10B981",
   }))
 
-  const activeModule = modules.find(m => m.progress > 0 && m.progress < 100) || modules[0] || modules[0]
+  const activeModule = modules.find(m => m.progress != null && m.progress > 0 && m.progress < 100) || modules[0]
 
   return (
     <div className="max-w-[1400px] mx-auto space-y-8">
@@ -260,8 +260,8 @@ export default async function DashboardPage() {
             </div>
             <div className="space-y-3">
               {modules.map((mod) => {
-                const isActive = mod.progress > 0 && mod.progress < 100 || (mod === modules.find(m => m.progress > 0 && m.progress < 100));
-                const isDone = mod.progress === 100;
+                const isActive = mod.progress != null && mod.progress > 0 && mod.progress < 100 || (mod === modules.find(m => m.progress != null && m.progress > 0 && m.progress < 100));
+                const isDone = mod.progress != null && mod.progress === 100;
                 const isActiveModule = isActive && !isDone;
                 const isPendingModule = !isDone && !isActiveModule;
                 return (
