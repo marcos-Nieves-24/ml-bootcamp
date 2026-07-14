@@ -36,7 +36,7 @@ export async function getModules(userId?: string): Promise<Module[]> {
     return modules.map(m => {
       const total = totalMap.get(m.id) ?? 0
       const completed = completedMap.get(m.id) ?? 0
-      return { ...m, progress: total > 0 ? Math.round((completed / total) * 100) : 0 }
+      return { ...m, progress: total > 0 ? Math.round((completed / total) * 100) : 0, lessons: total }
     })
   } catch (e) {
     throw new DatabaseError("Failed to fetch modules", e)

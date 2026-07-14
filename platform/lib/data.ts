@@ -22,6 +22,8 @@ export interface Module {
   progress?: number;
   xpReward: number;
   difficulty: string;
+  order: number;
+  lessons?: number;
 }
 
 export interface Lab {
@@ -39,6 +41,7 @@ export interface Lab {
   progress?: number;
   locked?: boolean;
   requirement?: string;
+  color?: string;
 }
 
 export interface Achievement {

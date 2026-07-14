@@ -286,14 +286,14 @@ export default async function DashboardPage() {
                           : { background: "#eceef0", color: "#777587" }
                       }
                     >
-                      {isDone ? <CheckCircle2 className="w-5 h-5" /> : <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{mod.num}</span>}
+                      {isDone ? <CheckCircle2 className="w-5 h-5" /> : <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{mod.order}</span>}
                     </div>
                     <div className="flex-1 min-w-0">
                       <div
                         className="font-semibold text-sm text-[#191c1e] truncate"
                         style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                       >
-                        Módulo {mod.num}: {mod.title}
+                        Módulo {mod.order}: {mod.title}
                       </div>
                       <div className="text-xs text-[#464555] mt-0.5">{mod.lessons || 0} lecciones</div>
                     </div>
