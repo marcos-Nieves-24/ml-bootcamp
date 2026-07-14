@@ -25,7 +25,7 @@ export default function Step1_Branding({ onStart, onLogin }: Step1BrandingProps)
       />
 
       {/* Glass card */}
-      <div className="relative z-10 w-full max-w-md bg-white/70 backdrop-blur-xl border border-white/40 rounded-[32px] p-8 md:p-10 shadow-xl">
+      <div className="relative z-10 w-full max-w-md bg-white/70 backdrop-blur-xl border border-white/40 rounded-[32px] p-8 md:p-10 shadow-xl hover:scale-[1.02] transition-all duration-500">
         {/* Hero section: Logo + Nexus title */}
         <div className="flex items-center justify-center gap-5 mb-8">
           <div className="shrink-0">
@@ -87,7 +87,7 @@ export default function Step1_Branding({ onStart, onLogin }: Step1BrandingProps)
           <span className="text-sm text-on-surface-variant">¿Ya eres investigador?</span>
           <button
             onClick={onLogin}
-            className="px-5 py-2.5 rounded-2xl text-sm font-semibold text-on-surface-variant border border-white/40 bg-white/70 hover:bg-white hover:text-primary hover:border-primary/30 transition-all backdrop-blur-sm"
+            className="px-5 py-2.5 rounded-2xl text-sm font-semibold text-white/80 border border-white/20 bg-black/20 hover:bg-black/40 hover:text-white hover:border-[#8A2EFF]/50 transition-all backdrop-blur-sm"
           >
             Iniciar Sesión
           </button>
