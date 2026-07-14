@@ -93,24 +93,23 @@
 .animate-fadeInUp {
   animation: fadeInUp 0.5s ease-out;
 }
-  /* Font families for typography */
-  .font-display-hero { font-family: var(--font-family-plus-jakarta-sans); }
-  .font-headline-lg { font-family: var(--font-family-plus-jakarta-sans); }
-  .font-headline-md { font-family: var(--font-family-plus-jakarta-sans); }
-  .font-headline-sm { font-family: var(--font-family-plus-jakarta-sans); }
-  .font-body-lg { font-family: var(--font-family-inter); }
-  .font-body-md { font-family: var(--font-family-inter); }
-  .font-label-lg { font-family: var(--font-family-plus-jakarta-sans); }
-  .font-label-md { font-family: var(--font-family-plus-jakarta-sans); }
-  .font-code-sm { font-family: var(--font-family-jetbrains-mono); }
+/* Font families for typography */
+.font-display-hero { font-family: var(--font-family-plus-jakarta-sans); }
+.font-headline-lg { font-family: var(--font-family-plus-jakarta-sans); }
+.font-headline-md { font-family: var(--font-family-plus-jakarta-sans); }
+.font-headline-sm { font-family: var(--font-family-plus-jakarta-sans); }
+.font-body-lg { font-family: var(--font-family-inter); }
+.font-body-md { font-family: var(--font-family-inter); }
+.font-label-lg { font-family: var(--font-family-plus-jakarta-sans); }
+.font-label-md { font-family: var(--font-family-plus-jakarta-sans); }
+.font-code-sm { font-family: var(--font-family-jetbrains-mono); }
 
-  /* Reduced motion support */
-  @media (prefers-reduced-motion: reduce) {
-    * {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-    }
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
 
