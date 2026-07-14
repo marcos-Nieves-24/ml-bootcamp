@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useReducer, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 import { signIn } from 'next-auth/react'
 import ParticleBackground from '@/app/components/ParticleBackground'
 import StepCounter from '@/app/components/StepCounter'
@@ -20,7 +21,6 @@ interface FlowState {
   quizAnswerIndex: number | null
   quizIsCorrect: boolean | null
   showConfetti: boolean
-  isExiting: boolean
 }
 
 type FlowAction = 
@@ -29,7 +29,6 @@ type FlowAction =
   | { type: 'SET_STEP_3_RESULT'; answerIndex: number; isCorrect: boolean; xpAwarded: number }
   | { type: 'SHOW_CONFETTI' }
   | { type: 'HIDE_CONFETTI' }
-  | { type: 'EXIT' }
 
 function flowReducer(state: FlowState, action: FlowAction): FlowState {
   switch (action.type) {
@@ -49,8 +48,6 @@ function flowReducer(state: FlowState, action: FlowAction): FlowState {
       return { ...state, showConfetti: true }
     case 'HIDE_CONFETTI':
       return { ...state, showConfetti: false }
-    case 'EXIT':
-      return { ...state, isExiting: true }
     default:
       return state
   }
@@ -61,6 +58,7 @@ interface BriefingFlowProps {
 }
 
 export default function BriefingFlow({ onComplete }: BriefingFlowProps) {
+  const router = useRouter()
   const [state, dispatch] = useReducer(flowReducer, {
     currentStep: 1,
     alias: '',
@@ -68,8 +66,7 @@ export default function BriefingFlow({ onComplete }: BriefingFlowProps) {
     xpAwarded: 0,
     quizAnswerIndex: null,
     quizIsCorrect: null,
-    showConfetti: false,
-    isExiting: false
+    showConfetti: false
   })
   
   const renderStep = () => {
@@ -78,7 +75,7 @@ export default function BriefingFlow({ onComplete }: BriefingFlowProps) {
         return (
           <Step1_Branding
             onStart={() => dispatch({ type: 'GO_TO_STEP', step: 2 })}
-            onLogin={() => dispatch({ type: 'EXIT' })}
+            onLogin={() => router.push('/login')}
           />
         )
       case 2:
@@ -107,7 +104,7 @@ export default function BriefingFlow({ onComplete }: BriefingFlowProps) {
             xpAwarded={state.xpAwarded}
             onRegister={onComplete}
             onGoogleOAuth={() => signIn('google', { callbackUrl: '/dashboard' })}
-            onLogin={() => dispatch({ type: 'EXIT' })}
+            onLogin={() => router.push('/login')}
           />
         )
     }
