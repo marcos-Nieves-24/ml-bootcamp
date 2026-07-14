@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 interface StitchBtnProps {
   children: React.ReactNode;
-  variant?: 'primary' | 'secondary' | 'ghost';
+  variant?: 'primary' | 'secondary' | 'ghost' | 'primary-gradient';
   size?: 'sm' | 'md' | 'lg';
   className?: string;
   onClick?: () => void;
@@ -22,6 +22,7 @@ export default function StitchBtn({
 }: StitchBtnProps) {
   const variantClasses = {
     primary: 'bg-primary text-on-primary hover:bg-[#3525cd]',
+    'primary-gradient': 'gradient-primary text-white shadow-[0_8px_24px_rgba(53,37,205,0.3)] hover:shadow-[0_12px_32px_rgba(53,37,205,0.4)]',
     secondary: 'bg-surface-container-low text-on-surface border border-border-muted hover:bg-surface-container',
     ghost: 'text-primary hover:bg-primary-container'
   };

@@ -6,7 +6,6 @@ interface GlassCardProps {
 
 export default function GlassCard({ children, className = "", hover = true }: GlassCardProps) {
   return (
-    <div className={`glass-card ${className} ${!hover ? 'pointer-events-none' : ''} ${hover ? '' : '[&]:opacity-100'}`}
-         style={{ borderRadius: 'var(--border-radius-lg)' }}>{children}</div>
+    <div className={`glass-card ${className} ${!hover ? 'pointer-events-none' : ''}`}>{children}</div>
   );
 }
