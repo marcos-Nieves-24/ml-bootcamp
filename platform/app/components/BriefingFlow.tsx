@@ -122,6 +122,19 @@ export default function BriefingFlow({ onComplete }: BriefingFlowProps) {
   
   return (
     <div className="relative min-h-screen overflow-hidden">
+      {/* Unified dark gradient background — covers the entire viewport */}
+      <div
+        className="fixed inset-0"
+        style={{
+          background: `
+            radial-gradient(ellipse 100% 60% at 50% 0%, rgba(36, 227, 242, 0.12) 0%, transparent 60%),
+            radial-gradient(ellipse 60% 50% at 80% 80%, rgba(138, 46, 255, 0.10) 0%, transparent 50%),
+            radial-gradient(ellipse 40% 40% at 20% 70%, rgba(36, 227, 242, 0.06) 0%, transparent 40%),
+            linear-gradient(180deg, #0f0530 0%, #1a0a46 30%, #1e0e52 60%, #12062e 100%)
+          `
+        }}
+      />
+
       <ParticleBackground />
       
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-8">
