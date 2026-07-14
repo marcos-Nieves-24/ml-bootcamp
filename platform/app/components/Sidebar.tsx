@@ -3,31 +3,29 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { signOut } from "next-auth/react"
+import { Rocket, Home, GraduationCap, FlaskConical, Rocket as RocketIcon, Trophy, LayoutDashboard, Users, LogOut } from "lucide-react"
 
 const navItems = [
-  { href: "/dashboard", label: "Inicio", icon: "home" },
-  { href: "/expediciones", label: "Expediciones", icon: "explore" },
-  { href: "/laboratorios", label: "Laboratorios", icon: "biotech" },
-  { href: "/proyectos", label: "Proyectos", icon: "architecture" },
-  { href: "/logros", label: "Logros", icon: "military_tech" },
-  { href: "/comunidad", label: "Comunidad", icon: "groups" },
-  { href: "/metricas", label: "Métricas", icon: "bar_chart" },
+  { href: "/dashboard", label: "Inicio", icon: Home },
+  { href: "/expediciones", label: "Expediciones", icon: GraduationCap },
+  { href: "/laboratorios", label: "Laboratorios", icon: FlaskConical },
+  { href: "/proyectos", label: "Proyectos", icon: RocketIcon },
+  { href: "/logros", label: "Logros", icon: Trophy },
+  { href: "/comunidad", label: "Comunidad", icon: Users },
 ]
 
 export default function Sidebar() {
   const pathname = usePathname()
 
   return (
-    <aside className="fixed left-0 top-0 h-full w-[280px] bg-surface-container-lowest border-r border-border-muted flex flex-col p-6 z-50 hidden lg:flex">
-      {/* Brand */}
+    <aside className="fixed left-0 top-0 h-full w-[280px] z-50 transition-transform duration-300 bg-white/80 backdrop-blur-md border-r border-white/40 flex flex-col p-6 hidden lg:flex">
+      {/* Logo */}
       <div className="mb-10 flex items-center gap-3">
-        <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white">
-          <span className="material-symbols-outlined" style={{ fontVariationSettings: '"FILL" 1' }}>
-            rocket_launch
-          </span>
+        <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: "rgba(53,37,205,0.12)" }}>
+          <Rocket className="w-5 h-5" style={{ color: "#3525cd" }} />
         </div>
-        <h1 className="text-xl font-bold text-primary tracking-wide">
-          ML EXPEDITION
+        <h1 className="text-xl font-bold" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#3525cd" }}>
+          ML Expedition
         </h1>
       </div>
 
@@ -39,66 +37,44 @@ export default function Sidebar() {
             <Link
               key={item.href}
               href={item.href}
-              className={`flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold transition-all ${
-                isActive
-                  ? "border-l-4 border-primary bg-primary/10 text-primary"
-                  : "text-on-surface-variant hover:bg-surface-container-low"
-              }`}
-              aria-current={isActive ? "page" : undefined}
+              className={`flex items-center gap-4 px-4 py-3 rounded-xl transition-all duration-200 font-semibold text-sm
+                ${isActive
+                  ? "bg-[rgba(79,70,229,1)] text-white shadow-md"
+                  : "text-[#464555] hover:text-[#3525cd] hover:bg-white/40"
+                }`}
+              style={isActive ? { backgroundColor: "rgba(79,70,229,1)", color: "#fff" } : {}}
             >
-              <span className="material-symbols-outlined text-xl">{item.icon}</span>
-              {item.label}
+              <item.icon className="w-5 h-5 flex-shrink-0" />
+              <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{item.label}</span>
             </Link>
           )
         })}
       </nav>
 
-      {/* User Profile */}
-      <div className="rounded-2xl bg-surface-container-low p-4 border border-border-muted">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-lg bg-gray-200 flex items-center justify-center text-gray-500 text-lg font-bold">
-            N
+      {/* User profile */}
+      <div className="mt-auto pt-6" style={{ borderTop: "1px solid rgba(255,255,255,0.4)" }}>
+        <div className="p-4 rounded-xl bg-white/80 backdrop-blur-md flex items-center gap-3 mb-2 border border-white/40">
+          <div className="w-10 h-10 rounded-lg flex items-center justify-center text-white text-sm font-bold flex-shrink-0" style={{ background: "linear-gradient(135deg, #3525cd, #006591)" }}>
+            IN
           </div>
           <div>
-            <p className="text-sm font-bold text-on-surface">Investigador Nexus</p>
-            <span className="text-xs font-bold text-primary">Nivel 4</span>
-          </div>
-        </div>
-        {/* XP bar */}
-        <div className="mt-3 space-y-2">
-          <div className="flex items-center gap-2 text-[#3B82F6] font-bold text-sm">
-            <span className="material-symbols-outlined text-lg" style={{ fontVariationSettings: '"FILL" 1' }}>
-              diamond
+            <p className="font-semibold text-sm text-[#191c1e]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+              Investigador Nexus
+            </p>
+            <span
+              className="text-[10px] px-2 py-0.5 rounded-full font-bold"
+              style={{ backgroundColor: "rgba(53,37,205,0.1)", color: "#3525cd" }}
+            >
+              Nivel 4
             </span>
-            1,260 XP
-          </div>
-          <div className="w-full h-2 rounded-full bg-gray-200 overflow-hidden">
-            <div className="h-full rounded-full bg-[#3B82F6]" style={{ width: "63%" }} />
-          </div>
-          <div className="flex items-center gap-1 text-xs text-on-surface-variant">
-            <span className="material-symbols-outlined text-sm text-orange-500">local_fire_department</span>
-            12 días
           </div>
         </div>
-      </div>
-
-      {/* Continuar proyecto */}
-      <div className="mt-4">
-        <button className="w-full py-3 bg-primary text-on-primary font-bold rounded-xl transition-all active:scale-95">
-          Continuar proyecto
-        </button>
-      </div>
-
-      {/* Ajustes y Cerrar sesión */}
-      <div className="mt-2 space-y-2">
-        <Link href="/metricas" className="block w-full text-left px-4 py-2 text-sm text-on-surface-variant hover:text-on-surface transition-colors">
-          Ajustes
-        </Link>
         <button
           onClick={() => signOut({ callbackUrl: "/" })}
-          className="w-full text-left px-4 py-2 text-sm text-on-surface-variant hover:text-on-surface transition-colors"
+          className="flex items-center gap-4 px-4 py-2 text-[#464555] hover:text-red-500 transition-colors text-sm"
         >
-          Cerrar sesión
+          <LogOut className="w-4 h-4" />
+          <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Cerrar Sesión</span>
         </button>
       </div>
     </aside>
