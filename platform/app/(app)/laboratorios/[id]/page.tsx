@@ -1,12 +1,8 @@
-"use client"
-
-import { useParams, useRouter } from "next/navigation"
 import Link from "next/link"
 import StitchCard from "@/app/components/StitchCard"
 import StitchBtn from "@/app/components/StitchBtn"
 import XPBar from "@/app/components/XPBar"
-import { MOCK_LABS, MOCK_ACHIEVEMENTS } from "@/lib/data"
-import { MOCK_LAB_STEPS } from "@/lib/content"
+import { getLabs, getLabSteps } from "@/lib/repositories"
 
 const LAB_ICONS: Record<string, string> = {
   "python-lab": "code",
@@ -17,10 +13,10 @@ const LAB_ICONS: Record<string, string> = {
   "ethics-lab": "gavel",
 }
 
-export default function LabDetailPage() {
-  const params = useParams()
-  const labId = params.id as string
-  const lab = MOCK_LABS.find(l => l.id === labId)
+export default async function Page({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const labs = await getLabs()
+  const lab = labs.find(l => l.id === id)
 
   if (!lab) {
     return (
@@ -37,7 +33,7 @@ export default function LabDetailPage() {
     return (
       <div className="text-center py-20">
         <span className="material-symbols-outlined text-6xl text-on-surface-variant mb-4">lock</span>
-        <h1 className="text-2xl font-bold text-on-surface mb-2">{lab.name}</h1>
+        <h1 className="text-2xl font-bold text-on-surface mb-2">{lab.title ?? lab.name}</h1>
         <p className="text-on-surface-variant mb-2">Este laboratorio está bloqueado</p>
         {lab.requirement && (
           <p className="text-sm text-on-surface-variant mb-6">Requisito: {lab.requirement}</p>
@@ -48,8 +44,9 @@ export default function LabDetailPage() {
   }
 
   const icon = LAB_ICONS[lab.id] || "science"
-  const steps = MOCK_LAB_STEPS.filter(s => s.labId === lab.id).sort((a, b) => a.id.localeCompare(b.id))
-  const completedSteps = Math.round((lab.progress / 100) * steps.length)
+  const stepsList = await getLabSteps(lab.id)
+  const steps = stepsList.sort((a, b) => a.id.localeCompare(b.id))
+  const completedSteps = Math.round(((lab.progress ?? 0) / 100) * steps.length)
 
   return (
     <div className="space-y-8">
@@ -57,7 +54,7 @@ export default function LabDetailPage() {
       <nav className="flex items-center gap-2 text-sm text-on-surface-variant">
         <Link href="/laboratorios" className="hover:text-primary transition-colors">Laboratorios</Link>
         <span className="material-symbols-outlined text-sm">chevron_right</span>
-        <span className="text-primary font-bold">{lab.name}</span>
+        <span className="text-primary font-bold">{lab.title ?? lab.name}</span>
       </nav>
 
       {/* Header */}
@@ -67,14 +64,14 @@ export default function LabDetailPage() {
             <span className="material-symbols-outlined text-4xl">{icon}</span>
           </div>
           <div>
-            <h1 className="text-3xl font-bold text-on-surface">{lab.name}</h1>
-            <p className="text-on-surface-variant">Nivel {lab.level} · {lab.progress}% completado</p>
+            <h1 className="text-3xl font-bold text-on-surface">{lab.title ?? lab.name}</h1>
+            <p className="text-on-surface-variant">Nivel {lab.level ?? '-'} · {lab.progress ?? 0}% completado</p>
           </div>
         </div>
         <div className="flex items-center gap-2">
           <span className="text-sm text-on-surface-variant">Progreso</span>
           <div className="w-32">
-            <XPBar value={lab.progress} />
+            <XPBar value={lab.progress ?? 0} />
           </div>
           <span className="text-sm font-bold text-primary">{lab.progress}%</span>
         </div>
@@ -166,11 +163,11 @@ export default function LabDetailPage() {
             <div className="space-y-3 text-sm">
               <div className="flex justify-between">
                 <span className="text-on-surface-variant">Nivel</span>
-                <span className="font-bold text-on-surface">{lab.level}</span>
+                <span className="font-bold text-on-surface">{lab.level ?? '-'}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-on-surface-variant">Progreso</span>
-                <span className="font-bold text-primary">{lab.progress}%</span>
+                <span className="font-bold text-primary">{lab.progress ?? 0}%</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-on-surface-variant">Pasos</span>
@@ -179,19 +176,11 @@ export default function LabDetailPage() {
             </div>
           </StitchCard>
 
-          {/* Related achievements */}
+          {/* Related achievements - to be implemented from real data layer */}
           <StitchCard className="p-5" hover={false}>
             <h3 className="font-bold text-on-surface mb-4">Logros Relacionados</h3>
             <div className="space-y-3">
-              {MOCK_ACHIEVEMENTS.slice(0, 2).map(a => (
-                <div key={a.id} className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-primary">{a.icon}</span>
-                  <div>
-                    <p className="text-sm font-bold text-on-surface">{a.title}</p>
-                    <p className="text-xs text-on-surface-variant">+{a.xpReward} XP</p>
-                  </div>
-                </div>
-              ))}
+              <p className="text-sm text-on-surface-variant">Próximamente desde la base de datos...</p>
             </div>
           </StitchCard>
 

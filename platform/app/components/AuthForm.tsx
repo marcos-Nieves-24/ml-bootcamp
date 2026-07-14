@@ -41,39 +41,58 @@ export default function AuthForm({ mode }: AuthFormProps) {
 
     try {
       if (mode === 'register') {
-        // Check if user already exists
-        const existing = localStorage.getItem(`user:${data.email}`)
-        if (existing) {
+        // Call register API instead of localStorage
+        const response = await fetch('/api/auth/register', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            email: data.email,
+            password: data.password,
+            name: data.email.split('@')[0]
+          })
+        })
+        
+        if (response.status === 409) {
           setError("Este email ya está registrado")
           setIsLoading(false)
           return
         }
-        // Store user in localStorage
-        localStorage.setItem(`user:${data.email}`, JSON.stringify({
+        
+        if (!response.ok) {
+          const errorData = await response.json()
+          setError(errorData.error || "Error al registrar")
+          setIsLoading(false)
+          return
+        }
+        
+        // Registration successful - auto-login
+        await signIn("credentials", {
           email: data.email,
           password: data.password,
-          name: data.email.split('@')[0],
-          createdAt: new Date().toISOString()
-        }))
-      }
-
-      const result = await signIn("credentials", {
-        email: data.email,
-        password: data.password,
-        redirect: false
-      })
-
-      if (result?.error) {
-        // Check if stored user exists but password doesn't match
-        const stored = localStorage.getItem(`user:${data.email}`)
-        if (stored) {
-          setError("Contraseña incorrecta")
-        } else {
-          setError("Email o contraseña inválidos")
-        }
+          redirect: false
+        })
+        
       } else {
-        router.push("/dashboard")
-        router.refresh()
+        // Login mode
+        const result = await signIn("credentials", {
+          email: data.email,
+          password: data.password,
+          redirect: false
+        })
+
+        if (result?.error) {
+          // Map NextAuth errors to Spanish
+          if (result.error === "CredentialsSignin") {
+            setError("Email o contraseña incorrectos")
+          } else {
+            setError("Error al iniciar sesión")
+          }
+        } else {
+          router.push("/dashboard")
+          router.refresh()
+        }
       }
     } catch (error) {
       setError("Error al iniciar sesión")

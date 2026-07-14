@@ -1,11 +1,9 @@
-"use client"
-
 import Link from "next/link"
 import StitchCard from "@/app/components/StitchCard"
 import XPBar from "@/app/components/XPBar"
 import ProgressRing from "@/app/components/ProgressRing"
 import StitchBtn from "@/app/components/StitchBtn"
-import { MOCK_LABS, MOCK_ACTIVITIES } from "@/lib/data"
+import { getLabs } from "@/lib/repositories"
 
 const SIDEBAR_LAB_ICONS: Record<string, string> = {
   "python-lab": "code",
@@ -16,12 +14,32 @@ const SIDEBAR_LAB_ICONS: Record<string, string> = {
   "ethics-lab": "gavel",
 }
 
-export default function LaboratoriosPage() {
-  const completed = MOCK_LABS.filter(l => !l.locked && l.progress > 0).length
-  const total = MOCK_LABS.length
+export default async function LaboratoriosPage() {
+  const labs = await getLabs()
+  const completed = labs.filter(l => !(l.locked ?? false) && (l.progress ?? 0) > 0).length
+  const total = labs.length
   const progress = (completed / total) * 100
 
-  const labActivities = MOCK_ACTIVITIES.filter(a => a.type === "lab" || a.type === "achievement").slice(0, 3)
+  const activities = [
+    {
+      id: "activity-5",
+      type: "lab",
+      message: "Obtuviste 95% en 'Data Lab: Limpieza de Datos'",
+      timestamp: new Date("2026-07-10T16:00:00Z")
+    },
+    {
+      id: "activity-6",
+      type: "achievement",
+      message: "Desbloqueaste el logro 'Maestro de Datos'",
+      timestamp: new Date("2026-07-10T14:00:00Z")
+    },
+    {
+      id: "activity-7",
+      type: "lab",
+      message: "Completaste un nuevo laboratorio",
+      timestamp: new Date("2026-07-11T10:00:00Z")
+    }
+  ]
 
   return (
     <div className="space-y-8">
@@ -39,7 +57,7 @@ export default function LaboratoriosPage() {
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         {/* Lab Cards */}
         <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
-          {MOCK_LABS.map((lab) => (
+          {labs.map((lab) => (
             <StitchCard key={lab.id} hover={!lab.locked} className={`p-5 flex flex-col ${lab.locked ? 'opacity-60' : ''}`}>
               {/* Header */}
               <div className="flex items-center justify-between mb-4">
@@ -47,11 +65,11 @@ export default function LaboratoriosPage() {
                   <span className="material-symbols-outlined text-2xl">{SIDEBAR_LAB_ICONS[lab.id] || "science"}</span>
                 </div>
                 <span className="text-xs font-bold text-primary bg-primary/10 px-2.5 py-1 rounded-full">
-                  Nivel {lab.level}
+                  Nivel {lab.level ?? '-'}
                 </span>
               </div>
 
-              <h3 className="font-bold text-on-surface mb-1">{lab.name}</h3>
+              <h3 className="font-bold text-on-surface mb-1">{lab.title ?? lab.name}</h3>
 
               {lab.locked && lab.requirement && (
                 <p className="text-xs text-on-surface-variant mb-3">🔒 {lab.requirement}</p>
@@ -66,9 +84,9 @@ export default function LaboratoriosPage() {
                 <div className="mt-auto">
                   <div className="flex justify-between text-xs mb-1">
                     <span className="text-on-surface-variant">Progreso</span>
-                    <span className="text-primary font-bold">{lab.progress}%</span>
+                    <span className="text-primary font-bold">{lab.progress ?? 0}%</span>
                   </div>
-                  <XPBar value={lab.progress} className="mb-3" />
+                  <XPBar value={lab.progress ?? 0} className="mb-3" />
                   <StitchBtn href={`/laboratorios/${lab.id}`} className="w-full text-sm py-2.5">
                     Entrar al Lab
                   </StitchBtn>
@@ -109,7 +127,7 @@ export default function LaboratoriosPage() {
             <div className="bg-surface-container-low rounded-xl p-3">
               <p className="text-xs uppercase tracking-wider text-on-surface-variant font-bold mb-2">Última Actividad</p>
               <div className="space-y-2">
-                {labActivities.map(a => (
+                {activities.map(a => (
                   <div key={a.id} className="flex items-center gap-2 text-xs text-on-surface-variant">
                     <span className="material-symbols-outlined text-sm text-primary">
                       {a.type === "achievement" ? "emoji_events" : "science"}

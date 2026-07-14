@@ -1,0 +1,270 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─── Auth (NextAuth v5 adapter) ───────────────────────────────────────
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime?
+  image         String?
+  passwordHash  String?
+  level         Int       @default(1)
+  xp            Int       @default(0)
+  xpToNextLevel Int       @default(1000)
+  streakDays    Int       @default(0)
+  rankId        String?
+  rank          Rank?     @relation(fields: [rankId], references: [id])
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  accounts       Account[]
+  sessions       Session[]
+  achievements   UserAchievement[]
+  progress       UserProgress[]
+  activities     Activity[]
+  metricPoints   MetricPoint[]
+  projects       Project[]
+}
+
+model Account {
+  id                String   @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?  @db.Text
+  access_token      String?  @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?  @db.Text
+  session_state     String?
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  id         String   @id @default(cuid())
+  identifier String
+  token      String   @unique
+  expires    DateTime
+  createdAt  DateTime @default(now())
+}
+
+// ─── Content ──────────────────────────────────────────────────────────
+
+model Module {
+  id          String   @id @default(cuid())
+  moduleId    String   @unique
+  title       String
+  description String?
+  order       Int
+  difficulty  String   @default("beginner")
+  xpReward    Int      @default(100)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  lessons Lesson[]
+}
+
+model Lesson {
+  id                String    @id @default(cuid())
+  lessonId          String    @unique
+  moduleId          String
+  title             String
+  content           String
+  duration          Int       @default(45)
+  order             Int       @default(0)
+  quizContent       String?
+  labContent        String?
+  assignmentContent String?
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  module   Module          @relation(fields: [moduleId], references: [id])
+  progress UserProgress[]
+}
+
+// ─── Labs ─────────────────────────────────────────────────────────────
+
+model Lab {
+  id          String   @id @default(cuid())
+  lessonId    String?
+  title       String
+  description String?
+  content     String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  steps LabStep[]
+}
+
+model LabStep {
+  id         String   @id @default(cuid())
+  labId      String
+  stepNumber Int
+  title      String?
+  content    String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  lab Lab @relation(fields: [labId], references: [id], onDelete: Cascade)
+}
+
+// ─── Ranks & Achievements ─────────────────────────────────────────────
+
+model Rank {
+  id     String @id @default(cuid())
+  name   String @unique
+  level  Int
+  minXP  Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  users        User[]
+  achievements Achievement[]
+}
+
+model Achievement {
+  id               String   @id @default(cuid())
+  title            String   @unique
+  description      String?
+  icon             String?
+  xpReward         Int
+  triggerCondition String
+  rankId           String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  rank  Rank?             @relation(fields: [rankId], references: [id])
+  users UserAchievement[]
+}
+
+model UserAchievement {
+  id            String   @id @default(cuid())
+  userId        String
+  achievementId String
+  unlockedAt    DateTime @default(now())
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  user        User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  achievement Achievement @relation(fields: [achievementId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, achievementId])
+}
+
+// ─── User Progress ────────────────────────────────────────────────────
+
+model UserProgress {
+  id          String    @id @default(cuid())
+  userId      String
+  lessonId    String
+  completed   Boolean   @default(false)
+  completedAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, lessonId])
+}
+
+// ─── Activity & Metrics ───────────────────────────────────────────────
+
+model Activity {
+  id        String   @id @default(cuid())
+  userId    String
+  type      String
+  metadata  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model MetricPoint {
+  id         String   @id @default(cuid())
+  userId     String
+  type       String
+  value      Int
+  recordedAt DateTime @default(now())
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// ─── Projects & Deliverables ──────────────────────────────────────────
+
+model Project {
+  id          String   @id @default(cuid())
+  userId      String
+  title       String
+  description String?
+  status      String   @default("in-progress")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  deliverables Deliverable[]
+}
+
+model Deliverable {
+  id          String    @id @default(cuid())
+  projectId   String
+  title       String
+  content     String
+  dueDate     DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+}
+
+// ─── Quiz & Assignment ────────────────────────────────────────────────
+
+model Quiz {
+  id          String   @id @default(cuid())
+  lessonId    String?
+  title       String
+  description String?
+  questions   String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Assignment {
+  id           String   @id @default(cuid())
+  lessonId     String?
+  title        String
+  description  String?
+  instructions String
+  dueDate      DateTime?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}

@@ -1,13 +1,13 @@
-"use client"
-
-import { useState } from "react"
 import StitchCard from "@/app/components/StitchCard"
 import ProgressRing from "@/app/components/ProgressRing"
 import Badge from "@/app/components/Badge"
-import { MOCK_RANKS, MOCK_USERS } from "@/lib/data"
+import { getRanks } from "@/lib/repositories"
+import { auth } from "@/lib/auth"
 
-export default function NivelesPage() {
-  const currentUser = MOCK_USERS[0]
+export default async function NivelesPage() {
+  const ranks = await getRanks()
+  const session = await auth()
+  const currentUser = { level: 4, xp: 1260, rank: { id: "investigador", name: "Investigador", order: 4, xpRequired: 600, icon: "military_tech" } }
   const currentRank = currentUser.rank
   const currentLevel = currentUser.level
   const currentXP = currentUser.xp
@@ -16,9 +16,16 @@ export default function NivelesPage() {
 
   const getRankStatus = (rank: any) => {
     if (rank.id === currentRank.id) return "actual"
-    const rankIndex = MOCK_RANKS.findIndex(r => r.id === rank.id)
-    const currentRankIndex = MOCK_RANKS.findIndex(r => r.id === currentRank.id)
+    const rankIndex = ranks.findIndex(r => r.id === rank.id)
+    const currentRankIndex = ranks.findIndex(r => r.id === currentRank.id)
     return rankIndex < currentRankIndex ? "earned" : "locked"
+  }
+
+  const isRankCurrent = (rank: any) => rank.id === currentRank.id
+  const isRankEarned = (rank: any) => {
+    const rankIndex = ranks.findIndex(r => r.id === rank.id)
+    const currentRankIndex = ranks.findIndex(r => r.id === currentRank.id)
+    return rankIndex < currentRankIndex
   }
 
   return (
@@ -49,7 +56,7 @@ export default function NivelesPage() {
       <div className="relative">
         <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 timeline-line z-0"></div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-4 relative z-10">
-          {MOCK_RANKS.map((rank) => {
+          {ranks.map((rank) => {
             const status = getRankStatus(rank)
             const isCurrent = status === "actual"
             

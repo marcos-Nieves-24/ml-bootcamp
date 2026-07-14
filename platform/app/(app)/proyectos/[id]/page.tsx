@@ -1,31 +1,36 @@
-"use client"
-
-import { useParams } from "next/navigation"
 import Link from "next/link"
 import StitchCard from "@/app/components/StitchCard"
 import StitchBtn from "@/app/components/StitchBtn"
 import XPBar from "@/app/components/XPBar"
-import { MOCK_PROJECTS } from "@/lib/data"
-import { MOCK_DELIVERABLES } from "@/lib/content"
+import { getProjects, getDeliverables } from "@/lib/repositories"
 
 const STATUS_ICONS: Record<string, string> = {
   "En Progreso": "autorenew",
+  "in-progress": "autorenew",
   Completado: "check_circle",
+  completed: "check_circle",
   Bloqueado: "lock",
+  blocked: "lock",
   "No iniciado": "radio_button_unchecked",
+  "not-started": "radio_button_unchecked",
 }
 
 const STATUS_COLORS: Record<string, string> = {
   "En Progreso": "text-primary bg-primary/10",
+  "in-progress": "text-primary bg-primary/10",
   Completado: "text-success-green bg-success-green/10",
+  completed: "text-success-green bg-success-green/10",
   Bloqueado: "text-on-surface-variant bg-surface-container",
+  blocked: "text-on-surface-variant bg-surface-container",
   "No iniciado": "text-on-surface-variant bg-surface-container",
+  "not-started": "text-on-surface-variant bg-surface-container",
 }
 
-export default function ProjectDetailPage() {
-  const params = useParams()
-  const projectId = params.id as string
-  const project = MOCK_PROJECTS.find(p => p.id === projectId)
+export default async function Page({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const projects = await getProjects()
+  const project = projects.find(p => p.id === id)
+  const deliverables = await getDeliverables(id)
 
   if (!project) {
     return (
@@ -73,8 +78,8 @@ export default function ProjectDetailPage() {
           <StitchCard className="p-6" hover={false}>
             <h2 className="font-bold text-lg text-on-surface mb-4">Progreso</h2>
             <div className="flex items-center gap-4 mb-2">
-              <XPBar value={project.progress} className="flex-1" />
-              <span className="text-lg font-bold text-primary">{project.progress}%</span>
+              <XPBar value={project.progress ?? 0} className="flex-1" />
+              <span className="text-lg font-bold text-primary">{project.progress ?? 0}%</span>
             </div>
             <p className="text-sm text-on-surface-variant">
               {project.status === "Completado" ? "¡Proyecto completado!" :
@@ -94,7 +99,7 @@ export default function ProjectDetailPage() {
           <StitchCard className="p-6" hover={false}>
             <h2 className="font-bold text-lg text-on-surface mb-4">Stack Tecnológico</h2>
             <div className="flex flex-wrap gap-2">
-              {project.techTags.map(tag => (
+              {(project.techTags ?? []).map(tag => (
                 <span key={tag} className="bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-lg text-sm font-medium border border-border-muted">
                   {tag}
                 </span>
@@ -107,7 +112,6 @@ export default function ProjectDetailPage() {
             <h2 className="font-bold text-lg text-on-surface mb-4">Entregables del Proyecto</h2>
             <div className="space-y-3">
               {(() => {
-                const deliverables = MOCK_DELIVERABLES.filter(d => d.projectId === project.id)
                 const items = deliverables.length > 0 ? deliverables : [
                   { id: "default-1", projectId: project.id, title: "Análisis y comprensión del problema", description: "Define el alcance y los objetivos del proyecto", estimatedHours: 2 },
                   { id: "default-2", projectId: project.id, title: "Análisis exploratorio de datos", description: "Explora y visualiza los datos disponibles", estimatedHours: 3 },
@@ -169,7 +173,7 @@ export default function ProjectDetailPage() {
               </div>
               <div className="flex justify-between">
                 <span className="text-on-surface-variant">Progreso</span>
-                <span className="font-bold text-primary">{project.progress}%</span>
+                <span className="font-bold text-primary">{project.progress ?? 0}%</span>
               </div>
             </div>
           </StitchCard>

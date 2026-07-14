@@ -1,22 +1,15 @@
-"use client"
-
-import { useState } from "react"
 import StitchCard from "@/app/components/StitchCard"
 import Badge from "@/app/components/Badge"
-import { MOCK_ACHIEVEMENTS, MOCK_USERS } from "@/lib/data"
+import { getAchievements, getUserAchievements } from "@/lib/repositories"
 import ProgressCircle from "@/app/components/ProgressCircle"
+import { auth } from "@/lib/auth"
 
-export default function LogrosPage() {
-  const currentUser = MOCK_USERS[0]
-  const unlockedAchievements = MOCK_ACHIEVEMENTS.filter(a => a.unlockedAt)
-  const allAchievements = MOCK_ACHIEVEMENTS
-  const inProgressAchievements = allAchievements.filter(a => 
-    !a.unlockedAt && !a.id.startsWith('unlock') // Placeholder for in-progress logic
-  )
-  const lockedAchievements = allAchievements.filter(a => 
-    !a.unlockedAt && a.id.startsWith('unlock') // Placeholder for locked logic
-  )
-  
+export default async function LogrosPage() {
+  const session = await auth()
+  const currentUser = { id: session?.user?.id || "fallback-user-id" }
+  const achievements = await getAchievements()
+  const unlockedAchievements = await getUserAchievements(currentUser.id)
+
   const getCategory = (achievement: any) => {
     if (achievement.id === 'explorer' || achievement.id === 'quick-learner' || achievement.id === 'outlier-detective') return 'Exploración'
     if (achievement.id === 'python-master') return 'Maestría Técnica'
@@ -24,17 +17,18 @@ export default function LogrosPage() {
   }
   
   const getFilteredAchievements = (category: string) => {
-    const filtered = allAchievements.filter(a => {
+    const filtered = achievements.filter(a => {
       const cat = getCategory(a)
       if (category === 'all') return true
       return cat === category
     })
-    
+
     // Mark some as earned for demo
     return filtered.map(a => ({
       ...a,
       earned: unlockedAchievements.some(ua => ua.id === a.id),
-      locked: lockedAchievements.some(lq => lq.id === a.id)
+      locked: false, // Simplified - assume not locked if not earned
+      unlockedAt: a.unlockedAt || undefined
     }))
   }
 
@@ -54,7 +48,7 @@ export default function LogrosPage() {
           </div>
           <div>
             <p className="text-label-md text-on-surface-variant uppercase tracking-wider">Desbloqueados</p>
-            <p className="font-headline-md text-headline-md text-on-surface">{unlockedAchievements.length} / {allAchievements.length}</p>
+            <p className="font-headline-md text-headline-md text-on-surface">{unlockedAchievements.length} / {achievements.length}</p>
           </div>
         </StitchCard>
         

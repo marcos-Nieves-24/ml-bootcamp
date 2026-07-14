@@ -1,24 +1,26 @@
-"use client"
-
-import { useState } from "react"
 import StitchCard from "@/app/components/StitchCard"
-import { MOCK_USERS, MOCK_MODULES, MOCK_LABS, MOCK_RANKS, MOCK_METRIC_POINTS } from "@/lib/data"
+import { getModules, getLabs, getMetricPoints } from "@/lib/repositories"
 import ProgressCircle from "@/app/components/ProgressCircle"
+import { auth } from "@/lib/auth"
 
-export default function MetricasPage() {
-  const currentUser = MOCK_USERS[0]
-  const currentRank = currentUser.rank
-  const completedLabs = MOCK_LABS.filter(lab => !lab.locked && lab.progress > 0).length
-  const totalLabs = MOCK_LABS.length
+export default async function MetricasPage() {
+  const session = await auth()
+  const currentUser = { level: 4, xp: 1260 } // Demo values until full user profile is loaded
+  const currentRank = null
+
+  const labs = await getLabs()
+  const completedLabs = labs.filter(lab => !(lab.locked ?? false) && (lab.progress ?? 0) > 0).length
+  const totalLabs = labs.length
   
-  const completedModules = MOCK_MODULES.filter(module => module.progress === 100).length
-  const totalModules = MOCK_MODULES.length
+  const modules = await getModules()
+  const completedModules = modules.filter(module => (module.progress ?? 0) === 100).length
+  const totalModules = modules.length
   
-  const totalXP = currentUser.xp
+  const totalXP = currentUser.xp || 1260
   const averageAccuracy = 94.2 // From the reference design
   const studyTime = 142 // hours from reference design
   
-  const chartData = MOCK_METRIC_POINTS
+  const chartData = await getMetricPoints()
   const maxValue = Math.max(...chartData.map(d => d.value))
   
   const getMetricWidth = (value: number) => {
@@ -178,9 +180,10 @@ export default function MetricasPage() {
               </tr>
             </thead>
             <tbody className="divide-y divide-glass-stroke">
-              {MOCK_LABS.filter(lab => !lab.locked).map((lab) => {
-                const accuracy = 98.5 - (lab.level * 1.2)
-                const hours = (lab.level + 1) * 12 + 15
+              {labs.filter(lab => !(lab.locked ?? false)).map((lab) => {
+                const level = lab.level ?? 0
+                const accuracy = 98.5 - (level * 1.2)
+                const hours = (level + 1) * 12 + 15
                 
                 return (
                   <tr key={lab.id} className="hover:bg-primary/5 transition-colors group">
@@ -190,8 +193,8 @@ export default function MetricasPage() {
                           <span className="material-symbols-outlined">{lab.icon}</span>
                         </div>
                         <div>
-                          <p className="font-label-lg text-label-lg text-deep-navy">{lab.name}</p>
-                          <p className="text-label-md text-on-surface-variant">{lab.progress}% completado</p>
+                          <p className="font-label-lg text-label-lg text-deep-navy">{lab.title ?? lab.name}</p>
+                          <p className="text-label-md text-on-surface-variant">{lab.progress ?? 0}% completado</p>
                         </div>
                       </div>
                     </td>
@@ -204,9 +207,9 @@ export default function MetricasPage() {
                         </div>
                       </div>
                     </td>
-                    <td className="px-4 py-5 font-body-md">{hours}h {lab.level % 2 === 0 ? '15m' : '20m'}</td>
+                    <td className="px-4 py-5 font-body-md">{hours}h {(lab.level ?? 0) % 2 === 0 ? '15m' : '20m'}</td>
                     <td className="px-card-padding py-5 text-right">
-                      <span className={`${lab.progress === 100 ? 'bg-success-green/10 text-success-green' : 'bg-primary/10 text-primary'} px-3 py-1 rounded-full text-label-md font-label-md`}>{lab.progress === 100 ? 'Completado' : 'En Progreso'}</span>
+                      <span className={`${(lab.progress ?? 0) === 100 ? 'bg-success-green/10 text-success-green' : 'bg-primary/10 text-primary'} px-3 py-1 rounded-full text-label-md font-label-md`}>{(lab.progress ?? 0) === 100 ? 'Completado' : 'En Progreso'}</span>
                     </td>
                   </tr>
                 )

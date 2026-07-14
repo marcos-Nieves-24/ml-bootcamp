@@ -1,6 +1,9 @@
 import NextAuth, { DefaultSession } from "next-auth"
 import Credentials from "next-auth/providers/credentials"
 import Google from "next-auth/providers/google"
+import bcrypt from "bcryptjs"
+import { PrismaAdapter } from "@auth/prisma-adapter"
+import { prisma } from "./prisma"
 
 declare module "next-auth" {
   interface Session {
@@ -11,6 +14,7 @@ declare module "next-auth" {
 }
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
+  adapter: PrismaAdapter(prisma),
   providers: [
     Credentials({
       name: "Credentials",
@@ -20,17 +24,14 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       },
       async authorize(credentials) {
         if (!credentials?.email || !credentials?.password) return null
+        const email = credentials.email as string
+        const password = credentials.password as string
         
-        // Mock validation for now
-        // In production: buscar en DB y comparar con bcrypt
-        if (typeof credentials.password === "string" && credentials.password.length < 4) return null
-        
-        // Return a mock user
-        return {
-          id: "1",
-          email: credentials.email as string,
-          name: "Investigador Principal"
-        }
+        const user = await prisma.user.findUnique({ where: { email } })
+        if (!user || !user.passwordHash) return null
+        const valid = await bcrypt.compare(password, user.passwordHash)
+        if (!valid) return null
+        return { id: user.id, email: user.email, name: user.name }
       }
     }),
     Google({

@@ -5,9 +5,5 @@
       "use": "@vercel/next"
     }
   ],
-  "buildCommand": "cd platform && npm install && npm run build",
-  "outputDirectory": "platform/.next",
-  "framework": "nextjs",
-  "cleanUrls": true,
-  "trailingSlash": true
+  "cleanUrls": true
 }
