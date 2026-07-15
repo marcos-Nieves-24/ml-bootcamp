@@ -1,520 +1,115 @@
+
 # PROJECT_STRUCTURE.md
 
-# Repository Structure
+## Visión general
 
-This repository contains all the material required to develop, maintain, and publish the university course:
+Este repositorio contiene el curso "Machine Learning for Data Analysis and SaaS"
+y la plataforma web (Nexus) que lo entrega a los estudiantes.
+El asistente de IA (OpenCode) DEBE seguir esta estructura al crear, modificar
+u organizar cualquier archivo.
 
-> **Machine Learning for Data Analysis and SaaS**
-
-The repository is organized following a modular architecture inspired by software engineering projects.
-
-The AI assistant (OpenCode) MUST always follow this structure when creating, modifying, or organizing content.
-
----
-
-# Root Directory
-
-```
-ml-bootcamp/
-```
-
-Contains the entire course.
-
-No educational content should be placed directly in the root directory except documentation files.
+**Nota de versión**: este documento reemplaza una versión anterior que describía
+una arquitectura de curso puramente académica (labs/, exams/, website/, projects/
+sueltos en la raíz). Ese enfoque quedó superado desde que el proyecto pivotó a
+una plataforma interactiva completa. Si encuentras referencias a esa estructura
+antigua en otros documentos o prompts, repórtalas para corregir.
 
 ---
 
-# docs/
+## platform/
 
-Contains documentation intended for instructors.
+La aplicación web (Nexus). Next.js + Prisma + NextAuth + Neon (Postgres).
+Todo el código de frontend, backend y componentes de UI vive aquí.
+Nada de código de aplicación debe existir fuera de esta carpeta.
 
-```
-docs/
+## content/
 
-    syllabus/
+Lecciones en formato MDX que la plataforma consume. Un subdirectorio por
+módulo. Es el contrato de datos entre `course-source/` (material crudo) y
+`platform/` (lo que lo renderiza).
 
-    instructor/
+## course-source/
 
-    grading/
-
-    references/
-```
-
-## syllabus/
-
-Contains
-
-- official syllabus
-- course description
-- learning outcomes
-- curriculum documents
-
-## instructor/
-
-Contains
-
-- teaching notes
-- semester planning
-- class schedules
-- instructor checklists
-
-## grading/
-
-Contains
-
-- grading rubrics
-- evaluation policies
-- assessment criteria
-
-## references/
-
-Contains
-
-- bibliographies
-- citation databases
-- recommended books
-- recommended papers
-
----
-
-# course/
-
-Contains the educational content.
-
-Every module has its own directory.
-
-```
-course/
-
-    module01_ai/
-
-    module02_python/
-
-    module03_statistics/
-
-    module04_machine_learning/
-```
-
-Every module must contain
-
-```
-README.md
-
-lessons/
-
-slides/
-
-figures/
-
+Material académico original: notebooks, casos de estudio, datasets, figuras
+generadas — la fuente antes de convertir contenido a MDX. Incluye:
+course-source/
 notebooks/
-
-labs/
-
-assignments/
-
-quizzes/
-
-references/
-```
-
-Modules must be independent.
-
----
-
-# lessons/
-
-Contains lecture material.
-
-Each lesson should be stored inside its own directory.
-
-Example
-
-```
-lesson01_intro_ai/
-
-lesson.md
-
+case_studies/
+datasets/
+raw/
+processed/
+synthetic/
+external/
 figures/
 
-references.bib
-```
+Datasets nunca deben duplicarse. Cada dataset debe incluir README con fuente,
+variables, cita y preprocesamiento.
 
-Every lesson must include
+## conocimientos/
 
-- learning objectives
+Documentación de visión y arquitectura de producto: VISION.md,
+ARQUITECTURA_DEL_PRODUCTO.md, FILOSOFIA_EDUCATIVA.md, y este mismo archivo.
+Es la fuente de verdad para decisiones de producto, no de código.
 
-- prerequisites
+## infra/
 
-- theoretical explanation
+Configuración de contenedores (Dockerfile, docker-compose.yml, .dockerignore)
+para desarrollo local o despliegue alternativo a Vercel.
 
-- intuition
+## referencia-gui/ y referencia-ui/
 
-- mathematical concepts
+Assets visuales de referencia usados durante el rediseño de interfaz
+(capturas, mockups, sistema de diseño).
 
-- biological examples
+## docs/
 
-- SaaS examples
+Documentación del proyecto en sí (no del curso): COURSE_STRUCTURE.md,
+LESSON_STRUCTURE.md, CONTENT_WORKFLOW.md, AGENTS.md, STYLE_GUIDE.md, ROADMAP.md.
 
-- summary
+## scripts/
 
-- glossary
+Scripts de automatización (conversión ipynb→mdx, generación de figuras, etc.).
+Nunca deben contener contenido educativo.
 
-- references
+## prompts/
 
----
+Prompts reutilizables para OpenCode (generación de lecciones, quizzes, etc.).
 
-# notebooks/
+## tests/
 
-Contains Jupyter notebooks.
+Tests automatizados (pytest para contenido/datos, tests de la app en `platform/`).
 
-Each notebook should accompany one lesson.
+## .github/workflows/
 
-Notebook naming
+CI: build de la app, validación de contenido, deploy.
 
-```
-01_intro.ipynb
+## BACKLOG.md
 
-02_linear_regression.ipynb
-
-03_clustering.ipynb
-```
-
-Every notebook must contain
-
-Markdown
-
-↓
-
-Code
-
-↓
-
-Output
-
-↓
-
-Interpretation
-
-↓
-
-Exercises
+Pendientes técnicos y de producto identificados durante el desarrollo.
+Ver también las notas de sesión en Engram para contexto histórico de decisiones.
 
 ---
 
-# labs/
+## Reglas generales
 
-Contains practical classroom activities.
-
-Each lab should include
-
-```
-README.md
-
-student.ipynb
-
-solution.ipynb
-
-dataset.csv
-```
+1. Nunca ubicar código de aplicación fuera de `platform/`.
+2. Nunca duplicar datasets — si existe en `course-source/datasets/`, no se
+   vuelve a crear en otro lado.
+3. Todo pendiente técnico o de producto se registra en `BACKLOG.md`, no solo
+   en las notas de sesión de Engram.
+4. Antes de crear una carpeta nueva en la raíz, verificar si ya existe algo
+   equivalente y actualizar este documento en el mismo commit.
+5. Cada lección en `content/` debe seguir el schema definido en
+   `docs/LESSON_STRUCTURE.md` (frontmatter + bloques MDX).
+6. Preferir mejorar material existente sobre crear archivos duplicados.
+7. Cada cambio estructural debe preservar consistencia en todo el repositorio.
 
 ---
 
-# assignments/
-
-Contains homework.
-
-Each assignment should include
-
-```
-instructions.md
-
-rubric.md
-
-starter_code.ipynb
-
-solution.ipynb
-```
-
----
-
-# quizzes/
-
-Contains formative assessments.
-
-Each quiz includes
-
-```
-questions.md
-
-answer_key.md
-```
-
-Quizzes may include
-
-- multiple choice
-
-- true/false
-
-- coding questions
-
-- interpretation questions
-
----
-
-# exams/
-
-Contains
-
-- midterm
-
-- final exam
-
-- answer keys
-
-- grading rubrics
-
----
-
-# projects/
-
-Contains capstone projects.
-
-Each project includes
-
-```
-README.md
-
-dataset/
-
-starter_code/
-
-instructions.md
-
-rubric.md
-
-solution/
-```
-
-Projects should integrate multiple modules.
-
----
-
-# datasets/
-
-Contains all datasets used in the course.
-
-```
-datasets/
-
-raw/
-
-processed/
-
-synthetic/
-
-external/
-```
-
-Datasets must never be duplicated.
-
-Each dataset folder should include
-
-```
-README.md
-
-metadata.json
-
-license.txt
-```
-
-README must explain
-
-- source
-
-- variables
-
-- citation
-
-- preprocessing
-
----
-
-# figures/
-
-Contains reusable figures.
-
-Figures should never be manually edited.
-
-All figures should be generated from Python scripts whenever possible.
-
-Accepted formats
-
-- SVG
-
-- PNG
-
-- PDF
-
----
-
-# scripts/
-
-Contains automation scripts.
-
-Examples
-
-```
-generate_figures.py
-
-generate_notebooks.py
-
-generate_datasets.py
-
-build_course.py
-
-publish_site.py
-```
-
-Scripts should never contain educational content.
-
----
-
-# prompts/
-
-Contains reusable prompts used with OpenCode.
-
-Examples
-
-```
-lesson_generation.md
-
-quiz_generation.md
-
-dataset_generation.md
-
-proofreading.md
-
-slides.md
-
-scientific_review.md
-```
-
-Prompts should be reusable across modules.
-
----
-
-# website/
-
-Contains files used to publish the course online.
-
-May include
-
-- Quarto
-
-- MkDocs
-
-- Docusaurus
-
-- GitHub Pages
-
----
-
-# tests/
-
-Contains automated tests.
-
-Examples
-
-```
-test_notebooks.py
-
-test_links.py
-
-test_datasets.py
-
-test_examples.py
-```
-
-All executable notebooks should be tested.
-
----
-
-# .github/
-
-Contains GitHub configuration.
-
-Including
-
-```
-workflows/
-
-ISSUE_TEMPLATE/
-
-PULL_REQUEST_TEMPLATE/
-```
-
-GitHub Actions should automatically
-
-- execute notebooks
-
-- validate datasets
-
-- build documentation
-
-- publish website
-
----
-
-# General Rules
-
-OpenCode must always follow these rules.
-
-1. Never place files in the wrong directory.
-
-2. Never duplicate datasets.
-
-3. Never create notebooks without corresponding lessons.
-
-4. Every lesson should have:
-
-    - notebook
-
-    - quiz
-
-    - lab
-
-    - references
-
-5. Every Python example must execute without errors.
-
-6. Every dataset must contain documentation.
-
-7. Figures should be reproducible.
-
-8. Educational content must remain modular.
-
-9. Prefer improving existing material over creating duplicate files.
-
-10. Every change should preserve consistency across the entire repository.
-
----
-
-# Repository Philosophy
-
-The repository is treated as a software project.
-
-Every educational artifact should be:
-
-- version controlled
-
-- reproducible
-
-- testable
-
-- documented
-
-- reusable
-
-- modular
-
-The objective is not only to create lecture notes, but to build a complete, maintainable, open-source university course that can evolve over time through collaboration with OpenCode.
+## Filosofía del repositorio
+
+El repositorio se trata como un proyecto de software real. Todo artefacto
+(educativo o de plataforma) debe ser: versionado, reproducible, testeado,
+documentado, reusable y modular. El objetivo no es solo generar apuntes de
+clase, sino construir una plataforma completa y mantenible que evoluciona
+en colaboración con OpenCode.
