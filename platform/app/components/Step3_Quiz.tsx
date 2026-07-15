@@ -19,7 +19,7 @@ export default function Step3_Quiz({ onAnswer, onBack }: Step3QuizProps) {
   const options = [
     "A. Un termómetro mide temperatura",
     "B. Un sitio web muestra HTML",
-    "C. Un modelo predice precios ✓"
+    "C. Un modelo predice precios"
   ]
   const correctIndex = 2
   const correctXP = 15
@@ -53,7 +53,7 @@ export default function Step3_Quiz({ onAnswer, onBack }: Step3QuizProps) {
     <div className="w-full bg-black/50 backdrop-blur-xl border border-white/10 rounded-[32px] p-8 md:p-10 shadow-2xl hover:scale-[1.02] transition-all duration-500">
       <div className="text-center mb-8">
         <h1 className="text-2xl font-bold text-white mb-2 headline-sm">
-          Calentamiento 🧠
+          Calentamiento
         </h1>
         <p className="text-sm text-white/50">Respondé bien y sumá XP extra</p>
       </div>
@@ -72,7 +72,7 @@ export default function Step3_Quiz({ onAnswer, onBack }: Step3QuizProps) {
                   onClick={() => handleOptionSelect(index)}
                   className={`w-full p-5 rounded-2xl border transition-all duration-300 transform hover:scale-[1.02]
                     ${selectedOption === index
-                      ? 'border-[#8A2EFF]/40 bg-white/10 text-white shadow-lg'
+                      ? 'border-[#7c6ff0]/40 bg-white/10 text-white shadow-lg'
                       : 'border-white/10 bg-white/5 text-white/70 hover:bg-white/10 hover:border-white/20 hover:text-white'
                     }
                   `}
@@ -96,7 +96,7 @@ export default function Step3_Quiz({ onAnswer, onBack }: Step3QuizProps) {
               disabled={selectedOption === null}
               className={`flex-1 px-6 py-3 rounded-2xl font-semibold transition-all duration-300
                 ${selectedOption !== null
-                  ? 'bg-gradient-to-r from-[#8A2EFF] to-[#24E3F2] text-white shadow-lg shadow-[#8A2EFF]/30 hover:scale-[1.02] active:scale-[0.98]'
+                  ? 'bg-gradient-to-r from-[#7c6ff0] to-[#4fd1e8] text-white shadow-lg shadow-[#7c6ff0]/30 hover:scale-[1.02] active:scale-[0.98]'
                   : 'bg-white/5 text-white/30 cursor-not-allowed border border-white/5'
                 }
               `}
@@ -110,7 +110,11 @@ export default function Step3_Quiz({ onAnswer, onBack }: Step3QuizProps) {
           <div className="mb-8">
             {isCorrect ? (
               <div className="text-center">
-                <div className="text-6xl mb-4">✅</div>
+                <div className="w-16 h-16 rounded-full bg-emerald-400/20 border border-emerald-400/30 flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </div>
                 <h2 className="text-2xl font-bold text-emerald-400 mb-4">
                   ¡Bien hecho!
                 </h2>
@@ -134,8 +138,8 @@ export default function Step3_Quiz({ onAnswer, onBack }: Step3QuizProps) {
             )}
 
             <div className="flex items-center justify-center">
-              <div className="bg-gradient-to-r from-[#24E3F2]/20 to-[#8A2EFF]/20 border border-[#8A2EFF]/30 rounded-full px-6 py-3">
-                <span className="text-2xl font-bold bg-gradient-to-r from-[#24E3F2] to-[#8A2EFF] bg-clip-text text-transparent">
+              <div className="bg-gradient-to-r from-[#4fd1e8]/20 to-[#7c6ff0]/20 border border-[#7c6ff0]/30 rounded-full px-6 py-3">
+                <span className="text-2xl font-bold bg-gradient-to-r from-[#4fd1e8] to-[#7c6ff0] bg-clip-text text-transparent">
                   +{isCorrect ? correctXP : incorrectXP} XP
                 </span>
               </div>
@@ -145,7 +149,7 @@ export default function Step3_Quiz({ onAnswer, onBack }: Step3QuizProps) {
           <div className="flex justify-center">
             <button
               onClick={handleContinue}
-              className="w-full px-8 py-4 rounded-2xl bg-gradient-to-r from-[#8A2EFF] to-[#24E3F2] text-white font-semibold shadow-lg shadow-[#8A2EFF]/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+              className="w-full px-8 py-4 rounded-2xl bg-gradient-to-r from-[#7c6ff0] to-[#4fd1e8] text-white font-semibold shadow-lg shadow-[#7c6ff0]/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
             >
               Siguiente paso →
             </button>

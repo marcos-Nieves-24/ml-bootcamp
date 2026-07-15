@@ -20,8 +20,8 @@ export default function Logo({ size = 40, showText = true, label = 'Nexus' }: Lo
       >
         <defs>
           <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#24E3F2" />
-            <stop offset="100%" stopColor="#8A2EFF" />
+            <stop offset="0%" stopColor="#7c6ff0" />
+            <stop offset="100%" stopColor="#4fd1e8" />
           </linearGradient>
 
           <filter id={glowId}>
@@ -96,7 +96,7 @@ export default function Logo({ size = 40, showText = true, label = 'Nexus' }: Lo
           className="text-xl font-bold"
           style={{
             fontFamily: "'Plus Jakarta Sans', sans-serif",
-            background: 'linear-gradient(135deg, #24E3F2, #8A2EFF)',
+            background: 'linear-gradient(135deg, #7c6ff0, #4fd1e8)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             backgroundClip: 'text',

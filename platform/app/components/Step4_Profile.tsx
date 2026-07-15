@@ -101,7 +101,7 @@ export default function Step4_Profile({
       <div className="bg-black/50 backdrop-blur-xl border border-white/10 rounded-[32px] p-8 shadow-2xl hover:scale-[1.02] transition-all duration-500">
         <div className="flex items-start gap-6 mb-6">
           {/* Avatar */}
-          <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#24E3F2] to-[#8A2EFF] flex items-center justify-center shadow-lg shadow-[#8A2EFF]/20">
+          <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#4fd1e8] to-[#7c6ff0] flex items-center justify-center shadow-lg shadow-[#7c6ff0]/20">
             <span className="text-white text-4xl font-bold">
               {alias.charAt(0).toUpperCase()}
             </span>
@@ -135,7 +135,7 @@ export default function Step4_Profile({
         {/* XP Message */}
         <div className="bg-white/5 border border-white/10 rounded-2xl p-4">
           <p className="text-white/70">
-            Has ganado <span className="font-bold text-[#24E3F2]">{xpAwarded}</span> XP en tu primer día como Investigador.
+            Has ganado <span className="font-bold text-[#4fd1e8]">{xpAwarded}</span> XP en tu primer día como Investigador.
           </p>
         </div>
       </div>
@@ -162,7 +162,7 @@ export default function Step4_Profile({
             <div className={`flex items-center gap-3 rounded-2xl px-4 py-3 shadow-inner shadow-black/50 transition-all
               ${emailError
                 ? 'bg-black/70 border border-red-300/30'
-                : 'bg-black/70 border border-white/10 focus-within:border-[#8A2EFF]/40'
+                : 'bg-black/70 border border-white/10 focus-within:border-[#7c6ff0]/40'
               }
             `}>
               <Mail className="w-5 h-5 text-white/40 shrink-0" />
@@ -187,7 +187,7 @@ export default function Step4_Profile({
             <div className={`flex items-center gap-3 rounded-2xl px-4 py-3 shadow-inner shadow-black/50 transition-all
               ${passwordError
                 ? 'bg-black/70 border border-red-300/30'
-                : 'bg-black/70 border border-white/10 focus-within:border-[#8A2EFF]/40'
+                : 'bg-black/70 border border-white/10 focus-within:border-[#7c6ff0]/40'
               }
             `}>
               <Lock className="w-5 h-5 text-white/40 shrink-0" />
@@ -210,7 +210,7 @@ export default function Step4_Profile({
             disabled={!isFormValid || isLoading}
             className={`w-full py-4 rounded-2xl font-semibold transition-all duration-300
               ${isFormValid && !isLoading
-                ? 'bg-gradient-to-r from-[#8A2EFF] to-[#24E3F2] text-white shadow-lg shadow-[#8A2EFF]/30 hover:scale-[1.02] active:scale-[0.98]'
+                ? 'bg-gradient-to-r from-[#7c6ff0] to-[#4fd1e8] text-white shadow-lg shadow-[#7c6ff0]/30 hover:scale-[1.02] active:scale-[0.98]'
                 : 'bg-white/5 text-white/30 cursor-not-allowed border border-white/5'
               }
             `}
@@ -242,7 +242,7 @@ export default function Step4_Profile({
         <div className="mt-6 text-center">
           <button
             onClick={onLogin}
-            className="text-white/50 hover:text-[#24E3F2] font-medium text-sm transition-colors"
+            className="text-white/50 hover:text-[#4fd1e8] font-medium text-sm transition-colors"
           >
             ¿Ya tienes cuenta? Inicíar Sesión
           </button>

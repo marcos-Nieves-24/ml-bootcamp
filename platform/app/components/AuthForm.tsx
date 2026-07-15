@@ -114,7 +114,7 @@ export default function AuthForm({ mode }: AuthFormProps) {
           <div className={`flex items-center gap-3 rounded-2xl px-4 py-3 shadow-inner shadow-black/50 transition-all
             ${errors.email
               ? 'bg-black/70 border border-red-300/30'
-              : 'bg-black/70 border border-white/10 focus-within:border-[#8A2EFF]/40'
+              : 'bg-black/70 border border-white/10 focus-within:border-[#7c6ff0]/40'
             }
           `}>
             <Mail className="w-5 h-5 text-white/40 shrink-0" />
@@ -139,7 +139,7 @@ export default function AuthForm({ mode }: AuthFormProps) {
           <div className={`flex items-center gap-3 rounded-2xl px-4 py-3 shadow-inner shadow-black/50 transition-all
             ${errors.password
               ? 'bg-black/70 border border-red-300/30'
-              : 'bg-black/70 border border-white/10 focus-within:border-[#8A2EFF]/40'
+              : 'bg-black/70 border border-white/10 focus-within:border-[#7c6ff0]/40'
             }
           `}>
             <Lock className="w-5 h-5 text-white/40 shrink-0" />
@@ -166,7 +166,7 @@ export default function AuthForm({ mode }: AuthFormProps) {
         <button
           type="submit"
           disabled={isLoading}
-          className="w-full py-4 rounded-2xl font-semibold bg-gradient-to-r from-[#8A2EFF] to-[#24E3F2] text-white shadow-lg shadow-[#8A2EFF]/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+          className="w-full py-4 rounded-2xl font-semibold bg-gradient-to-r from-[#7c6ff0] to-[#4fd1e8] text-white shadow-lg shadow-[#7c6ff0]/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
         >
           {isLoading
             ? "Cargando..."
@@ -204,7 +204,7 @@ export default function AuthForm({ mode }: AuthFormProps) {
           }
           <a
             href={mode === 'login' ? '/register' : '/login'}
-            className="font-medium text-[#24E3F2] hover:text-[#8A2EFF] transition-colors"
+            className="font-medium text-[#4fd1e8] hover:text-[#7c6ff0] transition-colors"
           >
             {mode === 'login' ? 'Crear cuenta' : 'Iniciar sesión'}
           </a>

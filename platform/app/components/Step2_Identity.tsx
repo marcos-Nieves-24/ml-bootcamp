@@ -24,11 +24,11 @@ export default function Step2_Identity({
   const [isAliasValid, setIsAliasValid] = useState(alias.length >= 2)
 
   const intentionOptions = [
-    { icon: '🤔', label: 'Curiosidad', value: 'Curiosidad' },
-    { icon: '💼', label: 'Carrera', value: 'Carrera' },
-    { icon: '📚', label: 'Trabajo', value: 'Trabajo' },
-    { icon: '👨‍🏫', label: 'Docencia', value: 'Docencia' },
-    { icon: '🎯', label: 'Otro', value: 'Otro' }
+    { label: 'Curiosidad', value: 'Curiosidad' },
+    { label: 'Carrera', value: 'Carrera' },
+    { label: 'Trabajo', value: 'Trabajo' },
+    { label: 'Docencia', value: 'Docencia' },
+    { label: 'Otro', value: 'Otro' }
   ]
 
   useEffect(() => {
@@ -117,15 +117,12 @@ export default function Step2_Identity({
                 onClick={() => handleIntentionToggle(option.value)}
                 className={`p-4 rounded-2xl border transition-all duration-300 transform hover:scale-[1.05]
                   ${isSelected
-                    ? 'bg-gradient-to-r from-[#24E3F2]/20 to-[#8A2EFF]/20 border-[#8A2EFF]/40 text-white shadow-lg shadow-[#8A2EFF]/10'
+                    ? 'bg-gradient-to-r from-[#4fd1e8]/20 to-[#7c6ff0]/20 border-[#7c6ff0]/40 text-white shadow-lg shadow-[#7c6ff0]/10'
                     : 'bg-white/5 border-white/10 text-white/60 hover:bg-white/10 hover:border-white/20 hover:text-white/80'
                   }
                 `}
               >
-                <div className="flex items-center gap-3">
-                  <span className="text-2xl">{option.icon}</span>
-                  <span className="font-medium text-sm">{option.label}</span>
-                </div>
+                <span className="font-medium text-sm">{option.label}</span>
               </button>
             )
           })}
@@ -145,7 +142,7 @@ export default function Step2_Identity({
           disabled={!isFormValid}
           className={`flex-1 px-6 py-3 rounded-2xl font-semibold transition-all duration-300
             ${isFormValid
-              ? 'bg-gradient-to-r from-[#8A2EFF] to-[#24E3F2] text-white shadow-lg shadow-[#8A2EFF]/30 hover:scale-[1.02] active:scale-[0.98]'
+              ? 'bg-gradient-to-r from-[#7c6ff0] to-[#4fd1e8] text-white shadow-lg shadow-[#7c6ff0]/30 hover:scale-[1.02] active:scale-[0.98]'
               : 'bg-white/5 text-white/30 cursor-not-allowed border border-white/5'
             }
           `}
