@@ -17,9 +17,9 @@ export default function Step1_Branding({ onStart, onLogin }: Step1BrandingProps)
         border: '1px solid #2a2454',
       }}
     >
-      <div className="flex flex-col md:flex-row gap-10 items-center max-w-[900px] mx-auto">
-        {/* Columna izquierda — mensaje de bienvenida */}
-        <div className="flex-1">
+      <div className="flex flex-col md:flex-row gap-10 items-center mx-auto">
+        {/* Columna izquierda — mensaje de bienvenida (2/3) */}
+        <div className="md:flex-[2]">
           {/* Nexus header */}
           <div className="flex items-center gap-2 mb-6">
             <Sparkles className="w-5 h-5 text-[#8b7bf0]" aria-hidden="true" />
@@ -72,7 +72,7 @@ export default function Step1_Branding({ onStart, onLogin }: Step1BrandingProps)
 
         {/* Columna derecha — formulario */}
         <div
-          className="w-full md:w-[340px] shrink-0 rounded-2xl p-6 md:p-7"
+          className="w-full md:w-auto md:flex-[1] md:min-w-[280px] rounded-2xl p-6 md:p-7"
           style={{
             background: 'linear-gradient(180deg, #14102b 0%, #0b0920 100%)',
             border: '1px solid #2a2454',
