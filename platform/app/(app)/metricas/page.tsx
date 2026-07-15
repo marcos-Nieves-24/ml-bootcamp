@@ -119,12 +119,12 @@ export default async function MetricasPage() {
               <div className="absolute w-[40%] h-[40%] border border-on-surface rounded-full"></div>
             </div>
             <svg className="w-full h-full transform -rotate-18" viewBox="0 0 200 200">
-              <polygon fill="rgba(53, 37, 205, 0.1)" points="100,20 170,70 150,160 50,160 30,70" stroke="#3525cd" stroke-width="2"></polygon>
-              <circle cx="100" cy="20" fill="#3525cd" r="3"></circle>
-              <circle cx="170" cy="70" fill="#3525cd" r="3"></circle>
-              <circle cx="150" cy="160" fill="#3525cd" r="3"></circle>
-              <circle cx="50" cy="160" fill="#3525cd" r="3"></circle>
-              <circle cx="30" cy="70" fill="#3525cd" r="3"></circle>
+              <polygon fill="rgba(124, 111, 240, 0.1)" points="100,20 170,70 150,160 50,160 30,70" stroke="#7c6ff0" stroke-width="2"></polygon>
+              <circle cx="100" cy="20" fill="#7c6ff0" r="3"></circle>
+              <circle cx="170" cy="70" fill="#7c6ff0" r="3"></circle>
+              <circle cx="150" cy="160" fill="#7c6ff0" r="3"></circle>
+              <circle cx="50" cy="160" fill="#7c6ff0" r="3"></circle>
+              <circle cx="30" cy="70" fill="#7c6ff0" r="3"></circle>
             </svg>
             <div className="absolute top-2 left-1/2 -translate-x-1/2 font-label-md text-label-md font-bold">Python</div>
             <div className="absolute top-1/3 right-0 font-label-md text-label-md font-bold">Stats</div>

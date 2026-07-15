@@ -21,10 +21,10 @@ interface Particle {
 }
 
 const colors = {
-  primary: '#3525cd',
-  secondary: '#006591',
+  primary: '#7c6ff0',
+  secondary: '#4fd1e8',
   success: '#10B981',
-  tertiary: '#684000'
+  tertiary: '#f59e0b'
 }
 
 export default function ConfettiOverlay({ active, duration = 2000 }: ConfettiOverlayProps) {

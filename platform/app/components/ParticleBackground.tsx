@@ -10,8 +10,8 @@ export default function ParticleBackground() {
   const fallbackToStatic = useRef(false)
   
   const colors = {
-    primary: '#3525cd',    // 8% opacity
-    secondary: '#006591',  // 5% opacity
+    primary: '#7c6ff0',    // 8% opacity
+    secondary: '#4fd1e8',  // 5% opacity
   }
 
   useEffect(() => {
@@ -118,7 +118,7 @@ export default function ParticleBackground() {
             ctx.beginPath()
             ctx.moveTo(particles[i].x, particles[i].y)
             ctx.lineTo(particles[j].x, particles[j].y)
-            ctx.strokeStyle = particles[i].type === 'primary' ? `rgba(53, 37, 205, ${0.08 * opacity})` : `rgba(0, 101, 145, ${0.05 * opacity})`
+            ctx.strokeStyle = particles[i].type === 'primary' ? `rgba(124, 111, 240, ${0.08 * opacity})` : `rgba(79, 209, 232, ${0.05 * opacity})`
             ctx.stroke()
           }
         }

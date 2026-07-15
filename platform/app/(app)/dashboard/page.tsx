@@ -45,15 +45,15 @@ function formatActivityTime(date: Date): string {
   return `Hace ${Math.floor(hours / 24)}d`
 }
 
-const PRIMARY = "#3525cd"
+const PRIMARY = "#7c6ff0"
 const XP_BLUE = "#3B82F6"
 const SUCCESS = "#10B981"
 
 const glass: React.CSSProperties = {
-  background: "rgba(255,255,255,0.7)",
+  background: "#14102b",
   backdropFilter: "blur(12px)",
   WebkitBackdropFilter: "blur(12px)",
-  border: "1px solid rgba(255,255,255,0.4)",
+  border: "1px solid #2a2454",
 }
 
 export default async function DashboardPage() {
@@ -118,19 +118,19 @@ export default async function DashboardPage() {
           <section className="rounded-[32px] p-8 lg:p-10 flex flex-col lg:flex-row items-center gap-10 overflow-hidden relative glass">
             <div className="flex-1 space-y-6 z-10">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold text-[#191c1e] leading-tight" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                <h2 className="text-3xl font-bold text-[#f5f4fa] leading-tight" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                   ¡Bienvenido de vuelta, {displayName}! 👋
                 </h2>
-                <p className="text-[#464555] text-base leading-relaxed max-w-md">
+                <p className="text-[#a8a4c0] text-base leading-relaxed max-w-md">
                   Estás construyendo tu camino en Nexus Institute. Continúa tu investigación y descubre nuevas formas de aplicar la Inteligencia Artificial.
                 </p>
               </div>
               <div className="flex flex-wrap gap-4 pt-2">
-                <button className="text-white px-8 py-3.5 rounded-2xl font-bold flex items-center gap-2 shadow-lg transition-all active:scale-95">
+                <button className="text-[#0b0920] px-8 py-3.5 rounded-2xl font-bold flex items-center gap-2 shadow-lg transition-all active:scale-95 gradient-primary">
                   <Play className="w-4 h-4 fill-white" />
                   Continuar Misión
                 </button>
-                <button className="px-8 py-3.5 rounded-2xl font-bold border flex items-center gap-2 transition-all active:scale-95 hover:bg-white text-[#191c1e]">
+                <button className="px-8 py-3.5 rounded-2xl font-bold border border-[#2a2454] flex items-center gap-2 transition-all active:scale-95 hover:bg-white/5 text-[#f5f4fa]">
                   <Map className="w-4 h-4" />
                   Explorar Mapa
                 </button>
@@ -139,20 +139,20 @@ export default async function DashboardPage() {
             {/* Illustration */}
             <div className="w-full lg:w-[42%] relative flex items-center justify-center">
               <div className="relative z-10 w-full flex items-center justify-center">
-                <div className="rounded-3xl p-8 text-center gradient-accent" style={{ border: "1px solid rgba(53,37,205,0.1)" }}>
+                <div className="rounded-3xl p-8 text-center gradient-accent" style={{ border: "1px solid rgba(124,111,240,0.1)" }}>
                   <div className="text-6xl mb-3">🏛️</div>
                   <div className="font-bold text-sm" style={{ color: PRIMARY, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                     Nexus Institute
                   </div>
-                  <div className="text-xs text-[#464555] mt-1">Machine Learning Campus</div>
+                  <div className="text-xs text-[#a8a4c0] mt-1">Machine Learning Campus</div>
                   {/* XP bar */}
                   <div className="mt-4">
                     <div className="flex justify-between text-xs mb-1" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-                      <span className="text-[#464555]">Nivel {displayLevel} → {displayLevel + 1}</span>
+                      <span className="text-[#a8a4c0]">Nivel {displayLevel} → {displayLevel + 1}</span>
                       <span style={{ color: XP_BLUE, fontWeight: 700 }}>{displayXP.toLocaleString()} / {displayXPToNext.toLocaleString()} XP</span>
                     </div>
                     <div className="h-2 rounded-full overflow-hidden" style={{ background: "rgba(59,130,246,0.15)" }}>
-                      <div className="h-full rounded-full" style={{ width: "63%", background: "linear-gradient(90deg, #3525cd, #3B82F6)", boxShadow: "0 0 8px rgba(59,130,246,0.6)" }} />
+                      <div className="h-full rounded-full" style={{ width: "63%", background: "linear-gradient(90deg, #7c6ff0, #3B82F6)", boxShadow: "0 0 8px rgba(59,130,246,0.6)" }} />
                     </div>
                   </div>
                 </div>
@@ -165,23 +165,23 @@ export default async function DashboardPage() {
             {/* Project Card */}
             <div className="rounded-[24px] p-6 space-y-6 glass">
               <div className="flex justify-between items-start">
-                <h3 className="font-semibold text-xl text-[#191c1e]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                <h3 className="font-semibold text-xl text-[#f5f4fa]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                   Proyecto Actual
                 </h3>
-                <button className="text-[#464555] hover:text-[#191c1e]">
+                <button className="text-[#a8a4c0] hover:text-[#f5f4fa]">
                   <MoreHorizontal className="w-5 h-5" />
                 </button>
               </div>
 
               <div className="flex gap-4 items-center">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl shadow-inner flex-shrink-0" style={{ background: "rgba(53,37,205,0.06)" }}>
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl shadow-inner flex-shrink-0" style={{ background: "rgba(124,111,240,0.06)" }}>
                   🍷
                 </div>
                 <div className="space-y-1">
-                  <h4 className="font-bold text-lg text-[#191c1e]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                  <h4 className="font-bold text-lg text-[#f5f4fa]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                     Wine Quality
                   </h4>
-                  <p className="text-[#464555] text-sm">
+                  <p className="text-[#a8a4c0] text-sm">
                     Analizando características químicas para predecir calidad.
                   </p>
                 </div>
@@ -189,15 +189,15 @@ export default async function DashboardPage() {
 
               <div className="space-y-2">
                 <div className="flex justify-between text-sm font-bold">
-                  <span className="text-[#464555]">Progreso</span>
+                  <span className="text-[#a8a4c0]">Progreso</span>
                   <span style={{ color: PRIMARY }}>68%</span>
                 </div>
-                <div className="h-2 w-full rounded-full overflow-hidden" style={{ background: "#eceef0" }}>
+                <div className="h-2 w-full rounded-full overflow-hidden" style={{ background: "#191533" }}>
                   <div className="h-full rounded-full" style={{ width: "68%", background: PRIMARY }} />
                 </div>
               </div>
 
-              <button className="w-full py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition-colors hover:opacity-90" style={{ background: "rgba(53,37,205,0.06)", color: PRIMARY, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+              <button className="w-full py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition-colors hover:opacity-90" style={{ background: "rgba(124,111,240,0.06)", color: PRIMARY, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                 Ver proyecto <ArrowRight className="w-4 h-4" />
               </button>
             </div>
@@ -205,10 +205,10 @@ export default async function DashboardPage() {
             {/* Mission Card */}
             <div className="rounded-[24px] p-6 space-y-6 glass">
               <div className="flex justify-between items-start">
-                <h3 className="font-semibold text-xl text-[#191c1e]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                <h3 className="font-semibold text-xl text-[#f5f4fa]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                   Misión Actual
                 </h3>
-                <button className="text-[#464555] hover:text-[#191c1e]">
+                <button className="text-[#a8a4c0] hover:text-[#f5f4fa]">
                   <MoreHorizontal className="w-5 h-5" />
                 </button>
               </div>
@@ -218,31 +218,31 @@ export default async function DashboardPage() {
                   🔬
                 </div>
                 <div className="space-y-1">
-                  <h4 className="font-bold text-lg text-[#191c1e]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                  <h4 className="font-bold text-lg text-[#f5f4fa]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                     Correlación entre variables
                   </h4>
-                  <p className="text-[#464555] text-sm">
+                  <p className="text-[#a8a4c0] text-sm">
                     Relación entre los componentes químicos del vino.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-center justify-between py-1">
-                <div className="flex items-center gap-1.5 font-bold text-sm" style={{ color: "#684000" }}>
+                <div className="flex items-center gap-1.5 font-bold text-sm" style={{ color: "#f59e0b" }}>
                   <Diamond className="w-3.5 h-3.5" />
                   +40 XP
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-[#464555] text-xs font-bold uppercase tracking-wider">Dificultad</span>
+                  <span className="text-[#a8a4c0] text-xs font-bold uppercase tracking-wider">Dificultad</span>
                   <div className="flex gap-1">
                     {[0, 1, 2, 3].map((i) => (
-                      <div key={i} className="w-2 h-2 rounded-full" style={{ background: i < 3 ? "#3B82F6" : "#e0e3e5" }}></div>
+                      <div key={i} className="w-2 h-2 rounded-full" style={{ background: i < 3 ? "#3B82F6" : "#2a2454" }}></div>
                     ))}
                   </div>
                 </div>
               </div>
 
-              <button className="w-full py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition-colors hover:opacity-90" style={{ background: "rgba(53,37,205,0.06)", color: PRIMARY, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+              <button className="w-full py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition-colors hover:opacity-90" style={{ background: "rgba(124,111,240,0.06)", color: PRIMARY, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                 Continuar misión <ArrowRight className="w-4 h-4" />
               </button>
             </div>
@@ -251,10 +251,10 @@ export default async function DashboardPage() {
           {/* MODULOS GO HERE */}
           <section className="space-y-5">
             <div>
-              <h3 className="font-semibold text-xl text-[#191c1e]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+              <h3 className="font-semibold text-xl text-[#f5f4fa]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                 Módulos del Curso
               </h3>
-              <p className="text-[#464555] text-sm mt-1">
+              <p className="text-[#a8a4c0] text-sm mt-1">
                 Machine Learning for Data Analysis and SaaS
               </p>
             </div>
@@ -270,7 +270,7 @@ export default async function DashboardPage() {
                     className="w-full text-left rounded-2xl p-4 flex items-center gap-4 transition-all hover:shadow-sm"
                     style={
                       isActiveModule
-                        ? { ...glass, border: "1px solid rgba(53,37,205,0.25)", background: "rgba(53,37,205,0.05)" }
+                        ? { ...glass, border: "1px solid rgba(124,111,240,0.25)", background: "rgba(124,111,240,0.05)" }
                         : isDone
                         ? { ...glass, border: "1px solid rgba(16,185,129,0.2)", background: "rgba(16,185,129,0.02)" }
                         : { ...glass }
@@ -282,25 +282,25 @@ export default async function DashboardPage() {
                         isDone
                           ? { background: "rgba(16,185,129,0.12)", color: SUCCESS }
                           : isActiveModule
-                          ? { background: "rgba(53,37,205,0.12)", color: PRIMARY }
-                          : { background: "#eceef0", color: "#777587" }
+                          ? { background: "rgba(124,111,240,0.12)", color: PRIMARY }
+                          : { background: "#191533", color: "#a8a4c0" }
                       }
                     >
                       {isDone ? <CheckCircle2 className="w-5 h-5" /> : <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{mod.order}</span>}
                     </div>
                     <div className="flex-1 min-w-0">
                       <div
-                        className="font-semibold text-sm text-[#191c1e] truncate"
+                        className="font-semibold text-sm text-[#f5f4fa] truncate"
                         style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                       >
                         Módulo {mod.order}: {mod.title}
                       </div>
-                      <div className="text-xs text-[#464555] mt-0.5">{mod.lessons || 0} lecciones</div>
+                      <div className="text-xs text-[#a8a4c0] mt-0.5">{mod.lessons || 0} lecciones</div>
                     </div>
                     {isActiveModule && (
                       <span
                         className="text-xs font-bold px-3 py-1 rounded-full flex-shrink-0"
-                        style={{ background: "rgba(53,37,205,0.1)", color: PRIMARY, fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                        style={{ background: "rgba(124,111,240,0.1)", color: PRIMARY, fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                       >
                         En curso
                       </span>
@@ -313,7 +313,7 @@ export default async function DashboardPage() {
                         Completado
                       </span>
                     )}
-                    <ChevronRight className="w-4 h-4 text-[#777587] flex-shrink-0" />
+                    <ChevronRight className="w-4 h-4 text-[#a8a4c0] flex-shrink-0" />
                   </button>
                 );
               })}
@@ -324,10 +324,10 @@ export default async function DashboardPage() {
           <section className="space-y-5">
             <div className="flex justify-between items-end">
               <div>
-                <h3 className="font-semibold text-xl text-[#191c1e]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                <h3 className="font-semibold text-xl text-[#f5f4fa]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                   Laboratorios
                 </h3>
-                <p className="text-[#464555] text-sm">Explora y domina cada área del conocimiento.</p>
+                <p className="text-[#a8a4c0] text-sm">Explora y domina cada área del conocimiento.</p>
               </div>
               <a href="#" className="text-sm font-bold flex items-center gap-1 hover:underline" style={{ color: PRIMARY, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                 Ver todos <ChevronRight className="w-3.5 h-3.5" />
@@ -346,16 +346,16 @@ export default async function DashboardPage() {
                   </div>
                   <div className="space-y-1">
                     <p
-                      className="font-bold text-sm text-[#191c1e]"
+                      className="font-bold text-sm text-[#f5f4fa]"
                       style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                     >
                       {lab.name || lab.title}
                     </p>
-                    <p className="text-[10px] text-[#464555] font-medium">
+                    <p className="text-[10px] text-[#a8a4c0] font-medium">
                       {lab.locked ? <span className="flex items-center justify-center gap-1"><Lock className="w-2.5 h-2.5" /> Bloqueado</span> : lab.level || "Nivel 1"}
                     </p>
                   </div>
-                  <div className="h-1.5 rounded-full overflow-hidden" style={{ background: "#eceef0" }}>
+                  <div className="h-1.5 rounded-full overflow-hidden" style={{ background: "#191533" }}>
                     <div
                       className="h-full rounded-full"
                       style={{ width: `${lab.progress || 0}%`, background: lab.color || PRIMARY }}
@@ -371,7 +371,7 @@ export default async function DashboardPage() {
             {/* TU PROGRESO */}
             <section className="rounded-[32px] p-6 space-y-6 glass">
               <div className="flex justify-between items-center">
-                <h3 className="font-semibold text-xl text-[#191c1e]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                <h3 className="font-semibold text-xl text-[#f5f4fa]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                   Tu Progreso
                 </h3>
                 <a href="#" className="text-xs font-bold flex items-center gap-1 hover:underline" style={{ color: PRIMARY, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
@@ -385,14 +385,14 @@ export default async function DashboardPage() {
                   {/* Progress ring */}
                   <div className="relative w-24 h-24 mx-auto mb-3">
                     <svg className="w-full h-full" viewBox="0 0 100 100">
-                      <circle cx="50" cy="50" r="40" fill="none" stroke="#eceef0" strokeWidth="8" />
+                      <circle cx="50" cy="50" r="40" fill="none" stroke="#191533" strokeWidth="8" />
                       <circle
                         cx="50" cy="50" r="40" fill="none"
                         stroke={PRIMARY} strokeWidth="8"
                         strokeLinecap="round"
                         strokeDasharray={`${2 * Math.PI * 40 * 0.63} ${2 * Math.PI * 40 * 0.37}`}
                         transform="rotate(-90 50 50)"
-                        style={{ filter: "drop-shadow(0 0 6px #3525cd80)" }}
+                        style={{ filter: "drop-shadow(0 0 6px #7c6ff080)" }}
                       />
                     </svg>
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -404,15 +404,15 @@ export default async function DashboardPage() {
                   <p className="font-bold text-sm" style={{ color: PRIMARY, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                     Investigador
                   </p>
-                  <p className="text-xs text-[#464555] mt-0.5">63% hacia Nivel 5</p>
+                  <p className="text-xs text-[#a8a4c0] mt-0.5">63% hacia Nivel 5</p>
                 </div>
               </div>
 
               {/* Level ladder */}
               <div className="space-y-3">
                 {levels.map((lv) => (
-                  <div key={lv.label} className={`flex items-center gap-4 p-2.5 rounded-xl transition-opacity ${lv.locked ? "opacity-40" : lv.active ? "" : "opacity-75 hover:opacity-100"}`} style={lv.active ? { background: "rgba(53,37,205,0.06)", border: "1px solid rgba(53,37,205,0.2)", borderRadius: "12px" } : {}}>
-                    <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={lv.done ? { background: "rgba(16,185,129,0.1)", border: "1px solid rgba(16,185,129,0.3)", color: "#10B981" } : lv.active ? { background: "rgba(53,37,205,0.15)", border: "1px solid rgba(53,37,205,0.4)", color: PRIMARY } : { background: "#eceef0", color: "#777587" }}>
+                  <div key={lv.label} className={`flex items-center gap-4 p-2.5 rounded-xl transition-opacity ${lv.locked ? "opacity-40" : lv.active ? "" : "opacity-75 hover:opacity-100"}`} style={lv.active ? { background: "rgba(124,111,240,0.06)", border: "1px solid rgba(124,111,240,0.2)", borderRadius: "12px" } : {}}>
+                    <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={lv.done ? { background: "rgba(16,185,129,0.1)", border: "1px solid rgba(16,185,129,0.3)", color: "#10B981" } : lv.active ? { background: "rgba(124,111,240,0.15)", border: "1px solid rgba(124,111,240,0.4)", color: PRIMARY } : { background: "#191533", color: "#a8a4c0" }}>
                       {lv.done ? (
                         <CheckCircle2 className="w-4 h-4" />
                       ) : lv.active ? (
@@ -421,7 +421,7 @@ export default async function DashboardPage() {
                         <span className="text-[10px] font-bold">5</span>
                       )}
                     </div>
-                    <span className="text-sm flex-1" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: lv.active ? 700 : 500, color: lv.active ? PRIMARY : "#191c1e" }}>
+                    <span className="text-sm flex-1" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: lv.active ? 700 : 500, color: lv.active ? PRIMARY : "#f5f4fa" }}>
                       {lv.label}
                     </span>
                     {lv.done && (
@@ -438,7 +438,7 @@ export default async function DashboardPage() {
             {/* LOGROS RECIENTES */}
             <section className="rounded-[32px] p-6 space-y-5 glass">
               <div className="flex justify-between items-center">
-                <h3 className="font-semibold text-xl text-[#191c1e]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                <h3 className="font-semibold text-xl text-[#f5f4fa]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                   Logros Recientes
                 </h3>
                 <a href="#" className="text-xs font-bold hover:underline" style={{ color: PRIMARY, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
@@ -453,14 +453,14 @@ export default async function DashboardPage() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex justify-between items-start">
-                        <p className="font-bold text-sm text-[#191c1e] truncate" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                        <p className="font-bold text-sm text-[#f5f4fa] truncate" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                           {a.label}
                         </p>
                         <span className="text-[10px] font-bold flex-shrink-0 ml-2" style={{ color: "#10B981", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                           {a.xp}
                         </span>
                       </div>
-                      <p className="text-xs text-[#464555] mt-0.5">{a.desc}</p>
+                      <p className="text-xs text-[#a8a4c0] mt-0.5">{a.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -475,7 +475,7 @@ export default async function DashboardPage() {
           {/* TU PROGRESO */}
           <section className="rounded-[32px] p-6 space-y-6 glass">
             <div className="flex justify-between items-center">
-              <h3 className="font-semibold text-xl text-[#191c1e]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+              <h3 className="font-semibold text-xl text-[#f5f4fa]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                 Tu Progreso
               </h3>
               <a href="#" className="text-xs font-bold flex items-center gap-1 hover:underline" style={{ color: PRIMARY, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
@@ -489,14 +489,14 @@ export default async function DashboardPage() {
                 {/* Progress ring */}
                 <div className="relative w-24 h-24 mx-auto mb-3">
                   <svg className="w-full h-full" viewBox="0 0 100 100">
-                    <circle cx="50" cy="50" r="40" fill="none" stroke="#eceef0" strokeWidth="8" />
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#191533" strokeWidth="8" />
                     <circle
                       cx="50" cy="50" r="40" fill="none"
                       stroke={PRIMARY} strokeWidth="8"
                       strokeLinecap="round"
                       strokeDasharray={`${2 * Math.PI * 40 * 0.63} ${2 * Math.PI * 40 * 0.37}`}
                       transform="rotate(-90 50 50)"
-                      style={{ filter: "drop-shadow(0 0 6px #3525cd80)" }}
+                      style={{ filter: "drop-shadow(0 0 6px #7c6ff080)" }}
                     />
                   </svg>
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -508,15 +508,15 @@ export default async function DashboardPage() {
                 <p className="font-bold text-sm" style={{ color: PRIMARY, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                   Investigador
                 </p>
-                <p className="text-xs text-[#464555] mt-0.5">63% hacia Nivel 5</p>
+                <p className="text-xs text-[#a8a4c0] mt-0.5">63% hacia Nivel 5</p>
               </div>
             </div>
 
             {/* Level ladder */}
             <div className="space-y-3">
               {levels.map((lv) => (
-                <div key={lv.label} className={`flex items-center gap-4 p-2.5 rounded-xl transition-opacity ${lv.locked ? "opacity-40" : lv.active ? "" : "opacity-75 hover:opacity-100"}`} style={lv.active ? { background: "rgba(53,37,205,0.06)", border: "1px solid rgba(53,37,205,0.2)", borderRadius: "12px" } : {}}>
-                  <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={lv.done ? { background: "rgba(16,185,129,0.1)", border: "1px solid rgba(16,185,129,0.3)", color: "#10B981" } : lv.active ? { background: "rgba(53,37,205,0.15)", border: "1px solid rgba(53,37,205,0.4)", color: PRIMARY } : { background: "#eceef0", color: "#777587" }}>
+                <div key={lv.label} className={`flex items-center gap-4 p-2.5 rounded-xl transition-opacity ${lv.locked ? "opacity-40" : lv.active ? "" : "opacity-75 hover:opacity-100"}`} style={lv.active ? { background: "rgba(124,111,240,0.06)", border: "1px solid rgba(124,111,240,0.2)", borderRadius: "12px" } : {}}>
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={lv.done ? { background: "rgba(16,185,129,0.1)", border: "1px solid rgba(16,185,129,0.3)", color: "#10B981" } : lv.active ? { background: "rgba(124,111,240,0.15)", border: "1px solid rgba(124,111,240,0.4)", color: PRIMARY } : { background: "#191533", color: "#a8a4c0" }}>
                     {lv.done ? (
                       <CheckCircle2 className="w-4 h-4" />
                     ) : lv.active ? (
@@ -525,7 +525,7 @@ export default async function DashboardPage() {
                       <span className="text-[10px] font-bold">5</span>
                     )}
                   </div>
-                  <span className="text-sm flex-1" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: lv.active ? 700 : 500, color: lv.active ? PRIMARY : "#191c1e" }}>
+                  <span className="text-sm flex-1" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: lv.active ? 700 : 500, color: lv.active ? PRIMARY : "#f5f4fa" }}>
                     {lv.label}
                   </span>
                   {lv.done && (
@@ -542,7 +542,7 @@ export default async function DashboardPage() {
           {/* LOGROS RECIENTES */}
           <section className="rounded-[32px] p-6 space-y-5 glass">
             <div className="flex justify-between items-center">
-              <h3 className="font-semibold text-xl text-[#191c1e]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+              <h3 className="font-semibold text-xl text-[#f5f4fa]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                 Logros Recientes
               </h3>
               <a href="#" className="text-xs font-bold hover:underline" style={{ color: PRIMARY, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
@@ -557,14 +557,14 @@ export default async function DashboardPage() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex justify-between items-start">
-                      <p className="font-bold text-sm text-[#191c1e] truncate" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                      <p className="font-bold text-sm text-[#f5f4fa] truncate" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                         {a.label}
                       </p>
                       <span className="text-[10px] font-bold flex-shrink-0 ml-2" style={{ color: "#10B981", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                         {a.xp}
                       </span>
                     </div>
-                    <p className="text-xs text-[#464555] mt-0.5">{a.desc}</p>
+                    <p className="text-xs text-[#a8a4c0] mt-0.5">{a.desc}</p>
                   </div>
                 </div>
               ))}
@@ -576,10 +576,10 @@ export default async function DashboardPage() {
       {/* COMMUNITY GO HERE */}
       <section className="space-y-5">
         <div>
-          <h3 className="font-semibold text-xl text-[#191c1e]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+          <h3 className="font-semibold text-xl text-[#f5f4fa]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
             Actividad de la Comunidad
           </h3>
-          <p className="text-[#464555] text-sm">Lo que está pasando ahora en Nexus Institute.</p>
+          <p className="text-[#a8a4c0] text-sm">Lo que está pasando ahora en Nexus Institute.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {/* Static community data based on Figma */}
@@ -596,11 +596,11 @@ export default async function DashboardPage() {
                     <Icon className="w-4 h-4" />
                   </div>
                   <div>
-                    <p className="font-bold text-sm text-[#191c1e]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                    <p className="font-bold text-sm text-[#f5f4fa]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                       {item.label}
                     </p>
-                    <p className="text-xs text-[#464555] mt-0.5 mb-2">{item.desc}</p>
-                    <span className="text-[10px] text-[#46455580]">{item.time}</span>
+                    <p className="text-xs text-[#a8a4c0] mt-0.5 mb-2">{item.desc}</p>
+                    <span className="text-[10px] text-[#a8a4c080]">{item.time}</span>
                   </div>
                 </div>
               );
@@ -613,19 +613,19 @@ export default async function DashboardPage() {
       <section className="rounded-3xl p-6 flex flex-col md:flex-row items-center justify-between gap-5 overflow-hidden relative glass">
         <div className="absolute left-0 top-0 w-1.5 h-full rounded-l-3xl" style={{ background: XP_BLUE }}></div>
         <div className="flex items-center gap-4 pl-2">
-          <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "#e6e8ea" }}>
-            <History className="w-4 h-4 text-[#464555]" />
+          <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "#1f1840" }}>
+            <History className="w-4 h-4 text-[#a8a4c0]" />
           </div>
           <div>
-            <p className="text-[#464555] font-medium text-sm">Actividad Reciente</p>
-            <p className="font-bold text-[#191c1e]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+            <p className="text-[#a8a4c0] font-medium text-sm">Actividad Reciente</p>
+            <p className="font-bold text-[#f5f4fa]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
               Completaste la misión &quot;Media y Mediana&quot;
             </p>
           </div>
         </div>
         <div className="flex items-center gap-10">
           <div className="text-center">
-            <p className="text-xs text-[#464555] uppercase tracking-widest mb-1" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+            <p className="text-xs text-[#a8a4c0] uppercase tracking-widest mb-1" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
               Ganancia
             </p>
             <p className="font-extrabold" style={{ color: SUCCESS, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
@@ -633,15 +633,15 @@ export default async function DashboardPage() {
             </p>
           </div>
           <div className="text-center">
-            <p className="text-xs text-[#464555] uppercase tracking-widest mb-1" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+            <p className="text-xs text-[#a8a4c0] uppercase tracking-widest mb-1" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
               Hace
             </p>
-            <p className="font-bold text-[#191c1e]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+            <p className="font-bold text-[#f5f4fa]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
               2 horas
             </p>
           </div>
         </div>
-        <button className="px-6 py-2 rounded-xl text-sm font-bold transition-colors hover:opacity-80" style={{ background: "#eceef0", color: "#191c1e", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+        <button className="px-6 py-2 rounded-xl text-sm font-bold transition-colors hover:opacity-80" style={{ background: "#191533", color: "#f5f4fa", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
           Ver historial completo
         </button>
       </section>

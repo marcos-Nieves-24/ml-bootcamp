@@ -21,8 +21,8 @@ export default function StitchBtn({
   href
 }: StitchBtnProps) {
   const variantClasses = {
-    primary: 'bg-primary text-on-primary hover:bg-[#3525cd]',
-    'primary-gradient': 'gradient-primary text-white shadow-[0_8px_24px_rgba(53,37,205,0.3)] hover:shadow-[0_12px_32px_rgba(53,37,205,0.4)]',
+    primary: 'bg-primary text-on-primary hover:bg-[#7c6ff0]',
+    'primary-gradient': 'gradient-primary text-white shadow-[0_8px_24px_rgba(124,111,240,0.3)] hover:shadow-[0_12px_32px_rgba(124,111,240,0.4)]',
     secondary: 'bg-surface-container-low text-on-surface border border-border-muted hover:bg-surface-container',
     ghost: 'text-primary hover:bg-primary-container'
   };

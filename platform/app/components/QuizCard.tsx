@@ -166,7 +166,7 @@ export default function QuizCard({ quiz }: Props) {
         {!showResults && allMcAnswered && (
           <button
             onClick={handleVerify}
-            className="flex items-center gap-2 bg-primary text-on-primary font-bold rounded-xl px-6 py-3 transition-all hover:bg-[#3525cd] active:scale-95"
+            className="flex items-center gap-2 bg-primary text-on-primary font-bold rounded-xl px-6 py-3 transition-all hover:bg-[#7c6ff0] active:scale-95"
           >
             Verificar respuestas
           </button>

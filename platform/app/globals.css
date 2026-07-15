@@ -1,71 +1,71 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #3525cd;
-  --color-on-primary: #ffffff;
-  --color-primary-container: rgba(53, 37, 205, 0.08);
-  --color-on-primary-container: #3525cd;
-  --color-secondary: #006591;
-  --color-on-secondary: #ffffff;
-  --color-accent: #39b8fd;
-  --color-on-accent: #001e2f;
+  --color-primary: #7c6ff0;
+  --color-on-primary: #0b0920;
+  --color-primary-container: rgba(124, 111, 240, 0.08);
+  --color-on-primary-container: #7c6ff0;
+  --color-secondary: #4fd1e8;
+  --color-on-secondary: #0b0920;
+  --color-accent: #4fd1e8;
+  --color-on-accent: #0b0920;
   --color-tertiary: #10b981;
   --color-on-tertiary: #ffffff;
-  --color-tertiary-container: #d1fae5;
-  --color-surface: #f7f9fb;
-  --color-on-surface: #191c1e;
-  --color-on-surface-variant: #464555;
-  --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low: #f2f4f6;
-  --color-surface-container: #eceef0;
-  --color-surface-container-high: #e6e8ea;
+  --color-tertiary-container: rgba(16, 185, 129, 0.15);
+  --color-surface: #0b0920;
+  --color-on-surface: #f5f4fa;
+  --color-on-surface-variant: #a8a4c0;
+  --color-surface-container-lowest: #0d0725;
+  --color-surface-container-low: #14102b;
+  --color-surface-container: #191533;
+  --color-surface-container-high: #1f1840;
   --color-xp-blue: #3B82F6;
   --color-xp-gold: #f59e0b;
   --color-streak-orange: #f97316;
-  --color-error: #ba1a1a;
-  --color-error-container: #fce4e4;
+  --color-error: #ef4444;
+  --color-error-container: rgba(239, 68, 68, 0.1);
   --color-success-green: #10b981;
-  --color-border-muted: rgba(255, 255, 255, 0.4);
-  --color-ring: #4d44e3;
-  
+  --color-border-muted: #2a2454;
+  --color-ring: #7c6ff0;
+
   --font-family-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
   --font-family-inter: "Inter", sans-serif;
   --font-family-jetbrains-mono: "JetBrains Mono", monospace;
-  
+
   --radius-glass: 24px;
   --radius-glass-lg: 32px;
   --radius-glass-sm: 12px;
 }
 
-/* Glass utility */
+/* Glass utility — dark glass */
 @layer utilities {
   .glass {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(20, 16, 43, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid #2a2454;
   }
-  
+
   .glass-card {
-    background: rgba(255, 255, 255, 0.7);
+    background: linear-gradient(180deg, #14102b 0%, #0b0920 100%);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid #2a2454;
     border-radius: var(--radius-glass);
   }
-  
+
   .gradient-primary {
-    background: linear-gradient(135deg, #3525cd 0%, #006591 100%);
+    background: linear-gradient(135deg, #7c6ff0 0%, #4fd1e8 100%);
   }
-  
+
   .gradient-accent {
-    background: linear-gradient(135deg, rgba(53, 37, 205, 0.06) 0%, rgba(57, 184, 253, 0.06) 100%);
+    background: linear-gradient(135deg, rgba(124, 111, 240, 0.1) 0%, rgba(79, 209, 232, 0.1) 100%);
   }
 }
 
 @layer base {
   :root {
-    color-scheme: light;
+    color-scheme: dark;
   }
 
   html {
@@ -76,9 +76,10 @@
   }
 
   body {
-    background: radial-gradient(ellipse 80% 60% at 10% 0%, rgba(77, 68, 227, 0.08) 0%, transparent 55%),
-                radial-gradient(ellipse 60% 50% at 90% 80%, rgba(57, 184, 253, 0.07) 0%, transparent 50%),
-                #f7f9fb;
+    background:
+      radial-gradient(ellipse 100% 60% at 50% 0%, rgba(124, 111, 240, 0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 50% at 80% 80%, rgba(79, 209, 232, 0.06) 0%, transparent 50%),
+      linear-gradient(180deg, #0f0530 0%, #1a0a46 30%, #1e0e52 60%, #12062e 100%);
     color: var(--color-on-surface);
   }
 }
