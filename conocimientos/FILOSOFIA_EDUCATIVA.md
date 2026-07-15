@@ -172,32 +172,32 @@ Cada módulo debe acercar al estudiante a construir proyectos completos utilizan
 
 ---
 
-# Modelo de aprendizaje
+# Flujo canónico de una misión
 
-Toda misión debe seguir el siguiente ciclo.
+Toda misión debe seguir el siguiente flujo canónico.
 
 ```text
 Motivación
 
 ↓
 
-Problema
+Objetivo
 
 ↓
 
-Intuición
-
-↓
-
-Exploración
-
-↓
-
-Formalización
+Concepto e intuición
 
 ↓
 
 Visualización
+
+↓
+
+Experimentación
+
+↓
+
+Formalización
 
 ↓
 
@@ -209,6 +209,10 @@ Práctica independiente
 
 ↓
 
+Desafío
+
+↓
+
 Retroalimentación
 
 ↓
@@ -217,32 +221,16 @@ Reflexión
 
 ↓
 
-Aplicación
-
-↓
-
 Consolidación
 ```
 
-Este ciclo representa la experiencia de aprendizaje de ML Bootcamp.
+Este flujo representa la experiencia de aprendizaje de ML Bootcamp.
 
 No debe alterarse sin una razón justificada.
 
 ---
 
-# Estructura de una misión
-
-Cada misión debe contener los siguientes elementos.
-
-## 1. Objetivo
-
-¿Qué aprenderá el estudiante?
-
-¿Por qué es importante?
-
----
-
-## 2. Motivación
+## 1. Motivación
 
 Presentar un problema real.
 
@@ -250,7 +238,15 @@ El estudiante debe comprender inmediatamente el valor del tema.
 
 ---
 
-## 3. Concepto
+## 2. Objetivo
+
+¿Qué aprenderá el estudiante?
+
+¿Por qué es importante?
+
+---
+
+## 3. Concepto e intuición
 
 Explicación sencilla.
 
@@ -258,17 +254,13 @@ Sin fórmulas.
 
 Sin tecnicismos innecesarios.
 
----
-
-## 4. Intuición
-
 Utilizar analogías, historias o ejemplos cotidianos.
 
 La intuición siempre precede a la teoría.
 
 ---
 
-## 5. Visualización
+## 4. Visualización
 
 Representar el concepto mediante una experiencia visual.
 
@@ -276,7 +268,7 @@ Preferiblemente interactiva.
 
 ---
 
-## 6. Experimentación
+## 5. Experimentación
 
 Permitir modificar parámetros.
 
@@ -285,6 +277,16 @@ Observar resultados.
 Generar hipótesis.
 
 Comparar comportamientos.
+
+---
+
+## 6. Formalización
+
+Definición formal del concepto.
+
+Presentar la notación matemática y las ecuaciones fundamentales.
+
+Las matemáticas deben responder preguntas, nunca generar nuevas dudas.
 
 ---
 

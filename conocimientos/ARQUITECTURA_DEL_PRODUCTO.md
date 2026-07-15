@@ -169,18 +169,9 @@ El estudiante comprende cómo se relaciona ese conocimiento con el resto del rec
 
 Las misiones representan la unidad principal de aprendizaje.
 
-Toda misión contiene:
-
-- introducción;
-- objetivo;
-- teoría;
-- visualización;
-- experimentación;
-- código guiado;
-- práctica;
-- desafío;
-- retroalimentación;
-- resumen.
+El flujo detallado de una misión está definido en FILOSOFIA_EDUCATIVA.md,
+sección "Flujo canónico de una misión". No se redefine aquí para evitar
+inconsistencias.
 
 Cada misión desarrolla una única competencia.
 

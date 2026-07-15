@@ -124,63 +124,9 @@ Nunca debe existir una sensación de "pantalla estática".
 
 # Flujo de una misión
 
-Todas las misiones deben seguir esta estructura.
-
-```text
-Introducción
-
-↓
-
-Objetivo
-
-↓
-
-Motivación
-
-↓
-
-Concepto
-
-↓
-
-Visualización
-
-↓
-
-Experimentación
-
-↓
-
-Código guiado
-
-↓
-
-Práctica
-
-↓
-
-Desafío
-
-↓
-
-Retroalimentación
-
-↓
-
-Resumen
-
-↓
-
-XP
-
-↓
-
-Siguiente misión
-```
-
-Cada fase prepara la siguiente.
-
-No deben omitirse pasos salvo en misiones muy específicas.
+El flujo detallado de una misión está definido en FILOSOFIA_EDUCATIVA.md,
+sección "Flujo canónico de una misión". No se redefine aquí para evitar
+inconsistencias.
 
 ---
 
