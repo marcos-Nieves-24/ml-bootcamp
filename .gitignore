@@ -55,6 +55,10 @@ site/
 node_modules/
 .next/
 
+# Agent artifacts
+auditoria.sh
+engram-export.json
+
 # Windows Zone Identifier
 *:Zone.Identifier
 .env*

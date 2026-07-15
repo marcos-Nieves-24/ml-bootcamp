@@ -1,21 +1,33 @@
-import Sidebar from "@/app/components/Sidebar"
-import TopBar from "@/app/components/TopBar"
+import DashboardLayout from "@/app/components/DashboardLayout"
+import { auth } from "@/lib/auth"
+import { prisma } from "@/lib/prisma"
 
-export default function AppLayout({
+export default async function AppLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  return (
-    <div className="min-h-screen">
-      <Sidebar />
+  const session = await auth()
 
-      <div className="lg:ml-[280px] min-h-screen flex flex-col">
-        <TopBar />
-        <main className="flex-1 w-full max-w-[1400px] mx-auto p-6 space-y-8">
-          {children}
-        </main>
-      </div>
-    </div>
+  let xp = 0
+  let streakDays = 0
+  let level = 1
+
+  if (session?.user?.id) {
+    const user = await prisma.user.findUnique({
+      where: { id: session.user.id },
+      select: { xp: true, streakDays: true, level: true },
+    })
+    if (user) {
+      xp = user.xp
+      streakDays = user.streakDays
+      level = user.level
+    }
+  }
+
+  return (
+    <DashboardLayout xp={xp} streakDays={streakDays} level={level}>
+      {children}
+    </DashboardLayout>
   )
 }
