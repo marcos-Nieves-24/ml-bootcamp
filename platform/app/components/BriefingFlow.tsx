@@ -54,7 +54,7 @@ function flowReducer(state: FlowState, action: FlowAction): FlowState {
 }
 
 interface BriefingFlowProps {
-  onComplete: (userData: { name: string; email: string; password: string }) => void
+  onComplete: (userData: { name: string; email: string; password: string; xp: number }) => void
 }
 
 export default function BriefingFlow({ onComplete }: BriefingFlowProps) {
@@ -102,7 +102,7 @@ export default function BriefingFlow({ onComplete }: BriefingFlowProps) {
             alias={state.alias}
             intentions={state.intentions}
             xpAwarded={state.xpAwarded}
-            onRegister={onComplete}
+            onRegister={(data) => onComplete({ ...data, xp: state.xpAwarded })}
             onGoogleOAuth={() => signIn('google', { callbackUrl: '/dashboard' })}
             onLogin={() => router.push('/login')}
           />

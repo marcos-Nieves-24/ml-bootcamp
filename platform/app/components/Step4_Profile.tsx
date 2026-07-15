@@ -8,7 +8,7 @@ interface Step4ProfileProps {
   alias: string
   intentions: string[]
   xpAwarded: number
-  onRegister: (data: { name: string; email: string; password: string }) => void
+  onRegister: (data: { name: string; email: string; password: string; xp: number }) => void
   onGoogleOAuth: () => void
   onLogin: () => void
 }
@@ -28,9 +28,8 @@ export default function Step4_Profile({
   const [passwordError, setPasswordError] = useState('')
   const [isLoading, setIsLoading] = useState(false)
 
-  const currentXP = 25
   const totalXP = 1000
-  const xpPercentage = (currentXP / totalXP) * 100
+  const xpPercentage = Math.min(100, (xpAwarded / totalXP) * 100)
 
   const validateEmail = (value: string) => {
     if (!value) {
@@ -78,7 +77,7 @@ export default function Step4_Profile({
     if (isEmailValid && isPasswordValid) {
       setIsLoading(true)
       try {
-        await onRegister({ name, email, password })
+        await onRegister({ name, email, password, xp: xpAwarded })
       } finally {
         setIsLoading(false)
       }
@@ -125,8 +124,8 @@ export default function Step4_Profile({
             <div className="flex items-center gap-4">
               <ProgressRing value={xpPercentage} size={64} strokeWidth={6} label={`${Math.round(xpPercentage)}%`} />
               <div className="text-sm text-white/50">
-                <div>25 / 1000 XP</div>
-                <div className="text-xs text-white/30">Nivel siguiente: 500 XP</div>
+                <div>{xpAwarded} / {totalXP} XP</div>
+                <div className="text-xs text-white/30">Nivel siguiente: {totalXP} XP</div>
               </div>
             </div>
           </div>
