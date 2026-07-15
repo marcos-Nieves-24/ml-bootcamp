@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Logo from '@/app/components/Logo'
+import { GraduationCap, Route, Rocket, Clock } from 'lucide-react'
 
 interface Step1BrandingProps {
   onStart: () => void
@@ -10,7 +11,13 @@ interface Step1BrandingProps {
 
 export default function Step1_Branding({ onStart, onLogin }: Step1BrandingProps) {
   return (
-    <div className="w-full bg-white/70 backdrop-blur-xl border border-white/40 rounded-[32px] p-8 md:p-10 shadow-xl hover:scale-[1.02] transition-all duration-500">
+    <div
+      className="w-full rounded-[32px] p-8 md:p-10 shadow-xl hover:scale-[1.02] transition-all duration-500"
+      style={{
+        background: 'linear-gradient(180deg, #14102b 0%, #0b0920 100%)',
+        border: '1px solid #2a2454',
+      }}
+    >
       {/* Hero section: Logo + Nexus title */}
       <div className="flex items-center justify-center gap-5 mb-8">
         <div className="shrink-0">
@@ -32,12 +39,38 @@ export default function Step1_Branding({ onStart, onLogin }: Step1BrandingProps)
 
       {/* Tagline */}
       <div className="text-center mb-8">
-        <p className="text-xl font-bold text-on-surface mb-2 headline-lg">
+        <p className="text-xl font-bold text-[#f5f4fa] mb-2 headline-lg">
           Bienvenido, Futuro Investigador
         </p>
-        <p className="text-sm text-on-surface-variant body-md leading-relaxed max-w-sm mx-auto">
+        <p className="text-sm text-[#a8a4c0] body-md leading-relaxed max-w-sm mx-auto">
           Estás por ingresar al campus virtual de Machine Learning. Preparate para convertir datos en descubrimientos.
         </p>
+      </div>
+
+      {/* Preview de pasos */}
+      <div className="bg-[#191533] rounded-xl p-4 mb-6">
+        <div className="flex items-center justify-around flex-wrap gap-2 sm:gap-0">
+          <div className="flex flex-col items-center gap-1.5 px-2">
+            <GraduationCap className="w-5 h-5 text-[#a8a4c0]" />
+            <span className="text-[11px] text-[#a8a4c0]">Tu nivel</span>
+          </div>
+          <div className="w-px h-8 bg-[#3a3468] hidden sm:block" />
+          <div className="flex flex-col items-center gap-1.5 px-2">
+            <Route className="w-5 h-5 text-[#a8a4c0]" />
+            <span className="text-[11px] text-[#a8a4c0]">Tu ruta</span>
+          </div>
+          <div className="w-px h-8 bg-[#3a3468] hidden sm:block" />
+          <div className="flex flex-col items-center gap-1.5 px-2">
+            <Rocket className="w-5 h-5 text-[#a8a4c0]" />
+            <span className="text-[11px] text-[#a8a4c0]">Empezar</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Timer */}
+      <div className="flex items-center justify-center gap-1.5 mb-6">
+        <Clock className="w-3.5 h-3.5 text-[#726d94]" />
+        <span className="text-[11px] text-[#726d94]">Toma menos de 2 minutos</span>
       </div>
 
       {/* CTA */}
@@ -49,7 +82,7 @@ export default function Step1_Branding({ onStart, onLogin }: Step1BrandingProps)
           boxShadow: '0 8px 32px rgba(138, 46, 255, 0.35)',
         }}
       >
-        <span className="relative z-10">🚀 Iniciar Briefing</span>
+        <span className="relative z-10 text-[#0b0920]">Iniciar Briefing</span>
         {/* Shimmer effect */}
         <div
           className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500"
@@ -60,28 +93,19 @@ export default function Step1_Branding({ onStart, onLogin }: Step1BrandingProps)
         />
       </button>
 
-      {/* Divider */}
-      <div className="flex items-center gap-4 mb-6">
-        <div className="flex-1 h-px bg-border-muted" />
-        <span className="text-sm text-on-surface-variant">o</span>
-        <div className="flex-1 h-px bg-border-muted" />
-      </div>
-
       {/* Login section */}
-      <div className="flex items-center justify-center gap-3">
-        <span className="text-sm text-on-surface-variant">¿Ya eres investigador?</span>
-        <button
-          onClick={onLogin}
-          className="px-5 py-2.5 rounded-2xl text-sm font-semibold text-white/80 border border-white/20 bg-black/20 hover:bg-black/40 hover:text-white hover:border-[#8A2EFF]/50 transition-all backdrop-blur-sm"
-        >
-          Iniciar Sesión
-        </button>
-      </div>
+      <button
+        onClick={onLogin}
+        className="w-full py-3 rounded-2xl border border-[#3a3468] bg-transparent hover:border-[#4fd1e8]/50 transition-all text-sm mb-6"
+      >
+        <span className="text-[#a8a4c0]">¿Ya eres investigador? </span>
+        <span className="text-[#4fd1e8] font-semibold">Iniciar Sesión</span>
+      </button>
 
       {/* Terms */}
-      <p className="text-xs text-on-surface-variant/60 mt-8 text-center">
-        Al continuar, aceptas los términos y condiciones de Nexus Institute
-      </p>
+        <p className="text-[10px] md:text-[11px] text-[#5c5880] mt-8 text-center">
+          Al continuar, aceptas los términos y condiciones de Nexus Institute
+        </p>
     </div>
   )
 }
