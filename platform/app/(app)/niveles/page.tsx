@@ -3,16 +3,28 @@ import ProgressRing from "@/app/components/ProgressRing"
 import Badge from "@/app/components/Badge"
 import { getRanks } from "@/lib/repositories"
 import { auth } from "@/lib/auth"
+import { prisma } from "@/lib/prisma"
 
 export default async function NivelesPage() {
   const ranks = await getRanks()
   const session = await auth()
-  const currentUser = { level: 4, xp: 1260, rank: { id: "investigador", name: "Investigador", order: 4, xpRequired: 600, icon: "military_tech" } }
-  const currentRank = currentUser.rank
-  const currentLevel = currentUser.level
-  const currentXP = currentUser.xp
+  const userId = session?.user?.id
+  const user = userId ? await prisma.user.findUnique({
+    where: { id: userId },
+    include: { rank: true },
+  }) : null
+
+  const currentLevel = user?.level ?? 1
+  const currentXP = user?.xp ?? 0
+  const currentRank = user?.rank ? {
+    id: user.rank.id,
+    name: user.rank.name,
+    order: user.rank.level,
+    xpRequired: user.rank.minXP,
+  } : { id: "novato", name: "Novato", order: 1, xpRequired: 0 }
+
   const nextLevelXP = currentLevel < 8 ? 1000 * currentLevel : 0
-  const XPProgress = currentLevel < 8 ? (currentXP / nextLevelXP) * 100 : 100
+  const XPProgress = currentLevel < 8 && nextLevelXP > 0 ? (currentXP / nextLevelXP) * 100 : 100
 
   const getRankStatus = (rank: any) => {
     if (rank.id === currentRank.id) return "actual"
@@ -45,8 +57,8 @@ export default async function NivelesPage() {
             <h3 className="font-headline-sm text-headline-sm">{currentRank.name}</h3>
             <div className="flex items-center gap-2 mt-1">
               <span className="text-label-md font-bold text-primary">{currentXP} / {nextLevelXP} XP</span>
-              <div className="w-24 h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
-                <div className="w-[63%] h-full bg-primary-container"></div>
+                <div className="w-24 h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+                <div className="h-full bg-primary-container" style={{ width: `${XPProgress}%` }}></div>
               </div>
             </div>
           </div>
@@ -123,7 +135,7 @@ export default async function NivelesPage() {
             
             <div className="flex flex-col items-center justify-center p-6 bg-surface-container-low rounded-2xl border border-glass-stroke">
               <div className="relative w-32 h-32 flex items-center justify-center mb-4">
-                <ProgressRing value={XPProgress} size={128} strokeWidth={8} label="63%" />
+                <ProgressRing value={XPProgress} size={128} strokeWidth={8} label={`${Math.round(XPProgress)}%`} />
               </div>
               <div className="w-full space-y-3">
                 <div className="flex justify-between items-center text-label-md">

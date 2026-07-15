@@ -474,29 +474,26 @@ export default async function DashboardPage() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {/* Static community data based on Figma */}
-          {
-            [
-              { icon: MessageSquare, label: "Elena V. comentó", desc: '"Excelente enfoque en el Lab de Python..."', time: "Hace 5 min", bg: "rgba(59,130,246,0.1)", fg: XP_BLUE },
-              { icon: Star, label: "Marco R. subió de nivel", desc: "¡Ahora es Investigador Senior!", time: "Hace 12 min", bg: "rgba(16,185,129,0.1)", fg: SUCCESS },
-              { icon: Zap, label: "Nueva Misión Global", desc: "Reto de Clasificación de Imágenes", time: "Hace 1 hora", bg: "rgba(249,115,22,0.1)", fg: "#f97316" },
-            ].map((item, index) => {
-              const Icon = item.icon;
-              return (
-                <div key={index} className="rounded-2xl p-4 flex items-start gap-4 glass">
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: item.bg, color: item.fg }}>
-                    <Icon className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-sm text-[#f5f4fa]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-                      {item.label}
-                    </p>
-                    <p className="text-xs text-[#a8a4c0] mt-0.5 mb-2">{item.desc}</p>
-                    <span className="text-[10px] text-[#a8a4c080]">{item.time}</span>
-                  </div>
+          {recentActivity.slice(0, 3).map((act, index) => {
+            const activityIcons = [MessageSquare, Star, Zap] as const
+            const activityColors = ["rgba(59,130,246,0.1)", "rgba(16,185,129,0.1)", "rgba(249,115,22,0.1)"] as const
+            const activityFg = [XP_BLUE, SUCCESS, "#f97316"] as const
+            const Icon = activityIcons[index] || MessageSquare
+            return (
+              <div key={act.id} className="rounded-2xl p-4 flex items-start gap-4 glass">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: activityColors[index] || activityColors[0], color: activityFg[index] || activityFg[0] }}>
+                  <Icon className="w-4 h-4" />
                 </div>
-              );
-            })
-          }
+                <div>
+                  <p className="font-bold text-sm text-[#f5f4fa]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                    {act.message || "Actividad reciente"}
+                  </p>
+                  <p className="text-xs text-[#a8a4c0] mt-0.5 mb-2">Lección completada</p>
+                  <span className="text-[10px] text-[#a8a4c080]">{formatActivityTime(act.timestamp)}</span>
+                </div>
+              </div>
+            )
+          })}
         </div>
       </section>
 
