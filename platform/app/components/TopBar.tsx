@@ -1,10 +1,16 @@
 'use client'
 
 import { useSession } from "next-auth/react"
-import { Search, Bell, Settings, Diamond, Flame, LayoutDashboard, LogOut } from "lucide-react"
-import { usePathname } from "next/navigation"
+import { Search, Bell, Settings, Diamond, Flame, LayoutDashboard } from "lucide-react"
 
-export default function TopBar() {
+interface TopBarProps {
+  onToggleSidebar?: () => void
+  xp: number
+  streakDays: number
+  level: number
+}
+
+export default function TopBar({ onToggleSidebar, xp, streakDays }: TopBarProps) {
   const { data: session } = useSession()
   const userName = session?.user?.name || "Investigador"
   const initials = userName.split(" ").map(w => w[0]).join("").toUpperCase().slice(0, 2)
@@ -12,7 +18,7 @@ export default function TopBar() {
   return (
     <header className="sticky top-0 z-40 glass shadow-sm border-b border-[#2a2454] flex items-center justify-between px-6 py-4">
       {/* Mobile hamburger */}
-      <button className="lg:hidden mr-4 text-[#a8a4c0]">
+      <button onClick={onToggleSidebar} className="lg:hidden mr-4 text-[#a8a4c0]">
         <LayoutDashboard className="w-5 h-5" />
       </button>
 
@@ -35,11 +41,11 @@ export default function TopBar() {
         <div className="hidden md:flex items-center gap-4">
           <div className="flex items-center gap-1.5 font-bold text-sm" style={{ color: "#3B82F6" }}>
             <Diamond className="w-4 h-4 fill-current" />
-            <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>1,260 XP</span>
+            <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{xp.toLocaleString()} XP</span>
           </div>
           <div className="flex items-center gap-1.5 font-bold text-sm text-orange-500">
             <Flame className="w-4 h-4 fill-current" />
-            <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>12 días</span>
+            <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{streakDays} días</span>
           </div>
         </div>
         <div className="flex items-center gap-2">
@@ -54,7 +60,7 @@ export default function TopBar() {
             className="w-9 h-9 rounded-full border-2 border-[#2a2454] shadow-sm flex items-center justify-center text-white text-xs font-bold ml-1 cursor-pointer"
             style={{ background: "linear-gradient(135deg, #7c6ff0, #4fd1e8)" }}
           >
-            IN
+            {initials}
           </div>
         </div>
       </div>

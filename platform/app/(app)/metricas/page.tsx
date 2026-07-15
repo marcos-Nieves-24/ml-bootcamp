@@ -2,10 +2,16 @@ import StitchCard from "@/app/components/StitchCard"
 import { getModules, getLabs, getMetricPoints } from "@/lib/repositories"
 import ProgressCircle from "@/app/components/ProgressCircle"
 import { auth } from "@/lib/auth"
+import { prisma } from "@/lib/prisma"
 
 export default async function MetricasPage() {
   const session = await auth()
-  const currentUser = { level: 4, xp: 1260 } // Demo values until full user profile is loaded
+  const userId = session?.user?.id
+  const user = userId ? await prisma.user.findUnique({
+    where: { id: userId },
+    select: { xp: true, level: true },
+  }) : null
+  const currentUser = { level: user?.level ?? 1, xp: user?.xp ?? 0 }
   const currentRank = null
 
   const labs = await getLabs()
