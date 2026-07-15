@@ -145,7 +145,9 @@ export default function BriefingFlow({ onComplete }: BriefingFlowProps) {
           />
         )}
         
-        <div className="animate-fadeInUp w-full max-w-lg mx-auto">
+        <div className={`animate-fadeInUp w-full mx-auto ${
+          state.currentStep === 1 ? 'max-w-[960px]' : 'max-w-lg'
+        }`}>
           {renderStep()}
         </div>
       </div>
