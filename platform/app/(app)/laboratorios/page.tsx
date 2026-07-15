@@ -3,7 +3,9 @@ import StitchCard from "@/app/components/StitchCard"
 import XPBar from "@/app/components/XPBar"
 import ProgressRing from "@/app/components/ProgressRing"
 import StitchBtn from "@/app/components/StitchBtn"
-import { getLabs } from "@/lib/repositories"
+import { getLabs, getUserRecentActivity } from "@/lib/repositories"
+import { auth } from "@/lib/auth"
+import { prisma } from "@/lib/prisma"
 
 const SIDEBAR_LAB_ICONS: Record<string, string> = {
   "python-lab": "code",
@@ -20,26 +22,14 @@ export default async function LaboratoriosPage() {
   const total = labs.length
   const progress = (completed / total) * 100
 
-  const activities = [
-    {
-      id: "activity-5",
-      type: "lab",
-      message: "Obtuviste 95% en 'Data Lab: Limpieza de Datos'",
-      timestamp: new Date("2026-07-10T16:00:00Z")
-    },
-    {
-      id: "activity-6",
-      type: "achievement",
-      message: "Desbloqueaste el logro 'Maestro de Datos'",
-      timestamp: new Date("2026-07-10T14:00:00Z")
-    },
-    {
-      id: "activity-7",
-      type: "lab",
-      message: "Completaste un nuevo laboratorio",
-      timestamp: new Date("2026-07-11T10:00:00Z")
-    }
-  ]
+  const session = await auth()
+  const userId = session?.user?.id
+  const user = userId ? await prisma.user.findUnique({
+    where: { id: userId },
+    select: { xp: true },
+  }) : null
+  const totalXP = user?.xp ?? 0
+  const recentActivity = userId ? await getUserRecentActivity(userId, 3) : []
 
   return (
     <div className="space-y-8">
@@ -108,7 +98,7 @@ export default async function LaboratoriosPage() {
 
             <div className="bg-primary/10 rounded-xl p-3 mb-3">
               <p className="text-xs uppercase tracking-wider text-primary font-bold mb-1">Total XP Labs</p>
-              <p className="text-xl font-bold text-on-surface">12,450 XP</p>
+              <p className="text-xl font-bold text-on-surface">{totalXP.toLocaleString()} XP</p>
             </div>
 
             {/* Next Achievement */}
@@ -127,14 +117,16 @@ export default async function LaboratoriosPage() {
             <div className="bg-surface-container-low rounded-xl p-3">
               <p className="text-xs uppercase tracking-wider text-on-surface-variant font-bold mb-2">Última Actividad</p>
               <div className="space-y-2">
-                {activities.map(a => (
+                {recentActivity.length > 0 ? recentActivity.map(a => (
                   <div key={a.id} className="flex items-center gap-2 text-xs text-on-surface-variant">
                     <span className="material-symbols-outlined text-sm text-primary">
-                      {a.type === "achievement" ? "emoji_events" : "science"}
+                      science
                     </span>
-                    <span>{a.message}</span>
+                    <span>{a.message || "Actividad reciente"}</span>
                   </div>
-                ))}
+                )) : (
+                  <p className="text-xs text-on-surface-variant">Sin actividad reciente</p>
+                )}
               </div>
             </div>
           </StitchCard>
