@@ -4,10 +4,14 @@
  * - Strips iframes whose src doesn't start with the allowed prefix
  * - Adds loading="lazy" and title to remaining iframes
  * - Must run BEFORE rehype-sanitize
+ *
+ * Allowed patterns:
+ *   /interactives/demo_*.html        (Next.js public/ -- primary)
+ *   /content/module01_ai/interactives/ (legacy MkDocs path)
  */
 import type { Root, Element, ElementContent } from "hast"
 
-const ALLOWED_SRC_PREFIX = "/content/module01_ai/interactives/"
+const ALLOWED_PREFIXES = ["/interactives/", "/content/module01_ai/interactives/"]
 
 export function rehypeIframeAllowlist() {
   return (tree: Root) => {
@@ -16,7 +20,8 @@ export function rehypeIframeAllowlist() {
 
       const src = (node.properties?.src as string) ?? ""
 
-      if (!src.startsWith(ALLOWED_SRC_PREFIX)) {
+      const allowed = ALLOWED_PREFIXES.some((p) => src.startsWith(p))
+      if (!allowed) {
         // Remove disallowed iframe, replace with a notice
         if (parent && index !== null) {
           const replacement: Element = {
@@ -26,7 +31,7 @@ export function rehypeIframeAllowlist() {
             children: [
               {
                 type: "text",
-                value: `[iframe bloqueado: ${src} — solo se permiten iframes de /content/module01_ai/interactives/]`,
+                value: `[iframe bloqueado: ${src} — solo se permiten iframes de la coleccion de demos]`,
               },
             ],
           }

@@ -82,7 +82,7 @@ Vamos a ver nuestras primeras conidias como datos.
   <p><em>Si medimos solo el área de una conidia, ¿podemos distinguir siempre Aspergillus de Penicillium?</em></p>
 </div>
 
-<iframe src="../../interactives/demo_01_features.html" width="100%" height="650px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
+<iframe src="/interactives/demo_01_features.html" width="100%" height="650px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
 
 <small>🔬 simulación educativa sobre datos sintéticos</small>
 
@@ -102,7 +102,7 @@ Ahora vamos a hacer el ejercicio inverso: vos actuás como clasificador.
   <p><em>¿Crees que un ojo humano entrenado puede clasificar mejor que un algoritmo simple?</em></p>
 </div>
 
-<iframe src="../../interactives/demo_02_patterns.html" width="100%" height="700px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
+<iframe src="/interactives/demo_02_patterns.html" width="100%" height="700px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
 
 <small>🔬 simulación educativa sobre datos sintéticos</small>
 
@@ -122,7 +122,7 @@ Antes de que existiera el machine learning, se usaban **sistemas basados en regl
   <p><em>Si creamos reglas manuales (área > X y textura > Y), ¿podemos clasificar todas las conidias correctamente?</em></p>
 </div>
 
-<iframe src="../../interactives/demo_03_rules.html" width="100%" height="650px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
+<iframe src="/interactives/demo_03_rules.html" width="100%" height="650px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
 
 <small>🔬 simulación educativa sobre datos sintéticos</small>
 

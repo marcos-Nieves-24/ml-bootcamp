@@ -79,13 +79,14 @@ export default async function LessonPage({
                 attributes: {
                   ...defaultSchema.attributes,
                   iframe: [
-                    ["src", /^\/content\/module01_ai\/interactives\//],
+                    ["src", /^\/(interactives\/|content\/module01_ai\/interactives\/)/],
                     "loading",
                     "title",
                     "allowfullscreen",
                     ["width", /^\d+%?$/],
                     ["height", /^\d+%?$/],
                     "class",
+                    "style",
                   ],
                 },
               }],

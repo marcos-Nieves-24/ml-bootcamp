@@ -72,7 +72,7 @@ Empecemos con el algoritmo más simple: el **perceptrón**. Un perceptrón traza
   <p><em>¿Crees que una línea recta puede separar dos tipos de conidias si solo usamos dos características (área y circularidad)?</em></p>
 </div>
 
-<iframe src="../../interactives/demo_04_boundary.html" width="100%" height="700px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
+<iframe src="/interactives/demo_04_boundary.html" width="100%" height="700px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
 
 <small>🔬 simulación educativa sobre datos sintéticos</small>
 
@@ -98,7 +98,7 @@ Ahora veamos un enfoque completamente diferente: en lugar de trazar una línea, 
   <p><em>Si k=1 clasificamos según el vecino más cercano. ¿Qué crees que pasa si aumentamos k a 15?</em></p>
 </div>
 
-<iframe src="../../interactives/demo_05_knn.html" width="100%" height="700px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
+<iframe src="/interactives/demo_05_knn.html" width="100%" height="700px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
 
 <small>🔬 simulación educativa sobre datos sintéticos</small>
 
@@ -130,7 +130,7 @@ Eso es **regresión**. En lugar de predecir una etiqueta (Aspergillus/Penicilliu
   <p><em>Si duplicamos la concentración de un fármaco, ¿esperás que el efecto inhibitorio se duplique exactamente?</em></p>
 </div>
 
-<iframe src="../../interactives/demo_06_regression.html" width="100%" height="700px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
+<iframe src="/interactives/demo_06_regression.html" width="100%" height="700px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
 
 <small>💊 modelo sobre datos reales simulados (basado en curvas dosis-respuesta de antifúngicos)</small>
 
@@ -159,7 +159,7 @@ Vamos a ver en vivo cómo la complejidad de un modelo afecta su capacidad de gen
   <p><em>Si un modelo tiene error CERO en los datos de entrenamiento, ¿creés que funcionará igual de bien con datos nuevos?</em></p>
 </div>
 
-<iframe src="../../interactives/demo_06b_overfitting.html" width="100%" height="800px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
+<iframe src="/interactives/demo_06b_overfitting.html" width="100%" height="800px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
 
 <small>🔬 simulación educativa sobre datos sintéticos</small>
 

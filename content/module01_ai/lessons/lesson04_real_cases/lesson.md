@@ -53,7 +53,7 @@ Para 2020, solo habíamos determinado experimentalmente ~170,000 estructuras. Se
   <p><em>Antes de AlphaFold (2020), ¿cuánto tiempo tomaba determinar experimentalmente la estructura de una proteína mediana?</em></p>
 </div>
 
-<iframe src="../../interactives/demo_08_alphafold.html" width="100%" height="700px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
+<iframe src="/interactives/demo_08_alphafold.html" width="100%" height="700px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
 
 <small>🧬 modelo sobre datos reales — Nature 2021, Nobel 2024</small>
 
@@ -99,7 +99,7 @@ Insilico Medicine, una empresa fundada en 2014, usó IA generativa para acelerar
   <p><em>Un fármaco típico tarda 10-15 años en desarrollarse. ¿Cuánto creés que la IA puede acortar solo la fase de descubrimiento (hasta candidato preclínico)?</em></p>
 </div>
 
-<iframe src="../../interactives/demo_09_rentosertib.html" width="100%" height="700px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
+<iframe src="/interactives/demo_09_rentosertib.html" width="100%" height="700px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
 
 <small>💊 modelo sobre datos reales — Nature Medicine 2025</small>
 

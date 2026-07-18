@@ -120,27 +120,43 @@
   border-radius: 12px;
 }
 
-.iframe-responsive-wrapper iframe[src*="demo_07_protein"] {
+/* Per-demo height overrides */
+.iframe-responsive-wrapper iframe[src*="demo_06b_overfitting"] {
   height: 800px;
+}
+.iframe-responsive-wrapper iframe[src*="demo_07_protein"] {
+  height: 750px;
+}
+.iframe-responsive-wrapper iframe[src*="demo_10_pipeline"] {
+  height: 750px;
 }
 
 @media (max-width: 768px) {
   .iframe-responsive-wrapper iframe {
-    height: 550px;
-  }
-  .iframe-responsive-wrapper iframe[src*="demo_07_protein"] {
-    height: 650px;
+    height: 500px;
   }
   .iframe-responsive-wrapper iframe[src*="demo_06b_overfitting"] {
-    height: 1000px;
+    height: 650px;
+  }
+  .iframe-responsive-wrapper iframe[src*="demo_07_protein"] {
+    height: 600px;
+  }
+  .iframe-responsive-wrapper iframe[src*="demo_10_pipeline"] {
+    height: 600px;
   }
 }
 
 @media (max-width: 480px) {
   .iframe-responsive-wrapper iframe {
-    height: 450px;
+    height: 420px;
+  }
+  .iframe-responsive-wrapper iframe[src*="demo_06b_overfitting"] {
+    height: 550px;
   }
   .iframe-responsive-wrapper iframe[src*="demo_07_protein"] {
+    height: 500px;
+  }
+  .iframe-responsive-wrapper iframe[src*="demo_10_pipeline"] {
     height: 520px;
   }
 }

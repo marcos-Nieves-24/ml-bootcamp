@@ -65,7 +65,7 @@ Vamos a explorar 5 proteínas reales, todas verificadas del RCSB PDB.
   <p><em>¿Cuántos átomos de carbono alfa (Cα) creés que tiene una proteína de tamaño medio como una lisozima?</em></p>
 </div>
 
-<iframe src="../../interactives/demo_07_protein_3d.html" width="100%" height="700px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
+<iframe src="/interactives/demo_07_protein_3d.html" width="100%" height="700px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
 
 <small>🧬 estructuras reales de PDB (RCSB.org) — extracción de carbonos alfa</small>
 
@@ -106,7 +106,7 @@ Ahora que vimos aplicaciones, volvamos a nuestro problema de clasificación de c
   <p><em>En un proyecto real de ML, ¿qué paso creés que consume más tiempo: entrenar el modelo o preparar los datos?</em></p>
 </div>
 
-<iframe src="../../interactives/demo_10_pipeline.html" width="100%" height="750px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
+<iframe src="/interactives/demo_10_pipeline.html" width="100%" height="750px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
 
 <small>🔬 simulación educativa sobre datos sintéticos</small>
 
