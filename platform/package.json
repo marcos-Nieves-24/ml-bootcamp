@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build:interactives": "rm -rf public/interactives/ && mkdir -p public/interactives/ && cp -r ../content/module01_ai/interactives/. public/interactives/",
     "check:interactives": "diff -r ../content/module01_ai/interactives/ public/interactives/",
+    "vercel-build": "npm run build:interactives && next build",
     "build": "npm run build:interactives && next build",
     "setup:hooks": "git config core.hooksPath .githooks && echo '✅ hooksPath apunta a .githooks/'",
     "start": "next start",
