@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# interactives — built from content/module01_ai/interactives/ via build:interactives
+/public/interactives/
+
 # production
 /build
 

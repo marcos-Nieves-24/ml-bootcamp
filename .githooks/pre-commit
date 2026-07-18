@@ -1,0 +1,25 @@
+#!/bin/sh
+# Pre-commit hook: verify interactives are in sync
+
+# Only run if platform/public/interactives/ exists and has content
+if [ -d "platform/public/interactives" ] && [ "$(ls -A platform/public/interactives/ 2>/dev/null)" ]; then
+  # Check if any interactives changed
+  if git diff --cached --name-only --diff-filter=ACM | grep -q 'content/module01_ai/interactives/'; then
+    echo "📦 Interactivos modificados en content/ — verificando sincronización..."
+    
+    # Run the check
+    (cd platform && npm run check:interactives 2>/dev/null)
+    
+    if [ $? -ne 0 ]; then
+      echo ""
+      echo "❌ Los interactivos en platform/public/interactives/ no están sincronizados."
+      echo "   Ejecutá:  cd platform && npm run build:interactives"
+      echo "   Luego volvé a intentar el commit."
+      exit 1
+    fi
+    
+    echo "✅ Interactivos sincronizados."
+  fi
+fi
+
+exit 0

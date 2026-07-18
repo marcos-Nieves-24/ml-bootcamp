@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build:interactives": "rsync -a --delete ../content/module01_ai/interactives/ public/interactives/",
+    "check:interactives": "diff -r ../content/module01_ai/interactives/ public/interactives/",
+    "build": "npm run build:interactives && next build",
+    "setup:hooks": "git config core.hooksPath .githooks && echo '✅ hooksPath apunta a .githooks/'",
     "start": "next start",
     "lint": "eslint",
     "prisma:generate": "prisma generate",
