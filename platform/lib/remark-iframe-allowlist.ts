@@ -9,13 +9,14 @@
  *   /interactives/demo_*.html        (Next.js public/ -- primary)
  *   /content/module01_ai/interactives/ (legacy MkDocs path)
  */
-import type { Root, Element, ElementContent } from "hast"
+import { visit } from "unist-util-visit"
+import type { Root, Element } from "hast"
 
 const ALLOWED_PREFIXES = ["/interactives/", "/content/module01_ai/interactives/"]
 
 export function rehypeIframeAllowlist() {
   return (tree: Root) => {
-    visit(tree, "element", (node: Element, index: number | null, parent: Element | Root | null) => {
+    visit(tree, "element", (node, index, parent) => {
       if (node.tagName !== "iframe") return
 
       const src = (node.properties?.src as string) ?? ""
@@ -60,22 +61,4 @@ export function rehypeIframeAllowlist() {
   }
 }
 
-/**
- * Minimal HAST walk helper (no dependency, ~15 lines).
- * Recursively visits all elements in the tree.
- */
-function visit(
-  node: Root | ElementContent,
-  cb: (node: Element, index: number | null, parent: Element | Root | null) => void,
-  index: number | null = null,
-  parent: Element | Root | null = null,
-) {
-  if (node.type === "element") {
-    cb(node, index, parent)
-    if ("children" in node && Array.isArray(node.children)) {
-      for (let i = 0; i < node.children.length; i++) {
-        visit(node.children[i] as ElementContent, cb, i, node)
-      }
-    }
-  }
-}
+
