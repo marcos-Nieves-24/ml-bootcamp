@@ -8,6 +8,7 @@ import { getModules, getLessons, getLessonProgress } from "@/lib/repositories"
 import { auth } from "@/lib/auth"
 import { parseQuizMarkdown } from "@/lib/quiz"
 import Markdown from "react-markdown"
+import rehypeRaw from "rehype-raw"
 import rehypeSanitize, { defaultSchema } from "rehype-sanitize"
 import remarkGfm from "remark-gfm"
 import { rehypeIframeAllowlist } from "@/lib/remark-iframe-allowlist"
@@ -72,6 +73,7 @@ export default async function LessonPage({
           <Markdown
             remarkPlugins={[remarkGfm]}
             rehypePlugins={[
+              rehypeRaw,
               rehypeIframeAllowlist,
               [rehypeSanitize, {
                 ...defaultSchema,
@@ -88,6 +90,30 @@ export default async function LessonPage({
                     "class",
                     "style",
                   ],
+                  // Allow style and class on common block/inline elements
+                  // so lesson HTML (<div style="...">, <span class="...">, etc.) renders correctly
+                  div: ["style", "className"],
+                  span: ["style", "className"],
+                  p: ["style", "className"],
+                  pre: ["style", "className"],
+                  code: ["style", "className"],
+                  strong: ["style", "className"],
+                  em: ["style", "className"],
+                  blockquote: ["style", "className"],
+                  a: ["style", "className"],
+                  ul: ["style", "className"],
+                  ol: ["style", "className"],
+                  li: ["style", "className"],
+                  table: ["style", "className"],
+                  th: ["style", "className"],
+                  td: ["style", "className"],
+                  tr: ["style", "className"],
+                  h1: ["style", "className"],
+                  h2: ["style", "className"],
+                  h3: ["style", "className"],
+                  h4: ["style", "className"],
+                  h5: ["style", "className"],
+                  h6: ["style", "className"],
                 },
               }],
             ]}
