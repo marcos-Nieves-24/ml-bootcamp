@@ -31,14 +31,13 @@ Cada demo incluye: pregunta predictiva, interactivo Plotly.js, etiqueta de tipo 
 
 ## Datasets
 
-- `module01_ai_cell_features.csv` — 500 conidias sintéticas con 6 features (área, circularidad, textura, intensidad, perímetro, label)
-- `pdb_raw/` — 5 estructuras PDB reales (1MBN, 5K2P, 2X8R, 4HHB, 4INS) con coordenadas Cα extraídas
+Los datasets sintéticos son generados por los scripts en el repositorio raíz. Los PDB reales se sirven desde URLs externas dentro de los demos.
 
 ## Stack
 
-- **Plataforma**: MkDocs + mkdocs-jupyter (renderizado estático)
-- **Demos interactivos**: HTML + JavaScript vanilla + Plotly.js v3 CDN
-- **Datasets**: Generados con Python + NumPy
+- **Plataforma**: Next.js + Prisma + PostgreSQL (deploy Vercel)
+- **Demos interactivos**: HTML + JavaScript vanilla + Plotly.js 3.0.0 (local)
+- **Contenido**: Markdown con frontmatter + HTML incrustado
 
 ## Prerrequisitos
 
@@ -46,4 +45,8 @@ Ninguno. Este es el módulo inicial del curso. Diseñado para estudiantes de bio
 
 ## Alcance
 
-Ver [`notes/alcance_v2.md`](./notes/alcance_v2.md) para el detalle de contenido diferido a futuras iteraciones.
+Ver [`_archive/notes/alcance_v2.md`](./_archive/notes/alcance_v2.md) para el detalle de contenido diferido a futuras iteraciones.
+
+## Referencias
+
+Ver [`_archive/references/fuentes_investigacion.md`](./_archive/references/fuentes_investigacion.md) para las fuentes bibliográficas completas.
