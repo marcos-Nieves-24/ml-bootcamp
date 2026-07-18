@@ -22,16 +22,16 @@ export default async function LessonPage({
   const userId = session?.user?.id
 
   const modules = await getModules()
-  const mod = modules.find((m) => m.id === moduleId)
+  const mod = modules.find((m) => m.moduleId === moduleId)
 
   if (!mod) notFound()
 
-  const lessons = await getLessons(moduleId, userId)
-  const lesson = lessons.find((l) => l.id === lessonId)
+  const lessons = await getLessons(mod.id, userId)
+  const lesson = lessons.find((l) => l.lessonId === lessonId)
 
   if (!lesson) notFound()
 
-  const isCompleted = userId ? await getLessonProgress(userId, lessonId) : false
+  const isCompleted = userId ? await getLessonProgress(userId, lesson.id) : false
   const quiz = parseQuizMarkdown(lesson.quizContent ?? "")
 
   const nextLesson = lessons.find((l) => l.order === lesson.order + 1)
@@ -44,7 +44,7 @@ export default async function LessonPage({
           Expediciones
         </Link>
         <span className="material-symbols-outlined text-sm">chevron_right</span>
-        <Link href={`/expediciones/${moduleId}`} className="hover:text-primary transition-colors">
+        <Link href={`/expediciones/${mod.id}`} className="hover:text-primary transition-colors">
           {mod.title}
         </Link>
         <span className="material-symbols-outlined text-sm">chevron_right</span>
@@ -126,7 +126,7 @@ export default async function LessonPage({
           Volver al módulo
         </StitchBtn>
         {nextLesson && (
-          <StitchBtn href={`/expediciones/${moduleId}/${nextLesson.id}`}>
+          <StitchBtn href={`/expediciones/${moduleId}/${nextLesson.lessonId}`}>
             Siguiente lección
           </StitchBtn>
         )}

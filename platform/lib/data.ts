@@ -17,6 +17,7 @@ export interface UserProfile {
 
 export interface Module {
   id: string;
+  moduleId: string;
   title: string;
   description: string | null;
   progress?: number;
@@ -91,6 +92,7 @@ export interface MetricPoint {
 
 export interface Lesson {
   id: string;
+  lessonId: string;
   moduleId: string;
   title: string;
   content: string;

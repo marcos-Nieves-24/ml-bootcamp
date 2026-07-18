@@ -135,7 +135,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
                       <span className="material-symbols-outlined">check_circle</span>
                     </span>
                   ) : isCurrent ? (
-                    <Link href={`/expediciones/${mod.id}/${lesson.id}`} className="text-xs font-bold text-primary bg-primary/10 px-3 py-1.5 rounded-xl hover:bg-primary/20 transition-colors">
+                    <Link href={`/expediciones/${mod.moduleId}/${lesson.lessonId}`} className="text-xs font-bold text-primary bg-primary/10 px-3 py-1.5 rounded-xl hover:bg-primary/20 transition-colors">
                       Leer
                     </Link>
                   ) : (
@@ -154,7 +154,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
           Volver a Expediciones
         </StitchBtn>
         {userId && firstIncompleteIndex >= 0 && (
-          <StitchBtn href={`/expediciones/${mod.id}/${lessons[firstIncompleteIndex].id}`}>
+          <StitchBtn href={`/expediciones/${mod.moduleId}/${lessons[firstIncompleteIndex].lessonId}`}>
             Continuar aprendizaje
           </StitchBtn>
         )}

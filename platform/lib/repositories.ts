@@ -52,6 +52,7 @@ export async function getLessons(moduleId: string, userId?: string): Promise<Les
 
     const lessons: Lesson[] = dbLessons.map(l => ({
       id: l.id,
+      lessonId: l.lessonId,
       moduleId: l.moduleId,
       title: l.title,
       content: l.content,
