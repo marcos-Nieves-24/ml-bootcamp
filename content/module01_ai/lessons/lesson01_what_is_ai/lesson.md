@@ -1,207 +1,180 @@
 ---
 Module: 1
 Lesson Number: 1
-Lesson Title: What is Artificial Intelligence?
-Estimated Duration: 60 minutes
-Prerequisites: None
+Lesson Title: ¿Qué es la Inteligencia Artificial?
+Estimated Duration: 60 minutos
+Prerequisites: Ninguno
 Learning Objectives:
-  - Define Artificial Intelligence and distinguish it from natural intelligence
-  - Explain the Turing Test and its limitations
-  - Describe the characteristics of intelligent agents
-  - Identify the four goals of AI according to Russell & Norvig
-  - Compare thinking vs acting, humanly vs rationally approaches
-Keywords: Artificial Intelligence, Turing Test, intelligent agent, rationality, cognitive science, acting humanly, acting rationally, thinking humanly, thinking rationally
-Difficulty: Beginner
-Programming Concepts: None
-Mathematical Concepts: None
-Machine Learning Concepts: None
-Datasets Used: None
-Notebook: notebook.ipynb
-Assignment: assignment.md
-Quiz: quiz.md
+  - Definir inteligencia artificial y distinguirla de la inteligencia natural
+  - Explicar el concepto de "características" (features) en datos
+  - Comprender cómo las máquinas reconocen patrones a partir de datos numéricos
+  - Identificar las limitaciones de las reglas fijas frente al aprendizaje automático
+Keywords: inteligencia artificial, features, patrones, clasificación, conidias, Aspergillus, Penicillium
+Difficulty: Principiante
+Programming Concepts: Ninguno
+Mathematical Concepts: Ninguno
+Machine Learning Concepts: Features, clasificación, reconocimiento de patrones
+Datasets Used: module01_ai_cell_features.csv
 ---
 
-# Lesson 1: What is Artificial Intelligence?
+# Lección 1: ¿Qué es la Inteligencia Artificial?
 
-## Lesson Motivation
+## Motivación
 
-Artificial Intelligence is no longer science fiction. Every time you unlock your phone with facial recognition, receive a product recommendation on Amazon, or ask Siri for the weather, you are interacting with AI. In biotechnology, AI is accelerating drug discovery and enabling personalized medicine. In SaaS, AI powers customer analytics, churn prediction, and automated marketing. Understanding what AI is — and what it is not — is the foundation for everything that follows in this course.
+Imaginá que sos microbióloga/o y estás mirando al microscopio una muestra de un paciente inmunocomprometido. Ves cientos de conidias (esporas fúngicas) y necesitás identificar rápidamente si pertenecen al género *Aspergillus* o *Penicillium*. La diferencia es crítica: *Aspergillus* puede causar infecciones invasivas graves en pacientes neutropénicos.
 
-## Big Picture
+Tradicionalmente, esto requiere un ojo entrenado y tiempo. ¿Y si una computadora pudiera aprender a hacer esta clasificación por vos, en segundos, con la misma precisión que un especialista? Eso es la inteligencia artificial aplicada a la biotecnología.
 
-This is the first lesson of the course. It establishes the foundational definition of AI. Lesson 2 will explore the history of how we arrived at today's AI systems. Lesson 3 will classify different types of AI, and Lesson 4 will dive into the paradigms that make AI work. You will refer back to these core concepts throughout the entire program.
+## Panorama General
+
+Esta lección es la primera del Módulo 1. Vamos a construir desde cero qué significa que una máquina "aprenda". No asumimos ningún conocimiento previo de programación, estadística ni matemática. Solo curiosidad y ganas de entender.
 
 ```
-Lesson 1 (What is AI?) → Lesson 2 (History) → Lesson 3 (Types of AI) → Lesson 4 (Paradigms)
+Lección 1 (¿Qué es IA?) → Lección 2 (¿Cómo aprende?) → Lección 3 (IA en Biotecnología) → Lección 4 (Casos Reales)
 ```
 
-## Theory
+## Teoría
 
-### Definition of Artificial Intelligence
+### ¿Qué es la Inteligencia Artificial?
 
-**Definition**: Artificial Intelligence is the branch of computer science concerned with building systems that exhibit intelligent behavior.
+**Definición**: La inteligencia artificial (IA) es la rama de la computación que se ocupa de crear sistemas capaces de realizar tareas que normalmente requieren inteligencia humana.
 
-**Intuition**: Think of AI as the attempt to give machines the ability to perceive, reason, learn, and make decisions — tasks that normally require human intelligence.
+**Intuición**: Cuando ves una foto y reconocés que es un gato, tu cerebro está haciendo un procesamiento increíblemente complejo en milisegundos. La IA intenta que las computadoras hagan ese mismo tipo de procesamiento.
 
-**Formal explanation**: There is no single universally accepted definition. However, the most influential textbook in the field — *Artificial Intelligence: A Modern Approach* by Stuart Russell and Peter Norvig — organizes definitions along two dimensions:
+**Pero ojo**: La IA no "piensa" como nosotros. No tiene conciencia, emociones ni entendimiento real. **Procesa datos numéricos y encuentra patrones estadísticos.** Eso es todo. Y es suficiente para ser extraordinariamente útil.
 
-| | Human performance | Rational performance |
+### El problema: clasificar conidias de *Aspergillus* y *Penicillium*
+
+Vamos a usar un ejemplo concreto que nos va a acompañar todo el módulo.
+
+Las conidias de *Aspergillus* y *Penicillium* tienen diferencias sutiles:
+
+| Característica | *Aspergillus* | *Penicillium* |
 |---|---|---|
-| **Thinking** | "Thinking humanly" — modeling cognitive processes | "Thinking rationally" — following logical rules (laws of thought) |
-| **Acting** | "Acting humanly" — passing the Turing Test | "Acting rationally" — achieving goals (rational agent) |
+| Forma | Más redondeada | Más alargada |
+| Textura superficial | Rugosa (verrugosa) | Más lisa |
+| Color | Verde-azulado | Verde |
+| Tamaño | ~3-6 µm | ~2.5-5 µm |
 
-1. **Acting humanly**: The Turing Test approach. If a machine can converse with a human evaluator who cannot tell they are talking to a machine, the machine is said to be intelligent.
-2. **Thinking humanly**: Cognitive modeling approach. We simulate the brain's thought processes.
-3. **Thinking rationally**: The "laws of thought" approach. We use symbolic logic to represent knowledge and derive conclusions.
-4. **Acting rationally**: The rational agent approach. We build agents that perceive their environment and take actions to achieve the best outcome.
+Un micólogo entrenado reconoce estas diferencias visualmente. Pero una computadora solo entiende **números**. Necesitamos convertir esas características en datos numéricos.
 
-This course focuses on **acting rationally** — building agents that make good decisions — because it is the most general and practically useful approach.
+### Características (Features)
 
-**Example**: A self-driving car perceives its environment via cameras and LiDAR, processes this data to identify obstacles, and acts by steering, accelerating, or braking. It is an intelligent agent acting rationally to reach its destination safely.
+En IA, llamamos **features** (características o atributos) a las propiedades medibles de los datos que usamos para hacer predicciones.
 
-### The Turing Test
+Para nuestras conidias, las features podrían ser:
 
-Alan Turing proposed the **Imitation Game** in 1950 as a criterion for intelligence.
+- **Área** (µm²): qué tan grande es la conidia
+- **Circularidad** (0-1): qué tan redonda es (1 = círculo perfecto)
+- **Textura** (índice): qué tan rugosa es la superficie
+- **Intensidad** (0-255): qué tan clara u oscura es al microscopio
 
-**How it works**:
-1. A human evaluator communicates via text with two hidden entities: a human and a machine.
-2. The machine tries to convince the evaluator it is human.
-3. If the evaluator cannot reliably distinguish the machine from the human, the machine passes the test.
+Cada conidia se convierte en un **vector de números**. Eso es lo que la IA puede procesar.
 
-**Limitations**:
-- Focuses only on conversational ability
-- Does not test perception, creativity, or physical interaction
-- Can be "gamed" by superficial tricks (e.g., ELIZA chatbot in 1966)
-- Modern AI (e.g., ChatGPT) can pass simplified versions, yet many argue they are not truly intelligent
+> 💡 **Idea clave**: La IA no "ve" imágenes como nosotros. Ve matrices de números. Cada número es una pista que ayuda a clasificar.
 
-### Intelligent Agents
+### Demo interactiva 1: Visualizando características
 
-An **agent** is anything that perceives its environment through sensors and acts upon it through actuators.
+Vamos a ver nuestras primeras conidias como datos.
 
-```
-          Sensors
-             ↓
-Environment → Agent → Actions
-             ↑
-          Actuators
-```
+<div style="border: 2px solid #1f77b4; border-radius: 8px; padding: 12px; margin: 16px 0; background: #f0f7ff;">
+  <strong>🧪 Antes de interactuar, respondé:</strong>
+  <p><em>Si medimos solo el área de una conidia, ¿podemos distinguir siempre Aspergillus de Penicillium?</em></p>
+</div>
 
-A **rational agent** acts to maximize a performance measure based on:
-- Its percept sequence (history of everything it has perceived)
-- Its knowledge of the environment
-- The actions available to it
+<iframe src="../../interactives/demo_01_features.html" width="100%" height="650px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
 
-**Example**: A thermostat is a simple agent. It senses temperature (sensor), compares it to a set point, and turns heating on/off (actuator).
+<small>🔬 simulación educativa sobre datos sintéticos</small>
 
-### The Four Goals of AI
+Cada punto en el gráfico es una conidia. Podés cambiar qué características comparar con el menú desplegable. Notá cómo algunas features separan mejor las especies que otras.
 
-Russell & Norvig (2021) identify four historical goals:
+**¿Qué observamos?**
+- Si usamos solo una característica, hay superposición entre especies
+- Con dos o más características, la separación mejora
+- El "espacio de características" (feature space) es donde la IA trabaja
 
-1. **Human-centered vs rational-centered**: Should AI mimic humans or achieve ideal performance?
-2. **Reason vs behavior**: Should AI focus on internal reasoning or external actions?
+### Demo interactiva 2: Reconocimiento de patrones
 
-| | Human-centered | Rational-centered |
-|---|---|---|
-| **Reasoning** | Cognitive Science | Laws of Thought |
-| **Behavior** | Turing Test | Rational Agent |
+Ahora vamos a hacer el ejercicio inverso: vos actuás como clasificador.
 
-This course adopts the **Rational Agent** perspective because:
-- It is more general (does not require human-like behavior)
-- It is more engineering-friendly (success is measurable)
-- It aligns with modern Machine Learning
+<div style="border: 2px solid #1f77b4; border-radius: 8px; padding: 12px; margin: 16px 0; background: #f0f7ff;">
+  <strong>🧪 Antes de interactuar, respondé:</strong>
+  <p><em>¿Crees que un ojo humano entrenado puede clasificar mejor que un algoritmo simple?</em></p>
+</div>
 
-## Visual Explanation
+<iframe src="../../interactives/demo_02_patterns.html" width="100%" height="700px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
 
-**Figure 1.1**: The two dimensions of AI definitions.
+<small>🔬 simulación educativa sobre datos sintéticos</small>
 
-A 2×2 matrix with rows "Thinking" and "Acting" and columns "Humanly" and "Rationally". Each cell contains the name of the approach and a brief description. The "Acting Rationally" cell is highlighted as the focus of this course.
+Cada cuadrícula de 5×5 representa el patrón de una conidia simplificado. Tu tarea es clasificar cada una como *Aspergillus* o *Penicillium* basándote en el patrón visual.
 
-**Figure 1.2**: The agent-environment interaction loop.
+**¿Qué aprendemos?**
+- Los humanos reconocemos patrones visuales intuitivamente
+- Pero no podemos explicar fácilmente *cómo* lo hacemos
+- La IA necesita convertir esos patrones en números para aprender
 
-A diagram showing the environment on the left, the agent on the right, with arrows labeled "sensors" (environment → agent) and "actuators" (agent → environment), and a loop showing feedback.
+### Demo interactiva 3: Reglas fijas vs. aprendizaje automático
 
-## Python Implementation
+Antes de que existiera el machine learning, se usaban **sistemas basados en reglas**. Veamos por qué no son suficientes.
 
-This introductory lesson does not require Python code. We will begin programming in Module 2 (Python Fundamentals). However, we encourage you to set up your Python environment now following the instructions in the course README.
+<div style="border: 2px solid #1f77b4; border-radius: 8px; padding: 12px; margin: 16px 0; background: #f0f7ff;">
+  <strong>🧪 Antes de interactuar, respondé:</strong>
+  <p><em>Si creamos reglas manuales (área > X y textura > Y), ¿podemos clasificar todas las conidias correctamente?</em></p>
+</div>
 
-## Biotechnology Example
+<iframe src="../../interactives/demo_03_rules.html" width="100%" height="650px" style="border: 1px solid #ddd; border-radius: 8px; margin: 16px 0;"></iframe>
 
-In biotechnology, intelligent agents can be designed to analyze genomic sequences. For example, an AI system can:
-- **Perceive**: Read DNA sequencing data from a patient sample
-- **Reason**: Compare the sequence against known genomic databases
-- **Act**: Flag pathogenic mutations and suggest targeted therapies
+<small>🔬 simulación educativa sobre datos sintéticos</small>
 
-This is an intelligent agent acting rationally — using data to drive clinical decisions.
+Mové los sliders para ajustar los umbrales. Fijate cómo cambiar las reglas afecta la precisión. Por más que ajustes, siempre hay puntos que se clasifican mal.
 
-## SaaS Example
+**¿Por qué fallan las reglas fijas?**
+- La naturaleza es difusa, no binaria
+- Hay superposición natural entre especies
+- Para capturar la complejidad, necesitaríamos cientos de reglas → imposible de mantener
+- **Acá entra el machine learning**: en lugar de programar reglas, la máquina *aprende* los patrones de los datos
 
-In a SaaS company like Spotify, AI agents:
-- **Perceive**: Your listening history, skips, likes, playlist additions
-- **Reason**: Identify patterns in your music preferences
-- **Act**: Recommend new songs and artists you might enjoy
+## Resumen
 
-This rational agent maximizes user engagement and satisfaction.
-
-## Common Mistakes
-
-1. **Confusing AI with Machine Learning**: AI is the broader field. ML is a subfield of AI. All ML is AI, but not all AI is ML.
-2. **Assuming AI requires consciousness**: Modern AI does not possess consciousness, self-awareness, or emotions. It performs tasks without understanding.
-3. **Equating AI with human-like intelligence**: A chess AI that beats world champions is not "thinking" like a human — it uses different computational strategies.
-4. **Believing AI is infallible**: AI systems make mistakes. Their decisions depend on data quality, algorithm design, and problem framing.
-
-## Best Practices
-
-1. **Use precise language**: Distinguish between AI, Machine Learning, and Deep Learning.
-2. **Think in terms of agents and environments**: Frame problems as agents perceiving and acting.
-3. **Define success metrics**: For any AI project, specify how you will measure performance.
-4. **Consider the boundaries**: Know what your AI system can and cannot do.
-5. **Start simple**: The simplest rational agent that solves the problem is often the best.
-
-## Summary
-
-- AI is the field of building intelligent systems, with multiple definitions organized along thinking/acting and humanly/rationally dimensions.
-- The Turing Test evaluates whether a machine can exhibit human-like conversation, but it has significant limitations.
-- An intelligent agent perceives its environment and takes actions to achieve goals.
-- The rational agent approach is the most practical framework for building AI systems.
-- AI is broader than Machine Learning; not every AI system learns from data.
-
-## Key Terms
-
-| Term | Definition |
+| Concepto | Idea clave |
 |---|---|
-| **Artificial Intelligence** | The field of study concerned with building systems that exhibit intelligent behavior |
-| **Turing Test** | A test proposed by Alan Turing where a machine tries to convince a human evaluator that it is human |
-| **Intelligent Agent** | A system that perceives its environment and takes actions to achieve goals |
-| **Rational Agent** | An agent that acts to maximize a performance measure |
-| **Sensors** | Mechanisms by which an agent perceives its environment |
-| **Actuators** | Mechanisms by which an agent acts upon its environment |
-| **Cognition** | The mental processes involved in acquiring knowledge and understanding |
-| **Imitation Game** | The original name for the Turing Test |
+| Inteligencia Artificial | Máquinas que realizan tareas que requieren inteligencia humana |
+| Features (características) | Propiedades medibles de los datos que usamos para clasificar |
+| Espacio de características | El "universo" multidimensional donde la IA busca patrones |
+| Reglas fijas | Funcionan para problemas simples, fallan en la complejidad del mundo real |
+| Aprendizaje automático | La máquina encuentra patrones por sí misma a partir de ejemplos |
 
-## Exercises
+## Checkpoint de conceptos
 
-### Level 1: Basic Understanding
+<div style="border: 2px solid #d62728; border-radius: 8px; padding: 12px; margin: 16px 0; background: #fff5f5;">
+  <strong>📝 Respondé estas preguntas antes de seguir:</strong>
+</div>
 
-1. List the four approaches to defining AI according to Russell & Norvig.
-2. What is the Turing Test? Provide one reason it is not a perfect measure of intelligence.
-3. Define an intelligent agent and name its two main components.
+1. **¿Qué es una "feature" en el contexto de IA?**
+   - a) Una característica del hardware de la computadora
+   - b) Una propiedad medible de los datos que usamos para clasificar
+   - c) Un tipo de algoritmo de aprendizaje
+   - d) Un error en el modelo
 
-### Level 2: Implementation
+2. **¿Por qué los sistemas basados en reglas fijas no son ideales para clasificar conidias?**
+   - a) Porque las reglas son muy lentas de ejecutar
+   - b) Porque la naturaleza tiene variabilidad natural que las reglas no capturan
+   - c) Porque las computadoras no entienden reglas
+   - d) Porque las conidias cambian de forma constantemente
 
-4. Draw an agent-environment diagram for an AI-powered spam filter. Label the sensors, actuators, environment, and performance measure.
-5. For each of the following systems, identify whether they exemplify "acting humanly" or "acting rationally": (a) a chatbot, (b) a chess engine, (c) a self-driving car.
+3. **¿Qué significa que una máquina "aprenda"?**
+   - a) Que entiende el significado de lo que clasifica
+   - b) Que encuentra patrones estadísticos en los datos sin ser programada explícitamente
+   - c) Que puede tener conversaciones como un humano
+   - d) Que reemplaza completamente al científico
 
-### Level 3: Critical Thinking
+<details>
+<summary>Ver respuestas</summary>
+<p><strong>1.</strong> b) Una propiedad medible de los datos. Las features son los números que la IA usa para aprender.</p>
+<p><strong>2.</strong> b) La variabilidad natural hace que las reglas fijas siempre tengan excepciones. El ML se adapta a esa variabilidad.</p>
+<p><strong>3.</strong> b) La IA no "entiende" como nosotros. Encuentra correlaciones estadísticas en los datos. Es poderoso... pero limitado.</p>
+</details>
 
-6. "A calculator is more intelligent than a human at arithmetic, but we do not consider it intelligent." Discuss what is missing from calculators that prevents us from classifying them as AI.
-7. If an AI system could pass the Turing Test for 30 minutes but failed in a 3-hour conversation, would it be considered intelligent? Where would you draw the boundary?
+## Para la próxima lección
 
-## Coding Challenge
-
-Since this lesson does not assume programming knowledge, the challenge is conceptual:
-
-Research one AI system you use daily (e.g., Google Search, Netflix recommendations, facial recognition on your phone). Write a paragraph identifying:
-1. What it perceives (sensors/input)
-2. What actions it takes (actuators/output)
-3. What goal it is trying to achieve (performance measure)
-4. Whether it acts humanly or rationally
+Viste que las reglas fijas no alcanzan. En la Lección 2 vamos a ver *cómo* las máquinas realmente aprenden: desde la frontera de decisión más simple (el perceptrón) hasta algoritmos como KNN que clasifican por cercanía. También vamos a entender qué es el "sobreajuste" (overfitting) y por qué un modelo demasiado complejo puede ser peor que uno simple.

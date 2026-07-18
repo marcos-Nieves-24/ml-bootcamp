@@ -89,20 +89,21 @@ nav:
   - "Módulo 1: Introducción a la IA":
     - Overview: content/module01_ai/README.md
     - L1. ¿Qué es la IA?: content/module01_ai/lessons/lesson01_what_is_ai/lesson.md
-    - "📓 Notebook L1": content/module01_ai/lessons/lesson01_what_is_ai/notebook.ipynb
-    - L2. Historia de la IA: content/module01_ai/lessons/lesson02_history_of_ai/lesson.md
-    - "📓 Notebook L2": content/module01_ai/lessons/lesson02_history_of_ai/notebook.ipynb
-    - L3. Tipos de IA: content/module01_ai/lessons/lesson03_types_of_ai/lesson.md
-    - "📓 Notebook L3": content/module01_ai/lessons/lesson03_types_of_ai/notebook.ipynb
-    - L4. Paradigmas de IA: content/module01_ai/lessons/lesson04_ai_paradigms/lesson.md
-    - "📓 Notebook L4": content/module01_ai/lessons/lesson04_ai_paradigms/notebook.ipynb
-    - L5. Aplicaciones de IA: content/module01_ai/lessons/lesson05_ai_applications/lesson.md
-    - "📓 Notebook L5": content/module01_ai/lessons/lesson05_ai_applications/notebook.ipynb
-    - L6. IA en Biotecnología: content/module01_ai/lessons/lesson06_ai_in_biotech/lesson.md
-    - "📓 Notebook L6": content/module01_ai/lessons/lesson06_ai_in_biotech/notebook.ipynb
-    - L7. IA en SaaS: content/module01_ai/lessons/lesson07_ai_in_saas/lesson.md
-    - "📓 Notebook L7": content/module01_ai/lessons/lesson07_ai_in_saas/notebook.ipynb
-    - "📓 Intro Notebook": content/module01_ai/notebooks/01_intro_to_ai.ipynb
+    - L2. ¿Cómo aprende la IA?: content/module01_ai/lessons/lesson02_how_ai_learns/lesson.md
+    - L3. IA en Biotecnología: content/module01_ai/lessons/lesson03_ai_in_biotech/lesson.md
+    - L4. Casos Reales: content/module01_ai/lessons/lesson04_real_cases/lesson.md
+    - "Demo 1: Features": content/module01_ai/interactives/demo_01_features.html
+    - "Demo 2: Patrones": content/module01_ai/interactives/demo_02_patterns.html
+    - "Demo 3: Reglas vs IA": content/module01_ai/interactives/demo_03_rules.html
+    - "Demo 4: Frontera de Decisión": content/module01_ai/interactives/demo_04_boundary.html
+    - "Demo 5: KNN": content/module01_ai/interactives/demo_05_knn.html
+    - "Demo 6: Regresión": content/module01_ai/interactives/demo_06_regression.html
+    - "Demo 6b: Overfitting/Underfitting": content/module01_ai/interactives/demo_06b_overfitting.html
+    - "Demo 7: Proteínas 3D": content/module01_ai/interactives/demo_07_protein_3d.html
+    - "Demo 8: AlphaFold": content/module01_ai/interactives/demo_08_alphafold.html
+    - "Demo 9: Rentosertib": content/module01_ai/interactives/demo_09_rentosertib.html
+    - "Demo 10: Pipeline": content/module01_ai/interactives/demo_10_pipeline.html
+    - Referencias: content/module01_ai/references/fuentes_investigacion.md
   - "Módulo 2: Python":
     - Overview: content/module02_python/README.md
     - L1. Instalación de Python: content/module02_python/lessons/lesson01_installing_python/lesson.md
