@@ -1,9 +1,7 @@
 {
-  "builds": [
-    {
-      "src": "platform/package.json",
-      "use": "@vercel/next"
-    }
-  ],
+  "framework": "nextjs",
+  "buildCommand": "cd platform && npm run build",
+  "outputDirectory": "platform/.next",
+  "installCommand": "cd platform && npm install",
   "cleanUrls": true
 }
