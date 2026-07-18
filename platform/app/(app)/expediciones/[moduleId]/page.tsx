@@ -4,15 +4,25 @@ import StitchBtn from "@/app/components/StitchBtn"
 import { getModules, getLessons, getModuleStats } from "@/lib/repositories"
 import { auth } from "@/lib/auth"
 
-export default async function Page({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params
+export default async function Page({ params }: { params: Promise<{ moduleId: string }> }) {
+  const { moduleId } = await params
   const session = await auth()
   const userId = session?.user?.id
 
   const modules = await getModules()
-  const mod = modules.find(m => m.id === id)
-  const lessons = await getLessons(id, userId)
-  const stats = userId ? await getModuleStats(userId, id) : null
+  const mod = modules.find(m => m.moduleId === moduleId)
+  if (!mod) {
+    return (
+      <div className="text-center py-20">
+        <span className="material-symbols-outlined text-6xl text-on-surface-variant mb-4">school</span>
+        <h1 className="text-2xl font-bold text-on-surface mb-2">Módulo no encontrado</h1>
+        <p className="text-on-surface-variant mb-6">El módulo que buscas no existe.</p>
+        <StitchBtn href="/expediciones">Volver a Expediciones</StitchBtn>
+      </div>
+    )
+  }
+  const lessons = await getLessons(mod.id, userId)
+  const stats = userId ? await getModuleStats(userId, mod.id) : null
 
   if (!mod) {
     return (

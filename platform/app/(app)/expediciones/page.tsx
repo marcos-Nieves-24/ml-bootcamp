@@ -80,7 +80,7 @@ export default async function ExpedicionesPage() {
       {/* Module List */}
       <div className="space-y-4">
         {modules.map((module, index) => (
-          <Link key={module.id} href={`/expediciones/${module.id}`} className="block">
+          <Link key={module.id} href={`/expediciones/${module.moduleId}`} className="block">
             <StitchCard className="p-6 hover:border-primary/50 transition-colors cursor-pointer glass-card">
               <div className="flex flex-col md:flex-row md:items-center gap-4">
                 {/* Number */}

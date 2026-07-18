@@ -44,7 +44,7 @@ export default async function LessonPage({
           Expediciones
         </Link>
         <span className="material-symbols-outlined text-sm">chevron_right</span>
-        <Link href={`/expediciones/${mod.id}`} className="hover:text-primary transition-colors">
+        <Link href={`/expediciones/${mod.moduleId}`} className="hover:text-primary transition-colors">
           {mod.title}
         </Link>
         <span className="material-symbols-outlined text-sm">chevron_right</span>
