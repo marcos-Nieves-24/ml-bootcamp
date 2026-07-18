@@ -153,5 +153,26 @@ export async function seedModules() {
     seededCount = defaultModules.length
   }
 
+  // Clean up orphan modules (only when seeded from file-based directories)
+  if (seededCount > 0) {
+    const validModuleIds = new Set(
+      entries.filter((d) => MODULE_DIR_PATTERN.test(d))
+    )
+    if (validModuleIds.size > 0) {
+      const orphanModules = await prisma.module.findMany({
+        where: { moduleId: { notIn: [...validModuleIds] } },
+        select: { moduleId: true, id: true },
+      })
+      if (orphanModules.length > 0) {
+        for (const om of orphanModules) {
+          // Delete lessons first (UserProgress cascades), then the module
+          await prisma.lesson.deleteMany({ where: { moduleId: om.id } })
+          await prisma.module.delete({ where: { id: om.id } })
+        }
+        console.log(`  🗑️  Removed ${orphanModules.length} orphan modules: ${orphanModules.map((m) => m.moduleId).join(", ")}`)
+      }
+    }
+  }
+
   console.log(`✅ Seeded ${seededCount} modules`)
 }

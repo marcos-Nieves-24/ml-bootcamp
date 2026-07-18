@@ -45,6 +45,20 @@ export async function seedLessons() {
       continue
     }
 
+    // Clean up orphan lessons: those in DB for this module but no directory on disk
+    if (lessonDirs.length > 0) {
+      const orphans = await prisma.lesson.findMany({
+        where: { moduleId: module.id, lessonId: { notIn: lessonDirs } },
+        select: { lessonId: true },
+      })
+      if (orphans.length > 0) {
+        const orphanIds = orphans.map((o) => o.lessonId)
+        // UserProgress cascades via onDelete: Cascade on the UserProgress.lesson relation
+        await prisma.lesson.deleteMany({ where: { lessonId: { in: orphanIds } } })
+        console.log(`  🗑️  Removed ${orphanIds.length} orphan lessons: ${orphanIds.join(", ")}`)
+      }
+    }
+
     for (const lessonDirName of lessonDirs) {
       const lessonPath = join(lessonParentPath, lessonDirName)
       const lessonMdPath = join(lessonPath, "lesson.md")
