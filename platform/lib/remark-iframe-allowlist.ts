@@ -16,7 +16,7 @@ const ALLOWED_PREFIXES = ["/interactives/", "/content/module01_ai/interactives/"
 
 export function rehypeIframeAllowlist() {
   return (tree: Root) => {
-    visit(tree, "element", (node, index, parent) => {
+    visit(tree, "element" as const, (node, index, parent) => {
       if (node.tagName !== "iframe") return
 
       const src = (node.properties?.src as string) ?? ""
