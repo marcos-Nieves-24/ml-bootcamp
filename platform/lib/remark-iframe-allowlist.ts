@@ -1,0 +1,76 @@
+/**
+ * rehype plugin: allow only <iframe> from /content/module01_ai/interactives/
+ *
+ * - Strips iframes whose src doesn't start with the allowed prefix
+ * - Adds loading="lazy" and title to remaining iframes
+ * - Must run BEFORE rehype-sanitize
+ */
+import type { Root, Element, ElementContent } from "hast"
+
+const ALLOWED_SRC_PREFIX = "/content/module01_ai/interactives/"
+
+export function rehypeIframeAllowlist() {
+  return (tree: Root) => {
+    visit(tree, "element", (node: Element, index: number | null, parent: Element | Root | null) => {
+      if (node.tagName !== "iframe") return
+
+      const src = (node.properties?.src as string) ?? ""
+
+      if (!src.startsWith(ALLOWED_SRC_PREFIX)) {
+        // Remove disallowed iframe, replace with a notice
+        if (parent && index !== null) {
+          const replacement: Element = {
+            type: "element",
+            tagName: "p",
+            properties: { className: ["iframe-blocked-notice"] },
+            children: [
+              {
+                type: "text",
+                value: `[iframe bloqueado: ${src} — solo se permiten iframes de /content/module01_ai/interactives/]`,
+              },
+            ],
+          }
+          parent.children.splice(index, 1, replacement)
+        }
+        return
+      }
+
+      // Add loading="lazy" and responsive wrapper attributes
+      node.properties = node.properties ?? {}
+      node.properties.loading = "lazy"
+      node.properties.title = node.properties.title ?? "Demo interactivo del Módulo 1"
+      node.properties.allowfullscreen = true
+
+      // Wrap in a responsive container div
+      if (parent && index !== null) {
+        const wrapper: Element = {
+          type: "element",
+          tagName: "div",
+          properties: { className: ["iframe-responsive-wrapper"] },
+          children: [structuredClone(node)],
+        }
+        parent.children.splice(index, 1, wrapper)
+      }
+    })
+  }
+}
+
+/**
+ * Minimal HAST walk helper (no dependency, ~15 lines).
+ * Recursively visits all elements in the tree.
+ */
+function visit(
+  node: Root | ElementContent,
+  cb: (node: Element, index: number | null, parent: Element | Root | null) => void,
+  index: number | null = null,
+  parent: Element | Root | null = null,
+) {
+  if (node.type === "element") {
+    cb(node, index, parent)
+    if ("children" in node && Array.isArray(node.children)) {
+      for (let i = 0; i < node.children.length; i++) {
+        visit(node.children[i] as ElementContent, cb, i, node)
+      }
+    }
+  }
+}

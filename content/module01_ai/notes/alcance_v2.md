@@ -25,7 +25,7 @@ Este documento registra lo que **no** entra en el MVP (versión 1) pero está co
 ## Contenido instruccional adicional
 
 - **Ejercicios de programación**: Actualmente no hay notebooks de Python; el foco es conceptual. Para una versión avanzada, incorporar notebooks con `sklearn` sobre los mismos datasets sintéticos.
-- **Evaluación sumativa**: Checkpoints por lección están implementados como MCQ en JS. Para v2, considerar un banco de preguntas con resultados persistentes.
+- **Evaluación formativa vs sumativa**: Los checkpoints MCQ inline en cada demo HTML (evaluación formativa inmediata) conviven con los `quiz.md` por lección (evaluación sumativa con persistencia en plataforma). Los primeros verifican comprensión del concepto recién interactuado; los segundos cierran la lección con preguntas integradoras. Ambas se mantienen activas.
 - **Traducción al inglés**: Todo el contenido está en español para el público target (estudiantes de biotecnología hispanohablantes). Una versión en inglés requeriría fork del contenido.
 - **Dataset Tox21**: Queda fuera de este módulo. Si se integra en una futura lección de toxicología predictiva, usar los datos reales de NIH NCATS.
 
@@ -42,3 +42,5 @@ Este documento registra lo que **no** entra en el MVP (versión 1) pero está co
 | Datasets sintéticos (`datasets/synthetic/module01_ai/`) | Implementado |
 | Nota "simulación educativa" / "modelo real" en cada demo | Implementado |
 | Navegación MkDocs actualizada (4 lecciones) | Implementado |
+| quiz.md por lección (plataforma) | Implementado |
+| Plugin rehype para iframes seguros en plataforma | Implementado |
