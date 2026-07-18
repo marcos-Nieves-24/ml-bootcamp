@@ -24,7 +24,7 @@ export function rehypeIframeAllowlist() {
       const allowed = ALLOWED_PREFIXES.some((p) => src.startsWith(p))
       if (!allowed) {
         // Remove disallowed iframe, replace with a notice
-        if (parent && index !== null) {
+        if (parent && index != null) {
           const replacement: Element = {
             type: "element",
             tagName: "p",
@@ -48,7 +48,7 @@ export function rehypeIframeAllowlist() {
       node.properties.allowfullscreen = true
 
       // Wrap in a responsive container div
-      if (parent && index !== null) {
+      if (parent && index != null) {
         const wrapper: Element = {
           type: "element",
           tagName: "div",
